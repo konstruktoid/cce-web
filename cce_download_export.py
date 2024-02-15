@@ -100,8 +100,12 @@ for sheet_name in excel_file.sheet_names:
         )
         file.write("\n<body>\n")
         file.write("<h1>NIST NCP CCE lists</h1>\n")
-        file.write('<p><a href="https://ncp.nist.gov/cce">NIST NCP CCE lists</a> converted to various formats</p>\n')
+        file.write(
+            '<p><a href="https://ncp.nist.gov/cce">NIST NCP CCE lists</a> converted to various formats</p>\n',
+        )
         for sheet_name in excel_file.sheet_names:
-            file.write(f'<b>{sheet_name.upper()}</b> <a href="./cce_html/{sheet_name}.html">html</a> <a href="./cce_markdown/{sheet_name}.md">markdown</a> <a href="./cce_json/{sheet_name}.json">json</a> <a href="./cce_csv/{sheet_name}.csv">csv</a><br>\n')
+            file.write(
+                f'<b>{sheet_name.upper()}</b> <a href="./cce_html/{sheet_name}.html">html</a> <a href="./cce_markdown/{sheet_name}.md">markdown</a> <a href="./cce_json/{sheet_name}.json">json</a> <a href="./cce_csv/{sheet_name}.csv">csv</a><br>\n',
+            )
         file.write("\n</body>\n</html>")
         file.close()
