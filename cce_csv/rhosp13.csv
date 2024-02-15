@@ -1,0 +1,33 @@
+CCE ID v5,CCE Title,USGCB Setting,Technical Mechanism,Configuration Details,Rationale,Impact,800-53 Mapping,National Information Assurance Partnership Operating System Protection Profile,Center for Internet Security,Defense Information Systems Agency Security Security Requirements Guide,Configuration Group
+CCE-82165-2,Cross-Site Request Forgery Prevention: Enable CSRF_COOKIE_SECURE (non-containerized deployments),enable,via CSRF_COOKIE_SECURE,"Usage of a secure cookie for the CSRF cookie is determined by the CSRF_COOKIE_SECURE
+parameter. When Red Hat OpenStack Platform is deployed as non-containerized services,
+this configuration setting is configured in the
+/etc/openstack-dashboard/local_settings file.
+
+The CSRF_COOKIE_SECURE option must be set to True:
+
+CSRF_COOKIE_SECURE True
+
+When CSRF_COOKIE_SECURE is set to True, the cookie will be marked
+as &#34;secure,&#34; which means web browsers may ensure that the cookie is only sent
+with an HTTPS connection.","CSRF (Cross-site request forgery) is an attack which forces an end user
+to execute unauthorized commands on a web application in which he/she is
+currently authenticated. A successful CSRF exploit can compromise end
+user data and operations in case of normal user. If the targeted end
+user has admin privileges, this can compromise the entire web application.",high,SC-5,,,,Horizon STIG Checklist
+CCE-82166-0,Cross-Site Request Forgery Prevention: Enable CSRF_COOKIE_SECURE (containerized deployments),enable,via CSRF_COOKIE_SECURE,"Usage of a secure cookie for the CSRF cookie is determined by the CSRF_COOKIE_SECURE
+parameter. When Red Hat OpenStack Platform is deployed as containerized services,
+this configuration setting is configured in the
+/var/lib/config-data/puppet-generated/horizon/etc/openstack-dashboard/local_settings file.
+
+The CSRF_COOKIE_SECURE option must be set to True:
+
+CSRF_COOKIE_SECURE True
+
+When CSRF_COOKIE_SECURE is set to True, the cookie will be marked
+as &#34;secure,&#34; which means web browsers may ensure that the cookie is only sent
+with an HTTPS connection.","CSRF (Cross-site request forgery) is an attack which forces an end user
+to execute unauthorized commands on a web application in which he/she is
+currently authenticated. A successful CSRF exploit can compromise end
+user data and operations in case of normal user. If the targeted end
+user has admin privileges, this can compromise the entire web application.",high,SC-5,,,,Horizon Configuration Checklist

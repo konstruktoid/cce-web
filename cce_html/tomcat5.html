@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>CCE Lists</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href='../css/basic.css' type='text/css' rel='stylesheet' />
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Unnamed: 0</th>
+      <th>Last modfied: 2013-02-11</th>
+      <th>Unnamed: 2</th>
+      <th>Unnamed: 3</th>
+      <th>Unnamed: 4</th>
+      <th>Unnamed: 5</th>
+      <th>Unnamed: 6</th>
+      <th>Unnamed: 7</th>
+      <th>Unnamed: 8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NaN</td>
+      <td>Version: 5.20130214</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE ID</td>
+      <td>CCE Description</td>
+      <td>CCE Parameters</td>
+      <td>CCE Technical Mechanisms</td>
+      <td>NaN</td>
+      <td>APPLICATION SERVICES SECURITY CHECKLIST Version 1, Release 1.1 31 July 2006 Section 3A App_sService_Checklist_Sec3A_V1R1-1.doc</td>
+      <td>Apache Software Foundation Apache Tomcat 4 Documentation</td>
+      <td>Apache Software Foundation Apache Tomcat 5.5 Documentation</td>
+      <td>Tomcat The Definitive Guide Ch 6 Tomcat Security http://oreilly.com/catalog/tomcat/chapter/ch06.pdf</td>
+    </tr>
+    <tr>
+      <td>CCE-27473-8</td>
+      <td>The Java Security Manager (JSM) should be enabled or disabled as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1)  catalina.policy file under Catalina Home</td>
+      <td>NaN</td>
+      <td>SDID: AST0560 Category: 1  VULID: V0006215 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECRC-1 SDID Description: Application Security Manager is not turned on. Reference: Application Services STIG, Appendix B.3.5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27687-3</td>
+      <td>Tomcat should be configured to run with or without the Java Security Manager upon startup.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1)  '-security' command-line parameter on Tomcat startup -Djava.security.manager command line parameter</td>
+      <td>NaN</td>
+      <td>SDID: AST0560 Category: 1  VULID: V0006215 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECRC-1 SDID Description: Application Security Manager is not turned on. Reference: Application Services STIG, Appendix B.3.5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27749-1</td>
+      <td>The Tomcat server port number should be set correctly.</td>
+      <td>(1) port number</td>
+      <td>(1)  '&lt;Server Port = &lt;port number&gt; &gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>SDID: APS0560 Category: II  VULID: V0012322 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: DCFA-1 SDID Description: Interfaces between the application server and external systems are not identified and secured. Reference: Application Services STIG, Section 3.2.6</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27391-2</td>
+      <td>The Tomcat Legacy JK AJP 1.3 connector should be enabled or disabled as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1)  '&lt;Connector protocolHandlerClassName="org.apache.ajp.tomcat4.Ajp13Connector"&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27398-7</td>
+      <td>The Tomcat Legacy JK AJP 1.3  connectors should listen on the specified ports.</td>
+      <td>(1) port number</td>
+      <td>(1)  'port' attribute inside '&lt;Connector protocolHandlerClassName="org.apache.ajp.tomcat4.Ajp13Connector"&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27706-1</td>
+      <td>The Tomcat Legacy HTTP/1.1 connector should be enabled or disabled as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1)  '&lt;Connector protocolHandlerClassName="org.apache.catalina.connector.http.HttpConnector"&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27614-7</td>
+      <td>The Tomcat Legacy HTTP/1.1 connectors should listen on the specified ports.</td>
+      <td>(1) port number</td>
+      <td>(1)  'port' attribute inside '&lt;Connector protocolHandlerClassName="org.apache.catalina.connector.http.HttpConnector"&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27704-6</td>
+      <td>The Tomcat login authentication method should be set correctly.</td>
+      <td>(1) BASIC/FORM/DIGEST/CLIENT_CERT</td>
+      <td>(1) Value of '&lt;auth-method&gt;' element in web.xml</td>
+      <td>NaN</td>
+      <td>SDID: APS0140 Category: II VULID: V0006202 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: IAIA-1, ECLO-2 SDID Description: Application server’s client authentication process is inadequate. Reference: Application Services STIG, Appendix B.4.2, B.4.3, B.4.4</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27615-4</td>
+      <td>Security roles for the Tomcat manager app should be set correctly.</td>
+      <td>(1) security role name</td>
+      <td>(1) '&lt;role-name&gt;' element inside '&lt;security-role&gt;' element in the admin.xml file under Tomcat</td>
+      <td>NaN</td>
+      <td>SDID: AST0820 Category: II  VULID:  V0006225 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECLP-1 SDID Description: Admin and Manager Web Applications are not adequately restrictive. Reference: Application Services STIG, Section 3.4.1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27754-1</td>
+      <td>Security roles for the Tomcat admin app should be set correctly.</td>
+      <td>(1) security role name</td>
+      <td>(1) '&lt;role-name&gt;' element inside '&lt;security-role&gt;' element in the manager.xml file under Tomcat</td>
+      <td>NaN</td>
+      <td>SDID: AST0820 Category: II  VULID:  V0006225 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECLP-1 SDID Description: Admin and Manager Web Applications are not adequately restrictive. Reference: Application Services STIG, Section 3.4.1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27644-4</td>
+      <td>Access to the Tomcat Admin app should be denied as appropriate.</td>
+      <td>(1)  list of IPs</td>
+      <td>(1) '&lt;deny&gt;' element inside the '&lt;Valve className="org.apache.catalina.valves.RemoteAddrValve"/&gt;' element in the admin.xml file under Tomcat</td>
+      <td>NaN</td>
+      <td>SDID: AST0820 Category: II  VULID:  V0006225 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECLP-1 SDID Description: Admin and Manager Web Applications are not adequately restrictive. Reference: Application Services STIG, Section 3.4.1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27723-6</td>
+      <td>Access to the Tomcat Admin app should be allowed as appropriate.</td>
+      <td>(1)  list of IPs</td>
+      <td>(1) '&lt;allow&gt;' element inside the '&lt;Valve className="org.apache.catalina.valves.RemoteAddrValve"/&gt;' element in the admin.xml file under Tomcat</td>
+      <td>NaN</td>
+      <td>SDID: AST0820 Category: II  VULID:  V0006225 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECLP-1 SDID Description: Admin and Manager Web Applications are not adequately restrictive. Reference: Application Services STIG, Section 3.4.1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27746-7</td>
+      <td>Access to the Tomcat manager app should be denied as appropriate.</td>
+      <td>(1)  list of IPs</td>
+      <td>(1) '&lt;deny&gt;' element inside the '&lt;Valve className="org.apache.catalina.valves.RemoteAddrValve"/&gt;' element in the manager.xml file under Tomcat</td>
+      <td>NaN</td>
+      <td>SDID: AST0820 Category: II  VULID:  V0006225 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECLP-1 SDID Description: Admin and Manager Web Applications are not adequately restrictive. Reference: Application Services STIG, Section 3.4.1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27269-0</td>
+      <td>Access to the Tomcat manager app should be allowed as appropriate.</td>
+      <td>(1)  list of IPs</td>
+      <td>(1) '&lt;allow&gt;' element inside the '&lt;Valve className="org.apache.catalina.valves.RemoteAddrValve"/&gt;' element in the manager.xml file under Tomcat</td>
+      <td>NaN</td>
+      <td>SDID: AST0820 Category: II  VULID:  V0006225 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECLP-1 SDID Description: Admin and Manager Web Applications are not adequately restrictive. Reference: Application Services STIG, Section 3.4.1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27624-6</td>
+      <td>The owner of the Tomcat home directory should be set correctly.</td>
+      <td>(1) owner</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>SDID: AST0340 Category: II VULID:  V0006207 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECCR-1, ECCR-2 SDID Description: OS level file permissions are not adequately restrictive. Reference: Application Services STIG, Appendix B.2</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27532-1</td>
+      <td>The group of the Tomcat home directory should be set correctly.</td>
+      <td>(1) group</td>
+      <td>(1) via chgrp</td>
+      <td>NaN</td>
+      <td>SDID: AST0340 Category: II VULID:  V0006207 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECCR-1, ECCR-2 SDID Description: OS level file permissions are not adequately restrictive. Reference: Application Services STIG, Appendix B.2</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27751-7</td>
+      <td>The permissions for the Tomcat home directory should be set correctly.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>SDID: AST0340 Category: II VULID:  V0006207 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECCR-1, ECCR-2 SDID Description: OS level file permissions are not adequately restrictive. Reference: Application Services STIG, Appendix B.2</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27524-8</td>
+      <td>The owner of the Tomcat home/conf/ directory should be set correctly.</td>
+      <td>(1) owner</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>SDID: AST0340 Category: II VULID:  V0006207 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECCR-1, ECCR-2 SDID Description: OS level file permissions are not adequately restrictive. Reference: Application Services STIG, Appendix B.2</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27747-5</td>
+      <td>The group of the Tomcat home/conf/ directory should be set correctly.</td>
+      <td>(1) group</td>
+      <td>(1) via chgrp</td>
+      <td>NaN</td>
+      <td>SDID: AST0340 Category: II VULID:  V0006207 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECCR-1, ECCR-2 SDID Description: OS level file permissions are not adequately restrictive. Reference: Application Services STIG, Appendix B.2</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27376-3</td>
+      <td>The permissions for the Tomcat home/conf/ directory should be set correctly.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>SDID: AST0340 Category: II VULID:  V0006207 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECCR-1, ECCR-2 SDID Description: OS level file permissions are not adequately restrictive. Reference: Application Services STIG, Appendix B.2</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27113-0</td>
+      <td>The owner of the tomcat-users.xml file should be set correctly.</td>
+      <td>(1) owner</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>SDID: AST0340 Category: II VULID:  V0006207 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECCR-1, ECCR-2 SDID Description: OS level file permissions are not adequately restrictive. Reference: Application Services STIG, Appendix B.2</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27538-8</td>
+      <td>The group of the tomcat-users.xml file should be set correctly.</td>
+      <td>(1) group</td>
+      <td>(1) via chgrp</td>
+      <td>NaN</td>
+      <td>SDID: AST0340 Category: II VULID:  V0006207 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECCR-1, ECCR-2 SDID Description: OS level file permissions are not adequately restrictive. Reference: Application Services STIG, Appendix B.2</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27689-9</td>
+      <td>The permissions for the tomcat-users.xml file should be set correctly.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>SDID: AST0340 Category: II VULID:  V0006207 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECCR-1, ECCR-2 SDID Description: OS level file permissions are not adequately restrictive. Reference: Application Services STIG, Appendix B.2</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27159-3</td>
+      <td>The password digest algorithm for JDBCRealm (database) connections should be enabled or disabled as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) 'digest' attribute inside '&lt;Realm classname=org.apache.catalina.realm.JDBCRealm&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>SDID: AST0310 Category: II VULID:  V0006204 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECCR-1, ECCR-2 SDID Description: Sensitive application data is not adequately protected at rest. Reference: Application Services STIG, Appendix B.3</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27760-8</td>
+      <td>The JDBCRealm (database) password digest algorithm should be set correctly</td>
+      <td>(1) SHA/MD2/MD5</td>
+      <td>(1) 'digest' attribute inside '&lt;Realm classname=org.apache.catalina.realm.JDBCRealm&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>SDID: AST0310 Category: II VULID:  V0006204 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECCR-1, ECCR-2 SDID Description: Sensitive application data is not adequately protected at rest. Reference: Application Services STIG, Appendix B.3</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27681-6</td>
+      <td>The password digest algorithm for JNDIRealm (LDAP) connections should be enabled or disabled as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) 'digest' attribute inside '&lt;Realm classname=org.apache.catalina.realm.JNDIRealm&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>SDID: AST0310 Category: II VULID:  V0006204 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECCR-1, ECCR-2 SDID Description: Sensitive application data is not adequately protected at rest. Reference: Application Services STIG, Appendix B.3</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27717-8</td>
+      <td>The JNDIRealm (LDAP) password digest should be configured appropriately.</td>
+      <td>(1) SHA/MD2/MD5</td>
+      <td>(1) 'digest' attribute inside '&lt;Realm classname=org.apache.catalina.realm.JNDIRealm&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>SDID: AST0310 Category: II VULID:  V0006204 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECCR-1, ECCR-2 SDID Description: Sensitive application data is not adequately protected at rest. Reference: Application Services STIG, Appendix B.3</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27429-0</td>
+      <td>The Tomcat HTTP/1.1 connector should be enabled or disabled.</td>
+      <td>(1) exists/ not exist</td>
+      <td>(1) '&lt;Connector protocol="HTTP/1.1"&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat Configuration Reference The HTTP Connector http://tomcat.apache.org/tomcat-5.5-doc/config/http.html</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27673-3</td>
+      <td>The Tomcat HTTP/1.1 connector should be configured appropriately for the specified ports.</td>
+      <td>(1) TARGET: port number (2) exists/ not exist</td>
+      <td>(1) 'port' attribute inside '&lt;Connector protocol="HTTP/1.1"&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat Configuration Reference The HTTP Connector http://tomcat.apache.org/tomcat-5.5-doc/config/http.html</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27738-4</td>
+      <td>The secure attribute should be set as appropriate for the specified Tomcat HTTP/1.1 connectors.</td>
+      <td>(1) TARGET: connector (2) true/false</td>
+      <td>(1) secure attribute in a &lt;Connector protocol="HTTP/1.1"&gt; line in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat Configuration Reference The HTTP Connector http://tomcat.apache.org/tomcat-5.5-doc/config/http.html</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27758-2</td>
+      <td>The Tomcat JK/JK2 AJP 1.3 connector should be enabled or disabled as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) '&lt;Connector protocol="AJP/1.3"&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat Configuration Reference The HTTP Connector http://tomcat.apache.org/tomcat-5.5-doc/config/http.html</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27450-6</td>
+      <td>The Tomcat JK/JK2 AJP 1.3 connector should be configured appropriately for the specified ports.</td>
+      <td>(1) port number</td>
+      <td>(1) 'port' attribute inside '&lt;Connector protocol="AJP/1.3"&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat Configuration Reference The HTTP Connector http://tomcat.apache.org/tomcat-5.5-doc/config/http.html</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27402-7</td>
+      <td>The secure attribute should be set as appropriate for the specified Tomcat JK/JK2 AJP 1.3 connectors.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) security attribute inside '&lt;Connector protocol="AJP/1.3"&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat Configuration Reference The HTTP Connector http://tomcat.apache.org/tomcat-5.5-doc/config/http.html</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27551-1</td>
+      <td>The Tomcat Legacy JK AJP 1.3 connector should be enabled or disabled as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) '&lt;Connector protocolHandlerClassName="org.apache.ajp.tomcat4.Ajp13Connector"&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27665-9</td>
+      <td>The Tomcat Legacy JK AJP 1.3 connector should be configured appropriately for the specified ports.</td>
+      <td>(1) port number</td>
+      <td>(1) 'port' attribute inside '&lt;Connector protocolHandlerClassName="org.apache.ajp.tomcat4.Ajp13Connector"&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27729-3</td>
+      <td>The Tomcat WARP connector should be enabled or disabled as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1)  '&lt;Connector protocol=WARP&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27467-0</td>
+      <td>The Tomcat WARP connector should be configured appropriately for the specified ports.</td>
+      <td>(1) port number</td>
+      <td>(1) 'port' attribute inside '&lt;Connector protocol=WARP&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27637-8</td>
+      <td>JULI container level logging should be enabled or disabled as appropriate.</td>
+      <td>(1) exists/ not exist</td>
+      <td>(1) logging.properties file</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>The Apache Tomcat 5.5 Servlet/JSP Container Logging in Tomcat java.util.logging http://tomcat.apache.org/tomcat-5.5-doc/logging.html</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27703-8</td>
+      <td>The JULI FileHandler threshold level should be set correctly for the specified classes.</td>
+      <td>(1) TARGET: class (2) FINEST/FINER/FINE/CONFIG/INFO/WARNING/SEVERE</td>
+      <td>(1) &lt;class&gt;.org.apache.juli.FileHandler.level  in logging.properties</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>The Apache Tomcat 5.5 Servlet/JSP Container Logging in Tomcat java.util.logging http://tomcat.apache.org/tomcat-5.5-doc/logging.html</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27552-9</td>
+      <td>The JULI FileHandler save directory should be configured appropriately for the specified classes</td>
+      <td>(1) TARGET: class (2) directory</td>
+      <td>(1) &lt;class&gt;.org.apache.juli.FileHandler.directory in logging.properties</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>The Apache Tomcat 5.5 Servlet/JSP Container Logging in Tomcat java.util.logging http://tomcat.apache.org/tomcat-5.5-doc/logging.html</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27488-6</td>
+      <td>The JULI FileHandlerlog file name prefix should be set correctly for the specified classes.</td>
+      <td>(1) TARGET: class (2) prefix</td>
+      <td>(1) &lt;class&gt;.org.apache.juli.FileHandler.prefix in logging.properties</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>The Apache Tomcat 5.5 Servlet/JSP Container Logging in Tomcat java.util.logging http://tomcat.apache.org/tomcat-5.5-doc/logging.html</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27539-6</td>
+      <td>Granting of all permissions to Tomcat web applications should be enabled or disabled as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1)  'permission java.security.AllPermission' line(s) inside 'grant{}' statement in catalina.policy</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat 5.5 Security Manager HOW-TO Standard Permissions http://tomcat.apache.org/tomcat-5.5-doc/security-manager-howto.html</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-26982-9</td>
+      <td>The example files should be installed as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) located in /examples directory</td>
+      <td>NaN</td>
+      <td>SDID: AST0610 Category: II VULID:  V0006217 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: DCSQ-1 SDID Description: Application server default content has not been removed. Reference: Application Services STIG, Appendix B.6</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27603-0</td>
+      <td>The WebDAV app should be installed as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) located in /webdav directory</td>
+      <td>NaN</td>
+      <td>SDID: AST0610 Category: II VULID:  V0006217 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: DCSQ-1 SDID Description: Application server default content has not been removed. Reference: Application Services STIG, Appendix B.6</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27504-0</td>
+      <td>The Tomcat-docs should be installed as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) located in /tomcat-docs directory</td>
+      <td>NaN</td>
+      <td>SDID: AST0610 Category: II VULID:  V0006217 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: DCSQ-1 SDID Description: Application server default content has not been removed. Reference: Application Services STIG, Appendix B.6</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27585-9</td>
+      <td>The Balancer app should be installed as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) located in /balancer directory</td>
+      <td>NaN</td>
+      <td>SDID: AST0610 Category: II VULID:  V0006217 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: DCSQ-1 SDID Description: Application server default content has not been removed. Reference: Application Services STIG, Appendix B.6</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27543-8</td>
+      <td>The example server.xml file should be installed as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) located in the Tomcat home/conf/ directory</td>
+      <td>NaN</td>
+      <td>SDID: AST0610 Category: II VULID:  V0006217 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: DCSQ-1 SDID Description: Application server default content has not been removed. Reference: Application Services STIG, Appendix B.6</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27527-1</td>
+      <td>Tomcat should be run by the appropriate account</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>SDID: ASG0520 Category: II  VULID: V0006211 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECLP-1 SDID Description: The application server process runs with privileges not necessary for proper operation. Reference: Application Services STIG, Appendix B.3.5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27478-7</td>
+      <td>Tomcat should be run with the appropriate group membership.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) via chgrp</td>
+      <td>NaN</td>
+      <td>SDID: ASG0520 Category: II  VULID: V0006211 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECLP-1 SDID Description: The application server process runs with privileges not necessary for proper operation. Reference: Application Services STIG, Appendix B.3.5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27655-0</td>
+      <td>Tomcat web application JVM property read permissions should be set correctly for the specified properties.</td>
+      <td>(1) TARGET: JVM property</td>
+      <td>(1)  'permission java.util.PropertyPermission' line(s) inside 'grant{}' statement in catalina.policy</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat 5.5 Security Manager HOW-TO Standard Permissions http://tomcat.apache.org/tomcat-5.5-doc/security-manager-howto.html</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27493-6</td>
+      <td>Tomcat web application JVM property write permissions should be set correctly for the specified properties.</td>
+      <td>(1) TARGET: JVM property</td>
+      <td>(1)  'permission java.util.PropertyPermission' line(s) inside 'grant{}' statement in catalina.policy</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat 5.5 Security Manager HOW-TO Standard Permissions http://tomcat.apache.org/tomcat-5.5-doc/security-manager-howto.html</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27629-5</td>
+      <td>Tomcat should be run by the appropriate account</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>SDID: ASG0520 Category: II  VULID: V0006211 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECLP-1 SDID Description: The application server process runs with privileges not necessary for proper operation. Reference: Application Services STIG, Appendix B.3.5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27028-0</td>
+      <td>Tomcat should be run with the appropriate group membership.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) via chgrp</td>
+      <td>NaN</td>
+      <td>SDID: ASG0520 Category: II  VULID: V0006211 MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP IA Controls: ECLP-1 SDID Description: The application server process runs with privileges not necessary for proper operation. Reference: Application Services STIG, Appendix B.3.5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27659-2</td>
+      <td>The Tomcat user account should be locked or unlocked as appropriate.</td>
+      <td>(1) locked/unlocked</td>
+      <td>(1) via passwd</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Using a Non-root User in the chroot Jail pg 145</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

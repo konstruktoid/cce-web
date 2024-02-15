@@ -1,0 +1,3781 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>CCE Lists</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href='../css/basic.css' type='text/css' rel='stylesheet' />
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Unnamed: 0</th>
+      <th>Last modified: 2009-04-30</th>
+      <th>Unnamed: 2</th>
+      <th>Unnamed: 3</th>
+      <th>Unnamed: 4</th>
+      <th>Unnamed: 5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NaN</td>
+      <td>Version: 5.20090506</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE ID</td>
+      <td>CCE Description</td>
+      <td>CCE Parameters</td>
+      <td>CCE Technical Mechanisms</td>
+      <td>NaN</td>
+      <td>Internal Revenue Service Basic UNIX Security Requirements (IRS BUSR) http://www.irs.gov/irm/part10/ch03s08.html</td>
+    </tr>
+    <tr>
+      <td>CCE-7173-8</td>
+      <td>/export/home should be configured on an appropriate filesystem partition</td>
+      <td>partition</td>
+      <td>via fstab</td>
+      <td>NaN</td>
+      <td>10.8.10.4.2.1 (5)</td>
+    </tr>
+    <tr>
+      <td>CCE-6194-5</td>
+      <td>/var should be configured on an appropriate filesystem partition</td>
+      <td>partition</td>
+      <td>via fstab</td>
+      <td>NaN</td>
+      <td>10.8.10.4.2.1 (5)</td>
+    </tr>
+    <tr>
+      <td>CCE-6995-5</td>
+      <td>/opt should be configured on an appropriate filesystem partition</td>
+      <td>partition</td>
+      <td>via fstab</td>
+      <td>NaN</td>
+      <td>10.8.10.4.2.1 (5)</td>
+    </tr>
+    <tr>
+      <td>CCE-6632-4</td>
+      <td>The shell for the root account should be located on the appropriate filesystem</td>
+      <td>filesystem</td>
+      <td>via /etc/passwd</td>
+      <td>NaN</td>
+      <td>10.8.10.4.2.1 (6)</td>
+    </tr>
+    <tr>
+      <td>CCE-6196-0</td>
+      <td>Core dump size limits should be set appropriately</td>
+      <td>Size (0 to disable core dumps)</td>
+      <td>via /etc/security/limits via ulimit</td>
+      <td>NaN</td>
+      <td>10.8.10.4.4 (3)</td>
+    </tr>
+    <tr>
+      <td>CCE-6981-5</td>
+      <td>The read-only SNMP community string should be set appropriately.</td>
+      <td>string</td>
+      <td>via /etc/snmp/conf/snmpd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.1 (1) c)</td>
+    </tr>
+    <tr>
+      <td>CCE-6951-8</td>
+      <td>The read/write SNMP community string should be set appropriately.</td>
+      <td>string</td>
+      <td>via /etc/snmp/conf/snmpd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.1 (1) c)</td>
+    </tr>
+    <tr>
+      <td>CCE-7167-0</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-6919-5</td>
+      <td>Password policy should ban or allow words found in a dictionary as appropriate.</td>
+      <td>ban/allow</td>
+      <td>via /etc/default/passwd</td>
+      <td>NaN</td>
+      <td>10.8.10.5.1 (2) a)</td>
+    </tr>
+    <tr>
+      <td>CCE-6198-6</td>
+      <td>Password policy should enforce the correct amount of special characters</td>
+      <td>number of special characters</td>
+      <td>via /etc/default/passwd</td>
+      <td>NaN</td>
+      <td>10.8.10.5.1 (2) a)</td>
+    </tr>
+    <tr>
+      <td>CCE-7049-0</td>
+      <td>Password policy should enforce or not enforce the requirement to have mixed case passwords as appropriate.</td>
+      <td>enforce/not enforce</td>
+      <td>via /etc/default/passwd</td>
+      <td>NaN</td>
+      <td>10.8.10.5.1 (2) a)</td>
+    </tr>
+    <tr>
+      <td>CCE-7146-4</td>
+      <td>The minimum password age should be set as appropriate</td>
+      <td>number of days</td>
+      <td>via /etc/default/passwd</td>
+      <td>NaN</td>
+      <td>10.8.10.5.1 (2) b)</td>
+    </tr>
+    <tr>
+      <td>CCE-7080-5</td>
+      <td>The minimum required password length should be set as appropriate</td>
+      <td>number of characters</td>
+      <td>via /etc/default/passwd</td>
+      <td>NaN</td>
+      <td>10.8.10.5.1 (2) c)</td>
+    </tr>
+    <tr>
+      <td>CCE-7086-2</td>
+      <td>Password history should be saved for an appropriate number of password changes</td>
+      <td>number of password changes</td>
+      <td>via /etc/default/passwd</td>
+      <td>NaN</td>
+      <td>10.8.10.5.1 (2) d)</td>
+    </tr>
+    <tr>
+      <td>CCE-6434-5</td>
+      <td>The number of consecutive failed login attempts required to trigger a lockout should be set as appropriate</td>
+      <td>number of consecutive failed login attempts</td>
+      <td>via /etc/default/passwd</td>
+      <td>NaN</td>
+      <td>10.8.10.5.1 (2) e)</td>
+    </tr>
+    <tr>
+      <td>CCE-7196-9</td>
+      <td>Login access to accounts without passwords should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via passwd via /etc/shadow</td>
+      <td>NaN</td>
+      <td>10.8.10.5.1 (2) f)</td>
+    </tr>
+    <tr>
+      <td>CCE-7024-3</td>
+      <td>New users should be required or not required to change their password on first login as appropriate</td>
+      <td>required/not required</td>
+      <td>via /etc/security/passwd</td>
+      <td>NaN</td>
+      <td>10.8.10.5.1 (2) g)</td>
+    </tr>
+    <tr>
+      <td>CCE-7104-3</td>
+      <td>Access to single-user mode (maintainence mode) should require the root password or not as appropriate</td>
+      <td>required/not required</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>10.8.10.5.1 (3)</td>
+    </tr>
+    <tr>
+      <td>CCE-7028-4</td>
+      <td>The delay between failed logins should be set as appropriate</td>
+      <td>number of seconds</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>10.8.10.5.1 (5)</td>
+    </tr>
+    <tr>
+      <td>CCE-7108-4</td>
+      <td>All files should be owned by an existing account or not as appropriate.</td>
+      <td>existing account required / existing account not required</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2 (3)</td>
+    </tr>
+    <tr>
+      <td>CCE-6323-0</td>
+      <td>All files should be owned by an existing group or not as appropriate.</td>
+      <td>existing group required / existing group not required</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2 (3)</td>
+    </tr>
+    <tr>
+      <td>CCE-6218-2</td>
+      <td>The console login banner should be set appropriately.</td>
+      <td>banner text or null</td>
+      <td>via /etc/security/login.cfg via /etc/motd</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2 (5) a)</td>
+    </tr>
+    <tr>
+      <td>CCE-7066-4</td>
+      <td>The SSH login banner should be set appropriately.</td>
+      <td>banner text or null</td>
+      <td>via sshd_config</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2 (5) b)</td>
+    </tr>
+    <tr>
+      <td>CCE-6903-9</td>
+      <td>The telnet login banner should be set appropriately.</td>
+      <td>banner text or null</td>
+      <td>via /etc/default/telnetd</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2 (5) c)</td>
+    </tr>
+    <tr>
+      <td>CCE-6837-9</td>
+      <td>The ftp login banner should be set appropriately.</td>
+      <td>banner text or null</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2 (5) d)</td>
+    </tr>
+    <tr>
+      <td>CCE-6683-7</td>
+      <td>The graphical login banner should be set appropriately.</td>
+      <td>banner text or null</td>
+      <td>via Xwindows</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2 (5) e)</td>
+    </tr>
+    <tr>
+      <td>CCE-6841-1</td>
+      <td>Accounts other than root should be allowed to have the UID 0 or not as appropriate</td>
+      <td>allowed/not allowed</td>
+      <td>via passwd via /etc/passwd</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.1 (2) a)</td>
+    </tr>
+    <tr>
+      <td>CCE-7185-2</td>
+      <td>Accounts other than root and locked system accounts should be allowed to have a GID of 0 or not as appropriate</td>
+      <td>allowed/not allowed</td>
+      <td>via passwd via /etc/passwd via /etc/group</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.1 (2) b)</td>
+    </tr>
+    <tr>
+      <td>CCE-6255-4</td>
+      <td>Each account should be assigned a unique UID or not as appropriate</td>
+      <td>unique/not unique</td>
+      <td>via /etc/passwd</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.4 (3)</td>
+    </tr>
+    <tr>
+      <td>CCE-6688-6</td>
+      <td>The ftp account should exist or not as appropriate</td>
+      <td>exist/not exist</td>
+      <td>via /etc/passwd</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.4 (9)</td>
+    </tr>
+    <tr>
+      <td>CCE-7164-7</td>
+      <td>Login accounts should include an appropriate GECOS identifier or no GECOS identifier</td>
+      <td>GECOS value, null</td>
+      <td>via /etc/passwd</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.4.1 (1)</td>
+    </tr>
+    <tr>
+      <td>CCE-6926-0</td>
+      <td>The screen lock should activate after an appropriate period of inactivity</td>
+      <td>number of minutes</td>
+      <td>via Xscreensaver via dtsession</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.5 (1)</td>
+    </tr>
+    <tr>
+      <td>CCE-6895-7</td>
+      <td>File permissions should be set appropriately for all shell executables.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.6 (1)</td>
+    </tr>
+    <tr>
+      <td>CCE-7245-4</td>
+      <td>Remote (serial) consoles should be enabled or disabled as appropriate.</td>
+      <td>enabled/disabled</td>
+      <td>via BIOS</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.6 (3)</td>
+    </tr>
+    <tr>
+      <td>CCE-7232-2</td>
+      <td>Root logins should be restricted to the console or not as appropriate.</td>
+      <td>restricted/not restricted</td>
+      <td>via /etc/default/login</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.6 (4)</td>
+    </tr>
+    <tr>
+      <td>CCE-6311-5</td>
+      <td>.netrc files should exist or not as appropriate for all users.</td>
+      <td>exist/not exist</td>
+      <td>via filesystem</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.6 (6)</td>
+    </tr>
+    <tr>
+      <td>CCE-6976-5</td>
+      <td>.rhosts files should exist or not as appropriate for all users.</td>
+      <td>exist/not exist</td>
+      <td>via filesystem</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.6 (6)</td>
+    </tr>
+    <tr>
+      <td>CCE-7157-1</td>
+      <td>.shosts files should exist or not as appropriate for all users.</td>
+      <td>exist/not exist</td>
+      <td>via filesystem</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.6 (6)</td>
+    </tr>
+    <tr>
+      <td>CCE-6712-4</td>
+      <td>The /etc/hosts.equiv file should exist or not as appropriate.</td>
+      <td>exist/not exist</td>
+      <td>via filesystem</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.6 (6)</td>
+    </tr>
+    <tr>
+      <td>CCE-7183-7</td>
+      <td>The use of NIS special characters  (+ or -) in the first field of the /etc/passwd file should be allowed or disallowed as appropriate.</td>
+      <td>set of allowed values</td>
+      <td>via Text editor</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.6 (7)</td>
+    </tr>
+    <tr>
+      <td>CCE-7117-5</td>
+      <td>The use of NIS special characters  (+ or -) in the first field of the /etc/shadow file should be allowed or disallowed as appropriate.</td>
+      <td>set of allowed values</td>
+      <td>via Text editor</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.6 (7)</td>
+    </tr>
+    <tr>
+      <td>CCE-7152-2</td>
+      <td>The use of NIS special characters  (+ or -) in the first field of the /etc/group file should be allowed or disallowed as appropriate.</td>
+      <td>set of allowed values</td>
+      <td>via Text editor</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.6 (7)</td>
+    </tr>
+    <tr>
+      <td>CCE-7214-0</td>
+      <td>The /etc/shells file should exist or not as appropriate</td>
+      <td>exist/not exist</td>
+      <td>via /etc/shells</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.6 (11)</td>
+    </tr>
+    <tr>
+      <td>CCE-6258-8</td>
+      <td>Shells referenced in /etc/passwd should be included in /etc/shells or not as appropriate</td>
+      <td>included/not included</td>
+      <td>via /etc/shells</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.6 (12)</td>
+    </tr>
+    <tr>
+      <td>CCE-6536-7</td>
+      <td>Groups referenced in /etc/passwd should be included in /etc/group or not as appropriate.</td>
+      <td>included/not included</td>
+      <td>via /etc/group</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.6 (15)</td>
+    </tr>
+    <tr>
+      <td>CCE-6324-8</td>
+      <td>The home directory for the root account should be set appropriately.</td>
+      <td>path</td>
+      <td>via /etc/passwd</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.6 (16)</td>
+    </tr>
+    <tr>
+      <td>CCE-7258-7</td>
+      <td>The home directory for each user account should be set appropriately.</td>
+      <td>path</td>
+      <td>via /etc/passwd</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.6 (17)</td>
+    </tr>
+    <tr>
+      <td>CCE-6260-4</td>
+      <td>Home directories referenced in /etc/passwd should exist or not as appropriate</td>
+      <td>exist/not exist</td>
+      <td>via filesystem</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.6 (18)</td>
+    </tr>
+    <tr>
+      <td>CCE-7119-1</td>
+      <td>All device files should be located inside an appropriate path</td>
+      <td>path</td>
+      <td>via filesystem</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.6 (24)</td>
+    </tr>
+    <tr>
+      <td>CCE-7105-0</td>
+      <td>The ntpd service should be enabled or disabled as appropriate.</td>
+      <td>enabled/disabled</td>
+      <td>via RC scripts</td>
+      <td>NaN</td>
+      <td>10.8.10.5.3 (3)</td>
+    </tr>
+    <tr>
+      <td>CCE-6264-6</td>
+      <td>The Network Time Protocol (ntp) synchronization server should be set appropriately.</td>
+      <td>timeserver</td>
+      <td>via ntpd.conf</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7201-7</td>
+      <td>All logon attempts should be logged or not logged as appropriate</td>
+      <td>logged/not logged</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>10.8.10.5.3 (4)</td>
+    </tr>
+    <tr>
+      <td>CCE-6902-1</td>
+      <td>All su (switch user) activity should be logged or not as appropriate</td>
+      <td>logged/not logged</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>10.8.10.5.3 (5)</td>
+    </tr>
+    <tr>
+      <td>CCE-7186-0</td>
+      <td>Filesystem logging/journaling should be performed or not as appropriate</td>
+      <td>performed/not performed</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>10.8.10.5.3 (6)</td>
+    </tr>
+    <tr>
+      <td>CCE-6267-9</td>
+      <td>Automount should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (12)</td>
+    </tr>
+    <tr>
+      <td>CCE-6276-0</td>
+      <td>Source-routed packets should be accepted or rejected as appropriate.</td>
+      <td>accepted/rejected</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (2) a)</td>
+    </tr>
+    <tr>
+      <td>CCE-6885-8</td>
+      <td>Response to ICMP timestamp requests should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (2) c)</td>
+    </tr>
+    <tr>
+      <td>CCE-6485-7</td>
+      <td>Response to ICMP timestamp broadcast requests should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (2) d)</td>
+    </tr>
+    <tr>
+      <td>CCE-7017-7</td>
+      <td>Response to ICMP echo (ping) requests should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (2) e)</td>
+    </tr>
+    <tr>
+      <td>CCE-6285-1</td>
+      <td>Executable stack should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (3)</td>
+    </tr>
+    <tr>
+      <td>CCE-7053-2</td>
+      <td>The default gateway should be set appropriately.</td>
+      <td>IP address/disabled</td>
+      <td>via /etc/default/route.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (4)</td>
+    </tr>
+    <tr>
+      <td>CCE-6713-2</td>
+      <td>The inetd service should be enabled or disabled as appropriate.</td>
+      <td>enabled/disabled</td>
+      <td>via RC scripts</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (5)</td>
+    </tr>
+    <tr>
+      <td>CCE-6541-7</td>
+      <td>echo service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #1</td>
+    </tr>
+    <tr>
+      <td>CCE-6585-4</td>
+      <td>netstat service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #2</td>
+    </tr>
+    <tr>
+      <td>CCE-6287-7</td>
+      <td>rcp service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #3</td>
+    </tr>
+    <tr>
+      <td>CCE-7156-3</td>
+      <td>chargen service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #4</td>
+    </tr>
+    <tr>
+      <td>CCE-7045-8</td>
+      <td>finger service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #5</td>
+    </tr>
+    <tr>
+      <td>CCE-6746-2</td>
+      <td>tftpd service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #6</td>
+    </tr>
+    <tr>
+      <td>CCE-7137-3</td>
+      <td>walld service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #7</td>
+    </tr>
+    <tr>
+      <td>CCE-7234-8</td>
+      <td>rstatd service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #8</td>
+    </tr>
+    <tr>
+      <td>CCE-6299-2</td>
+      <td>sprayd service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #9</td>
+    </tr>
+    <tr>
+      <td>CCE-6307-3</td>
+      <td>rusersd service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #10</td>
+    </tr>
+    <tr>
+      <td>CCE-6567-2</td>
+      <td>rlogin service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #11</td>
+    </tr>
+    <tr>
+      <td>CCE-7098-7</td>
+      <td>rsh service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #12</td>
+    </tr>
+    <tr>
+      <td>CCE-7067-2</td>
+      <td>ftp service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #13</td>
+    </tr>
+    <tr>
+      <td>CCE-7005-2</td>
+      <td>telnet service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #14</td>
+    </tr>
+    <tr>
+      <td>CCE-4909-8</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-6630-8</td>
+      <td>inn service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #16</td>
+    </tr>
+    <tr>
+      <td>CCE-7145-6</td>
+      <td>uucp service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #17</td>
+    </tr>
+    <tr>
+      <td>CCE-6308-1</td>
+      <td>rexec service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #18</td>
+    </tr>
+    <tr>
+      <td>CCE-6803-1</td>
+      <td>inetd logging should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #19</td>
+    </tr>
+    <tr>
+      <td>CCE-6604-3</td>
+      <td>font-service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #20</td>
+    </tr>
+    <tr>
+      <td>CCE-7058-1</td>
+      <td>imap2 service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #21</td>
+    </tr>
+    <tr>
+      <td>CCE-7274-4</td>
+      <td>pop3 service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #22</td>
+    </tr>
+    <tr>
+      <td>CCE-7149-8</td>
+      <td>ident service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #23</td>
+    </tr>
+    <tr>
+      <td>CCE-7118-3</td>
+      <td>rexd service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #24</td>
+    </tr>
+    <tr>
+      <td>CCE-6650-6</td>
+      <td>sadmin service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #25</td>
+    </tr>
+    <tr>
+      <td>CCE-7153-0</td>
+      <td>daytime service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #26</td>
+    </tr>
+    <tr>
+      <td>CCE-7307-2</td>
+      <td>dtspc (cde-spc) service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #27</td>
+    </tr>
+    <tr>
+      <td>CCE-6945-0</td>
+      <td>rquotad service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #28</td>
+    </tr>
+    <tr>
+      <td>CCE-6685-2</td>
+      <td>cmsd service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #29</td>
+    </tr>
+    <tr>
+      <td>CCE-7059-9</td>
+      <td>tooltalk service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #30</td>
+    </tr>
+    <tr>
+      <td>CCE-7275-1</td>
+      <td>xdmcp service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #31</td>
+    </tr>
+    <tr>
+      <td>CCE-7249-6</td>
+      <td>discard service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #32</td>
+    </tr>
+    <tr>
+      <td>CCE-4923-9</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7089-6</td>
+      <td>vino-server service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1 (11) #34</td>
+    </tr>
+    <tr>
+      <td>CCE-6603-5</td>
+      <td>The bind service should be enabled or disabled as appropriate.</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1.1 (2)</td>
+    </tr>
+    <tr>
+      <td>CCE-6947-6</td>
+      <td>The version string reported by the bind service should be configured appropriately.</td>
+      <td>string</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1.1 (5)</td>
+    </tr>
+    <tr>
+      <td>CCE-7172-0</td>
+      <td>SSH Protocol v1 should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1.2 (2)</td>
+    </tr>
+    <tr>
+      <td>CCE-6321-4</td>
+      <td>TCP_WRAPPERS should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via inetd via inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1.3 (1)</td>
+    </tr>
+    <tr>
+      <td>CCE-6322-2</td>
+      <td>SNMP version 1 should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1.4 (1)</td>
+    </tr>
+    <tr>
+      <td>CCE-7189-4</td>
+      <td>The nfsd service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via RC scripts</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1.5 (1)</td>
+    </tr>
+    <tr>
+      <td>CCE-7154-8</td>
+      <td>The mountd service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via RC scripts</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1.5 (1)</td>
+    </tr>
+    <tr>
+      <td>CCE-6595-3</td>
+      <td>The statd service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via RC scripts</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1.5 (1)</td>
+    </tr>
+    <tr>
+      <td>CCE-7031-8</td>
+      <td>The lockd service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via RC scripts</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1.5 (1)</td>
+    </tr>
+    <tr>
+      <td>CCE-8602-5</td>
+      <td>NFS should be configured to respond or not as appropriate to client requests that do not include a user id .</td>
+      <td>respond/not respond</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1.5 (1) a)</td>
+    </tr>
+    <tr>
+      <td>CCE-6877-5</td>
+      <td>NFS should be configured to respond or not as appropriate to client requests that do not originate from a privileged port</td>
+      <td>respond/not respond</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1.5 (1) a)</td>
+    </tr>
+    <tr>
+      <td>CCE-7097-9</td>
+      <td>NFS should be configured with appropriate authentication methods</td>
+      <td>list of auth methods</td>
+      <td>via NFS via /etc/exports</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1.5 (1) f)</td>
+    </tr>
+    <tr>
+      <td>CCE-7220-7</td>
+      <td>The read-only (ro) option should be enabled or disabled as appropriate for all NFS exports.</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/exports</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1.5 (1) g)</td>
+    </tr>
+    <tr>
+      <td>CCE-7062-3</td>
+      <td>The nosuid option should be enabled or disabled for all NFS mounts as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/fstab</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.1.5 (1) i)</td>
+    </tr>
+    <tr>
+      <td>CCE-6453-5</td>
+      <td>Sendmail should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via RC scripts</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.2.2 (1)</td>
+    </tr>
+    <tr>
+      <td>CCE-7299-1</td>
+      <td>The sendmail banner should be set appropriately.</td>
+      <td>string</td>
+      <td>via /etc/mail/sendmail.cf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.2.2 (3)</td>
+    </tr>
+    <tr>
+      <td>CCE-6643-1</td>
+      <td>The decode sendmail alias should be enabled or disabled as appropriate.</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/aliases via /usr/lib/aliases</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.2.2 (4) c)</td>
+    </tr>
+    <tr>
+      <td>CCE-6328-9</td>
+      <td>.forward files should be allowed or disallowed as appropriate for all users</td>
+      <td>allow/disallow</td>
+      <td>via rm</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.2.2 (4) e)</td>
+    </tr>
+    <tr>
+      <td>CCE-6338-8</td>
+      <td>Programs executed through the aliases file should be owned by an appropriate user</td>
+      <td>user</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.2.2 (4) f)</td>
+    </tr>
+    <tr>
+      <td>CCE-7158-9</td>
+      <td>Programs executed through the aliases file should reside a directory with an appropriate user owner</td>
+      <td>user</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.2.2 (4) f)</td>
+    </tr>
+    <tr>
+      <td>CCE-6489-9</td>
+      <td>Sendmail vrfy command should be allowed or not as appropriate</td>
+      <td>allow/disallow</td>
+      <td>via /etc/mail/sendmail.cf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.2.2 (4) g)</td>
+    </tr>
+    <tr>
+      <td>CCE-7317-1</td>
+      <td>Sendmail expn command should be allowed or not as appropriate</td>
+      <td>allow/disallow</td>
+      <td>via /etc/mail/sendmail.cf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.2.2 (4) h)</td>
+    </tr>
+    <tr>
+      <td>CCE-7096-1</td>
+      <td>Sendmail should be configured with an appropriate logging level</td>
+      <td>logging level</td>
+      <td>via /etc/mail/sendmail.cf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.2.2 (4) i)</td>
+    </tr>
+    <tr>
+      <td>CCE-6696-9</td>
+      <td>Sendmail help command should be allowed or not as appropriate</td>
+      <td>allow/disallow</td>
+      <td>via sendmail via /etc/mail/sendmail.cf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.2.2 (4) k)</td>
+    </tr>
+    <tr>
+      <td>CCE-7193-6</td>
+      <td>DEPRECTATED in favor of CCE-8421-0 and CCE-8330-3</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-8421-0</td>
+      <td>NIS clinent should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via RC scripts</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.2.3 (1)</td>
+    </tr>
+    <tr>
+      <td>CCE-8330-3</td>
+      <td>NIS server should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via RC scripts</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.2.3 (1)</td>
+    </tr>
+    <tr>
+      <td>CCE-7290-0</td>
+      <td>NIS+ server should operate at an appropriate security level</td>
+      <td>security level</td>
+      <td>via NIS+</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.2.3 (1) b)</td>
+    </tr>
+    <tr>
+      <td>CCE-7259-5</td>
+      <td>X-Windows should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via Xwindows</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.2.4 (1)</td>
+    </tr>
+    <tr>
+      <td>CCE-7038-3</td>
+      <td>Authorized X-clients should be listed or not in the X*.hosts file as appropriate</td>
+      <td>listed/not listed</td>
+      <td>via /etc/X*.hosts</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.2.4 (2) b)</td>
+    </tr>
+    <tr>
+      <td>CCE-7228-0</td>
+      <td>X-Windows should write .Xauthority files to users' home directories or not as appropriate</td>
+      <td>write/not write</td>
+      <td>via xdm via gdm via kdm</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.2.4 (2) d)</td>
+    </tr>
+    <tr>
+      <td>CCE-7197-7</td>
+      <td>X11 forwarding via SSH should be enabled or disabled as appropriate.</td>
+      <td>enabled/disabled</td>
+      <td>via sshd_config</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.2.4 (2) f)</td>
+    </tr>
+    <tr>
+      <td>CCE-7230-6</td>
+      <td>Samba should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via smbd via RC scripts</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.2.6 (1)</td>
+    </tr>
+    <tr>
+      <td>CCE-6557-3</td>
+      <td>Samba 'hosts allow' option should be configured with an appropriate set of networks</td>
+      <td>list of networks</td>
+      <td>via smbd via smb.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.2.6 (3) a)</td>
+    </tr>
+    <tr>
+      <td>CCE-6961-7</td>
+      <td>Samba 'security option' option should be set as appropriate</td>
+      <td>NaN</td>
+      <td>via smbd via smb.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.2.6 (3) b)</td>
+    </tr>
+    <tr>
+      <td>CCE-6341-2</td>
+      <td>Samba 'encrypt' passwords option should be set as appropriate</td>
+      <td>yes/no</td>
+      <td>via smbd via smb.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.2.6 (3) c)</td>
+    </tr>
+    <tr>
+      <td>CCE-7264-5</td>
+      <td>Samba 'smb passwd file' option should be set to an appropriate password file or no password file</td>
+      <td>file/nothing</td>
+      <td>via smbd via smb.conf</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.2.6 (3) d)</td>
+    </tr>
+    <tr>
+      <td>CCE-6783-5</td>
+      <td>IPv6 should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via ifconfig</td>
+      <td>NaN</td>
+      <td>10.8.10.5.4.3 (1)</td>
+    </tr>
+    <tr>
+      <td>CCE-6342-0</td>
+      <td>The "at" utility directory permissions should be set as appropriate</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #1</td>
+    </tr>
+    <tr>
+      <td>CCE-7251-2</td>
+      <td>at.allow file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #2</td>
+    </tr>
+    <tr>
+      <td>CCE-6367-7</td>
+      <td>at.deny file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #2</td>
+    </tr>
+    <tr>
+      <td>CCE-7215-7</td>
+      <td>Cron directory permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #5</td>
+    </tr>
+    <tr>
+      <td>CCE-7336-1</td>
+      <td>Crontab directory permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #5</td>
+    </tr>
+    <tr>
+      <td>CCE-6428-7</td>
+      <td>Cron log file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #6</td>
+    </tr>
+    <tr>
+      <td>CCE-7194-4</td>
+      <td>cron.allow file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #7</td>
+    </tr>
+    <tr>
+      <td>CCE-7181-1</td>
+      <td>cron.deny file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #7</td>
+    </tr>
+    <tr>
+      <td>CCE-7120-9</td>
+      <td>Crontab file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #8</td>
+    </tr>
+    <tr>
+      <td>CCE-7150-6</td>
+      <td>/dev/kmem file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #9</td>
+    </tr>
+    <tr>
+      <td>CCE-6378-4</td>
+      <td>/dev/mem file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #10</td>
+    </tr>
+    <tr>
+      <td>CCE-7029-2</td>
+      <td>/dev/null file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #11</td>
+    </tr>
+    <tr>
+      <td>CCE-7231-4</td>
+      <td>resolv.conf file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #13</td>
+    </tr>
+    <tr>
+      <td>CCE-7179-5</td>
+      <td>/etc/named.conf file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #14</td>
+    </tr>
+    <tr>
+      <td>CCE-6491-5</td>
+      <td>File permissions should be set appropriately for all user home directories.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #21</td>
+    </tr>
+    <tr>
+      <td>CCE-7337-9</td>
+      <td>/etc/exports file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #23</td>
+    </tr>
+    <tr>
+      <td>CCE-6668-8</td>
+      <td>/usr/bin/at file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #25</td>
+    </tr>
+    <tr>
+      <td>CCE-6936-9</td>
+      <td>/usr/bin/rdist file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #26</td>
+    </tr>
+    <tr>
+      <td>CCE-7174-6</td>
+      <td>/usr/sbin/sync file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #27</td>
+    </tr>
+    <tr>
+      <td>CCE-7063-1</td>
+      <td>Superuser account home directories' permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #29</td>
+    </tr>
+    <tr>
+      <td>CCE-7248-8</td>
+      <td>/etc/samba/smb.conf file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #31</td>
+    </tr>
+    <tr>
+      <td>CCE-7218-1</td>
+      <td>smbpassword executable permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #32</td>
+    </tr>
+    <tr>
+      <td>CCE-7376-7</td>
+      <td>Aliases file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #34</td>
+    </tr>
+    <tr>
+      <td>CCE-7217-3</td>
+      <td>File permissions should be set as appropriate for the log file configured to capture critical sendmail messages.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #35</td>
+    </tr>
+    <tr>
+      <td>CCE-7109-2</td>
+      <td>All files executed through /etc/aliases file entries should have file permissions set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #36</td>
+    </tr>
+    <tr>
+      <td>CCE-6933-6</td>
+      <td>/bin/csh file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #37</td>
+    </tr>
+    <tr>
+      <td>CCE-7136-5</td>
+      <td>/bin/jsh file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #38</td>
+    </tr>
+    <tr>
+      <td>CCE-7171-2</td>
+      <td>/bin/ksh file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #39</td>
+    </tr>
+    <tr>
+      <td>CCE-7250-4</td>
+      <td>The /bin/rsh file should exist or not as appropriate</td>
+      <td>exist/not exist</td>
+      <td>via filesystem</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #40</td>
+    </tr>
+    <tr>
+      <td>CCE-7267-8</td>
+      <td>/bin/sh file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #41</td>
+    </tr>
+    <tr>
+      <td>CCE-7003-7</td>
+      <td>/bin/bash file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #42</td>
+    </tr>
+    <tr>
+      <td>CCE-7329-6</td>
+      <td>/sbin/csh file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #43</td>
+    </tr>
+    <tr>
+      <td>CCE-6721-5</td>
+      <td>/sbin/jsh file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #44</td>
+    </tr>
+    <tr>
+      <td>CCE-6672-0</td>
+      <td>/sbin/ksh file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #45</td>
+    </tr>
+    <tr>
+      <td>CCE-7309-8</td>
+      <td>The /sbin/rsh file should exist or not as appropriate</td>
+      <td>exist/not exist</td>
+      <td>via filesystem</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #46</td>
+    </tr>
+    <tr>
+      <td>CCE-7278-5</td>
+      <td>/sbin/sh file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #47</td>
+    </tr>
+    <tr>
+      <td>CCE-7353-6</td>
+      <td>/sbin/bash file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #48</td>
+    </tr>
+    <tr>
+      <td>CCE-7269-4</td>
+      <td>/usr/bin/csh file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #49</td>
+    </tr>
+    <tr>
+      <td>CCE-6490-7</td>
+      <td>/usr/bin/jsh file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #50</td>
+    </tr>
+    <tr>
+      <td>CCE-7286-8</td>
+      <td>/usr/bin/ksh file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #51</td>
+    </tr>
+    <tr>
+      <td>CCE-7348-6</td>
+      <td>The /usr/bin/rsh file should exist or not as appropriate</td>
+      <td>exist/not exist</td>
+      <td>via filesystem</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #52</td>
+    </tr>
+    <tr>
+      <td>CCE-7176-1</td>
+      <td>/usr/bin/sh file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #53</td>
+    </tr>
+    <tr>
+      <td>CCE-6379-2</td>
+      <td>/usr/bin/bash file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #54</td>
+    </tr>
+    <tr>
+      <td>CCE-7292-6</td>
+      <td>snmpd.conf file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #56</td>
+    </tr>
+    <tr>
+      <td>CCE-7243-9</td>
+      <td>/tmp file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #57</td>
+    </tr>
+    <tr>
+      <td>CCE-7355-1</td>
+      <td>/usr/tmp file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #58</td>
+    </tr>
+    <tr>
+      <td>CCE-7095-3</td>
+      <td>traceroute executable file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #59</td>
+    </tr>
+    <tr>
+      <td>CCE-7113-4</td>
+      <td>.Xauthority file permissions should be set appropriately for all users.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #60</td>
+    </tr>
+    <tr>
+      <td>CCE-6439-4</td>
+      <td>/etc/aliases file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #61</td>
+    </tr>
+    <tr>
+      <td>CCE-7144-9</td>
+      <td>/etc/cron.d/at.allow file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #62</td>
+    </tr>
+    <tr>
+      <td>CCE-6927-8</td>
+      <td>/etc/cron.d/cron.allow file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #63</td>
+    </tr>
+    <tr>
+      <td>CCE-6645-6</td>
+      <td>/etc/csh file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #64</td>
+    </tr>
+    <tr>
+      <td>CCE-6768-6</td>
+      <td>/etc/default/* file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #65</td>
+    </tr>
+    <tr>
+      <td>CCE-6861-9</td>
+      <td>/etc/default/login file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #66</td>
+    </tr>
+    <tr>
+      <td>CCE-6835-3</td>
+      <td>/etc/dfs file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #67</td>
+    </tr>
+    <tr>
+      <td>CCE-7293-4</td>
+      <td>/etc/fs file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #68</td>
+    </tr>
+    <tr>
+      <td>CCE-6624-1</td>
+      <td>The /etc/ftpusers file should exist or not as appropriate</td>
+      <td>exist/not exist</td>
+      <td>via filesystem</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #69</td>
+    </tr>
+    <tr>
+      <td>CCE-6950-0</td>
+      <td>/etc/host.lpd file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #70</td>
+    </tr>
+    <tr>
+      <td>CCE-6610-0</td>
+      <td>/etc/hostname* file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #71</td>
+    </tr>
+    <tr>
+      <td>CCE-7187-8</td>
+      <td>/etc/hosts file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #72</td>
+    </tr>
+    <tr>
+      <td>CCE-6953-4</td>
+      <td>/etc/inetd.conf file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #73</td>
+    </tr>
+    <tr>
+      <td>CCE-6390-9</td>
+      <td>/etc/issue file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #75</td>
+    </tr>
+    <tr>
+      <td>CCE-7008-6</td>
+      <td>/etc/jsh file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #76</td>
+    </tr>
+    <tr>
+      <td>CCE-7184-5</td>
+      <td>/etc/ksh file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #77</td>
+    </tr>
+    <tr>
+      <td>CCE-6392-5</td>
+      <td>/etc/mail/aliases file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #78</td>
+    </tr>
+    <tr>
+      <td>CCE-6615-9</td>
+      <td>/etc/motd file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #79</td>
+    </tr>
+    <tr>
+      <td>CCE-7087-0</td>
+      <td>/etc/netconfig file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #80</td>
+    </tr>
+    <tr>
+      <td>CCE-6805-6</td>
+      <td>/etc/notrouter file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #81</td>
+    </tr>
+    <tr>
+      <td>CCE-7069-8</td>
+      <td>/etc/pam.conf file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #82</td>
+    </tr>
+    <tr>
+      <td>CCE-6399-0</td>
+      <td>/etc/passwd file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #83</td>
+    </tr>
+    <tr>
+      <td>CCE-7289-2</td>
+      <td>The /etc/rsh file should exist or not as appropriate</td>
+      <td>exist/not exist</td>
+      <td>via filesystem</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #84</td>
+    </tr>
+    <tr>
+      <td>CCE-6778-5</td>
+      <td>/etc/security file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #85</td>
+    </tr>
+    <tr>
+      <td>CCE-6394-1</td>
+      <td>/etc/services file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #86</td>
+    </tr>
+    <tr>
+      <td>CCE-7022-7</td>
+      <td>/etc/sh file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #87</td>
+    </tr>
+    <tr>
+      <td>CCE-6991-4</td>
+      <td>/etc/shadow file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #88</td>
+    </tr>
+    <tr>
+      <td>CCE-6733-0</td>
+      <td>/etc/syslog.conf file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #89</td>
+    </tr>
+    <tr>
+      <td>CCE-6562-3</td>
+      <td>/etc/ufs file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #90</td>
+    </tr>
+    <tr>
+      <td>CCE-7011-0</td>
+      <td>/etc/vfstab file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #91</td>
+    </tr>
+    <tr>
+      <td>CCE-6400-6</td>
+      <td>/etc/vold.conf file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #92</td>
+    </tr>
+    <tr>
+      <td>CCE-7272-8</td>
+      <td>/var/adm/loginlog file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #93</td>
+    </tr>
+    <tr>
+      <td>CCE-7347-8</td>
+      <td>/var/adm/messages file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #94</td>
+    </tr>
+    <tr>
+      <td>CCE-6990-6</td>
+      <td>/var/adm/sulog file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #95</td>
+    </tr>
+    <tr>
+      <td>CCE-7210-8</td>
+      <td>/var/adm/utmp file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #96</td>
+    </tr>
+    <tr>
+      <td>CCE-7240-5</td>
+      <td>/var/adm/wtmp file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #97</td>
+    </tr>
+    <tr>
+      <td>CCE-6928-6</td>
+      <td>/var/adm/authlog file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #98</td>
+    </tr>
+    <tr>
+      <td>CCE-7020-1</td>
+      <td>/var/adm/syslog file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #99</td>
+    </tr>
+    <tr>
+      <td>CCE-7159-7</td>
+      <td>/var/mail file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #100</td>
+    </tr>
+    <tr>
+      <td>CCE-7397-3</td>
+      <td>/var/tmp file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #101</td>
+    </tr>
+    <tr>
+      <td>CCE-7273-6</td>
+      <td>/usr/lib/pt_chmod file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #103</td>
+    </tr>
+    <tr>
+      <td>CCE-7366-8</td>
+      <td>/usr/lib/embedded_us file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #104</td>
+    </tr>
+    <tr>
+      <td>CCE-7340-3</td>
+      <td>/usr/lib/sendmail file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #105</td>
+    </tr>
+    <tr>
+      <td>CCE-7101-9</td>
+      <td>/usr/kerberos/bin/rsh file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #107</td>
+    </tr>
+    <tr>
+      <td>CCE-7207-4</td>
+      <td>/var/spool/mail file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #108</td>
+    </tr>
+    <tr>
+      <td>CCE-7326-2</td>
+      <td>smbpassword file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #109</td>
+    </tr>
+    <tr>
+      <td>CCE-6405-5</td>
+      <td>At directory should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #1</td>
+    </tr>
+    <tr>
+      <td>CCE-7393-2</td>
+      <td>At directory should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #1</td>
+    </tr>
+    <tr>
+      <td>CCE-7203-3</td>
+      <td>at.allow file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #2</td>
+    </tr>
+    <tr>
+      <td>CCE-6767-8</td>
+      <td>at.allow file should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #2</td>
+    </tr>
+    <tr>
+      <td>CCE-6860-1</td>
+      <td>at.deny file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #2</td>
+    </tr>
+    <tr>
+      <td>CCE-6452-7</td>
+      <td>at.deny file should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #2</td>
+    </tr>
+    <tr>
+      <td>CCE-7378-3</td>
+      <td>Cron directories should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #4</td>
+    </tr>
+    <tr>
+      <td>CCE-7161-3</td>
+      <td>Cron directories should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #4</td>
+    </tr>
+    <tr>
+      <td>CCE-7236-3</td>
+      <td>Crontab directories should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #4</td>
+    </tr>
+    <tr>
+      <td>CCE-7351-0</td>
+      <td>Crontab directories should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #4</td>
+    </tr>
+    <tr>
+      <td>CCE-6601-9</td>
+      <td>cron.allow file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #5</td>
+    </tr>
+    <tr>
+      <td>CCE-6580-5</td>
+      <td>cron.allow file should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #5</td>
+    </tr>
+    <tr>
+      <td>CCE-7225-6</td>
+      <td>cron.deny should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #5</td>
+    </tr>
+    <tr>
+      <td>CCE-7305-6</td>
+      <td>cron.deny data should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #5</td>
+    </tr>
+    <tr>
+      <td>CCE-7283-5</td>
+      <td>crontab files should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #6</td>
+    </tr>
+    <tr>
+      <td>CCE-6670-4</td>
+      <td>crontab files should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #6</td>
+    </tr>
+    <tr>
+      <td>CCE-7115-9</td>
+      <td>/etc/resolv.conf file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #7</td>
+    </tr>
+    <tr>
+      <td>CCE-7400-5</td>
+      <td>/etc/resolv.conf file should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #7</td>
+    </tr>
+    <tr>
+      <td>CCE-7242-1</td>
+      <td>/etc/named.boot file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #7</td>
+    </tr>
+    <tr>
+      <td>CCE-7304-9</td>
+      <td>/etc/named.boot file should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #7</td>
+    </tr>
+    <tr>
+      <td>CCE-7092-0</td>
+      <td>/etc/named.conf file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #7</td>
+    </tr>
+    <tr>
+      <td>CCE-7308-0</td>
+      <td>/etc/named.conf file should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #7</td>
+    </tr>
+    <tr>
+      <td>CCE-7306-4</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7398-1</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-6459-2</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7035-9</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7110-0</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7440-1</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7453-4</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7052-4</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7457-5</td>
+      <td>Each user home directory should be owned by an appropriate user.</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #11</td>
+    </tr>
+    <tr>
+      <td>CCE-7268-6</td>
+      <td>Each user home directory should be owned by an appropriate group.</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #11</td>
+    </tr>
+    <tr>
+      <td>CCE-7237-1</td>
+      <td>inetd.conf file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #12</td>
+    </tr>
+    <tr>
+      <td>CCE-7147-2</td>
+      <td>inetd.conf file should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #12</td>
+    </tr>
+    <tr>
+      <td>CCE-7363-5</td>
+      <td>/etc/exports should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #13</td>
+    </tr>
+    <tr>
+      <td>CCE-6737-1</td>
+      <td>/etc/exports should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #13</td>
+    </tr>
+    <tr>
+      <td>CCE-7459-1</td>
+      <td>Exported files and directories should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #14</td>
+    </tr>
+    <tr>
+      <td>CCE-8359-2</td>
+      <td>Exported files and directories should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #14</td>
+    </tr>
+    <tr>
+      <td>CCE-7434-4</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7276-9</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7064-9</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7407-0</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7359-3</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7280-1</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-6469-1</td>
+      <td>/etc/services file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #16</td>
+    </tr>
+    <tr>
+      <td>CCE-6474-1</td>
+      <td>/etc/services file should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #16</td>
+    </tr>
+    <tr>
+      <td>CCE-6729-8</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7430-2</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7358-5</td>
+      <td>/etc/notrouter file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #18</td>
+    </tr>
+    <tr>
+      <td>CCE-7438-5</td>
+      <td>/etc/notrouter file should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #18</td>
+    </tr>
+    <tr>
+      <td>CCE-7262-9</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-6479-0</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7125-8</td>
+      <td>/etc/samba/smb.conf file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #21</td>
+    </tr>
+    <tr>
+      <td>CCE-7282-7</td>
+      <td>/etc/samba/smb.conf file should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #21</td>
+    </tr>
+    <tr>
+      <td>CCE-7471-6</td>
+      <td>smbpasswd executable should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #22</td>
+    </tr>
+    <tr>
+      <td>CCE-7441-9</td>
+      <td>smbpasswd executable should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #22</td>
+    </tr>
+    <tr>
+      <td>CCE-6850-2</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-6480-8</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7071-4</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7296-7</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-6886-6</td>
+      <td>Programs executed through aliases file entries should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #26</td>
+    </tr>
+    <tr>
+      <td>CCE-7401-3</td>
+      <td>Programs executed through aliases file entries should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #26</td>
+    </tr>
+    <tr>
+      <td>CCE-7368-4</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7352-8</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7056-5</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7460-9</td>
+      <td>snmpd.conf file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #29</td>
+    </tr>
+    <tr>
+      <td>CCE-6481-6</td>
+      <td>snmpd.conf file should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #29</td>
+    </tr>
+    <tr>
+      <td>CCE-7241-3</td>
+      <td>/etc/syslog.conf file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #30</td>
+    </tr>
+    <tr>
+      <td>CCE-7404-7</td>
+      <td>/etc/syslog.conf file should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #30</td>
+    </tr>
+    <tr>
+      <td>CCE-6495-6</td>
+      <td>traceroute executable should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #31</td>
+    </tr>
+    <tr>
+      <td>CCE-6633-2</td>
+      <td>traceroute executable should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #31</td>
+    </tr>
+    <tr>
+      <td>CCE-7461-7</td>
+      <td>/usr/lib/sendmail file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #32</td>
+    </tr>
+    <tr>
+      <td>CCE-7078-9</td>
+      <td>/usr/lib/sendmail file should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #32</td>
+    </tr>
+    <tr>
+      <td>CCE-7300-7</td>
+      <td>/etc/passwd file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #35</td>
+    </tr>
+    <tr>
+      <td>CCE-7270-2</td>
+      <td>/etc/passwd file should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #35</td>
+    </tr>
+    <tr>
+      <td>CCE-7076-3</td>
+      <td>/etc/shadow file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #36</td>
+    </tr>
+    <tr>
+      <td>CCE-6904-7</td>
+      <td>/etc/shadow file should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #36</td>
+    </tr>
+    <tr>
+      <td>CCE-6983-1</td>
+      <td>smbpasswd file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #37</td>
+    </tr>
+    <tr>
+      <td>CCE-7247-0</td>
+      <td>smbpasswd file should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 2) #37</td>
+    </tr>
+    <tr>
+      <td>CCE-7238-9</td>
+      <td>Environmental variable PATH for superuser accounts should or should not contain world-writable files as appropriate</td>
+      <td>should/should not</td>
+      <td>via chmod via profile</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.2 1) #1</td>
+    </tr>
+    <tr>
+      <td>CCE-7375-9</td>
+      <td>Environmental variable PATH for superuser accounts should not contain the current directory as the first or last entry</td>
+      <td>should/should not</td>
+      <td>via local init files</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.2 1) #2</td>
+    </tr>
+    <tr>
+      <td>CCE-7458-3</td>
+      <td>The current wokring directory should or should not be added to the environmental variable PATH by global initialization files as appropriate</td>
+      <td>should/should not</td>
+      <td>via local init files</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.2 1) #3</td>
+    </tr>
+    <tr>
+      <td>CCE-7155-5</td>
+      <td>The current working directory should or should not be added to the environmental variable PATH by local initialization files as appropriate</td>
+      <td>should/should not</td>
+      <td>via local init files</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.2 1) #4</td>
+    </tr>
+    <tr>
+      <td>CCE-7481-5</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7331-2</td>
+      <td>The current directory should or should not be added to the environmental variable PATH by run control scripts as appropriate</td>
+      <td>should/should not</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.2 1) #7</td>
+    </tr>
+    <tr>
+      <td>CCE-7361-9</td>
+      <td>The system umask should be set appropriately</td>
+      <td>umask</td>
+      <td>via global init files</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.2 1) #8</td>
+    </tr>
+    <tr>
+      <td>CCE-6921-1</td>
+      <td>The user umask should be set appropriately</td>
+      <td>umask</td>
+      <td>via local init files</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.2 1) #8</td>
+    </tr>
+    <tr>
+      <td>CCE-6503-7</td>
+      <td>DEPRECATED in favor of CCE-7736-2.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7060-7</td>
+      <td>DEPRECATED in favor of CCE-8221-4.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7497-1</td>
+      <td>DEPRECATED in favor of CCE-7736-2.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-6787-6</td>
+      <td>DEPRECATED in favor of CCE-8221-4.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7736-2</td>
+      <td>The cron.allow file should be configured with the set of users permitted to use the cron facility as appropriate.</td>
+      <td>list of users</td>
+      <td>via Text editor</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-8221-4</td>
+      <td>The cron.deny file should be configured with the set of users not permitted to use the cron facility as appropriate.</td>
+      <td>list of users</td>
+      <td>via Text editor</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-6998-9</td>
+      <td>Cron logging should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.3 4)</td>
+    </tr>
+    <tr>
+      <td>CCE-7206-6</td>
+      <td>DEPRECATED in favor of CCE-8171-1.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7345-2</td>
+      <td>DEPRECATED in favor of CCE-7839-4.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-8171-1</td>
+      <td>The at.allow file should be configured with the set of users permitted to use the at facility as appropriate.</td>
+      <td>list of users</td>
+      <td>via Text editor</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7839-4</td>
+      <td>The at.deny file should be configured with the set of users not permitted to use the at facility as appropriate.</td>
+      <td>list of users</td>
+      <td>via Text editor</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-6697-7</td>
+      <td>/etc/init.d file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-1 A.1 1) #74</td>
+    </tr>
+    <tr>
+      <td>CCE-7010-2</td>
+      <td>/usr/aset/userlist file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.1 1) #1</td>
+    </tr>
+    <tr>
+      <td>CCE-7424-5</td>
+      <td>/etc/rmmount.conf file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.1 1) #3</td>
+    </tr>
+    <tr>
+      <td>CCE-6511-0</td>
+      <td>/var/log/pamlog file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.1 1) #4</td>
+    </tr>
+    <tr>
+      <td>CCE-6517-7</td>
+      <td>/etc/security/audit_control file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.1 1) #5</td>
+    </tr>
+    <tr>
+      <td>CCE-6549-0</td>
+      <td>/etc/security/audit_class file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.1 1) #6</td>
+    </tr>
+    <tr>
+      <td>CCE-6550-8</td>
+      <td>/etc/security/audit_event file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.1 1) #7</td>
+    </tr>
+    <tr>
+      <td>CCE-6880-9</td>
+      <td>/usr/aset/userlist file permissions should be set appropriately</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.1 1) #8</td>
+    </tr>
+    <tr>
+      <td>CCE-7470-8</td>
+      <td>DEPRECATED in favor of CE-8488-9, CCE-8494-7 and CCE-8314-7.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-8488-9</td>
+      <td>/etc/auto.master file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-3 C.1 1) #9</td>
+    </tr>
+    <tr>
+      <td>CCE-8494-7</td>
+      <td>/etc/auto.misc file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-3 C.1 1) #9</td>
+    </tr>
+    <tr>
+      <td>CCE-8314-7</td>
+      <td>/etc/auto.net file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-3 C.1 1) #9</td>
+    </tr>
+    <tr>
+      <td>CCE-7380-9</td>
+      <td>/etc/rmmount.conf file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.1 1) #3</td>
+    </tr>
+    <tr>
+      <td>CCE-6582-1</td>
+      <td>/var/log/pamlog file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.1 1) #4</td>
+    </tr>
+    <tr>
+      <td>CCE-7406-2</td>
+      <td>/etc/security/audit_control file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.1 1) #5</td>
+    </tr>
+    <tr>
+      <td>CCE-7190-2</td>
+      <td>/etc/security/audit_class file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.1 1) #6</td>
+    </tr>
+    <tr>
+      <td>CCE-7265-2</td>
+      <td>/etc/security/audit_event file should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.1 1) #7</td>
+    </tr>
+    <tr>
+      <td>CCE-6563-1</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-6565-6</td>
+      <td>/usr/aset/userlist file should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.1 1) #1</td>
+    </tr>
+    <tr>
+      <td>CCE-7223-1</td>
+      <td>/etc/rmmount.conf file should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.1 1) #3</td>
+    </tr>
+    <tr>
+      <td>CCE-7394-0</td>
+      <td>/var/log/pamlog file should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.1 1) #4</td>
+    </tr>
+    <tr>
+      <td>CCE-7222-3</td>
+      <td>/etc/security/audit_control file should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.1 1) #5</td>
+    </tr>
+    <tr>
+      <td>CCE-7553-1</td>
+      <td>/etc/security/audit_class file should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.1 1) #6</td>
+    </tr>
+    <tr>
+      <td>CCE-7444-3</td>
+      <td>/etc/security/audit_event file should be owned by an appropriate group</td>
+      <td>list of groups</td>
+      <td>via chgrp via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.1 1) #7</td>
+    </tr>
+    <tr>
+      <td>CCE-6568-0</td>
+      <td>DEPRECATED in favor of CCE-8665-2, CCE-7766-9, CCE-8264-4.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-8665-2</td>
+      <td>/etc/auto.master file should be owned by an appropriate group</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-3 C.1 1) #9</td>
+    </tr>
+    <tr>
+      <td>CCE-7766-9</td>
+      <td>/etc/auto.misc file should be owned by an appropriate group</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-3 C.1 1) #9</td>
+    </tr>
+    <tr>
+      <td>CCE-8264-4</td>
+      <td>/etc/auto.net file should be owned by an appropriate group</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-3 C.1 1) #9</td>
+    </tr>
+    <tr>
+      <td>CCE-6575-5</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7025-0</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7126-6</td>
+      <td>Generic PAM authentication should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via PAM</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.2.1 1)</td>
+    </tr>
+    <tr>
+      <td>CCE-7491-4</td>
+      <td>rsh auth should be allowed or disallowed by PAM as appropriate</td>
+      <td>allowed/not allowed</td>
+      <td>via /etc/pam.conf</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.2.1 2) a)</td>
+    </tr>
+    <tr>
+      <td>CCE-7482-3</td>
+      <td>rlogin auth should be allowed by pam.d or not as appropriate</td>
+      <td>allowed/not allowed</td>
+      <td>via /etc/pam.d</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.2.1 2) b)</td>
+    </tr>
+    <tr>
+      <td>CCE-7244-7</td>
+      <td>PAM access to /dev/console should be logged at an appropriate level or not logged as appropriate</td>
+      <td>logging level</td>
+      <td>via /etc/syslog.conf</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.2.1 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-7323-9</td>
+      <td>PAM should be logged at an appropriate level</td>
+      <td>logging level</td>
+      <td>via /etc/syslog.conf</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.2.1 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-7420-3</td>
+      <td>/usr/aset/masters/uid_aliases should contain an appropriate listing of aliases</td>
+      <td>list of aliases</td>
+      <td>via /usr/aset/masters/uid_aliases</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.2.2 1)</td>
+    </tr>
+    <tr>
+      <td>CCE-7341-1</td>
+      <td>The Solaris Automated Security Enhancement Tool (ASET) tune.low file should exist or not as appropriate</td>
+      <td>exist/not exist</td>
+      <td>via filesystem</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.2.2 2)</td>
+    </tr>
+    <tr>
+      <td>CCE-7169-6</td>
+      <td>The Solaris Automated Security Enhancement Tool (ASET) tune.med file should exist or not as appropriate</td>
+      <td>exist/not exist</td>
+      <td>via filesystem</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.2.2 2)</td>
+    </tr>
+    <tr>
+      <td>CCE-6935-1</td>
+      <td>The Solaris Automated Security Enhancement Tool (ASET) tune.high file should exist or not as appropriate</td>
+      <td>exist/not exist</td>
+      <td>via filesystem</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.2.2 2)</td>
+    </tr>
+    <tr>
+      <td>CCE-7548-1</td>
+      <td>The uid_aliases file should exist or not as appropriate</td>
+      <td>exist/not exist</td>
+      <td>via filesystem</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.2.2 2)</td>
+    </tr>
+    <tr>
+      <td>CCE-7486-4</td>
+      <td>The low security directory list should be set appropriately</td>
+      <td>directory list</td>
+      <td>via asetenv</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.2.2 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-6891-6</td>
+      <td>The medium security directory list should be set appropriately</td>
+      <td>directory list</td>
+      <td>via asetenv</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.2.2 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-7468-2</td>
+      <td>The high security directory list should be set appropriately</td>
+      <td>directory list</td>
+      <td>via asetenv</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.2.2 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-7310-6</td>
+      <td>The ASET periodic schedule setting should be set appropriately</td>
+      <td>schedule stanza</td>
+      <td>via asetenv</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.2.2 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-7344-5</td>
+      <td>The UID aliases pointer should be set appropriately</td>
+      <td>file</td>
+      <td>via asetenv</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.2.2 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-7547-3</td>
+      <td>Users should be listed in the ASET userlist file or not as appropriate</td>
+      <td>list of users</td>
+      <td>via /usr/aset/userlist</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.2.2 4)</td>
+    </tr>
+    <tr>
+      <td>CCE-7563-0</td>
+      <td>ASET should check NIS+ tables or not as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via asetenv</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.2.2 5)</td>
+    </tr>
+    <tr>
+      <td>CCE-7514-3</td>
+      <td>EEPROM security mode should be set appropriately</td>
+      <td>security mode</td>
+      <td>via EEPROM</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.3 2)</td>
+    </tr>
+    <tr>
+      <td>CCE-7127-4</td>
+      <td>EEPROM warning banner should be set appropriately</td>
+      <td>banner text</td>
+      <td>via EEPROM</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.3 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-7016-9</td>
+      <td>The noexec_user_stack flag should be set on the  user stack or not as appropriate</td>
+      <td>set/not set</td>
+      <td>via /etc/system</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.4 1)</td>
+    </tr>
+    <tr>
+      <td>CCE-6579-7</td>
+      <td>Attempted stack eploit logging should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/system</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.4 1)</td>
+    </tr>
+    <tr>
+      <td>CCE-7141-5</td>
+      <td>The default login console should be set appropriately</td>
+      <td>path to console</td>
+      <td>via /etc/default/login</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.4 2)</td>
+    </tr>
+    <tr>
+      <td>CCE-6581-3</td>
+      <td>Default sleeptime should be set appropriately</td>
+      <td>number of minutes</td>
+      <td>via /etc/default/login</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.4 2)</td>
+    </tr>
+    <tr>
+      <td>CCE-7188-6</td>
+      <td>Default number of allowed retries should be set appropriately</td>
+      <td>number of retries</td>
+      <td>via /etc/default/login</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.4 2)</td>
+    </tr>
+    <tr>
+      <td>CCE-7315-5</td>
+      <td>The default number of syslog failed logins retried should be set appropriately</td>
+      <td>number of retries</td>
+      <td>via /etc/default/login</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.4 2)</td>
+    </tr>
+    <tr>
+      <td>CCE-7302-3</td>
+      <td>Default su console should be set appropriately</td>
+      <td>path to console</td>
+      <td>via /etc/default/su</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.4 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-7542-4</td>
+      <td>auditing should be logged to an appropriate directory</td>
+      <td>path to log</td>
+      <td>via "dir" flag in /etc/security/audit_control</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 1) a)</td>
+    </tr>
+    <tr>
+      <td>CCE-7009-4</td>
+      <td>login and logout events (lo class) should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via "lo" flag in /etc/security/audit_control</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 1) b)</td>
+    </tr>
+    <tr>
+      <td>CCE-7445-0</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-6977-3</td>
+      <td>Non attributable events (na class) should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via "na" flag in /etc/security/audit_control</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 1) c)</td>
+    </tr>
+    <tr>
+      <td>CCE-7577-0</td>
+      <td>The free space threshold to warn at should be set appropriately</td>
+      <td>percentage of filesystem</td>
+      <td>via "minfree" flag in /etc/security/audit_control</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 1) d)</td>
+    </tr>
+    <tr>
+      <td>CCE-6600-1</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7437-7</td>
+      <td>DEPRECATED in favor of CCE-7009-4.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7388-2</td>
+      <td>DEPRECATED in favor of CCE-7009-4.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7586-1</td>
+      <td>Password changes should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via  /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #3</td>
+    </tr>
+    <tr>
+      <td>CCE-6899-9</td>
+      <td>su usage should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #4</td>
+    </tr>
+    <tr>
+      <td>CCE-6868-4</td>
+      <td>Creation/modification of superuser groups should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #5</td>
+    </tr>
+    <tr>
+      <td>CCE-7483-1</td>
+      <td>Clearing of the audit log file should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #8</td>
+    </tr>
+    <tr>
+      <td>CCE-7580-4</td>
+      <td>Use of identification/authorization mechanisms should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #10</td>
+    </tr>
+    <tr>
+      <td>CCE-6606-8</td>
+      <td>chmod command should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via  /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #13</td>
+    </tr>
+    <tr>
+      <td>CCE-6929-4</td>
+      <td>The user audit file should contain an appropriate set of never-audit flags</td>
+      <td>set of allowed flags</td>
+      <td>via /etc/security/audit_user</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 5)</td>
+    </tr>
+    <tr>
+      <td>CCE-6793-4</td>
+      <td>The /var/log/authlog log should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/syslog.conf</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 6)</td>
+    </tr>
+    <tr>
+      <td>CCE-7559-8</td>
+      <td>The /var/log/syslog log should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/syslog.conf</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 6)</td>
+    </tr>
+    <tr>
+      <td>CCE-7510-1</td>
+      <td>The /var/adm/messages log should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/syslog.conf</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 6)</td>
+    </tr>
+    <tr>
+      <td>CCE-7399-9</td>
+      <td>The /var/adm/sulog log should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/syslog.conf</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 6)</td>
+    </tr>
+    <tr>
+      <td>CCE-7501-0</td>
+      <td>The /var/adm/utmp[x] log should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/syslog.conf</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 6)</td>
+    </tr>
+    <tr>
+      <td>CCE-6609-2</td>
+      <td>The /var/adm/wtmp[x] log should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/syslog.conf</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 6)</td>
+    </tr>
+    <tr>
+      <td>CCE-6619-1</td>
+      <td>The /var/adm/sshlog log should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/syslog.conf</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 6)</td>
+    </tr>
+    <tr>
+      <td>CCE-6730-6</td>
+      <td>The /var/log/pamlog log should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/syslog.conf</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 6)</td>
+    </tr>
+    <tr>
+      <td>CCE-6910-4</td>
+      <td>DEPRECATED in favor of CCE-7009-4.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7254-6</td>
+      <td>su usage should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/syslog.conf</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 8)</td>
+    </tr>
+    <tr>
+      <td>CCE-6690-2</td>
+      <td>auth usage should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/syslog.conf</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 9)</td>
+    </tr>
+    <tr>
+      <td>CCE-7474-0</td>
+      <td>/var directory should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 11)</td>
+    </tr>
+    <tr>
+      <td>CCE-7320-5</td>
+      <td>/var/log directory should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 11)</td>
+    </tr>
+    <tr>
+      <td>CCE-7584-6</td>
+      <td>/var/adm directory should be owned by an appropriate user</td>
+      <td>list of users</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 11)</td>
+    </tr>
+    <tr>
+      <td>CCE-7412-0</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7492-2</td>
+      <td>BSM auditing should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/security/bsmconv</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5.2 2)</td>
+    </tr>
+    <tr>
+      <td>CCE-7515-0</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7216-5</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7436-9</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7312-2</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7533-3</td>
+      <td>The TCP max connection limit should be set appropriately</td>
+      <td>max number of connections</td>
+      <td>via the tcp_conn_req_max value set with the ndd utility</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-6620-9</td>
+      <td>The TCP abort interval should be set appropriately</td>
+      <td>limit</td>
+      <td>via the tcp_ip_abort_interval value set with the ndd utility</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-7503-6</td>
+      <td>Forwarding of directed broadcasts should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via the ip_forward_directed_broadcasts value set with the ndd utility</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-6640-7</td>
+      <td>Response to echo (ping) request broadcasts should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via the ip_respond_to_echo_broadcast value set with the ndd utility</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-7130-8</td>
+      <td>Response to ICMP timestamp requests should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via the ip_respond_to_timestamp value set with the ndd utility</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-7496-3</td>
+      <td>Response to ICMP timestamp broadcast requests should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via the ip_respond_to_timestamp_broadcast value set with the ndd utility</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-6741-3</td>
+      <td>Response to mask addresses should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via the ip_respond_to_address_mask_broadcast value set with the ndd utility</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-7335-3</td>
+      <td>ARP cleanup interval should be set appropriately</td>
+      <td>interval</td>
+      <td>via the arp_cleanup_interval value value set with the ndd</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-7432-8</td>
+      <td>ARP IRE interval should be set appropriately</td>
+      <td>interval</td>
+      <td>via the ip_ire_arp_interval value set with the ndd utility</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-7449-2</td>
+      <td>IP redirects should be followed or ignored as appropriate</td>
+      <td>follow/ignore</td>
+      <td>via the ip_ignore_redirect and ip6_ignore_redirect values set with the ndd utility</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-7414-6</td>
+      <td>Sending of IP redirects should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via the ip_send_redirects value set with the ndd utility</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-6641-5</td>
+      <td>Forwarding of source routed packets should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via the ip_forward_src_routed set with the ndd utility</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-6646-4</td>
+      <td>IP forwarding should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via the ip_forwarding value set with the ndd utility</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-6865-0</td>
+      <td>Strict destination multihoming should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via the ip_strict_dst_multihoming value set with the ndd utility</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-7626-5</td>
+      <td>Forwarding of source routed IPv6 packets should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via the ip6_forward_src_routed value set with the ndd utility</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-7107-6</td>
+      <td>IPv6 forwarding should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via the ip6_forwarding value set with the ndd utility</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-7488-0</td>
+      <td>TCP reverse source routes should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via the tcp_rev_src_routes value set with the ndd utility</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6 3)</td>
+    </tr>
+    <tr>
+      <td>CCE-6656-3</td>
+      <td>Routing should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/notrouter</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6 4)</td>
+    </tr>
+    <tr>
+      <td>CCE-7653-9</td>
+      <td>Caching of the RBAC prof_attr should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/nscd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6 6)</td>
+    </tr>
+    <tr>
+      <td>CCE-7057-3</td>
+      <td>Multicast route assignment should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/init.d/inetsvc</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6 7)</td>
+    </tr>
+    <tr>
+      <td>CCE-7405-4</td>
+      <td>Print services through inetd should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/inetd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6.1 1)</td>
+    </tr>
+    <tr>
+      <td>CCE-7000-3</td>
+      <td>NFS server logging should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/dfs/dfstab</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6.3 1)</td>
+    </tr>
+    <tr>
+      <td>CCE-6876-7</td>
+      <td>Global initialization files should allow or deny write access to the terminal as appropriate</td>
+      <td>allow/deny</td>
+      <td>via global init files</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.8 1) #1</td>
+    </tr>
+    <tr>
+      <td>CCE-7343-7</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7607-5</td>
+      <td>DEPRECATED.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-7581-2</td>
+      <td>Caching of the RBAC exec_attr should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/nscd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6 6)</td>
+    </tr>
+    <tr>
+      <td>CCE-6673-8</td>
+      <td>Caching of the RBAC user_attr should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/nscd.conf</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.6 6)</td>
+    </tr>
+    <tr>
+      <td>CCE-8236-2</td>
+      <td>The chmod system call should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #13</td>
+    </tr>
+    <tr>
+      <td>CCE-6659-7</td>
+      <td>The chown system call should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #13</td>
+    </tr>
+    <tr>
+      <td>CCE-6661-3</td>
+      <td>The fchmod system call should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #13</td>
+    </tr>
+    <tr>
+      <td>CCE-7590-3</td>
+      <td>The fchown system call should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #13</td>
+    </tr>
+    <tr>
+      <td>CCE-6665-4</td>
+      <td>The lchown system call should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #13</td>
+    </tr>
+    <tr>
+      <td>CCE-7493-0</td>
+      <td>The setgroups system call should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #13</td>
+    </tr>
+    <tr>
+      <td>CCE-7277-7</td>
+      <td>The setpgrp system call should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #13</td>
+    </tr>
+    <tr>
+      <td>CCE-6677-9</td>
+      <td>The setreuid system call should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #13</td>
+    </tr>
+    <tr>
+      <td>CCE-7526-7</td>
+      <td>The setregid system call should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #13</td>
+    </tr>
+    <tr>
+      <td>CCE-7253-8</td>
+      <td>The setegid system call should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #13</td>
+    </tr>
+    <tr>
+      <td>CCE-6702-5</td>
+      <td>The seteuid system call should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #13</td>
+    </tr>
+    <tr>
+      <td>CCE-7603-4</td>
+      <td>System ftp logoffs should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #2</td>
+    </tr>
+    <tr>
+      <td>CCE-6684-5</td>
+      <td>System telnet logons should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #1</td>
+    </tr>
+    <tr>
+      <td>CCE-7390-8</td>
+      <td>System ssh logons should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #1</td>
+    </tr>
+    <tr>
+      <td>CCE-7178-7</td>
+      <td>System rlogin logons should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #1</td>
+    </tr>
+    <tr>
+      <td>CCE-7381-7</td>
+      <td>System rshd logons should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #1</td>
+    </tr>
+    <tr>
+      <td>CCE-7521-8</td>
+      <td>System rexecd logons should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #1</td>
+    </tr>
+    <tr>
+      <td>CCE-7350-2</td>
+      <td>System rexd logons should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #1</td>
+    </tr>
+    <tr>
+      <td>CCE-7588-7</td>
+      <td>System ftp logons should be audited or not as appropriate</td>
+      <td>audited/not audited</td>
+      <td>via /etc/security/audit_event</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.5 4) #1</td>
+    </tr>
+    <tr>
+      <td>CCE-7103-5</td>
+      <td>rlogin auth should be allowed or disallowed by PAM as appropriate</td>
+      <td>allowed/not allowed</td>
+      <td>via /etc/pam.conf</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.2.1 2) a)</td>
+    </tr>
+    <tr>
+      <td>CCE-6944-3</td>
+      <td>rlogin auth should be allowed by pam.d or not as appropriate</td>
+      <td>allowed/not allowed</td>
+      <td>via /etc/pam.d</td>
+      <td>NaN</td>
+      <td>10.8.10-2 B.2.1 2) b)</td>
+    </tr>
+    <tr>
+      <td>CCE-7568-9</td>
+      <td>Hard core dump size limits should be set appropriately</td>
+      <td>Size (0 to disable core dumps)</td>
+      <td>/etc/security/limits ulimit</td>
+      <td>NaN</td>
+      <td>10.8.10.4.4 (3)</td>
+    </tr>
+    <tr>
+      <td>CCE-7665-3</td>
+      <td>Root logins should be allowed or not as appropriate from SSH consoles</td>
+      <td>allowed/not allowed</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>10.8.10.5.2.6 (4)</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>CCE Lists</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href='../css/basic.css' type='text/css' rel='stylesheet' />
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Unnamed: 0</th>
+      <th>Last modfied: 2013-02-11</th>
+      <th>Unnamed: 2</th>
+      <th>Unnamed: 3</th>
+      <th>Unnamed: 4</th>
+      <th>Unnamed: 5</th>
+      <th>Unnamed: 6</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NaN</td>
+      <td>Version: 5.20130214</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE ID</td>
+      <td>CCE Description</td>
+      <td>CCE Parameters</td>
+      <td>CCE Technical Mechanisms</td>
+      <td>NaN</td>
+      <td>CIS Apache Benchmark for Unix For Apache Versions 1.3 and 2.0 Levels I and II</td>
+      <td>CIS Security Configuration Benchmark For Apache Web Server 2.2.0 Version 2.2.0 November 2008</td>
+    </tr>
+    <tr>
+      <td>CCE-27905-9</td>
+      <td>Apache's configuration directory should be owned by the appropriate group.</td>
+      <td>(1) group</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-27713-7</td>
+      <td>Apache's configuration directory should be owned by the appropriate user.</td>
+      <td>(1) user</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-27582-6</td>
+      <td>Apache's demo CGI printenv.pl should be available or removed as appropriate</td>
+      <td>(1) exist / not exist</td>
+      <td>(1) (ServerRoot)\cgi-bin\printenv.pl (2) (ServerRoot)/cgi-bin/printenv.pl</td>
+      <td>NaN</td>
+      <td>L1 18. Remove Default/Unneeded Apache Files p27</td>
+      <td>1.18 Remove Default Content p33</td>
+    </tr>
+    <tr>
+      <td>CCE-27923-2</td>
+      <td>testcgi should be installed as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) cgi-script directory</td>
+      <td>NaN</td>
+      <td>L1 18. Remove Default/Unneeded Apache Files p27</td>
+      <td>1.18 Remove Default Content p33</td>
+    </tr>
+    <tr>
+      <td>CCE-27885-3</td>
+      <td>The "FollowSymLinks" setting of the DocumentRoot should be enabled or disabled as appropriate.</td>
+      <td>(1) FollowSymLinks / -FollowSymLinks / +FollowSymLinks / None</td>
+      <td>(1) Apache configuration file: Options directive (in DocumentRoot Directory directive)</td>
+      <td>NaN</td>
+      <td>L1 15. Directory Functionality/Features Directives p23</td>
+      <td>1.8 Directory Functionality Control with the Options Directive p16</td>
+    </tr>
+    <tr>
+      <td>CCE-27991-9</td>
+      <td>The "IncludesNOEXEC" setting of the DocumentRoot should be enabled or disabled as appropriate.</td>
+      <td>(1) IncludesNoExec / -IncludesNoExec / +IncludesNoExec / None</td>
+      <td>(1) Apache configuration file: Options directive (in DocumentRoot Directory directive)</td>
+      <td>NaN</td>
+      <td>L1 15. Directory Functionality/Features Directives p24</td>
+      <td>1.8 Directory Functionality Control with the Options Directive p16</td>
+    </tr>
+    <tr>
+      <td>CCE-27484-5</td>
+      <td>The "Indexes" setting of the DocumentRoot should be enabled or disabled as appropriate.</td>
+      <td>(1) Indexes / -Indexes / +Indexes / None</td>
+      <td>(1) Apache configuration file: Options directive (in DocumentRoot Directory directive)</td>
+      <td>NaN</td>
+      <td>L1 15. Directory Functionality/Features Directives p24</td>
+      <td>1.8 Directory Functionality Control with the Options Directive p16</td>
+    </tr>
+    <tr>
+      <td>CCE-27784-8</td>
+      <td>The Allow Directive for the OS root should be configured appropriately</td>
+      <td>(1) all | hostname/IP address/environment variable</td>
+      <td>(1) Allow directive</td>
+      <td>NaN</td>
+      <td>L1 13. Access Control Directives p21</td>
+      <td>1.7 Restricting Access p14-15</td>
+    </tr>
+    <tr>
+      <td>CCE-27505-7</td>
+      <td>The Allow directive for the specified Directory directive should be configured appropriately.</td>
+      <td>(1) all | hostname/IP address/environment variable</td>
+      <td>(1) Allow directive</td>
+      <td>NaN</td>
+      <td>L1 13. Access Control Directives p21</td>
+      <td>1.7 Restricting Access p14-15</td>
+    </tr>
+    <tr>
+      <td>CCE-27969-5</td>
+      <td>The Apache "KeepAlive" directive should be configured appropriately.</td>
+      <td>(1) On / Off</td>
+      <td>(1) Apache configuration file: KeepAlive directive</td>
+      <td>NaN</td>
+      <td>L1 10. Denial of Service (DoS) Protective General Directives pg 16</td>
+      <td>1.13 Denial of Service Prevention Tuning p21</td>
+    </tr>
+    <tr>
+      <td>CCE-27797-0</td>
+      <td>The Apache "KeepAliveTimeout" directive should be configured appropriately.</td>
+      <td>(1) Number value (in seconds)</td>
+      <td>(1) Apache configuration file: KeepAliveTimeout directive</td>
+      <td>NaN</td>
+      <td>L1 10. Denial of Service (DoS) Protective General Directives pg 16</td>
+      <td>1.13 Denial of Service Prevention Tuning p21</td>
+    </tr>
+    <tr>
+      <td>CCE-28018-0</td>
+      <td>The Apache "LimitRequestBody" directive should be configured appropriately.</td>
+      <td>(1) Number value (in bytes)</td>
+      <td>(1) Apache configuration file: LimitRequestBody directive</td>
+      <td>NaN</td>
+      <td>L2 7. Buffer Overflow Protections p42</td>
+      <td>1.14 Buffer Overflow Protection Tuning p23</td>
+    </tr>
+    <tr>
+      <td>CCE-27962-0</td>
+      <td>The Apache "LimitRequestFields" directive should be configured appropriately</td>
+      <td>(1) Number value</td>
+      <td>(1) Apache configuration file: LimitRequestFields directive</td>
+      <td>NaN</td>
+      <td>L2 7. Buffer Overflow Protections p42</td>
+      <td>1.14 Buffer Overflow Protection Tuning p24</td>
+    </tr>
+    <tr>
+      <td>CCE-27025-6</td>
+      <td>The Apache "LimitRequestFieldSizeBody" directive should be configured appropriately.</td>
+      <td>(1) Number value (in bytes)</td>
+      <td>(1) Apache configuration file: LimitRequestFieldSizeBody directive</td>
+      <td>NaN</td>
+      <td>L2 7. Buffer Overflow Protections p42</td>
+      <td>1.14 Buffer Overflow Protection Tuning p24</td>
+    </tr>
+    <tr>
+      <td>CCE-28008-1</td>
+      <td>The Apache "LimitRequestline" directive should be configured appropriatley.</td>
+      <td>(1) Number value (in bytes)</td>
+      <td>(1) Apache configuration file: LimitRequestLine directive</td>
+      <td>NaN</td>
+      <td>L2 7. Buffer Overflow Protections p42</td>
+      <td>1.14 Buffer Overflow Protection Tuning p24</td>
+    </tr>
+    <tr>
+      <td>CCE-27805-1</td>
+      <td>The Apache "LogLevel" directive should be configured appropriately.</td>
+      <td>(1) debug / info / notice / warn / error / crit / alert / emerg</td>
+      <td>(1) Apache configuration file: LogLevel directive</td>
+      <td>NaN</td>
+      <td>L1 17. Logging General Directives p26</td>
+      <td>1.17 Logging p31</td>
+    </tr>
+    <tr>
+      <td>CCE-27264-1</td>
+      <td>The Apache "MaxClients" directive should be configured appropriately.</td>
+      <td>(1) Number value</td>
+      <td>(1) Apache configuration file: MaxClients directive</td>
+      <td>NaN</td>
+      <td>L1 10. Denial of Service (DoS) Protective General Directives pg 16</td>
+      <td>1.13 Denial of Service Prevention Tuning p22</td>
+    </tr>
+    <tr>
+      <td>CCE-27863-0</td>
+      <td>The Apache "ServerTokens" directive should be configured appropriately.</td>
+      <td>(1) Prod[uctOnly] / Major / Minor / Min[imal] / OS / Full</td>
+      <td>(1) Apache configuration file: ServerTokens directive</td>
+      <td>NaN</td>
+      <td>L1 11. Web Server Software Obfuscation General Directives p17</td>
+      <td>1.16 Software Information Leakage Protection p29</td>
+    </tr>
+    <tr>
+      <td>CCE-27790-5</td>
+      <td>The Apache "Timeout" directive should be configured appropriately.</td>
+      <td>(1) Number value (in seconds)</td>
+      <td>(1) Apache configuration file: Timeout directive</td>
+      <td>NaN</td>
+      <td>L1 10. Denial of Service (DoS) Protective General Directives pg 16</td>
+      <td>1.13 Denial of Service Prevention Tuning p21</td>
+    </tr>
+    <tr>
+      <td>CCE-27855-6</td>
+      <td>The Apache access log file data should be configured to contain the appropriate data elements.</td>
+      <td>(1) LogFormat Format String</td>
+      <td>(1) Apache configuration file: LogFormat directive</td>
+      <td>NaN</td>
+      <td>L1 17. Logging General Directives p26</td>
+      <td>1.17 Logging p30</td>
+    </tr>
+    <tr>
+      <td>CCE-27823-4</td>
+      <td>The Apache AllowOverride Directive should be configured appropriately for operating system root directories.</td>
+      <td>(1) AuthConfig / FileInfo / Indexes / Limit / Options / All / None</td>
+      <td>(1) Apache configuration file: AllowOverride directive</td>
+      <td>NaN</td>
+      <td>L1 15. Directory Functionality/Features Directives p24</td>
+      <td>1.8 Directory Functionality Control with the Options Directive p17</td>
+    </tr>
+    <tr>
+      <td>CCE-27701-2</td>
+      <td>The Apache AllowOverride directive should be configured appropriately for web site root directories.</td>
+      <td>(1) AuthConfig / FileInfo / Indexes / Limit / Options / All / None</td>
+      <td>(1) Apache configuration file: AllowOverride directive</td>
+      <td>NaN</td>
+      <td>L1 15. Directory Functionality/Features Directives p24</td>
+      <td>1.8 Directory Functionality Control with the Options Directive p17</td>
+    </tr>
+    <tr>
+      <td>CCE-27960-4</td>
+      <td>The Apache ErrorDocument directive should be set correctly for HTTP 400 errors.</td>
+      <td>(1) message/document</td>
+      <td>(1) Apache configuration file: 'ErrorDocument 400' directive</td>
+      <td>NaN</td>
+      <td>L1 11. Web Server Software Obfuscation General Directives p17</td>
+      <td>2.7 Additional Software Information Leakage Protection p50</td>
+    </tr>
+    <tr>
+      <td>CCE-27939-8</td>
+      <td>The Apache Group directive should be set correctly.</td>
+      <td>(1) group name</td>
+      <td>(1) Apache configuration file: Group directive</td>
+      <td>NaN</td>
+      <td>L1 8. User Oriented General Directives p14</td>
+      <td>1.6 Creating the Apache User and Group Accounts p14</td>
+    </tr>
+    <tr>
+      <td>CCE-27324-3</td>
+      <td>The Apache runtime rewriting engine should be enabled or disabled as appropriate.</td>
+      <td>(1) off/on</td>
+      <td>(1) Apache configuration file: RewriteEngine directive</td>
+      <td>NaN</td>
+      <td>L1 21. Deny HTTP TRACE Requests with Mod_Rewrite p33</td>
+      <td>1.11 Restrict HTTP Protocol Version p19</td>
+    </tr>
+    <tr>
+      <td>CCE-27896-0</td>
+      <td>The Apache ServerSignature directive should be set appropriately.</td>
+      <td>(1) On/Off/EMail</td>
+      <td>(1) Apache configuration file: ServerSignature directive</td>
+      <td>NaN</td>
+      <td>L1 11. Web Server Software Obfuscation General Directives p17</td>
+      <td>1.16 Software Information Leakage Protection p29</td>
+    </tr>
+    <tr>
+      <td>CCE-27739-2</td>
+      <td>The Apache system logging should be configured appropriately.</td>
+      <td>(1) File path | pipe (2)  LogFormat | nickname</td>
+      <td>(1) Apache configuration file: CustomLog directive</td>
+      <td>NaN</td>
+      <td>L1 17. Logging General Directives p26</td>
+      <td>1.17 Logging p31</td>
+    </tr>
+    <tr>
+      <td>CCE-27983-6</td>
+      <td>The Apache user account should be allowed root privileges as appropriate.</td>
+      <td>(1) allowed/not allowed</td>
+      <td>(1) via /etc/passwd</td>
+      <td>NaN</td>
+      <td>L1 4. Create the Apache Web User Account p11</td>
+      <td>1.6 Creating the Apache User and Group Accounts p14</td>
+    </tr>
+    <tr>
+      <td>CCE-27942-2</td>
+      <td>The Apache User directive should be set correctly.</td>
+      <td>(1) user name</td>
+      <td>(1) Apache configuration file: User directive</td>
+      <td>NaN</td>
+      <td>L1 8. User Oriented General Directives p13</td>
+      <td>1.6 Creating the Apache User and Group Accounts p14</td>
+    </tr>
+    <tr>
+      <td>CCE-27029-8</td>
+      <td>The ApacheErrorDocument directive should be set correctly for HTTP 401 errors.</td>
+      <td>(1) message/document</td>
+      <td>(1) Apache configuration file: 'ErrorDocument 401' directive</td>
+      <td>NaN</td>
+      <td>L1 11. Web Server Software Obfuscation General Directives p17</td>
+      <td>2.7 Additional Software Information Leakage Protection p50</td>
+    </tr>
+    <tr>
+      <td>CCE-27867-1</td>
+      <td>The ApacheErrorDocument directive should be set correctly for HTTP 403 errors.</td>
+      <td>(1) message/document</td>
+      <td>(1) Apache configuration file: 'ErrorDocument 403' directive</td>
+      <td>NaN</td>
+      <td>L1 11. Web Server Software Obfuscation General Directives p17</td>
+      <td>2.7 Additional Software Information Leakage Protection p50</td>
+    </tr>
+    <tr>
+      <td>CCE-27951-3</td>
+      <td>The ApacheErrorDocument directive should be set correctly for HTTP 404 errors.</td>
+      <td>(1) message/document</td>
+      <td>(1) Apache configuration file: 'ErrorDocument 404' directive</td>
+      <td>NaN</td>
+      <td>L1 11. Web Server Software Obfuscation General Directives p17</td>
+      <td>2.7 Additional Software Information Leakage Protection p50</td>
+    </tr>
+    <tr>
+      <td>CCE-27963-8</td>
+      <td>The ApacheErrorDocument directive should be set correctly for HTTP 405 errors.</td>
+      <td>(1) message/document</td>
+      <td>(1) Apache configuration file: 'ErrorDocument 405' directive</td>
+      <td>NaN</td>
+      <td>L1 11. Web Server Software Obfuscation General Directives p17</td>
+      <td>2.7 Additional Software Information Leakage Protection p50</td>
+    </tr>
+    <tr>
+      <td>CCE-28026-3</td>
+      <td>The ApacheErrorDocument directive should be set correctly for HTTP 500 errors.</td>
+      <td>(1) message/document</td>
+      <td>(1) Apache configuration file: 'ErrorDocument 500' directive</td>
+      <td>NaN</td>
+      <td>L1 11. Web Server Software Obfuscation General Directives p17</td>
+      <td>2.7 Additional Software Information Leakage Protection p50</td>
+    </tr>
+    <tr>
+      <td>CCE-27321-9</td>
+      <td>The Deny Directive for the OS root should be configured appropriately</td>
+      <td>(1) all | hostname/IP address/environment variable</td>
+      <td>(1) Deny directive</td>
+      <td>NaN</td>
+      <td>L1 13. Access Control Directives p21</td>
+      <td>1.7 Restricting Access p14-15</td>
+    </tr>
+    <tr>
+      <td>CCE-27592-5</td>
+      <td>The Deny directive for the specified Directory directive should be configured appropriately.</td>
+      <td>(1) all | hostname/IP address/environment variable</td>
+      <td>(1) Deny directive</td>
+      <td>NaN</td>
+      <td>L1 13. Access Control Directives p21</td>
+      <td>1.7 Restricting Access p14-15</td>
+    </tr>
+    <tr>
+      <td>CCE-27755-8</td>
+      <td>The group membership of any Apache files in /var/log/httpd/ should be set correctly.</td>
+      <td>(1) group</td>
+      <td>(1) via chgrp</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-27958-8</td>
+      <td>The group membership of the Apache /etc/httpd/conf.d file should be set correctly.</td>
+      <td>(1) group</td>
+      <td>(1) via chgrp</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-27804-4</td>
+      <td>The group membership of the Apache /etc/httpd/conf/passwd file should be set correctly.</td>
+      <td>(1) group</td>
+      <td>(1) via chgrp</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-27988-5</td>
+      <td>The group membership of the Apache /usr/sbin/apachectl file should be set correctly.</td>
+      <td>(1) group</td>
+      <td>(1) via chgrp</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-27832-5</td>
+      <td>The group membership of the Apache /usr/sbin/httpd file should be set correctly.</td>
+      <td>(1) group</td>
+      <td>(1) via chgrp</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-27770-7</td>
+      <td>The group membership of the Apache /var/www/html file should be set correctly.</td>
+      <td>(1) group</td>
+      <td>(1) via chgrp</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-27475-3</td>
+      <td>The group membership of the Apache user account should be set correctly.</td>
+      <td>(1) group</td>
+      <td>(1) via /etc/group</td>
+      <td>NaN</td>
+      <td>L1 4. Create the Apache Web User Account p11</td>
+      <td>1.6 Creating the Apache User and Group Accounts p14</td>
+    </tr>
+    <tr>
+      <td>CCE-28028-9</td>
+      <td>The ownership of log files in Apache /var/log/httpd/ should be set correctly.</td>
+      <td>(1) owner</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-27970-3</td>
+      <td>The ownership of the Apache /etc/httpd/conf.d file should be set correctly.</td>
+      <td>(1) owner</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-27036-3</td>
+      <td>The ownership of the Apache /etc/httpd/conf/passwd file should be set correctly.</td>
+      <td>(1) owner</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-27136-1</td>
+      <td>The ownership of the Apache /usr/sbin/apachectl file should be set correctly.</td>
+      <td>(1) owner</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-27932-3</td>
+      <td>The ownership of the Apache /usr/sbin/httpd file should be set correctly.</td>
+      <td>(1) owner</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-27561-0</td>
+      <td>The ownership of the Apache /var/www/html file should be set correctly.</td>
+      <td>(1) owner</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-28004-0</td>
+      <td>The path for Apache sites error log files should be configured appropriately.</td>
+      <td>(1) File path</td>
+      <td>(1) Apache configuration file: ErrorLog directive</td>
+      <td>NaN</td>
+      <td>L2 4. ErrorLog - Syslog p70-71</td>
+      <td>2.5 Syslog Logging p44-45</td>
+    </tr>
+    <tr>
+      <td>CCE-27956-2</td>
+      <td>The permissions for the Apache /etc/httpd/conf.d file should be set correctly.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-27929-9</td>
+      <td>The permissions for the Apache /etc/httpd/conf/passwd file should be set correctly.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-27632-9</td>
+      <td>The permissions for the Apache /usr/sbin/apachectl file should be set correctly.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-27902-6</td>
+      <td>The permissions for the Apache /usr/sbin/httpd file should be set correctly.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-27997-6</td>
+      <td>The permissions for the Apache/var/www/html file should be set correctly.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-27537-0</td>
+      <td>The permissions of any Apache files in /var/log/httpd/ should be set correctly.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-28019-8</td>
+      <td>The Unix permissions of Apache's configuration directory should be configred appropriately</td>
+      <td>(1) permissions</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-27874-7</td>
+      <td>The"Includes" setting of the DocumentRoot should be enabled or disabled as appropriate.</td>
+      <td>(1) Includes / -Includes / +Includes / None</td>
+      <td>(1) Apache configuration file: Options directive (in DocumentRoot Directory directive)</td>
+      <td>NaN</td>
+      <td>L1 15. Directory Functionality/Features Directives p24</td>
+      <td>1.8 Directory Functionality Control with the Options Directive p16</td>
+    </tr>
+    <tr>
+      <td>CCE-27656-8</td>
+      <td>The"MultiViews" setting of the DocumentRoot should be enabled or disabled as appropriate.</td>
+      <td>(1) MultiViews / -MultiViews / +MultiViews / None</td>
+      <td>(1) Apache configuration file: Options directive (in DocumentRoot Directory directive)</td>
+      <td>NaN</td>
+      <td>L1 15. Directory Functionality/Features Directives p24-25</td>
+      <td>1.8 Directory Functionality Control with the Options Directive p17</td>
+    </tr>
+    <tr>
+      <td>CCE-27071-0</td>
+      <td>The Order directive for the OS root should be configured appropriately.</td>
+      <td>(1) Allow,Deny / Deny,Allow / Mutual-failure</td>
+      <td>(1) Order directive</td>
+      <td>NaN</td>
+      <td>L1 13. Access Control Directives p21</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27987-7</td>
+      <td>Permitted HTTP request methods should be configured appropriately.</td>
+      <td>(1) methods (2) access control directives</td>
+      <td>(1) Apache configuration file: LimitExecpt directive</td>
+      <td>NaN</td>
+      <td>L1 16. Limiting HTTP Request Methods p25</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27489-4</td>
+      <td>Access to Apache's httpd.conf file should be configured appropriately.</td>
+      <td>(1) set of accounts  (2) list of permissions  (3) applicability</td>
+      <td>(1) defined by (ServerRoot)\conf\httpd.conf's DACL</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-28009-9</td>
+      <td>The Windows permissions for all files specified by CustomLog directives should be configured appropriately</td>
+      <td>(1) set of accounts  (2) list of permissions  (3) applicability</td>
+      <td>(1) defined by the object's DACL</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27977-8</td>
+      <td>The Windows permissions for all files specified by ErrorLog directives should be configured appropriately</td>
+      <td>(1) set of accounts  (2) list of permissions  (3) applicability</td>
+      <td>(1) defined by the object's DACL</td>
+      <td>NaN</td>
+      <td>L1 19. Updating Ownership and Permissions for Enhanced Security p27</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27802-8</td>
+      <td>The location of the Apache htpasswd file should be set correctly.</td>
+      <td>(1) directory path</td>
+      <td>(1) Directory of htpasswd file</td>
+      <td>NaN</td>
+      <td>L1 14. Authentication Mechanisms p22</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27803-6</td>
+      <td>The Apache Server Administrator email address should be set correctly.</td>
+      <td>(1) email address</td>
+      <td>(1) 'ServerAdmin' line in Apache configuration file</td>
+      <td>NaN</td>
+      <td>L1 8. User Oriented General Directives p14</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27924-0</td>
+      <td>The Apache user account should be locked or unlocked as appropriate.</td>
+      <td>(1) locked/unlocked</td>
+      <td>(1) via /etc/passwd</td>
+      <td>NaN</td>
+      <td>L1 5. Lock Down the Apache Web User Account p11</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-28027-1</td>
+      <td>File permissions for httpd.conf should be set correctly.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-27147-8</td>
+      <td>The httpd.conf file should be owned by the appropriate user.</td>
+      <td>(1) user</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-28109-7</td>
+      <td>The httpd.conf file should be owned by the appropriate group.</td>
+      <td>(1) group</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-27949-7</td>
+      <td>The Unix permissions of Apache's htpasswd file should be configured appropriately.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-27502-4</td>
+      <td>The htpasswd should be owned by the appropriate user.</td>
+      <td>(1) user</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-28001-6</td>
+      <td>The htpasswd file should be owned by the appropriate group.</td>
+      <td>(1) group</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+    </tr>
+    <tr>
+      <td>CCE-28139-4</td>
+      <td>The Apache "StartServers" directive should be configured appropriately.</td>
+      <td>(1) Number value</td>
+      <td>(1) Apache configuration file: StartServers directive</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.13 Denial of Service Prevention Tuning p22</td>
+    </tr>
+    <tr>
+      <td>CCE-27654-3</td>
+      <td>The Apache "MinSpareServers" directive should be configured appropriately.</td>
+      <td>(1) Number value</td>
+      <td>(1) Apache configuration file: MinSpareServers directive</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.13 Denial of Service Prevention Tuning p22</td>
+    </tr>
+    <tr>
+      <td>CCE-27916-6</td>
+      <td>The Apache "MaxSpareServers" directive should be configured appropriately.</td>
+      <td>(1) Number value</td>
+      <td>(1) Apache configuration file: MaxSpareServers directive</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.13 Denial of Service Prevention Tuning p22</td>
+    </tr>
+    <tr>
+      <td>CCE-27785-5</td>
+      <td>The "ExecCGI" setting of the DocumentRoot should be enabled or disabled as appropriate.</td>
+      <td>(1) ExecCGI / -ExecCGI/ +ExecCGI / None</td>
+      <td>(1) Apache configuration file: Options directive (in DocumentRoot Directory directive)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.8 Directory Functionality Control with the Options Directive p16</td>
+    </tr>
+    <tr>
+      <td>CCE-28125-3</td>
+      <td>The Order directive for all DocumentRoot directives should be configured appropriately.</td>
+      <td>(1) Allow,Deny / Deny,Allow / Mutual-failure</td>
+      <td>(1) Apache configuration file: Order directive (in DocumentRoot Directory directive)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.7 Restricting Access p15</td>
+    </tr>
+    <tr>
+      <td>CCE-28116-2</td>
+      <td>The Order directive for the specified Directory directive should be configured appropriately.</td>
+      <td>(1) Allow,Deny / Deny,Allow / Mutual-failure</td>
+      <td>(1) TARGET: Directory directive (2) Apache configuration file: Order directive</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.7 Restricting Access p15</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

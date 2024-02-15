@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>CCE Lists</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href='../css/basic.css' type='text/css' rel='stylesheet' />
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Unnamed: 0</th>
+      <th>Last modfied: 2011-10-07</th>
+      <th>Unnamed: 2</th>
+      <th>Unnamed: 3</th>
+      <th>Unnamed: 4</th>
+      <th>Unnamed: 5</th>
+      <th>Unnamed: 6</th>
+      <th>Unnamed: 7</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NaN</td>
+      <td>Version: 5.20111007</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE ID</td>
+      <td>CCE Description</td>
+      <td>CCE Parameters</td>
+      <td>CCE Technical Mechanisms</td>
+      <td>NaN</td>
+      <td>Securing a Production Environment for Oracle WebLogic Server 11g Release 1 (10.3.1)</td>
+      <td>Securing Oracle WebLogic Server 11g Release 1 (10.3.1)</td>
+      <td>Other WebLogic Documentation</td>
+    </tr>
+    <tr>
+      <td>CCE-17933-3</td>
+      <td>Set the "Complete Message Timeout" appropriately for each server.</td>
+      <td>(1) number of seconds</td>
+      <td>(1) via the Administration console, Environment &gt; Servers &gt; Server Domain &gt; Server name &gt; Protocols &gt; General &gt; Complete Message Timeout field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>BEA WebLogic Server 10.0 Domain Configuration Schema Reference, See element complete-message-timeout</td>
+    </tr>
+    <tr>
+      <td>CCE-18113-1</td>
+      <td>Enable or disable the "FIPS- compliant cryptographic module".</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via 'setDomainEnv.sh'</td>
+      <td>NaN</td>
+      <td>Note in section 3.2, "Securing a Production Environment for Oracle WebLogic server"</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17853-3</td>
+      <td>Enable or disable the "Allow Unencrypted Null Cipher" as appropriate for each server.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration console, Domain Structure &gt; Environment &gt; Servers &gt; Server Name &gt; Configuration &gt; SSL &gt; Advanced &gt; Allow Unencrypted Null Cipher checkbox</td>
+      <td>NaN</td>
+      <td>Section 3.1, "an important note regarding null cipher use in SSL"</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17743-6</td>
+      <td>Determine the appropriate "Maximum Message Size" for each server.</td>
+      <td>(1) bytes</td>
+      <td>(1) via the Administration console, Environment &gt; Servers &gt; Server name &gt; Protocols &gt; General &gt; Maximum Message Size field</td>
+      <td>NaN</td>
+      <td>Table 3-3 in section 3.5, "Securing the WebLogic Security Notice"</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17760-0</td>
+      <td>Determine the appropriate "Security Interoperability Mode" setting.</td>
+      <td>(1) default/performance/compatibility</td>
+      <td>(1) via the Administration console, Domain Name &gt; Security &gt; General &gt;  Advanced &gt; Security Interoperability Mode setting</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Programming JTA for Oracle WebLogic Server 11g Release 1 (10.3.1), link down to 3.3.2.3, "Configuring Security Interoperability Mode"</td>
+    </tr>
+    <tr>
+      <td>CCE-17888-9</td>
+      <td>The Oracle WebLogic Server should be run by the appropriate account.</td>
+      <td>(1) set of accounts</td>
+      <td>(1) via the Configuration Wizard (2) via chown</td>
+      <td>NaN</td>
+      <td>p.21, Table 3-1 in section 3.6, "Securing the WebLogic Security Notice"</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17155-3</td>
+      <td>Define the "Severity" field as appropriate.</td>
+      <td>(1) Failure/Success/Error/Warning/Information</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Severity attribute</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6, "configuring the WebLogic auditing provider"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17181-9</td>
+      <td>Enable or disable the Active Context Handler "servlet.HttpServletResponse" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17171-0</td>
+      <td>Enable or disable the Active Context Handler "wli.Message" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17572-9</td>
+      <td>Enable or disable the Active Context Handler "channel.Port" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17740-2</td>
+      <td>Enable or disable the Active Context Handler "channel.PublicPort" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17652-9</td>
+      <td>Enable or disable the Active Context Handler "servlet.HttpServletResponse" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17167-8</td>
+      <td>Enable or disable the Active Context Handler "servlet.HttpServletResponse" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18007-5</td>
+      <td>Enable or disable the Active Context Handler "channel.RemotePort"as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17825-1</td>
+      <td>Enable or disable the Active Context Handler "channel.Protocol" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17877-2</td>
+      <td>Enable or disable the Active Context Handler "channel.Address" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17176-9</td>
+      <td>Enable or disable the Active Context Handler "channel.PublicAddress" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18120-6</td>
+      <td>Enable or disable the Active Context Handler "channel.RemoteAddress" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17812-9</td>
+      <td>Enable or disable the Active Context Handler "channel.ChannelName" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18009-1</td>
+      <td>Enable or disable the Active Context Handler "channel.Secure" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17296-5</td>
+      <td>Enable or disable the Active Context Handler "ejb20.Parameter" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17798-0</td>
+      <td>Enable or disable the Active Context Handler "wsee.SOAPmessage" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17335-1</td>
+      <td>Enable or disable the Active Context Handler "entitlement.EAuxilaryID" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17736-0</td>
+      <td>Enable or disable the Active Context Handler "security.ChainPrevalidatedBySSL" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18023-2</td>
+      <td>Enable or disable the Active Context Handler "xml.SecurityToken" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17789-9</td>
+      <td>Enable or disable the Active Context Handler "webservice.Integrity" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17287-4</td>
+      <td>Enable or disable the Active Context Handler "saml.SSLClientCertificateChain" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17948-1</td>
+      <td>Enable or disable the Active Context Handler "saml.SSLClientCertificateChain" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17970-5</td>
+      <td>Enable or disable the Active Context Handler "saml.MessageSignerCerficate" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17304-7</td>
+      <td>Enable or disable the Active Context Handler "saml.subject.ConfirmationMethod" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18088-5</td>
+      <td>Enable or disable the Active Context Handler "saml.subject.dom.KeyInfo" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17179-3</td>
+      <td>Enable or disable the Active Context Handler "jmx.ObjectName" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17893-9</td>
+      <td>Enable or disable the Active Context Handler "jmx.ShortName" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17558-8</td>
+      <td>Enable or disable the Active Context Handle "jmx.Parameters" as appropriate</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17713-9</td>
+      <td>Enable or disable the Active Context Handler "jmx.Signature" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17805-3</td>
+      <td>Enable or disable the Active Context Handle "jmx.AuditProtectedArgInfo" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18091-9</td>
+      <td>Enable or disable the Active Context Handler "jmx.OldAttributeValue" as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Auditing &gt; WebLogic Auditing Provider &gt; Provider Specific &gt; Active Context Handler Entries</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.6.1, "auditing context handler elements"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17738-6</td>
+      <td>Set the "minimum password length" field appropriately.</td>
+      <td>(1) number of characters</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Authentication &gt; DefualtAuthenticator &gt; Configuration &gt; Minimum Password Length field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 5.3, "configuring the default authentication provider"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17254-4</td>
+      <td>Enable or disable the "Reject if Password Contains the User Name" attribute as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Password Validation &gt; System Password Validator &gt; Provider Specific &gt; User Name Policies section</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 5.8.1, Table 5-7</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18038-0</td>
+      <td>Enable or disable the "Reject if Password Contains the User Name Reversed" setting.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Password Validation &gt; System Password Validator &gt; Provider Specific &gt; Reject if Password Contains the user Name Reversed field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 5.8.1, Table 5-7</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17182-7</td>
+      <td>Set the "maximum password length" field appropriately.</td>
+      <td>(1) number of characters</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Password Validation &gt; System Password Validator &gt; Provider Specific &gt; Maximum Password Length field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 5.8.1, Table 5-7</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17601-6</td>
+      <td>Set the "minimum password length" field appropriately.</td>
+      <td>(1) number of characters</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Password Validation &gt; System Password Validator &gt; Provider Specific &gt; Minimum Password Length field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 5.8.1, Table 5-7</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17892-1</td>
+      <td>Set the "maximum instances of any character" field appropriately.</td>
+      <td>(1) number of characters</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Password Validation &gt; System Password Validator &gt; Provider Specific &gt; Maximum Instances of Any Character field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 5.8.1, Table 5-7</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18028-1</td>
+      <td>Set the "maximum consecutive characters" field appropriately.</td>
+      <td>(1) number of characters</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Password Validation &gt; System Password Validator &gt; Provider Specific &gt; Maximum Consecutive Characters field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 5.8.1, Table 5-7</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17183-5</td>
+      <td>Set the "minimum number of alphabetic characters" field appropriately.</td>
+      <td>(1) number of characters</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Password Validation &gt; System Password Validator &gt; Provider Specific &gt; Minimum Number of Alphabetic Characters field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 5.8.1, Table 5-7</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17186-8</td>
+      <td>Set the "minimum number of numeric characters" field appropriately.</td>
+      <td>(1) number of characters</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Password Validation &gt; System Password Validator &gt; Provider Specific &gt; Minimum Number of Numeric Characters field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 5.8.1, Table 5-7</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17561-2</td>
+      <td>Set the "minimum number of lower case characters" field appropriately.</td>
+      <td>(1) number of characters</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Password Validation &gt; System Password Validator &gt; Provider Specific &gt; Minimum Number of Lower Case Characters field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 5.8.1, Table 5-7</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17979-6</td>
+      <td>Set the "minimum number of upper case characters" field appropriately</td>
+      <td>(1) number of characters</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Password Validation &gt; System Password Validator &gt; Provider Specific &gt; Minimum Number of Upper Case Characters field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 5.8.1, Table 5-7</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17618-0</td>
+      <td>Set the "minimum number of non-alphanumeric characters" field appropriately.</td>
+      <td>(1) number of characters</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Password Validation &gt; System Password Validator &gt; Provider Specific &gt; Minimum Number of Non-Alphanumeric Characters field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 5.8.1, Table 5-7</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17763-4</td>
+      <td>Enable or disable the "Lockout Enabled" setting.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Configuration &gt; User Lockout &gt; Lockout Enabled attribute</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>section 3.3. bullet 8 (link down to section 13.7, "protecting user accounts")</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17393-0</td>
+      <td>Set permissions on the SerializedSystemIni.dat file permissions appropriately.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>section 3.3. (link down to section 13.6, "How Passwords Are Protected in WebLogic Server")</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17913-5</td>
+      <td>Define the "Lockout Threshold" in the Security Realm appropriately.</td>
+      <td>(1) number of invalid login attempts</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; User Lockout &gt; Lockout Threshold field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>BEA WebLogic Server Domain Configuration Schema Reference, See element lockout-threshold</td>
+    </tr>
+    <tr>
+      <td>CCE-18068-7</td>
+      <td>Define the "Lockout Duration" in the Security Realm appropriately.</td>
+      <td>(1) number of minutes</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; User Lockout &gt; Lockout Duration field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Report Number: I733-033R-2006 Date: December 2006 Oracle Application Server Security Recommendations and DoDI 8500.2 IA Controls can be reached at:  http://www.nsa.gov/ia/_files/app/I733-033R-2006.PDF, p.27 bullet 4 under "OAS Identity Management'</td>
+    </tr>
+    <tr>
+      <td>CCE-17464-9</td>
+      <td>Define the "Lockout Reset Duration" in the Security Realm appropriately.</td>
+      <td>(1) number of minutes</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; User Lockout &gt; Lockout Reset Duration field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>BEA WebLogic Server Domain Configuration Schema Reference, See element lockout-reset-duration</td>
+    </tr>
+    <tr>
+      <td>CCE-17856-6</td>
+      <td>Enable or disable the "Require Unanimous Permit" setting.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Adjudication &gt; DefaultAdjudicator &gt; Provider Specific &gt; Require Unanimous Permit attribute</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 4.4, "configuring the WebLogic communication provider"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17794-9</td>
+      <td>Set the "Host Name Verification"  appropriately on the Administration Server.</td>
+      <td>(1) name of host</td>
+      <td>(1) via the Administration Console, Environment &gt; Servers &gt; Administration Server &gt; Configuration &gt; SSL &gt; Advanced &gt; Host Name Verification setting</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 12.4,"using host name verification</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18186-7</td>
+      <td>Define the "Minimum Number of Non-Alphabetic Characters" appropriately.</td>
+      <td>(1) number of characters</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Password Validation &gt; System Password Validator &gt; Provider Specific &gt; Minimum Number of Non-Alphabetic Characters field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 5.8.1  Table 5-7, "Password Composition Rules and Default Values" scroll to p70</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17189-2</td>
+      <td>Enable or disable the "SSL Enabled" setting for the appropriate LDAP Server connections.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the active Realm &gt; Providers &gt; Configuration &gt; Provider Specific &gt; SSL enabled box</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Report Number: I33-004R-2005 BEA WebLogic Platform Security Guide Network Applications Team of the Systems and Network Attack Center (SNAC) Publication Date: 4 April 2005 Version Number: 1.0 "Security Service Provides" p25,28</td>
+    </tr>
+    <tr>
+      <td>CCE-17956-4</td>
+      <td>Set the "Host Name Verification"  appropriately on all servers.</td>
+      <td>(1) Custom Hostname Verifier/BEA Hostname Verifier/None</td>
+      <td>(1) via the Administration Console, Environment &gt; Servers &gt; Server Name &gt; Configuration &gt; SSL &gt; Advanced &gt; Host Name Verification setting</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to section 12.4,"using host name verification"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17960-6</td>
+      <td>Change and set "Domain Credentials" appropriately.</td>
+      <td>(1) credential</td>
+      <td>(1) via the Administration console, Security &gt; General &gt; Advanced &gt; Domain Credential field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to 13.2.2, "Enabling Global Trust"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17947-3</td>
+      <td>Enable or disable the "Configuration Archive Enabled" box appropriately.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Domain Structure &gt; Domain Name &gt; Configuration &gt; General &gt; Advanced &gt; Configuration Archive Enabled checkbox</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Introduction to Oracle WebLogic Server, 3 domain configuration files</td>
+    </tr>
+    <tr>
+      <td>CCE-17951-5</td>
+      <td>Set the "Archive Configuration Count" appropriately.</td>
+      <td>(1) number of archive files</td>
+      <td>(1) via the Administration Console, Domain Structure &gt; Domain Name &gt; Configuration &gt; General &gt; Advanced &gt; Archive Configuration Count field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>BEA WebLogic Server 10.0 Domain Configuration Schema Reference, See element archive-config-count</td>
+    </tr>
+    <tr>
+      <td>CCE-17973-9</td>
+      <td>Set the password field appropriately for the "Default Administrator".</td>
+      <td>(1) password</td>
+      <td>(1) via the Administration console, Domain Name &gt; Security Realm &gt; Security Realm of interest &gt; Users and Groups &gt; WebLogic user account &gt; Passwords &gt; Password field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>BEA WebLogic Server 10.0 Security Schema Reference, See element administration-port-enabled</td>
+    </tr>
+    <tr>
+      <td>CCE-17603-2</td>
+      <td>Set the appropriate "SSL Listen Port" value on each server.</td>
+      <td>(1) numerical value</td>
+      <td>(1) via the Administration Console, Domain Structure &gt; Environment &gt; Servers &gt; Server Name &gt; SSL Listen Port field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>BEA WebLogic Platform Security Guide Network Applications Team of the Systems and Network Attack Center (SNAC), p. 24 "Domains and Realms"</td>
+    </tr>
+    <tr>
+      <td>CCE-17964-8</td>
+      <td>Set the "Administration Console Session Timeout" field appropriately.</td>
+      <td>(1) numerical value</td>
+      <td>(1) via the Administration Console, Domain Structure &gt; Domain Name &gt; Configuration &gt; General &gt; Advanced &gt; Console Session Timeout field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Release Notes 11g Release 1 (11.1.1); See Web Applications Issues and Workarounds http://download.oracle.com/docs/cd/E12839_01/doc.1111/e14770/weblogic_server_issues.htm#BCFCJGIF</td>
+    </tr>
+    <tr>
+      <td>CCE-17969-7</td>
+      <td>Enable or disable the "Production  Mode" appropriately.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Base_Domain &gt; Configuration &gt; General &gt; Production mode checkbox</td>
+      <td>NaN</td>
+      <td>link down to section 2.4,"install WebLogic server in a secure manner"</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17991-1</td>
+      <td>Enable or disable the WebLogic Auditing provider as appropriate.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Security Realms &gt; name of the Active Realm &gt; Providers &gt; Auditing</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to 4.6, "Configuring the WebLogic Auditing Provider"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17872-3</td>
+      <td>Set the appropriate "Invocation Timeout Seconds" value.</td>
+      <td>(1) seconds</td>
+      <td>(1) via the Administration Console, Console &gt; Domain Structure &gt; Domain Name &gt; Configuration &gt; General &gt; Advanced &gt; Invocation Timeout Seconds field</td>
+      <td>NaN</td>
+      <td>link down to section 2.4,"install WebLogic server in a secure manner"</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17612-3</td>
+      <td>Enable or disable the "Anonymous Admin Lookup Enabled" setting.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Domain Name &gt; Security &gt; Anonymous Admin Lookup Enabled box</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>BEA WebLogic Server 10.0 Security Schema Reference, See element anonymous-admin-lookup-enabled</td>
+    </tr>
+    <tr>
+      <td>CCE-17196-7</td>
+      <td>Enabled or disable the "Web App Files Case Insensitive" setting.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Domain &gt; Security &gt; General &gt; Advanced &gt; Web App Files Case Insensitive textbox</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>BEA WebLogic Server 10.0 Security Schema Reference, See element web-app-files-case-insensitive</td>
+    </tr>
+    <tr>
+      <td>CCE-17201-5</td>
+      <td>Enable or disable the "Enable Administration Port" setting.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Domain Structure &gt; Configuration &gt; General &gt; Enable Administration Port attribute</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Configuring Server Environments for Oracle WebLogic Server 11g Release 1 (10.3.3), link down to 4.2.3.2, "Administration Port and Administrative Channel"</td>
+    </tr>
+    <tr>
+      <td>CCE-18144-6</td>
+      <td>Enable or disable the "SSL Rejection Logging Enabled" setting on all servers.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Environment &gt; Servers &gt; Server Name &gt; Configuration &gt; SSL &gt; Advanced &gt; SSL Rejection Logging Enabled attribute</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to 12, "Configuring SSL"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17963-0</td>
+      <td>Set the "Export Key Lifespan" as appropriate on each Server.</td>
+      <td>(1) numerical value</td>
+      <td>(1) via the Administration Console, Environment &gt; Servers &gt; Server Name &gt; Configuration &gt; SSL &gt; Advanced &gt; Export Key Lifespan attribute</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>BEA WebLogic Server 9.0 Domain Configuration Schema Reference, element export-key-lifespan</td>
+    </tr>
+    <tr>
+      <td>CCE-17844-2</td>
+      <td>Enable or disable the "Client Cert Proxy Enabled" setting on the Administration Server.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Environment &gt; Servers &gt; AdminServer &gt; Configuration &gt; General &gt; Client Cert Proxy Enabled checkbox</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Developing Web Applications, Servlets, and JSPs for Oracle WebLogic Server 11g Release 1 (10.3.1), link down to B.13.13, "client-cert-proxy-enabled"</td>
+    </tr>
+    <tr>
+      <td>CCE-18077-8</td>
+      <td>Enable or disable the "Client Cert Proxy Enabled" setting on the managed server.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console &gt; Environment &gt; Servers &gt; Managed Servers &gt; Client Cert Proxy Enabled checkbox</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Developing Web Applications, Servlets, and JSPs for Oracle WebLogic Server 11g Release 1 (10.3.1), link down to B.13.13, "client-cert-proxy-enabled"</td>
+    </tr>
+    <tr>
+      <td>CCE-18082-8</td>
+      <td>Set the "Frontend Host" attribute appropriately for each server.</td>
+      <td>(1) name of server</td>
+      <td>(1) via the Administration Console, Domain &gt; Environment &gt; Servers &gt; Server Name &gt; Protocols &gt; HTTP &gt; Frontend Host field</td>
+      <td>NaN</td>
+      <td>p30 Table 3-4, "Securing Applications"</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17478-9</td>
+      <td>Set the "Check Roles and Policies" appropriately.</td>
+      <td>(1) AllWebApplicationsAndEJBs/WebApplicationsAndEJBsProtectedInDD</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the Active Realm &gt; Configuration &gt; General &gt; Advanced &gt; Check Roles and Policies setting</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Securing Resources Using Roles and Policies for Oracle WebLogic Server 11g Release 1 (10.3.1) E13747-01. link down to 4.2.1, "Understanding the Check Roles and Policies Setting" and 4.2.2, "Understanding the When Deploying Web Applications or EJBs Setting"</td>
+    </tr>
+    <tr>
+      <td>CCE-17482-1</td>
+      <td>Set the "Security Model Default" appropriately.</td>
+      <td>(1) DDOnly/CustomRoles/CustomRolesAndPolices/Advanced</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the Active Realm &gt; Configuration &gt; General &gt; Security Model Default setting</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Securing Resources Using Roles and Policies for Oracle WebLogic Server 11g Release 1 (10.3.5), See 4 Options for Securing Web Application and EJB Resources</td>
+    </tr>
+    <tr>
+      <td>CCE-17346-8</td>
+      <td>Set the "When Deploying Web Applications or EJBS" appropriately.</td>
+      <td>(1) IgnoreRolesAndPoliciesFromDD/InitializeRoleAndPoliciesFromDD</td>
+      <td>(1) via the Administration Console, Security Realm &gt; Name of the Active Realm &gt; Settings &gt; Advanced &gt; When Deploying Web Applications or EJBs setting</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® eDocs &gt; Securing WebLogic Resources Using Roles and Policies &gt; Options for Securing Web Application and EJB Resources</td>
+    </tr>
+    <tr>
+      <td>CCE-17208-0</td>
+      <td>Set the "Configuration Audit Type" field appropriately.</td>
+      <td>(1) Change None/Change Log/Change Audit/ Change and Audit</td>
+      <td>(1) via the Administration Console, Domain Structure &gt; Domain Name &gt; Configuration &gt; General &gt; Advanced &gt; Configuration Audit Type field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to 4.6.2 "Enable Configuration Auditing"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18128-9</td>
+      <td>Set the EditMBeanServerEnabled attribute appropriately on the Administration Server</td>
+      <td>(1) True/False</td>
+      <td>(1) via the Administration Console, Environment &gt; Servers &gt; Administration Server &gt; Configuration then via WLST or via the Management APIs</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>The WebLogic Server Mbean Reference: JMXM Bean - EditMBeanServerEnabled  http://download.oracle.com/docs/cd/E12840_01/wls/docs103/wlsmbeanref/core/index.html</td>
+    </tr>
+    <tr>
+      <td>CCE-17507-5</td>
+      <td>Enable or disable two-way SSL appropriately for each server.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Environment &gt; Servers &gt; Configuration &gt; SSL &gt; Advanced &gt; Two Way Client Cert Behavior attribute</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Securing Oracle WebLogic Server 11g Release 1 (10.3.5), See 12 Configuring SSL</td>
+    </tr>
+    <tr>
+      <td>CCE-17210-6</td>
+      <td>Set the Embedded LDAP "Timeout" appropriately.</td>
+      <td>(1) seconds</td>
+      <td>(1) via the Administration Console, Domain &gt; Security &gt; Embedded LDAP &gt; Timeout field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>The WebLogic Server Mbean Reference: EmbeddedLDAPMBean - Timeout</td>
+    </tr>
+    <tr>
+      <td>CCE-18126-3</td>
+      <td>Enable or disable the "Anonymous Bind Allowed" setting.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Domain &gt; Security &gt; Embedded LDAP &gt; Anonymous Bind Allowed checkbox</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Administrator's Guide for Oracle Internet Directory 11g Release 1 (11.1.1); See Introduction to Anonymous Binds 01http://download.oracle.com/docs/cd/E12839_01/oid.1111/e10029/authentication.htm#OIDAG2564</td>
+    </tr>
+    <tr>
+      <td>CCE-18148-7</td>
+      <td>Set the Server "Post Timeout" field appropriately for each server.</td>
+      <td>(1) seconds</td>
+      <td>(1) via the Administration Console, Domain &gt; Environment &gt; Servers &gt; Server Name &gt; Protocols &gt; HTTP &gt; Post Timeout Field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle BEA Administration Console Online Help; http://download.oracle.com/docs/cd/E13222_01/wls/docs81/ConsoleHelp/domain_server_protocols_http.html</td>
+    </tr>
+    <tr>
+      <td>CCE-18152-9</td>
+      <td>Set the HTTP "Duration" appropriately for each server.</td>
+      <td>(1) seconds</td>
+      <td>(1) via the Administration Console, Domain &gt; Environment &gt; Servers &gt; Server Name &gt; Protocols &gt; HTTP . HTTP Duration Field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Administrator's Guide for Oracle HTTP Server 11g Release 1 (11.1.1); See Introduction to Oracle HTTP Server; http://download.oracle.com/docs/cd/E12839_01/web.1111/e10144/intro_ohs.htm#HSADM101</td>
+    </tr>
+    <tr>
+      <td>CCE-17513-3</td>
+      <td>Set the "HTTPS Duration" appropriately for each server.</td>
+      <td>(1) seconds</td>
+      <td>(1) via the Administration Console, Domain &gt; Environment &gt; Servers &gt; Server Name &gt; Protocols &gt; HTTP &gt; HTTPS Duration Field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>BEA WebLogic Server 10.0 Domain Configuration Schema Reference, See element https-keep-alive-secs</td>
+    </tr>
+    <tr>
+      <td>CCE-17769-1</td>
+      <td>Set the "HTTP Maximum Message Size" appropriately for each server.</td>
+      <td>(1) bytes</td>
+      <td>(1) via the Administration Console, Domain &gt; Environment &gt; Servers &gt; Server &gt; Protocols &gt; HTTP &gt; HTTP Maximum Size field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>BEA WebLogic Server 10.0 Domain Configuration Schema Reference, See element max-http-message-size</td>
+    </tr>
+    <tr>
+      <td>CCE-17650-3</td>
+      <td>For the Managed Server, create a "Connection Filter" if necessary.</td>
+      <td>(1) connection filter</td>
+      <td>In order to configure a connection filter, follow the instructions under the "Configuring Connection Filtering" section of the following URL:    http://download-llnw.oracle.com/docs/cd/E13222_01/wls/docs81/secmanage/domain.html#1107380</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to 13.3, "Using Connection Filters"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17214-8</td>
+      <td>Create a connection filter for the appropriate serves and machines.</td>
+      <td>(1) connection filter</td>
+      <td>In order to configure a connection filter, follow the instructions under the "Configuring Connection Filtering" section of the following URL:    http://download-llnw.oracle.com/docs/cd/E13222_01/wls/docs81/secmanage/domain.html#1107380</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Securing Oracle WebLogic Server 11g Release 1 (10.3.5), See 13 Configuring Security for a WebLogic Domain</td>
+    </tr>
+    <tr>
+      <td>CCE-18147-9</td>
+      <td>Set the "Keystore" file permissions as appropriate.</td>
+      <td>(1) value</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Securing Oracle WebLogic Server 11g Release 1 (10.3.1), See "11 Configuring Identity and Trust"</td>
+    </tr>
+    <tr>
+      <td>CCE-18024-0</td>
+      <td>Set the "Keystores" permission value appropriately in directories.</td>
+      <td>(1) value</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>link down to 11, "Configuring Identity and Trust"</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18046-3</td>
+      <td>Set the premissions to the Weblogic Server Product Installation directory appropriately.</td>
+      <td>(1) value</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Installation Guide for Oracle WebLogic Server 11g Release 1 (10.3.1) -- See Choosing a Product Installation Directory; http://download.oracle.com/docs/cd/E12839_01/doc.1111/e14142/prepare.htm#WLSIG112</td>
+    </tr>
+    <tr>
+      <td>CCE-17425-0</td>
+      <td>Set the premissions to the Domain Home directory appropriately.</td>
+      <td>(1) value</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Administrator's Guide 11g Release 1 (11.1.1), See "2 Understanding Oracle Fusion Middleware Concepts," "2.2 What Is an Oracle WebLogic Server Domain"</td>
+    </tr>
+    <tr>
+      <td>CCE-17216-3</td>
+      <td>Enable or disable the "Client Cert Proxy Enabled" attribute appropriately.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Domain &gt; Configuration &gt; Web Applications &gt; Client Cert Proxy Enabled Field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Developing Web Applications, Servlets, and JSPs for Oracle WebLogic Server 11g Release 1 (10.3.1), See "B weblogic.xml Deployment Descriptor Elements," then "client-cert-proxy-enabled"</td>
+    </tr>
+    <tr>
+      <td>CCE-18171-9</td>
+      <td>Enable or disable the "Auth Cookie Enabled" option appropriately.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Domain &gt; Configuration &gt; Web Applications &gt; Auth Cookie Enabled Field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>BEA WebLogic Server 10.0 Domain Configuration Schema Reference, element auth-cookie-enabled</td>
+    </tr>
+    <tr>
+      <td>CCE-18193-3</td>
+      <td>Set the "Post Timeout" field appropriately.</td>
+      <td>(1) seconds</td>
+      <td>(1) via the Administration Console, Domain &gt; Configuration &gt; Web Applications &gt; Post Timeout Field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>BEA WebLogic Server 10.0 Domain Configuration Schema Reference, element post-timeout-secs</td>
+    </tr>
+    <tr>
+      <td>CCE-18198-2</td>
+      <td>Set the "Maximum Open Sockets" setting appropriately on the Administration server.</td>
+      <td>(1) open file descriptors</td>
+      <td>(1) via WLST</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Securing a Production Environment for Oracle WebLogic Server 11g Release 1 (10.3.1) E13705-01</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18185-9</td>
+      <td>Set the permissions to the Middleware Home directory appropriately.</td>
+      <td>(1) value</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Installation Guide for Oracle Identity Management 11g Release 1 (11.1.1) -- Installing Oracle WebLogic Server and Creating the Oracle Middleware Home http://download.oracle.com/docs/cd/E12839_01/install.1111/e12002/before.htm#INOIM957</td>
+    </tr>
+    <tr>
+      <td>CCE-17895-4</td>
+      <td>Set the "Complete Message Timeout" appropriately for each custom channel on each server.</td>
+      <td>(1) number of seconds</td>
+      <td>(1) via the Administration console, Environment &gt; Servers &gt; Server Domain &gt; Server name &gt; Protocols &gt; Channels &gt; General &gt; Complete Message Timeout field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Performance and Tuning for Oracle WebLogic Server 11g Release 1 (10.3.4), See “7 Tuning WebLogic Server, Reducing the Potential for Denial of Service Attacks, Tuning Complete Message Timeout"</td>
+    </tr>
+    <tr>
+      <td>CCE-17410-2</td>
+      <td>Set the "Idle Connection Timeout" appropriately for each custom channel on each server.</td>
+      <td>(1) number of seconds</td>
+      <td>(1) via the Administration console, Environment &gt; Servers &gt; Server Domain &gt; Server name &gt; Protocols &gt; Channels &gt; General &gt; Idle Connection Timeout field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>BEA WebLogic Server 10.0 Domain Configuration Schema Reference. See: element idle-connection-timeout</td>
+    </tr>
+    <tr>
+      <td>CCE-17239-5</td>
+      <td>Set the "Maximum Message Size" appropriately for each custom channel on each server.</td>
+      <td>(1) number of bytes</td>
+      <td>(1) via the Administration console, Environment &gt; Servers &gt; Server Domain &gt; Server name &gt; Protocols &gt; Channels &gt; General &gt; Maximum Message Size field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Performance and Tuning for Oracle WebLogic Server 11g Release 1 (10.3.4), See "14 Tuning WebLogic JMS," then "Setting Maximum Message Size for Network Protocols</td>
+    </tr>
+    <tr>
+      <td>CCE-17401-1</td>
+      <td>Set the Node Manager Listen Address appropriately.</td>
+      <td>(1) IP address/hostname of server</td>
+      <td>(1) via the Administration Console, Environment &gt; Machines &gt; the machine hosting the WebLogic Admin Server &gt; Configuration &gt; Node Manager &gt; Listen Address setting</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Node Manager Administrator's Guide for Oracle WebLogic Server 11g Release 1 (10.3.1), See “4 Configuring Java Node Manager, then Reviewing nodemanager.properties, Table 4-1 Node Manager Properties”</td>
+    </tr>
+    <tr>
+      <td>CCE-17237-9</td>
+      <td>Set the Node Manager "Type" appropriately.</td>
+      <td>(1) SSH/SSL/RSH/Plain</td>
+      <td>(1) via the Administration Console, Environment &gt; Machines &gt; the machine hosting the WebLogic Admin Server &gt; Configuration &gt; Node Manager &gt; Type setting</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Node Manager Administrator's Guide for Oracle WebLogic Server 11g Release 1 (10.3.1), See “4 Configuring Java Node Manager, then Configuring Java-based Node Manager Security”</td>
+    </tr>
+    <tr>
+      <td>CCE-18211-3</td>
+      <td>Set the "Policy Selection Preference" appropriately.</td>
+      <td>(1) Security then Compatibility then Performance/Security then Performance then Compatibility/Compatibility then Security then Performance/Compatibility then Performance then Security/Performance then Compatibility then Security/Performance then Security then Compatibility</td>
+      <td>(1) via the Administration Console, domain name &gt; Web Service Security &gt; Web Service Security Configuration name &gt; General &gt; Policy Selection Preference setting</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Securing WebLogic Web Services for Oracle WebLogic Server 11g Release 1 (10.3.1), See “2 Configuring Message-Level Security, Smart Policy Selection, Configuring Smart Policy Selection”</td>
+    </tr>
+    <tr>
+      <td>CCE-17780-8</td>
+      <td>Set the "Maximum Open Sockets" setting appropriately on all Managed Servers.</td>
+      <td>(1) open file descriptors</td>
+      <td>(1) via the Administration Console, Domain &gt; Environment &gt; Servers &gt; Server Name &gt; Configuration &gt; Tuning &gt; Maximum Open Sockets Field</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Securing a Production Environment for Oracle WebLogic Server 11g Release 1 (10.3.1) E13705-01</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18146-1</td>
+      <td>Set the "Enforce Constraints" setting on digital certificates as appropriate.</td>
+      <td>(1) strict/strong/true/off</td>
+      <td>(1) via the Administration Console, Environment &gt; Servers &gt; Server Name &gt; Configuration &gt; Server Start &gt; Arguments (2) via Startup Script</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Securing a Production Environment for Oracle WebLogic Server 11g Release 1 (10.3.1) E13705-01</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17246-0</td>
+      <td>Set the "Keystores" field accordingly for each server in the domain.</td>
+      <td>(1) Custom Identity and Command Line Trust/Custom Identity and Custom Trust/Custom Identity and Java Standard Trust/Demo Identity and Demo Trust</td>
+      <td>(1) via the Administration Console, Environment &gt; Servers &gt; Server Name &gt; Configuration &gt; Keystores &gt; Demo Identity and Demo Trust attribute</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Overview of Security Management, (p7, refers to Chapter 11 Configure Identity and Trust)</td>
+    </tr>
+    <tr>
+      <td>CCE-18013-3</td>
+      <td>Enable or disable the "HTTP Access Log File" setting as appropriate on each server.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Domain Structure &gt; Environment &gt; Servers &gt; Server Name &gt;Logging &gt; HTTP &gt; HTTP Access Log File Enabled checkbox</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Configuring Server Environments for Oracle WebLogic Server 11g Release 1 (10.3.1), See "5 Configuring Web Server Functionality ," then "Setting Up HTTP Access Logs"</td>
+    </tr>
+    <tr>
+      <td>CCE-17907-7</td>
+      <td>Set the "Custom Hostname Verifier" field as appropriate.</td>
+      <td>(1) custom verifier name</td>
+      <td>(1) via the Administration Console, Domain Structure &gt; Environment &gt; Servers &gt; Server Name &gt; Configuration &gt; SSL &gt; Advanced &gt; Custom Hostname Verification field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oracle® Fusion Middleware Programming Security for Oracle WebLogic Server 11g Release 1 (10.3.1), See "4 Using SSL Authentication in Java Clients," then "Using a Custom Hostname Verifier"</td>
+    </tr>
+    <tr>
+      <td>CCE-18953-0</td>
+      <td>Set the "SSL port enabled" setting appropriately for each server.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Environment &gt; Servers &gt; Administration Server &gt; SSL Listen Port Enabled attribute and SSL Listen Port field</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>BEA WebLogic Platform Security Guide Network Applications Team of the Systems and Network Attack Center (SNAC), p. 24 "Domains and Realms"</td>
+    </tr>
+    <tr>
+      <td>CCE-18365-7</td>
+      <td>Set the "Listen Port Enabled" as appropriate on each server.</td>
+      <td>(1) enabled/disabled</td>
+      <td>(1) via the Administration Console, Domain Structure &gt; Environment &gt; Servers &gt; Server Name &gt; Listen Port enabled checkbox</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>BEA WebLogic Platform Security Guide Network Applications Team of the Systems and Network Attack Center (SNAC), p. 24 "Domains and Realms"</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

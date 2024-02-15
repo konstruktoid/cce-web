@@ -1,0 +1,101 @@
+Unnamed: 0,Last modfied: 2013-02-11,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6
+,Version: 5.20130214,,,,,
+CCE ID,CCE Description,CCE Parameters,CCE Technical Mechanisms,,"CIS
+Apache Benchmark for Unix
+For Apache Versions 1.3 and 2.0
+Levels I and II","CIS
+Security Configuration Benchmark For
+Apache Web Server 2.2.0
+Version 2.2.0
+November 2008"
+CCE-27905-9,Apache's configuration directory should be owned by the appropriate group.,(1) group,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,1.19 Updating Ownership and Permissions p34
+CCE-27713-7,Apache's configuration directory should be owned by the appropriate user.,(1) user,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,1.19 Updating Ownership and Permissions p34
+CCE-27582-6,Apache's demo CGI printenv.pl should be available or removed as appropriate,(1) exist / not exist,"(1) (ServerRoot)\cgi-bin\printenv.pl
+(2) (ServerRoot)/cgi-bin/printenv.pl",,L1 18. Remove Default/Unneeded Apache Files p27,1.18 Remove Default Content p33
+CCE-27923-2,testcgi should be installed as appropriate.,(1) exist/not exist,(1) cgi-script directory,,L1 18. Remove Default/Unneeded Apache Files p27,1.18 Remove Default Content p33
+CCE-27885-3,"The ""FollowSymLinks"" setting of the DocumentRoot should be enabled or disabled as appropriate.",(1) FollowSymLinks / -FollowSymLinks / +FollowSymLinks / None,(1) Apache configuration file: Options directive (in DocumentRoot Directory directive),,L1 15. Directory Functionality/Features Directives p23,1.8 Directory Functionality Control with the Options Directive p16
+CCE-27991-9,"The ""IncludesNOEXEC"" setting of the DocumentRoot should be enabled or disabled as appropriate.",(1) IncludesNoExec / -IncludesNoExec / +IncludesNoExec / None,(1) Apache configuration file: Options directive (in DocumentRoot Directory directive),,L1 15. Directory Functionality/Features Directives p24,1.8 Directory Functionality Control with the Options Directive p16
+CCE-27484-5,"The ""Indexes"" setting of the DocumentRoot should be enabled or disabled as appropriate.",(1) Indexes / -Indexes / +Indexes / None,(1) Apache configuration file: Options directive (in DocumentRoot Directory directive),,L1 15. Directory Functionality/Features Directives p24,1.8 Directory Functionality Control with the Options Directive p16
+CCE-27784-8,The Allow Directive for the OS root should be configured appropriately,(1) all | hostname/IP address/environment variable,(1) Allow directive,,L1 13. Access Control Directives p21,1.7 Restricting Access p14-15
+CCE-27505-7,The Allow directive for the specified Directory directive should be configured appropriately.,(1) all | hostname/IP address/environment variable,(1) Allow directive,,L1 13. Access Control Directives p21,1.7 Restricting Access p14-15
+CCE-27969-5,"The Apache ""KeepAlive"" directive should be configured appropriately.",(1) On / Off,(1) Apache configuration file: KeepAlive directive,,L1 10. Denial of Service (DoS) Protective General Directives pg 16,1.13 Denial of Service Prevention Tuning p21
+CCE-27797-0,"The Apache ""KeepAliveTimeout"" directive should be configured appropriately.",(1) Number value (in seconds),(1) Apache configuration file: KeepAliveTimeout directive,,L1 10. Denial of Service (DoS) Protective General Directives pg 16,1.13 Denial of Service Prevention Tuning p21
+CCE-28018-0,"The Apache ""LimitRequestBody"" directive should be configured appropriately.",(1) Number value (in bytes) ,(1) Apache configuration file: LimitRequestBody directive,,L2 7. Buffer Overflow Protections p42,1.14 Buffer Overflow Protection Tuning p23
+CCE-27962-0,"The Apache ""LimitRequestFields"" directive should be configured appropriately",(1) Number value,(1) Apache configuration file: LimitRequestFields directive,,L2 7. Buffer Overflow Protections p42,1.14 Buffer Overflow Protection Tuning p24
+CCE-27025-6,"The Apache ""LimitRequestFieldSizeBody"" directive should be configured appropriately.",(1) Number value (in bytes),(1) Apache configuration file: LimitRequestFieldSizeBody directive,,L2 7. Buffer Overflow Protections p42,1.14 Buffer Overflow Protection Tuning p24
+CCE-28008-1,"The Apache ""LimitRequestline"" directive should be configured appropriatley.",(1) Number value (in bytes) ,(1) Apache configuration file: LimitRequestLine directive,,L2 7. Buffer Overflow Protections p42,1.14 Buffer Overflow Protection Tuning p24
+CCE-27805-1,"The Apache ""LogLevel"" directive should be configured appropriately.",(1) debug / info / notice / warn / error / crit / alert / emerg,(1) Apache configuration file: LogLevel directive,,L1 17. Logging General Directives p26,1.17 Logging p31
+CCE-27264-1,"The Apache ""MaxClients"" directive should be configured appropriately.",(1) Number value,(1) Apache configuration file: MaxClients directive,,L1 10. Denial of Service (DoS) Protective General Directives pg 16,1.13 Denial of Service Prevention Tuning p22
+CCE-27863-0,"The Apache ""ServerTokens"" directive should be configured appropriately.",(1) Prod[uctOnly] / Major / Minor / Min[imal] / OS / Full,(1) Apache configuration file: ServerTokens directive,,L1 11. Web Server Software Obfuscation General Directives p17,1.16 Software Information Leakage Protection p29
+CCE-27790-5,"The Apache ""Timeout"" directive should be configured appropriately.",(1) Number value (in seconds),(1) Apache configuration file: Timeout directive,,L1 10. Denial of Service (DoS) Protective General Directives pg 16,1.13 Denial of Service Prevention Tuning p21
+CCE-27855-6,The Apache access log file data should be configured to contain the appropriate data elements.,(1) LogFormat Format String,(1) Apache configuration file: LogFormat directive,,L1 17. Logging General Directives p26,1.17 Logging p30
+CCE-27823-4,The Apache AllowOverride Directive should be configured appropriately for operating system root directories.,(1) AuthConfig / FileInfo / Indexes / Limit / Options / All / None,(1) Apache configuration file: AllowOverride directive,,L1 15. Directory Functionality/Features Directives p24,1.8 Directory Functionality Control with the Options Directive p17
+CCE-27701-2,The Apache AllowOverride directive should be configured appropriately for web site root directories.,(1) AuthConfig / FileInfo / Indexes / Limit / Options / All / None,(1) Apache configuration file: AllowOverride directive,,L1 15. Directory Functionality/Features Directives p24,1.8 Directory Functionality Control with the Options Directive p17
+CCE-27960-4,The Apache ErrorDocument directive should be set correctly for HTTP 400 errors.,(1) message/document,(1) Apache configuration file: 'ErrorDocument 400' directive,,L1 11. Web Server Software Obfuscation General Directives p17,2.7 Additional Software Information Leakage Protection p50
+CCE-27939-8,The Apache Group directive should be set correctly.,(1) group name,(1) Apache configuration file: Group directive,,L1 8. User Oriented General Directives p14,1.6 Creating the Apache User and Group Accounts p14
+CCE-27324-3,The Apache runtime rewriting engine should be enabled or disabled as appropriate.,(1) off/on,(1) Apache configuration file: RewriteEngine directive,,L1 21. Deny HTTP TRACE Requests with Mod_Rewrite p33,1.11 Restrict HTTP Protocol Version p19
+CCE-27896-0,The Apache ServerSignature directive should be set appropriately.,(1) On/Off/EMail,(1) Apache configuration file: ServerSignature directive,,L1 11. Web Server Software Obfuscation General Directives p17,1.16 Software Information Leakage Protection p29
+CCE-27739-2,The Apache system logging should be configured appropriately.,"(1) File path | pipe
+(2)  LogFormat | nickname ",(1) Apache configuration file: CustomLog directive,,L1 17. Logging General Directives p26,1.17 Logging p31
+CCE-27983-6,The Apache user account should be allowed root privileges as appropriate.,(1) allowed/not allowed,(1) via /etc/passwd,,L1 4. Create the Apache Web User Account p11,1.6 Creating the Apache User and Group Accounts p14
+CCE-27942-2,The Apache User directive should be set correctly.,(1) user name,(1) Apache configuration file: User directive,,L1 8. User Oriented General Directives p13,1.6 Creating the Apache User and Group Accounts p14
+CCE-27029-8,The ApacheErrorDocument directive should be set correctly for HTTP 401 errors.,(1) message/document,(1) Apache configuration file: 'ErrorDocument 401' directive,,L1 11. Web Server Software Obfuscation General Directives p17,2.7 Additional Software Information Leakage Protection p50
+CCE-27867-1,The ApacheErrorDocument directive should be set correctly for HTTP 403 errors.,(1) message/document,(1) Apache configuration file: 'ErrorDocument 403' directive,,L1 11. Web Server Software Obfuscation General Directives p17,2.7 Additional Software Information Leakage Protection p50
+CCE-27951-3,The ApacheErrorDocument directive should be set correctly for HTTP 404 errors.,(1) message/document,(1) Apache configuration file: 'ErrorDocument 404' directive,,L1 11. Web Server Software Obfuscation General Directives p17,2.7 Additional Software Information Leakage Protection p50
+CCE-27963-8,The ApacheErrorDocument directive should be set correctly for HTTP 405 errors.,(1) message/document,(1) Apache configuration file: 'ErrorDocument 405' directive,,L1 11. Web Server Software Obfuscation General Directives p17,2.7 Additional Software Information Leakage Protection p50
+CCE-28026-3,The ApacheErrorDocument directive should be set correctly for HTTP 500 errors.,(1) message/document,(1) Apache configuration file: 'ErrorDocument 500' directive,,L1 11. Web Server Software Obfuscation General Directives p17,2.7 Additional Software Information Leakage Protection p50
+CCE-27321-9,The Deny Directive for the OS root should be configured appropriately,(1) all | hostname/IP address/environment variable,(1) Deny directive,,L1 13. Access Control Directives p21,1.7 Restricting Access p14-15
+CCE-27592-5,The Deny directive for the specified Directory directive should be configured appropriately.,(1) all | hostname/IP address/environment variable,(1) Deny directive,,L1 13. Access Control Directives p21,1.7 Restricting Access p14-15
+CCE-27755-8,The group membership of any Apache files in /var/log/httpd/ should be set correctly.,(1) group,(1) via chgrp,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,1.19 Updating Ownership and Permissions p34
+CCE-27958-8,The group membership of the Apache /etc/httpd/conf.d file should be set correctly.,(1) group,(1) via chgrp,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,1.19 Updating Ownership and Permissions p34
+CCE-27804-4,The group membership of the Apache /etc/httpd/conf/passwd file should be set correctly.,(1) group,(1) via chgrp,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,1.19 Updating Ownership and Permissions p34
+CCE-27988-5,The group membership of the Apache /usr/sbin/apachectl file should be set correctly.,(1) group,(1) via chgrp,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,1.19 Updating Ownership and Permissions p34
+CCE-27832-5,The group membership of the Apache /usr/sbin/httpd file should be set correctly. ,(1) group,(1) via chgrp,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,1.19 Updating Ownership and Permissions p34
+CCE-27770-7,The group membership of the Apache /var/www/html file should be set correctly.,(1) group,(1) via chgrp,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,1.19 Updating Ownership and Permissions p34
+CCE-27475-3,The group membership of the Apache user account should be set correctly.,(1) group,(1) via /etc/group,,L1 4. Create the Apache Web User Account p11,1.6 Creating the Apache User and Group Accounts p14
+CCE-28028-9,The ownership of log files in Apache /var/log/httpd/ should be set correctly.,(1) owner,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,1.19 Updating Ownership and Permissions p34
+CCE-27970-3,The ownership of the Apache /etc/httpd/conf.d file should be set correctly.,(1) owner,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,1.19 Updating Ownership and Permissions p34
+CCE-27036-3,The ownership of the Apache /etc/httpd/conf/passwd file should be set correctly.,(1) owner,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,1.19 Updating Ownership and Permissions p34
+CCE-27136-1,The ownership of the Apache /usr/sbin/apachectl file should be set correctly.,(1) owner,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,1.19 Updating Ownership and Permissions p34
+CCE-27932-3,The ownership of the Apache /usr/sbin/httpd file should be set correctly. ,(1) owner,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,1.19 Updating Ownership and Permissions p34
+CCE-27561-0,The ownership of the Apache /var/www/html file should be set correctly.,(1) owner,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,1.19 Updating Ownership and Permissions p34
+CCE-28004-0,The path for Apache sites error log files should be configured appropriately.,(1) File path,(1) Apache configuration file: ErrorLog directive,,L2 4. ErrorLog - Syslog p70-71,2.5 Syslog Logging p44-45
+CCE-27956-2,The permissions for the Apache /etc/httpd/conf.d file should be set correctly.,(1) permissions,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,1.19 Updating Ownership and Permissions p34
+CCE-27929-9,The permissions for the Apache /etc/httpd/conf/passwd file should be set correctly.,(1) permissions,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,1.19 Updating Ownership and Permissions p34
+CCE-27632-9,The permissions for the Apache /usr/sbin/apachectl file should be set correctly.,(1) permissions,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,1.19 Updating Ownership and Permissions p34
+CCE-27902-6,The permissions for the Apache /usr/sbin/httpd file should be set correctly. ,(1) permissions,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,1.19 Updating Ownership and Permissions p34
+CCE-27997-6,The permissions for the Apache/var/www/html file should be set correctly.,(1) permissions,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,1.19 Updating Ownership and Permissions p34
+CCE-27537-0,The permissions of any Apache files in /var/log/httpd/ should be set correctly.,(1) permissions,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,1.19 Updating Ownership and Permissions p34
+CCE-28019-8,The Unix permissions of Apache's configuration directory should be configred appropriately,(1) permissions,(1) via chmod,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,1.19 Updating Ownership and Permissions p34
+CCE-27874-7,"The""Includes"" setting of the DocumentRoot should be enabled or disabled as appropriate. ",(1) Includes / -Includes / +Includes / None,(1) Apache configuration file: Options directive (in DocumentRoot Directory directive),,L1 15. Directory Functionality/Features Directives p24,1.8 Directory Functionality Control with the Options Directive p16
+CCE-27656-8,"The""MultiViews"" setting of the DocumentRoot should be enabled or disabled as appropriate.",(1) MultiViews / -MultiViews / +MultiViews / None,(1) Apache configuration file: Options directive (in DocumentRoot Directory directive),,L1 15. Directory Functionality/Features Directives p24-25,1.8 Directory Functionality Control with the Options Directive p17
+CCE-27071-0,The Order directive for the OS root should be configured appropriately.,"(1) Allow,Deny / Deny,Allow / Mutual-failure","
+(1) Order directive",,L1 13. Access Control Directives p21,
+CCE-27987-7,Permitted HTTP request methods should be configured appropriately.,"(1) methods
+(2) access control directives",(1) Apache configuration file: LimitExecpt directive,,L1 16. Limiting HTTP Request Methods p25,
+CCE-27489-4,Access to Apache's httpd.conf file should be configured appropriately.,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by (ServerRoot)\conf\httpd.conf's DACL  ,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,
+CCE-28009-9,The Windows permissions for all files specified by CustomLog directives should be configured appropriately,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by the object's DACL  ,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,
+CCE-27977-8,The Windows permissions for all files specified by ErrorLog directives should be configured appropriately,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by the object's DACL  ,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,
+CCE-27802-8,The location of the Apache htpasswd file should be set correctly.,(1) directory path,(1) Directory of htpasswd file,,L1 14. Authentication Mechanisms p22,
+CCE-27803-6,The Apache Server Administrator email address should be set correctly.,(1) email address,(1) 'ServerAdmin' line in Apache configuration file,,L1 8. User Oriented General Directives p14,
+CCE-27924-0,The Apache user account should be locked or unlocked as appropriate.,(1) locked/unlocked,(1) via /etc/passwd,,L1 5. Lock Down the Apache Web User Account p11,
+CCE-28027-1,File permissions for httpd.conf should be set correctly.,(1) permissions,(1) via chmod,,,1.19 Updating Ownership and Permissions p34
+CCE-27147-8,The httpd.conf file should be owned by the appropriate user.,(1) user,(1) via chown,,,1.19 Updating Ownership and Permissions p34
+CCE-28109-7,The httpd.conf file should be owned by the appropriate group.,(1) group,(1) via chown,,,1.19 Updating Ownership and Permissions p34
+CCE-27949-7,The Unix permissions of Apache's htpasswd file should be configured appropriately.,(1) permissions,(1) via chmod,,,1.19 Updating Ownership and Permissions p34
+CCE-27502-4,The htpasswd should be owned by the appropriate user.,(1) user,(1) via chown,,,1.19 Updating Ownership and Permissions p34
+CCE-28001-6,The htpasswd file should be owned by the appropriate group.,(1) group,(1) via chown,,,1.19 Updating Ownership and Permissions p34
+CCE-28139-4,"The Apache ""StartServers"" directive should be configured appropriately.",(1) Number value,(1) Apache configuration file: StartServers directive,,,1.13 Denial of Service Prevention Tuning p22
+CCE-27654-3,"The Apache ""MinSpareServers"" directive should be configured appropriately.",(1) Number value,(1) Apache configuration file: MinSpareServers directive,,,1.13 Denial of Service Prevention Tuning p22
+CCE-27916-6,"The Apache ""MaxSpareServers"" directive should be configured appropriately.",(1) Number value,(1) Apache configuration file: MaxSpareServers directive,,,1.13 Denial of Service Prevention Tuning p22
+CCE-27785-5,"The ""ExecCGI"" setting of the DocumentRoot should be enabled or disabled as appropriate.",(1) ExecCGI / -ExecCGI/ +ExecCGI / None,(1) Apache configuration file: Options directive (in DocumentRoot Directory directive),,,1.8 Directory Functionality Control with the Options Directive p16
+CCE-28125-3,The Order directive for all DocumentRoot directives should be configured appropriately.,"(1) Allow,Deny / Deny,Allow / Mutual-failure",(1) Apache configuration file: Order directive (in DocumentRoot Directory directive),,,1.7 Restricting Access p15
+CCE-28116-2,The Order directive for the specified Directory directive should be configured appropriately.,"(1) Allow,Deny / Deny,Allow / Mutual-failure","
+(1) TARGET: Directory directive
+(2) Apache configuration file: Order directive",,,1.7 Restricting Access p15

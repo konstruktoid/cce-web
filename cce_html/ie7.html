@@ -1,0 +1,2219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>CCE Lists</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href='../css/basic.css' type='text/css' rel='stylesheet' />
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Unnamed: 0</th>
+      <th>Last modified: 2012-02-17</th>
+      <th>Unnamed: 2</th>
+      <th>f</th>
+      <th>Unnamed: 4</th>
+      <th>Unnamed: 5</th>
+      <th>Unnamed: 6</th>
+      <th>Unnamed: 7</th>
+      <th>Unnamed: 8</th>
+      <th>Unnamed: 9</th>
+      <th>Unnamed: 10</th>
+      <th>Unnamed: 11</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NaN</td>
+      <td>Version: 5.20120314</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE ID</td>
+      <td>CCE Description</td>
+      <td>CCE Parameters</td>
+      <td>CCE Technical Mechanisms</td>
+      <td>NaN</td>
+      <td>Old v4 CCE ID</td>
+      <td>NIST SCAP Microsoft Internet Explorer Version 7.0 OVAL(SCAP-IE7-OVAL-Beta-v3.xml)</td>
+      <td>NIST SCAP Microsoft Internet Explorer Version 7.0 XCCDF (SCAP-IE7-XCCDF-Beta-v3.xml</td>
+      <td>FDCC IE7 XCCDF (fdcc-accepted-content-20080110\fdcc-ie7-xccdf.xml)</td>
+      <td>FDCC IE7 OVAL (fdcc-accepted-content-20080110\fdcc-ie7-oval.xml</td>
+      <td>USGCB XCCDF (USGCB-Windows-ie7-xccdf)</td>
+      <td>USGCB OVAL (USGCB-Windows-ie7-oval)</td>
+    </tr>
+    <tr>
+      <td>CCE-4017-0</td>
+      <td>The "Security Zones: Use Only Machine Settings" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Use_HKLM_only  Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Security_HKLM_only</td>
+      <td>NaN</td>
+      <td>CCE-5</td>
+      <td>oval:org.mitre.oval:def:1277, oval:org.mitre.oval:def:2050</td>
+      <td>UseOnlyMachineSettings-LocalComputer, UseOnlyMachineSettings-LocalComputer-Disabled</td>
+      <td>use_only_machine_settings_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1277</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3924-8</td>
+      <td>Internet Explorer Processes (Restrict ActiveX Install)</td>
+      <td>enabled/disabled</td>
+      <td>HKLM\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_RESTRICT_ACTIVEXINSTALL\(Reserved)  HKLM\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_RESTRICT_ACTIVEXINSTALL\explorer.exe  HKLM\Software\Policies\ Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Features/Restrict ActiveX Install Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_RESTRICT_ACTIVEXINSTALL\(Reserved)  [HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_RESTRICT_ACTIVEXINSTALL\explorer.exe [HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_RESTRICT_ACTIVEXINSTALL\iexplore.exe</td>
+      <td>NaN</td>
+      <td>CCE-119</td>
+      <td>oval:org.mitre.oval:def:658</td>
+      <td>IEProcesses-RestrictActiveXInstall-LocalComputer</td>
+      <td>IEProcesses_RestrictActiveXInstall_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:658</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3929-7</td>
+      <td>The "Security Zones: Do Not Allow Users to Add/Delete Sites" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Security_Zones_Map_Edit Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Security_zones_map_edit</td>
+      <td>NaN</td>
+      <td>CCE-146</td>
+      <td>oval:org.mitre.oval:def:1400</td>
+      <td>DoNotAllowUsersAddDeleteSites-LocalComputer</td>
+      <td>DoNotAllowUsersAddDeleteSites_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1400</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3576-6</td>
+      <td>The "Disable Periodic Check For Internet Explorer Software Updates" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Internet Explorer\InfoDelivery\Restrictions\NoUpdateCheck Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions\NoUpdateCheck</td>
+      <td>NaN</td>
+      <td>CCE-212</td>
+      <td>oval:org.mitre.oval:def:1357</td>
+      <td>DisablePeriodicCheckForIESoftwareUpdates-LocalComputer</td>
+      <td>DisablePeriodicCheckForIESoftwareUpdates_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1357</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4043-6</td>
+      <td>Internet Explorer Processes (Zone Elevation Protection)</td>
+      <td>enabled/disabled</td>
+      <td>HKLM\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ZONE_ELEVATION\(Reserved) HKLM\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ZONE_ELEVATION\explorer.exe  HKLM\Software\Policies\Microsoft\Internet Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Features/Protection From Zone Elevation Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ZONE_ELEVATION\(Reserved) [HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ZONE_ELEVATION\explorer.exe [HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ZONE_ELEVATION\iexplore.exe</td>
+      <td>NaN</td>
+      <td>CCE-347</td>
+      <td>oval:org.mitre.oval:def:620</td>
+      <td>NaN</td>
+      <td>IEProcesses_ProtectionFromZoneElevation_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:620</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4047-7</td>
+      <td>The "Internet Explorer Processes (Consistent MIME Handling)" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKLM\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_MIME_HANDLING\(Reserved)  HKLM\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_MIME_HANDLING\explorer.exe HKLM\Software\Policies\Microsoft\Internet E Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Features/Binary Behavior Security Restriction  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_MIME_HANDLING\(Reserved) [HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_MIME_HANDLING\explorer.exe  [HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_MIME_HANDLING\iexplore.exe</td>
+      <td>NaN</td>
+      <td>CCE-382</td>
+      <td>oval:org.mitre.oval:def:884</td>
+      <td>IEProcesses-ConsistentMimeHandling-LocalComputer</td>
+      <td>IEProcesses_ConsistentMimeHandling_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:884</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3941-2</td>
+      <td>The "Allow Software to Run or Install Even if the Signature is Invalid" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKLM\Software\Policies\Microsoft\Internet Explorer\Download\RunInvalidSignatures Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Advanced Page   Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Download\RunInvalidSignatures</td>
+      <td>NaN</td>
+      <td>CCE-449</td>
+      <td>oval:org.mitre.oval:def:680, oval:org.mitre.oval:def:1392</td>
+      <td>AllowSoftwareRunInstallSignatureInvalid-LocalComputer, AllowSoftwareToRununOrInstallEvenIfSignatureInvalid-LocalUser</td>
+      <td>AllowSoftwareRunInstallSignatureInvalid_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:680</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3338-1</td>
+      <td>The "Internet Explorer Processes (MK Protocol)" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKLM\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_DISABLE_MK_PROTOCOL\(Reserved)  HKLM\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_DISABLE_MK_PROTOCOL\explorer.exe  HKLM\Software\Policies\Microsoft Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Features/MK Protocol Security Restriction  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_DISABLE_MK_PROTOCOL\(Reserved)  [HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_DISABLE_MK_PROTOCOL\explorer.exe  [HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_DISABLE_MK_PROTOCOL\iexplore.exe</td>
+      <td>NaN</td>
+      <td>CCE-591</td>
+      <td>oval:org.mitre.oval:def:617</td>
+      <td>IEProcesses-MKProtocolSecurityRestriction-LocalComputer</td>
+      <td>IEProcesses_MKProtocolSecurityRestriction_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:617</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4118-6</td>
+      <td>The "Disable Software Update Shell Notifications on Program Launch" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoMSAppLogo5ChannelNotify Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Features/Restrict File Download  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_RESTRICT_FILEDOWNLOAD\(Reserved)  [HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_RESTRICT_FILEDOWNLOAD\explorer.exe  [HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_RESTRICT_FILEDOWNLOAD\iexplore.exe</td>
+      <td>NaN</td>
+      <td>CCE-622</td>
+      <td>oval:org.mitre.oval:def:1188</td>
+      <td>DisableSoftwareUpdateShellNotifications-LocalComputer</td>
+      <td>DisableSoftwareUpdateShellNotifications_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1188</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4122-8</td>
+      <td>The "Internet Explorer Processes (Restrict File Download)" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKLM\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_RESTRICT_FILEDOWNLOAD\(Reserved)  HKLM\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_RESTRICT_FILEDOWNLOAD\explorer.exe  Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Features/Restrict File Download  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_RESTRICT_FILEDOWNLOAD\(Reserved)  [HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_RESTRICT_FILEDOWNLOAD\explorer.exe  [HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_RESTRICT_FILEDOWNLOAD\iexplore.exe</td>
+      <td>NaN</td>
+      <td>CCE-668</td>
+      <td>oval:org.mitre.oval:def:320</td>
+      <td>IEProcesses-RestrictFileDownload-LocalComputer</td>
+      <td>IEProcesses_RestrictFileDownload_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:320</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3518-8</td>
+      <td>The "Disable Automatic Install of Internet Explorer Components" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Internet Explorer\InfoDelivery\Restrictions\NoJITSetup Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions\NoJITSetup</td>
+      <td>NaN</td>
+      <td>CCE-684</td>
+      <td>oval:org.mitre.oval:def:1198</td>
+      <td>DisableAutomaticInstallOfIEComponents-LocalComputer</td>
+      <td>DisableAutomaticInstallOfIEComponents_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1198</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3201-1</td>
+      <td>The "Make Proxy Settings Per-Machine (Rather Then Per-User)" setting should be configured correctly.</td>
+      <td>number of proxy settings</td>
+      <td>HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\ProxySettingsPerUser Local Internet Options: GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\ProxySettingsPerUser</td>
+      <td>NaN</td>
+      <td>CCE-693</td>
+      <td>oval:org.mitre.oval:def:1181</td>
+      <td>MakeProxySettingsPerMachine-LocalComputer</td>
+      <td>MakeProxySettingsPerMachine_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1181</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3744-0</td>
+      <td>The "Do Not Allow Users to enable or Disable Add-Ons" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options: GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Restrictions\NoExtensionManagement</td>
+      <td>NaN</td>
+      <td>CCE-708</td>
+      <td>oval:org.mitre.oval:def:1380, oval:org.mitre.oval:def:1358, oval:org.mitre.oval:def:1694</td>
+      <td>DoNotAllowUsersEnableDisableAddOns-LocalComputer, DoNotAllowUsersEnableDisableAddOns-LocalUser</td>
+      <td>DoNotAllowUsersEnableDisableAddOns_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1694</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3894-3</td>
+      <td>The "Turn Off Crash Detection" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKLM\Software\Policies\Microsoft\Internet Explorer\Restrictions\NoCrashDetection Local Internet Options: GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Restrictions\NoCrashDetection</td>
+      <td>NaN</td>
+      <td>CCE-753</td>
+      <td>oval:org.mitre.oval:def:487</td>
+      <td>TurnOffCrashDetection-LocalComputer</td>
+      <td>TurnOffCrashDetection_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:487</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4162-4</td>
+      <td>The "Internet Explorer Processes (Scripted Window Security Restrictions)" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKLM\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_WINDOW_RESTRICTIONS\(Reserved)  HKLM\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_WINDOW_RESTRICTIONS\explorer.exe  Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Features/Scripted Window Security Restrictions  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_WINDOW_RESTRICTIONS\(Reserved)  [HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_WINDOW_RESTRICTIONS\explorer.exe  [HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_WINDOW_RESTRICTIONS\iexplore.exe</td>
+      <td>NaN</td>
+      <td>CCE-827</td>
+      <td>oval:org.mitre.oval:def:465</td>
+      <td>IEProcesses-ScriptedWindowSecurityRestrictions-LocalComputer</td>
+      <td>IEProcesses_ScriptedWindowSecurityRestrictions_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:465</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3933-9</td>
+      <td>The "Security Zones: Do Not Allow Users to Change Policies" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Security_options_edit Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Security_options_edit</td>
+      <td>NaN</td>
+      <td>CCE-833</td>
+      <td>oval:org.mitre.oval:def:1404</td>
+      <td>DoNotAllowUsersChangePolicies-LocalComputer</td>
+      <td>DoNotAllowUsersChangePolicies_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1404</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4149-1</td>
+      <td>The "Internet Explorer Processes (MIME Sniffing)" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKLM\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_MIME_SNIFFING\(Reserved)  HKLM\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_MIME_SNIFFING\explorer.exe  Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Features/Mime Sniffing Safety Feature  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_MIME_SNIFFING\(Reserved)  [HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_MIME_SNIFFING\explorer.exe  [HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_MIME_SNIFFING\iexplore.exe</td>
+      <td>NaN</td>
+      <td>CCE-985</td>
+      <td>oval:org.mitre.oval:def:317</td>
+      <td>IEProcesses-MimeSniffingSafetyFeature-LocalComputer</td>
+      <td>IEProcesses_MimeSniffingSafetyFeature_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:317</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4026-1</td>
+      <td>The "Check for Signature on Downloaded Programs" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Advanced Page   Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Download\CheckExeSignatures</td>
+      <td>NaN</td>
+      <td>CCE-1025</td>
+      <td>oval:org.mitre.oval:def:395</td>
+      <td>CheckSignatureDownloadedPrograms-LocalComputer</td>
+      <td>CheckSignatureDownloadedPrograms_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:395</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4171-5</td>
+      <td>The "Do Not Allow Resetting Internet Explorer Settings" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Advanced Page   Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Control Panel\DisableRIED</td>
+      <td>NaN</td>
+      <td>CCE-42</td>
+      <td>oval:org.mitre.oval:def:583</td>
+      <td>DoNotAllowResettingIESettings-LocalComputer</td>
+      <td>DoNotAllowResettingIESettings_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:583</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4109-5</td>
+      <td>The "Allow cut, copy, or paste operations from the clipboard via script" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1407</td>
+      <td>NaN</td>
+      <td>CCE-49</td>
+      <td>oval:org.mitre.oval:def:506, oval:org.mitre.oval:def:533</td>
+      <td>AllowCutCopyPasteOperationsFromClipboardViaScript-InternetZone-LocalComputer, AllowCutCopyPasteOperationsFromClipboardViaScript-InternetZone-LocalUser</td>
+      <td>allow_cut_copy_paste_operations_from_clipboard_via_script_internet_zone_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:506</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3378-7</td>
+      <td>The "Turn Off First- Run Opt-In" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1208</td>
+      <td>NaN</td>
+      <td>CCE-863</td>
+      <td>oval:org.mitre.oval:def:1119</td>
+      <td>TurnOffFirst-RunOpt-In-InternetZone-LocalComputer</td>
+      <td>TurnOffFirstRunOptIn_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1119</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4131-9</td>
+      <td>The "Web Browser Applications" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\2400</td>
+      <td>NaN</td>
+      <td>CCE-286</td>
+      <td>oval:org.mitre.oval:def:242</td>
+      <td>WebBrowserApplications-InternetZone-LocalComputer</td>
+      <td>WebBrowserApplications_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:242</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4013-9</td>
+      <td>The "Allow cut, copy, or paste operations from the clipboard via script" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1407</td>
+      <td>NaN</td>
+      <td>CCE-1031</td>
+      <td>oval:org.mitre.oval:def:249, oval:org.mitre.oval:def:1393</td>
+      <td>AllowCutCopyPasteOperationsFromClipboardViaScript-RestrictedSitesZone-LocalComputer, AllowCutCopyPasteOperationsFromClipboardViaScript-RestrictedSitesZone-LocalUser</td>
+      <td>AllowCutCopyPasteOperationsFromClipboardViaScript_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:249</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4153-3</td>
+      <td>The "Turn Off First- Run Opt-In" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1208</td>
+      <td>NaN</td>
+      <td>CCE-200</td>
+      <td>oval:org.mitre.oval:def:621</td>
+      <td>TurnOffFirst-RunOpt-In-RestrictedSitesZone-LocalComputer</td>
+      <td>TurnOffFirstRunOptIn_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:621</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4052-7</td>
+      <td>The "Web Browser Applications" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\2400</td>
+      <td>NaN</td>
+      <td>CCE-51</td>
+      <td>oval:org.mitre.oval:def:580</td>
+      <td>WebBrowserApplications-RestrictedSitesZone-LocalComputer</td>
+      <td>WebBrowserApplications_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:580</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4175-6</td>
+      <td>The "Intranet Sites: Include all network paths (UNCs)" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\UNCAsIntranet</td>
+      <td>NaN</td>
+      <td>CCE-876</td>
+      <td>oval:org.mitre.oval:def:559, oval:org.mitre.oval:def:1370</td>
+      <td>IncludeAllNetworkPaths-LocalComputer, IncludeAllNetworkPaths-LocalUser</td>
+      <td>include_all_network_paths_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:559</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3695-4</td>
+      <td>The "Disable the Advanced Page" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Control Panel\AdvancedTab</td>
+      <td>NaN</td>
+      <td>CCE-810</td>
+      <td>oval:org.mitre.oval:def:934, oval:org.mitre.oval:def:660</td>
+      <td>DisableTheAdvancedPage-LocalComputer, DisableTheAdvancedPage-LocalUser</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3777-0</td>
+      <td>The "Disable the Privacy Page" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Control Panel\PrivacyTab</td>
+      <td>NaN</td>
+      <td>CCE-811</td>
+      <td>oval:org.mitre.oval:def:1111</td>
+      <td>DisableThePrivacyPage-LocalComputer</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3433-0</td>
+      <td>The "Disable the Security Page" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Control Panel\SecurityTab</td>
+      <td>NaN</td>
+      <td>CCE-595</td>
+      <td>oval:org.mitre.oval:def:672, oval:org.mitre.oval:def:601</td>
+      <td>DisableTheSecurityPage-LocalComputer, DisableTheSecurityPage-LocalUser</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4199-6</td>
+      <td>The "Prevent Ignoing Certificate Errors" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\PreventIgnoreCertErrors</td>
+      <td>NaN</td>
+      <td>CCE-938</td>
+      <td>oval:org.mitre.oval:def:655, oval:org.mitre.oval:def:1129</td>
+      <td>PreventIgnoingCertificateErrors-LocalComputer, PreventIgnoingCertificateErrors-LocalUser</td>
+      <td>prevent_ignoring_certificate_errors_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:655</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3204-5</td>
+      <td>The "Turn Off changing the URL to be displayed for checking updates to Internet Explorer and Internet Tools" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Internet Settings/Component Updates/Periodic Check for Updates to Internet Explorer and Internet Tools  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\Update_Check_Page</td>
+      <td>NaN</td>
+      <td>CCE-946</td>
+      <td>oval:org.mitre.oval:def:715</td>
+      <td>TurnOffChangingURLDisplay-LocalComputer</td>
+      <td>TurnOffChangingURLDisplay_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:715</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4098-0</td>
+      <td>The "Turn Off Configuring the Update Check Interval (In Days)" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Internet Settings/Component Updates/Periodic Check for Updates to Internet Explorer and Internet Tools  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\Update_Check_Interval</td>
+      <td>NaN</td>
+      <td>CCE-237</td>
+      <td>oval:org.mitre.oval:def:1187</td>
+      <td>TurnOffConfiguringUpdateCheckInterval-LocalComputer</td>
+      <td>TurnOffConfiguringUpdateCheckInterval_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1187</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3741-6</td>
+      <td>The "Add-on List" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Features/Add-on Management  Registry Keys:[HKLM | HKCU]\Software\Microsoft\Windows\CurrentVersion\Policies\Ext\ListBox_Support_CLSID</td>
+      <td>NaN</td>
+      <td>CCE-541</td>
+      <td>oval:org.mitre.oval:def:626</td>
+      <td>AddOnList-LocalComputer</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3997-4</td>
+      <td>The "Deny all add-ons unless specifically allowed in the Add-on List" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Features/Add-on Management  Registry Keys:[HKLM | HKCU]\Software\Microsoft\Windows\CurrentVersion\Policies\Ext\RestrictToList</td>
+      <td>NaN</td>
+      <td>CCE-911</td>
+      <td>oval:org.mitre.oval:def:1278</td>
+      <td>DenyAllAddOns-LocalComputer</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4001-4</td>
+      <td>The "Disable "Configuring History"" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Control Panel\History  [HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Url History\DaysToKeep</td>
+      <td>NaN</td>
+      <td>CCE-66</td>
+      <td>oval:org.mitre.oval:def:757, oval:org.mitre.oval:def:1365</td>
+      <td>DisableConfiguringHistory-LocalComputer, DisableConfiguringHistory-LocalUser</td>
+      <td>DisableConfiguringHistory_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:757</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4147-5</td>
+      <td>The "Disable Changing Automatic Configuration Settings" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Control Panel\Autoconfig</td>
+      <td>NaN</td>
+      <td>CCE-471</td>
+      <td>oval:org.mitre.oval:def:1285, oval:org.mitre.oval:def:613</td>
+      <td>DisableChangingAutomaticConfigurationSettings-LocalComputer, DisableChangingAutomaticConfigurationSettings-LocalUser</td>
+      <td>DisableChangingAutomaticConfigurationSettings_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1285</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4059-2</td>
+      <td>The "Disable Changing Connection Settings" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Control Panel\Connection Settings  [HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Control Panel\Connwiz Admin Lock</td>
+      <td>NaN</td>
+      <td>CCE-611</td>
+      <td>oval:org.mitre.oval:def:355, oval:org.mitre.oval:def:1128</td>
+      <td>DisableChangingConnectionSettings-LocalComputer, DisableChangingConnectionSettings-LocalUser</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3935-4</td>
+      <td>The "Disable Changing Proxy Settings" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Control Panel\Proxy</td>
+      <td>NaN</td>
+      <td>CCE-62</td>
+      <td>oval:org.mitre.oval:def:398, oval:org.mitre.oval:def:635</td>
+      <td>DisableChangingProxySettings-LocalComputer, DisableChangingProxySettings-LocalUser</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3706-9</td>
+      <td>The "Disable Showing the Splash Screen" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions\NoSplash</td>
+      <td>NaN</td>
+      <td>CCE-556</td>
+      <td>oval:org.mitre.oval:def:1164</td>
+      <td>DisableShowingSplashScreen-LocalComputer</td>
+      <td>DisableShowingSplashScreen_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1164</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3975-0</td>
+      <td>The "Prevent "Fix settings" Functionality" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Security\DisableFixSecuritySettings</td>
+      <td>NaN</td>
+      <td>CCE-948</td>
+      <td>oval:org.mitre.oval:def:448, oval:org.mitre.oval:def:640</td>
+      <td>PreventFixSettingsFunctionality-LocalComputer, PreventFixSettingsFunctionality-LocalUser</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3993-3</td>
+      <td>The "Prevent participation in the Customer Experience Improvement Programs" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\SQM\DisableCustomerImprovementProgram</td>
+      <td>NaN</td>
+      <td>CCE-495</td>
+      <td>oval:org.mitre.oval:def:1171, oval:org.mitre.oval:def:1391</td>
+      <td>PreventParticipationInCustomerExperienceImprovementPrograms-LocalComputer, PreventParticipationInCustomerExperienceImprovementPrograms-LocalUser</td>
+      <td>PreventParticipationInCustomerExperienceImprovementPrograms_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1171</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3207-8</td>
+      <td>The "Prevent performance of First Run Customize settings" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\DisableFirstRunCustomize</td>
+      <td>NaN</td>
+      <td>CCE-1006</td>
+      <td>oval:org.mitre.oval:def:1322</td>
+      <td>PreventPerformanceOfFirstRunCustomizeSettings-LocalComputer</td>
+      <td>PreventPerformanceOfFirstRunCustomizeSettings_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1322</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4073-3</td>
+      <td>The "Prevent the deletation of temporary internet files and cookies" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Control Panel\Settings</td>
+      <td>NaN</td>
+      <td>CCE-909</td>
+      <td>oval:org.mitre.oval:def:1382, oval:org.mitre.oval:def:703</td>
+      <td>PerventDeletationOfTempInternetFiles-LocalComputer, PerventDeletationOfTempInternetFiles-LocalUser</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3615-2</td>
+      <td>The "Turn off "Delete Browsing History" functionality" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Control Panel\DisableDeleteBrowsingHistory</td>
+      <td>NaN</td>
+      <td>CCE-1010</td>
+      <td>oval:org.mitre.oval:def:458, oval:org.mitre.oval:def:1474</td>
+      <td>TurnOffDeleteBrowsingHistoryFunctionality-LocalComputer, TurnOffDeleteBrowsingHistoryFunctionality-LocalUser</td>
+      <td>TurnOffDeleteBrowsingHistoryFunctionality_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:458</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3866-1</td>
+      <td>The "Turn off Managing Phishing Filter" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\PhishingFilter\Enabled</td>
+      <td>NaN</td>
+      <td>CCE-1032</td>
+      <td>oval:org.mitre.oval:def:501</td>
+      <td>TurnOffManagingPhishingFilter-LocalComputer</td>
+      <td>TurnOffManagingPhishingFilter_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:501</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3875-2</td>
+      <td>The "Turn off the Security Settings Check feature" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Security\DisableSecuritySettingsCheck</td>
+      <td>NaN</td>
+      <td>CCE-1054</td>
+      <td>oval:org.mitre.oval:def:916, oval:org.mitre.oval:def:1034</td>
+      <td>TurnOffSecuritySettingsCheckFeature-LocalComputer, TurnOffSecuritySettingsCheckFeature-LocalUser</td>
+      <td>TurnOffSecuritySettingsCheckFeature_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:916</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4174-9</td>
+      <td>The "Allow Active Content from CD's to Run on User Machine" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Advanced Page   Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_LOCAL</td>
+      <td>NaN</td>
+      <td>CCE-964</td>
+      <td>oval:org.mitre.oval:def:400</td>
+      <td>AllowActiveContentFromCD-LocalComputer</td>
+      <td>AllowActiveContentFromCD_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:400</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4192-1</td>
+      <td>The "Enable third-party browser extensions" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Advanced Page   Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\Enable Browser Extensions</td>
+      <td>NaN</td>
+      <td>CCE-598</td>
+      <td>oval:org.mitre.oval:def:110</td>
+      <td>AllowThird-PartyBrowserExtensions-LocalComputer</td>
+      <td>AllowThird-PartyBrowserExtensions_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:110</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3584-0</td>
+      <td>The "Automatically Check for Internet Explorer Updates" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Advanced Page   Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\NoUpdateCheck</td>
+      <td>NaN</td>
+      <td>CCE-1008</td>
+      <td>oval:org.mitre.oval:def:656, oval:org.mitre.oval:def:1360</td>
+      <td>AutomaticallyCheckIEUpdates-LocalComputer, AutomaticallyCheckForIEUpdates-LocalUser</td>
+      <td>AutomaticallyCheckIEUpdates_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:656</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3976-8</td>
+      <td>The "Check for Server Certificate Revocation" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Advanced Page   Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\CertificateRevocation</td>
+      <td>NaN</td>
+      <td>CCE-690</td>
+      <td>oval:org.mitre.oval:def:172, oval:org.mitre.oval:def:1502</td>
+      <td>CheckServerCertificateRevocation-LocalComputer, CheckForServerCertificateRevocation-LocalUser</td>
+      <td>CheckServerCertificateRevocation_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:172</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3853-9</td>
+      <td>The "Access data sources across domains" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1406</td>
+      <td>NaN</td>
+      <td>CCE-47</td>
+      <td>oval:org.mitre.oval:def:674, oval:org.mitre.oval:def:650</td>
+      <td>AccessDataSourcesAcrossDomains-InternetZone-LocalComputer, AccessDataSourcesAcrossDomains-InternetZone-LocalUser</td>
+      <td>access_data_sources_across_domains_internet_zone_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:674</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3998-2</td>
+      <td>The "Drag and drop or copy and paste files" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1802</td>
+      <td>NaN</td>
+      <td>CCE-685</td>
+      <td>oval:org.mitre.oval:def:1083, oval:org.mitre.oval:def:547</td>
+      <td>AllowDragDropOrCopyPasteFiles-InternetZone-LocalComputer, AllowDragDropOrCopyPasteFiles-InternetZone-LocalUser</td>
+      <td>AllowDragDropOrCopyPasteFiles_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1083</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3888-5</td>
+      <td>The "Font download" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1604</td>
+      <td>NaN</td>
+      <td>CCE-491</td>
+      <td>oval:org.mitre.oval:def:524, oval:org.mitre.oval:def:659</td>
+      <td>AllowFontDownloads-InternetZone-LocalComputer, AllowFontDownloads-InternetZone-LocalUser</td>
+      <td>AllowFontDownloads_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:524</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3906-5</td>
+      <td>The "Installation of desktop items" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1800</td>
+      <td>NaN</td>
+      <td>CCE-355</td>
+      <td>oval:org.mitre.oval:def:223, oval:org.mitre.oval:def:541</td>
+      <td>AllowInstallationOfDesktopItems-InternetZone-LocalComputer, AllowInstallationOfDesktopItems-InternetZone-LocalUser</td>
+      <td>AllowInstallationOfDesktopItems_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:223</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4099-8</td>
+      <td>The "Allow script-initiated windows without size or position constraints" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\2102</td>
+      <td>NaN</td>
+      <td>CCE-280</td>
+      <td>oval:org.mitre.oval:def:589, oval:org.mitre.oval:def:1476</td>
+      <td>AllowScriptInitiatedWindowsWithoutSizeOrPositionConstraints-InternetZone-LocalComputer, AllowScriptInitiatedWindowsWithoutSizeOrPositionConstraints-InternetZone-LocalUser</td>
+      <td>AllowScriptInitiatedWindowsWithoutSizeOrPositionConstraints_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:589</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3601-2</td>
+      <td>The "Allow Scriptlets" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1209</td>
+      <td>NaN</td>
+      <td>CCE-439</td>
+      <td>oval:org.mitre.oval:def:1043</td>
+      <td>AllowScriptlets-InternetZone-LocalComputer</td>
+      <td>allow_scriptlets_internet_zone_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1043</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3249-0</td>
+      <td>The "Allow status bar updates via script" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\2103</td>
+      <td>NaN</td>
+      <td>CCE-914</td>
+      <td>oval:org.mitre.oval:def:226, oval:org.mitre.oval:def:1208</td>
+      <td>AllowStatusBarUpdatesViaScript-InternetZone-LocalComputer, AllowStatusBarUpdatesViaScript-InternetZone-LocalUser</td>
+      <td>allow_status_bar_updates_via_script_internet_zone_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:226</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4139-2</td>
+      <td>The "Automatic prompting for file downloads" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\2200</td>
+      <td>NaN</td>
+      <td>CCE-16</td>
+      <td>oval:org.mitre.oval:def:1113, oval:org.mitre.oval:def:562</td>
+      <td>AutomaticPromptingFileDownloads-InternetZone-LocalComputer, AutomaticPromptingFileDownloads-InternetZone-LocalUser</td>
+      <td>AutomaticPromptingFileDownloads_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1113</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3927-1</td>
+      <td>The "Download signed ActiveX controls" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1001</td>
+      <td>NaN</td>
+      <td>CCE-1013</td>
+      <td>oval:org.mitre.oval:def:1199, oval:org.mitre.oval:def:546</td>
+      <td>DownloadSignedActiveXControls-InternetZone-LocalComputer, DownloadSignedActiveXControls-InternetZone-LocalUser</td>
+      <td>download_signed_activex_controls_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1199</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3945-3</td>
+      <td>The "Download unsigned ActiveX controls" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1004</td>
+      <td>NaN</td>
+      <td>CCE-176</td>
+      <td>oval:org.mitre.oval:def:391, oval:org.mitre.oval:def:1200</td>
+      <td>DownloadUnsignedActiveXControls-InternetZone-LocalComputer, DownloadUnsignedActiveXControls-InternetZone-LocalUser</td>
+      <td>DownloadUnsignedActiveXControls_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:391</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4068-3</td>
+      <td>The "Initialize and script ActiveX controls not marked as safe for scripting" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1201</td>
+      <td>NaN</td>
+      <td>CCE-586</td>
+      <td>oval:org.mitre.oval:def:1040, oval:org.mitre.oval:def:739</td>
+      <td>InitializeScriptActiveXControlsNotMarkedAsSafe-InternetZone-LocalComputer, JavaPermissions-InternetZone-LocalComputer, InitializeScriptActiveXControlsNotMarkedAsSafe-InternetZone-LocalUser</td>
+      <td>InitializeScriptActiveXControlsNotMarkedAsSafe_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1040</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3963-6</td>
+      <td>The "Java permissions" setting should be configured correctly for the Internet Zone.</td>
+      <td>Custom/Disable Java/High safety/Low safety/Medium safety</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Administrative Templates/Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1C00</td>
+      <td>NaN</td>
+      <td>CCE-132</td>
+      <td>oval:org.mitre.oval:def:1174, oval:org.mitre.oval:def:725</td>
+      <td>JavaPermissions-InternetZone-LocalUser</td>
+      <td>java_permissions_internet_zone_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1174</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4104-6</td>
+      <td>The "Launching programs and files in an IFRAME" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1804</td>
+      <td>NaN</td>
+      <td>CCE-689</td>
+      <td>oval:org.mitre.oval:def:611, oval:org.mitre.oval:def:1487</td>
+      <td>LaunchingApplicationsAndFilesInIFRAME-InternetZone-LocalComputer, LaunchingApplicationsAndFilesInIFRAME-InternetZone-LocalUser</td>
+      <td>LaunchingApplicationsAndFilesInIFRAME_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:611</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3623-6</td>
+      <td>The "Logon" setting should be configured correctly for the Internet Zone.</td>
+      <td>Anonymous logon/Automatic logon only in Intranet zone/Automatic logon with current user name and password/Prompt for user name and password</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1A00</td>
+      <td>NaN</td>
+      <td>CCE-720</td>
+      <td>oval:org.mitre.oval:def:691, oval:org.mitre.oval:def:1123</td>
+      <td>LogonOptions-InternetZone-LocalComputer, LogonOptions-InternetZone-LocalUser</td>
+      <td>LogonOptions_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:691</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3751-5</td>
+      <td>The "Loose XAML" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\2402</td>
+      <td>NaN</td>
+      <td>CCE-126</td>
+      <td>oval:org.mitre.oval:def:240</td>
+      <td>LooseXAMLFiles-InternetZone-LocalComputer</td>
+      <td>LooseXAMLFiles_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:240</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4143-4</td>
+      <td>The "Navigate sub-frames across different domains" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1607</td>
+      <td>NaN</td>
+      <td>CCE-245</td>
+      <td>oval:org.mitre.oval:def:612, oval:org.mitre.oval:def:1394</td>
+      <td>NavigateSub-framesAcrossDifferentDomains-InternetZone-LocalComputer, NavigateSub-framesAcrossDifferentDomains-InternetZone-LocalUser</td>
+      <td>navigate_sub_frames_across_different_domains_Internet_zone_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:612</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4161-6</td>
+      <td>The "Open files based on content, not file extension" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\2100</td>
+      <td>NaN</td>
+      <td>CCE-910</td>
+      <td>oval:org.mitre.oval:def:953, oval:org.mitre.oval:def:1300</td>
+      <td>OpenFilesBasedOnContent-InternetZone-LocalComputer, OpenFilesBasedOnContent-InternetZone-LocalUser</td>
+      <td>OpenFilesBasedOnContent_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:953</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3553-5</td>
+      <td>The "Software channel permissions" setting should be configured correctly for the Internet Zone.</td>
+      <td>High safety/low safety/medium safety</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1E05</td>
+      <td>NaN</td>
+      <td>CCE-359</td>
+      <td>oval:org.mitre.oval:def:302, oval:org.mitre.oval:def:1398</td>
+      <td>SoftwareChannelPermissions-InternetZone-LocalComputer, SoftwareChannelPermissions-InternetZone-LocalUser</td>
+      <td>SoftwareChannelPermissions_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:302</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3619-4</td>
+      <td>The "Use Pop-up Blocker" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1809</td>
+      <td>NaN</td>
+      <td>CCE-1002</td>
+      <td>oval:org.mitre.oval:def:1179, oval:org.mitre.oval:def:558</td>
+      <td>UsePop-upBlocker-InternetZone-LocalComputer, UsePop-upBlocker-InternetZone-LocalUser</td>
+      <td>UsePop-upBlocker_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1179</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3914-9</td>
+      <td>The "Userdata persistence" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1606</td>
+      <td>NaN</td>
+      <td>CCE-425</td>
+      <td>oval:org.mitre.oval:def:1108</td>
+      <td>UserdataPersistence-InternetZone-LocalComputer</td>
+      <td>UserdataPersistence_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1108</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3570-9</td>
+      <td>The "Web sites in less privileged Web content zones can navigate into this zone" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\2101</td>
+      <td>NaN</td>
+      <td>CCE-724</td>
+      <td>oval:org.mitre.oval:def:265, oval:org.mitre.oval:def:1432</td>
+      <td>WebSitesInLessPrivilegedWebContentZonesCanNavigateIntoThisZone-InternetZone-LocalComputer, WebSitesInLessPrivilegedWebContentZonesCanNavigateIntoThisZone-InternetZone-LocalUser</td>
+      <td>WebSitesInLessPrivilegedWebContentZonesCanNavigateIntoThisZone_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:265</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3843-0</td>
+      <td>The "XPS documents" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\2401</td>
+      <td>NaN</td>
+      <td>CCE-1015</td>
+      <td>oval:org.mitre.oval:def:628</td>
+      <td>XPSFiles-InternetZone-LocalComputer</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3984-2</td>
+      <td>The "Display mixed content" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1609</td>
+      <td>NaN</td>
+      <td>CCE-878</td>
+      <td>oval:org.mitre.oval:def:245</td>
+      <td>DisplayMixedContent-LockedDownInternetZone-LocalComputer</td>
+      <td>display_mixed_content_locked_down_internet_zone_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:245</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3989-1</td>
+      <td>The "Display mixed content" setting should be configured correctly for the Intranet Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1\1609</td>
+      <td>NaN</td>
+      <td>CCE-288</td>
+      <td>oval:org.mitre.oval:def:1166</td>
+      <td>DisplayMixedContent-IntranetZone-LocalComputer</td>
+      <td>display_mixed_content_intranet_zone_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1166</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4121-0</td>
+      <td>The "Display mixed content" setting should be configured correctly for the Locked Down Intranet Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\1\1609</td>
+      <td>NaN</td>
+      <td>CCE-552</td>
+      <td>oval:org.mitre.oval:def:247</td>
+      <td>DisplayMixedContent-LockedDownIntranetZone-LocalComputer</td>
+      <td>display_mixed_content-LockedDownintranet_zone_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:247</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4138-4</td>
+      <td>The "Display mixed content" setting should be configured correctly for the Local Machine Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0\1609</td>
+      <td>NaN</td>
+      <td>CCE-473</td>
+      <td>oval:org.mitre.oval:def:383</td>
+      <td>DisplayMixedContent-LocalMachineZone-LocalComputer</td>
+      <td>display_mixed_content-local_machine_zone_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:383</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4028-7</td>
+      <td>The "Display mixed content" setting should be configured correctly for the Locked Down Local Machine Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\0\1609</td>
+      <td>NaN</td>
+      <td>CCE-239</td>
+      <td>oval:org.mitre.oval:def:418</td>
+      <td>DisplayMixedContent-LockedDownLocalMachineZone-LocalComputer</td>
+      <td>display_mixed_content-LockedDownlocal_machine_zone_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:418</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3905-7</td>
+      <td>The "Access data sources across domains" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1406</td>
+      <td>NaN</td>
+      <td>CCE-636</td>
+      <td>oval:org.mitre.oval:def:652, oval:org.mitre.oval:def:750</td>
+      <td>AccessDataSourcesAcrossDomains-RestrictedSitesZone-LocalComputer, AccessDataSourcesAcrossDomains-RestrictedSitesZone-LocalUser</td>
+      <td>AccessDataSourcesAcrossDomains_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:652</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4050-1</td>
+      <td>The "Active scripting" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1400</td>
+      <td>NaN</td>
+      <td>CCE-292</td>
+      <td>oval:org.mitre.oval:def:293, oval:org.mitre.oval:def:561</td>
+      <td>AllowActiveScripting-RestrictedSitesZone-LocalComputer, AllowActiveScripting-RestrictedSitesZone-LocalUser</td>
+      <td>AllowActiveScripting_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:293</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4196-2</td>
+      <td>The "Binary and script behaviors" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>Administrator approved/enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\2000</td>
+      <td>NaN</td>
+      <td>CCE-178</td>
+      <td>oval:org.mitre.oval:def:365, oval:org.mitre.oval:def:1314</td>
+      <td>AllowBinaryAndScriptBehaviors-RestrictedSitesZone-LocalComputer, AllowBinaryAndScriptBehaviors-RestrictedSitesZone-LocalUser</td>
+      <td>AllowBinaryAndScriptBehaviors_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:365</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3337-3</td>
+      <td>The "Drag and drop or copy and paste files" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1802</td>
+      <td>NaN</td>
+      <td>CCE-41</td>
+      <td>oval:org.mitre.oval:def:498, oval:org.mitre.oval:def:1465</td>
+      <td>AllowDragDropOrCopyPasteFiles-RestrictedSitesZone-LocalComputer, AllowDragDropOrCopyPasteFiles-RestrictedSitesZone-LocalUser</td>
+      <td>AllowDragDropOrCopyPasteFiles_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:498</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4150-9</td>
+      <td>The "File download" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1803</td>
+      <td>NaN</td>
+      <td>CCE-970</td>
+      <td>oval:org.mitre.oval:def:1184, oval:org.mitre.oval:def:1318</td>
+      <td>AllowFileDownloads-RestrictedSitesZone-LocalComputer, AllowFileDownloads-RestrictedSitesZone-LocalUser</td>
+      <td>AllowFileDownloads_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1184</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4062-6</td>
+      <td>The "Font download" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1604</td>
+      <td>NaN</td>
+      <td>CCE-882</td>
+      <td>oval:org.mitre.oval:def:1109, oval:org.mitre.oval:def:1410</td>
+      <td>AllowFontDownloads-RestrictedSitesZone-LocalComputer, AllowFontDownloads-RestrictedSitesZone-LocalUser</td>
+      <td>AllowFontDownloads_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1109</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4079-0</td>
+      <td>The "Installation of desktop items" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1800</td>
+      <td>NaN</td>
+      <td>CCE-763</td>
+      <td>oval:org.mitre.oval:def:251, oval:org.mitre.oval:def:1257</td>
+      <td>AllowInstallationOfDesktopItems-RestrictedSitesZone-LocalComputer, AllowInstallationOfDesktopItems-RestrictedSitesZone-LocalUser</td>
+      <td>AllowInstallationOfDesktopItems_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:251</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4084-0</td>
+      <td>The "Allow META REFRESH" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1608</td>
+      <td>NaN</td>
+      <td>CCE-680</td>
+      <td>oval:org.mitre.oval:def:1218, oval:org.mitre.oval:def:1270</td>
+      <td>AllowMETAREFRESH-RestrictedSitesZone-LocalComputer, AllowMETAREFRESH-RestrictedSitesZone-LocalUser</td>
+      <td>AllowMETAREFRESH_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1218</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4119-4</td>
+      <td>The "Allow script-initiated windows without size or position constraints" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\2102</td>
+      <td>NaN</td>
+      <td>CCE-208</td>
+      <td>oval:org.mitre.oval:def:1234, oval:org.mitre.oval:def:574</td>
+      <td>AllowScriptInitiatedWindowsWithoutSizeOrPositionConstraints-RestrictedSitesZone-LocalComputer, AllowScriptInitiatedWindowsWithoutSizeOrPositionConstraints-RestrictedSitesZone-LocalUser</td>
+      <td>AllowScriptInitiatedWindowsWithoutSizeOrPositionConstraints_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1234</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3639-2</td>
+      <td>The "Allow Scriptlets" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1209</td>
+      <td>NaN</td>
+      <td>CCE-838</td>
+      <td>oval:org.mitre.oval:def:1217</td>
+      <td>AllowScriptlets-RestrictedSitesZone-LocalComputer</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4031-1</td>
+      <td>The "Allow status bar updates via script" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1001</td>
+      <td>NaN</td>
+      <td>CCE-129</td>
+      <td>oval:org.mitre.oval:def:378, oval:org.mitre.oval:def:1320</td>
+      <td>AllowStatusBarUpdatesViaScript-RestrictedSitesZone-LocalComputer, AllowStatusBarUpdatesViaScript-RestrictedSitesZone-LocalUser</td>
+      <td>AllowStatusBarUpdatesViaScript_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:378</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4053-5</td>
+      <td>The "Automatic prompting for file downloads" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\2200</td>
+      <td>NaN</td>
+      <td>CCE-175</td>
+      <td>oval:org.mitre.oval:def:252, oval:org.mitre.oval:def:1312</td>
+      <td>AutomaticPromptingFileDownloads-RestrictedSitesZone-LocalComputer, AutomaticPromptingFileDownloads-RestrictedSitesZone-LocalUser</td>
+      <td>AutomaticPromptingFileDownloads_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:252</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4057-6</td>
+      <td>The "Download signed ActiveX controls" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1001</td>
+      <td>NaN</td>
+      <td>CCE-52</td>
+      <td>oval:org.mitre.oval:def:1019, oval:org.mitre.oval:def:1389</td>
+      <td>DownloadSignedActiveXControls-RestrictedSitesZone-LocalComputer, DownloadSignedActiveXControls-RestrictedSitesZone-LocalUser</td>
+      <td>download_signed_activex_controls_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1019</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3564-2</td>
+      <td>The "Download unsigned ActiveX controls" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1004</td>
+      <td>NaN</td>
+      <td>CCE-1012</td>
+      <td>oval:org.mitre.oval:def:949, oval:org.mitre.oval:def:579</td>
+      <td>DownloadUnsignedActiveXControls-RestrictedSitesZone-LocalComputer, DownloadUnsignedActiveXControls-RestrictedSitesZone-LocalUser</td>
+      <td>DownloadUnsignedActiveXControls_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:949</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4101-2</td>
+      <td>The "Initialize and script ActiveX controls not marked as safe for scripting" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1201</td>
+      <td>NaN</td>
+      <td>CCE-26</td>
+      <td>oval:org.mitre.oval:def:273, oval:org.mitre.oval:def:1342</td>
+      <td>InitializeScriptActiveXControlsNotMarkedAsSafe-RestrictedSitesZone-LocalComputer, InitializeScriptActiveXControlsNotMarkedAsSafe-RestrictedSitesZone-LocalUser</td>
+      <td>InitializeScriptActiveXControlsNotMarkedAsSafe_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:273</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3996-6</td>
+      <td>The "Java permissions" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>Custom/Disable Java/High safety/Low safety/Medium safety</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Administrative Templates/Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1C00</td>
+      <td>NaN</td>
+      <td>CCE-925</td>
+      <td>oval:org.mitre.oval:def:824, oval:org.mitre.oval:def:732</td>
+      <td>JavaPermissions-RestrictedSitesZone-LocalComputer, JavaPermissions-RestrictedSitesZone-LocalUser</td>
+      <td>java_permissions_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:824</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4066-7</td>
+      <td>The "Launching programs and files in an IFRAME" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1804</td>
+      <td>NaN</td>
+      <td>CCE-339</td>
+      <td>oval:org.mitre.oval:def:274, oval:org.mitre.oval:def:1223</td>
+      <td>LaunchingApplicationsAndFilesInIFRAME-RestrictedSitesZone-LocalComputer, LaunchingApplicationsAndFilesInIFRAME-RestrictedSitesZone-LocalUser</td>
+      <td>LaunchingApplicationsAndFilesInIFRAME_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:274</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3696-2</td>
+      <td>The "Logon" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>Anonymous logon/Automatic logon only in Intranet zone/Automatic logon with current user name and password/Prompt for user name and password</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1A00</td>
+      <td>NaN</td>
+      <td>CCE-128</td>
+      <td>oval:org.mitre.oval:def:326, oval:org.mitre.oval:def:1378</td>
+      <td>LogonOptions-RestrictedSitesZone-LocalComputer, LogonOptions-RestrictedSitesZone-LocalUser</td>
+      <td>LogonOptions_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:326</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3590-7</td>
+      <td>The "Loose XAML" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\2402</td>
+      <td>NaN</td>
+      <td>CCE-639</td>
+      <td>oval:org.mitre.oval:def:275</td>
+      <td>LooseXAMLFiles-RestrictedSitesZone-LocalComputer</td>
+      <td>LooseXAMLFiles_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:275</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4110-3</td>
+      <td>The "Navigate sub-frames across different domains" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1607</td>
+      <td>NaN</td>
+      <td>CCE-995</td>
+      <td>oval:org.mitre.oval:def:1229, oval:org.mitre.oval:def:1292</td>
+      <td>NavigateSub-framesAcrossDifferentDomains-RestrictedSitesZone-LocalComputer, NavigateSub-framesAcrossDifferentDomains-RestrictedSitesZone-LocalUser</td>
+      <td>NavigateSub-framesAcrossDifferentDomains_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1229</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4132-7</td>
+      <td>The "Open files based on content, not file extension" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\2100</td>
+      <td>NaN</td>
+      <td>CCE-409</td>
+      <td>oval:org.mitre.oval:def:706, oval:org.mitre.oval:def:1421</td>
+      <td>OpenFilesBasedOnContent-RestrictedSitesZone-LocalComputer, OpenFilesBasedOnContent-RestrictedSitesZone-LocalUser</td>
+      <td>OpenFilesBasedOnContent_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:706</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3400-9</td>
+      <td>The "Run components not signed with Authenticode" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\2004</td>
+      <td>NaN</td>
+      <td>CCE-678</td>
+      <td>oval:org.mitre.oval:def:329, oval:org.mitre.oval:def:599</td>
+      <td>RunNETFrameworkReliantComponentsNotSignedWithAuthenticode-RestrictedSitesZone-LocalComputer, RunNETFrameworkReliantComponentsNotSignedWithAuthenticode-RestrictedSitesZone-LocalUser</td>
+      <td>RunNETFrameworkReliantComponentsNotSignedWithAuthenticode_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:329</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4158-2</td>
+      <td>The "Run components signed with Authenticode" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\2001</td>
+      <td>NaN</td>
+      <td>CCE-563</td>
+      <td>oval:org.mitre.oval:def:276, oval:org.mitre.oval:def:1428</td>
+      <td>RunNETFrameworkReliantComponentsSignedWithAuthenticode-RestrictedSitesZone-LocalComputer, RunNETFrameworkReliantComponentsSignedWithAuthenticode-RestrictedSitesZone-LocalUser</td>
+      <td>RunNETFrameworkReliantComponentsSignedWithAuthenticode_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:276</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4163-2</td>
+      <td>The "Run ActiveX controls and plugins" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>Administrator approved/enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1200</td>
+      <td>NaN</td>
+      <td>CCE-841</td>
+      <td>oval:org.mitre.oval:def:571, oval:org.mitre.oval:def:1594</td>
+      <td>RunActiveXControlsAndPlugins-RestrictedSitesZone-LocalComputer, RunActiveXControlsAndPlugins-RestrictedSitesZone-LocalUser</td>
+      <td>RunActiveXControlsAndPlugins_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:571</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4202-8</td>
+      <td>The "Script ActiveX controls marked safe for scripting" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1405</td>
+      <td>NaN</td>
+      <td>CCE-973</td>
+      <td>oval:org.mitre.oval:def:602, oval:org.mitre.oval:def:1274</td>
+      <td>ScriptActiveXControlsMarkedSafeForScripting-RestrictedSitesZone-LocalComputer, ScriptActiveXControlsMarkedSafeForScripting-RestrictedSitesZone-LocalUser</td>
+      <td>ScriptActiveXControlsMarkedSafeForScripting_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:602</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3216-9</td>
+      <td>The "Scripting of Java applets" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1402</td>
+      <td>NaN</td>
+      <td>CCE-1000</td>
+      <td>oval:org.mitre.oval:def:280, oval:org.mitre.oval:def:641</td>
+      <td>ScriptingOfJavaApplets-RestrictedSitesZone-LocalComputer, ScriptingOfJavaApplets-RestrictedSitesZone-LocalUser</td>
+      <td>ScriptingOfJavaApplets_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:280</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3855-4</td>
+      <td>The "Software channel permissions" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>High safety/low safety/medium safety</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1E05</td>
+      <td>NaN</td>
+      <td>CCE-520</td>
+      <td>oval:org.mitre.oval:def:290, oval:org.mitre.oval:def:1214</td>
+      <td>SoftwareChannelPermissions-RestrictedSitesZone-LocalComputer, SoftwareChannelPermissions-RestrictedSitesZone-LocalUser</td>
+      <td>SoftwareChannelPermissions_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:290</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4018-8</td>
+      <td>The "Use Pop-up Blocker" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1809</td>
+      <td>NaN</td>
+      <td>CCE-660</td>
+      <td>oval:org.mitre.oval:def:1100, oval:org.mitre.oval:def:1286</td>
+      <td>UsePop-upBlocker-RestrictedSitesZone-LocalComputer, UsePop-upBlocker-RestrictedSitesZone-LocalUser</td>
+      <td>UsePop-upBlocker_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1100</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4040-2</td>
+      <td>The "Userdata persistence" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1606</td>
+      <td>NaN</td>
+      <td>CCE-28</td>
+      <td>oval:org.mitre.oval:def:300</td>
+      <td>UserdataPersistence-RestrictedSitesZone-LocalComputer</td>
+      <td>UserdataPersistence_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:300</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4215-0</td>
+      <td>The "Web sites in less privileged Web content zones can navigate into this zone" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\2101</td>
+      <td>NaN</td>
+      <td>CCE-698</td>
+      <td>oval:org.mitre.oval:def:1219, oval:org.mitre.oval:def:1243</td>
+      <td>WebSitesInLessPrivilegedWebContentZonesCanNavigateIntoThisZone-RestrictedSitesZone-LocalComputer, WebSitesInLessPrivilegedWebContentZonesCanNavigateIntoThisZone-RestrictedSitesZone-LocalUser</td>
+      <td>WebSitesInLessPrivilegedWebContentZonesCanNavigateIntoThisZone_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1219</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3991-7</td>
+      <td>The "XPS documents" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\2401</td>
+      <td>NaN</td>
+      <td>CCE-460</td>
+      <td>oval:org.mitre.oval:def:1176</td>
+      <td>XPSFiles-RestrictedSitesZone-LocalComputer</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3264-9</td>
+      <td>The "Display mixed content" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\4\1609</td>
+      <td>NaN</td>
+      <td>CCE-30</td>
+      <td>oval:org.mitre.oval:def:314</td>
+      <td>DisplayMixedContent-LockedDownRestrictedSitesZone-LocalComputer</td>
+      <td>display_mixed_content-LockedDownRestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:314</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4087-3</td>
+      <td>The "Display mixed content" setting should be configured correctly for the Trusted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2\1609</td>
+      <td>NaN</td>
+      <td>CCE-31</td>
+      <td>oval:org.mitre.oval:def:1153</td>
+      <td>DisplayMixedContent-TrustedSitesZone-LocalComputer</td>
+      <td>display_mixed_content_trusted_sites_zone_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1153</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4232-5</td>
+      <td>The "Display mixed content" setting should be configured correctly for the Locked Down Trusted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\2\1609</td>
+      <td>NaN</td>
+      <td>CCE-666</td>
+      <td>oval:org.mitre.oval:def:1183</td>
+      <td>DisplayMixedContent-LockedDownTrustedSitesZone-LocalComputer</td>
+      <td>display_mixed_content_LockedDowntrusted_sites_zone_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1183</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4259-8</td>
+      <td>The "Enable Native XMLHttp Support" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Features  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Internet Explorer\Main\XMLHTTP</td>
+      <td>NaN</td>
+      <td>CCE-528</td>
+      <td>oval:org.mitre.oval:def:338</td>
+      <td>EnableNativeXMLHttpSupport-LocalComputer</td>
+      <td>EnableNativeXMLHttpSupport_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:338</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3647-5</td>
+      <td>The "Turn on the auto-complete feature for user names and passwords on form" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKCU\Software\Policies\Microsoft\Internet Explorer\Main\FormSuggest Passwords  HKCU\Software\Policies\Microsoft\Internet Explorer\Control Panel\FormSuggest Passwords</td>
+      <td>NaN</td>
+      <td>CCE-721</td>
+      <td>oval:org.mitre.oval:def:645</td>
+      <td>DisableSaveThisProgramToDiskOption-LocalUser</td>
+      <td>TurnOnAutoCompleteFeatureForUserNamesAndPasswords_LocalUser</td>
+      <td>oval:gov.nist.fdcc.ie7:def:645</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3677-2</td>
+      <td>The "Allow Install On Demand (Internet Explorer)" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKCU\Software\Policies\Microsoft\Internet Explorer\Main\NoJITSetup</td>
+      <td>NaN</td>
+      <td>CCE-69</td>
+      <td>oval:org.mitre.oval:def:523</td>
+      <td>AllowInstallOnDemandIE-LocalUser</td>
+      <td>allow_install_on_demand_ie_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:9999</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4056-8</td>
+      <td>The "Turn off page transitions" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKCU\Software\Policies\Microsoft\Internet Explorer\Main\Page_Transitions</td>
+      <td>NaN</td>
+      <td>CCE-71</td>
+      <td>oval:org.mitre.oval:def:1206</td>
+      <td>TurnOffPageTransitions-LocalUser</td>
+      <td>TurnOffPageTransitions_LocalUser</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1206</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4246-5</td>
+      <td>The "Disable AutoComplete for forms" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKCU\Software\Policies\Microsoft\Internet Explorer\Main\Use FormSuggest  HKCU\Software\Policies\Microsoft\Internet Explorer\Control Panel\FormSuggest</td>
+      <td>NaN</td>
+      <td>CCE-478</td>
+      <td>oval:org.mitre.oval:def:1516</td>
+      <td>DisableAutoCompleteForForms-LocalUser</td>
+      <td>DisableAutoCompleteForForms_LocalUser</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1516</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4214-3</td>
+      <td>The "Disable Save this program to disk option" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKCU\Software\Policies\Microsoft\Internet Explorer\Restrictions\NoSelectDownloadDir</td>
+      <td>NaN</td>
+      <td>CCE-412</td>
+      <td>oval:org.mitre.oval:def:505</td>
+      <td>AllowInstallOnDemandIE-LocalUser</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3606-1</td>
+      <td>The "Disable changing certificate settings" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKCU\Software\Policies\Microsoft\Internet Explorer\Control Panel\Certificates</td>
+      <td>NaN</td>
+      <td>CCE-1037</td>
+      <td>oval:org.mitre.oval:def:1362</td>
+      <td>DisableChangingCertificateSettings-LocalUser</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4237-4</td>
+      <td>The "Disable external branding of Internet Explorer" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKCU\Software\Policies\Microsoft\Internet Explorer\Restrictions\NoExternalBranding</td>
+      <td>NaN</td>
+      <td>CCE-1051</td>
+      <td>oval:org.mitre.oval:def:1384</td>
+      <td>DisableExternalBrandingOfIE-LocalUser</td>
+      <td>DisableExternalBrandingOfIE_LocalUser</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1384</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3275-5</td>
+      <td>The "Configure Outlook Express" setting should be configured correctly</td>
+      <td>enabled/disabled</td>
+      <td>HKCU\Software\Microsoft\Outlook Express\BlockExeAttachments</td>
+      <td>NaN</td>
+      <td>CCE-963</td>
+      <td>oval:org.mitre.oval:def:1238</td>
+      <td>ConfigureOutlookExpress-LocalUser</td>
+      <td>configure_outlook_express_local_user</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1238</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4036-0</td>
+      <td>The "Turn on the Internet Connection Wizard Auto Detect" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKCU\Software\Policies\Microsoft\Internet Connection Wizard\DisableICW</td>
+      <td>NaN</td>
+      <td>CCE-258</td>
+      <td>oval:org.mitre.oval:def:604</td>
+      <td>InternetConnectionWizardSettings-LocalUser</td>
+      <td>TurnOnInternetConnectionWizardAutoDetect_LocalUser</td>
+      <td>oval:gov.nist.fdcc.ie7:def:604</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3825-7</td>
+      <td>The "Disable Internet Connection wizard" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKCU\Software\Policies\Microsoft\Internet Explorer\Control Panel\Connwiz Admin Lock</td>
+      <td>NaN</td>
+      <td>CCE-769</td>
+      <td>oval:org.mitre.oval:def:1355</td>
+      <td>DisableInternetConnectionWizard-LocalUser</td>
+      <td>DisableInternetConnectionWizard_LocalUser</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1355</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4226-7</td>
+      <td>The "Disable the Reset Web Settings feature" should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKCU\Software\Policies\Microsoft\Internet Explorer\Control Panel\ResetWebSettings</td>
+      <td>NaN</td>
+      <td>CCE-625</td>
+      <td>oval:org.mitre.oval:def:1437</td>
+      <td>DisableResetWebSettingsFeature-LocalUser</td>
+      <td>DisableResetWebSettingsFeature_LocalUser</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1437</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4120-2</td>
+      <td>The "Disable Downloading Of Site Subscription Content" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKCU\Software\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions\NoSubscriptionContent</td>
+      <td>NaN</td>
+      <td>CCE-74</td>
+      <td>oval:org.mitre.oval:def:1080</td>
+      <td>DisableDownloadingOfSiteSubscriptionContent-LocalUser</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4248-1</td>
+      <td>The "Disable Adding Schedules For Offline Pages" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKCU\Software\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions\NoAddingSubscriptions</td>
+      <td>NaN</td>
+      <td>CCE-122</td>
+      <td>oval:org.mitre.oval:def:1293</td>
+      <td>DisableAddingSchedulesForOfflinePages-LocalUser</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3389-4</td>
+      <td>The "Disable Adding Channels" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKCU\Software\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions\NoAddingChannels</td>
+      <td>NaN</td>
+      <td>CCE-716</td>
+      <td>oval:org.mitre.oval:def:1383</td>
+      <td>DisableAddingChannels-LocalUser</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3645-9</td>
+      <td>The "Disable Editing And Creating Of Schedule Groups" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKCU\Software\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions\NoEditingScheduleGroups</td>
+      <td>NaN</td>
+      <td>CCE-610</td>
+      <td>oval:org.mitre.oval:def:1397</td>
+      <td>DisableEditingAndCreatingOfScheduleGroups-LocalUser</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3940-4</td>
+      <td>The "Disable All Scheduled Offline Pages" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKCU\Software\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions\NoScheduledUpdates</td>
+      <td>NaN</td>
+      <td>CCE-619</td>
+      <td>oval:org.mitre.oval:def:1501</td>
+      <td>DisableAllScheduledOfflinePages-LocalUser</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3821-6</td>
+      <td>The "Disable Editing Schedules For Offline Pages" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKCU\Software\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions\NoEditingSubscriptions</td>
+      <td>NaN</td>
+      <td>CCE-373</td>
+      <td>oval:org.mitre.oval:def:1565</td>
+      <td>DisableEditingSchedulesForOfflinePages-LocalUser</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3742-4</td>
+      <td>The "Disable Channel User Interface Completely" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKCU\Software\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions\NoChannelUI</td>
+      <td>NaN</td>
+      <td>CCE-298</td>
+      <td>oval:org.mitre.oval:def:1782</td>
+      <td>DisableChannelUserInterfaceCompletely-LocalUser</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4261-4</td>
+      <td>The "Disable Removing Channels" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKCU\Software\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions\NoRemovingChannels</td>
+      <td>NaN</td>
+      <td>CCE-1069</td>
+      <td>oval:org.mitre.oval:def:1801</td>
+      <td>DisableRemovingChannels-LocalUser</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4190-5</td>
+      <td>The "Disable Removing Schedules For Offline Pages" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKCU\Software\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions\NoRemovingSubscriptions</td>
+      <td>NaN</td>
+      <td>CCE-615</td>
+      <td>oval:org.mitre.oval:def:1954</td>
+      <td>DisableRemovingSchedulesForOfflinePages-LocalUser</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4208-5</td>
+      <td>The "Disable Offline Page Hit Logging" setting should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>HKCU\Software\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions\NoChannelLogging</td>
+      <td>NaN</td>
+      <td>CCE-1003</td>
+      <td>oval:org.mitre.oval:def:2026</td>
+      <td>DisableOfflinePageHitLogging-LocalUser</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3754-9</td>
+      <td>The "Java permissions" setting should be configured correctly for the Locked Down Intranet Zone.</td>
+      <td>Custom/Disable Java/High safety/Low safety/Medium safety</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Administrative Templates/Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone/Java permissions  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\1\1C00</td>
+      <td>NaN</td>
+      <td>CCE-320</td>
+      <td>oval:org.mitre.oval:def:2039</td>
+      <td>JavaPermissions-LockedDownIntranetZone-LocalComputer</td>
+      <td>java_permissions_LockedDownintranet_zone_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:2039</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3891-9</td>
+      <td>The "Java permissions" setting should be configured correctly for the Local Machine Zone.</td>
+      <td>Custom/Disable Java/High safety/Low safety/Medium safety</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Administrative Templates/Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone/Java permissions  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0\1C00</td>
+      <td>NaN</td>
+      <td>CCE-138</td>
+      <td>oval:org.mitre.oval:def:1422</td>
+      <td>JavaPermissions-LocalMachineZone-LocalComputer</td>
+      <td>java_permissions_local_machine_zone_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1422</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4160-8</td>
+      <td>The "Java permissions" setting should be configured correctly for the Locked Down Local Machine Zone.</td>
+      <td>Custom/Disable Java/High safety/Low safety/Medium safety</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Administrative Templates/Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone/Java permissions  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\0\1C00</td>
+      <td>NaN</td>
+      <td>CCE-1045</td>
+      <td>oval:org.mitre.oval:def:1986</td>
+      <td>JavaPermissions-LockedDownLocalMachineZone-LocalComputer</td>
+      <td>java_permissions_LockedDownlocal_machine_zone_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1986</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4763-9</td>
+      <td>Computer-wide, rather than per-user, assignment of sites to zones for Internet Explorer should be enabled or disabled as appropriate.</td>
+      <td>enabled, disabled, or not configured</td>
+      <td>GPO Setting: Computer Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel\Security Page\Site to Zone Assignment List</td>
+      <td>NaN</td>
+      <td>CCE-1005</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>site_to_zone_assignment_list_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:9998</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4643-3</td>
+      <td>The "Turn on Protected Mode" setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled</td>
+      <td>GPO Setting: Computer Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel\Security Page\Internet Zone\Turn on Protected Mode</td>
+      <td>NaN</td>
+      <td>CCE-281</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>TurnOnProtectedMode_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:111999</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4652-4</td>
+      <td>The "Java permissions" setting should be configured correctly for the Intranet Zone.</td>
+      <td>Custom/Disable Java/High safety/Low safety/Medium safety</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Administrative Templates/Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone/Java permissions  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1\1C00</td>
+      <td>NaN</td>
+      <td>CCE-218</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>java_permissions_intranet_zone_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1883</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4793-6</td>
+      <td>The "Download signed ActiveX controls" setting should be configured correctly for the Locked-Down Internet Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone\Download signed ActiveX controls</td>
+      <td>NaN</td>
+      <td>CCE-308</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>download_signed_activex_controls_locked_down_internet_zone_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:24599</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4692-0</td>
+      <td>The "Java permissions" setting should be configured correctly for the Locked Down Internet Zone.</td>
+      <td>Custom/Disable Java/High safety/Low safety/Medium safety</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Administrative Templates/Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone/Java permissions  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\3\1C00</td>
+      <td>NaN</td>
+      <td>CCE-781</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>java_permissions_locked_down_internet_zone_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1419</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3902-4</td>
+      <td>The "Java permissions" setting should be configured correctly for the Locked Down Restricted Sites Zone.</td>
+      <td>Custom/Disable Java/High safety/Low safety/Medium safety</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Administrative Templates/Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone/Java permissions  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\4\1C00</td>
+      <td>NaN</td>
+      <td>CCE-1088</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>java_permissions_LockedDownRestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1753</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4546-8</td>
+      <td>The "Allow status bar updates via script" setting should be configured correctly for the Locked-Down Trusted Sites Zone.</td>
+      <td>enabled/disabled</td>
+      <td>GPO Settings:[Computer Configuration | User Configuration]/Network/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone\Allow status bar updates via script</td>
+      <td>NaN</td>
+      <td>CCE-1147</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>AllowStatusBarUpdatesViaScript_LockedDowntrusted_sites_zone_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:118399</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4564-1</td>
+      <td>The "Java permissions" setting should be configured correctly for the Locked Down Trusted Sites Zone.</td>
+      <td>Custom/Disable Java/High safety/Low safety/Medium safety</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Administrative Templates/Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone/Java permissions  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\2\1C00</td>
+      <td>NaN</td>
+      <td>CCE-140</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>java_permissions_LockedDowntrusted_sites_zone_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1699</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3909-9</td>
+      <td>The "Turn on Protected Mode" setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled</td>
+      <td>GPO Setting: Computer Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel\Security Page\Restricted Sites Zone\Turn on Protected Mode  Registry Keys:[HKLM|HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\2500</td>
+      <td>NaN</td>
+      <td>CCE-1211</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>TurnOnProtectedMode_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:62199</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4845-4</td>
+      <td>The "Java permissions" setting should be configured correctly for the Trusted Sites Zone.</td>
+      <td>Custom/Disable Java/High safety/Low safety/Medium safety</td>
+      <td>Local Internet Options:  GPO Settings:[Computer Configuration | User Configuration]/Administrative Templates/Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone/Java permissions  Registry Keys:[HKLM | HKCU]\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2\1C00</td>
+      <td>NaN</td>
+      <td>CCE-675</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>java_permissions_trusted_sites_zone_local_computer</td>
+      <td>oval:gov.nist.fdcc.ie7:def:1379</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18394-7</td>
+      <td>The 'Allow scripting of Internet Explorer web browser control' setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>(1) HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1206  (2) Computer Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel\Security Page\Internet Zone\Allow scripting of Internet Explorer web browser control</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>AllowScriptingOfInternetExplorerWebBrowserControl_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.USGCB.ie7:def:31098</td>
+    </tr>
+    <tr>
+      <td>CCE-18552-0</td>
+      <td>The 'Include local directory path when uploading files to a server' setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>(1) HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\160A  (2) Computer Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel\Security Page\Internet Zone\Include local directory path when uploading files to a server</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>IncludeLocalDirectoryPathWhenUploadingFilesToAServer_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.USGCB.ie7:def:31099</td>
+    </tr>
+    <tr>
+      <td>CCE-18467-1</td>
+      <td>The 'Launching programs and unsafe files' setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>(1) HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1806  (2) Computer Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel\Security Page\Internet Zone\Launching programs and unsafe files</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>LaunchingProgramsAndUnsafeFiles_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.USGCB.ie7:def:31100</td>
+    </tr>
+    <tr>
+      <td>CCE-18731-0</td>
+      <td>The 'Run .NET Framework-reliant components not signed with Authenticode' setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>(1) HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\2004  (2) Computer Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel\Security Page\Internet Zone\Run .NET Framework-reliant components not signed with Authenticode</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>RunNETFrameworkReliantComponentsNotSignedWithAuthenticode_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.USGCB.ie7:def:31035</td>
+    </tr>
+    <tr>
+      <td>CCE-18230-3</td>
+      <td>The 'Run .NET Framework-reliant components signed with Authenticode' setting should be configured correctly for the Internet Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>(1) HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\2001  (2) Computer Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel\Security Page\Internet Zone\Run .NET Framework-reliant components signed with Authenticode</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>RunNETFrameworkReliantComponentsSignedWithAuthenticode_InternetZone_LocalComputer</td>
+      <td>oval:gov.nist.USGCB.ie7:def:31036</td>
+    </tr>
+    <tr>
+      <td>CCE-18912-6</td>
+      <td>The 'Allow scripting of Internet Explorer web browser control' setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>(1) HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1206  (2) Computer Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel\Security Page\Restricted Sites Zone\Allow scripting of Internet Explorer web browser control</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>AllowScriptingOfInternetExplorerWebBrowserControl_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.USGCB.ie7:def:31103</td>
+    </tr>
+    <tr>
+      <td>CCE-18738-5</td>
+      <td>The 'Include local directory path when uploading files to a server' setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>(1) HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\160A  (2) Computer Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel\Security Page\Restricted Sites Zone\Include local directory path when uploading files to a server</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>IncludeLocalDirectoryPathWhenUploadingFilesToAServer_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.USGCB.ie7:def:31104</td>
+    </tr>
+    <tr>
+      <td>CCE-18137-0</td>
+      <td>The 'Launching programs and unsafe files' setting should be configured correctly for the Restricted Sites Zone.</td>
+      <td>enabled/disabled/prompt</td>
+      <td>(1) HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1806  (2) Computer Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel\Security Page\Restricted Sites Zone\Launching programs and unsafe files</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>LaunchingProgramsAndUnsafeFiles_RestrictedSitesZone_LocalComputer</td>
+      <td>oval:gov.nist.USGCB.ie7:def:31105</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>CCE Lists</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href='../css/basic.css' type='text/css' rel='stylesheet' />
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Unnamed: 0</th>
+      <th>Last modfied: 2013-02-11</th>
+      <th>Unnamed: 2</th>
+      <th>Unnamed: 3</th>
+      <th>Unnamed: 4</th>
+      <th>Unnamed: 5</th>
+      <th>Unnamed: 6</th>
+      <th>Unnamed: 7</th>
+      <th>Unnamed: 8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NaN</td>
+      <td>Version: 5.20130214</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE ID</td>
+      <td>CCE Description</td>
+      <td>CCE Parameters</td>
+      <td>CCE Technical Mechanisms</td>
+      <td>NaN</td>
+      <td>CIS Security Configuration Benchmark For Apache Tomcat 5.5/6.0 Version 1.0.0 December 12th, 2009</td>
+      <td>Apache Software Foundation Apache Tomcat 6 Documentation</td>
+      <td>Apache Software Foundation Apache Tomcat 4 Documentation</td>
+      <td>Tomcat The Definitive Guide Ch 6 Tomcat Security http://oreilly.com/catalog/tomcat/chapter/ch06.pdf</td>
+    </tr>
+    <tr>
+      <td>CCE-26789-8</td>
+      <td>The Java Security Manager (JSM) should be enabled or disabled as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1)  catalina.policy file under Catalina Home</td>
+      <td>NaN</td>
+      <td>1.11.1 Starting Tomcat with Security Manager (Level 1, Scorable)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27451-4</td>
+      <td>Tomcat should be configured to run with or without the Java Security Manager upon startup.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1)  '-security' command-line parameter on Tomcat startup -Djava.security.manager command line parameter</td>
+      <td>NaN</td>
+      <td>1.11.1 Starting Tomcat with Security Manager (Level 1, Scorable)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27480-3</td>
+      <td>The Tomcat server port number should be set correctly.</td>
+      <td>(1) port number</td>
+      <td>(1)  '&lt;Server Port = &lt;port number&gt; &gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat Configuration Reference The Server Component Common Attributes http://tomcat.apache.org/tomcat-6.0-doc/config/server.html</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27418-3</td>
+      <td>The Tomcat Legacy JK AJP 1.3 connector should be enabled or disabled as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1)  '&lt;Connector protocolHandlerClassName="org.apache.ajp.tomcat4.Ajp13Connector"&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat 4 Connectors Overview Tomcat connectors Web Server Connectors Table http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27155-1</td>
+      <td>The Tomcat Legacy JK AJP 1.3  connectors should listen on the specified ports.</td>
+      <td>(1) port number</td>
+      <td>(1)  'port' attribute inside '&lt;Connector protocolHandlerClassName="org.apache.ajp.tomcat4.Ajp13Connector"&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat 4 Connectors Overview Tomcat connectors Web Server Connectors Table http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27255-9</td>
+      <td>The Tomcat Legacy HTTP/1.1 connector should be enabled or disabled as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1)  '&lt;Connector protocolHandlerClassName="org.apache.catalina.connector.http.HttpConnector"&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat 4 Connectors Overview Tomcat connectors HTTP Connectors for Tomcat 4.x Table http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27617-0</td>
+      <td>The Tomcat Legacy HTTP/1.1 connectors should listen on the specified ports.</td>
+      <td>(1) port number</td>
+      <td>(1)  'port' attribute inside '&lt;Connector protocolHandlerClassName="org.apache.catalina.connector.http.HttpConnector"&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat 4 Connectors Overview Tomcat connectors HTTP Connectors for Tomcat 4.x Table http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-26722-9</td>
+      <td>The Tomcat login authentication method should be set correctly.</td>
+      <td>(1) BASIC/FORM/DIGEST/CLIENT_CERT</td>
+      <td>(1) Value of '&lt;auth-method&gt;' element in web.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Client Certificates pg 171</td>
+    </tr>
+    <tr>
+      <td>CCE-27610-5</td>
+      <td>Security roles for the Tomcat manager app should be set correctly.</td>
+      <td>(1) security role name</td>
+      <td>(1) '&lt;role-name&gt;' element inside '&lt;security-role&gt;' element in the admin.xml file under Tomcat</td>
+      <td>NaN</td>
+      <td>1.12.3 Restrict manager application (Level 2, Not Scorable)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-26882-1</td>
+      <td>Access to the Tomcat manager app should be denied as appropriate.</td>
+      <td>(1)  list of IPs</td>
+      <td>(1) '&lt;deny&gt;' element inside the '&lt;Valve className=""org.apache.catalina.valves.RemoteAddrValve""/&gt;' element in the manager.xml file under Tomcat</td>
+      <td>NaN</td>
+      <td>1.12.3 Restrict manager application (Level 2, Not Scorable)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-26890-4</td>
+      <td>Access to the Tomcat manager app should be allowed as appropriate.</td>
+      <td>(1)  list of IPs</td>
+      <td>(1) '&lt;allow&gt;' element inside the '&lt;Valve className=""org.apache.catalina.valves.RemoteAddrValve""/&gt;' element in the manager.xml file under Tomcat</td>
+      <td>NaN</td>
+      <td>1.12.3 Restrict manager application (Level 2, Not Scorable)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27371-4</td>
+      <td>The owner of the Tomcat home directory should be set correctly.</td>
+      <td>(1) owner</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.6.1 Restrict access to $CATALINA_HOME (Level 1, Scorable)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27141-1</td>
+      <td>The group of the Tomcat home directory should be set correctly.</td>
+      <td>(1) group</td>
+      <td>(1) via chgrp</td>
+      <td>NaN</td>
+      <td>1.6.1 Restrict access to $CATALINA_HOME (Level 1, Scorable)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27156-9</td>
+      <td>The permissions for the Tomcat home directory should be set correctly.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.6.1 Restrict access to $CATALINA_HOME (Level 1, Scorable)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27563-6</td>
+      <td>The owner of the Tomcat home/conf/ directory should be set correctly.</td>
+      <td>(1) owner</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.6.3 Restrict access to Tomcat configuration directory (Level 1, Scorable)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27520-6</td>
+      <td>The group of the Tomcat home/conf/ directory should be set correctly.</td>
+      <td>(1) group</td>
+      <td>(1) via chgrp</td>
+      <td>NaN</td>
+      <td>1.6.3 Restrict access to Tomcat configuration directory (Level 1, Scorable)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27477-9</td>
+      <td>The permissions for the Tomcat home/conf/ directory should be set correctly.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.6.3 Restrict access to Tomcat configuration directory (Level 1, Scorable)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27482-9</td>
+      <td>The owner of the tomcat-users.xml file should be set correctly.</td>
+      <td>(1) owner</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.6.13 Restrict access to Tomcat tomcat-users.xml (Level 1, Scorable)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27392-0</td>
+      <td>The group of the tomcat-users.xml file should be set correctly.</td>
+      <td>(1) group</td>
+      <td>(1) via chgrp</td>
+      <td>NaN</td>
+      <td>1.6.13 Restrict access to Tomcat tomcat-users.xml (Level 1, Scorable)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27638-6</td>
+      <td>The permissions for the tomcat-users.xml file should be set correctly.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.6.13 Restrict access to Tomcat tomcat-users.xml (Level 1, Scorable)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27500-8</td>
+      <td>The password digest algorithm for JDBCRealm (database) connections should be enabled or disabled as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) 'digest' attribute inside '&lt;Realm classname=org.apache.catalina.realm.JDBCRealm&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat 6.0 Realm Configuration HOW-TO JDBCRealm http://tomcat.apache.org/tomcat-6.0-doc/realm-howto.html</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-26939-9</td>
+      <td>The JDBCRealm (database) password digest algorithm should be set correctly</td>
+      <td>(1) SHA/MD2/MD5</td>
+      <td>(1) 'digest' attribute inside '&lt;Realm classname=org.apache.catalina.realm.JDBCRealm&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat 6.0 Realm Configuration HOW-TO Digested Passwords http://tomcat.apache.org/tomcat-6.0-doc/realm-howto.html</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27491-0</td>
+      <td>The password digest algorithm for JNDIRealm (LDAP) connections should be enabled or disabled as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) 'digest' attribute inside '&lt;Realm classname=org.apache.catalina.realm.JNDIRealm&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat 6.0 Realm Configuration HOW-TO JNDIRealm http://tomcat.apache.org/tomcat-6.0-doc/realm-howto.html</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-26765-8</td>
+      <td>The JNDIRealm (LDAP) password digest should be configured appropriately.</td>
+      <td>(1) SHA/MD2/MD5</td>
+      <td>(1) 'digest' attribute inside '&lt;Realm classname=org.apache.catalina.realm.JNDIRealm&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat 6.0 Realm Configuration HOW-TO Digested Passwords http://tomcat.apache.org/tomcat-6.0-doc/realm-howto.html</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27521-4</td>
+      <td>The Tomcat HTTP/1.1 connector should be enabled or disabled.</td>
+      <td>(1) exists/ not exist</td>
+      <td>(1) '&lt;Connector protocol=""HTTP/1.1""&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat Configuration Reference The HTTP Connector Common Attributes http://tomcat.apache.org/tomcat-6.0-doc/config/http.html</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27743-4</td>
+      <td>The Tomcat HTTP/1.1 connector should be configured appropriately for the specified ports.</td>
+      <td>(1) TARGET: port number (2) exists/ not exist</td>
+      <td>(1) 'port' attribute inside '&lt;Connector protocol=""HTTP/1.1""&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat Configuration Reference The HTTP Connector Common Attributes http://tomcat.apache.org/tomcat-6.0-doc/config/http.html</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27378-9</td>
+      <td>The secure attribute should be set as appropriate for the specified Tomcat HTTP/1.1 connectors.</td>
+      <td>(1) TARGET: connector (2) true/false</td>
+      <td>(1) secure attribute in a &lt;Connector protocol="HTTP/1.1"&gt; line in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat Configuration Reference The HTTP Connector Common Attributes http://tomcat.apache.org/tomcat-6.0-doc/config/http.html</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27544-6</td>
+      <td>The Tomcat Legacy JK/JK2 AJP 1.3 connector should be enabled or disabled as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) '&lt;Connector protocol=""AJP/1.3""&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat Configuration Reference The AJP Connector Common Attributes http://tomcat.apache.org/tomcat-6.0-doc/config/ajp.html</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27607-1</td>
+      <td>The Tomcat Legacy JK/JK2 AJP 1.3 connector should be configured appropriately for the specified ports.</td>
+      <td>(1) port number</td>
+      <td>(1) 'port' attribute inside '&lt;Connector protocol=""AJP/1.3""&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat Configuration Reference The AJP Connector Common Attributes http://tomcat.apache.org/tomcat-6.0-doc/config/ajp.html</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27555-2</td>
+      <td>The secure attribute should be set as appropriate for the specified Tomcat JK/JK2 AJP 1.3 connectors.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) security attribute inside '&lt;Connector protocol=""AJP/1.3""&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat Configuration Reference The AJP Connector Common Attributes http://tomcat.apache.org/tomcat-6.0-doc/config/ajp.html</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27568-5</td>
+      <td>The Tomcat Legacy JK AJP 1.3 connector should be enabled or disabled as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) '&lt;Connector protocolHandlerClassName=""org.apache.ajp.tomcat4.Ajp13Connector""&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat 4 Connectors Overview Tomcat connectors Web Server Connectors Table http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27423-3</td>
+      <td>The Tomcat Legacy JK AJP 1.3 connector should be configured appropriately for the specified ports.</td>
+      <td>(1) port number</td>
+      <td>(1) 'port' attribute inside '&lt;Connector protocolHandlerClassName=""org.apache.ajp.tomcat4.Ajp13Connector""&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat 4 Connectors Overview Tomcat connectors Web Server Connectors Table http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27608-9</td>
+      <td>The Tomcat WARP connector should be enabled or disabled as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1)  '&lt;Connector protocol=WARP&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat 4 Connectors Overview Tomcat connectors Web Server Connectors Table http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27245-0</td>
+      <td>The Tomcat WARP connector should be configured appropriately for the specified ports.</td>
+      <td>(1) port number</td>
+      <td>(1) 'port' attribute inside '&lt;Connector protocol=WARP&gt;' element in server.xml</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat 4 Connectors Overview Tomcat connectors Web Server Connectors Table http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27589-1</td>
+      <td>JULI container level logging should be enabled or disabled as appropriate.</td>
+      <td>(1) exists/ not exist</td>
+      <td>(1) 'logging.properties' file</td>
+      <td>NaN</td>
+      <td>1.9.1 Application specific logging (Level 2, Scorable)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27514-9</td>
+      <td>The JULI FileHandler threshold level should be set correctly for the specified classes.</td>
+      <td>(1) TARGET: class (2) FINEST/FINER/FINE/CONFIG/INFO/WARNING/SEVERE</td>
+      <td>(1) &lt;class&gt;.org.apache.juli.FileHandler.level  in logging.properties</td>
+      <td>NaN</td>
+      <td>1.9.2 Specify file handler in logging.properties files (Level 1, Scorable)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27315-1</td>
+      <td>The JULI FileHandler save directory should be configured appropriately for the specified classes</td>
+      <td>(1) TARGET: class (2) directory</td>
+      <td>(1) &lt;class&gt;.org.apache.juli.FileHandler.directory in logging.properties</td>
+      <td>NaN</td>
+      <td>1.9.4 Ensure directory in context.xml is a secure location (Level 1, Scorable)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27307-8</td>
+      <td>The JULI FileHandlerlog file name prefix should be set correctly for the specified classes.</td>
+      <td>(1) TARGET: class (2) prefix</td>
+      <td>(1) &lt;class&gt;.org.apache.juli.FileHandler.prefix in logging.properties</td>
+      <td>NaN</td>
+      <td>1.9.4 Ensure directory in context.xml is a secure location (Level 1, Scorable)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27577-6</td>
+      <td>All permissions for the specified codebase should exist or not exist.</td>
+      <td>(1) TARGET: codebase (2) exist/not exist</td>
+      <td>(1) catalina.policy: java.security.AllPermissions in a grant element.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat 6.0 Security Manager HOW-TO Standard Permissions http://tomcat.apache.org/tomcat-6.0-doc/security-manager-howto.html</td>
+      <td>NaN</td>
+      <td>Using the -security Option pg 134</td>
+    </tr>
+    <tr>
+      <td>CCE-27476-1</td>
+      <td>The example files should be installed as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) located in /examples directory</td>
+      <td>NaN</td>
+      <td>1.3.1 Remove extraneous files and directories (Level 2, Scorable)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27463-9</td>
+      <td>The WebDAV app should be installed as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) located in /webdav directory</td>
+      <td>NaN</td>
+      <td>1.3.1 Remove extraneous files and directories (Level 2, Scorable)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27472-0</td>
+      <td>The Tomcat-docs should be installed as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) located in /tomcat-docs directory</td>
+      <td>NaN</td>
+      <td>1.3.1 Remove extraneous files and directories (Level 2, Scorable)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27634-5</td>
+      <td>The Balancer app should be installed as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) located in /balancer directory</td>
+      <td>NaN</td>
+      <td>1.3.1 Remove extraneous files and directories (Level 2, Scorable)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27726-9</td>
+      <td>The example server.xml file should be installed as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) located in the Tomcat home/conf/ directory</td>
+      <td>NaN</td>
+      <td>1.3.1 Remove extraneous files and directories (Level 2, Scorable)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27661-8</td>
+      <td>Tomcat should be run by the appropriate account</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat 6.0 Tomcat Setup http://tomcat.apache.org/tomcat-6.0-doc/setup.html</td>
+      <td>NaN</td>
+      <td>Using a Non-root User in the chroot Jail pg 145</td>
+    </tr>
+    <tr>
+      <td>CCE-27707-9</td>
+      <td>Tomcat should be run with the appropriate group membership.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) via chgrp</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat 6.0 Tomcat Setup http://tomcat.apache.org/tomcat-6.0-doc/setup.html</td>
+      <td>NaN</td>
+      <td>Using a Non-root User in the chroot Jail pg 145</td>
+    </tr>
+    <tr>
+      <td>CCE-27668-3</td>
+      <td>The save directory for log files should be set appropriatly for the specified handlers.</td>
+      <td>(1) TARGET: handler (2) path</td>
+      <td>(1) directory property of the handlers</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat 6.0 Logging in Tomcat Using java.util.logging (default) http://tomcat.apache.org/tomcat-6.0-doc/logging.html</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27564-4</td>
+      <td>Tomcat web application JVM property read permission should be set correctly for the specified properties.</td>
+      <td>(1) TARGET: JVM property</td>
+      <td>(1)  'permission java.util.PropertyPermission' line(s) inside 'grant{}' statement in catalina.policy</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat 6.0 Security Manager HOW-TO Standard Permissions http://tomcat.apache.org/tomcat-6.0-doc/security-manager-howto.html</td>
+      <td>NaN</td>
+      <td>Using the -security Option pg 135</td>
+    </tr>
+    <tr>
+      <td>CCE-27761-6</td>
+      <td>Tomcat web application JVM property write permission should be set correctly for the specified properties.</td>
+      <td>(1) TARGET: JVM property</td>
+      <td>(1)  'permission java.util.PropertyPermission' line(s) inside 'grant{}' statement in catalina.policy</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat 6.0 Security Manager HOW-TO Standard Permissions http://tomcat.apache.org/tomcat-6.0-doc/security-manager-howto.html</td>
+      <td>NaN</td>
+      <td>Using the -security Option pg 135</td>
+    </tr>
+    <tr>
+      <td>CCE-27600-6</td>
+      <td>There exists a password in tomcat-users.xml that is not stored using an authorized digest.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) tomcat-users.xml file</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Apache Tomcat 6.0 Realm Configuration HOW-TO http://tomcat.apache.org/tomcat-6.0-doc/realm-howto.html</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27652-7</td>
+      <td>The Tomcat user account should be locked or unlocked as appropriate.</td>
+      <td>locked/unlocked</td>
+      <td>(1)  via passwd</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Using a Non-root User in the chroot Jail pg 145</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

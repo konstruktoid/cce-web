@@ -1,0 +1,167 @@
+Unnamed: 0,Last modfied: 2013-02-11,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8
+,Version: 5.20130214,,,,,,,
+CCE ID,CCE Description,CCE Parameters,CCE Technical Mechanisms,,"CIS
+Security Configuration Benchmark For Apache Tomcat 5.5/6.0
+Version 1.0.0
+December 12th, 2009","Apache Software Foundation
+Apache Tomcat 6 Documentation","Apache Software Foundation
+Apache Tomcat 4 Documentation","Tomcat
+The Definitive Guide
+Ch 6 Tomcat Security
+http://oreilly.com/catalog/tomcat/chapter/ch06.pdf"
+CCE-26789-8,The Java Security Manager (JSM) should be enabled or disabled as appropriate.,(1) exist/not exist,"(1) 
+catalina.policy file under Catalina Home",,"1.11.1 Starting Tomcat with Security Manager (Level 1, Scorable)",,,
+CCE-27451-4,Tomcat should be configured to run with or without the Java Security Manager upon startup.,(1) exist/not exist,"(1) 
+'-security' command-line parameter on Tomcat startup
+-Djava.security.manager command line parameter",,"1.11.1 Starting Tomcat with Security Manager (Level 1, Scorable)",,,
+CCE-27480-3,The Tomcat server port number should be set correctly.,(1) port number,"(1) 
+'<Server Port = <port number> >' element in server.xml",,,"Apache Tomcat Configuration Reference
+The Server Component
+Common Attributes
+http://tomcat.apache.org/tomcat-6.0-doc/config/server.html",,
+CCE-27418-3,The Tomcat Legacy JK AJP 1.3 connector should be enabled or disabled as appropriate.,(1) exist/not exist,"(1) 
+'<Connector protocolHandlerClassName=""org.apache.ajp.tomcat4.Ajp13Connector"">' element in server.xml",,,,"Apache Tomcat 4
+Connectors Overview
+Tomcat connectors
+Web Server Connectors Table
+http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html",
+CCE-27155-1,The Tomcat Legacy JK AJP 1.3  connectors should listen on the specified ports.,(1) port number,"(1) 
+'port' attribute inside
+'<Connector protocolHandlerClassName=""org.apache.ajp.tomcat4.Ajp13Connector"">' element in server.xml",,,,"Apache Tomcat 4
+Connectors Overview
+Tomcat connectors
+Web Server Connectors Table
+http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html",
+CCE-27255-9,The Tomcat Legacy HTTP/1.1 connector should be enabled or disabled as appropriate.,(1) exist/not exist,"(1) 
+'<Connector protocolHandlerClassName=""org.apache.catalina.connector.http.HttpConnector"">' element in server.xml",,,,"Apache Tomcat 4
+Connectors Overview
+Tomcat connectors
+HTTP Connectors for Tomcat 4.x Table
+http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html",
+CCE-27617-0,The Tomcat Legacy HTTP/1.1 connectors should listen on the specified ports.,(1) port number,"(1) 
+'port' attribute inside
+'<Connector protocolHandlerClassName=""org.apache.catalina.connector.http.HttpConnector"">' element in server.xml",,,,"Apache Tomcat 4
+Connectors Overview
+Tomcat connectors
+HTTP Connectors for Tomcat 4.x Table
+http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html",
+CCE-26722-9,The Tomcat login authentication method should be set correctly.,(1) BASIC/FORM/DIGEST/CLIENT_CERT,(1) Value of '<auth-method>' element in web.xml,,,,,Client Certificates pg 171
+CCE-27610-5,Security roles for the Tomcat manager app should be set correctly.,(1) security role name,(1) '<role-name>' element inside '<security-role>' element in the admin.xml file under Tomcat,,"1.12.3 Restrict manager application (Level 2, Not Scorable)",,,
+CCE-26882-1,Access to the Tomcat manager app should be denied as appropriate.,(1)  list of IPs,"(1) '<deny>' element inside the '<Valve className=""""org.apache.catalina.valves.RemoteAddrValve""""/>' element in the manager.xml file under Tomcat",,"1.12.3 Restrict manager application (Level 2, Not Scorable)",,,
+CCE-26890-4,Access to the Tomcat manager app should be allowed as appropriate.,(1)  list of IPs,"(1) '<allow>' element inside the '<Valve className=""""org.apache.catalina.valves.RemoteAddrValve""""/>' element in the manager.xml file under Tomcat",,"1.12.3 Restrict manager application (Level 2, Not Scorable)",,,
+CCE-27371-4,The owner of the Tomcat home directory should be set correctly.,(1) owner,(1) via chown,,"1.6.1 Restrict access to $CATALINA_HOME (Level 1, Scorable)",,,
+CCE-27141-1,The group of the Tomcat home directory should be set correctly.,(1) group,(1) via chgrp,,"1.6.1 Restrict access to $CATALINA_HOME (Level 1, Scorable)",,,
+CCE-27156-9,The permissions for the Tomcat home directory should be set correctly.,(1) permissions,(1) via chown,,"1.6.1 Restrict access to $CATALINA_HOME (Level 1, Scorable)",,,
+CCE-27563-6,The owner of the Tomcat home/conf/ directory should be set correctly.,(1) owner,(1) via chown,,"1.6.3 Restrict access to Tomcat configuration directory (Level 1, Scorable)",,,
+CCE-27520-6,The group of the Tomcat home/conf/ directory should be set correctly.,(1) group,(1) via chgrp,,"1.6.3 Restrict access to Tomcat configuration directory (Level 1, Scorable)",,,
+CCE-27477-9,The permissions for the Tomcat home/conf/ directory should be set correctly.,(1) permissions,(1) via chown,,"1.6.3 Restrict access to Tomcat configuration directory (Level 1, Scorable)",,,
+CCE-27482-9,The owner of the tomcat-users.xml file should be set correctly.,(1) owner,(1) via chown,,"1.6.13 Restrict access to Tomcat tomcat-users.xml (Level 1, Scorable)",,,
+CCE-27392-0,The group of the tomcat-users.xml file should be set correctly.,(1) group,(1) via chgrp,,"1.6.13 Restrict access to Tomcat tomcat-users.xml (Level 1, Scorable)",,,
+CCE-27638-6,The permissions for the tomcat-users.xml file should be set correctly.,(1) permissions,(1) via chown,,"1.6.13 Restrict access to Tomcat tomcat-users.xml (Level 1, Scorable)",,,
+CCE-27500-8,The password digest algorithm for JDBCRealm (database) connections should be enabled or disabled as appropriate.,(1) exist/not exist,(1) 'digest' attribute inside '<Realm classname=org.apache.catalina.realm.JDBCRealm>' element in server.xml,,,"Apache Tomcat 6.0
+Realm Configuration HOW-TO
+JDBCRealm
+http://tomcat.apache.org/tomcat-6.0-doc/realm-howto.html",,
+CCE-26939-9,The JDBCRealm (database) password digest algorithm should be set correctly,(1) SHA/MD2/MD5,(1) 'digest' attribute inside '<Realm classname=org.apache.catalina.realm.JDBCRealm>' element in server.xml,,,"Apache Tomcat 6.0
+Realm Configuration HOW-TO
+Digested Passwords
+http://tomcat.apache.org/tomcat-6.0-doc/realm-howto.html",,
+CCE-27491-0,The password digest algorithm for JNDIRealm (LDAP) connections should be enabled or disabled as appropriate.,(1) exist/not exist,(1) 'digest' attribute inside '<Realm classname=org.apache.catalina.realm.JNDIRealm>' element in server.xml,,,"Apache Tomcat 6.0
+Realm Configuration HOW-TO
+JNDIRealm
+http://tomcat.apache.org/tomcat-6.0-doc/realm-howto.html",,
+CCE-26765-8,The JNDIRealm (LDAP) password digest should be configured appropriately.,(1) SHA/MD2/MD5,(1) 'digest' attribute inside '<Realm classname=org.apache.catalina.realm.JNDIRealm>' element in server.xml,,,"Apache Tomcat 6.0
+Realm Configuration HOW-TO
+Digested Passwords
+http://tomcat.apache.org/tomcat-6.0-doc/realm-howto.html",,
+CCE-27521-4,The Tomcat HTTP/1.1 connector should be enabled or disabled.,(1) exists/ not exist,"(1) '<Connector protocol=""""HTTP/1.1"""">' element in server.xml",,,"Apache Tomcat Configuration Reference
+The HTTP Connector
+Common Attributes
+http://tomcat.apache.org/tomcat-6.0-doc/config/http.html",,
+CCE-27743-4,The Tomcat HTTP/1.1 connector should be configured appropriately for the specified ports.,"(1) TARGET: port number
+(2) exists/ not exist","(1) 'port' attribute inside '<Connector protocol=""""HTTP/1.1"""">' element in server.xml",,,"Apache Tomcat Configuration Reference
+The HTTP Connector
+Common Attributes
+http://tomcat.apache.org/tomcat-6.0-doc/config/http.html",,
+CCE-27378-9,The secure attribute should be set as appropriate for the specified Tomcat HTTP/1.1 connectors.,"(1) TARGET: connector
+(2) true/false","(1) secure attribute in a <Connector protocol=""HTTP/1.1""> line in server.xml",,,"Apache Tomcat Configuration Reference
+The HTTP Connector
+Common Attributes
+http://tomcat.apache.org/tomcat-6.0-doc/config/http.html",,
+CCE-27544-6,The Tomcat Legacy JK/JK2 AJP 1.3 connector should be enabled or disabled as appropriate.,(1) exist/not exist,"(1) '<Connector protocol=""""AJP/1.3"""">' element in server.xml",,,"Apache Tomcat Configuration Reference
+The AJP Connector
+Common Attributes
+http://tomcat.apache.org/tomcat-6.0-doc/config/ajp.html",,
+CCE-27607-1,The Tomcat Legacy JK/JK2 AJP 1.3 connector should be configured appropriately for the specified ports.,(1) port number,"(1) 'port' attribute inside '<Connector protocol=""""AJP/1.3"""">' element in server.xml",,,"Apache Tomcat Configuration Reference
+The AJP Connector
+Common Attributes
+http://tomcat.apache.org/tomcat-6.0-doc/config/ajp.html",,
+CCE-27555-2,The secure attribute should be set as appropriate for the specified Tomcat JK/JK2 AJP 1.3 connectors.,(1) exist/not exist,"(1) security attribute inside '<Connector protocol=""""AJP/1.3"""">' element in server.xml",,,"Apache Tomcat Configuration Reference
+The AJP Connector
+Common Attributes
+http://tomcat.apache.org/tomcat-6.0-doc/config/ajp.html",,
+CCE-27568-5,The Tomcat Legacy JK AJP 1.3 connector should be enabled or disabled as appropriate.,(1) exist/not exist,"(1) '<Connector protocolHandlerClassName=""""org.apache.ajp.tomcat4.Ajp13Connector"""">' element in server.xml",,,,"Apache Tomcat 4
+Connectors Overview
+Tomcat connectors
+Web Server Connectors Table
+http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html",
+CCE-27423-3,The Tomcat Legacy JK AJP 1.3 connector should be configured appropriately for the specified ports.,(1) port number,"(1) 'port' attribute inside '<Connector protocolHandlerClassName=""""org.apache.ajp.tomcat4.Ajp13Connector"""">' element in server.xml",,,,"Apache Tomcat 4
+Connectors Overview
+Tomcat connectors
+Web Server Connectors Table
+http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html",
+CCE-27608-9,The Tomcat WARP connector should be enabled or disabled as appropriate.,(1) exist/not exist,(1)  '<Connector protocol=WARP>' element in server.xml,,,,"Apache Tomcat 4
+Connectors Overview
+Tomcat connectors
+Web Server Connectors Table
+http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html",
+CCE-27245-0,The Tomcat WARP connector should be configured appropriately for the specified ports.,(1) port number,(1) 'port' attribute inside '<Connector protocol=WARP>' element in server.xml,,,,"Apache Tomcat 4
+Connectors Overview
+Tomcat connectors
+Web Server Connectors Table
+http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html",
+CCE-27589-1,JULI container level logging should be enabled or disabled as appropriate.,(1) exists/ not exist,(1) 'logging.properties' file,,"1.9.1 Application specific logging (Level 2, Scorable)",,,
+CCE-27514-9,The JULI FileHandler threshold level should be set correctly for the specified classes.,"(1) TARGET: class
+(2) FINEST/FINER/FINE/CONFIG/INFO/WARNING/SEVERE",(1) <class>.org.apache.juli.FileHandler.level  in logging.properties,,"1.9.2 Specify file handler in logging.properties files (Level 1, Scorable)",,,
+CCE-27315-1,The JULI FileHandler save directory should be configured appropriately for the specified classes,"(1) TARGET: class
+(2) directory",(1) <class>.org.apache.juli.FileHandler.directory in logging.properties,,"1.9.4 Ensure directory in context.xml is a secure location (Level 1, Scorable)",,,
+CCE-27307-8,The JULI FileHandlerlog file name prefix should be set correctly for the specified classes.,"(1) TARGET: class
+(2) prefix",(1) <class>.org.apache.juli.FileHandler.prefix in logging.properties,,"1.9.4 Ensure directory in context.xml is a secure location (Level 1, Scorable)",,,
+CCE-27577-6,All permissions for the specified codebase should exist or not exist.,"(1) TARGET: codebase
+(2) exist/not exist",(1) catalina.policy: java.security.AllPermissions in a grant element.,,,"Apache Tomcat 6.0
+Security Manager HOW-TO
+Standard Permissions
+http://tomcat.apache.org/tomcat-6.0-doc/security-manager-howto.html",,Using the -security Option pg 134
+CCE-27476-1,The example files should be installed as appropriate.,(1) exist/not exist,(1) located in /examples directory,,"1.3.1 Remove extraneous files and directories (Level 2, Scorable)",,,
+CCE-27463-9,The WebDAV app should be installed as appropriate.,(1) exist/not exist,(1) located in /webdav directory,,"1.3.1 Remove extraneous files and directories (Level 2, Scorable)",,,
+CCE-27472-0,The Tomcat-docs should be installed as appropriate.,(1) exist/not exist,(1) located in /tomcat-docs directory,,"1.3.1 Remove extraneous files and directories (Level 2, Scorable)",,,
+CCE-27634-5,The Balancer app should be installed as appropriate.,(1) exist/not exist,(1) located in /balancer directory,,"1.3.1 Remove extraneous files and directories (Level 2, Scorable)",,,
+CCE-27726-9,The example server.xml file should be installed as appropriate.,(1) exist/not exist,(1) located in the Tomcat home/conf/ directory,,"1.3.1 Remove extraneous files and directories (Level 2, Scorable)",,,
+CCE-27661-8,Tomcat should be run by the appropriate account,(1) exist/not exist,(1) via chown,,,"Apache Tomcat 6.0
+Tomcat Setup
+http://tomcat.apache.org/tomcat-6.0-doc/setup.html",,Using a Non-root User in the chroot Jail pg 145
+CCE-27707-9,Tomcat should be run with the appropriate group membership.,(1) exist/not exist,(1) via chgrp,,,"Apache Tomcat 6.0
+Tomcat Setup
+http://tomcat.apache.org/tomcat-6.0-doc/setup.html",,Using a Non-root User in the chroot Jail pg 145
+CCE-27668-3,The save directory for log files should be set appropriatly for the specified handlers. ,"(1) TARGET: handler
+(2) path",(1) directory property of the handlers,,,"Apache Tomcat 6.0
+Logging in Tomcat
+Using java.util.logging (default)
+http://tomcat.apache.org/tomcat-6.0-doc/logging.html",,
+CCE-27564-4,Tomcat web application JVM property read permission should be set correctly for the specified properties.,(1) TARGET: JVM property,"(1) 
+'permission java.util.PropertyPermission' line(s) inside 'grant{}' statement in catalina.policy 
+",,,"Apache Tomcat 6.0
+Security Manager HOW-TO
+Standard Permissions
+http://tomcat.apache.org/tomcat-6.0-doc/security-manager-howto.html",,Using the -security Option pg 135
+CCE-27761-6,Tomcat web application JVM property write permission should be set correctly for the specified properties.,(1) TARGET: JVM property,"(1) 
+'permission java.util.PropertyPermission' line(s) inside 'grant{}' statement in catalina.policy 
+",,,"Apache Tomcat 6.0
+Security Manager HOW-TO
+Standard Permissions
+http://tomcat.apache.org/tomcat-6.0-doc/security-manager-howto.html",,Using the -security Option pg 135
+CCE-27600-6,There exists a password in tomcat-users.xml that is not stored using an authorized digest.,(1) exist/not exist,(1) tomcat-users.xml file,,,"Apache Tomcat 6.0
+Realm Configuration HOW-TO
+http://tomcat.apache.org/tomcat-6.0-doc/realm-howto.html",,
+CCE-27652-7,The Tomcat user account should be locked or unlocked as appropriate.,locked/unlocked,"(1) 
+via passwd",,,,,Using a Non-root User in the chroot Jail pg 145

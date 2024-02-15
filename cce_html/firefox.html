@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>CCE Lists</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href='../css/basic.css' type='text/css' rel='stylesheet' />
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>CCE ID v5</th>
+      <th>CCE Title</th>
+      <th>USGCB Setting</th>
+      <th>Technical Mechanism</th>
+      <th>Configuration Details</th>
+      <th>Rationale</th>
+      <th>Impact</th>
+      <th>800-53 Mapping</th>
+      <th>National Information Assurance Partnership Operating System Protection Profile</th>
+      <th>Center for Internet Security</th>
+      <th>Defense Information Systems Agency Security Security Requirements Guide</th>
+      <th>Configuration Group</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CCE-82057-1</td>
+      <td>Enable Shared System Certificates</td>
+      <td>enable</td>
+      <td>via update-ca-trust</td>
+      <td>The Shared System Certificates store makes NSS, GnuTLS, OpenSSL, and Java share a default source for retrieving system certificate anchors and blacklist information. Firefox has the capability of using this centralized store for its CA certificates. If the Shared System Certificates store is disabled, it can be enabled by running the following command: $ sudo update-ca-trust enable</td>
+      <td>The DOD root certificate will ensure that the trust chain is established for server certificates issued from the DOD CA.</td>
+      <td>medium</td>
+      <td>AC-10</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>The DoD Root Certificate Is Required</td>
+    </tr>
+    <tr>
+      <td>CCE-82056-3</td>
+      <td>The DoD Root Certificate Exists</td>
+      <td>configure</td>
+      <td>via update-ca-trust</td>
+      <td>The DoD root certificate should be installed in the Shared System Certificates store for Firefox to be able to access the DoD certificate. To install the root certificated into the Shared System Certificates store, copy the DoD root certificate into /etc/pki/ca-trust/source/anchors. Once the file is copied, run the following command: $ sudo update-ca-trust extract</td>
+      <td>The DOD root certificate will ensure that the trust chain is established for server certificates issued from the DOD CA.</td>
+      <td>medium</td>
+      <td>AC-10</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>The DoD Root Certificate Is Required</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,480 @@
+Unnamed: 0,Last modified: 2013-02-11,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7
+,Version: 5.20130214,,,,,,
+CCE ID,CCE Description,CCE Parameters,CCE Technical Mechanisms,,"DISA STIG
+SQL 2005 DB
+Version 8, Release 1.7 Benchmark Date: 27 August 2010","DISA STIG
+SQL 2005 INS
+Version 8, Release 1.7 Benchmark Date: 27 August 2010",Microsoft Online Documentation
+CCE-19557-8,"
+Application object owner accounts for a specified database should be enabled or disabled as appropriate.","(1) login_name
+(2) enable/disable
+(3) default_database",(1) ALTER LOGIN,,Rule ID: V0005683 Rule Title: Application object owner accounts should be disabled when not performing installation or maintenance actions. STIG ID: DG0004 Severity: CAT II Class: Unclass,,
+CCE-19528-9,"
+Application object owner accounts for a specified database should be configured appropriately.","(1) set of accounts
+(2) database name","(1)From the query prompt:
+    USE [database name]
+    SELECT DISTINCT u.name
+    FROM sysusers u, sysobjects o
+    WHERE u.uid = o.uid
+    AND u.uid NOT IN ('1', '3', '4')",,Rule ID: V0015607 Rule Title: Application objects should be owned by accounts authorized for ownership. STIG ID: DG0008 Severity: CAT II Class: Unclass,,
+CCE-19358-1,Database application permissions allowing DDL statements to modify the application schema for a specified database should be configured appropriately.,"(1) list of permissons                                                                     
+(2) set of accounts
+(3) database name","(1) USE [database name]
+      SELECT USER_NAME(uid), name, crdate
+      FROM sysobjects
+      WHERE uid NOT IN (1, 3, 4)",,Rule ID: V0003727 Rule Title: Database applications should be restricted from using static DDL statements to modify the application schema for a specified database. STIG ID: DG0015 Severity: CAT II Class: Unclass,,
+CCE-19972-9,"
+Custom and GOTS application source code for a specified databased should be encrypted or not encrypted as appropriate.
+","(1) [procedure name]
+(2) WITH ENCRYPTION
+(3) Custom/GOTS procedures
+(4) Database Name",(1) ALTER PROCEDURE,,Rule ID: V0003823 Rule Title: Custom and GOTS application source code stored in the database should be protected with encryption or encoding. STIG ID: DG0091 Severity: CAT III Class: Unclass,,
+CCE-19571-9,"
+Access to manage the database master key for a specified database should be configured appropriately.","(1) list of users
+(2) database name",(1) REVOKE / GRANT CONTROL,,Rule ID: V0015654 Rule Title: DBMS symmetric keys should be protected in accordance with NSA or NIST-approved key management technology or processes. STIG ID: DG0138 Severity: CAT II Class: Unclass,,
+CCE-19853-1,Ownership of the asymmetric keys should be configured appropriately,"(1) set of audits
+(2) list of permissons","(1) object owners 
+(2) defined by objects DACL",,Rule ID: V0015142 Rule Title: Asymmetric keys should use DoD PKI Certificates and be protected in accordance with NIST (unclassified data) or NSA (classified data) approved key management and processes. STIG ID: DG0166 Severity: CAT II Class: Unclass,,
+CCE-19878-8,Encryption of the asymmetric keys should be configured appropriately,"(1) set of audits
+(2) list of permissons","(1) object owners 
+(2) defined by objects DACL",,Rule ID: V0015142 Rule Title: Asymmetric keys should use DoD PKI Certificates and be protected in accordance with NIST (unclassified data) or NSA (classified data) approved key management and processes. STIG ID: DG0166 Severity: CAT II Class: Unclass,,
+CCE-19148-6,Auditing of unauthorized access to the asymmetric keys should be configured appropriately,"(1) set of audits
+(2) list of permissons","(1) object owners 
+(2) defined by objects DACL",,Rule ID: V0015142 Rule Title: Asymmetric keys should use DoD PKI Certificates and be protected in accordance with NIST (unclassified data) or NSA (classified data) approved key management and processes. STIG ID: DG0166 Severity: CAT II Class: Unclass,,
+CCE-19173-4,Permissions on system tables for a specified database should be configured appropriately ,"(1) list of permissons
+(2) [object]
+(3) [user name]
+(4) [database name]",(1) REVOKE / GRANT,,Rule ID: V0002458 Rule Title: Permissions on system tables should be restricted to authorized accounts. STIG ID: DM1749 Severity: CAT II Class: Unclass,,
+CCE-19159-3,"DDL permissions for a specified database and specified account should be configured appropriately 
+","(1) set of accounts
+(2) list of permissions 
+(3) database name","(1) CREATE
+(2) ALTER
+(3) DROP
+(1) REVOKE/GRANT CONTROL",,Rule ID: V0002463 Rule Title: DDL permissions should be granted only to authorized accounts. STIG ID: DM1760 Severity: CAT II Class: Unclass,,
+CCE-19789-7,"Permissions using the WITH GRANT OPTION for a specified database should be configured appropriately 
+","(1) list of permissons
+(2) [object]
+(3) [user name]
+(4) [database name]",(1) REVOKE / GRANT,,Rule ID: V0002498 Rule Title : Permissions using the WITH GRANT OPTION should be granted only to DBA or application administrator accounts. STIG ID: DM5144 Severity: CAT II Class: Unclass,,
+CCE-19832-5,"The Database Master key encryption password for a specified database should be configured appropriately 
+","(1) <regenerate option> | <encryption_option>
+(2) password
+(3) database name",(1) ALTER MASTER KEY,,"Rule ID: V0015159 Rule Title: The Database Master key encryption password should meet DoD password complexity requirements. STIG ID: DM6175 Severity: CAT II Class: Unclass
+
+
+",,http://msdn.microsoft.com/en-us/library/ms186937(v=sql.90).aspx
+CCE-19670-9,The Database Master Key for the specified database should be encrypted appropriately.,"(1) encryption option
+(2) key option",(1) ALTER MASTER KEY ,,Rule ID: V0015161 Rule Title: The Database Master Key should be encrypted by the Service Master Key where required. STIG ID: DM6179 Severity: CATII Class: Unclass,,
+CCE-19922-4,"Storage of the database master key password for a speicifed database should be configured appropriately. 
+",(1) database name  ,(1) sp_control_dbmasterkey_password,,Rule ID: V0015162 Rule Title: Database Master Key passwords should not be stored in credentials within the database. STIG ID: DM6180 Severity: CATII Class: Unclass,,
+CCE-20019-6,"Protection of symmetric keys for a specified database should be configured appropriately 
+","(1) key_name 
+(2) ENCRYPTION
+(3) [certificate | password | symmetric key | asymmetric key]
+(4) Database name",(1) ALTER SYMMETRIC KEY,,"Rule ID: V0015168 Rule Title: Symmetric keys should use a master key, certificate, or asymmetric key to encrypt the key. STIG ID: DM6183 Severity: CATII Class: Unclass",,
+CCE-19613-9,"Object permissions assigned to PUBLIC or GUEST for a specified database should be configured appropriately.
+","(1) list of permissons
+(2) [object]
+(3) [public or guest]
+(4) dtaabase name",(1) REVOKE / GRANT,,Rule ID: V0015172 Rule Title: Object permissions should not be assigned to PUBLIC or GUEST. STIG ID: DM6196,,
+CCE-19862-2,Access to DBMS software files and directories should be configured appropriately.,"(1) set of accounts 
+(2) list of permissions ",(1) defined by the object's DACL  ,,,Rule ID: V0015608 Rule Title: Access to DBMS software files and directories should not be granted to unauthorized users. STIG ID: DG0009 Severity: CAT II Class: Unclass,
+CCE-19872-1,Default demonstration and sample database objects and applications should be available or removed as appropriate.,"(1) database_name 
+(2) database_snapshot_name",(1) DROP DATABASE,,,Rule ID: V0015609 Rule Title: Default demonstration and sample database objects and applications should be removed. STIG ID: DG0014 Severity: CAT II Class: Unclass,
+CCE-19877-0,Required auditing parameters for database auditing should be set appropriately ,(1) TraceID,(1) EXEC SP_TRACE_SETSTATUS,,,Rule ID: V0005685 Rule Title: Required auditing parameters for database auditing should be set. STIG ID: DG0029 Severity: CAT II Class: Unclass,
+CCE-19778-0,"
+DBMS privileges to restore database data or other DBMS configurations, features or objects in a specified database should be configured appropriately.","(1) database name
+",(1) Use the SQL command to assign permissions to the appropriate roles,,,"Rule ID: V0015107 Rule Title: DBMS privileges to restore database data or other DBMS configurations, features or objects should be restricted to authorized DBMS accounts. STIG ID: DG0063 Severity: CAT II Class: Unclass",
+CCE-19947-1,"
+DBMS login account password complexity requirements should be configured appropriately
+
+ ","
+(1) login name
+(2) on/off","(1) ALTER LOGIN
+(2) CHECK_POLICY",,,Rule ID: V0015152 Rule Title: DBMS login accounts require passwords to meet complexity requirements. STIG ID: DG0079 Severity: CAT II Class: Unclass,
+CCE-19787-1,"DBMS settings to clear residual data from memory, data objects or files, or other storage locations should be configured appropriately.","(1) show advanced options
+(2) common criteria compliance enabled",(1) EXEC SP_CONFIGURE,,,"Rule ID: V0015614 Rule Title: The DBMS should be configured to clear residual data from memory, data objects and files, and other storage locations. STIG ID: DG0084 Severity: CAT III Class: Unclass",
+CCE-19842-4,DBMS account passwords expiration should be configured appropriately ,"(1) user name
+(2) WITH CHECK_EXPIRATION [ ON | OFF ]","(1) ALTER LOGIN
+",,,Rule ID: V0015153 Rule Title: DBMS account passwords should be set to expire every 60 days or more frequently. STIG ID: DG0125 Severity: CAT II Class: Unclass,
+CCE-19439-9,Passwords for DBMS default accounts should be set appropriately,"(1) username
+(2) WITH PASSWORD [ new password ]","(1) ALTER LOGIN
+",,,Rule ID: V0015635 Rule Title: DBMS default accounts should be assigned custom passwords. STIG ID: DG0128 Severity: CAT I Class: Unclass,
+CCE-19990-1,"The built-in 'sa' account should be correctly named.
+","(1) username
+(2) WITH NAME = [new name]",(1) ALTER LOGIN,,,Rule ID: V0015638 Rule Title: DBMS default account names should be changed. STIG ID: DG0131 Severity: CAT III Class: Unclass,
+CCE-19676-6,Access to the ErrorDumpDir should be audited or not audited as appropriate.,(1) audit/not audit,(1) HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL.1\CPE\ErrorDumpDir,,,Rule ID: V0015643 Rule Title: Access to DBMS security should be audited. STIG ID: DG0140 Severity: CAT II Class: Unclass,
+CCE-19962-0,Access to the DefaultLog file should be audited or not audited as appropriate.,(1) audit/not audit,(1) HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL.1\MSSQLServer\DefaultLog,,,,
+CCE-20011-3,Access to the ErrorLogFile should be audited or not audited as appropriate.,(1) audit/not audit,(1) HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL.1\SQLServerAgent\ErrorLogFile,,,,
+CCE-19080-1,Access to the SQLPath directory should be audited or not audited as appropriate.,(1) audit/not audit,(1) HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\{INSTANCE NAME}\Setup\SQLPath,,,,
+CCE-19817-6,Access to the  BackupDirectory directory should be audited or not audited as appropriate.,(1) audit/not audit,"(1) HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL.1
+\MSSQLServer\BackupDirectory",,,,
+CCE-19511-5,Access to the FullTextDefaultPath directory should be audited or not audited as appropriate.,(1) audit/not audit,"(1) HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL.1
+\MSSQLServer\FullTextDefaultPath",,,,
+CCE-19779-8,Access to the WorkingDirectory directory should be audited or not audited as appropriate.,(1) audit/not audit,(1) HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL.1\Replication\WorkingDirectory,,,,
+CCE-20001-4,Access to the SQLBinRoot directory should be audited or not audited as appropriate.,(1) audit/not audit,"
+(1) HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL.1\Setup\SQLBinRoot",,,,
+CCE-19336-7,Access to the SQLDataRoot directory should be audited or not audited as appropriate.,(1) audit/not audit,"
+(1) HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL.1\Setup\SQLDataRoot",,,,
+CCE-19762-4,Access to the SQLPath directory should be audited or not audited as appropriate.,(1) audit/not audit,"
+(1) HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL.1\Setup\SQLPath",,,,
+CCE-19575-0,Access to the SQLProgramDir directory should be audited or not audited as appropriate.,(1) audit/not audit,"
+(1) HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL.1\Setup\SQLProgramDir",,,,
+CCE-19873-9,Access to the WorkingDirectory directory should be audited or not audited as appropriate.,(1) audit/not audit,HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL.1\SQLServerAgent\WorkingDirectory,,,,
+CCE-19959-6,Access to the DataDir directory should be audited or not audited as appropriate.,(1) audit/not audit,"
+(1) HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL.2\Setup\DataDir",,,,
+CCE-19837-4,Access to the SQLBinRoot directory should be audited or not audited as appropriate.,(1) audit/not audit,"
+(1) HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL.2\Setup\SQLBinRoot",,,,
+CCE-19748-3,Access to the SQLPath directory should be audited or not audited as appropriate.,(1) audit/not audit,"
+(1)  HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL.2\Setup\SQLPath",,,,
+CCE-19916-6,Access to the SQLProgramDir directory should be audited or not audited as appropriate.,(1) audit/not audit,(1)  HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL.2\Setup\SQLProgramDir,,,,
+CCE-19827-5,Auditing attempts to bypass access controls should be configured appropriately.,"
+(1) on/off","(1) EXEC XP_LOGINCONFIG
+From the SQL Server Management Studio GUI:
+1. Navigate to the SQL Server instance name
+2. Right-click on it
+3. Select Properties
+4. Select Security tab or page
+5. Review Login Auditing selection
+6. Select ""Failed logins only"" or ""Both failed and successful logins"" from the Login Auditing section
+7. Apply changes
+8. Exit the SQL Server Management Studio GUI",,,Rule ID: V0015644 Rule Title: Attempts to bypass access controls should be audited. STIG ID: DG0141 Severity: CAT II Class: Unclass,
+CCE-19950-5,"
+The default audit trace option should be configured appropriately.","(1) show advanced options
+(2) default trace enabled","(1) EXEC SP_CONFIGURE
+",,,Rule ID: V0015645 Rule Title: Changes to configuration options should be audited. STIG ID: DG0142 Severity CAT II Class: Unclass,
+CCE-19813-5,Audit records contents should be configured appropriately.,"(1) @traceid
+(2) @eventid
+(3) @columnid
+(4) @on",(1) EXEC SP_TRACE_SETEVENT,,,Rule ID: V0015646 Rule Title: Audit records should contain required information. STIG ID: DG0145 Severity: CAT II Class: Unclass,http://msdn.microsoft.com/en-us/library/ms186265(v=sql.90).aspx
+CCE-19741-8,The port which Sql Server Analysis Services uses should be configured appropriately.,(1) [ 0 | port number ],"(1) Sql Server Management Studio GUI \ Analysis Services Instance
+From the SQL Server Management Studio GUI:
+1. Connect to the Analysis Services instance
+2. Right click on the Analysis Services instance
+3. Select Properties
+4. View the value listed for Port
+5. Set value to IAO-approved value
+6. Click OK
+",,,"Rule ID: V0015648 Rule Title: Access to the DBMS should be restricted to static, default network ports. STIG ID: DG0151 Severity: CAT II Class: Unclass",
+CCE-19891-1,The ports which the DBMS uses should be configured appropriately.,(1) [ 0 | port number ],"(1) HKEY_LOCAL_MACHINE \ Software \ Microsoft \ Microsoft SQL Server \ MSSQL.[#] \
+MSSQLServer \ SuperSocketNetLib \ IPAll \ TCPDynamicPorts
+(2) HKEY_LOCAL_MACHINE \ Software \ Microsoft \ Microsoft SQL Server \ MSSQL.[#] \
+MSSQLServer \ SuperSocketNetLib \ IPAll \ TcpPort",,,Rule ID: V0015148 Rule Title: DBMS network communications should comply with PPS usage restrictions. STIG ID: DG0152 Severity: CAT II Class: Unclass,
+CCE-19453-0,Remote DBMS administration should be enabled or disabled as appropriate.,"(1) remote admin connections
+(2) enable/disable","(1) EXEC SP_CONFIGURE
+",,,Rule ID: V0015651 Rule Title: Remote DBMS administration should be documented and authorized or disabled. STIG ID: DG0157 Severity: CAT II Class: Unclass,
+CCE-19727-7,Fixed server roll membership should be configured appropriately.,"(1) @loginname
+(2) @rolename","(1) SP_DROPSRVROLEMEMBER
+(2) SP_ADDSRVROLEMEMBER",,,Rule ID: V0002427 Rule Title: Fixed Server roles should have only authorized users or groups assigned as members STIG ID: DG0510 Severity: CAT II Class: Unclass,
+CCE-19808-5,"C2 Audit records should be configured appropriately 
+","(1) enable/disable
+(2) c2 audit mode","(1) EXEC SP_CONFIGURE
+(2) RECONFIGURE",,,Rule ID: V0002426 Rule Title: C2 Audit mode should be enabled or custom audit traces defined. STIG ID: DG0510 Severity: CAT II Class: Unclass,
+CCE-19866-3,"
+The SQL Mail XPs should be enabled or disabled as appropriate.",(1) enable/disable,"(1) EXEC SP_CONFIGURE
+(2) RECONFIGURE",,,"Rule ID: V0003335 Rule Title: SQL Mail, SQL Mail Extended Stored Procedures (XPs) and Database Mail XPs are required and enabled. STIG ID DM0900 Severity: CAT II Class: Unclass",
+CCE-19577-6,The Database Mail XPs should be enabled or disabled as appropriate.,(1) enable/disable,"(1) EXEC SP_CONFIGURE
+(2) RECONFIGURE",,,"Rule ID: V0003335 Rule Title: SQL Mail, SQL Mail Extended Stored Procedures (XPs) and Database Mail XPs are required and enabled. STIG ID DM0900 Severity: CAT II Class: Unclass",
+CCE-19785-5,"SQL Server Agent Email should be configured appropriately 
+","
+(1) enabled/disabled","From the SQL Server Management Studio GUI:
+1. Right click on SQL Server Agent
+2. Select Properties
+3. Select Alert System
+4. Check or uncheck the ""Enable Mail profile.",,,Rule ID: V0003336 Rule Title: SQL Server Agent email notification usage if enabled should be documented and approved by the IAO. STIG ID: DM0901 Severity: CAT II Class: Unclass,
+CCE-19640-2,The SQL Server Database Service account should be configured appropriately.,(1) member/not member,(1) Configure the SQL Server Database Service account via the Computer Management Tool.,,,Rule ID: V0015170 Rule Title: SQL Server services should be assigned least privileges on the SQL Server Windows host. STIG ID: DM0919 Severity: CAT II Class: Unclass,
+CCE-19879-6,The SQL Server Agent account should be configured appropriately.,(1) member/not member,(1) Configure the SQL Server Agent Service account via the Computer Management Tool.,,,Rule ID: V0015170 Rule Title: SQL Server services should be assigned least privileges on the SQL Server Windows host. STIG ID: DM0919 Severity: CAT II Class: Unclass,
+CCE-19560-2,The Analysis Services account should be configured appropriately.,(1) member/not member,(1) Configure the Analysis Services account via the Computer Management Tool.,,,Rule ID: V0015170 Rule Title: SQL Server services should be assigned least privileges on the SQL Server Windows host. STIG ID: DM0919 Severity: CAT II Class: Unclass,
+CCE-19703-8,The Integration Services account should be configured appropriately.,(1) member/not member,(1) Configure the Integration Services account via the Computer Management Tool.,,,Rule ID: V0015170 Rule Title: SQL Server services should be assigned least privileges on the SQL Server Windows host. STIG ID: DM0919 Severity: CAT II Class: Unclass,
+CCE-19802-8,The Reporting Services account should be configured appropriately.,(1) member/not member,(1) Configure the Reporting Services account via the Computer Management Tool.,,,Rule ID: V0015170 Rule Title: SQL Server services should be assigned least privileges on the SQL Server Windows host. STIG ID: DM0919 Severity: CAT II Class: Unclass,
+CCE-20033-7,The Notification Services account should be configured appropriately.,(1) member/not member,(1) Configure the Notification Services account via the Computer Management Tool.,,,Rule ID: V0015170 Rule Title: SQL Server services should be assigned least privileges on the SQL Server Windows host. STIG ID: DM0919 Severity: CAT II Class: Unclass,
+CCE-19418-3,The Full Text Search account should be configured appropriately.,(1) member/not member,(1) Configure the Full Text Search account via the Computer Management Tool.,,,Rule ID: V0015170 Rule Title: SQL Server services should be assigned least privileges on the SQL Server Windows host. STIG ID: DM0919 Severity: CAT II Class: Unclass,
+CCE-19318-5,The SQL Server Browser account should be configured appropriately.,(1) member/not member,(1) Configure the SQL Server Browser account via the Computer Management Tool.,,,Rule ID: V0015170 Rule Title: SQL Server services should be assigned least privileges on the SQL Server Windows host. STIG ID: DM0919 Severity: CAT II Class: Unclass,
+CCE-19302-9,The SQL Server Active Directory Helper account should be configured appropriately.,(1) member/not member,(1) Configure the SQL Server Active Directory Helper account via the Computer Management Tool.,,,Rule ID: V0015170 Rule Title: SQL Server services should be assigned least privileges on the SQL Server Windows host. STIG ID: DM0919 Severity: CAT II Class: Unclass,
+CCE-19923-2,The SQL Writer account should be configured appropriately.,(1) member/not member,(1) Configure the SQL Writer account via the Computer Management Tool.,,,Rule ID: V0015170 Rule Title: SQL Server services should be assigned least privileges on the SQL Server Windows host. STIG ID: DM0919 Severity: CAT II Class: Unclass,
+CCE-19738-4,"
+The SQL Server Service for a specified instance should be configure appropriately.","
+(1) local account",(1) net user <username> <password> /add,,,Rule ID: V0003835 Rule Title: The SQL Server service should use a least-privileged local or domain user account STIG ID: DM0924 Severity: CAT II Class: Unclass,
+CCE-19852-3,"
+The SQLServer2005ReportServerUser registry key permissions should be configured appropriately.",(1) granted/revoked,HKEY_LOCAL_MACHINE \ SOFTWARE \ Microsoft \ Microsoft SQL Server \ Instance Names \RS \SQLServer2005ReportServerUser$[instancename],,,Rule ID: V0003838 Rule Title: SQL Server registry keys should be properly secured. STIG ID: DM0927 Severity: CAT II Class: Unclass,
+CCE-19494-4,The SQL Server MSSearch registry key permissions should be configured appropriately.,(1) granted/revoked,HKEY_LOCAL_MACHINE \ SOFTWARE \ Microsoft \ Microsoft SQL Server \ MSSQL.1 \MSSearch \,,,Rule ID: V0003838 Rule Title: SQL Server registry keys should be properly secured. STIG ID: DM0927 Severity: CAT II Class: Unclass,
+CCE-19254-2,The SQL Server Agent registry key permissions should be configured appropriately.,(1) granted/revoked,HKEY_LOCAL_MACHINE \ SOFTWARE \ Microsoft \ Microsoft SQL Server \ MSSQL.1 \SQLServerAgent \,,,Rule ID: V0003838 Rule Title: SQL Server registry keys should be properly secured. STIG ID: DM0927 Severity: CAT II Class: Unclass,
+CCE-19325-0,The SQLServerADHelperUser registry key permissions should be configured appropriately.,(1) granted/revoked,HKEY_LOCAL_MACHINE \ SOFTWARE \ Microsoft \ Microsoft SQL Server \ MSSQL.1\SQLServerAgent\SQLServer2005SQLServerADHelperUser$[instance name],,,Rule ID: V0003838 Rule Title: SQL Server registry keys should be properly secured. STIG ID: DM0927 Severity: CAT II Class: Unclass,
+CCE-19776-4,The SQL Server RS registry key permissions should be configured appropriately.,(1) granted/revoked,HKEY_LOCAL_MACHINE \ SOFTWARE \ Microsoft \ Microsoft SQL Server \ Instance Names \RS \,,,Rule ID: V0003838 Rule Title: SQL Server registry keys should be properly secured. STIG ID: DM0927 Severity: CAT II Class: Unclass,
+CCE-19356-5,"Access extended stored procedure xp_cmdshell should be configured appropriately 
+","(1) user
+(2) xp_cmdshell 
+",(1) EXEC SP_CONFIGURE,,,Rule ID: V0002461 Rule Title: Extended stored procedure xp_cmdshell should be restricted to authorized accounts. STIG ID: DM1758 Severity: CAT I Class: Unclass,
+CCE-19896-0,"Access extended stored procedure xp_cmdshell should be configured appropriately 
+","(1) revoke/grant
+","(2) REVOKE / GRANT EXECUTE 
+
+",,,Rule ID: V0002461 Rule Title: Extended stored procedure xp_cmdshell should be restricted to authorized accounts. STIG ID: DM1758 Severity: CAT I Class: Unclass,
+CCE-19967-9,The xp_cmdshell should be enabled or disabled as appropriate.,"(1) enabled/disabled
+(2)  xp_cmdshell","(1) EXEC SP_CONFIGURE
+(2) RECONFIGURE",,,,
+CCE-19976-0,"
+The ""scan for startup procs"" setting should be enabled or disabled as appropriate.","
+(1) 'scan for startup procs' 
+(2) enabled/disabled","(1) EXEC SP_CONFIGURE 
+(2) RECONFIGURE",,,"Rule ID: V0002464 Rule Title: Execute stored procedures at startup, if enabled, should have a custom audit trace defined. STIG ID: DM1761 Severity: CAT II Class: Unclass",
+CCE-19172-6,"OLE Automation extended stored procedures should configured appropriately.
+",(1) enabled/disabled,"(1) EXEC SP_CONFIGURE
+(2) RECONFIGURE",,,Rule ID; V0002472 Rule Title: OLE Automation extended stored procedures should be restricted to sysadmin access STIG ID: DM2095 Severity: CAT II Class: Unclass,
+CCE-20018-8,Access to registry exended stored procedures should be configured appropriately.,"(1) user/role
+(2) Grant/Revoke","From the SQL Server Management Studio GUI:
+1. Connect/expand SQL Server
+2. Expand Databases
+3. Expand System databases
+4. Expand Master
+5. Expand Programmability
+6. Expand Extended Stored Procedures
+7. Expand System Extended Stored Procedures
+8. Locate and select each of the Registry extended stored procedures listed in the Check section
+9. Right click on the extended stored procedure
+10. Select Properties
+11. Click on the Permissions page
+12. Select each user or role and select or deselect the Grant (and With Grant if checked) permissions from
+all users, database roles and public except from SYSADMINs and authorized roles when permitted
+13. Click OK",,,Rule ID: V0002473 Rule Title: Registry extended stored procedures should be restricted to sysadmin access. STIG ID: DM2119 Severity: CAT II Class: Unclass,
+CCE-19786-3,"Remote access should be configured appropriately 
+","(1) remote access',
+(2) enabled/disabled","(1) EXEC SP_CONFIGURE
+(2) RECONFIGURE",,,Rule ID: V0002485 Rule Title: Remote access should be disabled if not authorized. STIG ID: DM2142 Severity: CAT II Class: Unclass,
+CCE-19936-4,SQL Server authentication should be configured appropriately.,"(1) 'login mode'
+(2) number","(1) EXEC XP_LOGINCONFIG
+",,,Rule ID: V0002487 Rule Title: SQL Server authentication mode should be set to Windows authentication mode or Mixed mode. STIG ID: DM3566 Severity: CAT II Class: Unclass,
+CCE-19839-0,Access to SQL Server Agent CmdExec should be configured appropriately.,"(1) '[login name]'
+(2) @proxy_name",(1) EXEC SP_REVOKE_LOGIN_FROM_PROXY,,,Rule ID: V0002488 Rule Title: SQL Server Agent CmdExec or ActiveScripting jobs should be restricted to sysadmins. STIG ID: DM3763 Severity: CAT II Class: Unclass ,
+CCE-19320-1,Access to ActiveScripting jobs should be configured appropriately.,"(1) '[login name]'
+(2) @proxy_name",(1) EXEC SP_REVOKE_LOGIN_FROM_PROXY,,,Rule ID: V0002488 Rule Title: SQL Server Agent CmdExec or ActiveScripting jobs should be restricted to sysadmins. STIG ID: DM3763 Severity: CAT II Class: Unclass ,
+CCE-19771-5,Error log retention should be configured appropriately.,"
+(1) number of error logs","(1) HKEY_LOCAL_MACHINE \ Software \ Microsoft \ Microsoft SQL Server \ MSSQL.# \MSSQLServer \ NumErrorLogs
+(2) HKEY_LOCAL_MACHINE \ Software \ Microsoft \ Microsoft SQL Server \ Instance Names \ SQL\[instance name]
+or
+From the SQL Server Management Studio GUI:
+1. Connect to and expand the SQL Server instance
+2. Expand Management
+3. Right-click on SQL Server Logs
+4. Select Configure
+5. Under the General Page, select or deselect Limit the number of error logs before they are
+recycled
+6. Enter the number of error log files determined for the SQL Server instance
+7. Click OK",,,Rule ID: V0015137 Rule Title: Error log retention shoud be set to meet log retention policy. STIG ID: DM3930 Severity: CAT II Class: Unclass,
+CCE-19237-7,"Trace rollover should be configured appropriately. 
+","(1) enable/disable
+(2) trace_id
+(3) trace_file
+(4) max_file_size
+(5) stop_time
+(6) max_rollover_files
+(2) value query (remove)","(1) EXEC SP_TRACE_CREATE [ @traceid = ] trace_id OUTPUT
+, [ @options = ] option_value
+, [ @tracefile = ] 'trace_file'
+[ , [ @maxfilesize = ] max_file_size ]
+[ , [ @stoptime = ] 'stop_time' ]
+[ , [ @filecount = ] 'max_rollover_files' ]",,,Rule ID: V0002500 Rule Title: Trace Rollover should be enabled for audit traces that have a maximum trace file size. STIG ID: DM5267 Severity: CAT II Class: Unclass,
+CCE-19244-3,"Named Pipes network protocol should be configured appropriately.
+","
+(1) enable/disable ","From the SQL Server Configuration Manager GUI:
+1. Expand SQL Server 2005 Network Configuration
+2. Repeat for each instance:
+a. Select Protocols for [instance name]
+b. Double-click Named Pipes.
+c. Select Yes or No as the value.
+d. Click OK
+3. Click OK (acknowledge change won't take place until next restart)
+4. Exit the SQL Server Configuration Manager GUI",,,Rule ID: V0015124 Rule Title: The Named Pipes network protocol should be documented and approved if enabled. STIG ID: DM6015 Severity: CAT II Class: Unclass,
+CCE-20000-6,"SQL Server event forwarding should be configured appropriately 
+","(1) enable/disable
+","(1) HKEY_LOCAL_MACHINE \ SOFTWARE \ Microsoft \ Microsoft SQL Sever \ MSSQL.[#] \SQLServerAgent \ AlertForwardingServer
+or From the SQL Server Management Studio GUI:
+1. Expand instance
+2. Right-click on SQL Server Agent
+3. Select Properties
+4. Select the Advanced page
+5. Click or do not click on Forward events to a different server check box
+6. Click the OK button to save and close",,,"Rule ID: V0015176 Rule Title: SQL Server event forwarding, if enabled, should be operational. STIG ID: DM6030 Severity: CAT II Class: Unclass",
+CCE-19744-2,"
+SQL Server Agent proxies should be configured appropriately.","(1) '[proxy name]'
+(2) set of permissons
+(3) group of users","(1) SP_ENUM_PROXY_FOR_SUBSYSTEM
+(2) EXEC SP_REVOKE_LOGIN_FROM_PROXY",,,Rule ID: V0015125 Rule Title: Only authorized users should be assigned permissions to SQL Server Agent proxies. STIG ID: DM6045 Severity: CAT II Class: Unclass,
+CCE-19561-0,Replication snapshot folders should be configured appropriately.,"(1) list of permissions/roles
+(2) group of accounts","
+From Windows Explorer:
+1. Administrators/DBAs: assign appropriate permission
+2. Snapshot Agents: assign appropriate permission
+3. Merge, Subscription, and Distribution agents: assign appropriate permission",,,Rule ID: V0015182 Rule Title: Replication snapshot folders should be protected from unauthorized access. STIG ID: DM6075 Severity: CAT II Class: Unclass,
+CCE-19897-8,"Ad hoc data mining queries configuration option should be configured appropriately 
+",(1) enable/disable,"(1) The configuration file (msmdsrv.ini) may be found in the [install dir] \ MSSQL.[#] \ OLAP \ Config directory.
+(2) AllowAdHocOpenRowsetQueries 
+or
+From the SQL Server 2005 Surface Area Configuration GUI:
+1. Click on Surface Area config for features
+2. Expand Analysis Services
+3. Select Ad Hoc Data Mining Queries
+4. Enable or disable as necessary",,,Rule ID: V0015183 Rule Title: The Analysis Services ad hoc data mining queries configuration option should be disabled if not required. STIG ID: DM6085 Severity: CAT II Class: Unclass,
+CCE-19298-9,"Analysis Services Anonymous Connections should be configured appropriately 
+ ",(1) enable/disable,"(1) The configuration file (msmdsrv.ini) may be found in the [install dir] \ MSSQL.[#] \ OLAP \ Config directory.
+(2) RequireClientAuthentication or
+From the SQL Server Management Studio GUI:
+1. Connect to the Analysis Services instance
+2. Right click on the Analysis Services instance
+3. Select Properties
+4. View the value listed for Security \ RequireClientAuthentication
+5. Select value = 'true or false'
+6. Click OK",,,Rule ID: V0015184 Rule Title: Analysis Services Anonymous Connections should be disabled. STIG ID: DM6086 Severity: CAT II Class: Unclass,
+CCE-20032-9,"Analysis Services Links to Objects is should be configured appropriately 
+",(1) enable/disable,"(1) The configuration file (msmdsrv.ini) may be found in the [install dir] \ MSSQL.[#] \ OLAP \ Config directory.
+(2) LinkToOtherInstanceEnabled or
+From the SQL Server Management Studio GUI:
+1. Connect to the Analysis Services instance
+2. Right click on the Analysis Services instance
+3. Select Properties
+4. View the value listed for Feature \ LinkToOtherInstanceEnabled
+5. Select value = 'true or false'
+6. Click OK",,,Rule ID: V0015204 Rule Title: Analysis Services Links to Objects should be disabled if not required. STIG ID: DM6087 Severity: CAT II Class: Unclass,
+CCE-19964-6,"
+Analysis Services Links From Objects should be enabled or disabled as appropriate.",(1) enable/disable,"(1) The configuration file (msmdsrv.ini) may be found in the [install dir] \ MSSQL.[#] \ OLAP \ Config directory.
+(2) LinkFromOtherInstanceEnabled or
+From the SQL Server Management Studio GUI:
+1. Connect to the Analysis Services instance
+2. Right click on the Analysis Services instance
+3. Select Properties
+4. View the value listed for Feature \ LinkFromOtherInstanceEnabled
+5. Select value = 'true or false'
+6. Click Ok.",,,Rule ID: V0015186 Rule Title: Analysis Services Links From Objects should be disabled if not required STIG ID: DM 6088 Severity: CAT II Class: Unclass,
+CCE-19664-2,"Analysis Services user-defined COM functions should be configured appropriately 
+","(1) enable/disable
+","(1) The configuration file (msmdsrv.ini) may be found in the [install dir] \ MSSQL.[#] \ OLAP \ Config directory.
+(2) ComUdfEnabled or
+From the SQL Server Management Studio GUI:
+1. Connect to the Analysis Services instance
+2. Right click on the Analysis Services instance
+3. Select Properties
+4. View the value listed for Feature \ ComUdfEnabled
+5. Select value = 'true or false'
+6. Click OK
+",,,Rule ID: V0015181 Rule Title: Analysis Services user-defined COM functions should be disabled if not required. STIG ID: DM6099 Severity: CAT II Class: Unclass,
+CCE-19859-8,Analysis Services Required Protection Levels should be configured appropriately ,"(1) tag level values
+","(1) msmdsrv.ini
+(2) HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL.1\Setup\SqlProgramDir",,,Rule ID: V0015188 Rule Title: Analysis Services Required Protection Level should be set to 1. STIG ID: DM6101 Severity: CAT I Class:Unclass,
+CCE-19876-2,"Analysis Services Security Package List should be configured appropriately 
+
+","
+(1) list of packages","(1) msmdsrv.ini
+(2) [install dir] \ MSSQL.[#] \ OLAP \ Config directory.
+From the SQL Server Management Studio GUI:
+1. Connect to the Analysis Services instance
+2. Right click on the Analysis Services instance
+3. Select Properties
+4. View the value listed for Security \ SecurityPackageList
+5. Select value and delete or do not delete all unauthorized packages from the list
+6. Click OK",,,Rule ID: V0015190 Rule Title: Analysis Services Security Package List should be disabled if not required. STIG ID: DM6103 Severity: CAT II Class: Unclass,
+CCE-19858-0,The Analysis Services server role should be configured appropriately ,"
+(1) usernames","
+From the SQL Server Management Studio GUI:
+1. Connect to the Analysis Services instance
+2. Right click on the Analysis Services instance
+3. Select Properties
+4. Select the Security page
+5. Select any unauthorized user to remove
+6. Click or do not click the Remove button
+7. Click OK",,,Rule ID: V0015193 Rule Title: The Analysis Services server role should be restricted to authorized users. STIG ID: DM6108 Severity: CAT II Class: Unclass,
+CCE-19974-5,"Analysis Services database roles should be configured appropriately for a specified server. 
+","
+(1) database name
+(2) database roles
+(3) usernames","
+From the SQL Server Management Studio GUI:
+1. Connect to the Analysis Services instance
+2. Expand the Analysis Services instance
+3. Expand Databases
+4. Repeat for each database:
+a. Click on each database role
+b. Open the member list
+c. Select any unauthorized users
+d. Click or unclick the Remove button
+e. Click OK",,,Rule ID: V0015194 Rule Title: Only authorized accounts should be assigned to one or more Analysis Services database roles. STIG ID: DM6109 Severity: CAT II Class: Unclass,
+CCE-19800-2,"Reporting Services Web service requests and HTTP should be configured appropriately
+","
+(1) enable/disable","
+From Surface Area Configuration for Features:
+1. Connect to the Report Services instance
+2. Expand the instance
+3. Expand Report Services
+4. Select Web Service Requests and HTTP Access
+5. Click on or do not click on Enable Web Service Requests and HTTP access check box
+6. Click OK",,,Rule ID: V0015199 Rule Title: Reporting Services Web service requests and HTTP access should be disabled if not required. STIG ID: DM6120 Severity: CAT III Class: Unclass,
+CCE-19844-0,"
+Reporting Services scheduled events and report delivery should be enabled or disabled as appropriate.","
+(1) enable/disable ","
+From Surface Area Configuration for Features:
+1. Connect to the Report Services instance
+2. Expand the instance
+3. Expand Report Services
+4. Select Scheduled events and report delivery
+5. Click or do not click on the Scheduled events and report delivery check box
+6. Click OK",,,Rule ID: V0015205 Rule Title: Reporting Services scheduled events and report delivery should be disabled if not required. STIG ID: DM6121 Severity: CAT III Class: Unclass,
+CCE-19662-6,"Reporting Services Windows Integrated Security accounts should be configured appropriately 
+","
+(1) enable/disable ","
+From Surface Area Configuration for Features:
+1. Connect to the Report Services instance
+2. Expand the instance
+3. Expand Report Services
+4. Select Windows Integrated Security
+5. Click on or do not click on Windows Integrated Security  check box
+6. Click OK",,,Rule ID: V0015203 Rule Title: Reporting Services Windows Integrated Security should be disabled. STIG ID: DM6122 Severity: CAT II Class: Unclass,
+CCE-19756-6,"Command Language Runtime objects should be configured appropriately 
+","(1) enable/disable
+(3) clr_enabled","(1) EXEC SP_CONFIGURE
+(2) RECONFIGURE",,,Rule ID: V0015202 Rule Title: Use of Command Language Runtime objects should be disabled if not required. STIG ID: DM6123 Severity: CAT III Class: Unclass,
+CCE-19893-7,XML Web Services endpoints should be configured appropriately ,(1) enable/disable,(1) CREATE / DROP ENDPOINT,,,Rule ID: V0015206 Rule Title: Only authorized XML Web Service endpoints should be configured on the server STIG ID: DM6126 Severity: CAT II Class: Unclass,
+CCE-19484-5,"
+The db_owner role members for a specified replication database should be configured appropriately.","(1)  database_name
+(2) db_owner'
+(3) '[account name]'","(1) EXEC SP_DROPROLEMEMBER
+(2) EXEC SP_ADDROLEMEMBER
+",,,Rule ID: V0015178 Rule Title: Replication databases should have authorized db_owner role members. The replication monitor role should have authorized members. STIG ID: DM6070 Severity: CAT II Class: Unclass,
+CCE-19965-3,"The Web Assistant procedures configuration option should be configured appropriately 
+","(1) enable/disable
+(2) 'Web Assistant procedures'","(1) EXEC SP_CONFIGURE
+(2) RECONFIGURE",,,Rule ID: V0015198 Rule Title: The Web Assistant procedures configuration option should be disabled if not required. STIG ID: DM6130 Severity: CAT II Class: Unclass,
+CCE-19868-9,"The permissions of the SQL Server Agent proxy accounts should be configured appropriately.
+ ","(1) account creation
+(2) list of priveleges",(1) server agent proxies,,,Rule ID: V0015197 Rule Title: Dedicated accounts should be designated for SQL Server Agent proxies. STIG ID: DM6140 Severity: CAT II Class: Unclass,
+CCE-19805-1,"""Disallow adhoc access"" for linked servers should be configured appropriately 
+",(1) enable/disable,"
+From the SQL Server Management Studio GUI:
+1. Expand Database
+2. Expand Server Objects
+3. Expand Linked Servers
+4. Expand Providers
+5. For each Provider listed:
+a. Right click on Provider name
+b. Select Properties
+c. Click on do not click the Enable check box for Name = Disallow adhoc access
+d. Click OK button",,,Rule ID: V0015187 Rule Title: Linked server providers should not allow ad hoc access. STIG ID: DM6155 Severity: CAT II Class: Unclass,
+CCE-19455-5,"Ad Hoc distributed queries should be configured appropriately 
+","
+(1) ad hoc distributed queries
+(2) enable/disable","(1) EXEC SP_CONFIGURE
+",,,Rule ID: V0015166 Rule Title: Database Engine Ad Hoc distributed queries should be disabled. STIG ID: DM6160 Severity: CAT II Class: Unclass,
+CCE-19443-1,Access to Analysis Services data sources should be configured appropriately.,(1) list of roles,(1) Analysis Services Database,,,Rule ID: V0015180 Rule Title: Analysis Services permissions to data sources STIG ID: DM6193 Severity: CAT II Class: Unclass,
+CCE-19882-0,"Database TRUSTWORTHY status for a specific database should be configured appropriately 
+","(1) database name
+(2) SET TRUSTWORTHY [on | off]",(1) ALTER DATABASE,,,Rule ID: V0015173 Rule Title: Database TRUSTWORTHY status should be authorized and documented or set to off. STIG ID: DM6195 Severity: CAT II Class: Unclass,
+CCE-19552-9,"The Agent XPs options should be configured appropriately 
+","
+(1) Agent XPs
+(2) enable/disable","(1) EXEC SP_CONFIGURE
+",,,Rule ID: V0015210 Rule Title: The Agent XPs option should be set to disabled if not required. STIG ID: DM6198 Severity: CAT II Class: Unclass,
+CCE-19944-8,"The SMO and DMO XPs options should be configured appropriately 
+","
+(1) SMO and DMO XPs
+(2) enabled/disabled
+","(1) EXEC SP_CONFIGURE
+",,,Rule ID: V0015211 Title: The SMO and DMO SPs option should be set to disabled if not required. STIG ID: DM6199 Severity: CAT II Class: Unclass,

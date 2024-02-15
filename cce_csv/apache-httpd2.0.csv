@@ -1,0 +1,567 @@
+Unnamed: 0,Last modfied: 2013-02-11,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9
+,Version: 5.20130214,,,,,,,,
+CCE ID,CCE Description,CCE Parameters,CCE Technical Mechanisms,,"CIS
+Apache Benchmark for Unix
+For Apache Versions 1.3 and 2.0
+Levels I and II","DISA STIG
+Apache SITE 2.0 for Unix
+Release: 1 Benchmark Date: 23 Nov 2011","DISA STIG
+Apache SERVER 2.0 for Unix
+Release: 1 Benchmark Date: 23 Nov 2011","DISA STIG
+Apache SITE 2.0 for Windows
+Release: 1 Benchmark Date: 23 Nov 2011","DISA STIG
+Apache SERVER 2.0 for Windows
+Release: 1 Benchmark Date: 23 Nov 2011"
+CCE-28025-5,The Apache Action directive shoud be configured appropriately.,"(1) action-type
+(2) cgi-script",(1) Apache configuration file: Action directive,,,,"Rule Title: MIME types for csh or sh shell programs must be disabled.
+STIG ID: WG370 A22 Rule ID: SV-36309r1_rule Vuln ID: V-2225
+Severity: CAT II  Class: Unclass",,
+CCE-28092-5,The Apache AddHandler directive should be configured appropriately.,"(1) handler-name
+(2) extension",(1) Apache configuration file: AddHandler directive,,,,"Rule Title: MIME types for csh or sh shell programs must be disabled.
+STIG ID: WG370 A22 Rule ID: SV-36309r1_rule Vuln ID: V-2225
+Severity: CAT II  Class: Unclass",,
+CCE-28000-8,Anonymous sharing of Apache's web content directories with nfs should be configured appropriately.,(1) Set of shares,(1) via /etc/exports,,,"Rule Title: Web content directories must not be anonymously shared.
+STIG ID: WG210 A22  Rule ID: SV-33022r1_rule  Vuln ID: V-2226
+Severity: CAT II  Class: Unclass",,,
+CCE-27251-8,Anonymous sharing of Apache's web content directories with smb should be configured appropriately.,(1) Set of shares,(1) via /etc/samba/smb.conf,,,"Rule Title: Web content directories must not be anonymously shared.
+STIG ID: WG210 A22  Rule ID: SV-33022r1_rule  Vuln ID: V-2226
+Severity: CAT II  Class: Unclass",,,
+CCE-28090-9,The Apache AllowOverride directive should be configured appropriately for web site root directories.,(1) AuthConfig / FileInfo / Indexes / Limit / Options / All / None,(1) Apache configuration file: AllowOverride directive,,L1 15. Directory Functionality/Features Directives p24,"Rule Title: All interactive programs must be placed in a designated directory with appropriate permissions.
+STIG ID: WG400 A22  Rule ID: SV-6928r4_rule  Vuln ID: V-2228
+Severity: CAT II  Class: Unclass",,"Rule Title: All interactive programs must be placed in a designated directory with appropriate permissions.
+STIG ID: WG400 W22  Rule ID: SV-36644r1_rule  Vuln ID: V-2228
+Severity: CAT II  Class: Unclass",
+CCE-27660-0,"The Apachce ""MaxKeepAliveRequests"" directive should be configured appropriately.",(1) Number value,(1) Apache configuration file: MaxKeepAliveRequests directive,,,"Rule Title: The number of allowed simultaneous requests must be set.
+STIG ID: WG110 A22  Rule ID: SV-33018r1_rule  Vuln ID: V-2240
+Severity: CAT II  Class: Unclass",,"Rule Title: The number of allowed simultaneous requests must be set.
+STIG ID: WG110 W22  Rule ID: SV-33105r1_rule  Vuln ID: V-2240
+Severity: CAT II  Class: Unclass",
+CCE-28122-0,All readable Apache web document directories should have their default webpage configured appropriately. ,(1) exist / not exist,(1) Directories (from Apache configuration file: DocumentRoot directive),,,"Rule Title: Each readable web document directory must contain either a default, home, index, or equivalent file.
+STIG ID: WG170 A22  Rule ID: SV-33020r1_rule  Vuln ID: V-2245
+Severity: CAT III  Class: Unclass",,"Rule Title: Each readable web document directory must contain either a default, home, index, or equivalent file.
+STIG ID: WG170 W22  Rule ID: SV-33107r1_rule  Vuln ID: V-2245
+Severity: CAT III  Class: Unclass",
+CCE-27490-2,File permissions for httpd.conf should be set correctly.,(1) permissions,(1) via chmod,,,,"Rule Title: Web administration tools must be restricted to the web manager and the web manager’s designees.
+STIG ID: WG220 A22  Rule ID: SV-32948r1_rule  Vuln ID: V-2248
+Severity: CAT II  Class: Unclass",,
+CCE-28118-8,The httpd.conf file should be owned by the appropriate user.,(1) user,(1) via chown,,,,"Rule Title: Web administration tools must be restricted to the web manager and the web manager’s designees.
+STIG ID: WG220 A22  Rule ID: SV-32948r1_rule  Vuln ID: V-2248
+Severity: CAT II  Class: Unclass",,
+CCE-27952-1,The httpd.conf file should be owned by the appropriate group.,(1) group,(1) via chown,,,,"Rule Title: Web administration tools must be restricted to the web manager and the web manager’s designees.
+STIG ID: WG220 A22  Rule ID: SV-32948r1_rule  Vuln ID: V-2248
+Severity: CAT II  Class: Unclass",,
+CCE-27955-4,Apache's log_config_module should be enabled or disabled as appropriate.,(1) log_config_module,(1) Apache configuration file: LoadModule directive,,,"Rule Title: Logs of web server access and errors must be established and maintained.
+STIG ID: WG240 A22  Rule ID: SV-33025r1_rule  Vuln ID: V-2250
+Severity: CAT II  Class: Unclass",,"Rule Title: Logs of web server access and errors must be established and maintained.
+STIG ID: WG240 W20  Rule ID: SV-36668r1_rule  Vuln ID: V-2250
+Severity: CAT II  Class: Unclass",
+CCE-27967-9,The file permissions for all files specified by CustomLog directives should be configured appropriately,(1) permissions,(1) via chmod,,,"Rule Title: Log file access must be restricted to System Administrators, Web Administrators or Auditors.
+STIG ID: WG250 A22  Rule ID: SV-33033r1_rule  Vuln ID: V-2252
+Severity: CAT II  Class: Unclass",,,
+CCE-27906-7,All files specified by CustomLog directives should be owned by the appropriate user,(1) user,(1) via chown,,,"Rule Title: Log file access must be restricted to System Administrators, Web Administrators or Auditors.
+STIG ID: WG250 A22  Rule ID: SV-33033r1_rule  Vuln ID: V-2252
+Severity: CAT II  Class: Unclass",,,
+CCE-27976-0,All files specified by CustomLog directives should be owned by the appropriate group,(1) group,(1) via chown,,,"Rule Title: Log file access must be restricted to System Administrators, Web Administrators or Auditors.
+STIG ID: WG250 A22  Rule ID: SV-33033r1_rule  Vuln ID: V-2252
+Severity: CAT II  Class: Unclass",,,
+CCE-28059-4,The Unix permissions for all files specified by ErrorLog directives should be configured appropriately,(1) permissions,(1) via chmod,,,"Rule Title: Log file access must be restricted to System Administrators, Web Administrators or Auditors.
+STIG ID: WG250 A22  Rule ID: SV-33033r1_rule  Vuln ID: V-2252
+Severity: CAT II  Class: Unclass",,,
+CCE-27888-7,All files specified by ErrorLog directives should be owned by the appropriate user,(1) user,(1) via chown,,,"Rule Title: Log file access must be restricted to System Administrators, Web Administrators or Auditors.
+STIG ID: WG250 A22  Rule ID: SV-33033r1_rule  Vuln ID: V-2252
+Severity: CAT II  Class: Unclass",,,
+CCE-27889-5,All files specified by ErrorLog directives should be owned by the appropriate group,(1) group,(1) via chown,,,"Rule Title: Log file access must be restricted to System Administrators, Web Administrators or Auditors.
+STIG ID: WG250 A22  Rule ID: SV-33033r1_rule  Vuln ID: V-2252
+Severity: CAT II  Class: Unclass",,,
+CCE-27795-4,The Unix permissions of Apache's htpasswd file should be configured appropriately.,(1) permissions,(1) via chmod,,,,"Rule Title: The web server’s htpasswd files (if present) must reflect proper ownership and permissions.
+STIG ID: WG270 A22  Rule ID: SV-36478r1_rule  Vuln ID: V-2255
+Severity: CAT II  Class: Unclass",,
+CCE-28071-9,The htpasswd should be owned by the appropriate user.,(1) user,(1) via chown,,,,"Rule Title: The web server’s htpasswd files (if present) must reflect proper ownership and permissions.
+STIG ID: WG270 A22  Rule ID: SV-36478r1_rule  Vuln ID: V-2255
+Severity: CAT II  Class: Unclass",,
+CCE-27981-0,The htpasswd file should be owned by the appropriate group.,(1) group,(1) via chown,,,,"Rule Title: The web server’s htpasswd files (if present) must reflect proper ownership and permissions.
+STIG ID: WG270 A22  Rule ID: SV-36478r1_rule  Vuln ID: V-2255
+Severity: CAT II  Class: Unclass",,
+CCE-28013-1,The Unix permissions for all directories specified by ScriptAlias directives should be configured appropriately.,(1) permissions,(1) via chmod,,,"Rule Title: The web client account access to the content and scripts directories must be limited to read and execute.
+STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258
+Severity: CAT I  Class: Unclass",,,
+CCE-28141-0,All directories specified by ScriptAlias directives should be owned by the appropriate user.,(1) user,(1) via chown,,,"Rule Title: The web client account access to the content and scripts directories must be limited to read and execute.
+STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258
+Severity: CAT I  Class: Unclass",,,
+CCE-28020-6,All directories specified by ScriptAlias directives should be owned by the appropriate group.,(1) group,(1) via chown,,,"Rule Title: The web client account access to the content and scripts directories must be limited to read and execute.
+STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258
+Severity: CAT I  Class: Unclass",,,
+CCE-28084-2,The Unix permissions for all directories specified by ScriptAliasMatch directives should be configured appropriately.,(1) permissions,(1) via chmod,,,"Rule Title: The web client account access to the content and scripts directories must be limited to read and execute.
+STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258
+Severity: CAT I  Class: Unclass",,,
+CCE-27611-3,All directories specified by ScriptAliasMatch directives should be owned by the appropriate user.,(1) user,(1) via chown,,,"Rule Title: The web client account access to the content and scripts directories must be limited to read and execute.
+STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258
+Severity: CAT I  Class: Unclass",,,
+CCE-28146-9,All directories specified by ScriptAliasMatch directives should be owned by the appropriate group.,(1) group,(1) via chown,,,"Rule Title: The web client account access to the content and scripts directories must be limited to read and execute.
+STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258
+Severity: CAT I  Class: Unclass",,,
+CCE-27811-9,The Unix permissions for all directories specified by DocumentRoot directives should be configured appropriately.,(1) permissions,(1) via chmod,,,"Rule Title: The web client account access to the content and scripts directories must be limited to read and execute.
+STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258
+Severity: CAT I  Class: Unclass",,,
+CCE-28107-1,All directories specified by DocumentRoot directives should be owned by the appropriate user.,(1) user,(1) via chown,,,"Rule Title: The web client account access to the content and scripts directories must be limited to read and execute.
+STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258
+Severity: CAT I  Class: Unclass",,,
+CCE-27499-3,All directories specified by DocumentRoot directives should be owned by the appropriate group.,(1) group,(1) via chown,,,"Rule Title: The web client account access to the content and scripts directories must be limited to read and execute.
+STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258
+Severity: CAT I  Class: Unclass",,,
+CCE-27620-4,The Unix permissions for all directories specified by Alias directives should be configured appropriately.,(1) permissions,(1) via chmod,,,"Rule Title: The web client account access to the content and scripts directories must be limited to read and execute.
+STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258
+Severity: CAT I  Class: Unclass",,,
+CCE-27933-1,All directories specified by Alias directives should be owned by the appropriate user.,(1) user,(1) via chown,,,"Rule Title: The web client account access to the content and scripts directories must be limited to read and execute.
+STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258
+Severity: CAT I  Class: Unclass",,,
+CCE-28117-0,All directories specified by Alias directives should be owned by the appropriate group.,(1) group,(1) via chown,,,"Rule Title: The web client account access to the content and scripts directories must be limited to read and execute.
+STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258
+Severity: CAT I  Class: Unclass",,,
+CCE-27957-0,The Unix permissions for all directories specified by ServerRoot directives should be configred appropriately,(1) permissions,(1) via chmod,,,,"Rule Title: Web server system files must conform to minimum file permission requirements.
+STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259
+Severity: CAT II  Class: Unclass",,
+CCE-27871-3,All directories specified by ServerRoot directives should be owned by the appropriate user.,(1) user,(1) via chown,,,,"Rule Title: Web server system files must conform to minimum file permission requirements.
+STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259
+Severity: CAT II  Class: Unclass",,
+CCE-27647-7,All directories specified by ServerRoot directives should be owned by the appropriate group.,(1) group,(1) via chown,,,,"Rule Title: Web server system files must conform to minimum file permission requirements.
+STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259
+Severity: CAT II  Class: Unclass",,
+CCE-28055-2,The Unix permissions of Apache's configuration directory should be configred appropriately,(1) permissions,(1) via chmod,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,"Rule Title: Web server system files must conform to minimum file permission requirements.
+STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259
+Severity: CAT II  Class: Unclass",,
+CCE-28119-6,Apache's configuration directory should be owned by the appropriate user.,(1) user,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,"Rule Title: Web server system files must conform to minimum file permission requirements.
+STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259
+Severity: CAT II  Class: Unclass",,
+CCE-28069-3,Apache's configuration directory should be owned by the appropriate group.,(1) group,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,"Rule Title: Web server system files must conform to minimum file permission requirements.
+STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259
+Severity: CAT II  Class: Unclass",,
+CCE-28006-5,The Unix permissions of Apache's /bin directory should be configred appropriately,(1) permissions,(1) via chmod,,,,"Rule Title: Web server system files must conform to minimum file permission requirements.
+STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259
+Severity: CAT II  Class: Unclass",,
+CCE-27742-6,Apache's /bin directory should be owned by the appropriate user.,(1) user,(1) via chown,,,,"Rule Title: Web server system files must conform to minimum file permission requirements.
+STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259
+Severity: CAT II  Class: Unclass",,
+CCE-27914-1,Apache's /bin directory should be owned by the appropriate group.,(1) group,(1) via chown,,,,"Rule Title: Web server system files must conform to minimum file permission requirements.
+STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259
+Severity: CAT II  Class: Unclass",,
+CCE-28046-1,The Unix permissions of Apache's /logs directory should be configred appropriately,(1) permissions,(1) via chmod,,,,"Rule Title: Web server system files must conform to minimum file permission requirements.
+STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259
+Severity: CAT II  Class: Unclass",,
+CCE-28126-1,Apache's /logs directory should be owned by the appropriate user.,(1) user,(1) via chown,,,,"Rule Title: Web server system files must conform to minimum file permission requirements.
+STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259
+Severity: CAT II  Class: Unclass",,
+CCE-27979-4,Apache's /logs directory should be owned by the appropriate group.,(1) group,(1) via chown,,,,"Rule Title: Web server system files must conform to minimum file permission requirements.
+STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259
+Severity: CAT II  Class: Unclass",,
+CCE-27643-6,The Unix permissions of Apache's /htdocs directory should be configred appropriately,(1) permissions,(1) via chmod,,,,"Rule Title: Web server system files must conform to minimum file permission requirements.
+STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259
+Severity: CAT II  Class: Unclass",,
+CCE-28035-4,Apache's /htdocs directory should be owned by the appropriate user.,(1) user,(1) via chown,,,,"Rule Title: Web server system files must conform to minimum file permission requirements.
+STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259
+Severity: CAT II  Class: Unclass",,
+CCE-27984-4,Apache's /htdocs directory should be owned by the appropriate group.,(1) group,(1) via chown,,,,"Rule Title: Web server system files must conform to minimum file permission requirements.
+STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259
+Severity: CAT II  Class: Unclass",,
+CCE-28115-4,The Unix permissions of Apache's /cgi-bin directory should be configred appropriately,(1) permissions,(1) via chmod,,,,"Rule Title: Web server system files must conform to minimum file permission requirements.
+STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259
+Severity: CAT II  Class: Unclass",,
+CCE-28068-5,Apache's /cgi-bin directory should be owned by the appropriate user.,(1) user,(1) via chown,,,,"Rule Title: Web server system files must conform to minimum file permission requirements.
+STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259
+Severity: CAT II  Class: Unclass",,
+CCE-28030-5,Apache's /cgi-bin directory should be owned by the appropriate group.,(1) group,(1) via chown,,,,"Rule Title: Web server system files must conform to minimum file permission requirements.
+STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259
+Severity: CAT II  Class: Unclass",,
+CCE-28044-6,The Apache site's robots.txt should be configured to disallow paths and files as appropriate.,"(1) User-Agent
+(2) Disallowed path(s)|file(s)",(1) robots.txt,,,"Rule Title: A private web server must not respond to requests from public search engines.
+STIG ID: WG310 A22  Rule ID: SV-33028r1_rule  Vuln ID: V-2260
+Severity: CAT II  Class: Unclass",,"Rule Title: A private web server must not respond to requests from public search engines.
+STIG ID: WG310 W22  Rule ID: SV-28798r2_rule  Vuln ID: V-2260
+Severity: CAT II  Class: Unclass",
+CCE-28137-8,Apache's ssl_module should be enabled or disabled as appropriate.,(1) ssl_module,(1) Apache configuration file: LoadModule directive,,,"Rule Title: A private web server must utilize TLS v 1.0 or greater.
+STIG ID: WG340 A22  Rule ID: SV-33029r1_rule  Vuln ID: V-2262
+Severity: CAT II  Class: Unclass",,"Rule Title: A private web server must utilize TLS v 1.0 or greater.
+STIG ID: WG340 W20  Rule ID: SV-36740r1_rule  Vuln ID: V-2262
+Severity: CAT II  Class: Unclass",
+CCE-28104-8,The Apache SSLProtocol directive should be configured appropriately.,(1) SSLv2 / SSLv3 / TLSv1 / All,(1) Apache configuration file: SSLProtocol directive,,,"Rule Title: A private web server must utilize TLS v 1.0 or greater.
+STIG ID: WG340 A22  Rule ID: SV-33029r1_rule  Vuln ID: V-2262
+Severity: CAT II  Class: Unclass",,"Rule Title: A private web server must utilize TLS v 1.0 or greater.
+STIG ID: WG340 W20  Rule ID: SV-36740r1_rule  Vuln ID: V-2262
+Severity: CAT II  Class: Unclass",
+CCE-27980-2,The Apache SSLEngine directive should be configured appropriately.,(1) On / Off,(1) Apache configuration file: SSLEngine directive,,,"Rule Title: A private web server must utilize TLS v 1.0 or greater.
+STIG ID: WG340 A22  Rule ID: SV-33029r1_rule  Vuln ID: V-2262
+Severity: CAT II  Class: Unclass",,"Rule Title: A private web server must utilize TLS v 1.0 or greater.
+STIG ID: WG340 W20  Rule ID: SV-36740r1_rule  Vuln ID: V-2262
+Severity: CAT II  Class: Unclass",
+CCE-27821-8,"The Apache ""ServerTokens"" directive should be configured appropriately.",(1) Prod[uctOnly] / Major / Minor / Min[imal] / OS / Full,(1) Apache configuration file: ServerTokens directive,,L1 11. Web Server Software Obfuscation General Directives p17,,"Rule Title: Web server and/or operating system information must be protected.
+STIG ID: WG520 A22  Rule ID: SV-36672r1_rule  Vuln ID: V-6724
+Severity: CAT III  Class: Unclass",,"Rule Title: Web server and/or operating system information must be protected.
+STIG ID: WG520 W22  Rule ID: SV-33098r1_rule  Vuln ID: V-6724
+Severity: CAT III  Class: Unclass"
+CCE-27835-8,All Apache's online manual should be available or removed as appropriate.,(1) exist / not exist,(1) manual in the Server Root directory,,,,"Rule Title: All web server documentation, sample code, example applications, and tutorials must be  removed from a production web server.
+STIG ID: WG385 A22  Rule ID: SV-32933r1_rule  Vuln ID: V-13621
+Severity: CAT I  Class: Unclass",,"Rule Title: All web server documentation, sample code, example applications, and tutorials must be  removed from a production web server.
+STIG ID: WG385 W22  Rule ID: SV-33087r1_rule  Vuln ID: V-13621
+Severity: CAT I  Class: Unclass"
+CCE-28034-7,Apache's demo CGI printenv.pl should be available or removed as appropriate,(1) exist / not exist,"(1) (ServerRoot)\cgi-bin\printenv.pl
+(2) (ServerRoot)/cgi-bin/printenv.pl",,L1 18. Remove Default/Unneeded Apache Files p27,,"Rule Title: All web server documentation, sample code, example applications, and tutorials must be  removed from a production web server.
+STIG ID: WG385 A22  Rule ID: SV-32933r1_rule  Vuln ID: V-13621
+Severity: CAT I  Class: Unclass",,"Rule Title: All web server documentation, sample code, example applications, and tutorials must be  removed from a production web server.
+STIG ID: WG385 W22  Rule ID: SV-33087r1_rule  Vuln ID: V-13621
+Severity: CAT I  Class: Unclass"
+CCE-28010-7,The Apache access log file data should be configured to contain the appropriate data elements.,(1) LogFormat Format String,(1) Apache configuration file: LogFormat directive,,L1 17. Logging General Directives p26,"Rule Title: Log file data must contain required data elements.
+STIG ID: WG242 A22  Rule ID: SV-36642r1_rule  Vuln ID: V-13688
+Severity: CAT II  Class: Unclass",,"Rule Title: Log file data must contain required data elements.
+STIG ID: WG242 W22  Rule ID: SV-28654r2_rule  Vuln ID: V-13688
+Severity: CAT II  Class: Unclass",
+CCE-28143-6,"The Apache ""Timeout"" directive should be configured appropriately.",(1) Number value (in seconds),(1) Apache configuration file: Timeout directive,,L1 10. Denial of Service (DoS) Protective General Directives pg 16,,"Rule Title: The Timeout directive must be properly set.
+STIG ID: WA000-WWA020 A22  Rule ID: SV-32977r1_rule  Vuln ID: V-13724
+Severity: CAT II  Class: Unclass",,"Rule Title: The Timeout directive must be properly set.
+STIG ID: WA000-WWA020 W22  Rule ID: SV-32980r1_rule  Vuln ID: V-13724
+Severity: CAT II  Class: Unclass"
+CCE-27148-6,"The Apache ""KeepAlive"" directive should be configured appropriately.",(1) On / Off,(1) Apache configuration file: KeepAlive directive,,L1 10. Denial of Service (DoS) Protective General Directives pg 16,,"Rule Title: The KeepAlive directive must be enabled.
+STIG ID: WA000-WWA022 A22  Rule ID: SV-32844r1_rule  Vuln ID: V-13725
+Severity: CAT II  Class: Unclass",,"Rule Title: The KeepAlive directive must be enabled.
+STIG ID: WA000-WWA022 W22  Rule ID: SV-32987r1_rule  Vuln ID: V-13725
+Severity: CAT II  Class: Unclass"
+CCE-27938-0,"The Apache ""KeepAliveTimeout"" directive should be configured appropriately.",(1) Number value (in seconds),(1) Apache configuration file: KeepAliveTimeout directive,,L1 10. Denial of Service (DoS) Protective General Directives pg 16,,"Rule Title: The KeepAliveTimeout directive must be defined.
+STIG ID: WA000-WWA024 A22  Rule ID: SV-32877r1_rule  Vuln ID: V-13726
+Severity: CAT II  Class: Unclass",,"Rule Title: The KeepAliveTimeout directive must be defined.
+STIG ID: WA000-WWA024 W22  Rule ID: SV-32880r1_rule  Vuln ID: V-13726
+Severity: CAT II  Class: Unclass"
+CCE-27479-5,"The Apache ""StartServers"" directive should be configured appropriately.",(1) Number value,(1) Apache configuration file: StartServers directive,,,,"Rule Title: The httpd.conf StartServers directive must be set properly.
+STIG ID: WA000-WWA026 A22  Rule ID: SV-36645r1_rule  Vuln ID: V-13727
+Severity: CAT II  Class: Unclass",,
+CCE-27989-3,"The Apache ""MinSpareServers"" directive should be configured appropriately.",(1) Number value,(1) Apache configuration file: MinSpareServers directive,,,,"Rule Title: The httpd.conf MinSpareServers directive must be set properly. 
+STIG ID: WA000-WWA028 A22  Rule ID: SV-36646r1_rule  Vuln ID: V-13728
+Severity: CAT II  Class: Unclass",,
+CCE-28133-7,"The Apache ""MaxSpareServers"" directive should be configured appropriately.",(1) Number value,(1) Apache configuration file: MaxSpareServers directive,,,,"Rule Title: The httpd.conf MaxSpareServers directive must be set properly. 
+STIG ID: WA000-WWA030 A22  Rule ID: SV-36648r1_rule  Vuln ID: V-13729
+Severity: CAT III  Class: Unclass",,
+CCE-27188-2,"The Apache ""MaxClients"" directive should be configured appropriately.",(1) Number value,(1) Apache configuration file: MaxClients directive,,L1 10. Denial of Service (DoS) Protective General Directives pg 16,,"Rule Title: The httpd.conf MaxClients directive must be set properly. 
+STIG ID: WA000-WWA032 A22  Rule ID: SV-36649r1_rule  Vuln ID: V-13730
+Severity: CAT II  Class: Unclass",,
+CCE-28066-9,"The Apache ""FollowSymLinks"" setting for all ""Options"" directives should be configured appropriately.",(1) FollowSymLinks / -FollowSymLinks / +FollowSymLinks / None,(1) Apache configuration file: Options directive,,,,"Rule Title: The FollowSymLinks setting must be disabled.
+STIG ID: WA000-WWA052 A22  Rule ID: SV-40129r1_rule  Vuln ID: V-13732
+Severity: CAT II  Class: Unclass",,
+CCE-28183-2,"The Apache ""Includes"" setting for all ""Options"" directives should be configured appropriately.",(1) Includes / -Includes / +Includes / None,(1) Apache configuration file: Options directive,,,,"Rule Title: Server side includes (SSIs) must run with execution capability disabled.
+STIG ID: WA000-WWA054 A22  Rule ID: SV-32753r1_rule  Vuln ID: V-13733
+Severity: CAT I  Class: Unclass",,
+CCE-28101-4,"The Apache ""IncludesNoExec"" setting for all ""Options"" directives should be configured appropriately.",(1) IncludesNoExec / -IncludesNoExec / +IncludesNoExec / None,(1) Apache configuration file: Options directive,,,,"Rule Title: Server side includes (SSIs) must run with execution capability disabled.
+STIG ID: WA000-WWA054 A22  Rule ID: SV-32753r1_rule  Vuln ID: V-13733
+Severity: CAT I  Class: Unclass",,
+CCE-28100-6,"The Apache ""MultiViews"" setting for all ""Options"" directives should be configured appropriately.",(1) MultiViews / -MultiViews / +MultiViews / None,(1) Apache configuration file: Options directive,,,,"Rule Title: The MultiViews directive must be disabled.
+STIG ID: WA000-WWA056 A22  Rule ID: SV-32754r1_rule  Vuln ID: V-13734
+Severity: CAT II  Class: Unclass",,
+CCE-27737-6,"The Apache ""Indexes"" setting for all ""Options"" directives should be configured appropriately.",(1) Indexes / -Indexes / +Indexes / None,(1) Apache configuration file: Options directive,,,,"Rule Title: Directory indexing must be disabled on directories not containing index files.
+STIG ID: WA000-WWA058 A22  Rule ID: SV-32755r1_rule  Vuln ID: V-13735
+Severity: CAT II  Class: Unclass",,
+CCE-28089-1,"The Apache ""LimitRequestBody"" directive should be configured appropriately.",(1) Number value (in bytes) ,(1) Apache configuration file: LimitRequestBody directive,,L2 7. Buffer Overflow Protections p42,,"Rule Title: The HTTP request message body size must be limited.
+STIG ID: WA000-WWA060 A22  Rule ID: SV-32756r1_rule  Vuln ID: V-13736
+Severity: CAT II  Class: Unclass+G66",,"Rule Title: The HTTP request message body size must be limited.
+STIG ID: WA000-WWA060 W22  Rule ID: SV-33008r1_rule  Vuln ID: V-13736
+Severity: CAT II  Class: Unclass"
+CCE-27646-9,"The Apache ""LimitRequestFields"" directive should be configured appropriately",(1) Number value,(1) Apache configuration file: LimitRequestFields directive,,L2 7. Buffer Overflow Protections p42,,"Rule Title: The HTTP request header fields must be limited.
+STIG ID: WA000-WWA062 A22  Rule ID: SV-32757r1_rule  Vuln ID: V-13737
+Severity: CAT II  Class: Unclass",,"Rule Title: The HTTP request header fields must be limited.
+STIG ID: WA000-WWA062 W22  Rule ID: SV-33009r1_rule  Vuln ID: V-13737
+Severity: CAT II  Class: Unclass"
+CCE-27907-5,"The Apache ""LimitRequestFieldSizeBody"" directive should be configured appropriately.",(1) Number value (in bytes),(1) Apache configuration file: LimitRequestFieldSizeBody directive,,L2 7. Buffer Overflow Protections p42,,"Rule Title: The HTTP request header field size must be limited.
+STIG ID: WA000-WWA064 A22  Rule ID: SV-32766r1_rule  Vuln ID: V-13738
+Severity: CAT II  Class: Unclass",,"Rule Title: The HTTP request header field size must be limited.
+STIG ID: WA000-WWA064 W22  Rule ID: SV-33010r1_rule  Vuln ID: V-13738
+Severity: CAT II  Class: Unclass"
+CCE-28106-3,"The Apache ""LimitRequestline"" directive should be configured appropriatley.",(1) Number value (in bytes) ,(1) Apache configuration file: LimitRequestLine directive,,L2 7. Buffer Overflow Protections p42,,"Rule Title: The HTTP request line must be limited.
+STIG ID: WA000-WWA066 A22  Rule ID: SV-32768r1_rule  Vuln ID: V-13739
+Severity: CAT II  Class: Unclass",,"Rule Title: The HTTP request line must be limited.
+STIG ID: WA000-WWA066 W22  Rule ID: SV-33011r1_rule  Vuln ID: V-13739
+Severity: CAT II  Class: Unclass"
+CCE-27847-3,The path for Apache sites error log files should be configured appropriately.,(1) File path,(1) Apache configuration file: ErrorLog directive,,L2 4. ErrorLog - Syslog p70-71,"Rule Title: Error logging must be enabled.
+STIG ID: WA00605 A22  Rule ID: SV-33192r1_rule  Vuln ID: V-26279
+Severity: CAT II  Class: Unclass",,"Rule Title: Error logging must be enabled.
+STIG ID: WA00605 W22  Rule ID: SV-33147r1_rule  Vuln ID: V-26279
+Severity: CAT II  Class: Unclass",
+CCE-27798-8,The Apache system logging should be configured appropriately.,"(1) File path | pipe
+(2)  LogFormat | nickname ",(1) Apache configuration file: CustomLog directive,,L1 17. Logging General Directives p26,"Rule Title: System logging must be enabled.
+STIG ID: WA00615 A22  Rule ID: SV-33206r1_rule  Vuln ID: V-26281
+Severity: CAT II  Class: Unclass",,"Rule Title: System logging must be enabled.
+STIG ID: WA00615 W22  Rule ID: SV-33151r1_rule  Vuln ID: V-26281
+Severity: CAT II  Class: Unclass",
+CCE-27814-3,"The Apache ""LogLevel"" directive should be configured appropriately.",(1) debug / info / notice / warn / error / crit / alert / emerg,(1) Apache configuration file: LogLevel directive,,L1 17. Logging General Directives p26,"Rule Title: The LogLevel directive must be enabled.
+STIG ID: WA00620 A22  Rule ID: SV-33207r1_rule  Vuln ID: V-26282
+Severity: CAT II  Class: Unclass",,"Rule Title: The LogLevel directive must be enabled.
+STIG ID: WA00620 W22  Rule ID: SV-33153r1_rule  Vuln ID: V-26282
+Severity: CAT II  Class: Unclass",
+CCE-27207-0,Web Distributed Authoring and Versioning (WebDav) dav_module should be enabled or disabled as appropriate.,(1) dav_module,(1) Apache configuration file: LoadModule directive,,,,"Rule Title: Web Distributed Authoring and Versioning (WebDAV) must be disabled.
+STIG ID: WA00505 A22  Rule ID: SV-33216r1_rule  Vuln ID: V-26287
+Severity: CAT II  Class: Unclass",,"Rule Title: Web Distributed Authoring and Versioning (WebDAV) must be disabled.
+STIG ID: WA00505 W20  Rule ID: SV-36611r1_rule  Vuln ID: V-26287
+Severity: CAT II  Class: Unclass"
+CCE-27946-3,Web Distributed Authoring and Versioning (WebDav) dav_fs_module should be enabled or disabled as appropriate.,(1) dav_fs_module,(1) Apache configuration file: LoadModule directive,,,,"Rule Title: Web Distributed Authoring and Versioning (WebDAV) must be disabled.
+STIG ID: WA00505 A22  Rule ID: SV-33216r1_rule  Vuln ID: V-26287
+Severity: CAT II  Class: Unclass",,"Rule Title: Web Distributed Authoring and Versioning (WebDAV) must be disabled.
+STIG ID: WA00505 W20  Rule ID: SV-36611r1_rule  Vuln ID: V-26287
+Severity: CAT II  Class: Unclass"
+CCE-28200-4,Apache's info_module should be enabled or disabled as appropriate.,(1) info_module,(1) Apache configuration file: LoadModule directive,,,,"Rule Title: Web server status module will be disabled.
+STIG ID: WA00510 A22  Rule ID: SV-33218r1_rule  Vuln ID: V-26294
+Severity: CAT II  Class: Unclass",,"Rule Title: Web server status module will be disabled.
+STIG ID: WA00510 W20  Rule ID: SV-36612r1_rule  Vuln ID: V-26294
+Severity: CAT II  Class: Unclass"
+CCE-27789-7,Apache's status_module should be enabled or disabled as appropriate.,(1) status_module,(1) Apache configuration file: LoadModule directive,,,,"Rule Title: Web server status module will be disabled.
+STIG ID: WA00510 A22  Rule ID: SV-33218r1_rule  Vuln ID: V-26294
+Severity: CAT II  Class: Unclass",,"Rule Title: Web server status module will be disabled.
+STIG ID: WA00510 W20  Rule ID: SV-36612r1_rule  Vuln ID: V-26294
+Severity: CAT II  Class: Unclass"
+CCE-28182-4,Apache's proxy_module should be enabled or disabled as appropriate.,(1) proxy_module,(1) Apache configuration file: LoadModule directive,,,,"Rule Title: The web server must not be configured as a proxy server.
+STIG ID: WA00520 A22  Rule ID: SV-33220r1_rule  Vuln ID: V-26299
+Severity: CAT II  Class: Unclass",,"Rule Title: The web server must not be configured as a proxy server.
+STIG ID: WA00520 W20  Rule ID: SV-36613r1_rule  Vuln ID: V-26299
+Severity: CAT II  Class: Unclass"
+CCE-28075-0,Apache's proxy_ftp_module should be enabled or disabled as appropriate.,(1) proxy_ftp_module,(1) Apache configuration file: LoadModule directive,,,,"Rule Title: The web server must not be configured as a proxy server.
+STIG ID: WA00520 A22  Rule ID: SV-33220r1_rule  Vuln ID: V-26299
+Severity: CAT II  Class: Unclass",,"Rule Title: The web server must not be configured as a proxy server.
+STIG ID: WA00520 W20  Rule ID: SV-36613r1_rule  Vuln ID: V-26299
+Severity: CAT II  Class: Unclass"
+CCE-27846-5,Apache's proxy_http_module should be enabled or disabled as appropriate.,(1) proxy_http_module,(1) Apache configuration file: LoadModule directive,,,,"Rule Title: The web server must not be configured as a proxy server.
+STIG ID: WA00520 A22  Rule ID: SV-33220r1_rule  Vuln ID: V-26299
+Severity: CAT II  Class: Unclass",,"Rule Title: The web server must not be configured as a proxy server.
+STIG ID: WA00520 W20  Rule ID: SV-36613r1_rule  Vuln ID: V-26299
+Severity: CAT II  Class: Unclass"
+CCE-28067-7,Apache's proxy_connect_module should be enabled or disabled as appropriate.,(1) proxy_connect_module,(1) Apache configuration file: LoadModule directive,,,,"Rule Title: The web server must not be configured as a proxy server.
+STIG ID: WA00520 A22  Rule ID: SV-33220r1_rule  Vuln ID: V-26299
+Severity: CAT II  Class: Unclass",,"Rule Title: The web server must not be configured as a proxy server.
+STIG ID: WA00520 W20  Rule ID: SV-36613r1_rule  Vuln ID: V-26299
+Severity: CAT II  Class: Unclass"
+CCE-27827-5,User-specific directories should be enabled or disabled as appropriate.,(1) userdir_module,(1) Apache configuration file: LoadModule directive,,,,"Rule Title: User specific directories must not be globally enabled.
+STIG ID: WA00525 A22  Rule ID: SV-33221r1_rule  Vuln ID: V-26302
+Severity: CAT II  Class: Unclass",,"Rule Title: User specific directories must not be globally enabled.
+STIG ID: WA00525 W20  Rule ID: SV-36614r1_rule  Vuln ID: V-26302
+Severity: CAT II  Class: Unclass"
+CCE-28120-4,Apache's process ID (PID) file's Unix permissions should be configured appropriately. ,(1) permissions,(1) via chmod,,,,"Rule Title: The process ID (PID) file must be properly secured.
+STIG ID: WA00530 A22  Rule ID: SV-33222r1_rule  Vuln ID: V-26305
+Severity: CAT II  Class: Unclass",,
+CCE-28038-8,Apache's process ID (PID) file should be owned by the appropriate user.,(1) user,(1) via chown,,,,"Rule Title: The process ID (PID) file must be properly secured.
+STIG ID: WA00530 A22  Rule ID: SV-33222r1_rule  Vuln ID: V-26305
+Severity: CAT II  Class: Unclass",,
+CCE-27670-9,Apache's process ID (PID) file should be owned by the appropriate group.,(1) group,(1) via chown,,,,"Rule Title: The process ID (PID) file must be properly secured.
+STIG ID: WA00530 A22  Rule ID: SV-33222r1_rule  Vuln ID: V-26305
+Severity: CAT II  Class: Unclass",,
+CCE-27999-2,Apache's Scoreboard file's Unix permissions should be configured appropriately.,(1) permissions,(1) via chmod,,,,"Rule Title: The ScoreBoard file must be properly secured.
+STIG ID: WA00535 A22  Rule ID: SV-33223r1_rule  Vuln ID: V-26322
+Severity: CAT II  Class: Unclass",,
+CCE-27715-2,Apache's scoreboard file should be owned by the appropriate user.,(1) user,(1) via chown,,,,"Rule Title: The ScoreBoard file must be properly secured.
+STIG ID: WA00535 A22  Rule ID: SV-33223r1_rule  Vuln ID: V-26322
+Severity: CAT II  Class: Unclass",,
+CCE-27606-3,Apache's scoreboard (PID) file should be owned by the appropriate group.,(1) group,(1) via chown,,,,"Rule Title: The ScoreBoard file must be properly secured.
+STIG ID: WA00535 A22  Rule ID: SV-33223r1_rule  Vuln ID: V-26322
+Severity: CAT II  Class: Unclass",,
+CCE-28102-2,The Order directive for the OS root should be configured appropriately.,"(1) Allow,Deny / Deny,Allow / Mutual-failure","
+(1) Order directive",,L1 13. Access Control Directives p21,,"Rule Title: The web server must be configured to explicitly deny access to the OS root.
+STIG ID: WA00540 A22  Rule ID: SV-33226r1_rule  Vuln ID: V-26323
+Severity: CAT II  Class: Unclass",,"Rule Title: The web server must be configured to explicitly deny access to the OS root.
+STIG ID: WA00540 W22  Rule ID: SV-33180r1_rule  Vuln ID: V-26323
+Severity: CAT II  Class: Unclass"
+CCE-27572-7,The Allow Directive for the OS root should be configured appropriately,(1) all | hostname/IP address/environment variable,(1) Allow directive,,L1 13. Access Control Directives p21,,"Rule Title: The web server must be configured to explicitly deny access to the OS root.
+STIG ID: WA00540 A22  Rule ID: SV-33226r1_rule  Vuln ID: V-26323
+Severity: CAT II  Class: Unclass",,"Rule Title: The web server must be configured to explicitly deny access to the OS root.
+STIG ID: WA00540 W22  Rule ID: SV-33180r1_rule  Vuln ID: V-26323
+Severity: CAT II  Class: Unclass"
+CCE-27853-1,The Deny Directive for the OS root should be configured appropriately,(1) all | hostname/IP address/environment variable,(1) Deny directive,,L1 13. Access Control Directives p21,,"Rule Title: The web server must be configured to explicitly deny access to the OS root.
+STIG ID: WA00540 A22  Rule ID: SV-33226r1_rule  Vuln ID: V-26323
+Severity: CAT II  Class: Unclass",,"Rule Title: The web server must be configured to explicitly deny access to the OS root.
+STIG ID: WA00540 W22  Rule ID: SV-33180r1_rule  Vuln ID: V-26323
+Severity: CAT II  Class: Unclass"
+CCE-27982-8,"The Apache ""ExecCGI"" setting for all ""Options"" directives for the OS root should be configured appropriately.",(1) ExecCGI / -ExecCGI/ +ExecCGI / None,(1) Apache configuration file: Options directive (in OS root Directory directive),,,,"Rule Title: Web server options for the OS root must be disabled.
+STIG ID: WA00545 A22  Rule ID: SV-33213r1_rule  Vuln ID: V-26324
+Severity: CAT II  Class: Unclass",,
+CCE-28113-9,"The Apache ""FollowSymLinks"" setting for all ""Options"" directives for the OS root should be configured appropriately.",(1) FollowSymLinks / -FollowSymLinks / +FollowSymLinks / None,(1) Apache configuration file: Options directive (in OS root Directory directive),,,,"Rule Title: Web server options for the OS root must be disabled.
+STIG ID: WA00545 A22  Rule ID: SV-33213r1_rule  Vuln ID: V-26324
+Severity: CAT II  Class: Unclass",,
+CCE-28064-4,"The Apache ""Includes"" setting for all ""Options"" directives for the OS root should be configured appropriately.",(1) Includes / -Includes / +Includes / None,(1) Apache configuration file: Options directive (in OS root Directory directive),,,,"Rule Title: Web server options for the OS root must be disabled.
+STIG ID: WA00545 A22  Rule ID: SV-33213r1_rule  Vuln ID: V-26324
+Severity: CAT II  Class: Unclass",,
+CCE-28037-0,"The Apache ""IncludesNoExec"" setting for all ""Options"" directives for the OS root should be configured appropriately.",(1) IncludesNoExec / -IncludesNoExec / +IncludesNoExec / None,(1) Apache configuration file: Options directive (in OS root Directory directive),,,,"Rule Title: Web server options for the OS root must be disabled.
+STIG ID: WA00545 A22  Rule ID: SV-33213r1_rule  Vuln ID: V-26324
+Severity: CAT II  Class: Unclass",,
+CCE-27762-4,"The Apache ""Indexes"" setting for all ""Options"" directives for the OS root should be configured appropriately.",(1) Indexes / -Indexes / +Indexes / None,(1) Apache configuration file: Options directive (in OS root Directory directive),,,,"Rule Title: Web server options for the OS root must be disabled.
+STIG ID: WA00545 A22  Rule ID: SV-33213r1_rule  Vuln ID: V-26324
+Severity: CAT II  Class: Unclass",,
+CCE-28206-1,"The Apache ""MultiViews"" setting for all ""Options"" directives for the OS root should be configured appropriately.",(1) MultiViews / -MultiViews / +MultiViews / None,(1) Apache configuration file: Options directive (in OS root Directory directive),,,,"Rule Title: Web server options for the OS root must be disabled.
+STIG ID: WA00545 A22  Rule ID: SV-33213r1_rule  Vuln ID: V-26324
+Severity: CAT II  Class: Unclass",,
+CCE-27769-9,"The Apache ""SymLinksIfOwnerMatch"" setting for all ""Options"" directives for the OS root should be configured appropriately.",(1) SymLinksIfOwnerMatch / -SymLinksIfOwnerMatch / +SymLinksIfOwnerMatch / None,(1) Apache configuration file: Options directive (in OS root Directory directive),,,,"Rule Title: Web server options for the OS root must be disabled.
+STIG ID: WA00545 A22  Rule ID: SV-33213r1_rule  Vuln ID: V-26324
+Severity: CAT II  Class: Unclass",,
+CCE-27748-3,"The Apache ""TraceEnable"" directive should be configured appropriatley.",(1) on / off / extended,(1) Apache configuration file: TraceEnable directive,,,,"Rule Title: The TRACE method must be disabled.
+STIG ID: WA00550 A22  Rule ID: SV-33227r1_rule  Vuln ID: V-26325
+Severity: CAT II  Class: Unclass",,"Rule Title: The TRACE method must be disabled.
+STIG ID: WA00550 W22  Rule ID: SV-33183r1_rule  Vuln ID: V-26325
+Severity: CAT II  Class: Unclass"
+CCE-28152-7,Apache's listening IP address should be configured appropriately.,(1) IP-address,(1) Apache configuration file: Listen directive,,,,"Rule Title: The web server must be configured to listen on a specific IP address and port.
+STIG ID: WA00555 A22  Rule ID: SV-33228r1_rule  Vuln ID: V-26326
+Severity: CAT II  Class: Unclass",,"Rule Title: The web server must be configured to listen on a specific IP address and port.
+STIG ID: WA00555 W22  Rule ID: SV-33184r1_rule  Vuln ID: V-26326
+Severity: CAT II  Class: Unclass"
+CCE-27419-1,Apache's listening port should be configured appropriately.,(1) port number,(1) Apache configuration file: Listen directive,,,,"Rule Title: The web server must be configured to listen on a specific IP address and port.
+STIG ID: WA00555 A22  Rule ID: SV-33228r1_rule  Vuln ID: V-26326
+Severity: CAT II  Class: Unclass",,"Rule Title: The web server must be configured to listen on a specific IP address and port.
+STIG ID: WA00555 W22  Rule ID: SV-33184r1_rule  Vuln ID: V-26326
+Severity: CAT II  Class: Unclass"
+CCE-28163-4,The ScriptAlias for the specified directory should be configured appropriately.,"(1) url-path
+(2) TARGET: directory path",(1) Apache configuration file: ScriptAlias directive,,,,"Rule Title: The URL-path name must be set to the file path name or the directory path name.
+STIG ID: WA00560 A22  Rule ID: SV-33229r1_rule  Vuln ID: V-26327
+Severity: CAT II  Class: Unclass",,"Rule Title: The URL-path name must be set to the file path name or the directory path name.
+STIG ID: WA00560 W22  Rule ID: SV-33185r1_rule  Vuln ID: V-26327
+Severity: CAT II  Class: Unclass"
+CCE-28111-3,Automatic directory indexing should be enabled or disabled as appropriate.,(1) autoindex_module,(1) Apache configuration file: LoadModule directive,,,,"Rule Title: Automatic directory indexing must be disabled.
+STIG ID: WA00515 A22  Rule ID: SV-33219r1_rule  Vuln ID: V-26368
+Severity: CAT II  Class: Unclass",,"Rule Title: Automatic directory indexing must be disabled.
+STIG ID: WA00515 W20  Rule ID: SV-36620r1_rule  Vuln ID: V-26368
+Severity: CAT II  Class: Unclass"
+CCE-28070-1,The Apache AllowOverride Directive should be configured appropriately for operating system root directories.,(1) AuthConfig / FileInfo / Indexes / Limit / Options / All / None,(1) Apache configuration file: AllowOverride directive,,L1 15. Directory Functionality/Features Directives p24,,"Rule Title: The ability to override the access configuration for the OS root directory must be disabled.
+STIG ID: WA00547 A22  Rule ID: SV-33232r1_rule  Vuln ID: V-26393
+Severity: CAT II  Class: Unclass",,"Rule Title: The ability to override the access configuration for the OS root directory must be disabled.
+STIG ID: WA00547 W22  Rule ID: SV-33237r1_rule  Vuln ID: V-26393
+Severity: CAT II  Class: Unclass"
+CCE-28091-7,Permitted HTTP request methods should be configured appropriately.,"(1) methods
+(2) access control directives",(1) Apache configuration file: LimitExecpt directive,,L1 16. Limiting HTTP Request Methods p25,,"Rule Title: HTTP request methods must be limited.
+STIG ID: WA00565 A22  Rule ID: SV-33236r1_rule  Vuln ID: V-26396
+Severity: CAT II  Class: Unclass",,"Rule Title: HTTP request methods must be limited.
+STIG ID: WA00565 W22  Rule ID: SV-33238r1_rule  Vuln ID: V-26396
+Severity: CAT II  Class: Unclass"
+CCE-28033-9,Anonymous sharing of Apache's web content directories should be configured appropriately.,(1) Set of shares,"(1) HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters\NullSessionShares 
+(2) defined by Local or Group Policy",,,,,"Rule Title: Web content directories must not be anonymously shared.
+STIG ID: WG210 W22  Rule ID: SV-33109r1_rule  Vuln ID: V-2226
+Severity: CAT II  Class: Unclass",
+CCE-28007-3,The maximum password age setting for Apache's service account should be configured appropriately.,(1) number of days,(1) defined by Local or Group Policy  ,,,,,,"Rule Title: The service account used to run the web service must have its password changed at least    annually.
+STIG ID: WG060 W22  Rule ID: SV-36489r1_rule  Vuln ID: V-2235
+Severity: CAT II  Class: Unclass"
+CCE-27628-7,Access to Apache's httpd.conf file should be configured appropriately.,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by (ServerRoot)\conf\httpd.conf's DACL  ,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,,,"Rule Title: Web administration tools must be restricted to the web manager and the web manager’s designees.
+STIG ID: WG220 W22  Rule ID: SV-33072r1_rule  Vuln ID: V-2248
+Severity: CAT II  Class: Unclass"
+CCE-27412-6,The Windows permissions for all files specified by CustomLog directives should be configured appropriately,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by the object's DACL  ,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,,"Rule Title: Log file access must be restricted to System Administrators, Web Administrators or Auditors.
+STIG ID: WG250 W22  Rule ID: SV-33135r1_rule  Vuln ID: V-2252
+Severity: CAT II  Class: Unclass",
+CCE-28042-0,The Windows permissions for all files specified by ErrorLog directives should be configured appropriately,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by the object's DACL  ,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,,"Rule Title: Log file access must be restricted to System Administrators, Web Administrators or Auditors.
+STIG ID: WG250 W22  Rule ID: SV-33135r1_rule  Vuln ID: V-2252
+Severity: CAT II  Class: Unclass",
+CCE-27990-1,The Windows permissions of Apache's htpasswd.exe file(s) should be configured appropriately.,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by the object's DACL  ,,,,,,"Rule Title: The web server’s htpasswd files (if present) must reflect proper ownership and permissions.
+STIG ID: WG270 W22  Rule ID: SV-36561r1_rule  Vuln ID: V-2255
+Severity: CAT II  Class: Unclass"
+CCE-28114-7,The Windows permissions for all directories specified by ScriptAlias directives should be configured appropriately.,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by the object's DACL  ,,,,,"Rule Title: The web client account access to the content and scripts directories must be limited to read and execute.
+STIG ID: WG290 W22  Rule ID: SV-33136r1_rule  Vuln ID: V-2258
+Severity: CAT I  Class: Unclass",
+CCE-27605-5,The Windows permissions for all directories specified by ScriptAliasMatch directives should be configured appropriately.,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by the object's DACL  ,,,,,"Rule Title: The web client account access to the content and scripts directories must be limited to read and execute.
+STIG ID: WG290 W22  Rule ID: SV-33136r1_rule  Vuln ID: V-2258
+Severity: CAT I  Class: Unclass",
+CCE-27226-0,The Windows permissions for all directories specified by DocumentRoot directives should be configured appropriately.,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by the object's DACL  ,,,,,"Rule Title: The web client account access to the content and scripts directories must be limited to read and execute.
+STIG ID: WG290 W22  Rule ID: SV-33136r1_rule  Vuln ID: V-2258
+Severity: CAT I  Class: Unclass",
+CCE-27575-0,The Windows permissions for all directories specified by Alias directives should be configured appropriately.,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by the object's DACL  ,,,,,"Rule Title: The web client account access to the content and scripts directories must be limited to read and execute.
+STIG ID: WG290 W22  Rule ID: SV-33136r1_rule  Vuln ID: V-2258
+Severity: CAT I  Class: Unclass",
+CCE-28134-5,The Windows permissions for all directories specified by ServerRoot directives should be configred appropriately,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by the object's DACL  ,,,,,,"Rule Title: Web server system files must conform to minimum file permission requirements.
+STIG ID: WG300 W22  Rule ID: SV-33078r1_rule  Vuln ID: V-2259
+Severity: CAT II  Class: Unclass"
+CCE-27271-6,The Windows permissions of Apache's /config directory should be configred appropriately,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by the object's DACL  ,,,,,,"Rule Title: Web server system files must conform to minimum file permission requirements.
+STIG ID: WG300 W22  Rule ID: SV-33078r1_rule  Vuln ID: V-2259
+Severity: CAT II  Class: Unclass"
+CCE-28147-7,The Windows permissions of Apache's /bin directory should be configred appropriately,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by the object's DACL  ,,,,,,"Rule Title: Web server system files must conform to minimum file permission requirements.
+STIG ID: WG300 W22  Rule ID: SV-33078r1_rule  Vuln ID: V-2259
+Severity: CAT II  Class: Unclass"
+CCE-28005-7,The Windows permissions of Apache's /logs directory should be configred appropriately,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by the object's DACL  ,,,,,,"Rule Title: Web server system files must conform to minimum file permission requirements.
+STIG ID: WG300 W22  Rule ID: SV-33078r1_rule  Vuln ID: V-2259
+Severity: CAT II  Class: Unclass"
+CCE-28188-1,The Windows permissions of Apache's /htdocs directory should be configred appropriately,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by the object's DACL  ,,,,,,"Rule Title: Web server system files must conform to minimum file permission requirements.
+STIG ID: WG300 W22  Rule ID: SV-33078r1_rule  Vuln ID: V-2259
+Severity: CAT II  Class: Unclass"
+CCE-28195-6,The requried permssions for the file %SystemRoot%\System32\wscript.exe should be assigned.,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by the %SystemRoot%\System32\wscript.exe DACL  ,,,,,,"Rule Title: Wscript.exe and Cscript.exe must only be accessible by the SA and/or the web administrator.
+STIG ID: WG470 W22  Rule ID: SV-33095r1_rule  Vuln ID: V-2264
+Severity: CAT II  Class: Unclass"
+CCE-28056-0,The required permissions for the file %SystemRoot%\System32\cscript.exe should be assigned,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by the %SystemRoot%\System32\cscript.exe DACL  ,,,,,,"Rule Title: Wscript.exe and Cscript.exe must only be accessible by the SA and/or the web administrator.
+STIG ID: WG470 W22  Rule ID: SV-33095r1_rule  Vuln ID: V-2264
+Severity: CAT II  Class: Unclass"
+CCE-27816-8,The Apache web server be run with the appropriate privileges.,(1) Account type: ( privileged / non privileged ),(1) My Computer / Manage / Configuration / Local Users and Groups / <account name>,,,,,,"Rule Title: The web server, although started by superuser or privileged account, must run using a non-privileged account.
+STIG ID: WG275 W22  Rule ID: SV-36607r1_rule  Vuln ID: V-13619
+Severity: CAT II  Class: Unclass"
+CCE-27732-7,Apache's process ID (PID) file's Windows permissions should be configured appropriately. ,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by the object's DACL  ,,,,,,"Rule Title: The process ID (PID) file must be properly secured.
+STIG ID: WA00530 W22  Rule ID: SV-33177r1_rule  Vuln ID: V-26305
+Severity: CAT II  Class: Unclass"
+CCE-27466-2,Apache's Scoreboard file's Windows permissions should be configured appropriately.,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by the object's DACL  ,,,,,,"Rule Title: The ScoreBoard file must be properly secured.
+STIG ID: WA00535 W22  Rule ID: SV-33178r1_rule  Vuln ID: V-26322
+Severity: CAT II  Class: Unclass"
+CCE-28229-3,The location of the Apache htpasswd file should be set correctly.,(1) directory path,(1) Directory of htpasswd file,,L1 14. Authentication Mechanisms p22,,,,
+CCE-27438-1,The Apache User directive should be set correctly.,(1) user name,(1) Apache configuration file: User directive,,L1 8. User Oriented General Directives p13,,,,
+CCE-28235-0,The Apache Group directive should be set correctly.,(1) group name,(1) Apache configuration file: Group directive,,L1 8. User Oriented General Directives p14,,,,
+CCE-27975-2,The Apache Server Administrator email address should be set correctly.,(1) email address,(1) 'ServerAdmin' line in Apache configuration file,,L1 8. User Oriented General Directives p14,,,,
+CCE-27783-0,The Apache ServerSignature directive should be set appropriately.,(1) On/Off/EMail,(1) Apache configuration file: ServerSignature directive,,L1 11. Web Server Software Obfuscation General Directives p17,,,,
+CCE-27765-7,The Apache runtime rewriting engine should be enabled or disabled as appropriate.,(1) off/on,(1) Apache configuration file: RewriteEngine directive,,L1 21. Deny HTTP TRACE Requests with Mod_Rewrite p33,,,,
+CCE-28057-8,The Apache ErrorDocument directive should be set correctly for HTTP 400 errors.,(1) message/document,(1) Apache configuration file: 'ErrorDocument 400' directive,,L1 11. Web Server Software Obfuscation General Directives p17,,,,
+CCE-27894-5,The ApacheErrorDocument directive should be set correctly for HTTP 401 errors.,(1) message/document,(1) Apache configuration file: 'ErrorDocument 401' directive,,L1 11. Web Server Software Obfuscation General Directives p17,,,,
+CCE-27953-9,The ApacheErrorDocument directive should be set correctly for HTTP 403 errors.,(1) message/document,(1) Apache configuration file: 'ErrorDocument 403' directive,,L1 11. Web Server Software Obfuscation General Directives p17,,,,
+CCE-27454-8,The ApacheErrorDocument directive should be set correctly for HTTP 404 errors.,(1) message/document,(1) Apache configuration file: 'ErrorDocument 404' directive,,L1 11. Web Server Software Obfuscation General Directives p17,,,,
+CCE-27927-3,The ApacheErrorDocument directive should be set correctly for HTTP 405 errors.,(1) message/document,(1) Apache configuration file: 'ErrorDocument 405' directive,,L1 11. Web Server Software Obfuscation General Directives p17,,,,
+CCE-27530-5,The ApacheErrorDocument directive should be set correctly for HTTP 500 errors.,(1) message/document,(1) Apache configuration file: 'ErrorDocument 500' directive,,L1 11. Web Server Software Obfuscation General Directives p17,,,,
+CCE-28220-2,The Apache user account should be locked or unlocked as appropriate.,(1) locked/unlocked,(1) via /etc/passwd,,L1 5. Lock Down the Apache Web User Account p11,,,,
+CCE-28191-5,The Apache user account should be allowed root privileges as appropriate.,(1) allowed/not allowed,(1) via /etc/passwd,,L1 4. Create the Apache Web User Account p11,,,,
+CCE-28003-2,The group membership of the Apache user account should be set correctly.,(1) group,(1) via /etc/group,,L1 4. Create the Apache Web User Account p11,,,,
+CCE-28224-4,The ownership of the Apache /etc/httpd/conf/passwd file should be set correctly.,(1) owner,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,,,
+CCE-28002-4,The group membership of the Apache /etc/httpd/conf/passwd file should be set correctly.,(1) group,(1) via chgrp,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,,,
+CCE-28159-2,The permissions for the Apache /etc/httpd/conf/passwd file should be set correctly.,(1) permissions,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,,,
+CCE-28024-8,The ownership of the Apache /var/www/html file should be set correctly.,(1) owner,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,,,
+CCE-28259-0,The group membership of the Apache /var/www/html file should be set correctly.,(1) group,(1) via chgrp,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,,,
+CCE-27834-1,The permissions for the Apache/var/www/html file should be set correctly.,(1) permissions,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,,,
+CCE-28187-3,The ownership of log files in Apache /var/log/httpd/ should be set correctly.,(1) owner,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,,,
+CCE-28151-9,The group membership of any Apache files in /var/log/httpd/ should be set correctly.,(1) group,(1) via chgrp,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,,,
+CCE-27645-1,The permissions of any Apache files in /var/log/httpd/ should be set correctly.,(1) permissions,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,,,
+CCE-28132-9,The ownership of the Apache /etc/httpd/conf.d file should be set correctly.,(1) owner,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,,,
+CCE-28249-1,The group membership of the Apache /etc/httpd/conf.d file should be set correctly.,(1) group,(1) via chgrp,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,,,
+CCE-27281-5,The permissions for the Apache /etc/httpd/conf.d file should be set correctly.,(1) permissions,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,,,
+CCE-27346-6,The ownership of the Apache /usr/sbin/httpd file should be set correctly. ,(1) owner,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,,,
+CCE-27945-5,The group membership of the Apache /usr/sbin/httpd file should be set correctly. ,(1) group,(1) via chgrp,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,,,
+CCE-28210-3,The permissions for the Apache /usr/sbin/httpd file should be set correctly. ,(1) permissions,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,,,
+CCE-28211-1,The ownership of the Apache /usr/sbin/apachectl file should be set correctly.,(1) owner,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,,,
+CCE-28157-6,The group membership of the Apache /usr/sbin/apachectl file should be set correctly.,(1) group,(1) via chgrp,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,,,
+CCE-28230-1,The permissions for the Apache /usr/sbin/apachectl file should be set correctly.,(1) permissions,(1) via chown,,L1 19. Updating Ownership and Permissions for Enhanced Security p27,,,,
+CCE-28173-3,The Allow directive for the specified Directory directive should be configured appropriately.,(1) all | hostname/IP address/environment variable,(1) Allow directive,,L1 13. Access Control Directives p21,,,,
+CCE-28263-2,The Deny directive for the specified Directory directive should be configured appropriately.,(1) all | hostname/IP address/environment variable,(1) Deny directive,,L1 13. Access Control Directives p21,,,,
+CCE-28260-8,"The ""FollowSymLinks"" setting of the DocumentRoot should be enabled or disabled as appropriate.",(1) FollowSymLinks / -FollowSymLinks / +FollowSymLinks / None,(1) Apache configuration file: Options directive (in DocumentRoot Directory directive),,L1 15. Directory Functionality/Features Directives p23,,,,
+CCE-27653-5,"The""Includes"" setting of the DocumentRoot should be enabled or disabled as appropriate. ",(1) Includes / -Includes / +Includes / None,(1) Apache configuration file: Options directive (in DocumentRoot Directory directive),,L1 15. Directory Functionality/Features Directives p24,,,,
+CCE-28080-0,"The ""IncludesNOEXEC"" setting of the DocumentRoot should be enabled or disabled as appropriate.",(1) IncludesNoExec / -IncludesNoExec / +IncludesNoExec / None,(1) Apache configuration file: Options directive (in DocumentRoot Directory directive),,L1 15. Directory Functionality/Features Directives p24,,,,
+CCE-28165-9,"The ""Indexes"" setting of the DocumentRoot should be enabled or disabled as appropriate.",(1) Indexes / -Indexes / +Indexes / None,(1) Apache configuration file: Options directive (in DocumentRoot Directory directive),,L1 15. Directory Functionality/Features Directives p24,,,,
+CCE-28252-5,"The""MultiViews"" setting of the DocumentRoot should be enabled or disabled as appropriate.",(1) MultiViews / -MultiViews / +MultiViews / None,(1) Apache configuration file: Options directive (in DocumentRoot Directory directive),,L1 15. Directory Functionality/Features Directives p24-25,,,,
+CCE-28045-3,testcgi should be installed as appropriate.,(1) exist/not exist,(1) cgi-script directory,,L1 18. Remove Default/Unneeded Apache Files p27,,,,

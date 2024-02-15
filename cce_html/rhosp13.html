@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>CCE Lists</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href='../css/basic.css' type='text/css' rel='stylesheet' />
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>CCE ID v5</th>
+      <th>CCE Title</th>
+      <th>USGCB Setting</th>
+      <th>Technical Mechanism</th>
+      <th>Configuration Details</th>
+      <th>Rationale</th>
+      <th>Impact</th>
+      <th>800-53 Mapping</th>
+      <th>National Information Assurance Partnership Operating System Protection Profile</th>
+      <th>Center for Internet Security</th>
+      <th>Defense Information Systems Agency Security Security Requirements Guide</th>
+      <th>Configuration Group</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CCE-82165-2</td>
+      <td>Cross-Site Request Forgery Prevention: Enable CSRF_COOKIE_SECURE (non-containerized deployments)</td>
+      <td>enable</td>
+      <td>via CSRF_COOKIE_SECURE</td>
+      <td>Usage of a secure cookie for the CSRF cookie is determined by the CSRF_COOKIE_SECURE parameter. When Red Hat OpenStack Platform is deployed as non-containerized services, this configuration setting is configured in the /etc/openstack-dashboard/local_settings file.  The CSRF_COOKIE_SECURE option must be set to True:  CSRF_COOKIE_SECURE True  When CSRF_COOKIE_SECURE is set to True, the cookie will be marked as &#34;secure,&#34; which means web browsers may ensure that the cookie is only sent with an HTTPS connection.</td>
+      <td>CSRF (Cross-site request forgery) is an attack which forces an end user to execute unauthorized commands on a web application in which he/she is currently authenticated. A successful CSRF exploit can compromise end user data and operations in case of normal user. If the targeted end user has admin privileges, this can compromise the entire web application.</td>
+      <td>high</td>
+      <td>SC-5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Horizon STIG Checklist</td>
+    </tr>
+    <tr>
+      <td>CCE-82166-0</td>
+      <td>Cross-Site Request Forgery Prevention: Enable CSRF_COOKIE_SECURE (containerized deployments)</td>
+      <td>enable</td>
+      <td>via CSRF_COOKIE_SECURE</td>
+      <td>Usage of a secure cookie for the CSRF cookie is determined by the CSRF_COOKIE_SECURE parameter. When Red Hat OpenStack Platform is deployed as containerized services, this configuration setting is configured in the /var/lib/config-data/puppet-generated/horizon/etc/openstack-dashboard/local_settings file.  The CSRF_COOKIE_SECURE option must be set to True:  CSRF_COOKIE_SECURE True  When CSRF_COOKIE_SECURE is set to True, the cookie will be marked as &#34;secure,&#34; which means web browsers may ensure that the cookie is only sent with an HTTPS connection.</td>
+      <td>CSRF (Cross-site request forgery) is an attack which forces an end user to execute unauthorized commands on a web application in which he/she is currently authenticated. A successful CSRF exploit can compromise end user data and operations in case of normal user. If the targeted end user has admin privileges, this can compromise the entire web application.</td>
+      <td>high</td>
+      <td>SC-5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Horizon Configuration Checklist</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

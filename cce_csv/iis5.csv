@@ -1,0 +1,263 @@
+Unnamed: 0,Last modfied: 2013-02-11,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6
+,Version: 5.20130214,,,,,
+CCE ID,CCE Description,CCE Parameters,CCE Technical Mechanisms,,"Guide to the Secure Configuration
+and Administration of Microsoft
+Internet Information Services 5.0",Microsoft Online Documentation
+CCE-19747-5,The path of the IIS Web Root folder should be configured correctly.,(1) local path,(1)  Internet Information Services (IIS) Manager GUI: Server > Right Click on the specified website > Properties > Home Directory tab,,"Chapter 1 Internet Information Services Installation
+The Default Install Directory pg 12",
+CCE-19709-5,The IIS Web Root directory should be named appropriately.,(1) directory name,(1) Internet Information Services (IIS) Manager GUI: Server > Right Click on the desired website > Properties > Home Directory tab,,"Chapter 1 Internet Information Services Installation
+The Default Install Directory pg 12",
+CCE-19914-1,Individual IP addresses should be configured as appropriate for the specified websites.,"(1) TARGET: website
+(2) IP address",(1) Internet Information Services (IIS) Manager GUI: Server > Right Click on the specified website > Properties > Server > Web Site Identification > IP address,,,http://support.microsoft.com/kb/323972
+CCE-19994-3,The specified websites should be configured to use the appropriate network interfaces.,"(1) TARGET: website
+(2) exist/not exist",(1) Internet Information Services (IIS) Manager GUI: Server > Right Click on the specified website > Properties > Server > Web Site Identification > All Unassigned,,"Chapter 3 Services Installation and Administration
+World Wide Web (WWW) Services pg 39",
+CCE-19736-8,"The master home directory ""Enable Logging"" setting should be enabled or disabled as appropriate.",(1) enabled/disabled,(1) Internet Information Services (IIS) Manager GUI: Right Click on Server > Properties > Server > Enable Logging,,"Chapter 2 Internet Services Manager – Master Properties
+Master Properties
+WWW Service pg 23-24",
+CCE-19368-0,"The master home directory ""Read"" permission should be enabled or disabled as appropriate.",(1) enabled/disabled,(1) Internet Information Services (IIS) Manager GUI: Right Click on Server > Properties > Home Directory tab > Read,,"Chapter 2 Internet Services Manager – Master Properties
+Master Properties
+WWW Service pg 23-24",
+CCE-19642-8,"The master home directory ""Write"" permission should be enabled or disabled as appropriate.",(1) enabled/disabled,(1) Internet Information Services (IIS) Manager GUI: Right Click on Server > Properties > Home Directory tab > Write,,"Chapter 2 Internet Services Manager – Master Properties
+Master Properties
+WWW Service pg 23-24",
+CCE-19739-2,"The master home directory ""Script Source Access"" permission should be enabled or disabled as appropriate.",(1) enabled/disabled,(1) Internet Information Services (IIS) Manager GUI: Right Click on Server > Properties > Home Directory tab > Script Source,,"Chapter 2 Internet Services Manager – Master Properties
+Master Properties
+WWW Service pg 23-24",
+CCE-19996-8,"The master home directory ""Directory Browsing"" permission should be enabled or disabled as appropriate.",(1) enabled/disabled,(1) Internet Information Services (IIS) Manager GUI: Right Click on Server > Properties > Home Directory tab > Directory Browsing,,"Chapter 2 Internet Services Manager – Master Properties
+Master Properties
+WWW Service pg 23-24",
+CCE-19252-6,"The master home directory ""Log Visits"" permission should be enabled or disabled as appropriate.",(1) enabled/disabled,(1) Internet Information Services (IIS) Manager GUI: Right Click on Server > Properties > Home Directory tab > Log Visits,,"Chapter 2 Internet Services Manager – Master Properties
+Master Properties
+WWW Service pg 23-24",
+CCE-19993-5,"The master home directory ""Index this resource"" permission should be enabled or disabled as appropriate.",(1) none/scripts/scripts&executables,(1) Internet Information Services (IIS) Manager GUI: Right Click on Server > Properties > Home Directory tab > Index this resource,,"Chapter 2 Internet Services Manager – Master Properties
+Master Properties
+WWW Service pg 23-24",
+CCE-19726-9,"The master home directory ""Execute Permissions"" permission should be enabled or disabled as appropriate.",(1) enabled/disabled,(1) Internet Information Services (IIS) Manager GUI: Right Click on Server > Properties > Home Directory tab > Execute Permissions,,"Chapter 2 Internet Services Manager – Master Properties
+Master Properties
+WWW Service pg 23-24",
+CCE-19728-5,"The master home directory ""Anonymous Access"" permission for IIS websites should be enabled or disabled as appropriate.",(1) enabled/disabled,(1) Internet Information Services (IIS) Manager GUI: Right Click on Server > Properties > Directory Security > Authentication and Access Control tab > Anonymous Access,,"Chapter 2 Internet Services Manager – Master Properties
+Master Properties
+WWW Service pg 24",
+CCE-19795-4,"The master home directory ""Basic Authentication"" setting should be enabled or disabled.",(1) enabled/disabled,(1) Internet Information Services (IIS) Manager GUI: Right Click on Server > Properties > Directory Security > Authentication and Access Control tab > Authenticated Access,,"Chapter 2 Internet Services Manager – Master Properties
+Master Properties
+WWW Service pg 24",
+CCE-19973-7,"The master home directory ""Integrated Windows Authentication"" setting should be enabled or disabled.",(1) enabled/disabled,(1) Internet Information Services (IIS) Manager GUI: Right Click on Server > Properties > Directory Security > Authentication and Access Control tab > Authenticated Access,,"Chapter 2 Internet Services Manager – Master Properties
+Master Properties
+WWW Service pg 25",
+CCE-19952-1,"The ""Enable Logging"" setting should be enabled or disabled for the specified web server","(1) TARGET: server
+(2) enabled/disabled",(1) Internet Information Services (IIS) Manager GUI: Server > Right Click on the specified website > Properties > Server > Enable Logging,,"Chapter 3 Services Installation and Administration
+Summary of Web Server Configuration Issues pg 39",
+CCE-19921-6,"The ""Read"" permission should be enabled or disabled as appropriate for the home directory of the specified websites.","(1) TARGET: website
+(2) enabled/disabled",(1) Internet Information Services (IIS) Manager GUI: Right Click on the specified website > Properties > Home Directory tab > Read,,"Chapter 3 Services Installation and Administration
+World Wide Web (WWW) Services pg 41-42",
+CCE-19724-4,"The ""Write"" privilege  should be enabled or disabled as appropriate for the home directory of the specified websites.","(1) TARGET: website
+(2) enabled/disabled",(1) Internet Information Services (IIS) Manager GUI: Server > Right Click on the specified website > Properties > Home Directory tab > Write,,"Chapter 3 Services Installation and Administration
+World Wide Web (WWW) Services pg 41-42",
+CCE-19920-8,"The ""Script Source Access"" permission should be enabled or disabled as appropriate for the home directory of the specified websites.","(1) TARGET: website
+(2) enabled/disabled",(1) Internet Information Services (IIS) Manager GUI: Right Click on Server > Properties > Home Directory tab > Script Source,,"Chapter 3 Services Installation and Administration
+World Wide Web (WWW) Services pg 41-42",
+CCE-20027-9,"The ""Directory Browsing"" permission should be enabled or disabled as appropriate for the home directory of the specified websites.","(1) TARGET: website
+(2) enabled/disabled",(1) Internet Information Services (IIS) Manager GUI: Server > Right Click on the specified website > Properties > Home Directory tab > Directory Browsing,,"Chapter 3 Services Installation and Administration
+World Wide Web (WWW) Services pg 41-42",
+CCE-19889-5,"The""Log Visits"" permission should be enabled or disabled as appropriate for the home directory of the specified websites.","(1) TARGET: website
+(2) enabled/disabled",(1) Internet Information Services (IIS) Manager GUI: Server > Right Click on the specified website > Properties > Home Directory tab > Log Visits,,"Chapter 3 Services Installation and Administration
+World Wide Web (WWW) Services pg 41-42",
+CCE-19701-2,"The  ""Index this resource"" permission should be enabled or disabled as appropriate for the home directory of the specified websites.","(1) TARGET: website
+(2) enabled/disabled",(1) Internet Information Services (IIS) Manager GUI: Server > Right Click on the specified website > Properties > Home Directory tab > Index this resource,,,http://technet.microsoft.com/en-us/library/bb742408.aspx
+CCE-19841-6,"The ""Execute Permissions"" permission should be set correctly for the specified websites.","(1) TARGET: website
+(2) none/scripts/scripts&executables",(1) Internet Information Services (IIS) Manager GUI: Server > Right Click on the specified website > Properties > Home Directory tab > Execute Permissions,,"Chapter 3 Services Installation and Administration
+World Wide Web (WWW) Services pg 42",
+CCE-19900-0,"The  ""Anonymous Access"" permission should be enabled or disabled as appropriate for the home directory of the specified websites.","(1) TARGET: website
+(2) enabled/disabled",(1) Internet Information Services (IIS) Manager GUI: Server > Right Click on the specified website > Properties > Directory Security > Authentication and Access Control tab > Anonymous Access,,"Chapter 3 Services Installation and Administration
+World Wide Web (WWW) Services pg 46",
+CCE-19570-1,Basic Authentication should be enabled or disabled as appropriate for the specified websites.,"(1) TARGET: website
+(2) enabled/disabled",(1) Internet Information Services (IIS) Manager GUI: Right Click on Server > Properties > Directory Security > Authentication and Access Control tab > Authenticated Access,,"Chapter 2 Internet Services Manager – Master Properties
+Master Properties
+WWW Service pg 23",
+CCE-19474-6,Integrated Windows Authentication should be enabled or disabled as appropriate the specified websites.,"(1) TARGET: website
+(2) enabled/disabled",(1) Internet Information Services (IIS) Manager GUI: Server > Right Click on the specified website > Properties > Directory Security > Authentication and Access Control tab > Authenticated Access,,"Chapter 2 Internet Services Manager – Master Properties
+Master Properties
+WWW Service pg 23",
+CCE-19851-5,The WWW service Special Characters In Shells setting should be enabled or disabled as appropriate.,(1) enabled/disabled,(1) HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC\Parameters\AllowSpecialCharsInShell,,,http://msdn.microsoft.com/ja-jp/library/aa711451.aspx
+CCE-19906-7,IIS WWW service SSL error logging should be enabled or disabled as appropriate.,(1) enabled/disabled,(1) HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\Schannel\EventLogging,,,http://support.microsoft.com/kb/260729
+CCE-19604-8,The RDSServer.DataFactory object should be enable or disabeld as appropriate.,(1) exist/not exist,"(1) HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC\Parameters\ADCLaunch\RDSServer.Factory
+",,,http://technet.microsoft.com/en-us/security/bulletin/fq99-025
+CCE-19568-5,The AdvancedDataFactory object should be enable or disabeld as appropriate.,(1) exist/not exist,"(1) HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC\Parameters\ADCLaunch\AdvancedDataFactory
+",,,http://technet.microsoft.com/en-us/security/bulletin/fq99-025
+CCE-19441-5,The VbBusObj.VbBusObjCls object should be enable or disabeld as appropriate.,(1) exist/not exist,"(1) 
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC\Parameters\ADCLaunch\VbBusObj.VbBusObjCls",,,http://technet.microsoft.com/en-us/security/bulletin/fq99-025
+CCE-19584-2,The '.printer' extension mapping should be configured as appropriate.,(1) exist/not exist,(1) Internet Information Service Manager > Server > Right Click on the specified website > Properties > Home Directory tab > Configuration button > App Mappings tab ,,"Chapter 4 Additional Security Services
+Script Mappings pg 76",
+CCE-20007-1,The '.htw' extension mapping should be configured as appropriate.,(1) exist/not exist,(1) Internet Information Service Manager > Server > Right Click on the specified website > Properties > Home Directory tab > Configuration button > App Mappings tab ,,"Chapter 4 Additional Security Services
+Script Mappings pg 76",
+CCE-19051-2,The '.ida' extension mapping should be configured as appropriate.,(1) exist/not exist,(1) Internet Information Service Manager > Server > Right Click on the specified website > Properties > Home Directory tab > Configuration button > App Mappings tab ,,"Chapter 4 Additional Security Services
+Script Mappings pg 76",
+CCE-19075-1,The '.idq' extension mapping should be configured as appropriate.,(1) exist/not exist,(1) Internet Information Service Manager > Server > Right Click on the specified website > Properties > Home Directory tab > Configuration button > App Mappings tab ,,"Chapter 4 Additional Security Services
+Script Mappings pg 76",
+CCE-20047-7,The '.idc' extension mapping should be configured as appropriate.,(1) exist/not exist,(1) Internet Information Service Manager > Server > Right Click on the specified website > Properties > Home Directory tab > Configuration button > App Mappings tab ,,"Chapter 4 Additional Security Services
+Script Mappings pg 76",
+CCE-19367-2,The '.shtm' extension mapping should be configured as appropriate.,(1) exist/not exist,(1) Internet Information Service Manager > Server > Right Click on the specified website > Properties > Home Directory tab > Configuration button > App Mappings tab ,,"Chapter 4 Additional Security Services
+Script Mappings pg 76",
+CCE-19760-8,The '.stm' extension mapping should be configured as appropriate.,(1) exist/not exist,(1) Internet Information Service Manager > Server > Right Click on the specified website > Properties > Home Directory tab > Configuration button > App Mappings tab ,,"Chapter 4 Additional Security Services
+Script Mappings pg 76",
+CCE-19668-3,The '.shtml' extension mapping should be configured as appropriate.,(1) exist/not exist,(1) Internet Information Service Manager > Server > Right Click on the specified website > Properties > Home Directory tab > Configuration button > App Mappings tab ,,"Chapter 4 Additional Security Services
+Script Mappings pg 76",
+CCE-19992-7,Relative path traversal should be enabled or disabled as appropriate for the specified websites.,"(1) TARGET: webiste
+(2) enabled/disabled",(1) Internet Information Service Manager > Server > Right Click on the specified website > Properties > Home Directory tab > Configuration button > Enable Parent Paths,,"Chapter 3 Services Installation and Administration
+World Wide Web (WWW) Services pg 43",
+CCE-19918-2,The startup type of the IIS Admin (IISAdmin) service should be correct.,(1) automatic/manual/disabled,"(1) defined by the Services Administrative Tool 
+(2) definied by Group Policy
+(3) HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IISADMIN\Start   ",,"Chapter 1 Internet Information Services Installation
+IIS Services pg 15",
+CCE-19586-7,Permissions on the \Inetpub directory should be set appropriately.,(1) set of accounts (2) list of permissions (3) applicability,"(1) 
+defined by the object's DACL",,"Chapter 1 Internet Information Services Installation
+IIS Services pg 15",
+CCE-19957-0,Permissions on the %SystemDirectory%\inetsrv directory should be set appropriately.,(1) set of accounts (2) list of permissions (3) applicability,"(1) 
+defined by the object's DACL",,"Chapter 1 Internet Information Services Installation
+The Default Install Directory pg 11",
+CCE-19834-1,Permissions on  %SystemDirectory%\inetsrv\asp.dll should be set appropriately.,(1) set of accounts (2) list of permissions (3) applicability,"(1) 
+defined by the object's DACL",,"Chapter 1 Internet Information Services Installation
+The Default Install Directory
+Table 1 Permission Settings pg 12",
+CCE-19743-4,"Permissions on the Web Root ""Images"" directory should be set appropriately.",(1) set of accounts (2) list of permissions (3) applicability,"(1) 
+defined by the object's DACL",,"Chapter 1 Internet Information Services Installation
+The Default Install Directory
+Table 1 Permission Settings pg 12",
+CCE-19874-7,"Permissions on the Web Root ""scripts"" directory should be set appropriately.",(1) set of accounts (2) list of permissions (3) applicability,"(1) 
+defined by the object's DACL",,"Chapter 1 Internet Information Services Installation
+The Default Install Directory
+Table 1 Permission Settings pg 12",
+CCE-19812-7,"Permissions on the Web Root ""executables"" directory should be set appropriately.",(1) set of accounts (2) list of permissions (3) applicability,"(1) 
+defined by the object's DACL",,"Chapter 1 Internet Information Services Installation
+The Default Install Directory
+Table 1 Permission Settings pg 12",
+CCE-19693-1,"Permissions on the Web Root ""docs"" directory should be set appropriately.",(1) set of accounts (2) list of permissions (3) applicability,"(1) 
+defined by the object's DACL",,"Chapter 1 Internet Information Services Installation
+The Default Install Directory
+Table 1 Permission Settings pg 12",
+CCE-19953-9,"Permissions on the Web Root ""home"" directory should be set appropriately.",(1) set of accounts (2) list of permissions (3) applicability,"(1) 
+defined by the object's DACL",,"Chapter 1 Internet Information Services Installation
+The Default Install Directory
+Table 1 Permission Settings pg 12",
+CCE-19755-8,"Permissions on the Web Root ""include"" directory should be set appropriately.",(1) set of accounts (2) list of permissions (3) applicability,"(1) 
+defined by the object's DACL",,"Chapter 1 Internet Information Services Installation
+The Default Install Directory
+Table 1 Permission Settings pg 12",
+CCE-19925-7,Permissions on the Web Root directory should be set appropriately.,(1) set of accounts (2) list of permissions (3) applicability,"(1) 
+defined by the object's DACL",,"Chapter 1 Internet Information Services Installation
+The Default Install Directory
+Table 1 Permission Settings pg 12",
+CCE-19849-9,Permissions on the default Logfiles directory should be set appropriately.,(1) set of accounts (2) list of permissions (3) applicability,"(1) 
+defined by the object's DACL",,"Chapter 4 Additional Security Services
+Auditing pg 70",
+CCE-19870-5,The file auditing for the directory \%SystemRoot%\System32\Inetsrv should be configured appropriately., (1) set of accounts (2) events to  audit (3) applicability, (1) defined by the object's SACL ,,"Chapter 4 Additional Security Services
+Auditing pg 70",
+CCE-19777-2,The file auditing for the Inetpub directory should be configured appropriately., (1) set of accounts (2) events to  audit (3) applicability, (1) defined by the object's SACL ,,"Chapter 4 Additional Security Services
+Auditing pg 70",
+CCE-19247-6,The file auditing for the directory Web Root should be configured appropriately., (1) set of accounts (2) events to  audit (3) applicability, (1) defined by the object's SACL ,,"Chapter 4 Additional Security Services
+Auditing pg 70",
+CCE-19757-4,HTTP protocol logging should be enabled or disabled as appropriate for the specified websites. ,"(1) TARGET: website
+(2) enabled/disabled",(1) Internet Information Service Manager > Server > Right Click on the specified website > Properties > Website Tab > W3C Extended Log File Format > Properties > Extended Properties ,,"Chapter 4 Additional Security Services
+Auditing pg 72",
+CCE-19767-3,Date logging should be enabled or disabled as appropriate for the specified websites.,"
+(1) TARGET: website
+(2) enabled/disabled",(1) Internet Information Service Manager > Server > Right Click on the specified website > Properties > Website Tab > W3C Extended Log File Format > Properties > Extended Properties ,,"Chapter 4 Additional Security Services
+Auditing pg 72",
+CCE-19355-7,Time logging should be enabled or disabled as appropriate for the specified websites.,"
+(1) TARGET: website
+(2) enabled/disabled",(1) Internet Information Service Manager > Server > Right Click on the specified website > Properties > Website Tab > W3C Extended Log File Format > Properties > Extended Properties ,,"Chapter 4 Additional Security Services
+Auditing pg 72",
+CCE-19508-1,Client IP Address logging should be enabled or disabled as appropriate for the specified websites.,"
+(1) TARGET: website
+(2) enabled/disabled",(1) Internet Information Service Manager > Server > Right Click on the specified website > Properties > Website Tab > W3C Extended Log File Format > Properties > Extended Properties ,,"Chapter 4 Additional Security Services
+Auditing pg 72",
+CCE-19483-7,User name logging should be enabled or disabled as appropriate for the specified websites. ,"
+(1) TARGET: website
+(2) enabled/disabled",(1) Internet Information Service Manager > Server > Right Click on the specified website > Properties > Website Tab > W3C Extended Log File Format > Properties > Extended Properties ,,"Chapter 4 Additional Security Services
+Auditing pg 72",
+CCE-19052-0,User agent logging should be enabled or disabled as appropriate for the specified websites.,"
+(1) TARGET: website
+(2) enabled/disabled",(1) Internet Information Service Manager > Server > Right Click on the specified website > Properties > Website Tab > W3C Extended Log File Format > Properties > Extended Properties ,,"Chapter 4 Additional Security Services
+Auditing pg 72",
+CCE-19905-9,Method logging should be enabled or disabled as appropriate for the specified websites.,"
+(1) TARGET: website
+(2) enabled/disabled",(1) Internet Information Service Manager > Server > Right Click on the specified website > Properties > Website Tab > W3C Extended Log File Format > Properties > Extended Properties ,,"Chapter 4 Additional Security Services
+Auditing pg 72",
+CCE-20030-3,URI stem logging should be enabled or disabled as appropriate for the specified websites. ,"
+(1) TARGET: website
+(2) enabled/disabled",(1) Internet Information Service Manager > Server > Right Click on the specified website > Properties > Website Tab > W3C Extended Log File Format > Properties > Extended Properties ,,"Chapter 4 Additional Security Services
+Auditing pg 72",
+CCE-19700-4,URL query logging should be enabled or disabled as appropriate for the specified websites. ,"
+(1) TARGET: website
+(2) enabled/disabled",(1) Internet Information Service Manager > Server > Right Click on the specified website > Properties > Website Tab > W3C Extended Log File Format > Properties > Extended Properties ,,"Chapter 4 Additional Security Services
+Auditing pg 72",
+CCE-19931-5,Server IP address logging should be enabled or disabled as appropriate for the specified websites. ,"
+(1) TARGET: website
+(2) enabled/disabled",(1) Internet Information Service Manager > Server > Right Click on the specified website > Properties > Website Tab > W3C Extended Log File Format > Properties > Extended Properties ,,"Chapter 4 Additional Security Services
+Auditing pg 72",
+CCE-19694-9,Server port logging should be enabled or disabled as appropriate for the specified websites. ,"
+(1) TARGET: website
+(2) enabled/disabled",(1) Internet Information Service Manager > Server > Right Click on the specified website > Properties > Website Tab > W3C Extended Log File Format > Properties > Extended Properties ,,"Chapter 4 Additional Security Services
+Auditing pg 72",
+CCE-19393-8,Protocol status logging should be enabled or disabled as appropriate for the specified websites. ,"
+(1) TARGET: website
+(2) enabled/disabled",(1) Internet Information Service Manager > Server > Right Click on the specified website > Properties > Website Tab > W3C Extended Log File Format > Properties > Extended Properties ,,"Chapter 4 Additional Security Services
+Auditing pg 72",
+CCE-19502-4,Win32 status logging should be enabled or disabled as appropriate for the specified websites.,"
+(1) TARGET: website
+(2) enabled/disabled",(1) Internet Information Service Manager > Server > Right Click on the specified website > Properties > Website Tab > W3C Extended Log File Format > Properties > Extended Properties ,,"Chapter 4 Additional Security Services
+Auditing pg 72",
+CCE-19979-4,The path of the HTTP Log folder  should be configured correctly for the specified websites.,"(1) TARGET: website
+(2) local path",(1) Internet Information Service Manager > Server > Right Click on the specified website > Properties > Website Tab > Properties,,"Chapter 4 Additional Security Services
+Auditing pg 72",
+CCE-19540-4,The file auditing for the Metaback directory should be configured appropriately., (1) set of accounts (2) events to  audit (3) applicability, (1) defined by the object's SACL ,,,http://support.microsoft.com/kb/271071
+CCE-20031-1,The membership of the IUSR account should be configured correctly.,(1) set of accounts,"(1) 
+defined by Local or Group Policy",,"Chapter 1 Internet Information Services Installation
+Post Installation pg 10",
+CCE-19758-2,The IUSR account should be enabled or disabled as appropriate.,(1) enabled/disabled,"(1) 
+defined by Local or Group Policy",,"Chapter 1 Internet Information Services Installation
+Post Installation pg 9",
+CCE-19378-9,The Default IWAM account should be configured correctly.,(1) valid name,"(1) 
+defined by Local or Group Policy",,"Chapter 1 Internet Information Services Installation
+Post Installation pg 10",
+CCE-19794-7,The size of the IIS client request buffer should should be set correctly.,(1) number of bytes,(1) HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC\Parameters\MaxClientRequestBuffer,,,http://technet.microsoft.com/en-us/library/bb878118.aspx
+CCE-19644-4,Server Side Includes should be enabled or disabled as appropriate.,(1) enabled/disabled,"(1) 
+'SSIExecDisable' key in IIS metabase file
+(2) cscript adsutil.vbs set w3svc/.../SSIExecDisable",,,http://support.microsoft.com/kb/195291
+CCE-19630-3,Web-based password reset IIS application mappings (.htr) should be configured correctly.,(1) exist/not exist,(1) Internet Service manager > Server > Right Click on the specified website > Properties > Home Directory tab > Configuration button >App Mappings tab,,"Chapter 4 Additional Security Services
+Script Mappings pg 75",
+CCE-19434-0,The required permissions for the registry key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC should be assigned.,(1) set of accounts (2) list of permissions (3) applicability,"(1) 
+defined by the object's DACL",,,http://support.microsoft.com/kb/271071
+CCE-19810-1,IIS Application Protection should be set correctly. ,"(1) low, medium, high",(1) Internet Information Services (IIS) Manager GUI: Server > Right Click on the specified website > Properties > Home Directory tab > Application Protection,,"Chapter 3 Services Installation and Administration
+World Wide Web (WWW) Services pg 43",
+CCE-19951-3,The required auditing for the file Metabase.bin should be enabled., (1) set of accounts (2) events to  audit (3) applicability, (1) defined by the object's SACL ,,"Chapter 1 Internet Information Services Installation
+Securing the Metabase pg 16",
+CCE-19599-0,IIS Sample files should be installed or not as appropriate.,"(1) exist/not exist
+
+","(1) 
+ files in \Inetpub\iissamples
+",,"Chapter 4 Additional Security Services 
+IIS Default Samples and Printers pg 78",
+CCE-20039-4,The sample Data Access files should be installed or not as appropriate.,"(1) exist/not exist
+
+","(1) files in \Program Files\Common Files\System\msadc\Samples
+",,"Chapter 4 Additional Security Services 
+IIS Default Samples and Printers pg 78",
+CCE-19830-9,IIS Help files should be installed or not as appropriate.,"(1) exist/not exist
+
+","(1) files in %SystemRoot%\help\iishelp
+",,"Chapter 4 Additional Security Services 
+IIS Default Samples and Printers pg 78",
+CCE-19985-1,Remote Account password changes should be enabled or disabled as appropriate.,"(1) exist/not exist
+
+","(1)  files in %SystemRoot%\System32\Inetsrv\iisadmpwd
+
+
+",,"Chapter 4 Additional Security Services 
+IIS Default Samples and Printers pg 78",
+CCE-19651-9,IIS sample Web Printing files should be installed or not as appropriate.,"(1) exist/not exist
+
+","(1) 
+ files in %SystemRoot%\web\printers",,"Chapter 4 Additional Security Services 
+IIS Default Samples and Printers pg 78",

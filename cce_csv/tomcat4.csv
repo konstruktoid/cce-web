@@ -1,0 +1,505 @@
+Unnamed: 0,Last modfied: 2013-02-11,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7
+,Version: 5.20130214,,,,,,
+CCE ID,CCE Description,CCE Parameters,CCE Technical Mechanisms,,"DISA STIG
+Web Server
+Version 7 Release: 1 Benchmark Date: 20 Sept 2010","Apache Software Foundation
+Apache Tomcat 4 Documentation","APPLICATION SERVICES SECURITY CHECKLIST
+Version 1, Release 1.1
+31 July 2006
+Section 3A
+App_sService_Checklist_Sec3A_V1R1-1.doc"
+CCE-26926-6,The CGI scripts for Apache Tomcat should be installed in designated folders,(1) path to CGI scripts,(1) file system,,"Rule Title: All interactive programs will be placed in a designated directory with appropriate permissions.
+STIG ID: WG400  Rule ID: SV-2228r4_rule  Vuln ID: V-2228
+Severity: CAT II  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/cgi-howto.html,
+CCE-27734-3,Access to Apache Tomcat's interactive scripts should be configured appropriately.,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability","(1) defined by (ServerRoot)\(cgiPathPrefix)/*'s DACL 
+where cgiPathPrefix is defined in $CATALINA_BASE/conf/web.xml",,"Rule Title: Interactive scripts used on a web server will have proper access controls.
+STIG ID: WG410  Rule ID: SV-2229r5_rule  Vuln ID: V-2229
+Severity: CAT II  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/cgi-howto.html,
+CCE-27625-3,Tomcat Apache's backup CGI *.bak files should exist or not as appropriate,(1) exist/not exist,(1) ServerRoot)\(cgiPathPrefix)/*.bak,,"Rule Title: Backup interactive scripts on the production web server are prohibited.
+STIG ID: WG420  Rule ID: SV-2230r8_rule  Vuln ID: V-2230
+Severity: CAT III  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/cgi-howto.html,
+CCE-27691-5,Tomcat Apache's backup CGI *.old files should exist or not as appropriate,(1) exist/not exist,(1) ServerRoot)\(cgiPathPrefix)/*.old,,"Rule Title: Backup interactive scripts on the production web server are prohibited.
+STIG ID: WG420  Rule ID: SV-2230r8_rule  Vuln ID: V-2230
+Severity: CAT III  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/cgi-howto.html,
+CCE-27562-8,Tomcat Apache's backup CGI *.temp files should exist or not as appropriate,(1) exist/not exist,(1) ServerRoot)\(cgiPathPrefix)/*.temp,,"Rule Title: Backup interactive scripts on the production web server are prohibited.
+STIG ID: WG420  Rule ID: SV-2230r8_rule  Vuln ID: V-2230
+Severity: CAT III  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/cgi-howto.html,
+CCE-27513-1,Tomcat Apache's backup CGI *.tmp files should exist or not as appropriate,(1) exist/not exist,(1) ServerRoot)\(cgiPathPrefix)/*.tmp,,"Rule Title: Backup interactive scripts on the production web server are prohibited.
+STIG ID: WG420  Rule ID: SV-2230r8_rule  Vuln ID: V-2230
+Severity: CAT III  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/cgi-howto.html,
+CCE-27669-1,Tomcat Apache's backup CGI *.backup files should exist or not as appropriate,(1) exist/not exist,(1) ServerRoot)\(cgiPathPrefix)/*.backup,,"Rule Title: Backup interactive scripts on the production web server are prohibited.
+STIG ID: WG420  Rule ID: SV-2230r8_rule  Vuln ID: V-2230
+Severity: CAT III  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/cgi-howto.html,
+CCE-27266-6,"Tomcat Apache's backup CGI ""copy of*.*"" files should exist or not as appropriate",(1) exist/not exist,(1) ServerRoot)\(cgiPathPrefix)/copy of*.*,,"Rule Title: Backup interactive scripts on the production web server are prohibited.
+STIG ID: WG420  Rule ID: SV-2230r8_rule  Vuln ID: V-2230
+Severity: CAT III  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/cgi-howto.html,
+CCE-27675-8,The maximum password age setting for Tomcat's service account should be configured appropriately.,(1) number of days,(1) defined by Local or Group Policy,,"Rule Title: The service account ID used to run the web site will have its password changed at least annually.
+STIG ID: WG060  Rule ID: SV-2235r4_rule  Vuln ID:V-2235
+Severity: CAT II  Class: Unclass",,"SDID: ASG0520 Category: II  VULID: V0006211
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECLP-1
+SDID Description: The application server process runs with privileges not necessary for proper operation.
+Reference: Application Services STIG, Appendix B.3.5
+"
+CCE-27171-8,"The Apache Tomcat ""maxProcessors"" attribute should be configured appropriately.",(1) Number value,(1) Apache Tomcat configuration file:maxProcessors attribute,,"Rule Title: The number of allowed simultaneous requests will be limited for web sites.
+STIG ID: WG110  Rule ID: SV-2240r6_rule  Vuln ID:V-2240
+Severity: CAT II  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/config/coyote.html,
+CCE-27535-4,All readable Tomcat Apache web document directories should have their default webpage configured appropriately. ,(1) exist / not exist,(1) Directories (from Apache Tomcat web.xml configuration file: docBase),,"Rule Title: Each readable web document directory will contain either default, home, index, or equivalent file.
+STIG ID: WG170  Rule ID: SV-2245r6_rule  Vuln ID:V-2245
+Severity: CAT III  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/config/context.html,
+CCE-27573-5,The access log valve for the Apache Tomcat's Engine container should be enabled or disabled as appropriate.,(1) enabled / disabled,(1) Logger element defined in Apache Tomcat configuration file: $CATALINA_HOME/conf/server.xml # Engine container,,"Rule Title: Logs of web server access and errors will be established and maintained
+STIG ID: WG240  Rule ID: SV-2250r6_rule  Vuln ID:V-2250
+Severity: CAT II  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/config/valve.html#Access%20Log%20Valve,"SDID: APS0410 Category: II VULID: V0006209
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECAR-1, ECAR-2, ECAR-3
+SDID Description: Application server does not adequately log security related events.
+Reference: Application Services STIG, Section 3.4.3
+"
+CCE-27712-9,The access log valve for the Apache Tomcat's Host container should be enabled or disabled as appropriate.,(1) enabled / disabled,(1) Logger element defined in Apache Tomcat configuration file: $CATALINA_HOME/conf/server.xml # Host container,,"Rule Title: Logs of web server access and errors will be established and maintained
+STIG ID: WG240  Rule ID: SV-2250r6_rule  Vuln ID:V-2250
+Severity: CAT II  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/config/valve.html#Access%20Log%20Valve,"SDID: APS0410 Category: II VULID: V0006209
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECAR-1, ECAR-2, ECAR-3
+SDID Description: Application server does not adequately log security related events.
+Reference: Application Services STIG, Section 3.4.3
+"
+CCE-27483-7,The access log valve for the Apache Tomcat's Context container should be enabled or disabled as appropriate.,(1) enabled / disabled,(1) Logger element defined in Apache Tomcat configuration file: $CATALINA_HOME/conf/server.xml # Context container,,"Rule Title: Logs of web server access and errors will be established and maintained
+STIG ID: WG240  Rule ID: SV-2250r6_rule  Vuln ID:V-2250
+Severity: CAT II  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/config/valve.html#Access%20Log%20Valve,"SDID: APS0410 Category: II VULID: V0006209
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECAR-1, ECAR-2, ECAR-3
+SDID Description: Application server does not adequately log security related events.
+Reference: Application Services STIG, Section 3.4.3
+"
+CCE-26804-5,The permissions for all files located in the folder specified by the Logger component (server.xml) should be configured appropriately.,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) Logger element defined in Apache Tomcat configuration file: $CATALINA_HOME/conf/server.xml,,"Rule Title: Only auditors, SAs or web administrators may access web server log files.
+STIG ID: WG250  Rule ID: SV-2252r4_rule  Vuln ID:V-2252
+Severity: CAT II  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/config/logger.html,
+CCE-27728-5,The permissions for \cgi-bin directory should be configured appropriately.,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by the object's DACL  ,,"Rule Title: The web client account access to the content and scripts directories will be limited to read and execute.
+STIG ID: WG290  Rule ID: SV-2258r5_rule  Vuln ID:V-2258
+Severity: CAT I  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/cgi-howto.html,"SDID: AST0340 Category: II VULID:  V0006207
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: OS level file permissions are not adequately restrictive.
+Reference: Application Services STIG, Appendix B.2
+"
+CCE-27735-0,The permissions for \webapps directory should be configured appropriately.,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by the object's DACL  ,,"Rule Title: The web client account access to the content and scripts directories will be limited to read and execute.
+STIG ID: WG290  Rule ID: SV-2258r5_rule  Vuln ID:V-2258
+Severity: CAT I  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/README.txt,"SDID: AST0340 Category: II VULID:  V0006207
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: OS level file permissions are not adequately restrictive.
+Reference: Application Services STIG, Appendix B.2
+"
+CCE-27248-4,The permissions of Apache Tomcat's installation directory should be configred appropriately,"(1) set of accounts
+(2) list of permissions _x000D_
+(3) applicability",(1) defined by the object's DACL  ,,"Rule Title: Web server system files will conform to minimum file permission requirements.
+STIG ID: WG300  Rule ID: SV-2259r7_rule  Vuln ID:V-2259
+Severity: CAT II  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/README.txt,"SDID: AST0340 Category: II VULID:  V0006207
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: OS level file permissions are not adequately restrictive.
+Reference: Application Services STIG, Appendix B.2
+"
+CCE-27649-3,The permissions of Apache Tomcat's /bin directory should be configred appropriately,"(1) set of accounts
+(2) list of permissions _x000D_
+(3) applicability",(1) defined by the object's DACL  ,,"Rule Title: Web server system files will conform to minimum file permission requirements.
+STIG ID: WG300  Rule ID: SV-2259r7_rule  Vuln ID:V-2259
+Severity: CAT II  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/README.txt,"SDID: AST0340 Category: II VULID:  V0006207
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: OS level file permissions are not adequately restrictive.
+Reference: Application Services STIG, Appendix B.2
+"
+CCE-26996-9,The permissions of Apache Tomcat's /common directory should be configred appropriately,"(1) set of accounts
+(2) list of permissions _x000D_
+(3) applicability",(1) defined by the object's DACL  ,,"Rule Title: Web server system files will conform to minimum file permission requirements.
+STIG ID: WG300  Rule ID: SV-2259r7_rule  Vuln ID:V-2259
+Severity: CAT II  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/README.txt,"SDID: AST0340 Category: II VULID:  V0006207
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: OS level file permissions are not adequately restrictive.
+Reference: Application Services STIG, Appendix B.2
+"
+CCE-27621-2,The permissions of Apache Tomcat's /conf directory should be configred appropriately,"(1) set of accounts
+(2) list of permissions _x000D_
+(3) applicability",(1) defined by the object's DACL  ,,"Rule Title: Web server system files will conform to minimum file permission requirements.
+STIG ID: WG300  Rule ID: SV-2259r7_rule  Vuln ID:V-2259
+Severity: CAT II  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/README.txt,"SDID: AST0340 Category: II VULID:  V0006207
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: OS level file permissions are not adequately restrictive.
+Reference: Application Services STIG, Appendix B.2
+"
+CCE-27683-2,The permissions of Apache Tomcat's /logs directory should be configred appropriately,"(1) set of accounts
+(2) list of permissions _x000D_
+(3) applicability",(1) defined by the object's DACL  ,,"Rule Title: Web server system files will conform to minimum file permission requirements.
+STIG ID: WG300  Rule ID: SV-2259r7_rule  Vuln ID:V-2259
+Severity: CAT II  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/README.txt,"SDID: AST0340 Category: II VULID:  V0006207
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: OS level file permissions are not adequately restrictive.
+Reference: Application Services STIG, Appendix B.2
+"
+CCE-27698-0,The permissions of Apache Tomcat's /server directory should be configred appropriately,"(1) set of accounts
+(2) list of permissions _x000D_
+(3) applicability",(1) defined by the object's DACL  ,,"Rule Title: Web server system files will conform to minimum file permission requirements.
+STIG ID: WG300  Rule ID: SV-2259r7_rule  Vuln ID:V-2259
+Severity: CAT II  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/README.txt,"SDID: AST0340 Category: II VULID:  V0006207
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: OS level file permissions are not adequately restrictive.
+Reference: Application Services STIG, Appendix B.2
+"
+CCE-27587-5,The permissions of Apache Tomcat's /shared directory should be configred appropriately,"(1) set of accounts
+(2) list of permissions _x000D_
+(3) applicability",(1) defined by the object's DACL  ,,"Rule Title: Web server system files will conform to minimum file permission requirements.
+STIG ID: WG300  Rule ID: SV-2259r7_rule  Vuln ID:V-2259
+Severity: CAT II  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/README.txt,"SDID: AST0340 Category: II VULID:  V0006207
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: OS level file permissions are not adequately restrictive.
+Reference: Application Services STIG, Appendix B.2
+"
+CCE-27569-3,The permissions of Apache Tomcat's /webapps directory should be configred appropriately,"(1) set of accounts
+(2) list of permissions _x000D_
+(3) applicability",(1) defined by the object's DACL  ,,"Rule Title: Web server system files will conform to minimum file permission requirements.
+STIG ID: WG300  Rule ID: SV-2259r7_rule  Vuln ID:V-2259
+Severity: CAT II  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/README.txt,"SDID: AST0340 Category: II VULID:  V0006207
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: OS level file permissions are not adequately restrictive.
+Reference: Application Services STIG, Appendix B.2
+"
+CCE-27453-0,The permissions of Apache Tomcat's /work directory should be configred appropriately,"(1) set of accounts
+(2) list of permissions _x000D_
+(3) applicability",(1) defined by the object's DACL  ,,"Rule Title: Web server system files will conform to minimum file permission requirements.
+STIG ID: WG300  Rule ID: SV-2259r7_rule  Vuln ID:V-2259
+Severity: CAT II  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/README.txt,"SDID: AST0340 Category: II VULID:  V0006207
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: OS level file permissions are not adequately restrictive.
+Reference: Application Services STIG, Appendix B.2
+"
+CCE-27298-9,The permissions of Apache Tomcat's /temp directory should be configred appropriately,"(1) set of accounts
+(2) list of permissions _x000D_
+(3) applicability",(1) defined by the object's DACL  ,,"Rule Title: Web server system files will conform to minimum file permission requirements.
+STIG ID: WG300  Rule ID: SV-2259r7_rule  Vuln ID:V-2259
+Severity: CAT II  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/README.txt,"SDID: AST0340 Category: II VULID:  V0006207
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: OS level file permissions are not adequately restrictive.
+Reference: Application Services STIG, Appendix B.2
+"
+CCE-27630-3,The Apache Tomcat site's robots.txt should be configured to disallow paths and files as appropriate.,"(1) User-Agent
+(2) Disallowed path(s)|file(s)",(1) via robots.txt,,"Rule Title: A private web server will not respond to requests from public search engines.
+STIG ID: WG310  Rule ID: SV-2260r5_rule  Vuln ID:V-2260
+Severity: CAT III  Class: Unclass",,
+CCE-27344-1,The Apache Tomcat SSLProtocol atribute should be configured appropriately.,(1) SSLv2 / SSLv3 / TLSv1 / All,"(1) Apache Tomcat configuration file: SSLProtocol attribute
+",,"Rule Title: A private web server will utilize TLS v 1.0 or greater.
+STIG ID: WG340  Rule ID: SV-2262r6_rule  Vuln ID:V-2262
+Severity: CAT II  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/ssl-howto.html,"SDID: APS0110 Category: II VULID:  V0006199
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: DCBP-1, IATS-2
+SDID Description: Application server does not utilize a Public Key Infrastructure (PKI).
+Reference: Application Services STIG, Section 3.5
+"
+CCE-27711-1,The Apache Tomcat Connector SSLEngine attribute should be configured appropriately.,(1) On / Off,(1) Apache Tomcat configuration file: Connector\SSLEngine attribute,,"Rule Title: A private web server will utilize TLS v 1.0 or greater.
+STIG ID: WG340  Rule ID: SV-2262r6_rule  Vuln ID:V-2262
+Severity: CAT II  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/ssl-howto.html,
+CCE-26790-6,The Apache Tomcat Listener SSLEngine attribute should be configured correctly,(1) true / false,"(1) Apache Tomcat configuration file: Listener\SSLEngine attribute
+",,"Rule Title: A private web server will utilize TLS v 1.0 or greater.
+STIG ID: WG340  Rule ID: SV-2262r6_rule  Vuln ID:V-2262
+Severity: CAT II  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/ssl-howto.html,
+CCE-27613-9,The requried permssions for the file %SystemRoot%\System32\wscript.exe should be assigned.,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by the %SystemRoot%\System32\wscript.exe DACL  ,,"Rule Title: Wscript.exe and Cscript.exe are accessible by users other than the SA and the web administrator.
+STIG ID: WG470  Rule ID: SV-2264r4_rule  Vuln ID:V-2264
+Severity: CAT II  Class: Unclass",,
+CCE-27416-7,The required permissions for the file %SystemRoot%\System32\cscript.exe should be assigned,"(1) set of accounts 
+(2) list of permissions 
+(3) applicability",(1) defined by the %SystemRoot%\System32\cscript.exe DACL  ,,"Rule Title: Wscript.exe and Cscript.exe are accessible by users other than the SA and the web administrator.
+STIG ID: WG470  Rule ID: SV-2264r4_rule  Vuln ID:V-2264
+Severity: CAT II  Class: Unclass",,
+CCE-27640-2,The Apache Tomcat server attribute for all Connectors should be configured correctly,(1) custom string value,(1) server attribute defined in Apache Tomcat configuration file: $CATALINA_HOME/conf/server.xml,,"Rule Title: Web server and/or operating system information will be protected.
+STIG ID: WG520  Rule ID: SV-6938r4_rule  Vuln ID:V-6724
+Severity: CAT III  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/config/coyote.html#Standard Implementation,
+CCE-27284-9,The account running the Apache Tomcat service should be configured appropriately,(1) Account type: ( privileged / non privileged ),(1) My Computer / Manage / Configuration / Local Users and Groups / <account name>,,"Rule Title: The web server, although started by superuser or privileged account, will run using a non-privileged account.
+STIG ID: WG275  Rule ID: SV-30685r1_rule  Vuln ID:V-13619
+Severity: CAT II  Class: Unclass",,"SDID: ASG0520 Category: II  VULID: V0006211
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECLP-1
+SDID Description: The application server process runs with privileges not necessary for proper operation.
+Reference: Application Services STIG, Appendix B.3.5
+"
+CCE-27718-6,The Apache Tomcat's server documentation  should be available or removed as appropriate.,(1) exist / not exist,(1) $CATALINA_HOME/webapps/tomcat-docs,,"Rule Title: All web server documentation, sample code, example applications, and tutorials will be removed from a production web server.
+STIG ID: WG385  Rule ID: SV-14207r2_rule  Vuln ID:V-13621
+Severity: CAT I  Class: Unclass",,"SDID: AST0610 Category: II VULID:  V0006217
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: DCSQ-1
+SDID Description: Application server default content has not been removed.
+Reference: Application Services STIG, Appendix B.6
+"
+CCE-27518-0,The Apache Tomcat's js examples should be available or removed as appropriate.,(1) exist / not exist,(1) $CATALINA_HOME/webapps/js-examples,,"Rule Title: All web server documentation, sample code, example applications, and tutorials will be removed from a production web server.
+STIG ID: WG385  Rule ID: SV-14207r2_rule  Vuln ID:V-13621
+Severity: CAT I  Class: Unclass",,"SDID: AST0610 Category: II VULID:  V0006217
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: DCSQ-1
+SDID Description: Application server default content has not been removed.
+Reference: Application Services STIG, Appendix B.6
+"
+CCE-27436-5,The Apache Tomcat's servlet examples should be available or removed as appropriate.,(1) exist / not exist,(1) $CATALINA_HOME/webapps/servlet-example,,"Rule Title: All web server documentation, sample code, example applications, and tutorials will be removed from a production web server.
+STIG ID: WG385  Rule ID: SV-14207r2_rule  Vuln ID:V-13621
+Severity: CAT I  Class: Unclass",,"SDID: AST0610 Category: II VULID:  V0006217
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: DCSQ-1
+SDID Description: Application server default content has not been removed.
+Reference: Application Services STIG, Appendix B.6
+"
+CCE-27744-2,The Apache Tomcat's webdav folder should be available or removed as appropriate.,(1) exist / not exist,(1) $CATALINA_HOME/webapps/webdav,,"Rule Title: All web server documentation, sample code, example applications, and tutorials will be removed from a production web server.
+STIG ID: WG385  Rule ID: SV-14207r2_rule  Vuln ID:V-13621
+Severity: CAT I  Class: Unclass",,"SDID: AST0610 Category: II VULID:  V0006217
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: DCSQ-1
+SDID Description: Application server default content has not been removed.
+Reference: Application Services STIG, Appendix B.6
+"
+CCE-27322-7,The Apache Tomcat's examples folder should be available or removed as appropriate.,(1) exist / not exist,(1) $CATALINA_HOME/webapps/examples,,"Rule Title: All web server documentation, sample code, example applications, and tutorials will be removed from a production web server.
+STIG ID: WG385  Rule ID: SV-14207r2_rule  Vuln ID:V-13621
+Severity: CAT I  Class: Unclass",,"SDID: AST0610 Category: II VULID:  V0006217
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: DCSQ-1
+SDID Description: Application server default content has not been removed.
+Reference: Application Services STIG, Appendix B.6
+"
+CCE-27549-5,The Apache Tomcat's balancer folder should be available or removed as appropriate.,(1) exist / not exist,(1) $CATALINA_HOME/webapps/balancer,,"Rule Title: All web server documentation, sample code, example applications, and tutorials will be removed from a production web server.
+STIG ID: WG385  Rule ID: SV-14207r2_rule  Vuln ID:V-13621
+Severity: CAT I  Class: Unclass",,"SDID: AST0610 Category: II VULID:  V0006217
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: DCSQ-1
+SDID Description: Application server default content has not been removed.
+Reference: Application Services STIG, Appendix B.6
+"
+CCE-27720-2,The Apache Tomcat pattern attribute should be configured to log the appropriate data elements,(1) %a/%A/%b/%B/%h/%H/%l/%m/%p/%q/%r/%s/%t/%u/%U/%v,"(1) $CATALINA_BASE\<app name>\METAINF\context.xml
+# pattern attribute",,"Rule Title: Log file data must contain required data elements.
+STIG ID: WG242  Rule ID: SV-14282r3_rule  Vuln ID:V-13688
+Severity: CAT II  Class: Unclass",http://tomcat.apache.org/tomcat-4.1-doc/config/valve.html#Access_Log_Valve,"SDID: APS0410 Category: II VULID: V0006209
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECAR-1, ECAR-2, ECAR-3
+SDID Description: Application server does not adequately log security related events.
+Reference: Application Services STIG, Section 3.4.3
+"
+CCE-27369-8,The Java Security Manager (JSM) should be enabled or disabled as appropriate.,(1) exist/not exist,(1) catalina.policy file under Catalina Home,,,,"SDID: AST0560 Category: 1  VULID: V0006215
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECRC-1
+SDID Description: Application Security Manager is not turned on.
+Reference: Application Services STIG, Appendix B.3.5
+"
+CCE-27671-7,Tomcat should be configured to run with or without the Java Security Manager upon startup.,(1) exist/not exist,"(1) '-security' command-line parameter on Tomcat startup
+(2) -Djava.security.manager command line parameter",,,,"SDID: AST0560 Category: 1  VULID: V0006215
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECRC-1
+SDID Description: Application Security Manager is not turned on.
+Reference: Application Services STIG, Appendix B.3.5
+"
+CCE-27242-7,The Tomcat server shutdown port number should be set correctly,(1) port number,(1) server.xml: Port atribute in the Server element,,,,"SDID: APS0560 Category: II  VULID: V0012322
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: DCFA-1
+SDID Description: Interfaces between the application server and external systems are not identified and secured.
+Reference: Application Services STIG, Section 3.2.6
+"
+CCE-27716-0,The Tomcat Legacy JK AJP 1.3 protocol handler should be enabled or disabled as appropriate.,(1) exist/not exist,"(1) server.xml: '<Connector protocolHandlerClassName=""org.apache.ajp.tomcat4.Ajp13Connector"">' element",,,http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html,
+CCE-27697-2,The port number for the specified Tomcat Legacy JK AJP 1.3 connector should be set correctly.,"(1) TARGET: Connector (org.apache.ajp.tomcat4.Ajp13Connector)
+(2) port number",(1) server.xml: port attribute,,,http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html,
+CCE-27616-2,The Tomcat Legacy HTTP/1.1 protocol handler should be enabled or disabled as appropriate.,(1) exist/not exist,"(1) server.xml: '<Connector protocolHandlerClassName=""org.apache.catalina.connector.http.HttpConnector"">' element",,,http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html,
+CCE-27702-0,The port number for the specified Tomcat Legacy HTTP/1.1 connector should be set correctly.,"(1) TARGET: Connector (org.apache.catalina.connector.http.HttpConnector)
+(2) port number",(1) server.xml: port attribute,,,http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html,
+CCE-27441-5,The Tomcat login authentication method should be set correctly.,(1) BASIC/FORM/DIGEST/CLIENT_CERT,(1) Tomcat web.xml: <auth-method> element,,,,"SDID: APS0140 Category: II VULID: V0006202
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: IAIA-1, ECLO-2
+SDID Description: Application server’s client authentication process is inadequate.
+Reference: Application Services STIG, Appendix B.4.2, B.4.3, B.4.4"
+CCE-27678-2,Security roles for the Tomcat manager app should be set correctly.,(1) security role name,(1) Tomcat manager.xml: <role-name> element inside a <security-role> element,,,,"SDID: AST0820 Category: II  VULID:  V0006225
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECLP-1
+SDID Description: Admin and Manager Web Applications are not adequately restrictive.
+Reference: Application Services STIG, Section 3.4.1
+"
+CCE-27663-4,Security roles for the Tomcat admin app should be set correctly.,(1) security role name,(1) Tomcat admin.xml: <role-name> element inside a <security-role> element,,,,"SDID: AST0820 Category: II  VULID:  V0006225
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECLP-1
+SDID Description: Admin and Manager Web Applications are not adequately restrictive.
+Reference: Application Services STIG, Section 3.4.1
+"
+CCE-27517-2,Access to the Tomcat Admin app should be denied as appropriate.,(1)  list of IPs,"(1) Tomcat admin.xml:  <deny> element inside the <Valve className=""org.apache.catalina.valves.RemoteAddrValve""/>",,"Rule Title: Access to web administration tools is restricted to the web manager and the web manager’s designees.
+STIG ID: WG220  Rule ID: SV-2248r5_rule  Vuln ID:V-2248
+Severity: CAT II  Class: Unclass",,"SDID: AST0820 Category: II  VULID:  V0006225
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECLP-1
+SDID Description: Admin and Manager Web Applications are not adequately restrictive.
+Reference: Application Services STIG, Section 3.4.1
+"
+CCE-27622-0,Access to the Tomcat Admin app should be allowed as appropriate.,(1)  list of IPs,"(1) Tomcat admin.xml: <allow> element inside the <Valve className=""org.apache.catalina.valves.RemoteAddrValve""/> element",,"Rule Title: Access to web administration tools is restricted to the web manager and the web manager’s designees.
+STIG ID: WG220  Rule ID: SV-2248r5_rule  Vuln ID:V-2248
+Severity: CAT II  Class: Unclass",,"SDID: AST0820 Category: II  VULID:  V0006225
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECLP-1
+SDID Description: Admin and Manager Web Applications are not adequately restrictive.
+Reference: Application Services STIG, Section 3.4.1
+"
+CCE-27650-1,Access to the Tomcat manager app should be denied as appropriate.,(1)  list of IPs,"(1) Tomcat manager.xml:  <deny> element inside the <Valve className=""org.apache.catalina.valves.RemoteAddrValve""/>",,"Rule Title: Access to web administration tools is restricted to the web manager and the web manager’s designees.
+STIG ID: WG220  Rule ID: SV-2248r5_rule  Vuln ID:V-2248
+Severity: CAT II  Class: Unclass",,"SDID: AST0820 Category: II  VULID:  V0006225
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECLP-1
+SDID Description: Admin and Manager Web Applications are not adequately restrictive.
+Reference: Application Services STIG, Section 3.4.1
+"
+CCE-27604-8,Access to the Tomcat manager app should be allowed as appropriate.,(1)  list of IPs,"(1) Tomcat manager.xml: <allow> element inside the <Valve className=""org.apache.catalina.valves.RemoteAddrValve""/> element",,"Rule Title: Access to web administration tools is restricted to the web manager and the web manager’s designees.
+STIG ID: WG220  Rule ID: SV-2248r5_rule  Vuln ID:V-2248
+Severity: CAT II  Class: Unclass",,"SDID: AST0820 Category: II  VULID:  V0006225
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECLP-1
+SDID Description: Admin and Manager Web Applications are not adequately restrictive.
+Reference: Application Services STIG, Section 3.4.1
+"
+CCE-27631-1,The owner of the Tomcat installation directory should be set correctly.,(1) owner,(1) via chown,,,,"SDID: AST0340 Category: II VULID:  V0006207
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: OS level file permissions are not adequately restrictive.
+Reference: Application Services STIG, Appendix B.2
+"
+CCE-27501-6,The group of the Tomcat installation installation should be set correctly.,(1) group,(1) via chgrp,,,,"SDID: AST0340 Category: II VULID:  V0006207
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: OS level file permissions are not adequately restrictive.
+Reference: Application Services STIG, Appendix B.2
+"
+CCE-27546-1,The Unix permissions for the Tomcat installation directory should be set correctly.,(1) permissions,(1) via chown,,,,"SDID: AST0340 Category: II VULID:  V0006207
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: OS level file permissions are not adequately restrictive.
+Reference: Application Services STIG, Appendix B.2
+"
+CCE-27578-4,The owner of the Tomcat conf/ directory should be set correctly.,(1) owner,(1) via chown,,,,"SDID: AST0340 Category: II VULID:  V0006207
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: OS level file permissions are not adequately restrictive.
+Reference: Application Services STIG, Appendix B.2
+"
+CCE-27695-6,The group of the Tomcat conf/ directory should be set correctly.,(1) group,(1) via chgrp,,,,"SDID: AST0340 Category: II VULID:  V0006207
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: OS level file permissions are not adequately restrictive.
+Reference: Application Services STIG, Appendix B.2
+"
+CCE-27725-1,The permissions for the Tomcat conf/ directory should be set correctly.,(1) permissions,(1) via chown,,,,"SDID: AST0340 Category: II VULID:  V0006207
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: OS level file permissions are not adequately restrictive.
+Reference: Application Services STIG, Appendix B.2
+"
+CCE-27312-8,The owner of the tomcat-users.xml file should be set correctly.,(1) owner,(1) via chown,,,,"SDID: AST0340 Category: II VULID:  V0006207
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: OS level file permissions are not adequately restrictive.
+Reference: Application Services STIG, Appendix B.2
+"
+CCE-26893-8,The group of the tomcat-users.xml file should be set correctly.,(1) group,(1) via chgrp,,,,"SDID: AST0340 Category: II VULID:  V0006207
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: OS level file permissions are not adequately restrictive.
+Reference: Application Services STIG, Appendix B.2
+"
+CCE-27591-7,The permissions for the tomcat-users.xml file should be set correctly.,(1) permissions,(1) via chown,,,,"SDID: AST0340 Category: II VULID:  V0006207
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: OS level file permissions are not adequately restrictive.
+Reference: Application Services STIG, Appendix B.2
+"
+CCE-27730-1,The password digest algorithm for JDBCRealm (database) connections should be enabled or disabled as appropriate.,(1) exist/not exist,(1) 'digest' attribute inside '<Realm classname=org.apache.catalina.realm.JDBCRealm>' element in server.xml,,,,"SDID: AST0310 Category: II VULID:  V0006204
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: Sensitive application data is not adequately protected at rest.
+Reference: Application Services STIG, Appendix B.3
+"
+CCE-27865-5,The JDBCRealm (database) password digest algorithm should be set correctly,(1) SHA/MD2/MD5,(1) 'digest' attribute inside '<Realm classname=org.apache.catalina.realm.JDBCRealm>' element in server.xml,,,,"SDID: AST0310 Category: II VULID:  V0006204
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: Sensitive application data is not adequately protected at rest.
+Reference: Application Services STIG, Appendix B.3
+"
+CCE-27420-9,The password digest algorithm for JNDIRealm (LDAP) connections should be enabled or disabled as appropriate.,(1) exist/not exist,(1) 'digest' attribute inside '<Realm classname=org.apache.catalina.realm.JNDIRealm>' element in server.xml,,,,"SDID: AST0310 Category: II VULID:  V0006204
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: Sensitive application data is not adequately protected at rest.
+Reference: Application Services STIG, Appendix B.3
+"
+CCE-27796-2,The JNDIRealm (LDAP) password digest should be configured appropriately.,(1) SHA/MD2/MD5,(1) 'digest' attribute inside '<Realm classname=org.apache.catalina.realm.JNDIRealm>' element in server.xml,,,,"SDID: AST0310 Category: II VULID:  V0006204
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECCR-1, ECCR-2
+SDID Description: Sensitive application data is not adequately protected at rest.
+Reference: Application Services STIG, Appendix B.3
+"
+CCE-27836-6,The Tomcat HTTP/1.1 connector should be enabled or disabled as appropriate.,"(1) 
+exist/not exist
+","(1) 
+'<Connector className=""org.apache.coyote.tomcat4.CoyoteConnector"">' element in server.xml",,,http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html,
+CCE-27719-4,The port number for the specified  Tomcat HTTP/1.1 connector should be set correctly.,"(1) TARGET: Connector (org.apache.coyote.tomcat4.CoyoteConnector)
+(2) port number
+
+",(1) server.xml: port attribute,,,http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html,
+CCE-27405-0,The secure attribute for the specified Tomcat HTTP/1.1 connector should be set as appropriate.,"(1) TARGET: Connector (org.apache.coyote.tomcat4.CoyoteConnector)
+(2) true/false","(1) server.xml:
+secure attribute in a '<Connector className=""org.apache.coyote.tomcat4.CoyoteConnector"" >' element",,,http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html,
+CCE-27560-2,The Tomcat JK/JK2 AJP 1.3 protocol handler should be enabled or disabled as appropriate.,(1) exist/not exist,"(1) 
+server.xml: '<Connector protocolHandlerClassName=""org.apache.jk.server.JkCoyoteHandler"">' element",,,http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html,
+CCE-27368-0,The port number for the specified  JK/JK2 AJP 1.3 connector should be set correctly.,"(1) TARGET: Connector (org.apache.jk.server.JkCoyoteHandler) 
+(2) port number",(1) server.xml: port attribute,,,http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html,
+CCE-27202-1,The Tomcat WARP protocol handler should be enabled or disabled as appropriate.,(1) exist/not exist,"(1) server.xml: 
+'<Connector protocolHandlerClassName=""org.apache.catalina.connector.warp.WarpConnector"">' element",,,http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html,
+CCE-27693-1,The port number for the specified WARP connector should be set correctly.,"(1) TARGET: Connector (org.apache.catalina.connector.warp.WarpConnector)
+(2) port number",(1) server.xml: port attribute,,,http://tomcat.apache.org/tomcat-4.1-doc/config/connectors.html,
+CCE-27658-4,The location of the log files directory for the specified Logger element should be set correctly. ,"(1) Logger element
+(2) path",(1) server.xml: directory attribute,,,http://tomcat.apache.org/tomcat-4.0-doc/config/logger.html,
+CCE-27383-9,The example server.xml file should be installed as appropriate.,(1) exist/not exist,(1) located at conf/server.xml,,,,"SDID: AST0610 Category: II VULID:  V0006217
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: DCSQ-1
+SDID Description: Application server default content has not been removed.
+Reference: Application Services STIG, Appendix B.6
+"
+CCE-27431-6,Tomcat should be run by the appropriate account,(1) exist/not exist,(1) via chown,,,,"SDID: ASG0520 Category: II  VULID: V0006211
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECLP-1
+SDID Description: The application server process runs with privileges not necessary for proper operation.
+Reference: Application Services STIG, Appendix B.3.5
+"
+CCE-27253-4,Tomcat should be run with the appropriate group membership.,(1) exist/not exist,(1) via chgrp,,,,"SDID: ASG0520 Category: II  VULID: V0006211
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECLP-1
+SDID Description: The application server process runs with privileges not necessary for proper operation.
+Reference: Application Services STIG, Appendix B.3.5
+"
+CCE-27523-0,The file prefix for the specified Logger element should be configured appropriately.,"(1) TARGET: Logger element
+(2) string",(1) server.xml: prefix,,,,"SDID: APS0410 Category: II VULID: V0006209
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECAR-1, ECAR-2, ECAR-3
+SDID Description: Application server does not adequately log security related events.
+Reference: Application Services STIG, Section 3.4.3
+"
+CCE-27721-0,The verbosity for the specified Logger element should be configured appropriately.,"(1) TARGET: Logger element
+(2) 0 (fatal messages only), 1 (errors), 2 (warnings), 3 (information), or 4 (debug)",(1) server.xml: verbosity,,,,"SDID: APS0410 Category: II VULID: V0006209
+MAC/Confidentiality Levels: MAC I – CSP,  MAC II – CSP,  MAC III – CSP
+IA Controls: ECAR-1, ECAR-2, ECAR-3
+SDID Description: Application server does not adequately log security related events.
+Reference: Application Services STIG, Section 3.4.3
+"
+CCE-27559-4,All permissions for the specified codebase should exist or not exist.,"(1) TARGET: codebase
+(2) exist/not exist",(1) catalina.policy: java.security.AllPermissions in a grant element.,,,http://tomcat.apache.org/tomcat-4.1-doc/security-manager-howto.html,

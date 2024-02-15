@@ -1,0 +1,2309 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>CCE Lists</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href='../css/basic.css' type='text/css' rel='stylesheet' />
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Unnamed: 0</th>
+      <th>Last modfied: 2013-02-11</th>
+      <th>Unnamed: 2</th>
+      <th>Unnamed: 3</th>
+      <th>Unnamed: 4</th>
+      <th>Unnamed: 5</th>
+      <th>Unnamed: 6</th>
+      <th>Unnamed: 7</th>
+      <th>Unnamed: 8</th>
+      <th>Unnamed: 9</th>
+      <th>Unnamed: 10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NaN</td>
+      <td>Version: 5.20130214</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE ID</td>
+      <td>CCE Description</td>
+      <td>CCE Parameters</td>
+      <td>CCE Technical Mechanisms</td>
+      <td>NaN</td>
+      <td>CIS Security Configuration Benchmark For Apache Web Server 2.2 Version 3.1.0 June 11th, 2012</td>
+      <td>CIS Security Configuration Benchmark For Apache Web Server 2.2.0 Version 2.2.0 November 2008</td>
+      <td>DISA STIG Apache SITE 2.2 for Windows Release: 1 Benchmark Date: 23 Nov 2011</td>
+      <td>DISA STIG Apache SERVER 2.2 for Windows Release: 1 Benchmark Date: 23 Nov 2011</td>
+      <td>DISA STIG Apache SITE 2.2 for Unix Release: 1 Benchmark Date: 23 Nov 2011</td>
+      <td>DISA STIG Apache SERVER 2.2 for Unix Release: 1 Benchmark Date: 23 Nov 2011</td>
+    </tr>
+    <tr>
+      <td>CCE-27779-8</td>
+      <td>Anonymous sharing of Apache's web content directories should be configured appropriately.</td>
+      <td>(1) Set of shares</td>
+      <td>(1) HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters\NullSessionShares  (2) defined by Local or Group Policy</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web content directories must not be anonymously shared. STIG ID: WG210 W22  Rule ID: SV-33109r1_rule  Vuln ID: V-2226 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27516-4</td>
+      <td>The Apache AllowOverride directive should be configured appropriately for web site root directories.</td>
+      <td>(1) AuthConfig / FileInfo / Indexes / Limit / Options / All / None</td>
+      <td>(1) Apache configuration file: AllowOverride directive</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.8 Directory Functionality Control with the Options Directive p17</td>
+      <td>Rule Title: All interactive programs must be placed in a designated directory with appropriate permissions. STIG ID: WG400 W22  Rule ID: SV-36644r1_rule  Vuln ID: V-2228 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27868-9</td>
+      <td>The maximum password age setting for Apache's service account should be configured appropriately.</td>
+      <td>(1) number of days</td>
+      <td>(1) defined by Local or Group Policy</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The service account used to run the web service must have its password changed at least    annually. STIG ID: WG060 W22  Rule ID: SV-36489r1_rule  Vuln ID: V-2235 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27830-9</td>
+      <td>The Apachce "MaxKeepAliveRequests" directive should be configured appropriately.</td>
+      <td>(1) Number value</td>
+      <td>(1) Apache configuration file: MaxKeepAliveRequests directive</td>
+      <td>NaN</td>
+      <td>1.9.1 Denial of Service Mitigation (Level 1, Scorable)  Add or modify the MaxKeepAliveRequests directive in the Apache configuration to have a value of 100 or more. p71</td>
+      <td>NaN</td>
+      <td>Rule Title: The number of allowed simultaneous requests must be set. STIG ID: WG110 W22  Rule ID: SV-33105r1_rule  Vuln ID: V-2240 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The number of allowed simultaneous requests must be set. STIG ID: WG110 A22  Rule ID: SV-33018r1_rule  Vuln ID: V-2240 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27745-9</td>
+      <td>All readable Apache web document directories should have their default webpage configured appropriately.</td>
+      <td>(1) exist / not exist</td>
+      <td>(1) Directories (from Apache configuration file: DocumentRoot directive)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Each readable web document directory must contain either a default, home, index, or equivalent file. STIG ID: WG170 W22  Rule ID: SV-33107r1_rule  Vuln ID: V-2245 Severity: CAT III  Class: Unclass</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27780-6</td>
+      <td>Access to Apache's httpd.conf file should be configured appropriately.</td>
+      <td>(1) set of accounts  (2) list of permissions  (3) applicability</td>
+      <td>(1) defined by (ServerRoot)\conf\httpd.conf's DACL</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web administration tools must be restricted to the web manager and the web manager’s designees. STIG ID: WG220 W22  Rule ID: SV-33072r1_rule  Vuln ID: V-2248 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27782-2</td>
+      <td>Apache's log_config_module should be enabled or disabled as appropriate.</td>
+      <td>(1) log_config_module</td>
+      <td>(1) Apache configuration file: LoadModule directive</td>
+      <td>NaN</td>
+      <td>1.2.2 Enable the Log Config Module (Level 1, Scorable) For dynamically loaded modules, add or modify the LoadModule directive so that it is present in the apache configuration as below and not commented out : LoadModule log_config_module modules/mod_log_config.so p12</td>
+      <td>NaN</td>
+      <td>Rule Title: Logs of web server access and errors must be established and maintained. STIG ID: WG240 W22  Rule ID: SV-33132r1_rule  Vuln ID: V-2250 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: Logs of web server access and errors must be established and maintained. STIG ID: WG240 A22  Rule ID: SV-33025r1_rule  Vuln ID: V-2250 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27839-0</td>
+      <td>The Windows permissions for all files specified by CustomLog directives should be configured appropriately</td>
+      <td>(1) set of accounts  (2) list of permissions  (3) applicability</td>
+      <td>(1) defined by the object's DACL</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Log file access must be restricted to System Administrators, Web Administrators or Auditors. STIG ID: WG250 W22  Rule ID: SV-33135r1_rule  Vuln ID: V-2252 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27750-9</td>
+      <td>The Windows permissions for all files specified by ErrorLog directives should be configured appropriately</td>
+      <td>(1) set of accounts  (2) list of permissions  (3) applicability</td>
+      <td>(1) defined by the object's DACL</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Log file access must be restricted to System Administrators, Web Administrators or Auditors. STIG ID: WG250 W22  Rule ID: SV-33135r1_rule  Vuln ID: V-2252 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27599-0</td>
+      <td>The Windows permissions of Apache's htpasswd.exe file(s) should be configured appropriately.</td>
+      <td>(1) set of accounts  (2) list of permissions  (3) applicability</td>
+      <td>(1) defined by the object's DACL</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server’s htpasswd files (if present) must reflect proper ownership and permissions. STIG ID: WG270 W22  Rule ID: SV-36561r1_rule  Vuln ID: V-2255 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27799-6</td>
+      <td>The Windows permissions for all directories specified by ScriptAlias directives should be configured appropriately.</td>
+      <td>(1) set of accounts  (2) list of permissions  (3) applicability</td>
+      <td>(1) defined by the object's DACL</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web client account access to the content and scripts directories must be limited to read and execute. STIG ID: WG290 W22  Rule ID: SV-33136r1_rule  Vuln ID: V-2258 Severity: CAT I  Class: Unclass</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27705-3</td>
+      <td>The Windows permissions for all directories specified by ScriptAliasMatch directives should be configured appropriately.</td>
+      <td>(1) set of accounts  (2) list of permissions  (3) applicability</td>
+      <td>(1) defined by the object's DACL</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web client account access to the content and scripts directories must be limited to read and execute. STIG ID: WG290 W22  Rule ID: SV-33136r1_rule  Vuln ID: V-2258 Severity: CAT I  Class: Unclass</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27840-8</td>
+      <td>The Windows permissions for all directories specified by DocumentRoot directives should be configured appropriately.</td>
+      <td>(1) set of accounts  (2) list of permissions  (3) applicability</td>
+      <td>(1) defined by the object's DACL</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web client account access to the content and scripts directories must be limited to read and execute. STIG ID: WG290 W22  Rule ID: SV-33136r1_rule  Vuln ID: V-2258 Severity: CAT I  Class: Unclass</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27771-5</td>
+      <td>The Windows permissions for all directories specified by Alias directives should be configured appropriately.</td>
+      <td>(1) set of accounts  (2) list of permissions  (3) applicability</td>
+      <td>(1) defined by the object's DACL</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web client account access to the content and scripts directories must be limited to read and execute. STIG ID: WG290 W22  Rule ID: SV-33136r1_rule  Vuln ID: V-2258 Severity: CAT I  Class: Unclass</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27843-2</td>
+      <td>The Windows permissions for all directories specified by ServerRoot directives should be configred appropriately</td>
+      <td>(1) set of accounts  (2) list of permissions  (3) applicability</td>
+      <td>(1) defined by the object's DACL</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server system files must conform to minimum file permission requirements. STIG ID: WG300 W22  Rule ID: SV-33078r1_rule  Vuln ID: V-2259 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27240-1</td>
+      <td>The Windows permissions of Apache's /config directory should be configred appropriately</td>
+      <td>(1) set of accounts  (2) list of permissions  (3) applicability</td>
+      <td>(1) defined by the object's DACL</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server system files must conform to minimum file permission requirements. STIG ID: WG300 W22  Rule ID: SV-33078r1_rule  Vuln ID: V-2259 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27829-1</td>
+      <td>The Windows permissions of Apache's /bin directory should be configred appropriately</td>
+      <td>(1) set of accounts  (2) list of permissions  (3) applicability</td>
+      <td>(1) defined by the object's DACL</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server system files must conform to minimum file permission requirements. STIG ID: WG300 W22  Rule ID: SV-33078r1_rule  Vuln ID: V-2259 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27306-0</td>
+      <td>The Windows permissions of Apache's /logs directory should be configred appropriately</td>
+      <td>(1) set of accounts  (2) list of permissions  (3) applicability</td>
+      <td>(1) defined by the object's DACL</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server system files must conform to minimum file permission requirements. STIG ID: WG300 W22  Rule ID: SV-33078r1_rule  Vuln ID: V-2259 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27813-5</td>
+      <td>The Windows permissions of Apache's /htdocs directory should be configred appropriately</td>
+      <td>(1) set of accounts  (2) list of permissions  (3) applicability</td>
+      <td>(1) defined by the object's DACL</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server system files must conform to minimum file permission requirements. STIG ID: WG300 W22  Rule ID: SV-33078r1_rule  Vuln ID: V-2259 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27773-1</td>
+      <td>The Apache site's robots.txt should be configured to disallow paths and files as appropriate.</td>
+      <td>(1) User-Agent (2) Disallowed path(s)|file(s)</td>
+      <td>(1) robots.txt</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: A private web server must not respond to requests from public search engines. STIG ID: WG310 W22  Rule ID: SV-28798r2_rule  Vuln ID: V-2260 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: A private web server must not respond to requests from public search engines. STIG ID: WG310 A22  Rule ID: SV-33028r1_rule  Vuln ID: V-2260 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27872-1</td>
+      <td>Apache's ssl_module should be enabled or disabled as appropriate.</td>
+      <td>(1) ssl_module</td>
+      <td>(1) Apache configuration file: LoadModule directive</td>
+      <td>NaN</td>
+      <td>1.7.1 Install mod_ssl and/or mod_nss (Level 1, Scorable) Ensure the mod_ssl and/or mod_nss is loaded in the Apache configuration: # httpd -M | egrep 'ssl_module|nss_module' p59</td>
+      <td>NaN</td>
+      <td>Rule Title: A private web server must utilize TLS v 1.0 or greater. STIG ID: WG340 W22  Rule ID: SV-14297r4_rule Vuln ID: V-2262 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: A private web server must utilize TLS v 1.0 or greater. STIG ID: WG340 A22  Rule ID: SV-33029r1_rule  Vuln ID: V-2262 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27740-0</td>
+      <td>The Apache SSLProtocol directive should be configured appropriately.</td>
+      <td>(1) SSLv2 / SSLv3 / TLSv1 / All</td>
+      <td>(1) Apache configuration file: SSLProtocol directive</td>
+      <td>NaN</td>
+      <td>1.7.4 Restrict weak SSL Protocols and Ciphers (Level 1, Scorable) Add or modify the following line in the Apache server level configuration and every virtual host that is SSL enabled: SSLProtocol -ALL +SSLv3 +TLSv1 p65</td>
+      <td>NaN</td>
+      <td>Rule Title: A private web server must utilize TLS v 1.0 or greater. STIG ID: WG340 W22  Rule ID: SV-14297r4_rule Vuln ID: V-2262 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: A private web server must utilize TLS v 1.0 or greater. STIG ID: WG340 A22  Rule ID: SV-33029r1_rule  Vuln ID: V-2262 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27576-8</td>
+      <td>The Apache SSLEngine directive should be configured appropriately.</td>
+      <td>(1) On / Off</td>
+      <td>(1) Apache configuration file: SSLEngine directive</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: A private web server must utilize TLS v 1.0 or greater. STIG ID: WG340 W22  Rule ID: SV-14297r4_rule Vuln ID: V-2262 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: A private web server must utilize TLS v 1.0 or greater. STIG ID: WG340 A22  Rule ID: SV-33029r1_rule  Vuln ID: V-2262 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27753-3</td>
+      <td>The requried permssions for the file %SystemRoot%\System32\wscript.exe should be assigned.</td>
+      <td>(1) set of accounts  (2) list of permissions  (3) applicability</td>
+      <td>(1) defined by the %SystemRoot%\System32\wscript.exe DACL</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Wscript.exe and Cscript.exe must only be accessible by the SA and/or the web administrator. STIG ID: WG470 W22  Rule ID: SV-33095r1_rule  Vuln ID: V-2264 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27598-2</td>
+      <td>The required permissions for the file %SystemRoot%\System32\cscript.exe should be assigned</td>
+      <td>(1) set of accounts  (2) list of permissions  (3) applicability</td>
+      <td>(1) defined by the %SystemRoot%\System32\cscript.exe DACL</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Wscript.exe and Cscript.exe must only be accessible by the SA and/or the web administrator. STIG ID: WG470 W22  Rule ID: SV-33095r1_rule  Vuln ID: V-2264 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27380-5</td>
+      <td>The Apache "ServerTokens" directive should be configured appropriately.</td>
+      <td>(1) Prod[uctOnly] / Major / Minor / Min[imal] / OS / Full</td>
+      <td>(1) Apache configuration file: ServerTokens directive</td>
+      <td>NaN</td>
+      <td>1.8.1 Limit Information in the Server Token (Level 1, Scorable) Add or modify the ServerTokens directive as shown below to have the value of Prod or ProductOnly: ServerTokens Prod page 68</td>
+      <td>1.16 Software Information Leakage Protection p29</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server and/or operating system information must be protected. STIG ID: WG520 W22  Rule ID: SV-33098r1_rule  Vuln ID: V-6724 Severity: CAT III  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server and/or operating system information must be protected. STIG ID: WG520 A22  Rule ID: SV-36672r1_rule  Vuln ID: V-6724 Severity: CAT III  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27686-5</td>
+      <td>The Apache web server be run with the appropriate privileges.</td>
+      <td>(1) Account type: ( privileged / non privileged )</td>
+      <td>(1) My Computer / Manage / Configuration / Local Users and Groups / &lt;account name&gt;</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server, although started by superuser or privileged account, must run using a non-privileged account. STIG ID: WG275 W22  Rule ID: SV-36607r1_rule  Vuln ID: V-13619 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27469-6</td>
+      <td>All Apache's online manual should be available or removed as appropriate.</td>
+      <td>(1) exist / not exist</td>
+      <td>(1) manual in the Server Root directory</td>
+      <td>NaN</td>
+      <td>1.5.4 Remove Default HTML Content (Level 1, Scorable) Remove the Apache user manual content or comment out configurations referencing the manual # yum erase httpd-manual page 37</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: All web server documentation, sample code, example applications, and tutorials must be  removed from a production web server. STIG ID: WG385 W22  Rule ID: SV-33087r1_rule  Vuln ID: V-13621 Severity: CAT I  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: All web server documentation, sample code, example applications, and tutorials must be  removed from a production web server. STIG ID: WG385 A22  Rule ID: SV-32933r1_rule  Vuln ID: V-13621 Severity: CAT I  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27870-5</td>
+      <td>Apache's demo CGI printenv.pl should be available or removed as appropriate</td>
+      <td>(1) exist / not exist</td>
+      <td>(1) (ServerRoot)\cgi-bin\printenv.pl (2) (ServerRoot)/cgi-bin/printenv.pl</td>
+      <td>NaN</td>
+      <td>1.5.5 Remove Default CGI Content printenv (Level 1, Scorable) Remove the printenv default CGI in cgi-bin directory if it is installed. # rm $APACHE_PREFIX/cgi-bin/printenv page 39</td>
+      <td>1.18 Remove Default Content p33</td>
+      <td>NaN</td>
+      <td>Rule Title: All web server documentation, sample code, example applications, and tutorials must be  removed from a production web server. STIG ID: WG385 W22  Rule ID: SV-33087r1_rule  Vuln ID: V-13621 Severity: CAT I  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: All web server documentation, sample code, example applications, and tutorials must be  removed from a production web server. STIG ID: WG385 A22  Rule ID: SV-32933r1_rule  Vuln ID: V-13621 Severity: CAT I  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27639-4</td>
+      <td>The Apache access log file data should be configured to contain the appropriate data elements.</td>
+      <td>(1) LogFormat Format String</td>
+      <td>(1) Apache configuration file: LogFormat directive</td>
+      <td>NaN</td>
+      <td>1.6.2 Configure the Access Log (Level 1, Scorable) Add or modify the LogFormat directives in the Apache configuration to use the standard and recommended combined format show as shown below. LogFormat "%h %l %u %t \"%r\" %&gt;s %b \"%{Referer}i\" \"%{User-agent}i\"" combined</td>
+      <td>1.17 Logging p30</td>
+      <td>Rule Title: Log file data must contain required data elements. STIG ID: WG242 W22  Rule ID: SV-28654r2_rule  Vuln ID: V-13688 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: Log file data must contain required data elements. STIG ID: WG242 A22  Rule ID: SV-36642r1_rule  Vuln ID: V-13688 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27688-1</td>
+      <td>The Apache "Timeout" directive should be configured appropriately.</td>
+      <td>(1) Number value (in seconds)</td>
+      <td>(1) Apache configuration file: Timeout directive</td>
+      <td>NaN</td>
+      <td>1.9.1 Denial of Service Mitigation (Level 1, Scorable) Add or modify the Timeout directive in the Apache configuration to have a value of 10 seconds or shorter. Timeout 10 page 71</td>
+      <td>1.13 Denial of Service Prevention Tuning p21</td>
+      <td>NaN</td>
+      <td>Rule Title: The Timeout directive must be properly set. STIG ID: WA000-WWA020 W22  Rule ID: SV-32980r1_rule  Vuln ID: V-13724 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The Timeout directive must be properly set. STIG ID: WA000-WWA020 A22  Rule ID: SV-32977r1_rule  Vuln ID: V-13724 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27456-3</td>
+      <td>The Apache "KeepAlive" directive should be configured appropriately.</td>
+      <td>(1) On / Off</td>
+      <td>(1) Apache configuration file: KeepAlive directive</td>
+      <td>NaN</td>
+      <td>1.9.1 Denial of Service Mitigation (Level 1, Scorable) Add or modify the KeepAlive directive in the Apache configuration to have a value of On, so that Keepalive connections are enabled. KeepAlive On page 71</td>
+      <td>1.13 Denial of Service Prevention Tuning p21</td>
+      <td>NaN</td>
+      <td>Rule Title: The KeepAlive directive must be enabled. STIG ID: WA000-WWA022 W22  Rule ID: SV-32987r1_rule  Vuln ID: V-13725 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The KeepAlive directive must be enabled. STIG ID: WA000-WWA022 A22  Rule ID: SV-32844r1_rule  Vuln ID: V-13725 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27330-0</td>
+      <td>The Apache "KeepAliveTimeout" directive should be configured appropriately.</td>
+      <td>(1) Number value (in seconds)</td>
+      <td>(1) Apache configuration file: KeepAliveTimeout directive</td>
+      <td>NaN</td>
+      <td>1.9.1 Denial of Service Mitigation (Level 1, Scorable) Add or modify the KeepAliveTimeout directive in the Apache configuration to have a value of 15 or less. KeepAliveTimeout 15 page 71</td>
+      <td>1.13 Denial of Service Prevention Tuning p21</td>
+      <td>NaN</td>
+      <td>Rule Title: The KeepAliveTimeout directive must be defined. STIG ID: WA000-WWA024 W22  Rule ID: SV-32880r1_rule  Vuln ID: V-13726 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The KeepAliveTimeout directive must be defined. STIG ID: WA000-WWA024 A22  Rule ID: SV-32877r1_rule  Vuln ID: V-13726 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27877-0</td>
+      <td>The Apache "FollowSymLinks" setting for all "Options" directives should be configured appropriately.</td>
+      <td>(1) FollowSymLinks / -FollowSymLinks / +FollowSymLinks / None</td>
+      <td>(1) Apache configuration file: Options directive</td>
+      <td>NaN</td>
+      <td>1.5.3 Minimize Options for Other Directories (Level 1, Scorable) FollowSymLinks & SymLinksIfOwnerMatch – The following of symbolic links is not recommended and should be disabled if possible. Page 35</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The FollowSymLinks setting must be disabled. STIG ID: WA000-WWA052 W22  Rule ID: SV-33001r1_rule  Vuln ID: V-13732 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The FollowSymLinks setting must be disabled. STIG ID: WA000-WWA052 A22  Rule ID: SV-40129r1_rule  Vuln ID: V-13732 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27764-0</td>
+      <td>The Apache "Includes" setting for all "Options" directives should be configured appropriately.</td>
+      <td>(1) Includes / -Includes / +Includes / None</td>
+      <td>(1) Apache configuration file: Options directive</td>
+      <td>NaN</td>
+      <td>1.5.3 Minimize Options for Other Directories Includes & IncludesNOEXEC – The IncludesNOEXEC option should only be needed when server side includes are required. The full Includes option should not be used as it also allows execution of arbitrary shell commands. Page 35</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Server side includes (SSIs) must run with execution capability disabled. STIG ID: WA000-WWA054 W22  Rule ID: SV-33003r1_rule  Vuln ID: V-13733 Severity: CAT I  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: Server side includes (SSIs) must run with execution capability disabled. STIG ID: WA000-WWA054 A22  Rule ID: SV-32753r1_rule  Vuln ID: V-13733 Severity: CAT I  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27666-7</td>
+      <td>The Apache "IncludesNoExec" setting for all "Options" directives should be configured appropriately.</td>
+      <td>(1) IncludesNoExec / -IncludesNoExec / +IncludesNoExec / None</td>
+      <td>(1) Apache configuration file: Options directive</td>
+      <td>NaN</td>
+      <td>1.5.3 Minimize Options for Other Directories Includes & IncludesNOEXEC – The IncludesNOEXEC option should only be needed when server side includes are required. The full Includes option should not be used as it also allows execution of arbitrary shell commands. Page 35</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Server side includes (SSIs) must run with execution capability disabled. STIG ID: WA000-WWA054 W22  Rule ID: SV-33003r1_rule  Vuln ID: V-13733 Severity: CAT I  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: Server side includes (SSIs) must run with execution capability disabled. STIG ID: WA000-WWA054 A22  Rule ID: SV-32753r1_rule  Vuln ID: V-13733 Severity: CAT I  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27757-4</td>
+      <td>The Apache "MultiViews" setting for all "Options" directives should be configured appropriately.</td>
+      <td>(1) MultiViews / -MultiViews / +MultiViews / None</td>
+      <td>(1) Apache configuration file: Options directive</td>
+      <td>NaN</td>
+      <td>1.5.3 Minimize Options for Other Directories (Level 1, Scorable) Multiviews – Is appropriate if content negotiation is required such as for multiple language are supported. Page 35</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The MultiViews directive must be disabled. STIG ID: WA000-WWA056 W22  Rule ID: SV-33004r1_rule  Vuln ID: V-13734 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The MultiViews directive must be disabled. STIG ID: WA000-WWA056 A22  Rule ID: SV-32754r1_rule  Vuln ID: V-13734 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27657-6</td>
+      <td>The Apache "Indexes" setting for all "Options" directives should be configured appropriately.</td>
+      <td>(1) Indexes / -Indexes / +Indexes / None</td>
+      <td>(1) Apache configuration file: Options directive</td>
+      <td>NaN</td>
+      <td>1.5.3 Minimize Options for Other Directories (Level 1, Scorable) Indexes – The Indexes option causes automatic generation of indexes, if the default index page is missing, and should be disabled unless required. Page 35</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Directory indexing must be disabled on directories not containing index files. STIG ID: WA000-WWA058 W22  Rule ID: SV-33006r1_rule  Vuln ID: V-13735 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: Directory indexing must be disabled on directories not containing index files. STIG ID: WA000-WWA058 A22  Rule ID: SV-32755r1_rule  Vuln ID: V-13735 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27618-8</td>
+      <td>The Apache "LimitRequestBody" directive should be configured appropriately.</td>
+      <td>(1) Number value (in bytes)</td>
+      <td>(1) Apache configuration file: LimitRequestBody directive</td>
+      <td>NaN</td>
+      <td>1.9.2 Buffer Overflow Mitigation (Level 2, Scorable) Add or modify the LimitRequestBody directive in the Apache configuration to have a value of 102400 (100K) or less. Please read the Apache documentation so that it is understood that this directive will limit the size of file up-loads to the web server. LimitRequestBody 102400 page 73</td>
+      <td>1.14 Buffer Overflow Protection Tuning p23</td>
+      <td>NaN</td>
+      <td>Rule Title: The HTTP request message body size must be limited. STIG ID: WA000-WWA060 W22  Rule ID: SV-33008r1_rule  Vuln ID: V-13736 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The HTTP request message body size must be limited. STIG ID: WA000-WWA060 A22  Rule ID: SV-32756r1_rule  Vuln ID: V-13736 Severity: CAT II  Class: Unclass+G66</td>
+    </tr>
+    <tr>
+      <td>CCE-27741-8</td>
+      <td>The Apache "LimitRequestFields" directive should be configured appropriately</td>
+      <td>(1) Number value</td>
+      <td>(1) Apache configuration file: LimitRequestFields directive</td>
+      <td>NaN</td>
+      <td>1.9.2 Buffer Overflow Mitigation (Level 2, Scorable) Add or modify the LimitRequestFields directive in the Apache configuration to have a value of 100 or less. If the directive is not present the default depends on a compile time configuration, but defaults to a value of 100. LimitRequestFields 100 page 73</td>
+      <td>1.14 Buffer Overflow Protection Tuning p24</td>
+      <td>NaN</td>
+      <td>Rule Title: The HTTP request header fields must be limited. STIG ID: WA000-WWA062 W22  Rule ID: SV-33009r1_rule  Vuln ID: V-13737 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The HTTP request header fields must be limited. STIG ID: WA000-WWA062 A22  Rule ID: SV-32757r1_rule  Vuln ID: V-13737 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27554-5</td>
+      <td>The Apache "LimitRequestFieldSizeBody" directive should be configured appropriately.</td>
+      <td>(1) Number value (in bytes)</td>
+      <td>(1) Apache configuration file: LimitRequestFieldSizeBody directive</td>
+      <td>NaN</td>
+      <td>1.9.2 Buffer Overflow Mitigation (Level 2, Scorable) Add or modify the LimitRequestFieldsize directive in the Apache configuration to have a value of 1024 or less. LimitRequestFieldsize 1024 page 73</td>
+      <td>1.14 Buffer Overflow Protection Tuning p24</td>
+      <td>NaN</td>
+      <td>Rule Title: The HTTP request header field size must be limited. STIG ID: WA000-WWA064 W22  Rule ID: SV-33010r1_rule  Vuln ID: V-13738 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The HTTP request header field size must be limited. STIG ID: WA000-WWA064 A22  Rule ID: SV-32766r1_rule  Vuln ID: V-13738 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27426-6</td>
+      <td>The Apache "LimitRequestline" directive should be configured appropriatley.</td>
+      <td>(1) Number value (in bytes)</td>
+      <td>(1) Apache configuration file: LimitRequestLine directive</td>
+      <td>NaN</td>
+      <td>1.9.2 Buffer Overflow Mitigation (Level 2, Scorable) Add or modify the LimitRequestline directive in the Apache configuration to have a value of 512 or shorter. LimitRequestline 512 page 72</td>
+      <td>1.14 Buffer Overflow Protection Tuning p24</td>
+      <td>NaN</td>
+      <td>Rule Title: The HTTP request line must be limited. STIG ID: WA000-WWA066 W22  Rule ID: SV-33011r1_rule  Vuln ID: V-13739 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The HTTP request line must be limited. STIG ID: WA000-WWA066 A22  Rule ID: SV-32768r1_rule  Vuln ID: V-13739 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27822-6</td>
+      <td>The path for Apache sites error log files should be configured appropriately.</td>
+      <td>(1) File path</td>
+      <td>(1) Apache configuration file: ErrorLog directive</td>
+      <td>NaN</td>
+      <td>1.6.1 Configure the Error Log (Level 1, Scorable) Add an ErrorLog directive if not already configured. The file path may be relative or absolute, or the logs may be configured to be sent to a syslog server. ErrorLog "logs/error_log" Add a similar ErrorLog directive for each virtual host configured if the virtual host will have different people responsible for the web site. Each responsible individual or organization needs access to their own web logs, and needs the skills/training/tools for monitor the logs. page 50</td>
+      <td>2.5 Syslog Logging p44-45</td>
+      <td>Rule Title: Error logging must be enabled. STIG ID: WA00605 W22  Rule ID: SV-33147r1_rule  Vuln ID: V-26279 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: Error logging must be enabled. STIG ID: WA00605 A22  Rule ID: SV-33192r1_rule  Vuln ID: V-26279 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27794-7</td>
+      <td>The Apache system logging should be configured appropriately.</td>
+      <td>(1) File path | pipe (2)  LogFormat | nickname</td>
+      <td>(1) Apache configuration file: CustomLog directive</td>
+      <td>NaN</td>
+      <td>1.6.2 Configure the Access Log (Level 1, Scorable) Add or modify the CustomLog directives in the Apache configuration to use the combined format with an appropriate log file, syslog facility or piped logging utility. CustomLog log/access_log combined Add a similar CustomLog directives for each virtual host configured if the virtual host will have different people responsible for the web site. Each responsible individual or organization needs access to their own web logs, and needs the skills/training/tools for monitor the logs. page 51</td>
+      <td>1.17 Logging p31</td>
+      <td>Rule Title: System logging must be enabled. STIG ID: WA00615 W22  Rule ID: SV-33151r1_rule  Vuln ID: V-26281 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: System logging must be enabled. STIG ID: WA00615 A22  Rule ID: SV-33206r1_rule  Vuln ID: V-26281 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27879-6</td>
+      <td>The Apache "LogLevel" directive should be configured appropriately.</td>
+      <td>(1) debug / info / notice / warn / error / crit / alert / emerg</td>
+      <td>(1) Apache configuration file: LogLevel directive</td>
+      <td>NaN</td>
+      <td>1.6.1 Configure the Error Log (Level 1, Scorable) Add or modify the LogLevel in the apache configuration to have a value of notice or lower. Note that is it is compliant to have a value of info or debug if there is a need for a more verbose log and the storage and monitoring processes are capable of handling the extra load. The recommended value is notice. LogLevel notice page 50</td>
+      <td>1.17 Logging p31</td>
+      <td>Rule Title: The LogLevel directive must be enabled. STIG ID: WA00620 W22  Rule ID: SV-33153r1_rule  Vuln ID: V-26282 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The LogLevel directive must be enabled. STIG ID: WA00620 A22  Rule ID: SV-33207r1_rule  Vuln ID: V-26282 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27132-0</td>
+      <td>Web Distributed Authoring and Versioning (WebDav) dav_module should be enabled or disabled as appropriate.</td>
+      <td>(1) dav_module</td>
+      <td>(1) Apache configuration file: LoadModule directive</td>
+      <td>NaN</td>
+      <td>1.2.3 Disable WebDAV modules (Level 1, Scorable) For dynamically loaded modules comment out or remove the LoadModule directive for mod_dav, and mod_dav_fs modules the from the httpd.conf file. ##LoadModule dav_module modules/mod_dav.so ##LoadModule dav_fs_module modules/mod_dav_fs.so page 13</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web Distributed Authoring and Versioning (WebDAV) must be disabled. STIG ID: WA00505 W22  Rule ID: SV-33169r1_rule  Vuln ID: V-26287 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: Web Distributed Authoring and Versioning (WebDAV) must be disabled. STIG ID: WA00505 A22  Rule ID: SV-33216r1_rule  Vuln ID: V-26287 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27861-4</td>
+      <td>Web Distributed Authoring and Versioning (WebDav) dav_fs_module should be enabled or disabled as appropriate.</td>
+      <td>(1) dav_fs_module</td>
+      <td>(1) Apache configuration file: LoadModule directive</td>
+      <td>NaN</td>
+      <td>1.2.3 Disable WebDAV modules (Level 1, Scorable) For dynamically loaded modules comment out or remove the LoadModule directive for mod_dav, and mod_dav_fs modules the from the httpd.conf file. ##LoadModule dav_module modules/mod_dav.so ##LoadModule dav_fs_module modules/mod_dav_fs.so page 13</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web Distributed Authoring and Versioning (WebDAV) must be disabled. STIG ID: WA00505 W22  Rule ID: SV-33169r1_rule  Vuln ID: V-26287 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: Web Distributed Authoring and Versioning (WebDAV) must be disabled. STIG ID: WA00505 A22  Rule ID: SV-33216r1_rule  Vuln ID: V-26287 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27583-4</td>
+      <td>Web Distributed Authoring and Versioning (WebDav) dav_lock_module should be enabled or disabled as appropriate.</td>
+      <td>(1) dav_lock_module</td>
+      <td>(1) Apache configuration file: LoadModule directive</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web Distributed Authoring and Versioning (WebDAV) must be disabled. STIG ID: WA00505 W22  Rule ID: SV-33169r1_rule  Vuln ID: V-26287 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: Web Distributed Authoring and Versioning (WebDAV) must be disabled. STIG ID: WA00505 A22  Rule ID: SV-33216r1_rule  Vuln ID: V-26287 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27852-3</td>
+      <td>Apache's info_module should be enabled or disabled as appropriate.</td>
+      <td>(1) info_module</td>
+      <td>(1) Apache configuration file: LoadModule directive</td>
+      <td>NaN</td>
+      <td>1.2.8 Disable Info module (Level 1, Scorable) a) For source builds with static modules run the Apache ./configure script without including the mod_info in the --enable-modules= configure script options. $ cd $DOWNLOAD/httpd-2.2.22 $ ./configure b) For dynamically loaded modules comment out or remove the LoadModule directive for the mod_info module from the httpd.conf file. ##LoadModule info_module modules/mod_info.so Page 18</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server status module will be disabled. STIG ID: WA00510 W22  Rule ID: SV-33171r1_rule  Vuln ID: V-26294 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server status module will be disabled. STIG ID: WA00510 A22  Rule ID: SV-33218r1_rule  Vuln ID: V-26294 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27357-3</td>
+      <td>Apache's status_module should be enabled or disabled as appropriate.</td>
+      <td>(1) status_module</td>
+      <td>(1) Apache configuration file: LoadModule directive</td>
+      <td>NaN</td>
+      <td>1.2.4 Disable Status module (Level 1, Scorable) a) For source builds with static modules run the Apache ./configure script with the --disable-status configure script options. $ cd $DOWNLOAD/httpd-2.2.22 $ ./configure --disable-status b) For dynamically loaded modules comment out or remove the LoadModule directive for the mod_status module from the httpd.conf file. ##LoadModule status_module modules/mod_status.so page 14</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server status module will be disabled. STIG ID: WA00510 W22  Rule ID: SV-33171r1_rule  Vuln ID: V-26294 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server status module will be disabled. STIG ID: WA00510 A22  Rule ID: SV-33218r1_rule  Vuln ID: V-26294 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27825-9</td>
+      <td>Apache's proxy_module should be enabled or disabled as appropriate.</td>
+      <td>(1) proxy_module</td>
+      <td>(1) Apache configuration file: LoadModule directive</td>
+      <td>NaN</td>
+      <td>1.2.6 Disable Proxy Modules (Level 1, Scorable) a) For source builds with static modules run the Apache ./configure script without including the mod_proxy in the --enable-modules= configure script options. $ cd $DOWNLOAD/httpd-2.2.22 $ ./configure b) For dynamically loaded modules comment out or remove the LoadModule directive for mod_proxy module and all other proxy modules the from the httpd.conf file. ##LoadModule proxy_module modules/mod_proxy.so Page 16</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server must not be configured as a proxy server. STIG ID: WA00520 W22  Rule ID: SV-33173r1_rule  Vuln ID: V-26299 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server must not be configured as a proxy server. STIG ID: WA00520 A22  Rule ID: SV-33220r1_rule  Vuln ID: V-26299 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27788-9</td>
+      <td>Apache's proxy_ftp_module should be enabled or disabled as appropriate.</td>
+      <td>(1) proxy_ftp_module</td>
+      <td>(1) Apache configuration file: LoadModule directive</td>
+      <td>NaN</td>
+      <td>1.2.6 Disable Proxy Modules (Level 1, Scorable) a) For source builds with static modules run the Apache ./configure script without including the mod_proxy in the --enable-modules= configure script options. $ cd $DOWNLOAD/httpd-2.2.22 $ ./configure b) For dynamically loaded modules comment out or remove the LoadModule directive for mod_proxy module and all other proxy modules the from the httpd.conf file. ##LoadModule proxy_ftp_module modules/mod_proxy_ftp.so Page 16</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server must not be configured as a proxy server. STIG ID: WA00520 W22  Rule ID: SV-33173r1_rule  Vuln ID: V-26299 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server must not be configured as a proxy server. STIG ID: WA00520 A22  Rule ID: SV-33220r1_rule  Vuln ID: V-26299 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27881-2</td>
+      <td>Apache's proxy_http_module should be enabled or disabled as appropriate.</td>
+      <td>(1) proxy_http_module</td>
+      <td>(1) Apache configuration file: LoadModule directive</td>
+      <td>NaN</td>
+      <td>1.2.6 Disable Proxy Modules (Level 1, Scorable) a) For source builds with static modules run the Apache ./configure script without including the mod_proxy in the --enable-modules= configure script options. $ cd $DOWNLOAD/httpd-2.2.22 $ ./configure b) For dynamically loaded modules comment out or remove the LoadModule directive for mod_proxy module and all other proxy modules the from the httpd.conf file. ##LoadModule proxy_http_module modules/mod_proxy_http.so Page 16</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server must not be configured as a proxy server. STIG ID: WA00520 W22  Rule ID: SV-33173r1_rule  Vuln ID: V-26299 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server must not be configured as a proxy server. STIG ID: WA00520 A22  Rule ID: SV-33220r1_rule  Vuln ID: V-26299 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27579-2</td>
+      <td>Apache's proxy_connect_module should be enabled or disabled as appropriate.</td>
+      <td>(1) proxy_connect_module</td>
+      <td>(1) Apache configuration file: LoadModule directive</td>
+      <td>NaN</td>
+      <td>1.2.6 Disable Proxy Modules (Level 1, Scorable) a) For source builds with static modules run the Apache ./configure script without including the mod_proxy in the --enable-modules= configure script options. $ cd $DOWNLOAD/httpd-2.2.22 $ ./configure b) For dynamically loaded modules comment out or remove the LoadModule directive for mod_proxy module and all other proxy modules the from the httpd.conf file. ##LoadModule proxy_connect_module modules/mod_proxy_connect.so Page 16</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server must not be configured as a proxy server. STIG ID: WA00520 W22  Rule ID: SV-33173r1_rule  Vuln ID: V-26299 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server must not be configured as a proxy server. STIG ID: WA00520 A22  Rule ID: SV-33220r1_rule  Vuln ID: V-26299 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27824-2</td>
+      <td>Apache's proxy_ajp_module should be enabled or disabled as appropriate</td>
+      <td>(1) proxy_ajp_module</td>
+      <td>(1) Apache configuration file: LoadModule directive</td>
+      <td>NaN</td>
+      <td>1.2.6 Disable Proxy Modules (Level 1, Scorable) a) For source builds with static modules run the Apache ./configure script without including the mod_proxy in the --enable-modules= configure script options. $ cd $DOWNLOAD/httpd-2.2.22 $ ./configure b) For dynamically loaded modules comment out or remove the LoadModule directive for mod_proxy module and all other proxy modules the from the httpd.conf file. ##LoadModule proxy_connect_module modules/mod_proxy_ajp.so Page 16</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server must not be configured as a proxy server. STIG ID: WA00520 W22  Rule ID: SV-33173r1_rule  Vuln ID: V-26299 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server must not be configured as a proxy server. STIG ID: WA00520 A22  Rule ID: SV-33220r1_rule  Vuln ID: V-26299 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27887-9</td>
+      <td>Apache's proxy_balancer_module should be enabled or disabled as appropriate.</td>
+      <td>(1) proxy_balancer_module</td>
+      <td>(1) Apache configuration file: LoadModule directive</td>
+      <td>NaN</td>
+      <td>1.2.6 Disable Proxy Modules (Level 1, Scorable) a) For source builds with static modules run the Apache ./configure script without including the mod_proxy in the --enable-modules= configure script options. $ cd $DOWNLOAD/httpd-2.2.22 $ ./configure b) For dynamically loaded modules comment out or remove the LoadModule directive for mod_proxy module and all other proxy modules the from the httpd.conf file. ##LoadModule proxy_balancer_module modules/mod_proxy_balancer.so Page 16</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server must not be configured as a proxy server. STIG ID: WA00520 W22  Rule ID: SV-33173r1_rule  Vuln ID: V-26299 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server must not be configured as a proxy server. STIG ID: WA00520 A22  Rule ID: SV-33220r1_rule  Vuln ID: V-26299 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27682-4</td>
+      <td>User-specific directories should be enabled or disabled as appropriate.</td>
+      <td>(1) userdir_module</td>
+      <td>(1) Apache configuration file: LoadModule directive</td>
+      <td>NaN</td>
+      <td>1.2.7 Disable User Directories Modules (Level 1, Scorable) 1. For source builds with static modules run the Apache ./configure script with the --disable-userdir configure script options. $ cd $DOWNLOAD/httpd-2.2.22 $ ./configure --disable-userdir 2. For dynamically loaded modules comment out or remove the LoadModule directive for mod_userdir module from the httpd.conf file. ##LoadModule userdir_module modules/mod_userdir.so Page 17</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: User specific directories must not be globally enabled. STIG ID: WA00525 W22  Rule ID: SV-33175r1_rule  Vuln ID: V-26302 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: User specific directories must not be globally enabled. STIG ID: WA00525 A22  Rule ID: SV-33221r1_rule  Vuln ID: V-26302 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27845-7</td>
+      <td>Apache's process ID (PID) file's Windows permissions should be configured appropriately.</td>
+      <td>(1) set of accounts  (2) list of permissions  (3) applicability</td>
+      <td>(1) defined by the object's DACL</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The process ID (PID) file must be properly secured. STIG ID: WA00530 W22  Rule ID: SV-33177r1_rule  Vuln ID: V-26305 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27819-2</td>
+      <td>Apache's Scoreboard file's Windows permissions should be configured appropriately.</td>
+      <td>(1) set of accounts  (2) list of permissions  (3) applicability</td>
+      <td>(1) defined by the object's DACL</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The ScoreBoard file must be properly secured. STIG ID: WA00535 W22  Rule ID: SV-33178r1_rule  Vuln ID: V-26322 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27510-7</td>
+      <td>The Order directive for the OS root should be configured appropriately.</td>
+      <td>(1) Allow,Deny / Deny,Allow / Mutual-failure</td>
+      <td>(1) Order directive</td>
+      <td>NaN</td>
+      <td>1.4.1 Deny Access to OS Root Directory (Level 1, Scorable) Ensure there is a single Order directive and set the value to deny, allow Page 27</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server must be configured to explicitly deny access to the OS root. STIG ID: WA00540 W22  Rule ID: SV-33180r1_rule  Vuln ID: V-26323 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server must be configured to explicitly deny access to the OS root. STIG ID: WA00540 A22  Rule ID: SV-33226r1_rule  Vuln ID: V-26323 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27415-9</td>
+      <td>The Allow Directive for the OS root should be configured appropriately</td>
+      <td>(1) all | hostname/IP address/environment variable</td>
+      <td>(1) Allow directive</td>
+      <td>NaN</td>
+      <td>1.4.1 Deny Access to OS Root Directory (Level 1, Scorable) Remove any Allow directives from the root &lt;Directory&gt; element. allow Page 27</td>
+      <td>1.7 Restricting Access p14-15</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server must be configured to explicitly deny access to the OS root. STIG ID: WA00540 W22  Rule ID: SV-33180r1_rule  Vuln ID: V-26323 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server must be configured to explicitly deny access to the OS root. STIG ID: WA00540 A22  Rule ID: SV-33226r1_rule  Vuln ID: V-26323 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27684-0</td>
+      <td>The Deny Directive for the OS root should be configured appropriately</td>
+      <td>(1) all | hostname/IP address/environment variable</td>
+      <td>(1) Deny directive</td>
+      <td>NaN</td>
+      <td>1.4.1 Deny Access to OS Root Directory (Level 1, Scorable) Ensure there is a Deny directive, and set the value to from all. allow Page 27</td>
+      <td>1.7 Restricting Access p14-15</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server must be configured to explicitly deny access to the OS root. STIG ID: WA00540 W22  Rule ID: SV-33180r1_rule  Vuln ID: V-26323 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server must be configured to explicitly deny access to the OS root. STIG ID: WA00540 A22  Rule ID: SV-33226r1_rule  Vuln ID: V-26323 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27067-8</td>
+      <td>The Apache "ExecCGI" setting for all "Options" directives for the OS root should be configured appropriately.</td>
+      <td>(1) ExecCGI / -ExecCGI/ +ExecCGI / None</td>
+      <td>(1) Apache configuration file: Options directive (in OS root Directory directive)</td>
+      <td>NaN</td>
+      <td>1.5.1 Restrict Options for the OS Root Directory (Level 1, Scorable) Set the value for Options to None. Page 33</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server options for the OS root must be disabled. STIG ID: WA00545 W22  Rule ID: SV-33182r1_rule  Vuln ID: V-26324 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server options for the OS root must be disabled. STIG ID: WA00545 A22  Rule ID: SV-33213r1_rule  Vuln ID: V-26324 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27134-6</td>
+      <td>The Apache "FollowSymLinks" setting for all "Options" directives for the OS root should be configured appropriately.</td>
+      <td>(1) FollowSymLinks / -FollowSymLinks / +FollowSymLinks / None</td>
+      <td>(1) Apache configuration file: Options directive (in OS root Directory directive)</td>
+      <td>NaN</td>
+      <td>1.5.1 Restrict Options for the OS Root Directory (Level 1, Scorable) Set the value for Options to None. Page 33</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server options for the OS root must be disabled. STIG ID: WA00545 W22  Rule ID: SV-33182r1_rule  Vuln ID: V-26324 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server options for the OS root must be disabled. STIG ID: WA00545 A22  Rule ID: SV-33213r1_rule  Vuln ID: V-26324 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27679-0</td>
+      <td>The Apache "Includes" setting for all "Options" directives for the OS root should be configured appropriately.</td>
+      <td>(1) Includes / -Includes / +Includes / None</td>
+      <td>(1) Apache configuration file: Options directive (in OS root Directory directive)</td>
+      <td>NaN</td>
+      <td>1.5.1 Restrict Options for the OS Root Directory (Level 1, Scorable) Set the value for Options to None. Page 33</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server options for the OS root must be disabled. STIG ID: WA00545 W22  Rule ID: SV-33182r1_rule  Vuln ID: V-26324 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server options for the OS root must be disabled. STIG ID: WA00545 A22  Rule ID: SV-33213r1_rule  Vuln ID: V-26324 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27506-5</td>
+      <td>The Apache "IncludesNoExec" setting for all "Options" directives for the OS root should be configured appropriately.</td>
+      <td>(1) IncludesNoExec / -IncludesNoExec / +IncludesNoExec / None</td>
+      <td>(1) Apache configuration file: Options directive (in OS root Directory directive)</td>
+      <td>NaN</td>
+      <td>1.5.1 Restrict Options for the OS Root Directory (Level 1, Scorable) Set the value for Options to None. Page 33</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server options for the OS root must be disabled. STIG ID: WA00545 W22  Rule ID: SV-33182r1_rule  Vuln ID: V-26324 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server options for the OS root must be disabled. STIG ID: WA00545 A22  Rule ID: SV-33213r1_rule  Vuln ID: V-26324 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27545-3</td>
+      <td>The Apache "Indexes" setting for all "Options" directives for the OS root should be configured appropriately.</td>
+      <td>(1) Indexes / -Indexes / +Indexes / None</td>
+      <td>(1) Apache configuration file: Options directive (in OS root Directory directive)</td>
+      <td>NaN</td>
+      <td>1.5.1 Restrict Options for the OS Root Directory (Level 1, Scorable) Set the value for Options to None. Page 33</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server options for the OS root must be disabled. STIG ID: WA00545 W22  Rule ID: SV-33182r1_rule  Vuln ID: V-26324 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server options for the OS root must be disabled. STIG ID: WA00545 A22  Rule ID: SV-33213r1_rule  Vuln ID: V-26324 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27692-3</td>
+      <td>The Apache "MultiViews" setting for all "Options" directives for the OS root should be configured appropriately.</td>
+      <td>(1) MultiViews / -MultiViews / +MultiViews / None</td>
+      <td>(1) Apache configuration file: Options directive (in OS root Directory directive)</td>
+      <td>NaN</td>
+      <td>1.5.1 Restrict Options for the OS Root Directory (Level 1, Scorable) Set the value for Options to None. Page 33</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server options for the OS root must be disabled. STIG ID: WA00545 W22  Rule ID: SV-33182r1_rule  Vuln ID: V-26324 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server options for the OS root must be disabled. STIG ID: WA00545 A22  Rule ID: SV-33213r1_rule  Vuln ID: V-26324 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27806-9</td>
+      <td>The Apache "SymLinksIfOwnerMatch" setting for all "Options" directives for the OS root should be configured appropriately.</td>
+      <td>(1) SymLinksIfOwnerMatch / -SymLinksIfOwnerMatch / +SymLinksIfOwnerMatch / None</td>
+      <td>(1) Apache configuration file: Options directive (in OS root Directory directive)</td>
+      <td>NaN</td>
+      <td>1.5.1 Restrict Options for the OS Root Directory (Level 1, Scorable) Set the value for Options to None. Page 33</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server options for the OS root must be disabled. STIG ID: WA00545 W22  Rule ID: SV-33182r1_rule  Vuln ID: V-26324 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server options for the OS root must be disabled. STIG ID: WA00545 A22  Rule ID: SV-33213r1_rule  Vuln ID: V-26324 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27531-3</td>
+      <td>The Apache "TraceEnable" directive should be configured appropriatley.</td>
+      <td>(1) on / off / extended</td>
+      <td>(1) Apache configuration file: TraceEnable directive</td>
+      <td>NaN</td>
+      <td>1.5.8 Disable HTTP TRACE Method (Level 1, Scorable) Add a TraceEnable directive to the server level configuration with a value of off. Server level configuration is the top level configuration, not nested within any other directives like &lt;Directory&gt; or &lt;Location&gt;. TraceEnable off Page 42-43</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The TRACE method must be disabled. STIG ID: WA00550 W22  Rule ID: SV-33183r1_rule  Vuln ID: V-26325 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The TRACE method must be disabled. STIG ID: WA00550 A22  Rule ID: SV-33227r1_rule  Vuln ID: V-26325 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27862-2</td>
+      <td>Apache's listening IP address should be configured appropriately.</td>
+      <td>(1) IP-address</td>
+      <td>(1) Apache configuration file: Listen directive</td>
+      <td>NaN</td>
+      <td>1.9.3 Restrict Listen Directive (Level 2, Scorable) The Apache Listen directive specifies the IP addresses and port numbers the Apache web server will listen for requests. Rather than be unrestricted to listen on all IP addresses available to the system, the specific IP address or addresses intended should be explicitly specified. Specifically a Listen directive with no IP address specified, or with an IP address of zeros should not be used.  Page 74</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server must be configured to listen on a specific IP address and port. STIG ID: WA00555 W22  Rule ID: SV-33184r1_rule  Vuln ID: V-26326 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server must be configured to listen on a specific IP address and port. STIG ID: WA00555 A22  Rule ID: SV-33228r1_rule  Vuln ID: V-26326 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27246-8</td>
+      <td>Apache's listening port should be configured appropriately.</td>
+      <td>(1) port number</td>
+      <td>(1) Apache configuration file: Listen directive</td>
+      <td>NaN</td>
+      <td>1.9.3 Restrict Listen Directive (Level 2, Scorable) The Apache Listen directive specifies the IP addresses and port numbers the Apache web server will listen for requests. Rather than be unrestricted to listen on all IP addresses available to the system, the specific IP address or addresses intended should be explicitly specified. Specifically a Listen directive with no IP address specified, or with an IP address of zeros should not be used.  Page 74</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server must be configured to listen on a specific IP address and port. STIG ID: WA00555 W22  Rule ID: SV-33184r1_rule  Vuln ID: V-26326 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server must be configured to listen on a specific IP address and port. STIG ID: WA00555 A22  Rule ID: SV-33228r1_rule  Vuln ID: V-26326 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27733-5</td>
+      <td>The ScriptAlias for the specified directory should be configured appropriately.</td>
+      <td>(1) url-path (2) TARGET: directory path</td>
+      <td>(1) Apache configuration file: ScriptAlias directive</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The URL-path name must be set to the file path name or the directory path name. STIG ID: WA00560 W22  Rule ID: SV-33185r1_rule  Vuln ID: V-26327 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The URL-path name must be set to the file path name or the directory path name. STIG ID: WA00560 A22  Rule ID: SV-33229r1_rule  Vuln ID: V-26327 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27759-0</td>
+      <td>Automatic directory indexing should be enabled or disabled as appropriate.</td>
+      <td>(1) autoindex_module</td>
+      <td>(1) Apache configuration file: LoadModule directive</td>
+      <td>NaN</td>
+      <td>1.2.5 Disable Autoindex module (Level 1, Scorable) For source builds with static modules run the Apache ./configure script with the --disable-autoindex configure script options. $ cd $DOWNLOAD/httpd-2.2.22 $ ./configure –disable-autoindex b) For dynamically loaded modules comment out or remove the LoadModule directive for mod_autoindex module the from the httpd.conf file. ## LoadModule autoindex_module modules/mod_autoindex.so Page 14-15</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Automatic directory indexing must be disabled. STIG ID: WA00515 W22  Rule ID: SV-33225r1_rule  Vuln ID: V-26368 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: Automatic directory indexing must be disabled. STIG ID: WA00515 A22  Rule ID: SV-33219r1_rule  Vuln ID: V-26368 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27536-2</td>
+      <td>The Apache AllowOverride Directive should be configured appropriately for operating system root directories.</td>
+      <td>(1) AuthConfig / FileInfo / Indexes / Limit / Options / All / None</td>
+      <td>(1) Apache configuration file: AllowOverride directive</td>
+      <td>NaN</td>
+      <td>1.4.3 Restrict OverRide for the OS Root Directory (Level 1, Scorable) Set the value for AllowOverride to None. Page 30-31</td>
+      <td>1.8 Directory Functionality Control with the Options Directive p17</td>
+      <td>NaN</td>
+      <td>Rule Title: The ability to override the access configuration for the OS root directory must be disabled. STIG ID: WA00547 W22  Rule ID: SV-33237r1_rule  Vuln ID: V-26393 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: The ability to override the access configuration for the OS root directory must be disabled. STIG ID: WA00547 A22  Rule ID: SV-33232r1_rule  Vuln ID: V-26393 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27776-4</td>
+      <td>Permitted HTTP request methods should be configured appropriately.</td>
+      <td>(1) methods (2) access control directives</td>
+      <td>(1) Apache configuration file: LimitExecpt directive</td>
+      <td>NaN</td>
+      <td>1.5.7 Limit HTTP Request Methods (Level 1, Scorable) For normal web server operation, you will typically need to allow only the GET, HEAD and POST request methods. Page 40-41</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: HTTP request methods must be limited. STIG ID: WA00565 W22  Rule ID: SV-33238r1_rule  Vuln ID: V-26396 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>Rule Title: HTTP request methods must be limited. STIG ID: WA00565 A22  Rule ID: SV-33236r1_rule  Vuln ID: V-26396 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27677-4</td>
+      <td>Anonymous sharing of Apache's web content directories with nfs should be configured appropriately.</td>
+      <td>(1) Set of shares</td>
+      <td>(1) via /etc/exports</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web content directories must not be anonymously shared. STIG ID: WG210 A22  Rule ID: SV-33022r1_rule  Vuln ID: V-2226 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+      <td>AC-3(4).1 CM-6.1 (ii) CM-7.1 (ii)</td>
+      <td>CCI-001362 CCI-001588 CCI-000381</td>
+    </tr>
+    <tr>
+      <td>CCE-27612-1</td>
+      <td>Anonymous sharing of Apache's web content directories with smb should be configured appropriately.</td>
+      <td>(1) Set of shares</td>
+      <td>(1) via /etc/samba/smb.conf</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web content directories must not be anonymously shared. STIG ID: WG210 A22  Rule ID: SV-33022r1_rule  Vuln ID: V-2226 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27000-9</td>
+      <td>File permissions for httpd.conf should be set correctly.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web administration tools must be restricted to the web manager and the web manager’s designees. STIG ID: WG220 A22  Rule ID: SV-32948r1_rule  Vuln ID: V-2248 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27890-3</td>
+      <td>The httpd.conf file should be owned by the appropriate user.</td>
+      <td>(1) user</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web administration tools must be restricted to the web manager and the web manager’s designees. STIG ID: WG220 A22  Rule ID: SV-32948r1_rule  Vuln ID: V-2248 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27648-5</td>
+      <td>The httpd.conf file should be owned by the appropriate group.</td>
+      <td>(1) group</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web administration tools must be restricted to the web manager and the web manager’s designees. STIG ID: WG220 A22  Rule ID: SV-32948r1_rule  Vuln ID: V-2248 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27400-1</td>
+      <td>The file permissions for all files specified by CustomLog directives should be configured appropriately</td>
+      <td>(1) permissions</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Log file access must be restricted to System Administrators, Web Administrators or Auditors. STIG ID: WG250 A22  Rule ID: SV-33033r1_rule  Vuln ID: V-2252 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27304-5</td>
+      <td>All files specified by CustomLog directives should be owned by the appropriate user</td>
+      <td>(1) user</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Log file access must be restricted to System Administrators, Web Administrators or Auditors. STIG ID: WG250 A22  Rule ID: SV-33033r1_rule  Vuln ID: V-2252 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27876-2</td>
+      <td>All files specified by CustomLog directives should be owned by the appropriate group</td>
+      <td>(1) group</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Log file access must be restricted to System Administrators, Web Administrators or Auditors. STIG ID: WG250 A22  Rule ID: SV-33033r1_rule  Vuln ID: V-2252 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27864-8</td>
+      <td>The Unix permissions for all files specified by ErrorLog directives should be configured appropriately</td>
+      <td>(1) permissions</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Log file access must be restricted to System Administrators, Web Administrators or Auditors. STIG ID: WG250 A22  Rule ID: SV-33033r1_rule  Vuln ID: V-2252 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27724-4</td>
+      <td>All files specified by ErrorLog directives should be owned by the appropriate user</td>
+      <td>(1) user</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Log file access must be restricted to System Administrators, Web Administrators or Auditors. STIG ID: WG250 A22  Rule ID: SV-33033r1_rule  Vuln ID: V-2252 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27494-4</td>
+      <td>All files specified by ErrorLog directives should be owned by the appropriate group</td>
+      <td>(1) group</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Log file access must be restricted to System Administrators, Web Administrators or Auditors. STIG ID: WG250 A22  Rule ID: SV-33033r1_rule  Vuln ID: V-2252 Severity: CAT II  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27481-1</td>
+      <td>The Unix permissions of Apache's htpasswd file should be configured appropriately.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server’s htpasswd files (if present) must reflect proper ownership and permissions. STIG ID: WG270 A22  Rule ID: SV-36478r1_rule  Vuln ID: V-2255 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27332-6</td>
+      <td>The htpasswd should be owned by the appropriate user.</td>
+      <td>(1) user</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server’s htpasswd files (if present) must reflect proper ownership and permissions. STIG ID: WG270 A22  Rule ID: SV-36478r1_rule  Vuln ID: V-2255 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27873-9</td>
+      <td>The htpasswd file should be owned by the appropriate group.</td>
+      <td>(1) group</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web server’s htpasswd files (if present) must reflect proper ownership and permissions. STIG ID: WG270 A22  Rule ID: SV-36478r1_rule  Vuln ID: V-2255 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27292-2</td>
+      <td>The Unix permissions for all directories specified by ScriptAlias directives should be configured appropriately.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>1.3.5 Apache Directory and File Permissions (Level 1, Scorable) The permission on the Apache directories should be rwxr-xr-x (755) and the file permissions should be similar except not executable if executable is not appropriate.  Page 22-23</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web client account access to the content and scripts directories must be limited to read and execute. STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258 Severity: CAT I  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27282-3</td>
+      <td>All directories specified by ScriptAlias directives should be owned by the appropriate user.</td>
+      <td>(1) user</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.4 Apache Directory and File Ownership (Level 1, Scorable) The Apache directories and files should be owned by root with the root (or root equivalent) group. Page 21-22</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web client account access to the content and scripts directories must be limited to read and execute. STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258 Severity: CAT I  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27777-2</td>
+      <td>All directories specified by ScriptAlias directives should be owned by the appropriate group.</td>
+      <td>(1) group</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.4 Apache Directory and File Ownership (Level 1, Scorable) The Apache directories and files should be owned by root with the root (or root equivalent) group. Page 21-22</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web client account access to the content and scripts directories must be limited to read and execute. STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258 Severity: CAT I  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27619-6</td>
+      <td>The Unix permissions for all directories specified by ScriptAliasMatch directives should be configured appropriately.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>1.3.5 Apache Directory and File Permissions (Level 1, Scorable) The permission on the Apache directories should be rwxr-xr-x (755) and the file permissions should be similar except not executable if executable is not appropriate.  Page 22-23</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web client account access to the content and scripts directories must be limited to read and execute. STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258 Severity: CAT I  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27884-6</td>
+      <td>All directories specified by ScriptAliasMatch directives should be owned by the appropriate user.</td>
+      <td>(1) user</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.4 Apache Directory and File Ownership (Level 1, Scorable) The Apache directories and files should be owned by root with the root (or root equivalent) group. Page 21-22</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web client account access to the content and scripts directories must be limited to read and execute. STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258 Severity: CAT I  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27384-7</td>
+      <td>All directories specified by ScriptAliasMatch directives should be owned by the appropriate group.</td>
+      <td>(1) group</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.4 Apache Directory and File Ownership (Level 1, Scorable) The Apache directories and files should be owned by root with the root (or root equivalent) group. Page 21-22</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web client account access to the content and scripts directories must be limited to read and execute. STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258 Severity: CAT I  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27772-3</td>
+      <td>The Unix permissions for all directories specified by DocumentRoot directives should be configured appropriately.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>1.3.5 Apache Directory and File Permissions (Level 1, Scorable) The permission on the Apache directories should be rwxr-xr-x (755) and the file permissions should be similar except not executable if executable is not appropriate.  Page 22-23</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web client account access to the content and scripts directories must be limited to read and execute. STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258 Severity: CAT I  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27492-8</td>
+      <td>All directories specified by DocumentRoot directives should be owned by the appropriate user.</td>
+      <td>(1) user</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.4 Apache Directory and File Ownership (Level 1, Scorable) The Apache directories and files should be owned by root with the root (or root equivalent) group. Page 21-22</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web client account access to the content and scripts directories must be limited to read and execute. STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258 Severity: CAT I  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27664-2</td>
+      <td>All directories specified by DocumentRoot directives should be owned by the appropriate group.</td>
+      <td>(1) group</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.4 Apache Directory and File Ownership (Level 1, Scorable) The Apache directories and files should be owned by root with the root (or root equivalent) group. Page 21-22</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web client account access to the content and scripts directories must be limited to read and execute. STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258 Severity: CAT I  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27627-9</td>
+      <td>The Unix permissions for all directories specified by Alias directives should be configured appropriately.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>1.3.5 Apache Directory and File Permissions (Level 1, Scorable) The permission on the Apache directories should be rwxr-xr-x (755) and the file permissions should be similar except not executable if executable is not appropriate.  Page 22-23</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web client account access to the content and scripts directories must be limited to read and execute. STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258 Severity: CAT I  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27672-5</td>
+      <td>All directories specified by Alias directives should be owned by the appropriate user.</td>
+      <td>(1) user</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.4 Apache Directory and File Ownership (Level 1, Scorable) The Apache directories and files should be owned by root with the root (or root equivalent) group. Page 21-22</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web client account access to the content and scripts directories must be limited to read and execute. STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258 Severity: CAT I  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27460-5</td>
+      <td>All directories specified by Alias directives should be owned by the appropriate group.</td>
+      <td>(1) group</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.4 Apache Directory and File Ownership (Level 1, Scorable) The Apache directories and files should be owned by root with the root (or root equivalent) group. Page 21-22</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The web client account access to the content and scripts directories must be limited to read and execute. STIG ID: WG290 A22  Rule ID: SV-33027r1_rule  Vuln ID: V-2258 Severity: CAT I  Class: Unclass</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27787-1</td>
+      <td>The Unix permissions for all directories specified by ServerRoot directives should be configred appropriately</td>
+      <td>(1) permissions</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server system files must conform to minimum file permission requirements. STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27548-7</td>
+      <td>All directories specified by ServerRoot directives should be owned by the appropriate user.</td>
+      <td>(1) user</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server system files must conform to minimum file permission requirements. STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27826-7</td>
+      <td>All directories specified by ServerRoot directives should be owned by the appropriate group.</td>
+      <td>(1) group</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server system files must conform to minimum file permission requirements. STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-26950-6</td>
+      <td>The Unix permissions of Apache's configuration directory should be configred appropriately</td>
+      <td>(1) permissions</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>1.3.5 Apache Directory and File Permissions (Level 1, Scorable) The permission on the Apache directories should be rwxr-xr-x (755) and the file permissions should be similar except not executable if executable is not appropriate.  Page 22-23</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server system files must conform to minimum file permission requirements. STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27833-3</td>
+      <td>Apache's configuration directory should be owned by the appropriate user.</td>
+      <td>(1) user</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.4 Apache Directory and File Ownership (Level 1, Scorable) The Apache directories and files should be owned by root with the root (or root equivalent) group. Page 21-22</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server system files must conform to minimum file permission requirements. STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27800-2</td>
+      <td>Apache's configuration directory should be owned by the appropriate group.</td>
+      <td>(1) group</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.4 Apache Directory and File Ownership (Level 1, Scorable) The Apache directories and files should be owned by root with the root (or root equivalent) group. Page 21-22</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server system files must conform to minimum file permission requirements. STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27911-7</td>
+      <td>The Unix permissions of Apache's /bin directory should be configred appropriately</td>
+      <td>(1) permissions</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>1.3.5 Apache Directory and File Permissions (Level 1, Scorable) Perform the following to set the permissions on the $APACHE_PREFIX directories, and then remove other read permissions on the bin directory and its contents: 23 | P a g e # chmod –R u=rwX,g=rX,o=rX $APACHE_PREFIX # chmod –R u=rwX,g=rX,o=X $APACHE_PREFIX/bin  Page 22-23</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server system files must conform to minimum file permission requirements. STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27709-5</td>
+      <td>Apache's /bin directory should be owned by the appropriate user.</td>
+      <td>(1) user</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.4 Apache Directory and File Ownership (Level 1, Scorable) The Apache directories and files should be owned by root with the root (or root equivalent) group. Page 21-22</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server system files must conform to minimum file permission requirements. STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27685-7</td>
+      <td>Apache's /bin directory should be owned by the appropriate group.</td>
+      <td>(1) group</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.4 Apache Directory and File Ownership (Level 1, Scorable) The Apache directories and files should be owned by root with the root (or root equivalent) group. Page 21-22</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server system files must conform to minimum file permission requirements. STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27540-4</td>
+      <td>The Unix permissions of Apache's /logs directory should be configred appropriately</td>
+      <td>(1) permissions</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>1.3.5 Apache Directory and File Permissions (Level 1, Scorable) The permission on the Apache directories should be rwxr-xr-x (755) and the file permissions should be similar except not executable if executable is not appropriate.  Page 22-23</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server system files must conform to minimum file permission requirements. STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27818-4</td>
+      <td>Apache's /logs directory should be owned by the appropriate user.</td>
+      <td>(1) user</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.4 Apache Directory and File Ownership (Level 1, Scorable) The Apache directories and files should be owned by root with the root (or root equivalent) group. Page 21-22</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server system files must conform to minimum file permission requirements. STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27602-2</td>
+      <td>Apache's /logs directory should be owned by the appropriate group.</td>
+      <td>(1) group</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.4 Apache Directory and File Ownership (Level 1, Scorable) The Apache directories and files should be owned by root with the root (or root equivalent) group. Page 21-22</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server system files must conform to minimum file permission requirements. STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27041-3</td>
+      <td>The Unix permissions of Apache's /htdocs directory should be configred appropriately</td>
+      <td>(1) permissions</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>1.3.5 Apache Directory and File Permissions (Level 1, Scorable) The permission on the Apache directories should be rwxr-xr-x (755) and the file permissions should be similar except not executable if executable is not appropriate. … exception in some cases may have a designated group with write access for the Apache web document root ($APACHE_PREFIX/htdocs) are likely to need a designated group to allow web content to be updated.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server system files must conform to minimum file permission requirements. STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27699-8</td>
+      <td>Apache's /htdocs directory should be owned by the appropriate user.</td>
+      <td>(1) user</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.4 Apache Directory and File Ownership (Level 1, Scorable) The Apache directories and files should be owned by root with the root (or root equivalent) group. Page 21</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server system files must conform to minimum file permission requirements. STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27866-3</td>
+      <td>Apache's /htdocs directory should be owned by the appropriate group.</td>
+      <td>(1) group</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.4 Apache Directory and File Ownership (Level 1, Scorable) the Apache web document root ($APACHE_PREFIX/htdocs) are likely to need a designated group to allow web content to be updated (such as webupdate) through a change management process. Page 21</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server system files must conform to minimum file permission requirements. STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27793-9</td>
+      <td>The Unix permissions of Apache's /cgi-bin directory should be configred appropriately</td>
+      <td>(1) permissions</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>1.3.5 Apache Directory and File Permissions (Level 1, Scorable) The permission on the Apache directories should be rwxr-xr-x (755) and the file permissions should be similar except not executable if executable is not appropriate.  Page 22-23</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server system files must conform to minimum file permission requirements. STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27919-0</td>
+      <td>Apache's /cgi-bin directory should be owned by the appropriate user.</td>
+      <td>(1) user</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.4 Apache Directory and File Ownership (Level 1, Scorable) The Apache directories and files should be owned by root with the root (or root equivalent) group. Page 21-22</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server system files must conform to minimum file permission requirements. STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27820-0</td>
+      <td>Apache's /cgi-bin directory should be owned by the appropriate group.</td>
+      <td>(1) group</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.4 Apache Directory and File Ownership (Level 1, Scorable) The Apache directories and files should be owned by root with the root (or root equivalent) group. Page 21-22</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: Web server system files must conform to minimum file permission requirements. STIG ID: WG300 A22  Rule ID: SV-32938r1_rule  Vuln ID: V-2259 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27435-7</td>
+      <td>The Apache "StartServers" directive should be configured appropriately.</td>
+      <td>(1) Number value</td>
+      <td>(1) Apache configuration file: StartServers directive</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.13 Denial of Service Prevention Tuning p22</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The httpd.conf StartServers directive must be set properly. STIG ID: WA000-WWA026 A22  Rule ID: SV-36645r1_rule  Vuln ID: V-13727 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27449-8</td>
+      <td>The Apache "MinSpareServers" directive should be configured appropriately.</td>
+      <td>(1) Number value</td>
+      <td>(1) Apache configuration file: MinSpareServers directive</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.13 Denial of Service Prevention Tuning p22</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The httpd.conf MinSpareServers directive must be set properly.  STIG ID: WA000-WWA028 A22  Rule ID: SV-36646r1_rule  Vuln ID: V-13728 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27810-1</td>
+      <td>The Apache "MaxSpareServers" directive should be configured appropriately.</td>
+      <td>(1) Number value</td>
+      <td>(1) Apache configuration file: MaxSpareServers directive</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.13 Denial of Service Prevention Tuning p22</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The httpd.conf MaxSpareServers directive must be set properly.  STIG ID: WA000-WWA030 A22  Rule ID: SV-36648r1_rule  Vuln ID: V-13729 Severity: CAT III  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27848-1</td>
+      <td>The Apache "MaxClients" directive should be configured appropriately.</td>
+      <td>(1) Number value</td>
+      <td>(1) Apache configuration file: MaxClients directive</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.13 Denial of Service Prevention Tuning p22</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The httpd.conf MaxClients directive must be set properly.  STIG ID: WA000-WWA032 A22  Rule ID: SV-36649r1_rule  Vuln ID: V-13730 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27696-4</td>
+      <td>Apache's process ID (PID) file's Unix permissions should be configured appropriately.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>1.3.8 Pid File Security (Level 1, Scorable) Change the permissions so that the directory is only writable by root, or the user under which apache initially starts up (default is root), Page 25</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The process ID (PID) file must be properly secured. STIG ID: WA00530 A22  Rule ID: SV-33222r1_rule  Vuln ID: V-26305 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27851-5</td>
+      <td>Apache's process ID (PID) file should be owned by the appropriate user.</td>
+      <td>(1) user</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.8 Pid File Security (Level 1, Scorable) Change the ownership and group to be root:root, if not already. Page 25</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The process ID (PID) file must be properly secured. STIG ID: WA00530 A22  Rule ID: SV-33222r1_rule  Vuln ID: V-26305 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27930-7</td>
+      <td>Apache's process ID (PID) file should be owned by the appropriate group.</td>
+      <td>(1) group</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.8 Pid File Security (Level 1, Scorable) Change the ownership and group to be root:root, if not already. Page 25</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The process ID (PID) file must be properly secured. STIG ID: WA00530 A22  Rule ID: SV-33222r1_rule  Vuln ID: V-26305 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27126-2</td>
+      <td>Apache's Scoreboard file's Unix permissions should be configured appropriately.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chmod</td>
+      <td>NaN</td>
+      <td>1.3.9 ScoreBoard File Security (Level 1, Scorable) Change the permissions so that the directory is only writable by root, or the user under which apache initially starts up (default is root), Page 26</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The ScoreBoard file must be properly secured. STIG ID: WA00535 A22  Rule ID: SV-33223r1_rule  Vuln ID: V-26322 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27815-0</td>
+      <td>Apache's scoreboard file should be owned by the appropriate user.</td>
+      <td>(1) user</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.9 ScoreBoard File Security (Level 1, Scorable) Change the ownership and group to be root:root, if not already. Page 26</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The ScoreBoard file must be properly secured. STIG ID: WA00535 A22  Rule ID: SV-33223r1_rule  Vuln ID: V-26322 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27859-8</td>
+      <td>Apache's scoreboard (PID) file should be owned by the appropriate group.</td>
+      <td>(1) group</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.9 ScoreBoard File Security (Level 1, Scorable) Change the ownership and group to be root:root, if not already. Page 26</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Rule Title: The ScoreBoard file must be properly secured. STIG ID: WA00535 A22  Rule ID: SV-33223r1_rule  Vuln ID: V-26322 Severity: CAT II  Class: Unclass</td>
+    </tr>
+    <tr>
+      <td>CCE-27667-5</td>
+      <td>The location of the Apache htpasswd file should be set correctly.</td>
+      <td>(1) directory path</td>
+      <td>(1) Directory of htpasswd file</td>
+      <td>NaN</td>
+      <td>1.5.10 Restrict Access to .ht* files (Level 1, Scorable) Also a common name for web password and group files is .htpasswd and .htgroup. Neither of these files should be placed in the document root Page 45</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27756-6</td>
+      <td>The Apache User directive should be set correctly.</td>
+      <td>(1) user name</td>
+      <td>(1) Apache configuration file: User directive</td>
+      <td>NaN</td>
+      <td>1.3.1 Run the Apache Web Server as a non-root user (Level 1, Scorable) Configure the Apache user and group in the Apache configuration file httpd.conf: User apache Page 19</td>
+      <td>1.6 Creating the Apache User and Group Accounts p14</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27566-9</td>
+      <td>The Apache Group directive should be set correctly.</td>
+      <td>(1) group name</td>
+      <td>(1) Apache configuration file: Group directive</td>
+      <td>NaN</td>
+      <td>1.3.1 Run the Apache Web Server as a non-root user (Level 1, Scorable) Configure the Apache user and group in the Apache configuration file httpd.conf: Group apache Page 19</td>
+      <td>1.6 Creating the Apache User and Group Accounts p14</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27883-8</td>
+      <td>The Apache ServerSignature directive should be set appropriately.</td>
+      <td>(1) On/Off/EMail</td>
+      <td>(1) Apache configuration file: ServerSignature directive</td>
+      <td>NaN</td>
+      <td>1.8.2 Limit Information in the Server Signature (Level 1, Scorable) Add or modify the ServerSignature directive as shown below to have the value of Off: ServerSignature Off Page 68-69</td>
+      <td>1.16 Software Information Leakage Protection p29</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27903-4</td>
+      <td>The Apache runtime rewriting engine should be enabled or disabled as appropriate.</td>
+      <td>(1) off/on</td>
+      <td>(1) Apache configuration file: RewriteEngine directive</td>
+      <td>NaN</td>
+      <td>1.5.9 Restrict HTTP Protocol Versions (Level 1, Scorable) Add the RewriteEngine directive to the configuration within the global server context with the value of on so that the rewrite engine is enabled. RewriteEngine On Page 43-44</td>
+      <td>1.11 Restrict HTTP Protocol Version p19</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27791-3</td>
+      <td>The Apache ErrorDocument directive should be set correctly for HTTP 400 errors.</td>
+      <td>(1) message/document</td>
+      <td>(1) Apache configuration file: 'ErrorDocument 400' directive</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2.7 Additional Software Information Leakage Protection p50</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27910-9</td>
+      <td>The ApacheErrorDocument directive should be set correctly for HTTP 401 errors.</td>
+      <td>(1) message/document</td>
+      <td>(1) Apache configuration file: 'ErrorDocument 401' directive</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2.7 Additional Software Information Leakage Protection p50</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27680-8</td>
+      <td>The ApacheErrorDocument directive should be set correctly for HTTP 403 errors.</td>
+      <td>(1) message/document</td>
+      <td>(1) Apache configuration file: 'ErrorDocument 403' directive</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2.7 Additional Software Information Leakage Protection p50</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27390-4</td>
+      <td>The ApacheErrorDocument directive should be set correctly for HTTP 404 errors.</td>
+      <td>(1) message/document</td>
+      <td>(1) Apache configuration file: 'ErrorDocument 404' directive</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2.7 Additional Software Information Leakage Protection p50</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27860-6</td>
+      <td>The ApacheErrorDocument directive should be set correctly for HTTP 405 errors.</td>
+      <td>(1) message/document</td>
+      <td>(1) Apache configuration file: 'ErrorDocument 405' directive</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2.7 Additional Software Information Leakage Protection p50</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27817-6</td>
+      <td>The ApacheErrorDocument directive should be set correctly for HTTP 500 errors.</td>
+      <td>(1) message/document</td>
+      <td>(1) Apache configuration file: 'ErrorDocument 500' directive</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2.7 Additional Software Information Leakage Protection p50</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27781-4</td>
+      <td>The Apache user account should be locked or unlocked as appropriate.</td>
+      <td>(1) locked/unlocked</td>
+      <td>(1) via /etc/passwd</td>
+      <td>NaN</td>
+      <td>1.3.3 Lock the Apache User Account (Level 1, Scorable) Use the passwd command to lock the apache account: # passwd -l apache Page 21</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27878-8</td>
+      <td>The Apache user account should be allowed root privileges as appropriate.</td>
+      <td>(1) allowed/not allowed</td>
+      <td>(1) via /etc/passwd</td>
+      <td>NaN</td>
+      <td>1.3.1 Run the Apache Web Server as a non-root user (Level 1, Scorable) Although Apache typically is started with root privileges in order to listen on port 80 and 443, it can and should run as another non-root user in order to perform the web services. Page 19</td>
+      <td>1.6 Creating the Apache User and Group Accounts p14</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27722-8</td>
+      <td>The group membership of the Apache user account should be set correctly.</td>
+      <td>(1) group</td>
+      <td>(1) via /etc/group</td>
+      <td>NaN</td>
+      <td>1.3.1 Run the Apache Web Server as a non-root user (Level 1, Scorable) Although Apache typically is started with root privileges in order to listen on port 80 and 443, it can and should run as another non-root user in order to perform the web services. Page 19</td>
+      <td>1.6 Creating the Apache User and Group Accounts p14</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27302-9</td>
+      <td>The ownership of the Apache /etc/httpd/conf/passwd file should be set correctly.</td>
+      <td>(1) owner</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27700-4</td>
+      <td>The group membership of the Apache /etc/httpd/conf/passwd file should be set correctly.</td>
+      <td>(1) group</td>
+      <td>(1) via chgrp</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27837-4</td>
+      <td>The permissions for the Apache /etc/httpd/conf/passwd file should be set correctly.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27856-4</td>
+      <td>The ownership of the Apache /var/www/html file should be set correctly.</td>
+      <td>(1) owner</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27841-6</td>
+      <td>The group membership of the Apache /var/www/html file should be set correctly.</td>
+      <td>(1) group</td>
+      <td>(1) via chgrp</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27854-9</td>
+      <td>The permissions for the Apache/var/www/html file should be set correctly.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27714-5</td>
+      <td>The ownership of log files in Apache /var/log/httpd/ should be set correctly.</td>
+      <td>(1) owner</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.6 Core Dump Directory Security (Level 1, Scorable) must be owned by root and have a group ownership of the Apache group (as defined via the Group directive) # chown root:apache /var/log/httpd Page 23</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27422-5</td>
+      <td>The group membership of any Apache files in /var/log/httpd/ should be set correctly.</td>
+      <td>(1) group</td>
+      <td>(1) via chgrp</td>
+      <td>NaN</td>
+      <td>1.3.6 Core Dump Directory Security (Level 1, Scorable) must be owned by root and have a group ownership of the Apache group (as defined via the Group directive) # chown root:apache /var/log/httpd Page 23</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27943-0</td>
+      <td>The permissions of any Apache files in /var/log/httpd/ should be set correctly.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>1.3.6 Core Dump Directory Security (Level 1, Scorable) must have no read-write-search access permission for other users. # chmod o-rwx /var/log/httpd Page 23</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27497-7</td>
+      <td>The ownership of the Apache /etc/httpd/conf.d file should be set correctly.</td>
+      <td>(1) owner</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27601-4</td>
+      <td>The group membership of the Apache /etc/httpd/conf.d file should be set correctly.</td>
+      <td>(1) group</td>
+      <td>(1) via chgrp</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27462-1</td>
+      <td>The permissions for the Apache /etc/httpd/conf.d file should be set correctly.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27217-9</td>
+      <td>The ownership of the Apache /usr/sbin/httpd file should be set correctly.</td>
+      <td>(1) owner</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27273-2</td>
+      <td>The group membership of the Apache /usr/sbin/httpd file should be set correctly.</td>
+      <td>(1) group</td>
+      <td>(1) via chgrp</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27915-8</td>
+      <td>The permissions for the Apache /usr/sbin/httpd file should be set correctly.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27935-6</td>
+      <td>The ownership of the Apache /usr/sbin/apachectl file should be set correctly.</td>
+      <td>(1) owner</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-26955-5</td>
+      <td>The group membership of the Apache /usr/sbin/apachectl file should be set correctly.</td>
+      <td>(1) group</td>
+      <td>(1) via chgrp</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27901-8</td>
+      <td>The permissions for the Apache /usr/sbin/apachectl file should be set correctly.</td>
+      <td>(1) permissions</td>
+      <td>(1) via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.19 Updating Ownership and Permissions p34</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27519-8</td>
+      <td>The "FollowSymLinks" setting of the DocumentRoot should be enabled or disabled as appropriate.</td>
+      <td>(1) FollowSymLinks / -FollowSymLinks / +FollowSymLinks / None</td>
+      <td>(1) Apache configuration file: Options directive (in DocumentRoot Directory directive)</td>
+      <td>NaN</td>
+      <td>1.5.2 Restrict Options for the Web Root Directory (Level 1, Scorable) Add or modify any existing Options directive to have a value of None or Multiviews, if multiviews are needed. Page 34</td>
+      <td>1.8 Directory Functionality Control with the Options Directive p16</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27892-9</td>
+      <td>The"Includes" setting of the DocumentRoot should be enabled or disabled as appropriate.</td>
+      <td>(1) Includes / -Includes / +Includes / None</td>
+      <td>(1) Apache configuration file: Options directive (in DocumentRoot Directory directive)</td>
+      <td>NaN</td>
+      <td>1.5.2 Restrict Options for the Web Root Directory (Level 1, Scorable) Add or modify any existing Options directive to have a value of None or Multiviews, if multiviews are needed. Page 34</td>
+      <td>1.8 Directory Functionality Control with the Options Directive p16</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27509-9</td>
+      <td>The "IncludesNOEXEC" setting of the DocumentRoot should be enabled or disabled as appropriate.</td>
+      <td>(1) IncludesNoExec / -IncludesNoExec / +IncludesNoExec / None</td>
+      <td>(1) Apache configuration file: Options directive (in DocumentRoot Directory directive)</td>
+      <td>NaN</td>
+      <td>1.5.2 Restrict Options for the Web Root Directory (Level 1, Scorable) Add or modify any existing Options directive to have a value of None or Multiviews, if multiviews are needed. Page 34</td>
+      <td>1.8 Directory Functionality Control with the Options Directive p16</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27382-1</td>
+      <td>The "Indexes" setting of the DocumentRoot should be enabled or disabled as appropriate.</td>
+      <td>(1) Indexes / -Indexes / +Indexes / None</td>
+      <td>(1) Apache configuration file: Options directive (in DocumentRoot Directory directive)</td>
+      <td>NaN</td>
+      <td>1.5.2 Restrict Options for the Web Root Directory (Level 1, Scorable) Add or modify any existing Options directive to have a value of None or Multiviews, if multiviews are needed. Page 34</td>
+      <td>1.8 Directory Functionality Control with the Options Directive p16</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27944-8</td>
+      <td>The"MultiViews" setting of the DocumentRoot should be enabled or disabled as appropriate.</td>
+      <td>(1) MultiViews / -MultiViews / +MultiViews / None</td>
+      <td>(1) Apache configuration file: Options directive (in DocumentRoot Directory directive)</td>
+      <td>NaN</td>
+      <td>1.5.2 Restrict Options for the Web Root Directory (Level 1, Scorable) Add or modify any existing Options directive to have a value of None or Multiviews, if multiviews are needed. Page 34</td>
+      <td>1.8 Directory Functionality Control with the Options Directive p17</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27897-8</td>
+      <td>The "ExecCGI" setting of the DocumentRoot should be enabled or disabled as appropriate.</td>
+      <td>(1) ExecCGI / -ExecCGI/ +ExecCGI / None</td>
+      <td>(1) Apache configuration file: Options directive (in DocumentRoot Directory directive)</td>
+      <td>NaN</td>
+      <td>1.5.2 Restrict Options for the Web Root Directory (Level 1, Scorable) Add or modify any existing Options directive to have a value of None or Multiviews, if multiviews are needed. Page 34</td>
+      <td>1.8 Directory Functionality Control with the Options Directive p16</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27882-0</td>
+      <td>The Order directive for all DocumentRoot directives should be configured appropriately.</td>
+      <td>(1) Allow,Deny / Deny,Allow / Mutual-failure</td>
+      <td>(1) Apache configuration file: Order directive (in DocumentRoot Directory directive)</td>
+      <td>NaN</td>
+      <td>1.5.7 Limit HTTP Request Methods (Level 1, Scorable) Search for the &lt;Directory&gt; directive on the document root directory … Ensure that the access control order within the &lt;Directory&gt; directive is allow, deny. Order allow,deny Page 41</td>
+      <td>1.7 Restricting Access p15</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27313-6</td>
+      <td>The Order directive for the specified Directory directive should be configured appropriately.</td>
+      <td>(1) Allow,Deny / Deny,Allow / Mutual-failure</td>
+      <td>(1) TARGET: Directory directive (2) Apache configuration file: Order directive</td>
+      <td>NaN</td>
+      <td>1.4.2 Allow Appropriate Access to Web Content (Level 1, Not Scorable) Search the Apache configuration files (httpd.conf and any included configuration files) to find all &lt;Directory&gt; and &lt;Location&gt; elements … Add a single Order directive and set the value to deny, allow. Page 28-29</td>
+      <td>1.7 Restricting Access p15</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-26965-4</td>
+      <td>The Allow directive for the specified Directory directive should be configured appropriately.</td>
+      <td>(1) all | hostname/IP address/environment variable</td>
+      <td>(1) Allow directive</td>
+      <td>NaN</td>
+      <td>1.4.2 Allow Appropriate Access to Web Content (Level 1, Not Scorable) Search the Apache configuration files (httpd.conf and any included configuration files) to find all &lt;Directory&gt; and &lt;Location&gt; elements … Include the appropriate Allow and Deny directives, with values that are appropriate for the purposes of the directory. Page 28-29</td>
+      <td>1.7 Restricting Access p14-15</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27023-1</td>
+      <td>The Deny directive for the specified Directory directive should be configured appropriately.</td>
+      <td>(1) all | hostname/IP address/environment variable</td>
+      <td>(1) Deny directive</td>
+      <td>NaN</td>
+      <td>1.4.2 Allow Appropriate Access to Web Content (Level 1, Not Scorable) Search the Apache configuration files (httpd.conf and any included configuration files) to find all &lt;Directory&gt; and &lt;Location&gt; elements … Include the appropriate Allow and Deny directives, with values that are appropriate for the purposes of the directory. Page 28-29</td>
+      <td>1.7 Restricting Access p14-15</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-27913-3</td>
+      <td>testcgi should be installed as appropriate.</td>
+      <td>(1) exist/not exist</td>
+      <td>(1) cgi-script directory</td>
+      <td>NaN</td>
+      <td>1.5.6 Remove Default CGI Content test-cgi (Level 1, Scorable) Remove the test-cgi default CGI in cgi-bin directory if it is installed. # rm $APACHE_PREFIX/cgi-bin/test-cgi Page 39-40</td>
+      <td>1.18 Remove Default Content p33</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,336 @@
+Unnamed: 0,Last modified: 2009-04-30,Unnamed: 2,f,Unnamed: 4,Unnamed: 5
+,Version: 5.20090506,,,,
+CCE ID,CCE Description,CCE Parameters,CCE Technical Mechanisms,,Internal Revenue Service Basic UNIX Security Requirements (IRS BUSR) http://www.irs.gov/irm/part10/ch03s08.html
+CCE-5658-0,/export/home should be configured on an appropriate filesystem partition,partition,via fstab,,10.8.10.4.2.1 (5)
+CCE-6235-6,/var should be configured on an appropriate filesystem partition,partition,via fstab,,10.8.10.4.2.1 (5)
+CCE-6315-6,/opt should be configured on an appropriate filesystem partition,partition,via fstab,,10.8.10.4.2.1 (5)
+CCE-5947-7,The shell for the root account should be located on the appropriate filesystem,filesystem,via /etc/passwd,,10.8.10.4.2.1 (6)
+CCE-5546-7,Core dump size limits should be set appropriately,Size (0 to disable core dumps),"via /etc/security/limits
+via ulimit",,10.8.10.4.4 (3)
+CCE-6294-3,The read-only SNMP community string should be set appropriately.,string,"via /etc/snmp.conf
+via /etc/snmp/snmpd.conf",,10.8.10.5.1 (1) c)
+CCE-6136-6,The read/write SNMP community string should be set appropriately.,string,via /etc/snmp/snmpd.conf,,10.8.10.5.1 (1) c)
+CCE-6105-1,Password policy should ban or allow usernames or UIDs in passwords as appropriate,ban/allow,via PAM,,10.8.10.5.1 (2) a)
+CCE-6263-8,Password policy should ban or allow words found in a dictionary as appropriate.,ban/allow,via PAM,,10.8.10.5.1 (2) a)
+CCE-6448-5,Password policy should enforce the correct amount of special characters,number of special characters,via PAM,,10.8.10.5.1 (2) a)
+CCE-6417-0,Password policy should enforce or not enforce the requirement to have mixed case passwords as appropriate.,enforce/not enforce,via PAM,,10.8.10.5.1 (2) a)
+CCE-6078-0,The minimum password age should be set as appropriate,number of days,via /etc/login.defs,,10.8.10.5.1 (2) b)
+CCE-5906-3,The minimum required password length should be set as appropriate,number of characters,via /etc/login.defs,,10.8.10.5.1 (2) c)
+CCE-6045-9,Password history should be saved for an appropriate number of password changes,number of password changes,via PAM,,10.8.10.5.1 (2) d)
+CCE-5997-2,The number of consecutive failed login attempts required to trigger a lockout should be set as appropriate,number of consecutive failed login attempts,via PAM,,10.8.10.5.1 (2) e)
+CCE-6358-6,Login access to accounts without passwords should be enabled or disabled as appropriate,enabled/disabled,"via passwd
+via /etc/shadow",,10.8.10.5.1 (2) f)
+CCE-6375-0,New users should be required or not required to change their password on first login as appropriate,required/not required,via /etc/security/passwd,,10.8.10.5.1 (2) g)
+CCE-6080-6,Access to single-user mode (maintainence mode) should require the root password or not as appropriate,required/not required,via grub ,,10.8.10.5.1 (3)
+CCE-6366-9,All files should be owned by an existing account or not as appropriate.,existing account required / existing account not required,via chown,,10.8.10.5.2 (3)
+CCE-6441-0,All files should be owned by an existing group or not as appropriate.,existing group required / existing group not required,via chgrp via chown,,10.8.10.5.2 (3)
+CCE-5644-0,The console login banner should be set appropriately.,banner text or null,via /etc/motd,,10.8.10.5.2 (5) a)
+CCE-5784-4,The SSH login banner should be set appropriately.,banner text or null,"via /etc/ssh/sshd_config
+via /etc/motd",,10.8.10.5.2 (5) b)
+CCE-6502-9,The telnet login banner should be set appropriately.,banner text or null,via /etc/motd,,10.8.10.5.2 (5) c)
+CCE-6440-2,The ftp login banner should be set appropriately.,banner text or null,,,10.8.10.5.2 (5) d)
+CCE-6286-9,The graphical login banner should be set appropriately.,banner text or null,via Xwindows,,10.8.10.5.2 (5) e)
+CCE-6472-5,Accounts other than root should be allowed to have the UID 0 or not as appropriate,allowed/not allowed,"via passwd
+via /etc/passwd",,10.8.10.5.2.1 (2) a)
+CCE-6387-5,Accounts other than root and locked system accounts should be allowed to have a GID of 0 or not as appropriate,allowed/not allowed,"via passwd
+via /etc/passwd",,10.8.10.5.2.1 (2) b)
+CCE-6224-0,Each account should be assigned a unique UID or not as appropriate,unique/not unique,via /etc/passwd,,10.8.10.5.2.4 (3)
+CCE-6515-1,The ftp account should exist or not as appropriate,exist/not exist,via /etc/passwd,,10.8.10.5.2.4 (9)
+CCE-6343-8,Login accounts should include an appropriate GECOS identifier or no GECOS identifier,"GECOS value, null",via /etc/passwd,,10.8.10.5.2.4.1 (1)
+CCE-5527-7,The screen lock should activate after an appropriate period of inactivity,number of minutes,"via xscreensaver
+via dtsession
+via /etc/pam.d/xscreensaver",,10.8.10.5.2.5 (1)
+CCE-5855-2,File permissions should be set appropriately for all shell executables.,permissions,via chmod,,10.8.10.5.2.6 (1)
+CCE-6058-2,Remote (serial) consoles should be enabled or disabled as appropriate.,enabled/disabled,"via inittab
+via /sbin/agetty",,10.8.10.5.2.6 (3)
+CCE-8432-7,Root logins should be restricted to the console or not as appropriate.,restricted/not restricted,via /etc/securetty,,10.8.10.5.2.6 (4)
+CCE-6430-3,.netrc files should exist or not as appropriate for all users.,exist/not exist,via filesystem,,10.8.10.5.2.6 (6)
+CCE-6522-7,.rhosts files should exist or not as appropriate for all users.,exist/not exist,via filesystem,,10.8.10.5.2.6 (6)
+CCE-6346-1,.shosts files should exist or not as appropriate for all users.,exist/not exist,via filesystem,,10.8.10.5.2.6 (6)
+CCE-6504-5,The /etc/hosts.equiv file should exist or not as appropriate.,exist/not exist,via filesystem,,10.8.10.5.2.6 (6)
+CCE-8667-8,The use of NIS special characters  (+ or -) in the first field of the /etc/passwd file should be allowed or disallowed as appropriate.,allowed/not allowed,via Text editor,,10.8.10.5.2.6 (7)
+CCE-8543-1,The use of NIS special characters  (+ or -) in the first field of the /etc/shadow file should be allowed or disallowed as appropriate.,allowed/not allowed,via Text editor,,10.8.10.5.2.6 (7)
+CCE-8658-7,The use of NIS special characters  (+ or -) in the first field of the /etc/group file should be allowed or disallowed as appropriate.,allowed/not allowed,via Text editor,,10.8.10.5.2.6 (7)
+CCE-6184-6,Groups referenced in /etc/passwd should be included in /etc/group or not as appropriate.,included/not included,via /etc/group,,10.8.10.5.2.6 (15)
+CCE-6413-9,The home directory for the root account should be set appropriately.,path,via /etc/passwd,,10.8.10.5.2.6 (16)
+CCE-6284-4,The home directory for each user account should be set appropriately.,path,"via /etc/passwd
+via /usr/sbin/useradd
+via /etc/default/useradd",,10.8.10.5.2.6 (17)
+CCE-5628-3,Home directories referenced in /etc/passwd should exist or not as appropriate,exist/not exist,via filesystem,,10.8.10.5.2.6 (18)
+CCE-5730-7,All device files should be located inside an appropriate path,path,via filesystem,,10.8.10.5.2.6 (24)
+CCE-6476-6,The ntpd service should be enabled or disabled as appropriate.,enabled/disabled,via RC scripts,,10.8.10.5.3 (3)
+CCE-6318-0,The Network Time Protocol (ntp) synchronization server should be set appropriately.,timeserver,via /etc/sysconfig/ntpd,,
+CCE-6335-4,The default gateway should be set appropriately.,GATEWAY=<IP address>/disabled,"via /etc/default/route.conf
+via /etc/sysconfig/network",,10.8.10.5.4.1 (4)
+CCE-6450-1,The xinetd service should be enabled or disabled as appropriate.,enabled/disabled,via RC scripts,,10.8.10.5.4.1 (5)
+CCE-6150-7,echo service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #1
+CCE-6414-7,netstat service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #2
+CCE-6493-1,rcp service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #3
+CCE-6277-8,chargen service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #4
+CCE-5545-9,finger service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #5
+CCE-6202-6,tftpd service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #6
+CCE-6354-5,walld service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #7
+CCE-6200-0,rstatd service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #8
+CCE-6028-5,sprayd service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #9
+CCE-6415-4,rusersd service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #10
+CCE-6393-3,rlogin service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #11
+CCE-6296-8,rsh service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #12
+CCE-6499-8,ftp service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #13
+CCE-6204-2,telnet service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #14
+CCE-6238-0,DEPRECATED.,,,,
+CCE-5562-4,inn service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #16
+CCE-6520-1,uucp service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #17
+CCE-6220-8,rexec service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #18
+CCE-6049-1,font-service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #20
+CCE-6458-4,imap2 service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #21
+CCE-6427-9,pop3 service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #22
+CCE-6554-0,ident service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #23
+CCE-6422-0,rexd service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #24
+CCE-6369-3,daytime service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #26
+CCE-6523-5,dtspc (cde-spc) service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #27
+CCE-5836-2,rquotad service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #28
+CCE-6426-1,cmsd service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #29
+CCE-5567-3,tooltalk service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #30
+CCE-6293-5,DEPRECATED.,,,,
+CCE-5575-6,discard service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #32
+CCE-6270-3,DEPRECATED.,,,,
+CCE-6508-6,vino-server service should be enabled or disabled as appropriate,enabled/disabled,via xinetd,,10.8.10.5.4.1 (11) #34
+CCE-6507-8,The bind service should be enabled or disabled as appropriate.,enabled/disabled,via xinetd,,10.8.10.5.4.1.1 (2)
+CCE-5576-4,The version string reported by the bind service should be configured appropriately.,string,via /etc/named.conf,,10.8.10.5.4.1.1 (5)
+CCE-6243-0,The nfsd service should be enabled or disabled as appropriate,enabled/disabled,via RC scripts,,10.8.10.5.4.1.5 (1)
+CCE-6468-3,The mountd service should be enabled or disabled as appropriate,enabled/disabled,via RC scripts,,10.8.10.5.4.1.5 (1)
+CCE-5918-8,The statd service should be enabled or disabled as appropriate,enabled/disabled,via RC scripts,,10.8.10.5.4.1.5 (1)
+CCE-6303-2,The lockd service should be enabled or disabled as appropriate,enabled/disabled,via RC scripts,,10.8.10.5.4.1.5 (1)
+CCE-5669-7,NFS should be configured with appropriate authentication methods,list of auth methods,"via NFS
+via /etc/exports",,10.8.10.5.4.1.5 (1) f)
+CCE-5809-9,The read-only (ro) option should be enabled or disabled as appropriate for all NFS exports.,enabled/disabled,via /etc/exports,,10.8.10.5.4.1.5 (1) g)
+CCE-6514-4,The nosuid option should be enabled or disabled for all NFS mounts as appropriate,enabled/disabled,via /etc/fstab,,10.8.10.5.4.1.5 (1) i)
+CCE-6462-6,The nosgid option should be enabled or disabled for all NFS mounts as appropriate,enabled/disabled,via /etc/fstab,,10.8.10.5.4.1.5 (1) i)
+CCE-6250-5,Sendmail should be enabled or disabled as appropriate,enabled/disabled,"via inetd
+via RC scripts",,10.8.10.5.4.2.2 (1)
+CCE-6466-7,The sendmail banner should be set appropriately.,string,via /etc/mail/sendmail.cf,,10.8.10.5.4.2.2 (3)
+CCE-6483-2,The decode sendmail alias should be enabled or disabled as appropriate.,enabled/disabled,"via /etc/aliases
+via /usr/lib/aliases",,10.8.10.5.4.2.2 (4) c)
+CCE-6408-9,.forward files should be allowed or disallowed as appropriate for all users,allow/disallow,via rm,,10.8.10.5.4.2.2 (4) e)
+CCE-6560-7,Programs executed through the aliases file should be owned by an appropriate user,user,via chown,,10.8.10.5.4.2.2 (4) f)
+CCE-6247-1,Programs executed through the aliases file should reside a directory with an appropriate user owner,user,via chown,,10.8.10.5.4.2.2 (4) f)
+CCE-5714-1,Sendmail vrfy command should be allowed or not as appropriate,allow/disallow,via /etc/mail/sendmail.cf,,10.8.10.5.4.2.2 (4) g)
+CCE-6357-8,Sendmail expn command should be allowed or not as appropriate,allow/disallow,via /etc/mail/sendmail.cf,,10.8.10.5.4.2.2 (4) h)
+CCE-5584-8,Sendmail should be configured with an appropriate logging level,logging level,via /etc/mail/sendmail.cf,,10.8.10.5.4.2.2 (4) i)
+CCE-6118-4,Sendmail help command should be allowed or not as appropriate,allow/disallow,via sendmailvia /etc/mail/sendmail.cf,,10.8.10.5.4.2.2 (4) k)
+CCE-6431-1,NIS+ server should operate at an appropriate security level,security level,via NIS+,,10.8.10.5.4.2.3 (1) b)
+CCE-6524-3,X-Windows should be enabled or disabled as appropriate,enabled/disabled,via Xwindows,,10.8.10.5.4.2.4 (1)
+CCE-6435-2,Authorized X-clients should be listed or not in the X*.hosts file as appropriate,listed/not listed,via /etc/X*.hosts,,10.8.10.5.4.2.4 (2) b)
+CCE-6510-2,X-Windows should write .Xauthority files to users' home directories or not as appropriate,write/not write,"via xdm
+via gdm
+via kdm",,10.8.10.5.4.2.4 (2) d)
+CCE-6558-1,X11 forwarding via SSH should be enabled or disabled as appropriate.,enabled/disabled,via sshd_config,,10.8.10.5.4.2.4 (2) f)
+CCE-6025-1,Samba should be enabled or disabled as appropriate,enabled/disabled,"via smbd
+via RC scripts",,10.8.10.5.4.2.6 (1)
+CCE-5748-9,Samba 'hosts allow' option should be configured with an appropriate set of networks,list of networks,"via smbd
+via smb.conf",,10.8.10.5.4.2.6 (3) a)
+CCE-6373-5,Samba 'security option' option should be set as appropriate,,"via smbd
+via smb.conf",,10.8.10.5.4.2.6 (3) b)
+CCE-5620-0,Samba 'encrypt' passwords option should be set as appropriate,yes/no,"via smbd
+via smb.conf",,10.8.10.5.4.2.6 (3) c)
+CCE-6268-7,Samba 'smb passwd file' option should be set to an appropriate password file or no password file,file/nothing,"via smbd
+via smb.conf",,10.8.10.5.4.2.6 (3) d)
+CCE-6501-1,IPv6 should be enabled or disabled as appropriate,enabled/disabled,via ifconfig,,10.8.10.5.4.3 (1)
+CCE-6206-7,/dev/kmem file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #9
+CCE-6602-7,/dev/mem file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #10
+CCE-6571-4,/dev/null file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #11
+CCE-6583-9,resolv.conf file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #13
+CCE-6552-4,/etc/named.conf file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #14
+CCE-6363-6,/usr/bin/at file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #25
+CCE-5623-4,/usr/bin/rdist file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #26
+CCE-5995-6,/usr/sbin/sync file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #27
+CCE-6572-2,Superuser account home directories' permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #29
+CCE-5964-2,/etc/samba/smb.conf file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #31
+CCE-6559-9,smbpassword executable permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #32
+CCE-5968-3,Aliases file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #34
+CCE-6527-6,File permissions should be set as appropriate for the log file configured to capture critical sendmail messages.,permissions,via chmod,,10.8.10-1 A.1 1) #35
+CCE-6245-5,All files executed through /etc/aliases file entries should have file permissions set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #36
+CCE-6384-2,/bin/csh file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #37
+CCE-6371-9,/bin/jsh file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #38
+CCE-6252-1,/bin/ksh file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #39
+CCE-6463-4,The /bin/rsh file should exist or not as appropriate,exist/not exist,via filesystem,,10.8.10-1 A.1 1) #40
+CCE-6437-8,/bin/sh file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #41
+CCE-5952-7,/bin/bash file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #42
+CCE-5921-2,/sbin/csh file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #43
+CCE-6564-9,/sbin/jsh file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #44
+CCE-6388-3,/sbin/ksh file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #45
+CCE-5636-6,The /sbin/rsh file should exist or not as appropriate,exist/not exist,via filesystem,,10.8.10-1 A.1 1) #46
+CCE-6130-9,/sbin/sh file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #47
+CCE-6443-6,/sbin/bash file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #48
+CCE-6535-9,/usr/bin/csh file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #49
+CCE-5944-4,/usr/bin/jsh file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #50
+CCE-5650-7,/usr/bin/ksh file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #51
+CCE-6548-2,The /usr/bin/rsh file should exist or not as appropriate,exist/not exist,via filesystem,,10.8.10-1 A.1 1) #52
+CCE-6253-9,/usr/bin/sh file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #53
+CCE-6240-6,/usr/bin/bash file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #54
+CCE-6531-8,snmpd.conf file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #56
+CCE-6460-0,/tmp file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #57
+CCE-5905-5,/usr/tmp file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #58
+CCE-6002-0,.Xauthority file permissions should be set appropriately for all users.,permissions,via chmod,,10.8.10-1 A.1 1) #60
+CCE-6333-9,/etc/aliases file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #61
+CCE-6099-6,/etc/cron.d/at.allow file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #62
+CCE-6332-1,/etc/cron.d/cron.allow file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #63
+CCE-6473-3,/etc/csh file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #64
+CCE-6442-8,/etc/default/* file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #65
+CCE-6129-1,/etc/default/login file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #66
+CCE-6539-1,The /etc/ftpusers file should exist or not as appropriate,exist/not exist,via filesystem,,10.8.10-1 A.1 1) #69
+CCE-6257-0,/etc/host.lpd file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #70
+CCE-6607-6,/etc/hostname* file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #71
+CCE-6576-3,/etc/hosts file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #72
+CCE-5651-5,/etc/xinetd.conf file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #73
+CCE-6475-8,/etc/issue file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #75
+CCE-6281-0,/etc/jsh file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #76
+CCE-6355-2,/etc/ksh file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #77
+CCE-6540-9,/etc/mail/aliases file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #78
+CCE-6241-4,/etc/motd file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #79
+CCE-6509-4,/etc/netconfig file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #80
+CCE-5835-4,/etc/notrouter file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #81
+CCE-6553-2,/etc/pam.conf file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #82
+CCE-6190-3,/etc/passwd file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #83
+CCE-6269-5,The /etc/rsh file should exist or not as appropriate,exist/not exist,via filesystem,,10.8.10-1 A.1 1) #84
+CCE-6410-5,/etc/security file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #85
+CCE-6625-8,/etc/services file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #86
+CCE-6599-5,/etc/sh file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #87
+CCE-5735-6,/etc/shadow file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #88
+CCE-5652-3,/etc/syslog.conf file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #89
+CCE-6477-4,DEPRECATED.,,,,
+CCE-6569-8,/etc/fstab file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #91
+CCE-6649-8,DEPRECATED.,,,,
+CCE-5911-3,/var/adm/loginlog file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #93
+CCE-6488-1,/var/adm/messages file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #94
+CCE-6395-8,/var/adm/sulog file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #95
+CCE-6492-3,/var/adm/utmp file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #96
+CCE-5654-9,/var/adm/wtmp file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #97
+CCE-6586-2,/var/adm/authlog file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #98
+CCE-6309-9,/var/adm/syslog file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #99
+CCE-6402-2,/var/mail file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #100
+CCE-6401-4,/var/tmp file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #101
+CCE-6370-1,/usr/lib/pt_chmod file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #103
+CCE-5811-5,/usr/lib/embedded_us file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #104
+CCE-6265-3,/usr/lib/sendmail file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #105
+CCE-6591-2,/usr/kerberos/bin/rsh file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #107
+CCE-6608-4,/var/spool/mail file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #108
+CCE-6344-6,smbpassword file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #109
+CCE-6471-7,System files should be owned by an appropriate user,list of users,via chown,,10.8.10-1 A.1 2) #8
+CCE-6061-6,System files should be owned by an appropriate group,list of groups,"via chgrp
+via chown",,10.8.10-1 A.1 2) #8
+CCE-5890-9,Default/skeleton dot files should be owned by an appropriate user,list of users,via chown,,10.8.10-1 A.1 2) #9
+CCE-5657-2,Default/skeleton dot files should be owned by an appropriate group,list of groups,"via chgrp
+via chown",,10.8.10-1 A.1 2) #9
+CCE-6545-8,Global initialization files should be owned by an appropriate user,list of users,via chown,,10.8.10-1 A.1 2) #10
+CCE-6516-9,Global initialization files should be owned by an appropriate group,list of groups,"via chgrp
+via chown",,10.8.10-1 A.1 2) #10
+CCE-6362-8,Home directories should be owned by an appropriate user,list of users,via chown,,10.8.10-1 A.1 2) #11
+CCE-6587-0,Home directories should be owned by an appropriate group,list of groups,"via chgrp
+via chown",,10.8.10-1 A.1 2) #11
+CCE-5850-3,inetd.conf file should be owned by an appropriate user,list of users,via chown,,10.8.10-1 A.1 2) #12
+CCE-6551-6,xinetd.conf file should be owned by an appropriate group,list of groups,"via chgrp
+via chown",,10.8.10-1 A.1 2) #12
+CCE-6397-4,/etc/services file should be owned by an appropriate user,list of users,via chown,,10.8.10-1 A.1 2) #16
+CCE-6555-7,/etc/services file should be owned by an appropriate group,list of groups,"via chgrp
+via chown",,10.8.10-1 A.1 2) #16
+CCE-6621-7,/etc/notrouter file should be owned by an appropriate user,list of users,via chown,,10.8.10-1 A.1 2) #18
+CCE-6396-6,/etc/notrouter file should be owned by an appropriate group,list of groups,"via chgrp
+via chown",,10.8.10-1 A.1 2) #18
+CCE-6352-9,DEPRECATED.,,,,
+CCE-5969-1,DEPRECATED.,,,,
+CCE-5673-9,/etc/passwd file should be owned by an appropriate user,list of users,via chown,,10.8.10-1 A.1 2) #35
+CCE-5824-8,/etc/passwd file should be owned by an appropriate group,list of groups,"via chgrp
+via chown",,10.8.10-1 A.1 2) #35
+CCE-5685-3,/etc/shadow file should be owned by an appropriate user,list of users,via chown,,10.8.10-1 A.1 2) #36
+CCE-5946-9,/etc/shadow file should be owned by an appropriate group,list of groups,"via chgrp
+via chown",,10.8.10-1 A.1 2) #36
+CCE-5694-5,Environmental variable PATH for superuser accounts should or should not contain world-writable files as appropriate,should/should not,"via chmod
+via profile",,10.8.10-1 A.2 1) #1
+CCE-6421-2,Environmental variable PATH for superuser accounts should not contain the current directory as the first or last entry,should/should not,via local init files,,10.8.10-1 A.2 1) #2
+CCE-6642-3,The current directory should or should not be added to the environmental variable PATH by global initialization files as appropriate,should/should not,via local init files,,10.8.10-1 A.2 1) #3
+CCE-6425-3,The current directory should or should not be added to the environmental variable PATH by local initialization files as appropriate,should/should not,via local init files,,10.8.10-1 A.2 1) #4
+CCE-5699-4,Local initialization files should allow or deny access to the terminal as appropriate,allow/deny,via local init files,,10.8.10-1 A.2 1) #6
+CCE-5959-2,The system umask should be set appropriately,umask,via global init files,,10.8.10-1 A.2 1) #8
+CCE-6116-8,The user umask should be set appropriately,umask,via local init files,,10.8.10-1 A.2 1) #8
+CCE-6336-2,Login to privileged accounts should be allowed or denied as appropriate,allow/deny,via PAM,,10.8.10.5.2.4 (2)
+CCE-6102-8,/etc/init.d file permissions should be set appropriately,permissions,via chmod,,10.8.10-1 A.1 1) #74
+CCE-6679-5,/boot/grub/grub.conf file permissions should be set appropriately,permissions,via chmod,,10.8.10-3 C.1 1) #1
+CCE-6653-0,/boot/grub/grub.conf file should be owned by an appropriate user,list of users,via chown,,10.8.10-3 C.1 1) #1
+CCE-6432-9,/boot/grub/grub.conf file should be owned by an appropriate group,list of groups,"via chgrp
+via chown",,10.8.10-3 C.1 1) #1
+CCE-6512-8,/etc/lilo.conf file permissions should be set appropriately,permissions,via chmod,,10.8.10-3 C.1 1) #2
+CCE-6212-5,/etc/login.access file permissions should be set appropriately,permissions,via chmod,,10.8.10-3 C.1 1) #3
+CCE-6229-9,/etc/security/access.conf file permissions should be set appropriately,permissions,via chmod,,10.8.10-3 C.1 1) #3
+CCE-5700-0,/etc/sysctl.conf file permissions should be set appropriately,permissions,via chmod,,10.8.10-3 C.1 1) #4
+CCE-6389-1,/etc/securetty file permissions should be set appropriately,permissions,via chmod,,10.8.10-3 C.1 1) #5
+CCE-6698-5,/etc/audit/auditd.conf file permissions should be set appropriately,permissions,via chmod,,10.8.10-3 C.1 1) #6
+CCE-6420-4,audit.rules file permissions should be set appropriately,permissions,via chmod,,10.8.10-3 C.1 1) #7
+CCE-5953-5,"DEPRECATED in favor of CCE-8569-6, CCE-7990-5, and CCE-8624-9.",,,,
+CCE-8569-6,/etc/auto.master file should be owned by an appropriate user,list of users,via chown,,10.8.10-3 C.1 1) #9
+CCE-7990-5,/etc/auto.misc file should be owned by an appropriate user,list of users,via chown,,10.8.10-3 C.1 1) #9
+CCE-8624-9,/etc/auto.net file should be owned by an appropriate user,list of users,via chown,,10.8.10-3 C.1 1) #9
+CCE-6547-4,/etc/lilo.conf file should be owned by an appropriate user,list of users,via chown,,10.8.10-3 C.1 1) #2
+CCE-5704-2,/etc/login.access file should be owned by an appropriate user,list of users,via chown,,10.8.10-3 C.1 1) #3
+CCE-6525-0,/etc/security/access.conf file should be owned by an appropriate user,list of users,via chown,,10.8.10-3 C.1 1) #3
+CCE-6115-0,/etc/sysctl.conf file should be owned by an appropriate user,list of users,via chown,,10.8.10-3 C.1 1) #4
+CCE-6383-4,/etc/securetty file should be owned by an appropriate user,list of users,via chown,,10.8.10-3 C.1 1) #5
+CCE-5716-6,/etc/audit/auditd.conf file should be owned by an appropriate user,list of users,via chown,,10.8.10-3 C.1 1) #6
+CCE-6631-6,audit.rules file should be owned by an appropriate user,list of users,via chown,,10.8.10-3 C.1 1) #7
+CCE-6596-1,"DEPRECATED in favor of CCE-8335-2, CCE-8498-8, and CCE-8383-2.",,,,
+CCE-8335-2,/etc/auto.master file should be owned by an appropriate user,list of users,via chown,,10.8.10-3 C.1 1) #9
+CCE-8498-8,/etc/auto.misc file should be owned by an appropriate user,list of users,via chown,,10.8.10-3 C.1 1) #9
+CCE-8383-2,/etc/auto.net file should be owned by an appropriate user,list of users,via chown,,10.8.10-3 C.1 1) #9
+CCE-6675-3,/etc/lilo.conf file should be owned by an appropriate group,list of groups,"via chgrp
+via chown",,10.8.10-3 C.1 1) #2
+CCE-6195-2,/etc/login.access file should be owned by an appropriate group,list of groups,"via chgrp
+via chown",,10.8.10-3 C.1 1) #3
+CCE-5900-6,/etc/security/access.conf file should be owned by an appropriate group,list of groups,"via chgrp
+via chown",,10.8.10-3 C.1 1) #3
+CCE-6304-0,/etc/sysctl.conf file should be owned by an appropriate group,list of groups,"via chgrp
+via chown",,10.8.10-3 C.1 1) #4
+CCE-5720-8,/etc/securetty file should be owned by an appropriate group,list of groups,"via chgrp
+via chown",,10.8.10-3 C.1 1) #5
+CCE-5726-5,/etc/audit/auditd.conf file should be owned by an appropriate group,list of groups,"via chgrp
+via chown",,10.8.10-3 C.1 1) #6
+CCE-6376-8,audit.rules file should be owned by an appropriate group,list of groups,"via chgrp
+via chown",,10.8.10-3 C.1 1) #7
+CCE-6222-4,"DEPRECATED in favor of CCE-8347-7 CCE-8526-6, and CCE-8369-1.",,,,
+CCE-8347-7,/etc/auto.master file should be owned by an appropriate group,list of users,via chown,,10.8.10-3 C.1 1) #9
+CCE-8526-6,/etc/auto.misc file should be owned by an appropriate group,list of users,via chown,,10.8.10-3 C.1 1) #9
+CCE-8369-1,/etc/auto.net file should be owned by an appropriate group,list of users,via chown,,10.8.10-3 C.1 1) #9
+CCE-6424-6,Access controls through login.access and access.conf should be set for non-superusers or not as appropriate,set/not set,"via /etc/login.access
+via /etc/security/acccess.conf",,10.8.10-3 C.1.1 1)
+CCE-6312-3,Global initialization files should allow or deny write access to the terminal as appropriate,allow/deny,via global init files,,10.8.10-3 C.2 1) #1
+CCE-6528-4,Ctrl-Alt-Delete should be enabled or disabled as appropriate,enabled/disabled,via /etc/inittab,,10.8.10-3 C.3 1)
+CCE-6691-0,An appropriate bootloader should be used,list of bootloaders,via bootloader,,10.8.10-3 C.3.2 2)
+CCE-6519-3,GRUB should be configured with a password or not as appropriate, password/no  passwor,via /boot/grub/menu.lst,,10.8.10-3 C.3.2 3)
+CCE-6594-6,LILO should be configured with a password or not as appropriate,password/no  password,,,10.8.10-3 C.3.2 4)
+CCE-8118-2,System should be configured to boot and appropriate set of operating systems,list of operating systems,via /boot/grub/menu.lst,,10.8.10-3 C.3.2 5)
+CCE-5972-5,The primary filesystem partition should be using an appropriate filesystem,list of filesystems,via /etc/fstab,,10.8.10-3 C.4 1)
+CCE-6364-4,The ugidd daemon should be enabled or disabled as appropriate,enabled/disabled,via rpc.ugidd,,10.8.10-3 C.4.1 1)
+CCE-5813-1,NFS insecure locks should be enabled or disabled as appropriate,enabled/disabled,via /etc/exports,,10.8.10-3 C.4.1 3)
+CCE-5752-1,X server audit level should be set appropriately,audit level,via ,,10.8.10-3 C.5.1 1)
+CCE-5753-9,X server timeout should be set appropriately,number of minutes,via RC 5 scripts,,10.8.10-3 C.5.1 1)
+CCE-6297-6,X server ac should be enabled or disabled as appropriate,enabled/disabled,via RC 5 scripts,,10.8.10-3 C.5.1 2)
+CCE-6671-2,X server core should be enabled or disabled as appropriate,enabled/disabled,via RC 5 scripts,,10.8.10-3 C.5.1 2)
+CCE-6538-3,X server nolock should be enabled or disabled as appropriate,enabled/disabled,via RC 5 scripts,,10.8.10-3 C.5.1 2)
+CCE-6486-5,PAM console should be enabled or disabled as appropriate,enabled/disabled,via PAM,,10.8.10-3 C.5.2 1)
+CCE-6644-9,shutdown account should be present or not as appropriate,present/absent,via /etc/passwd,,10.8.10-3 C.6 1)
+CCE-6706-6,halt account should be present or not as appropriate,present/absent,via /etc/passwd,,10.8.10-3 C.6 1)
+CCE-6617-5,games account should be present or not as appropriate,present/absent,via /etc/passwd,,10.8.10-3 C.6 2)
+CCE-5758-8,operator account should be present or not as appropriate,present/absent,via /etc/passwd,,10.8.10-3 C.6 2)
+CCE-6041-8,Auditing should be enabled or disabled at boot time as appropriate,enabled/disabled,via init files,,10.8.10-3 C.7 1)
+CCE-6715-7,System logons should be audited or not as appropriate,audited/not audited,via syslog,,10.8.10-3 C.7 2) #1
+CCE-6666-2,System logoffs should be audited or not as appropriate,audited/not audited,via syslog,,10.8.10-3 C.7 2) #2
+CCE-6530-0,Password changes should be audited or not as appropriate,audited/not audited,via syslog,,10.8.10-3 C.7 2) #3
+CCE-5772-9,su usage should be audited or not as appropriate,audited/not audited,via syslog,,10.8.10-3 C.7 2) #4
+CCE-6759-5,Creation of superuser groups should be audited or not as appropriate,audited/not audited,via syslog,,10.8.10-3 C.7 2) #5
+CCE-5778-6,Clearing of the audit log file should be audited or not as appropriate,audited/not audited,,,10.8.10-3 C.7 2) #8
+CCE-6628-2,Startup/shutdown of audit functions should be audited or not as appropriate,audited/not audited,via syslog,,10.8.10-3 C.7 2) #9
+CCE-6470-9,Use of identification/authorization mechanisms should be audited or not as appropriate,audited/not audited,via syslog,,10.8.10-3 C.7 2) #10
+CCE-6597-9,Remote access from outside the corporate network should be audited or not as appropriate,audited/not audited,via syslog,,10.8.10-3 C.7 2) #11
+CCE-6566-4,Change of permissions/privileges should be audited or not as appropriate,audited/not audited,via syslog,,10.8.10-3 C.7 2) #13
+CCE-6727-2,Modification of superuser groups should be audited or not as appropriate,audited/not audited,via syslog,,10.8.10-3 C.7 2) #5
+CCE-6692-8,Sudo usage should be audited or not as appropriate,audited/not audited,via syslog,,10.8.10-3 C.7 2) #4
+CCE-6124-2,Hard core dump size limits should be set appropriately,Size (0 to disable core dumps),/etc/security/limits ulimit,,10.8.10.4.4 (3)

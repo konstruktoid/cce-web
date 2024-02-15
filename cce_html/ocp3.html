@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>CCE Lists</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href='../css/basic.css' type='text/css' rel='stylesheet' />
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>CCE ID v5</th>
+      <th>CCE Title</th>
+      <th>USGCB Setting</th>
+      <th>Technical Mechanism</th>
+      <th>Configuration Details</th>
+      <th>Rationale</th>
+      <th>Impact</th>
+      <th>800-53 Mapping</th>
+      <th>National Information Assurance Partnership Operating System Protection Profile</th>
+      <th>Center for Internet Security</th>
+      <th>Defense Information Systems Agency Security Security Requirements Guide</th>
+      <th>Configuration Group</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CCE-80609-1</td>
+      <td>Disable Scheduler Profiling</td>
+      <td>disable</td>
+      <td>via profiling</td>
+      <td>Profiling should be disabled if not needed. To disable profiling, edit the Scheduler pod specification file /etc/origin/master/master-config.yaml file on the master node and set the below parameter: kubernetesMasterConfig:   schedulerArguments:     profiling:     - false</td>
+      <td>Profiling allows for the identification of specific performance bottlenecks. It generates a significant amount of program data that could potentially be exploited to uncover system and program details. If you are not experiencing any bottlenecks and do not need the profiler for troubleshooting purposes, it is recommended to turn it off to reduce the potential attack surface.</td>
+      <td>low</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>OpenShift - Kubernetes - Scheduler Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80599-4</td>
+      <td>kubelet - Disable cAdvisor Port</td>
+      <td>disable</td>
+      <td>via cadvisor-port</td>
+      <td>The cAdvisor port should be disabled as it does not require any authentication to connect to the port. To disable the cAdvisor port, edit the kubelet configuration file /etc/origin/node/node-config.yaml on the kubelet node(s) and set the below parameter: kubeletArguments:   cadvisor-port:   - &#39;0&#39;</td>
+      <td>Any form of authentication to ports anonymously should be disabled. An attacker could connect to the port and gain cluster information anonymously.</td>
+      <td>high</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Kubernetes Kubelet Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80604-2</td>
+      <td>kubelet - Allow Automatic Firewall Configuration</td>
+      <td>enable</td>
+      <td>via make-iptables-util-chains</td>
+      <td>The kubelet has the ability to automatically configure the firewall to allow the containers required ports and connections to networking resources and destinations parameters potentially creating a security incident. To allow the kubelet to modify the firewall, edit the kubelet configuration file /etc/origin/node/node-config.yaml on the kubelet node(s) and set the below parameter: kubeletArguments:   make-iptables-util-chains:   - &#39;true&#39;</td>
+      <td>The kubelet should automatically configure the firewall settings to allow access and networking traffic through. This ensures that when a pod or container is running that the correct ports are configured as well as removing the ports when a pod or container is no longer in existence.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Kubernetes Kubelet Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80600-0</td>
+      <td>kubelet - Disable Hostname Override</td>
+      <td>disable</td>
+      <td>via hostname-override</td>
+      <td>To prevent the hostname from being overrided, edit the kubelet configuration file /etc/origin/node/node-config.yaml on the kubelet node(s) and remove the hostname-override option if it exists.</td>
+      <td>Allowing hostnames to be overrided creates issues around resolving nodes in addition to TLS configuration, certificate validation, and log correlation and validation.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Kubernetes Kubelet Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80597-8</td>
+      <td>Ensure That The kubelet Server Key Is Correctly Set</td>
+      <td>verify</td>
+      <td>via cert-dir</td>
+      <td>To ensure the kubelet TLS private server key certificate is configured, edit the kubelet configuration file /etc/origin/node/node-config.yaml and configure the cert-dir path for the kubelet certificates. For example:   cert-dir:   - /etc/origin/node/certificates A corresponding certificate should exist in the cert-dir. For example: /etc/origin/node/certificates/kubelet-server-current.pem</td>
+      <td>Without cryptographic integrity protections, information can be altered by unauthorized users without detection.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Kubernetes Kubelet Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80607-5</td>
+      <td>kubelet - Do Not Disable Streaming Timeouts</td>
+      <td>enable</td>
+      <td>via streaming-connection-idle-timeout</td>
+      <td>Timouts for streaming connections should not be disabled as they help to prevent denial-of-service attacks. To configure streaming connection timeouts, edit the kubelet configuration file /etc/origin/node/node-config.yaml on the kubelet node(s) and set the below parameter: kubeletArguments:   streaming-connection-idle-timeout:   - &#39;&#39;</td>
+      <td>Ensuring connections have timeouts helps to protect against denial-of-service attacks as well as disconnect inactive connections. In addition, setting connections timeouts helps to prevent from running out of ephemeral ports.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Kubernetes Kubelet Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80606-7</td>
+      <td>kubelet - Enable Server Certificate Rotation</td>
+      <td>enable</td>
+      <td>via feature-gates</td>
+      <td>To enable the kubelet to rotate server certificates, edit the kubelet configuration file /etc/origin/node/node-config.yaml on the kubelet node(s) and ensure RotateKubeletServerCertificate is included in the feature-gates arguments: kubeletArguments:   feature-gates:     - RotateKubeletClientCertificate=true,RotateKubeletServerCertificate=true</td>
+      <td>Allowing the kubelet to auto-update the certificates ensure that there is no downtime in certificate renewal as well as ensures confidentiality and integrity.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Kubernetes Kubelet Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80603-4</td>
+      <td>kubelet - Enable Client Certificate Rotation</td>
+      <td>enable</td>
+      <td>via feature-gates</td>
+      <td>To enable the kubelet to rotate client certificates, edit the kubelet configuration file /etc/origin/node/node-config.yaml on the kubelet node(s) and set the below parameter: kubeletArguments:   feature-gates:     - RotateKubeletClientCertificate=true</td>
+      <td>Allowing the kubelet to auto-update the certificates ensure that there is no downtime in certificate renewal as well as ensures confidentiality and integrity.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Kubernetes Kubelet Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80594-5</td>
+      <td>kubelet - Configure the Client CA Certificate</td>
+      <td>clientCA</td>
+      <td>via servingInfo</td>
+      <td>By default, the kubelet is not configured with a CA certificate which can subject the kubelet to man-in-the-middle attacks.  To configure a client CA certificate, edit the kubelet configuration file /etc/origin/node/node-config.yaml on the kubelet node(s) and set the below parameter: servingInfo:   clientCA: client-ca.crt</td>
+      <td>Not having a CA certificate for the kubelet will subject the kubelet to possible man-in-the-middle attacks especially on unsafe or untrusted networks. Certificate validation for the kubelet allows the API server to validate the kubelet&#39;s identity.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Kubernetes Kubelet Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80601-8</td>
+      <td>kubelet - Disable the Read-Only Port</td>
+      <td>disable</td>
+      <td>via read-only-port</td>
+      <td>To disable the read-only port, edit the kubelet configuration file /etc/origin/node/node-config.yaml on the kubelet node(s) and set the below parameter: kubeletArguments:   read-only-port:   - &#39;0&#39;</td>
+      <td>OpenShift disables the read-only port (10255) on all nodes by setting the read-only port kubelet flag to 0. This ensures only authenticated connections are able to receive information about the OpenShift system.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Kubernetes Kubelet Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80596-0</td>
+      <td>Ensure That The kubelet Client Certificate Is Correctly Set</td>
+      <td>verify</td>
+      <td>via cert-dir</td>
+      <td>To ensure the kubelet TLS client certificate is configured, edit the kubelet configuration file /etc/origin/node/node-config.yaml and configure the cert-dir path for the kubelet certificates. For example:   cert-dir:   - /etc/origin/node/certificates A corresponding certificate should exist in the cert-dir. For example: /etc/origin/node/certificates/kubelet-client-current.pem</td>
+      <td>Without cryptographic integrity protections, information can be altered by unauthorized users without detection.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Kubernetes Kubelet Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80595-2</td>
+      <td>kubelet - Do Not Limit Event Creation</td>
+      <td>0</td>
+      <td>via event-qps</td>
+      <td>All events should be captured and not restricted as this helps in reconstucting the chain-of-events.  To prevent log creation limiting, edit the kubelet configuration file /etc/origin/node/node-config.yaml on the kubelet node(s) and set the below parameter: kubeletArguments:   event-qps:   - &#39;0&#39;</td>
+      <td>All events should be captured and not restricted as this helps in reconstucting the chain-of-events.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Kubernetes Kubelet Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80621-6</td>
+      <td>Verify Group Who Owns The OpenShift etcd Data Directory</td>
+      <td>root</td>
+      <td>via chgrp</td>
+      <td>To properly set the group owner of /var/lib/etcd, run the command: $ sudo chgrp root /var/lib/etcd</td>
+      <td>The /var/lib/etcd directory contains highly-avaliable distributed key/value data storage across an OpenShift cluster. Allowing access to users to this directory could compromise OpenShift data and the cluster.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-82172-8</td>
+      <td>Verify Group Who Owns The OpenShift Open vSwitch Files</td>
+      <td>root</td>
+      <td>via chgrp</td>
+      <td>To properly set the group owner of /etc/origin/openvswitch/*, run the command: $ sudo chgrp root /etc/origin/openvswitch/*</td>
+      <td>CNI (Container Network Interface) files consist of a specification and libraries for writing plugins to configure network interfaces in Linux containers, along with a number of supported plugins. Allowing writeable access to the files could allow an attacker to modify the networking configuration potentially adding a rouge network connection.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80626-5</td>
+      <td>Verify User Who Owns The OpenShift Master Configuration File</td>
+      <td>root</td>
+      <td>via chown</td>
+      <td>To properly set the owner of /etc/origin/master/master-config.yaml, run the command: $ sudo chown root /etc/origin/master/master-config.yaml</td>
+      <td>The /etc/origin/master/master-config.yaml file contains information about the master configuration of the OpenShift cluster that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80643-0</td>
+      <td>Verify Permissions on the OpenShift Node Service File</td>
+      <td>644</td>
+      <td>via chmod</td>
+      <td>To properly set the permissions of /etc/systemd/system/atomic-openshift-node.service, run the command: $ sudo chmod 0644 /etc/systemd/system/atomic-openshift-node.service</td>
+      <td>If the /etc/systemd/system/atomic-openshift-node.service file is writable by a group-owner or the world the risk of its compromise is increased. The file contains the service configuration of the OpenShift node service that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80641-4</td>
+      <td>Verify Permissions on the OpenShift Node Kubeconfig File</td>
+      <td>600</td>
+      <td>via chmod</td>
+      <td>To properly set the permissions of /etc/origin/node/node.kubeconfig, run the command: $ sudo chmod 0600 /etc/origin/node/node.kubeconfig</td>
+      <td>If the /etc/origin/node/node.kubeconfig file is writable by a group-owner or the world the risk of its compromise is increased. The file contains the configuration of an OpenShift node that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80625-7</td>
+      <td>Verify User Who Owns The OpenShift etcd Specification File</td>
+      <td>root</td>
+      <td>via chown</td>
+      <td>To properly set the owner of /etc/origin/node/pods/etcd.yaml, run the command: $ sudo chown root /etc/origin/node/pods/etcd.yaml</td>
+      <td>The /etc/origin/node/pods/etcd.yaml file contains information about the configuration of the OpenShift etcd Server that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80617-4</td>
+      <td>Verify Group Who Owns The OpenShift Node Configuration File</td>
+      <td>root</td>
+      <td>via chgrp</td>
+      <td>To properly set the group owner of /etc/origin/node/node-config.yaml, run the command: $ sudo chgrp root /etc/origin/node/node-config.yaml</td>
+      <td>The /etc/origin/node/node-config.yaml file contains information about the configuration of the OpenShift node that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80614-1</td>
+      <td>Verify Group Who Owns The OpenShift Master Configuration File</td>
+      <td>root</td>
+      <td>via chgrp</td>
+      <td>To properly set the group owner of /etc/origin/master/master-config.yaml, run the command: $ sudo chgrp root /etc/origin/master/master-config.yaml</td>
+      <td>The /etc/origin/master/master-config.yaml file contains information about the master configuration of the OpenShift cluster that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80616-6</td>
+      <td>Verify Group Who Owns The OpenShift Scheduler Configuration File</td>
+      <td>root</td>
+      <td>via chgrp</td>
+      <td>To properly set the group owner of /etc/origin/master/scheduler.json, run the command: $ sudo chgrp root /etc/origin/master/scheduler.json</td>
+      <td>The /etc/origin/master/scheduler.json file contains information about the configuration of the OpenShift scheduler that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80615-8</td>
+      <td>Verify Group Who Owns The OpenShift Master Kubeconfig File</td>
+      <td>root</td>
+      <td>via chgrp</td>
+      <td>To properly set the group owner of /etc/origin/master/openshift-master.kubeconfig, run the command: $ sudo chgrp root /etc/origin/master/openshift-master.kubeconfig</td>
+      <td>The /etc/origin/master/openshift-master.kubeconfig file contains information about the master configuration of the OpenShift cluster that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80642-2</td>
+      <td>Verify Permissions on OpenShift Node Certificate File</td>
+      <td>644</td>
+      <td>via chmod</td>
+      <td>To properly set the permissions of /etc/origin/node/client-ca.crt, run the command: $ sudo chmod 0644 /etc/origin/node/client-ca.crt</td>
+      <td>If the /etc/origin/node/client-ca.crt file is writable by a group-owner or the world the risk of its compromise is increased. The file contains the certificate authority certificate for an OpenShift node that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80611-7</td>
+      <td>Verify Group Who Owns The OpenShift Container Network Interface Files</td>
+      <td>root</td>
+      <td>via chgrp</td>
+      <td>To properly set the group owner of /etc/cni/net.d/*, run the command: $ sudo chgrp root /etc/cni/net.d/*</td>
+      <td>CNI (Container Network Interface) files consist of a specification and libraries for writing plugins to configure network interfaces in Linux containers, along with a number of supported plugins. Allowing writeable access to the files could allow an attacker to modify the networking configuration potentially adding a rouge network connection.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80636-4</td>
+      <td>Verify Permissions on the OpenShift etcd Specification File</td>
+      <td>600</td>
+      <td>via chmod</td>
+      <td>To properly set the permissions of /etc/origin/node/pods/etcd.yaml, run the command: $ sudo chmod 0600 /etc/origin/node/pods/etcd.yaml</td>
+      <td>If the /etc/origin/node/pods/etcd.yaml file is writable by a group-owner or the world the risk of its compromise is increased. The file contains the configuration of an OpenShift etcd server that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80576-2</td>
+      <td>Verify Group Who Owns The OpenShift API Specification File</td>
+      <td>root</td>
+      <td>via chgrp</td>
+      <td>To properly set the group owner of /etc/origin/node/pods/apiserver.yaml, run the command: $ sudo chgrp root /etc/origin/node/pods/apiserver.yaml</td>
+      <td>The /etc/origin/node/pods/apiserver.yaml file contains information about the configuration of the OpenShift API Server that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80618-2</td>
+      <td>Verify Group Who Owns The OpenShift Node Kubeconfig File</td>
+      <td>root</td>
+      <td>via chgrp</td>
+      <td>To properly set the group owner of /etc/origin/node/node.kubeconfig, run the command: $ sudo chgrp root /etc/origin/node/node.kubeconfig</td>
+      <td>The /etc/origin/node/node.kubeconfig file contains information about the configuration of the OpenShift node that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80630-7</td>
+      <td>Verify User Who Owns The OpenShift Node Kubeconfig File</td>
+      <td>root</td>
+      <td>via chown</td>
+      <td>To properly set the owner of /etc/origin/node/node.kubeconfig, run the command: $ sudo chown root /etc/origin/node/node.kubeconfig</td>
+      <td>The /etc/origin/node/node.kubeconfig file contains information about the configuration of the OpenShift node that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80613-3</td>
+      <td>Verify Group Who Owns The OpenShift etcd Specification File</td>
+      <td>root</td>
+      <td>via chgrp</td>
+      <td>To properly set the group owner of /etc/origin/node/pods/etcd.yaml, run the command: $ sudo chgrp root /etc/origin/node/pods/etcd.yaml</td>
+      <td>The /etc/origin/node/pods/apiserver.yaml file contains information about the configuration of the OpenShift etcd Server that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80635-6</td>
+      <td>Verify Permissions on the OpenShift Controller Manager Specification File</td>
+      <td>600</td>
+      <td>via chmod</td>
+      <td>To properly set the permissions of /etc/origin/node/pods/controller.yaml, run the command: $ sudo chmod 0600 /etc/origin/node/pods/controller.yaml</td>
+      <td>If the /etc/origin/node/pods/controller.yaml file is writable by a group-owner or the world the risk of its compromise is increased. The file contains the configuration of an OpenShift Controller Manager server that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80633-1</td>
+      <td>Verify Permissions on the OpenShift Admin Kubeconfig File</td>
+      <td>600</td>
+      <td>via chmod</td>
+      <td>To properly set the permissions of /etc/origin/master/admin.kubeconfig, run the command: $ sudo chmod 0600 /etc/origin/master/admin.kubeconfig</td>
+      <td>If the /etc/origin/master/admin.kubeconfig file is writable by a group-owner or the world the risk of its compromise is increased. The file contains the administration configuration of the OpenShift cluster that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80639-8</td>
+      <td>Verify Permissions on the OpenShift Scheduler Configuration File</td>
+      <td>600</td>
+      <td>via chmod</td>
+      <td>To properly set the permissions of /etc/origin/master/scheduler.json, run the command: $ sudo chmod 0600 /etc/origin/master/scheduler.json</td>
+      <td>If the /etc/origin/master/scheduler.json file is writable by a group-owner or the world the risk of its compromise is increased. The file contains the configuration of an OpenShift scheduler that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80629-9</td>
+      <td>Verify User Who Owns The OpenShift Node Configuration File</td>
+      <td>root</td>
+      <td>via chown</td>
+      <td>To properly set the owner of /etc/origin/node/node-config.yaml, run the command: $ sudo chown root /etc/origin/node/node-config.yaml</td>
+      <td>The /etc/origin/node/node-config.yaml file contains information about the configuration of the OpenShift node that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80619-0</td>
+      <td>Verify Group Who Owns OpenShift Node Certificate File</td>
+      <td>root</td>
+      <td>via chgrp</td>
+      <td>To properly set the group owner of /etc/origin/node/client-ca.crt, run the command: $ sudo chgrp root /etc/origin/node/client-ca.crt</td>
+      <td>The /etc/origin/node/client-ca.crt file contains the certificate authority certificate for an OpenShift node that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80637-2</td>
+      <td>Verify Permissions on the OpenShift Master Configuration File</td>
+      <td>600</td>
+      <td>via chmod</td>
+      <td>To properly set the permissions of /etc/origin/master/master-config.yaml, run the command: $ sudo chmod 0600 /etc/origin/master/master-config.yaml</td>
+      <td>If the /etc/origin/master/master-config.yaml file is writable by a group-owner or the world the risk of its compromise is increased. The file contains the master configuration of an OpenShift cluster that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80620-8</td>
+      <td>Verify Group Who Owns The OpenShift Node Service File</td>
+      <td>root</td>
+      <td>via chgrp</td>
+      <td>To properly set the group owner of /etc/systemd/system/atomic-openshift-node.service, run the command: $ sudo chgrp root /etc/systemd/system/atomic-openshift-node.service</td>
+      <td>The /etc/systemd/system/atomic-openshift-node.service file contains information about the configuration of the OpenShift node service that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80610-9</td>
+      <td>Verify Group Who Owns The OpenShift Admin Kubeconfig File</td>
+      <td>root</td>
+      <td>via chgrp</td>
+      <td>To properly set the group owner of /etc/origin/master/admin.kubeconfig, run the command: $ sudo chgrp root /etc/origin/master/admin.kubeconfig</td>
+      <td>The /etc/origin/master/admin.kubeconfig file contains information about the administrative configuration of the OpenShift cluster that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80640-6</td>
+      <td>Verify Permissions on the OpenShift Node Configuration File</td>
+      <td>600</td>
+      <td>via chmod</td>
+      <td>To properly set the permissions of /etc/origin/node/node-config.yaml, run the command: $ sudo chmod 0600 /etc/origin/node/node-config.yaml</td>
+      <td>If the /etc/origin/node/node-config.yaml file is writable by a group-owner or the world the risk of its compromise is increased. The file contains the configuration of an OpenShift node that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-82173-6</td>
+      <td>Verify Permissions on the OpenShift Open vSwitch Files</td>
+      <td>644</td>
+      <td>via chmod</td>
+      <td>To properly set the permissions of /etc/origin/openvswitch/*, run the command: $ sudo chmod 0644 /etc/origin/openvswitch/*</td>
+      <td>CNI (Container Network Interface) files consist of a specification and libraries for writing plugins to configure network interfaces in Linux containers, along with a number of supported plugins. Allowing writeable access to the files could allow an attacker to modify the networking configuration potentially adding a rouge network connection.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80627-3</td>
+      <td>Verify User Who Owns The OpenShift Master Kubeconfig File</td>
+      <td>root</td>
+      <td>via chown</td>
+      <td>To properly set the owner of /etc/origin/master/openshift-master.kubeconfig, run the command: $ sudo chown root /etc/origin/master/openshift-master.kubeconfig</td>
+      <td>The /etc/origin/master/openshift-master.kubeconfig file contains information about the master configuration of the OpenShift cluster that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80638-0</td>
+      <td>Verify Permissions on the OpenShift Master Kubeconfig File</td>
+      <td>600</td>
+      <td>via chmod</td>
+      <td>To properly set the permissions of /etc/origin/master/openshift-master.kubeconfig, run the command: $ sudo chmod 0600 /etc/origin/master/openshift-master.kubeconfig</td>
+      <td>If the /etc/origin/master/openshift-master.kubeconfig file is writable by a group-owner or the world the risk of its compromise is increased. The file contains the master configuration of an OpenShift cluster that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80574-7</td>
+      <td>Verify Permissions on the OpenShift API Specification File</td>
+      <td>600</td>
+      <td>via chmod</td>
+      <td>To properly set the permissions of /etc/origin/node/pods/apiserver.yaml, run the command: $ sudo chmod 0600 /etc/origin/node/pods/apiserver.yaml</td>
+      <td>If the /etc/origin/node/pods/apiserver.yaml file is writable by a group-owner or the world the risk of its compromise is increased. The file contains the configuration of an OpenShift API server that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80624-0</td>
+      <td>Verify User Who Owns The OpenShift Controller Manager Specification File</td>
+      <td>root</td>
+      <td>via chown</td>
+      <td>To properly set the owner of /etc/origin/node/pods/controller.yaml, run the command: $ sudo chown root /etc/origin/node/pods/controller.yaml</td>
+      <td>The /etc/origin/node/pods/controller.yaml file contains information about the configuration of the OpenShift Controller Manager Server that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-82171-0</td>
+      <td>Verify User Who Owns The OpenShift Open vSwitch Files</td>
+      <td>root</td>
+      <td>via chown</td>
+      <td>To properly set the owner of /etc/origin/openvswitch/*, run the command: $ sudo chown root /etc/origin/openvswitch/*</td>
+      <td>CNI (Container Network Interface) files consist of a specification and libraries for writing plugins to configure network interfaces in Linux containers, along with a number of supported plugins. Allowing writeable access to the files could allow an attacker to modify the networking configuration potentially adding a rouge network connection.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80628-1</td>
+      <td>Verify User Who Owns The OpenShift Scheduler Configuration File</td>
+      <td>root</td>
+      <td>via chown</td>
+      <td>To properly set the owner of /etc/origin/master/scheduler.json, run the command: $ sudo chown root /etc/origin/master/scheduler.json</td>
+      <td>The /etc/origin/master/scheduler.json file contains information about the configuration of the OpenShift scheduler that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80631-5</td>
+      <td>Verify User Who Owns OpenShift Node Certificate File</td>
+      <td>root</td>
+      <td>via chown</td>
+      <td>To properly set the owner of /etc/origin/node/client-ca.crt, run the command: $ sudo chown root /etc/origin/node/client-ca.crt</td>
+      <td>The /etc/origin/node/client-ca.crt file contains the certificate authority certificate for an OpenShift node that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80622-4</td>
+      <td>Verify User Who Owns The OpenShift Admin Kubeconfig File</td>
+      <td>root</td>
+      <td>via chown</td>
+      <td>To properly set the owner of /etc/origin/master/admin.kubeconfig, run the command: $ sudo chown root /etc/origin/master/admin.kubeconfig</td>
+      <td>The /etc/origin/master/admin.kubeconfig file contains information about the administrative configuration of the OpenShift cluster that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80612-5</td>
+      <td>Verify Group Who Owns The OpenShift Controller Manager Specification File</td>
+      <td>root</td>
+      <td>via chgrp</td>
+      <td>To properly set the group owner of /etc/origin/node/pods/controller.yaml, run the command: $ sudo chgrp root /etc/origin/node/pods/controller.yaml</td>
+      <td>The /etc/origin/node/pods/controller.yaml file contains information about the configuration of the OpenShift Controller Manager Server that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80632-3</td>
+      <td>Verify User Who Owns The OpenShift Node Service File</td>
+      <td>root</td>
+      <td>via chown</td>
+      <td>To properly set the owner of /etc/systemd/system/atomic-openshift-node.service, run the command: $ sudo chown root /etc/systemd/system/atomic-openshift-node.service</td>
+      <td>The /etc/systemd/system/atomic-openshift-node.service file contains information about the configuration of the OpenShift node service that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80634-9</td>
+      <td>Verify Permissions on the OpenShift Container Network Interface Files</td>
+      <td>644</td>
+      <td>via chmod</td>
+      <td>To properly set the permissions of /etc/cni/net.d/*, run the command: $ sudo chmod 0644 /etc/cni/net.d/*</td>
+      <td>CNI (Container Network Interface) files consist of a specification and libraries for writing plugins to configure network interfaces in Linux containers, along with a number of supported plugins. Allowing writeable access to the files could allow an attacker to modify the networking configuration potentially adding a rouge network connection.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80623-2</td>
+      <td>Verify User Who Owns The OpenShift Container Network Interface Files</td>
+      <td>root</td>
+      <td>via chown</td>
+      <td>To properly set the owner of /etc/cni/net.d/*, run the command: $ sudo chown root /etc/cni/net.d/*</td>
+      <td>CNI (Container Network Interface) files consist of a specification and libraries for writing plugins to configure network interfaces in Linux containers, along with a number of supported plugins. Allowing writeable access to the files could allow an attacker to modify the networking configuration potentially adding a rouge network connection.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-82058-9</td>
+      <td>Verify User Who Owns The OpenShift API Specification File</td>
+      <td>root</td>
+      <td>via chown</td>
+      <td>To properly set the owner of /etc/origin/node/pods/apiserver.yaml, run the command: $ sudo chown root /etc/origin/node/pods/apiserver.yaml</td>
+      <td>The /etc/origin/node/pods/apiserver.yaml file contains information about the configuration of the OpenShift API Server that is configured on the system. Protection of this file is critical for OpenShift security.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Verify Permissions on Important Files and Directories</td>
+    </tr>
+    <tr>
+      <td>CCE-80593-7</td>
+      <td>Ensure that the --use-service-account-credentials argument is set</td>
+      <td>enable</td>
+      <td>via use-service-account-credentials</td>
+      <td>To ensure individual service account credentials are used, edit the Controller Manager pod specification file /etc/origin/master/master-config.yaml on the master node(s) and set the use-service-account-credentials option, under the controllerArguments stanza, to true. For example: kubernetesMasterConfig:   controllerArguments:     use-service-account-credentials:     - true</td>
+      <td>The controller manager creates a service account per controller in kube-system namespace, generates an API token and credentials for it, then builds a dedicated API client with that service account credential for each controller loop to use. Setting the use-service-account-credentials to true runs each control loop within the contoller manager using a separate service account credential. When used in combination with RBAC, this ensures that the control loops run with the minimum permissions required to perform their intended tasks.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>OpenShift Controller Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80592-9</td>
+      <td>Enable terminated-pod-gc-threshold for the Controller Manager</td>
+      <td>enable</td>
+      <td>via terminated-pod-gc-threshold</td>
+      <td>To ensure the garbage collector is activated upon pod termination, edit the Controller Manager pod specification file /etc/origin/master/master-config.yaml on the master node(s) and set the terminated-pod-gc-threshold to true. For example: kubernetesMasterConfig:   controllerArguments:     terminated-pod-gc-threshold:       - true</td>
+      <td>Garbage collection is important to ensure sufficient resource availability and avoiding degraded performance and availability. In the worst case, the system might crash or just be unusable for a long period of time. The default setting for garbage collection is 12,500 terminated pods which might be to high for your system to sustain. Based on your system resources and tests, choose an appropriate threshold value to activate garbage collection.</td>
+      <td>low</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>OpenShift Controller Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-83000-0</td>
+      <td>Disable Profiling for the Controller Manager</td>
+      <td>disable</td>
+      <td>via OPENSHIFT_PROFILE</td>
+      <td>Profiling endpoints are exposed at each master port and secured via Role-Based Access Control (RBAC). By default profiling is accessible only to users bound to cluster-admin or cluster-debugger roles, limiting access to authorized users only.  Should OPENSHIFT_PROFILE be set to web, reflecting a change from the secure defaults, this profiling data will be exposed via a web interface on the systems localhost interface.  To ensure profiling data is not exposed over a web interface, ensure To ensure profiling data is not exposed over a web interface, ensure OPENSHIFT_PROFILE is not set to web in /etc/origin/master/master.env.</td>
+      <td>Profiling data may include sensitive system information which could be exploited.</td>
+      <td>low</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>OpenShift Controller Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80587-9</td>
+      <td>Ensure Controller bind-address argument is set</td>
+      <td>verify</td>
+      <td>via bind-address</td>
+      <td>To ensure the Controller Manager service is bound to secure loopback address, edit the Controller Manager pod specification file /etc/origin/master/master-config.yaml on the master node(s) and ensure the correct value for the bind-address parameter. For example: kubernetesMasterConfig:   controllerArguments:     bind-address:       - &#39;192.168.1.101&#39;</td>
+      <td>The Controller Manager API service (which runs on a port specified by the secure-port argument) is used for health and metrics information and is available without authentication or encryption. As such it should only be bound to a localhost interface, to minimize the cluster&#39;s attack surface.</td>
+      <td>low</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>OpenShift Controller Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80590-3</td>
+      <td>Ensure that the RotateKubeletServerCertificate argument is set</td>
+      <td>RotateKubeletServerCertificate=true</td>
+      <td>via feature-gates</td>
+      <td>To enforce kublet server certificate rotation on the Controller Manager, edit the Controller Manager pod specification file /etc/origin/master/master-config.yaml on the master node(s) and set the controllerArguments parameter to include RotateKubeletServerCertificate=true. For example: kubernetesMasterConfig:   controllerArguments:     feature-gates:       - RotateKubeletServerCertificate=true</td>
+      <td>Enabling kubelet certificate rotation causes the kubelet to both request a serving certificate after bootstrapping its client credentials and rotate the certificate as its existing credentials expire. This automated periodic rotation ensures that there are no downtimes due to expired certificates and thus addressing the availability in the C/I/A security triad.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>OpenShift Controller Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-81001-0</td>
+      <td>Manage Image Provenance Using ImagePolicyWebhook</td>
+      <td>imagePolicyConfig</td>
+      <td>via imagePolicyConfig</td>
+      <td>OpenShift administrators can control which images can be imported, tagged, and run in a cluster. There are two facilities for this purpose: (1) Allowed Registries, allowing administrators to restrict image origins to known external registries; and (2) ImagePolicy Admission plug-in which lets administrators specify specific images which are allowed to run on the OpenShift cluster.  Configure an Image policy per the Image Policy chapter in the OpenShift documentation:      https://docs.openshift.com/container-platform/3.11/admin_guide/image_policy.html</td>
+      <td>Image Policy ensures that only approved container images are allowed to be ran on the OpenShift platform.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>OpenShift - General Security Practices</td>
+    </tr>
+    <tr>
+      <td>CCE-81152-1</td>
+      <td>Configure the Client Certificate Authority for the API Server</td>
+      <td>servingInfo:   clientCA: ca.crt   certFile: master.server.crt   keyFile: master.server.key</td>
+      <td>via servingInfo</td>
+      <td>Certificates must be provided to fully setup TLS client certificate authentication. To ensure the API Server utilizes its own TLS certificates, the clientCA must be configured. Verify that servingInfo has the clientCA configured in the API Server pod specification file /etc/origin/master/master-config.yaml on the master node(s) to something similar to: servingInfo:   clientCA: ca.crt   certFile: master.server.crt   keyFile: master.server.key</td>
+      <td>API Server communication contains sensitive parameters that should remain encrypted in transit. Configure the API Server to serve only HTTPS traffic. If -clientCA is set, any request presenting a client certificate signed by one of the authorities in the client-ca-file is authenticated with an identity corresponding to the CommonName of the client certificate.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>OpenShift API Server</td>
+    </tr>
+    <tr>
+      <td>CCE-80573-9</td>
+      <td>Disable etcd Self-Signed Certificates</td>
+      <td>ETCD_AUTO_TLS=false</td>
+      <td>via ETCD_AUTO_TLS</td>
+      <td>To ensure the etcd service is not using self-signed certificates, edit the etcd configuration file /etc/etcd/etcd.conf from the master node and set ETCD_AUTO_TLS to false: ETCD_AUTO_TLS=false</td>
+      <td>Without cryptographic integrity protections, information can be altered by unauthorized users without detection. Using self-signed certificates ensures that the certificates are never validated against a certificate authority and could lead to compromised and invalidated data.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>OpenShift etcd Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80582-0</td>
+      <td>Enable The Peer Client Certificate Authentication</td>
+      <td>ETCD_PEER_CLIENT_CERT_AUTH=true</td>
+      <td>via ETCD_AUTO_TLS</td>
+      <td>To ensure the etcd service is serving TLS to clients, edit the etcd configuration file /etc/etcd/etcd.conf on the master node and set ETCD_PEER_CLIENT_CERT_AUTH to true. ETCD_PEER_CLIENT_CERT_AUTH=true</td>
+      <td>Without cryptographic integrity protections, information can be altered by unauthorized users without detection.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>OpenShift etcd Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80584-6</td>
+      <td>Disable etcd Auto Log Rotation</td>
+      <td>ETCD_MAX_WALS=0</td>
+      <td>via ETCD_MAX_WALS</td>
+      <td>To ensure the etcd service is not auto-rotating logs, edit the etcd configuration file /etc/etcd/etcd.conf on the master node and set ETCD_MAX_WALS to 0: ETCD_MAX_WALS=0</td>
+      <td>Ensure data integrity by preventing logs from being overwritten which allows reconstructing events should the data be compromised.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>OpenShift etcd Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80578-8</td>
+      <td>Ensure That The etcd Key File Is Correctly Set</td>
+      <td>ETCD_CERT_FILE=/etc/etcd/server.key</td>
+      <td>via ETCD_CERT_FILE</td>
+      <td>To ensure the etcd service is serving TLS to clients, edit the etcd configuration file /etc/etcd/etcd.conf on the master and adding a key file to ETCD_KEY_FILE: ETCD_CERT_FILE=/etc/etcd/server.key</td>
+      <td>Without cryptographic integrity protections, information can be altered by unauthorized users without detection.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>OpenShift etcd Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80586-1</td>
+      <td>Configure etcd Log Storage</td>
+      <td>ETCD_WAL_DIR=/var/lib/etcd/member/wal</td>
+      <td>via ETCD_WAL_DIR</td>
+      <td>To ensure the etcd service is storing logs separate from data, set ETCD_WAL_DIR to /var/lib/etcd/member/wal in /etc/etcd/etcd.conf on the master node: ETCD_WAL_DIR=/var/lib/etcd/member/wal</td>
+      <td>etcd log files should be stored in a separate location from the etcd data. This not only ensures data integrity but also helps to prevent IO degradation.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>OpenShift etcd Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80585-3</td>
+      <td>Configure A Unique CA Certificate for etcd</td>
+      <td>ETCD_TRUSTED_CA_FILE=/etc/etcd/ca.crt</td>
+      <td>via ETCD_TRUSTED_CA_FILE</td>
+      <td>A unique and different CA certificate should be created for etcd. To ensure the etcd service is using a unique certificate, , set ETCD_TRUSTED_CA_FILE to /etc/etcd/ca.crt in /etc/etcd/etcd.conf on the master node that does NOT match the OpenShift CA certificate: ETCD_TRUSTED_CA_FILE=/etc/etcd/ca.crt</td>
+      <td>A unique CA certificate that is utilized by etcd and is different from OpenShift ensures that the etcd data is still protected in the event that the OpenShift certificate is compromised.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>OpenShift etcd Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80579-6</td>
+      <td>Enable The Client Certificate Authentication</td>
+      <td>ETCD_CLIENT_CERT_AUTH=true</td>
+      <td>via ETCD_CLIENT_CERT_AUTH</td>
+      <td>To ensure the etcd service is serving TLS to clients, edit the etcd configuration file /etc/etcd/etcd.conf on the master node and set ETCD_CLIENT_CERT_AUTH to true. ETCD_CLIENT_CERT_AUTH=true</td>
+      <td>Without cryptographic integrity protections, information can be altered by unauthorized users without detection.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>OpenShift etcd Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80581-2</td>
+      <td>Ensure That The etcd Peer Key File Is Correctly Set</td>
+      <td>ETCD_PEER_KEY_FILE=/etc/etcd/peer.key</td>
+      <td>via ETCD_PEER_KEY_FILE</td>
+      <td>To ensure the etcd service is serving TLS to clients, edit the etcd configuration file /etc/etcd/etcd.conf on the master on the master and adding a key file to ETCD_PEER_KEY_FILE: ETCD_PEER_KEY_FILE=/etc/etcd/peer.key</td>
+      <td>Without cryptographic integrity protections, information can be altered by unauthorized users without detection.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>OpenShift etcd Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80583-8</td>
+      <td>Disable etcd Peer Self-Signed Certificates</td>
+      <td>ETCD_PEER_AUTO_TLS=false</td>
+      <td>via ETCD_PEER_AUTO_TLS</td>
+      <td>To ensure the etcd service is not using self-signed certificates, edit the etcd configuration file /etc/etcd/etcd.conf from the master node and set ETCD_PEER_AUTO_TLS to false: ETCD_PEER_AUTO_TLS=false</td>
+      <td>Without cryptographic integrity protections, information can be altered by unauthorized users without detection. Using self-signed certificates ensures that the certificates are never validated against a certificate authority and could lead to compromised and invalidated data.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>OpenShift etcd Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80577-0</td>
+      <td>Ensure That The etcd Client Certificate Is Correctly Set</td>
+      <td>ETCD_CERT_FILE=/etc/etcd/server.crt</td>
+      <td>via ETCD_CERT_FILE</td>
+      <td>To ensure the etcd service is serving TLS to clients, edit the etcd configuration file /etc/etcd/etcd.conf on the master and adding a certificate to ETCD_CERT_FILE: ETCD_CERT_FILE=/etc/etcd/server.crt</td>
+      <td>Without cryptographic integrity protections, information can be altered by unauthorized users without detection.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>OpenShift etcd Settings</td>
+    </tr>
+    <tr>
+      <td>CCE-80580-4</td>
+      <td>Ensure That The etcd Peer Client Certificate Is Correctly Set</td>
+      <td>ETCD_PEER_CERT_FILE=/etc/etcd/peer.crt</td>
+      <td>via ETCD_PEER_CERT_FILE</td>
+      <td>To ensure the etcd service is serving TLS to clients, edit the etcd configuration file /etc/etcd/etcd.conf on the master and adding a certificate to ETCD_PEER_CERT_FILE: ETCD_PEER_CERT_FILE=/etc/etcd/peer.crt</td>
+      <td>Without cryptographic integrity protections, information can be altered by unauthorized users without detection.</td>
+      <td>medium</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>OpenShift etcd Settings</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

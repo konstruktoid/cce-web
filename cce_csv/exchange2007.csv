@@ -1,0 +1,355 @@
+Unnamed: 0,Last modified: 2012-02-24,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5
+,Version: 5.20120314,,,,
+CCE ID,CCE Description,CCE Parameters,CCE Technical Mechanisms, ,Microsoft Security Compliance Manager (SCM) Baselines and Settings Packs
+CCE-19088-4,"The ""Allow basic authentication"" setting should be configured correctly.",True/False,(1) Powershell: Get-ExchangeConfiguration -configType AllowBasicAuthentication |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19184-1,"The ""Allow simple passwords"" setting should be configured correctly.",True/False,(1) Powershell: Get-ExchangeConfiguration -configType AllowSimplePasswords |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19107-2,"The ""Allow unmanaged devices"" setting should be configured correctly.",True/False,(1) Powershell: Get-ExchangeConfiguration -configType AllowUnmanagedDevices |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19178-3,"The ""Configure dial plan security"" setting should be configured correctly.","Unsecured, SIPSecured, Secured",(1) Powershell: Get-ExchangeConfiguration -configType DialPlanSecure |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19098-3,"The ""Configure login authentication for IMAP4"" setting should be configured correctly.","PlainTextLogin, PlainTextAuthentication, SecureLogin",(1) Powershell: Get-ExchangeConfiguration -configType IMAP4LoginType |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-18657-7,"The ""Configure login authentication for POP3"" setting should be configured correctly.","PlainTextLogin, PlainTextAuthentication, SecureLogin",(1) Powershell: Get-ExchangeConfiguration -configType POP3LoginType |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19200-5,"The ""Configure Protocol logging"" setting should be configured correctly.","Verbose, None",(1) Powershell: Get-ExchangeConfiguration -configType ProtocolLogging |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-18409-3,"The ""Configure Sender Filtering"" setting should be configured correctly.","StampStatus, Reject",(1) Powershell: Get-ExchangeConfiguration -configType SenderFiltering |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19203-9,"The ""Do not permamently delete items until the database has been backed up"" setting should be configured correctly.",True/False,(1) Powershell: Get-ExchangeConfiguration -configType RetainDeletedItemsUntilBackup |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19015-7,"The ""Enable automatic forwards to remote domains"" setting should be configured correctly.",True/False,(1) Powershell: Get-ExchangeConfiguration -configType AutomaticForwardsRemoteDomains |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19198-1,"The ""Enable automatic replies to remote domains"" setting should be configured correctly.",True/False,(1) Powershell: Get-ExchangeConfiguration -configType AutomaticRepliesRemoteDomains |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19207-0,"The ""Enable non-delivery reports to remote domains"" setting should be configured correctly.",True/False,(1) Powershell: Get-ExchangeConfiguration -configType NonDeliveryReportsRemoteDomains |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19191-6,"The ""Enable OOF messages to remote domains"" setting should be configured correctly.","External, ExternalLegacy, None, and InternalLegacy",(1) Powershell: Get-ExchangeConfiguration -configType OofMessagesRemoteDomains |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-18405-1,"The ""Enable S/MIME for OWA 2007"" setting should be configured correctly.",True/False,(1) Powershell: Get-ExchangeConfiguration -configType SMimeEnabled2007 |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19150-2,"The ""Enable Sender ID agent"" setting should be configured correctly.",True/False,(1) Powershell: Get-ExchangeConfiguration -configType SenderID |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19035-5,"The ""Enable Sender Reputation"" setting should be configured correctly.",True/False,(1) Powershell: Get-ExchangeConfiguration -configType SenderReputation |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19205-4,"The ""Enforce Password History"" setting should be configured correctly.",0 - 50 passwords,(1) Powershell: Get-ExchangeConfiguration -configType EnforcePasswordHistory |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19116-3,"The ""External send connector authentication: DNS Routing"" setting should be configured correctly.",True/False,(1) Powershell: Get-ExchangeConfiguration -configType ExternalSendConnectorAuthDNSRoutingEnabled |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19112-2,"The ""External send connector authentication: Domain Security"" setting should be configured correctly.",True/False,(1) Powershell: Get-ExchangeConfiguration -configType ExternalSendConnectorAuthDomainSecureEnabled |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-18256-8,"The ""External send connector authentication: Ignore Start TLS"" setting should be configured correctly.",True/False,(1) Powershell: Get-ExchangeConfiguration -configType ExternalSendConnectorAuthIgnoreSTARTTLS |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19188-2,"The ""Keep deleted mailboxes for the specified number of days"" setting should be configured correctly.",0 - 24855 Days,(1) Powershell: Get-ExchangeConfiguration -configType KeepDeletedMailboxes |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19239-3,"The ""Mailbox quotas: Issue warning at"" setting should be configured correctly.",0 - 2147483647 KB,(1) Powershell: Get-ExchangeConfiguration -configType MailboxApproachingStorageLimitWarning |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19195-7,"The ""Mailbox quotas: Prohibit send and receive at"" setting should be configured correctly.",0 - 2147483647 KB,(1) Powershell: Get-ExchangeConfiguration -configType ProhibitSendReceiveQuota |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-18295-6,"The ""Mailbox quotas: Prohibit send at"" setting should be configured correctly.",0 - 2147483647 KB,(1) Powershell: Get-ExchangeConfiguration -configType ProhibitSendQuota |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-18314-5,"The ""Maximum number of recipients - organization level"" setting should be configured correctly.",0 - 2147483647 recipients,(1) Powershell: Get-ExchangeConfiguration -configType MaximumNumberRecipients |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-18897-9,"The ""Maximum receive size - connector level"" setting should be configured correctly.",64 - 2147483647 KB,(1) Powershell: Get-ExchangeConfiguration -configType MaximumReceiveSizeConnector |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19036-3,"The ""Maximum receive size - organization level"" setting should be configured correctly.",0 - 2097151 KB,(1) Powershell: Get-ExchangeConfiguration -configType MaximumReceiveSizeOrganization |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-18354-1,"The ""Maximum send size - connector level"" setting should be configured correctly.",64 - 2147483647 KB,(1) Powershell: Get-ExchangeConfiguration -configType MaximumSendSizeConnector |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19165-0,"The ""Maximum send size - organization level"" setting should be configured correctly.",0 - 2097151 KB,(1) Powershell: Get-ExchangeConfiguration -configType MaximumSendSizeOrganization |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-18561-1,"The ""Message tracking logging - Mailbox"" setting should be configured correctly.",True/False,(1) Powershell: Get-ExchangeConfiguration -configType MessageTrackingLoggingMailbox |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19093-4,"The ""Message tracking logging - Transport"" setting should be configured correctly.",True/False,(1) Powershell: Get-ExchangeConfiguration -configType MessageTrackingLoggingTransport |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19329-2,"The machine setting for the startup type of the ""Microsoft Exchange Active Directory Topology"" service should be configured correctly.","Automatic = 2, Manual=3, Disabled=4","(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Active Directory Topology 
+(2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeADTopology\Start",,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19214-6,"The machine setting for the startup type of the ""Microsoft Exchange ADAM"" service should be configured correctly.","Automatic = 2, Manual=3, Disabled=4","(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange ADAM 
+(2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ADAM_MSExchange\Start",,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19294-8,"The machine setting for the startup type of the ""Microsoft Exchange Anti-spam Update"" service should be configured correctly.","Automatic = 2, Manual=3, Disabled=4","(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Anti-spam Update
+(2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeAntispamUpdate\Start",,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19174-2,"The machine setting for the startup type of the ""Microsoft Exchange Credential Service (Exchange 2007)"" service should be configured correctly.","Automatic = 2, Manual=3, Disabled=4","(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Credential Service 
+(2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EdgeCredentialSvc\Start",,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19234-4,"The machine setting for the startup type of the ""Microsoft Exchange EdgeSync Service"" service should be configured correctly.","Automatic = 2, Manual=3, Disabled=4","(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange EdgeSync Service 
+(2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeEdgeSync\Start",,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19213-8,"The machine setting for the startup type of the ""Microsoft Exchange File Distribution"" service should be configured correctly.","Automatic = 2, Manual=3, Disabled=4","(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange File Distribution 
+(2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeFDS\Start",,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19155-1,"The machine setting for the startup type of the ""Microsoft Exchange IMAP4"" service should be configured correctly.","Automatic = 2, Manual=3, Disabled=4","(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange IMAP4 
+(2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeIMAP4\Start",,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19120-5,"The machine setting for the startup type of the ""Microsoft Exchange Information Store"" service should be configured correctly.","Automatic = 2, Manual=3, Disabled=4","(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Information Store 
+(2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeIS\Start",,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19268-2,"The machine setting for the startup type of the ""Microsoft Exchange Mail Submission Service"" service should be configured correctly.","Automatic = 2, Manual=3, Disabled=4","(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Mail Submission Service 
+(2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeMailSubmission\Start",,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19193-2,"The machine setting for the startup type of the ""Microsoft Exchange Mailbox Assistants"" service should be configured correctly.","Automatic = 2, Manual=3, Disabled=4","(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Mailbox Assistants 
+(2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeMailboxAssistants\Start",,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19171-8,"The machine setting for the startup type of the ""Microsoft Exchange Monitoring"" service should be configured correctly.","Automatic = 2, Manual=3, Disabled=4","(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Monitoring 
+(2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeMonitoring\Start",,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19108-0,"The machine setting for the startup type of the ""Microsoft Exchange POP3"" service should be configured correctly.","Automatic = 2, Manual=3, Disabled=4","(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange POP3 
+(2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangePOP3\Start",,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19334-2,"The machine setting for the startup type of the ""Microsoft Exchange Replication Service"" service should be configured correctly.","Automatic = 2, Manual=3, Disabled=4","(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Replication Service 
+(2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeRepl\Start",,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19243-5,"The machine setting for the startup type of the ""Microsoft Exchange Search Indexer"" service should be configured correctly.","Automatic = 2, Manual=3, Disabled=4","(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Search Indexer 
+(2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeSearch\Start",,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19139-5,"The machine setting for the startup type of the ""Microsoft Exchange Server Extension for Windows Server Backup"" service should be configured correctly.","Automatic = 2, Manual=3, Disabled=4","(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Server Extension for Windows Server Backup 
+(2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\wsbexchange\Start",,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19144-5,"The machine setting for the startup type of the ""Microsoft Exchange Service Host"" service should be configured correctly.","Automatic = 2, Manual=3, Disabled=4","(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Service Host 
+(2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeServiceHost\Start",,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19134-6,"The machine setting for the startup type of the ""Microsoft Exchange Speech Engine Service"" service should be configured correctly.","Automatic = 2, Manual=3, Disabled=4","(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Speech Engine Service 
+(2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSSpeechService\Start",,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-18914-2,"The machine setting for the startup type of the ""Microsoft Exchange System Attendant"" service should be configured correctly.","Automatic = 2, Manual=3, Disabled=4","(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange System Attendant 
+(2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeSA\Start",,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19020-7,"The machine setting for the startup type of the ""Microsoft Exchange Transport"" service should be configured correctly.","Automatic = 2, Manual=3, Disabled=4","(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Transport 
+(2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeTransport\Start",,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19303-7,"The machine setting for the startup type of the ""Microsoft Exchange Transport Log Search"" service should be configured correctly.","Automatic = 2, Manual=3, Disabled=4","(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Transport Log Search 
+(2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeTransportLogSearch\Start",,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19008-2,"The machine setting for the startup type of the ""Microsoft Exchange Unified Messaging"" service should be configured correctly.","Automatic = 2, Manual=3, Disabled=4","(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Unified Messaging 
+(2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeUM\Start",,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19055-3,"The machine setting for the startup type of the ""Microsoft Search (Exchange)"" service should be configured correctly.","Automatic = 2, Manual=3, Disabled=4","(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Search (Exchange) 
+(2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\msftesql-Exchange\Start",,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19185-8,"The ""Minimum password length"" setting should be configured correctly.",1 - 16,(1) Powershell: Get-ExchangeConfiguration -configType MinimumPasswordLength |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19054-6,"The ""Mount database at startup"" setting should be configured correctly.",True/False,(1) Powershell: Get-ExchangeConfiguration -configType MountDatabaseAtStartup |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19310-2,"The ""Number of attempts allowed"" setting should be configured correctly.",4 - 16 Attempts,(1) Powershell: Get-ExchangeConfiguration -configType NumberAttemptsAllowed |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19349-0,"The ""Password Expiration"" setting should be configured correctly.",1:00:00:00 - 730:00:00:00 Days,(1) Powershell: Get-ExchangeConfiguration -configType PasswordExpiration |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19264-1,"The ""Refresh interval"" setting should be configured correctly.",0 - 596523 Hours,(1) Powershell: Get-ExchangeConfiguration -configType RefreshInterval |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19149-4,"The ""Require alphanumeric password"" setting should be configured correctly.",True/False,(1) Powershell: Get-ExchangeConfiguration -configType RequireAlphanumericPassword |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19251-8,"The ""Require Client Certificates"" setting should be configured correctly.","Ignore, Accepted, or Required",(1) Powershell: Get-ExchangeConfiguration -configType RequireClientCertificates |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19351-6,"The ""Require encryption on device"" setting should be configured correctly.",True/False,(1) Powershell: Get-ExchangeConfiguration -configType RequireEncryptionOnDevice |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19194-0,"The ""Require password"" setting should be configured correctly.",True/False,(1) Powershell: Get-ExchangeConfiguration -configType RequirePassword |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19285-6,"The ""Retain deleted items for the specified number of days"" setting should be configured correctly.",0 - 30 Days,(1) Powershell: Get-ExchangeConfiguration -configType DeletedItemRetention |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19280-7,"The ""Time without user input before password must be re-entered"" setting should be configured correctly.",1 - 60 Minutes,(1) Powershell: Get-ExchangeConfiguration -configType MaxInactivityTimeDeviceLock |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19339-1,"The ""Turn on Connectivity logging"" setting should be configured correctly.",True/False,(1) Powershell: Get-ExchangeConfiguration -configType ConnectivityLogging |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"
+CCE-19327-6,"The ""Turn on script execution"" setting should be configured correctly.",Restricted/ AllSigned/ RemoteSigned/ Unrestricted,(1) Powershell: Get-ExchangeConfiguration -configType ExecutionPolicy |Select-Object -Property SettingData,,"Microsoft Tool: Security Compliance Manager (SCM)
+Microsoft Baseline: Exchange Server 2007 SP3 1.0
+SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940
+
+Note, use SCM global search and baseline filter to locate settings related to CCE ID"

@@ -1,0 +1,232 @@
+Unnamed: 0,Last modified: 2009-06-11,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6
+,Version: 5.20100428,,,,,
+CCE ID,CCE Description,CCE Parameters,CCE Technical Mechanisms,,CIS Solaris 10 Benchmark v4.0,"Old ""Unix-CCE-DRAFT-2"" ID"
+CCE-4508-8,The tooltalk service should be enabled or disabled as appropriate,enabled / disabled / offline,via svcadm,,"Section: 2.2.1,Value:disabled",
+CCE-4327-3,The calendar manager should be enabled or disabled as appropriate.,enabled / disabled / offline,via svcadm,,"Section: 2.2.2,Value:disabled",
+CCE-4468-5,The GNOME logon service should be enabled or disabled as appropriate,enabled / disabled / offline,via svcadm,,"Section: 2.2.3,Value:disabled",CCE-U-120
+CCE-4512-0,The CDE logon service should be enabled or disabled as appropriate.,enabled / disabled / offline,via svcadm,,"Section: 2.2.3,Value:disabled",CCE-U-120
+CCE-4375-2,The sendmail services should be enabled or disabled as appropriate.,enabled / disabled / offline,via svcadm,,"Section: 2.2.4,Value:disabled",
+CCE-4393-5,The web console should be enabled or disabled as appropriate.,enabled / disabled / offline,via svcadm,,"Section: 2.2.5,Value:disabled",
+CCE-3662-4,The WBEM services should be enabled or disabled as appropriate.,enabled / disabled / offline,via svcadm,,"Section: 2.2.6,Value:disabled",
+CCE-4442-0,The BSD line printer protocol should be enabled or disabled as appropriate.,enabled / disabled / offline,via svcadm,,"Section: 2.2.7,Value:disabled",
+CCE-4596-3,The keyserv service should be enabled or disabled as appropriate.,enabled / disabled / offline,via svcadm,,"Section: 2.3.1,Value:disabled",CCE-U-203
+CCE-4486-7,The NIS server daemon should be enabled or disabled as appropriate,enabled / disabled / offline,via svcadm,,"Section: 2.3.2,Value:disabled",
+CCE-4362-0,The NIS passwd daemon should be enabled or disabled as appropriate,enabled / disabled / offline,via svcadm,,"Section: 2.3.2,Value:disabled",
+CCE-3622-8,The NIS update daemon should be enabled or disabled as appropriate,enabled / disabled / offline,via svcadm,,"Section: 2.3.2,Value:disabled",
+CCE-4299-4,The NIS xfr daemon should be enabled or disabled as appropriate,enabled / disabled / offline,via svcadm,,"Section: 2.3.2,Value:disabled",
+CCE-4592-2,The NIS client daemons should be enabled or disabled as appropriate,enabled / disabled / offline,via svcadm,,"Section: 2.3.3,Value:disabled",
+CCE-4614-4,The nisplus daemons should be enabled or disabled as appropriate,enabled / disabled / offline,via svcadm,,"Section: 2.3.4,Value:disabled",
+CCE-4279-6,The ldap cache manager should be enabled or disabled as appropriate,enabled / disabled / offline,via svcadm,,"Section: 2.3.5,Value:disabled",
+CCE-4557-5,The Kerberos TGT Expiration warning should be enabled or disabled as appropriate,enabled / disabled / offline,via svcadm,,"Section: 2.3.6,Value:disabled",
+CCE-4588-0,The Generic Security Service daemons should be enabled or disabled as appropriate,enabled / disabled / offline,via svcadm,,"Section: 2.3.7,Value:disabled",
+CCE-4354-7,The volfs service should be enabled or disabled as appropriate,enabled / disabled / offline,via svcadm,,"Section: 2.3.8,Value:disabled",
+CCE-4240-8,The smserver service should be enabled or disabled as appropriate,enabled / disabled / offline,via svcadm,,"Section: 2.3.8,Value:disabled",
+CCE-4517-9,The Samba smbd service should be enabled or disabled as approriate,enabled / disabled / offline,"Solaris 10 <= 11/06 /etc/init.d/samba stop, mv /etc/sfw/smb.conf /etc/sfw/smb.conf.CIS
+Solaris 10 >= 8/07 via svcadm",,"Section: 2.3.9,Value:disabled",CCE-U-142
+CCE-4284-6,The Samba nmbd service should be enabled or disabled as approriate,enabled / disabled / offline,"Solaris 10 <= 11/06 /etc/init.d/samba stop, mv /etc/sfw/smb.conf /etc/sfw/smb.conf.CIS
+Solaris 10 >= 8/07 via svcadm",,"Section: 2.3.9,Value:disabled",CCE-U-142
+CCE-4429-7,The automount daemon should be enabled or disabled as appropriate,enabled / disabled / offline,via svcadm,,"Section: 2.3.10,Value:disabled",
+CCE-4306-7,The apache web servicer should be enabled or disabled as appropriate,enabled / disabled / offline,via svcadm,,"Section: 2.3.11,Value:disabled",
+CCE-4499-0,The mpxio-upgrade service should be enabled or disabled as appropriate,enabled / disabled / offline,via svcadm,,"Section: 2.3.12,Value:disabled",
+CCE-4266-3,The metainit service (Solaris 10 <= 11/06) should be enabled or disabled as appropriate,enabled / disabled / offline,via svcadm,,"Section: 2.3.12,Value:disabled",
+CCE-4411-5,The mdmonitor service (Solaris 10 <= 11/06) should be enabled or disabled as appropriate,enabled / disabled / offline,via svcadm,,"Section: 2.3.12,Value:disabled",
+CCE-4305-9,The volume manager GUI mdcomm service should be enabled or disabled as appropriate,enabled / disabled / offline,via svcadm,,"Section: 2.3.13,Value:disabled",
+CCE-4477-6,The meta service should be enabled or disabled as appropriate,enabled / disabled / offline,via svcadm,,"Section: 2.3.13,Value:disabled",
+CCE-3650-9,The metaed service should be enabled or disabled as appropriate,enabled / disabled / offline,via svcadm,,"Section: 2.3.13,Value:disabled",
+CCE-4571-6,The metamh service should be enabled or disabled as appropriate,enabled / disabled / offline,via svcadm,,"Section: 2.3.13,Value:disabled",
+CCE-3950-3,The local rpc port mapping service should be enabled or disabled as appropriate,enabled / disabled / offline,via svcadm,,"Section: 2.3.14,Value:disabled",
+CCE-4470-1,The Kerberos kadmind service should be enabled or disabled as appropriate.,enabled / disabled / offline,via svcadm,,"Section: 2.4.1,Value:disabled",
+CCE-4598-9,The Kerberos krb5kdc service should be enabled or disabled as appropriate.,enabled / disabled / offline,via svcadm,,"Section: 2.4.1,Value:disabled",
+CCE-4620-1,The Kerberos kpropd service should be enabled or disabled as appropriate.,enabled / disabled / offline,via svcadm,,"Section: 2.4.1,Value:disabled",
+CCE-4333-1,The Kerberos ktkt_warnd service should be enabled or disabled as appropriate.,enabled / disabled / offline,via svcadm,,"Section: 2.4.1,Value:disabled",
+CCE-3857-0,NFS server functionality should be enabled or disabled as appropriate.,enabled / disabled / offline,via svcadm,,"Section: 2.4.2,Value:disabled",
+CCE-4359-6,NFS client functionality should be enabled or disabled as appropriate.,enabled / disabled / offline,/etc/vfstab,,"Section: 2.4.3,Value:disabled",
+CCE-4615-1,The telnet service should be enabled or disabled as appropriate.,enabled / disabled / offline,via svcadm,,"Section: 2.4.4,Value:disabled",CCE-U-104
+CCE-4007-1,The FTP service should be enabled or disabled as appropriate.,enabled / disabled / offline,via svcadm,,"Section: 2.4.5,Value:disabled",CCE-U-103
+CCE-3901-6,The BOOTP service should be enabled or disabled as appropriate.,enabled / disabled / offline,via svcadm,,"Section: 2.4.6,Value:disabled",
+CCE-4553-4,The RARP service should be enabled or disabled as appropriate.,enabled / disabled / offline,via svcadm,,"Section: 2.4.7,Value:disabled",
+CCE-4584-9,The DHCP server functionality should be enabled or disabled as appropriate.,enabled / disabled / offline,via svcadm,,"Section: 2.4.8,Value:disabled",
+CCE-4611-0,The DNS server functionality should be enabled or disabled as appropriate.,enabled / disabled / offline,via svcadm,,"Section: 2.4.9,Value:disabled",
+CCE-3655-8,The TFTP server functionality should be configured and enabled or disabled as appropriate.,enabled / disabled / offline,/etc/inetd.conf,,"Section: 2.4.10,Value:disabled",CCE-U-118
+CCE-4541-9,The BSD print spooler should enabled or disabled as appropriate.,enabled / disabled / offline,via inetadm and svcadm,,"Section: 2.4.11,Value:disabled",
+CCE-4483-4,The Solaris print server functionality should be enabled or disabled as appropriate.,enabled / disabled / offline,via svcadm,,"Section: 2.4.11,Value:disabled",
+CCE-3663-2,The IPP listener should be enabled or disabled as appropriate.,enabled / disabled / offline,via svcadm,,"Section: 2.4.11,Value:disabled",
+CCE-4037-8,The SNMP service should be enabled or disabled as appropriate.,enabled / disabled / offline,via svcadm,,"Section: 2.4.12,Value:disabled",
+CCE-4540-1,The read-only SNMP community string should be set appropriately.,string,/etc/snmp/conf/snmpd.conf,,"Section: 2.4.12,Value:disabled",CCE-U-122
+CCE-4434-7,TCP Wrappers should be enabled or disabled as appropriate for all services.,enabled / disabled,via inetadm -M,,"Section: 2.5,Value:enabled",
+CCE-4570-8,The core dump directory owner should be restricted.,user,/var/core,,"Section: 3.1,Value:root",CCE-U-65
+CCE-4478-4,The core dump directory group owner should be restricted.,group,/var/core,,"Section: 3.1,Value:root",CCE-U-66
+CCE-4623-5,File permissions for the core dump directory should be set correctly.,permissions,/var/core,,"Section: 3.1,Value:700",CCE-U-67
+CCE-4522-9,Core dumps should be enabled/disabled as appropriate,enabled/disabled,/etc/coreadm.conf,,"Section: 3.1,Value:disabled",
+CCE-4297-8,Kernel stack protection should be enabled or disabled as appropriate.,enabled/disabled,/etc/system ,,"Section: 3.2,Value:enabled",CCE-U-68
+CCE-4548-4,Strong TCP Sequence numbers should be enabled or disabled as appropriate.,enabled/disabled,/etc/default/inetinit ,,"Section: 3.3,Value:2",CCE-U-70
+CCE-4566-6,IPv4 source route forwarding should be enabled or disabled as appropriate.,enabled/disabled,/lib/svc/method/cis_netconfig.sh,,"Section: 3.4,Value:disabled",
+CCE-4439-6,IPv6 source route forwarding should be enabled or disabled as appropriate.,enabled/disabled,/lib/svc/method/cis_netconfig.sh,,"Section: 3.4,Value:disabled",
+CCE-4456-0,Reverse source routed packets should be enabled or disabled as appropriate.,enabled/disabled,/lib/svc/method/cis_netconfig.sh,,"Section: 3.4,Value:disabled",
+CCE-4602-9,Forwarding broadcasts should be enabled or disabled as appropriate.,enabled/disabled,/lib/svc/method/cis_netconfig.sh,,"Section: 3.4,Value:disabled",
+CCE-3752-3,Unestablished tcp connection queue should be set appropriately.,numeral,/lib/svc/method/cis_netconfig.sh,,"Section: 3.4,Value:4096",
+CCE-4417-2,Established tcp connection queue should be set appropriately.,numeral,/lib/svc/method/cis_netconfig.sh,,"Section: 3.4,Value:1024",
+CCE-4311-7,Respond to ICMP timestamp request should be enabled or disabled.,enabled/disabled,/lib/svc/method/cis_netconfig.sh,,"Section: 3.4,Value:disabled",
+CCE-4562-5,Respond to ICMP broadcast timestamp request should be enabled or disabled.,enabled/disabled,/lib/svc/method/cis_netconfig.sh,,"Section: 3.4,Value:disabled",
+CCE-4082-4,Respond to ICMP netmask request should be enabled or disabled as appropriate.,enabled/disabled,/lib/svc/method/cis_netconfig.sh,,"Section: 3.4,Value:disabled",
+CCE-3681-4,Respond to ICMP echo broadcast request should be enabled or disabled as appropriate.,enabled/disabled,/lib/svc/method/cis_netconfig.sh,,"Section: 3.4,Value:disabled",
+CCE-4642-5,The ARP cache cleanup interval should be set appropriately.,numeral,/lib/svc/method/cis_netconfig.sh,,"Section: 3.4,Value:60000",
+CCE-4532-8,The ARP IRE scan rate should be set appropriately.,numeral,/lib/svc/method/cis_netconfig.sh,,"Section: 3.4,Value:60000",
+CCE-4624-3,The IPv4 ICMP redirect should be enabled or disabled,enabled/disabled,/lib/svc/method/cis_netconfig.sh,,"Section: 3.4,Value:enabled",
+CCE-4518-7,The IPv6 ICMP redirect should be enabled or disabled as appropriate.,enabled/disabled,/lib/svc/method/cis_netconfig.sh,,"Section: 3.4,Value:enabled",
+CCE-4676-3,Extended TCP reserved ports should be set appropriately.,list of ports above 1023,/lib/svc/method/cis_netconfig.sh,,"Section: 3.4,Value:6112",
+CCE-3699-6,IPv4 strict multihoming should be enabled or disabled as appropriate.,enabled/disabled,/lib/svc/method/cis_netconfig.sh,,"Section: 3.4,Value:enabled",
+CCE-4575-7,IPv6 strict multihoming should be enabled or disabled as appropriate.,enabled/disabled,/lib/svc/method/cis_netconfig.sh,,"Section: 3.4,Value:enabled",
+CCE-4593-0,ICMPv4 redirects should be enabled or disabled as appropriate.,enabled/disabled,/lib/svc/method/cis_netconfig.sh,,"Section: 3.4,Value:disabled",
+CCE-4095-6,ICMPv6 redirects should be enabled or disabled as appropriate.,enabled/disabled,/lib/svc/method/cis_netconfig.sh,,"Section: 3.4,Value:disabled",
+CCE-3684-8,IP forwarding should enabled or disabled as appropriate.,enabled/disabled,via routeadm,,"Section: 3.5,Value:disabled",
+CCE-4288-7,IP routing should be enabled or disabled as appropriate.,enabled/disabled,via routeadm,,"Section: 3.5,Value:disabled",
+CCE-4671-4,inetd tracing should be enabled as appropriate.,enabled / disabled,via inetadm -M,,"Section: 4.1,Value:enabled",CCE-U-80
+CCE-4455-2,The logging option for the ftp service should be enabled or disabled as appropriate.,enabled / disabled,via inetadm -m,,"Section: 4.2,Value:enabled",CCE-U-113
+CCE-4397-6,The daemon debug log file owner should be restricted.,user,/var/log/connlog,,"Section: 4.3,Value:root",
+CCE-4415-6,The daemon debug log file permissions should be set appropriately.,permissions,/var/log/connlog,,"Section: 4.3,Value:600",
+CCE-4560-9,The daemon debug log file group owner should be restricted.,group,/var/log/connlog,,"Section: 4.3,Value:root",
+CCE-4582-3,The debug logging option for daemons should be enabled or disabled as appropriate.,enabled / disabled,/etc/syslog.conf ,,"Section: 4.3,Value:enabled",
+CCE-3979-2,Capture of syslog AUTH Messages should be enabled or disabled as appropriate,enabled / disabled,/etc/syslog.conf ,,"Section: 4.4,Value:enabled",CCE-U-2
+CCE-4124-4,The loginlog file owner should be restricted.,user,/var/adm/loginlog,,"Section: 4.5,Value:root",
+CCE-4626-8,The loginlog file permissions should be set appropriately.,permissions,/var/adm/loginlog,,"Section: 4.5,Value:600",
+CCE-4635-9,The loginlog file group owner should be restricted.,group,/var/adm/loginlog,,"Section: 4.5,Value:sys",
+CCE-3930-5,Capture of failed login attempts should be enabled or disabled as appropriate,enabled / disabled,/var/adm/loginlog,,"Section: 4.5,Value:enabled",CCE-U-2
+CCE-4309-1,The threshold of syslog logging of failed login attempts should be configured correctly.,numeric value ,/etc/default/login,,"Section: 4.6,Value:0",CCE-U-2
+CCE-4591-4,Cron logging should be enabled or disabled as appropriate.,enabled / disabled,/etc/default/cron ,,"Section: 4.7,Value:enabled",CCE-U-38
+CCE-4490-9,Cron log file owner should be restricted,user,/var/cron/log,,"Section: 4.7,Value:root",
+CCE-4683-9,Cron log file group owner should be restricted,group,/var/cron/log,,"Section: 4.7,Value:root",
+CCE-4472-7,Cron log file permissions should be set appropriately,permissions,/var/cron/log,,"Section: 4.7,Value:600",
+CCE-3992-5,System Accounting should be enabled or disabled as appropriate,enabled / disabled,via svcadm enable –r svc:/system/sar:default,,"Section: 4.8,Value:enabled",
+CCE-4481-8,The system accounting file owner should be restricted.,user,/var/adm/sa/*,,"Section: 4.8,Value:sys",
+CCE-4630-0,The systems accounting file group owner should be restricted.,group,/var/adm/sa/*,,"Section: 4.8,Value:sys",
+CCE-4542-7,The system accounting file permissions should be set appropriately.,permissions,/var/adm/sa/*,,"Section: 4.8,Value:600",
+CCE-4675-5,Kernel level auditing should be enabled or disabled as appropriate,enabled / disabled,via /etc/security/bsmconv,,"Section: 4.9,Value:enabled",
+CCE-4679-7,Kernel level auditing for login/logout should be enabled or disabled as appropriate,successfull/unsuccesfull,/etc/security/audit_control,,"Section: 4.9,Value:enabled",
+CCE-4075-8,Kernel level auditing for administrative actions should be enabled or disabled as appropriate,successfull/unsuccesfull,/etc/security/audit_control,,"Section: 4.9,Value:enabled",
+CCE-4600-3,Kernel level auditing for file attribute modification should be enabled or disabled as appropriate,successfull/unsuccesfull,/etc/security/audit_control,,"Section: 4.9,Value:enabled",
+CCE-4498-2,Kernel level auditing for process start/stop should be enabled or disabled as appropriate,successfull/unsuccesfull,/etc/security/audit_control,,"Section: 4.9,Value:enabled",
+CCE-4401-6,Kernel level auditing for process modify should be enabled or disabled as appropriate,successfull/unsuccesfull,/etc/security/audit_control,,"Section: 4.9,Value:enabled",
+CCE-4337-2,Kernel level auditing for processes should be enabled or disabled as appropriate,successfull/unsuccesfull,/etc/security/audit_control,,"Section: 4.9,Value:enabled",
+CCE-4606-0,Kernel level auditing for exec should be enabled or disabled as appropriate,successfull/unsuccesfull,/etc/security/audit_control,,"Section: 4.9,Value:enabled",
+CCE-4610-2,Kernel level auditing for root login/logout should be enabled or disabled as appropriate,successfull/unsuccesfull,/etc/security/audit_user,,"Section: 4.9,Value:enabled",
+CCE-4126-9,Audit log file ownership should be restricted.,user,/var/audit/*,,"Section: 4.9,Value:root",
+CCE-4633-4,Audit log file group ownership should be restricted.,group,/var/audit/*,,"Section: 4.9,Value:root",
+CCE-4527-8,Audit log permissions should be restricted.,permissions,/var/audit/*,,"Section: 4.9,Value:600",
+CCE-4672-2,The daemon user's umask should be set appropriately.,string,/etc/default/init,,"Section: 5.1,Value:at least 022",
+CCE-4315-8,The setuid option should be enabled or disabled on removable media as appropriate.,string,/etc/rmmount.conf,,"Section: 5.2,Value:disabled",CCE-U-170
+CCE-3760-6,"The pkgchk utility should be used to verify ownership, group ownership, and access permissions for installed packages as appropriate.","list of packages, or all packages",via pkgchk,,"Section: 5.3,Value:all packages",
+CCE-4312-5,"The pkgchk utility should be used to force default settings for ownership, group ownership, and access permissions for installed packages as appropriate.","list of packages, or all packages",via pkgchk -f,,"Section: 5.3,Value:",
+CCE-4721-7,The sticky bit should be enabled or disabled as appropriate for all world-writable directories.,enabled / disabled,via chmod,,"Section: 5.4,Value:enabled",CCE-U-171
+CCE-4351-3,World-writable files should be found and examined for appropriateness.,permissions,,,"Section: 5.5,Value:",
+CCE-4743-1,setgid files should be found and examined for appropriateness,permissions,,,"Section: 5.6.1,Value:",
+CCE-4281-2,setuid files should be found and examined for appropriateness,permissions,,,"Section: 5.6.2,Value:",
+CCE-4660-7,Unowned files should be found and removed or given to a valid user as appropriate.,,via chown or rm,,"Section: 5.7,Value:",
+CCE-4682-1,Files with extended attributes should be found and handled as appropriate.,,,,"Section: 5.8,Value:",
+CCE-4435-4,Serial port login prompts should be enabled or disabled as appropriate.,enabled/disabled,via pmadm,,"Section: 6.1,Value:disabled",CCE-U-155
+CCE-4576-5,Access to secure RPC for the 'nobody' user should be enabled or disabled as appropriate.,string,/etc/default/keyserv,,"Section: 6.2,Value:disabled",CCE-U-161
+CCE-4726-6,SSH version 2 protocol should be enabled or disabled as appropriate.,string,/etc/ssh/sshd_config ,,"Section: 6.3,Value:enabled",CCE-U-132
+CCE-4638-3,SSH X11 forwarding should be enabled or disabled as appropriate.,string yes/no,/etc/ssh/sshd_config ,,"Section: 6.3,Value:disabled",
+CCE-4748-0,SSH maximum number of retries for authentication should be set as appropriate.,numeral,/etc/ssh/sshd_config ,,"Section: 6.3,Value:5",
+CCE-4395-0,SSH maximum number or retries for authentication log should be set as appropriate.,numeral,/etc/ssh/sshd_config ,,"Section: 6.3,Value:0",
+CCE-4030-3,SSH integration with .rhosts should be enabled or disabled as appropriate.,string yes/no,/etc/ssh/sshd_config ,,"Section: 6.3,Value:yes",
+CCE-4655-7,SSH integration with .rhosts/hosts.equiv should be enabled or disabled as appropriate.,string yes/no,/etc/ssh/sshd_config ,,"Section: 6.3,Value:no",
+CCE-3946-1,SSH Rhosts RSA Authentication should be enabled or disabled as appropriate.,string yes/no,/etc/ssh/sshd_config ,,"Section: 6.3,Value:no",
+CCE-4713-4,Root login via SSH should be enabled or disabled as appropriate.,string yes/no,/etc/ssh/sshd_config ,,"Section: 6.3,Value:no",
+CCE-4708-4,SSH should be configured to enable or disable empty passwords as appropriate.,string yes/no,/etc/ssh/sshd_config ,,"Section: 6.3,Value:no",
+CCE-4603-7,The SSH banner should be enabled or disabled as appropriate.,uncomment string,/etc/ssh/sshd_config ,,"Section: 6.3,Value:enabled",
+CCE-4021-2,PAM Rhosts support should be enabled or disabled.,enabled/disabled,/etc/pam.conf,,"Section: 6.4,Value:disabled",CCE-U-28
+CCE-4678-9,The ftpusers file should restrict the root account as appropriate.,enabled/disabled,/etc/ftpd/ftpusers,,"Section: 6.5,Value:disabled",CCE-U-105
+CCE-4695-3,The ftpusers file should restrict the daemon account as appropriate.,enabled/disabled,/etc/ftpd/ftpusers,,"Section: 6.5,Value:disabled",CCE-U-108
+CCE-4510-4,The ftpusers file should restrict the bin account as appropriate.,enabled/disabled,/etc/ftpd/ftpusers,,"Section: 6.5,Value:disabled",CCE-U-108
+CCE-4157-4,The ftpusers file should restrict the sys account as appropriate.,enabled/disabled,/etc/ftpd/ftpusers,,"Section: 6.5,Value:disabled",CCE-U-108
+CCE-4677-1,The ftpusers file should restrict the adm account as appropriate.,enabled/disabled,/etc/ftpd/ftpusers,,"Section: 6.5,Value:disabled",CCE-U-108
+CCE-4179-8,The ftpusers file should restrict the lp account as appropriate.,enabled/disabled,/etc/ftpd/ftpusers,,"Section: 6.5,Value:disabled",CCE-U-108
+CCE-4589-8,The ftpusers file should restrict the uucp account as appropriate.,enabled/disabled,/etc/ftpd/ftpusers,,"Section: 6.5,Value:disabled",CCE-U-108
+CCE-4113-7,The ftpusers file should restrict the smmsp account as appropriate.,enabled/disabled,/etc/ftpd/ftpusers,,"Section: 6.5,Value:disabled",CCE-U-108
+CCE-4739-9,The ftpusers file should restrict the listen account as appropriate.,enabled/disabled,/etc/ftpd/ftpusers,,"Section: 6.5,Value:disabled",CCE-U-108
+CCE-4135-0,The ftpusers file should restrict the gdm account as appropriate.,enabled/disabled,/etc/ftpd/ftpusers,,"Section: 6.5,Value:disabled",CCE-U-108
+CCE-3768-9,The ftpusers file should restrict the webservd account as appropriate.,enabled/disabled,/etc/ftpd/ftpusers,,"Section: 6.5,Value:disabled",CCE-U-108
+CCE-3782-0,The ftpusers file should restrict the nobody account as appropriate.,enabled/disabled,/etc/ftpd/ftpusers,,"Section: 6.5,Value:disabled",CCE-U-108
+CCE-4347-1,The ftpusers file should restrict the noaccess account as appropriate.,enabled/disabled,/etc/ftpd/ftpusers,,"Section: 6.5,Value:disabled",CCE-U-108
+CCE-4497-4,The ftpusers file should restrict the nobody4 account as appropriate.,enabled/disabled,/etc/ftpd/ftpusers,,"Section: 6.5,Value:disabled",CCE-U-108
+CCE-4432-1,The failed login delay should be set appropriately.,number of seconds,/etc/default/login,,"Section: 6.6,Value:4",CCE-U-5
+CCE-4705-0,The default CDE screenlock timeout should be set appropriately.,number of minutes,/usr/dt/config/*/sys.resources,,"Section: 6.7,Value:10",CCE-U-158
+CCE-4723-3,The default GNOME screenlock timeout should be set appropriately.,number of minutes,/usr/openwin/lib/app-defaults/Xscreensaver,,"Section: 6.8,Value:10",
+CCE-4622-7,The GNOME screenlock should be enabled or disabled as appropriate.,boolean true/false,/usr/openwin/lib/app-defaults/Xscreensaver,,"Section: 6.8,Value:TRUE",
+CCE-4644-1,Use of the cron.allow file should be enabled or disabled as appropriate,enabled/disabled,/etc/cron.d/cron.allow,,"Section: 6.9,Value:root",CCE-U-32
+CCE-4543-5,Use of the at.allow file should be enabled or disabled as appropriate,enabled/disabled,/etc/cron.d/at.allow,,"Section: 6.9,Value:null",CCE-U-47
+CCE-4437-0,The /etc/cron.d/cron.allow file should be owned by the appropriate user.,user,/etc/cron.d/cron.allow ,,"Section: 6.9,Value:root",CCE-U-40
+CCE-4706-8,The /etc/cron.d/cron.allow file should be owned by the appropriate group.,group,/etc/cron.d/cron.allow ,,"Section: 6.9,Value:root",CCE-U-41
+CCE-4693-8,File permissions for the /etc/cron.d/cron.allow file should be configured correctly.,permissions,/etc/cron.d/cron.allow ,,"Section: 6.9,Value:400",CCE-U-36
+CCE-4710-0,File permissions for the /etc/cron.d/at.allow file should be configured correctly.,permissions,/etc/cron.d/at.allow,,"Section: 6.9,Value:400",CCE-U-51
+CCE-4230-9,The /etc/cron.d/at.allow file should be owned by the appropriate user.,user,/etc/cron.d/at.allow,,"Section: 6.9,Value:root",CCE-U-54
+CCE-4445-3,The /etc/cron.d/at.allow file should be owned by the appropriate group.,group,/etc/cron.d/at.allow,,"Section: 6.9,Value:root",CCE-U-55
+CCE-4458-6,The ability to login as root directly should be configured correctly.,enabled/disabled,/etc/default/login ,,"Section: 6.1,Value:disabled",CCE-U-15
+CCE-4102-0,"The ""account lockout threshold"" policy should meet minimum requirements.  ",number of retries,/etc/default/login ,,"Section: 6.11,Value:3",CCE-U-4
+CCE-4754-8,Account lockout should be enabled or disabled as appropriate.,yes/no,/etc/security/policy.conf ,,"Section: 6.11,Value:yes",
+CCE-4648-2,The eeprom security mode should be configured appropriately.,none/full/command,"via eeprom at OS command line
+via setenv at ok> prompt",,"Section: 6.12,Value:command",
+CCE-3826-5,The grub menu password protection should be enabled or disabled as appropriate.,password,vi grub> prompt md5cyrpt command,,"Section: 6.13,Value:enabled",
+CCE-4525-2,The daemon account should be locked or unlocked as appropriate.,locked / unlocked / non-login,via passwd,,"Section: 7.1,Value:Locked",CCE-U-174 
+CCE-4657-3,The bin account should be locked or unlocked as appropriate.,locked / unlocked / non-login,via passwd,,"Section: 7.1,Value:Locked",CCE-U-175
+CCE-4661-5,The shell for the bin account should be assigned appropriately.,path,via passmgmt,,"Section: 7.1,Value:/usr/bin/false",
+CCE-4807-4,The nuucp account should be locked or unlocked as appropriate.,locked / unlocked / non-login,via passwd,,"Section: 7.1,Value:Locked",CCE-U-180
+CCE-4701-9,The shell for the nuucp account should be assigned appropriately.,path,via passmgmt,,"Section: 7.1,Value:/usr/bin/false",
+CCE-4669-8,The smmsp account should be locked or unlocked as appropriate.,locked / unlocked / non-login,via passwd,,"Section: 7.1,Value:Locked",CCE-U-181
+CCE-4436-2,The shell for the smmsp account should be assigned appropriately.,path,via passmgmt,,"Section: 7.1,Value:/usr/bin/false",
+CCE-4815-7,The listen account should be locked or unlocked as appropriate.,locked / unlocked / non-login,via passwd,,"Section: 7.1,Value:Locked",CCE-U-182
+CCE-4696-1,The shell for the listen account should be assigned appropriately.,path,via passmgmt,,"Section: 7.1,Value:/usr/bin/false",
+CCE-4216-8,The gdm account should be locked or unlocked as appropriate.,locked / unlocked / non-login,via passwd,,"Section: 7.1,Value:Locked",
+CCE-4758-9,The shell for the gdm account should be assigned appropriately.,path,via passmgmt,,"Section: 7.1,Value:/usr/bin/false",
+CCE-4621-9,The webservd account should be locked or unlocked as appropriate.,locked / unlocked / non-login,via passwd,,"Section: 7.1,Value:Locked",
+CCE-4515-3,The shell for the webservd account should be assigned appropriately.,path,via passmgmt,,"Section: 7.1,Value:/usr/bin/false",
+CCE-4282-0,The nobody account should be locked or unlocked as appropriate.,locked / unlocked / non-login,via passwd,,"Section: 7.1,Value:Locked",CCE-U-183
+CCE-4802-5,The shell for the nobody account should be assigned appropriately.,path,via passmgmt,,"Section: 7.1,Value:/usr/bin/false",
+CCE-4806-6,The noaccess account should be locked or unlocked as appropriate.,locked / unlocked / non-login,via passwd,,"Section: 7.1,Value:Locked",CCE-U-184
+CCE-4471-9,The shell for the noaccess account should be assigned appropriately.,path,via passmgmt,,"Section: 7.1,Value:/usr/bin/false",
+CCE-4617-7,The nobody4 account should be locked or unlocked as appropriate.,locked / unlocked / non-login,via passwd,,"Section: 7.1,Value:Locked",CCE-U-185
+CCE-4418-0,The shell for the nobody4 account should be assigned appropriately.,path,via passmgmt,,"Section: 7.1,Value:/usr/bin/false",
+CCE-4810-8,The sys account should be locked or unlocked as appropriate.,locked / unlocked / non-login,via passwd,,"Section: 7.1,Value:Non-login",CCE-U-176
+CCE-3955-2,The adm account should be locked or unlocked as appropriate.,locked / unlocked / non-login,via passwd,,"Section: 7.1,Value:Non-login",CCE-U-177
+CCE-3834-9,The shell for the adm account should be assigned appropriately.,path,via passmgmt,,"Section: 7.1,Value:/usr/bin/false",
+CCE-4408-1,The lp account should be locked or unlocked as appropriate.,locked / unlocked / non-login,via passwd,,"Section: 7.1,Value:Non-login",CCE-U-178
+CCE-4536-9,The shell for the lp account should be assigned appropriately.,path,via passmgmt,,"Section: 7.1,Value:/usr/bin/false",
+CCE-4809-0,The uucp account should be locked or unlocked as appropriate.,locked / unlocked / non-login,via passwd,,"Section: 7.1,Value:Non-login",CCE-U-179
+CCE-3841-4,The shell for the uucp account should be assigned appropriately.,path,via passmgmt,,"Section: 7.1,Value:/usr/bin/false",
+CCE-4724-1,All user login accounts with empty passwords should be locked or unlocked as appropriate.,locked / unlocked / non-login,via passwd,,"Section: 7.2,Value:Locked",
+CCE-4367-9,"The ""minimum password age"" policy should meet minimum requirements. ",numeral,Use the set-user-password-reqs.fin Finish script ,,"Section: 7.3,Value:7 days",CCE-U-7
+CCE-4165-7,"The ""maximum password age"" policy should meet minimum requirements.",numeral,Use the set-user-password-reqs.fin Finish script ,,"Section: 7.3,Value:91 days",CCE-U-8
+CCE-4836-3,The password expiration warning time should be set appropriately,numeral,Use the set-user-password-reqs.fin Finish script ,,"Section: 7.3,Value:28 days",
+CCE-4625-0,The strong password PASSLENGTH value should meet minimum requirements,numeral,"Use the set-user-password-reqs.fin, set-strict-password-checks.fin and the enable-password-history.fin Finish scripts ",,"Section: 7.4,Value:8",
+CCE-4770-4,The strong password NAMECHECK value should meet minimum requirements,yes/no,"Use the set-user-password-reqs.fin, set-strict-password-checks.fin and the enable-password-history.fin Finish scripts ",,"Section: 7.4,Value:yes",
+CCE-4563-3,The strong password HISTORY value should meet minimum requirements,numeral,"Use the set-user-password-reqs.fin, set-strict-password-checks.fin and the enable-password-history.fin Finish scripts ",,"Section: 7.4,Value:10",CCE-U-10
+CCE-4832-2,The strong password MINDIFF value should meet minimum requirements,numeral,"Use the set-user-password-reqs.fin, set-strict-password-checks.fin and the enable-password-history.fin Finish scripts ",,"Section: 7.4,Value:3",
+CCE-4572-4,The strong password MINALPHA value should meet minimum requirements,numeral,"Use the set-user-password-reqs.fin, set-strict-password-checks.fin and the enable-password-history.fin Finish scripts ",,"Section: 7.4,Value:2",
+CCE-4480-0,The strong password MINUPPER value should meet minimum requirements,numeral,"Use the set-user-password-reqs.fin, set-strict-password-checks.fin and the enable-password-history.fin Finish scripts ",,"Section: 7.4,Value:1",
+CCE-4731-6,The strong password MINLOWER value should meet minimum requirements,numeral,"Use the set-user-password-reqs.fin, set-strict-password-checks.fin and the enable-password-history.fin Finish scripts ",,"Section: 7.4,Value:1",
+CCE-4753-0,The strong password MINNONALPHA value should meet minimum requirements,numeral,"Use the set-user-password-reqs.fin, set-strict-password-checks.fin and the enable-password-history.fin Finish scripts ",,"Section: 7.4,Value:1",
+CCE-4775-3,The strong password MAXREPEATS value should meet minimum requirements,numeral,"Use the set-user-password-reqs.fin, set-strict-password-checks.fin and the enable-password-history.fin Finish scripts ",,"Section: 7.4,Value:0",
+CCE-3856-2,The strong password WHITESPACE value should meet minimum requirements,yes / no,"Use the set-user-password-reqs.fin, set-strict-password-checks.fin and the enable-password-history.fin Finish scripts ",,"Section: 7.4,Value:yes",
+CCE-4402-4,The strong password DICTIONDBDIR value should be configured correctly,path,"Use the set-user-password-reqs.fin, set-strict-password-checks.fin and the enable-password-history.fin Finish scripts ",,"Section: 7.4,Value:/var/passwd",
+CCE-4670-6,The strong password DICTIONLIST value should be configured correctly,path,"Use the set-user-password-reqs.fin, set-strict-password-checks.fin and the enable-password-history.fin Finish scripts ",,"Section: 7.4,Value:=/usr/share/lib/dict/words",
+CCE-4314-1,"No Legacy ""+"" entries in passwd, shadow, and group files should be verified to be appropriate",file list,Use the check-include-nis-map.aud Audit script.,,"Section: 7.5,Value:None",
+CCE-4816-5,No UID 0 Accounts exist other than root should be verified to be appropriate,account list,Use the check-uids-unique.aud Audit script,,"Section: 7,6,Value:None",
+CCE-4834-8,Default group for root account should be configured correctly,group,Use the set-root-group.fin Finish script,,"Section: 7.7,Value:GID 0",
+CCE-4728-2,The home directory of the root user should be set correctly.,path,Use the set-root-home-dir.fin Finish script,,"Section: 7.8,Value:/root",CCE-U-11
+CCE-4631-8,The PATH for the root user should be configured correctly.,1) Set of directories to include 2) Set of directories to exclude,Use the check-root-path.aud Audit script,,"Section: 7.9,Value:Exclude '.' and any writeable directories",CCE-U-13
+CCE-4538-5,File permissions should be set correctly for the home directories for all user accounts.,permissions,Use the check-home-permissions.aud Audit script.,,"Section: 7.1,Value:IAW site policy",CCE-U-162
+CCE-4561-7,File permissions should be set correctly for user configuration files.,permissions,Use the check-hidden-files.aud Audit script,,"Section: 7.11,Value:IAW site policy",
+CCE-4578-1,File permissions should be set correctly for .netrc files.,permissions,Use the check-netrc-files.aud Audit script,,"Section: 7.12,Value:IAW site policy",
+CCE-4843-9,Presence of .rhost files should be checked to be appropriate,true/false,Use the print-rhosts.aud Audit script,,"Section: 7.13,Value:dependent upon 6.4",
+CCE-4737-3,The default umask should be configured correctly.,permissions mask,Use the set-user-umask.fin Finish script,,"Section: 7.14,Value:77",CCE-U-31
+CCE-3897-6,The default umask for ftp users should be set appropriately.,permissions mask,Use the set-ftpd-umask.fin Finish script.,,"Section: 7.15,Value:77",CCE-U-115
+CCE-4746-4,The default setting for all users to allow terminal messages via the mesg utility should be configured correctly.,enabled / disabled,Use the disable-mesg.fin Finish script,,"Section: 7.16,Value:enabled",CCE-U-25
+CCE-4760-5,General login services should display a banner as appropriate before authentication.,banner text,/etc/issue,,"Section: 8.1,Value:",
+CCE-4301-8,General login services should display a banner as appropriate after authentication.,banner text,/etc/motd,,"Section: 8.1.1,Value:",
+CCE-4698-7,CDE should display a banner as appropriate before authentication.,banner text,/usr/dt/config/*/Xresources,,"Section: 8.2,Value:",
+CCE-4222-6,GNOME should display a banner as appropriate before authentication.,banner text,/etc/X11/gdm/gdm.conf,,"Section: 8.3,Value:",
+CCE-4103-8,The FTP service should display a banner as appropriate before authentication.,banner text,/etc/ftpd/banner.msg,,"Section: 8.4,Value:",
+CCE-4870-2,The telnet service banner should be set appropriately.,banner text,/etc/default/telnetd,,"Section: 8.5,Value:empty string, """"",
+CCE-4896-7,The power-on banner should be set appropriately.,banner text,"via the 'eeprom oem-banner=' command (provide a string after the =) then the ""eeprom oem-banner\?=true"" command",,"Section: 8.6,Value:",
+CCE-4663-1,The sendmail greeting should be set appropriately.,string,"via the ""O SmtpGreetingMessage"" setting in /etc/mail/sendmail.cf",,"Section: 8.7,Value:mailer ready (string)",CCE-U-97

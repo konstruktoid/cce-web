@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>CCE Lists</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href='../css/basic.css' type='text/css' rel='stylesheet' />
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Unnamed: 0</th>
+      <th>Last modified: 2012-03-12</th>
+      <th>Unnamed: 2</th>
+      <th>Unnamed: 3</th>
+      <th>Unnamed: 4</th>
+      <th>Unnamed: 5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NaN</td>
+      <td>Version: 5.20120314</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE ID</td>
+      <td>CCE Description</td>
+      <td>CCE Parameters</td>
+      <td>CCE Technical Mechanisms</td>
+      <td></td>
+      <td>Microsoft Security Compliance Manager (SCM) Baselines and Settings Packs</td>
+    </tr>
+    <tr>
+      <td>CCE-19141-1</td>
+      <td>The "Allow access to voicemail without requiring a PIN" setting should be configured correctly.</td>
+      <td>True/False</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType PinlessAccessToVoicemail |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19132-0</td>
+      <td>The "Allow basic authentication" setting should be configured correctly.</td>
+      <td>True/False</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType AllowBasicAuthentication |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18357-4</td>
+      <td>The "Allow simple passwords" setting should be configured correctly.</td>
+      <td>True/False</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType AllowSimplePasswords |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18866-4</td>
+      <td>The "Allow unmanaged devices" setting should be configured correctly.</td>
+      <td>True/False</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType AllowUnmanagedDevices |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19115-5</td>
+      <td>The "Configure dial plan security" setting should be configured correctly.</td>
+      <td>Unsecured, SIPSecured, Secured</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType DialPlanSecure |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18176-8</td>
+      <td>The "Configure login authentication for IMAP4" setting should be configured correctly.</td>
+      <td>PlainTextLogin, PlainTextAuthentication, SecureLogin</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType IMAP4LoginType |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19077-7</td>
+      <td>The "Configure login authentication for POP3" setting should be configured correctly.</td>
+      <td>PlainTextLogin, PlainTextAuthentication, SecureLogin</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType POP3LoginType |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18924-1</td>
+      <td>The "Configure Protocol logging" setting should be configured correctly.</td>
+      <td>Verbose, None</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType ProtocolLogging |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18693-2</td>
+      <td>The "Configure Sender Filtering" setting should be configured correctly.</td>
+      <td>StampStatus, Reject</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType SenderFiltering |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18710-4</td>
+      <td>The "Configure startup mode" setting should be configured correctly.</td>
+      <td>TCP, Dual, TLS</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType UMStartupMode |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18273-3</td>
+      <td>The "Do not permamently delete items until the database has been backed up" setting should be configured correctly.</td>
+      <td>True/False</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType RetainDeletedItemsUntilBackup |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18842-5</td>
+      <td>The "Enable automatic forwards to remote domains" setting should be configured correctly.</td>
+      <td>True/False</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType AutomaticForwardsRemoteDomains |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19131-2</td>
+      <td>The "Enable automatic replies to remote domains" setting should be configured correctly.</td>
+      <td>True/False</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType AutomaticRepliesRemoteDomains |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19057-9</td>
+      <td>The "Enable non-delivery reports to remote domains" setting should be configured correctly.</td>
+      <td>True/False</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType NonDeliveryReportsRemoteDomains |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19022-3</td>
+      <td>The "Enable OOF messages to remote domains" setting should be configured correctly.</td>
+      <td>External, ExternalLegacy, None, and InternalLegacy</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType OofMessagesRemoteDomains |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19096-7</td>
+      <td>The "Enable S/MIME for OWA 2010" setting should be configured correctly.</td>
+      <td>True/False</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType SMimeEnabled2010 |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18208-9</td>
+      <td>The "Enable Sender ID agent" setting should be configured correctly.</td>
+      <td>True/False</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType SenderID |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18326-9</td>
+      <td>The "Enable Sender Reputation" setting should be configured correctly.</td>
+      <td>True/False</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType SenderReputation |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19013-2</td>
+      <td>The "Enforce Password History" setting should be configured correctly.</td>
+      <td>0-50 passwords</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType EnforcePasswordHistory |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19081-9</td>
+      <td>The "External send connector authentication: DNS Routing" setting should be configured correctly.</td>
+      <td>True/False</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType ExternalSendConnectorAuthDNSRoutingEnabled |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18182-6</td>
+      <td>The "External send connector authentication: Domain Security" setting should be configured correctly.</td>
+      <td>True/False</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType ExternalSendConnectorAuthDomainSecureEnabled |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18214-7</td>
+      <td>The "External send connector authentication: Ignore Start TLS" setting should be configured correctly.</td>
+      <td>True/False</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType ExternalSendConnectorAuthIgnoreSTARTTLS |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19076-9</td>
+      <td>The "Keep deleted mailboxes for the specified number of days" setting should be configured correctly.</td>
+      <td>0 - 24855 days</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType KeepDeletedMailboxes |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18662-7</td>
+      <td>The "Mailbox quotas: Issue warning at" setting should be configured correctly.</td>
+      <td>0 - 2147483647 KB</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType MailboxApproachingStorageLimitWarning |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18281-6</td>
+      <td>The "Mailbox quotas: Prohibit send and receive at" setting should be configured correctly.</td>
+      <td>0 - 2147483647 KB</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType ProhibitSendReceiveQuota |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18515-7</td>
+      <td>The "Mailbox quotas: Prohibit send at" setting should be configured correctly.</td>
+      <td>0 - 2147483647 KB</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType ProhibitSendQuota |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18506-6</td>
+      <td>The "Maximum number of recipients - organization level" setting should be configured correctly.</td>
+      <td>0 - 2147483647 recipients</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType MaximumNumberRecipients |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19113-0</td>
+      <td>The "Maximum receive size - connector level" setting should be configured correctly.</td>
+      <td>64 - 2147483647 KB</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType MaximumReceiveSizeConnector |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19010-8</td>
+      <td>The "Maximum receive size - organization level" setting should be configured correctly.</td>
+      <td>0 - 2097151 KB</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType MaximumReceiveSizeOrganization |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18590-0</td>
+      <td>The "Maximum send size - connector level" setting should be configured correctly.</td>
+      <td>64 - 2147483647 KB</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType MaximumSendSizeConnector |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19156-9</td>
+      <td>The "Maximum send size - organization level" setting should be configured correctly.</td>
+      <td>0 - 2097151 KB</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType MaximumSendSizeOrganization |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18647-8</td>
+      <td>The "Message tracking logging - Mailbox" setting should be configured correctly.</td>
+      <td>True/False</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType MessageTrackingLoggingMailbox |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19094-2</td>
+      <td>The "Message tracking logging - Transport" setting should be configured correctly.</td>
+      <td>True/False</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType MessageTrackingLoggingTransport |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18530-6</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange Active Directory Topology" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Active Directory Topology  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeADTopology\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19176-7</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange ADAM" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange ADAM  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ADAM_MSExchange\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18189-1</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange Address Book" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Address Book (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeAB\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19179-1</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange Anti-spam Update" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Anti-spam Update (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeAntispamUpdate\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19126-2</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange Credential Service (Exchange 2010)" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Credential Service  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeEdgeCredential\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19164-3</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange EdgeSync Service" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange EdgeSync Service  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeEdgeSync\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18421-8</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange File Distribution" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange File Distribution  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeFDS\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19181-7</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange Forms-Based Authentication service" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Forms-Based Authentication service  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeFBA\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18945-6</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange IMAP4" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange IMAP4  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeIMAP4\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18199-0</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange Information Store" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Information Store  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeIS\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18635-3</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange Mail Submission Service" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Mail Submission Service  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeMailSubmission\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19083-5</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange Mailbox Assistants" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Mailbox Assistants  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeMailboxAssistants\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19066-0</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange Mailbox Replication" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Mailbox Replication  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeMailboxReplication\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19100-7</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange Monitoring" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Monitoring  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeMonitoring\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18778-1</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange POP3" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange POP3  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangePOP3\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18352-5</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange Protected Service Host" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Protected Service Host  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeProtectedServiceHost\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18595-9</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange Replication Service" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Replication Service  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeRepl\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19101-5</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange RPC Client Access" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange RPC Client Access  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeRPC\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19031-4</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange Search Indexer" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Search Indexer  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeSearch\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18203-0</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange Server Extension for Windows Server Backup" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Server Extension for Windows Server Backup  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\wsbexchange\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19109-8</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange Service Host" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Service Host  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeServiceHost\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19136-1</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange Speech Engine Service" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Speech Engine Service  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSSpeechService\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18212-1</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange System Attendant" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange System Attendant  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeSA\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19201-3</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange Throttling" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Throttling  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeThrottling\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18234-5</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange Transport" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Transport  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeTransport\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19208-8</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange Transport Log Search" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Transport Log Search  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeTransportLogSearch\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19121-3</td>
+      <td>The machine setting for the startup type of the "Microsoft Exchange Unified Messaging" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Exchange Unified Messaging  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSExchangeUM\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18373-1</td>
+      <td>The machine setting for the startup type of the "Microsoft Search (Exchange)" service should be configured correctly.</td>
+      <td>Automatic = 2, Manual=3, Disabled=4</td>
+      <td>(1) GPO: Computer Configuration\Windows Settings\Security Settings\System Services\Microsoft Search (Exchange)  (2) Registry Key: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\msftesql-Exchange\Start</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18241-0</td>
+      <td>The "Minimum password length" setting should be configured correctly.</td>
+      <td>1 to 16 characters</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType MinimumPasswordLength |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19042-1</td>
+      <td>The "Mount database at startup" setting should be configured correctly.</td>
+      <td>True/False</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType MountDatabaseAtStartup |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19190-8</td>
+      <td>The "Number of attempts allowed" setting should be configured correctly.</td>
+      <td>4 - 16 Attempts</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType NumberAttemptsAllowed |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19215-3</td>
+      <td>The "Password Expiration" setting should be configured correctly.</td>
+      <td>1:00:00:00 - 730:00:00:00 Days</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType PasswordExpiration |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19091-8</td>
+      <td>The "Refresh interval" setting should be configured correctly.</td>
+      <td>0 - 596523 Hours</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType RefreshInterval |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19177-5</td>
+      <td>The "Require alphanumeric password" setting should be configured correctly.</td>
+      <td>True/False</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType RequireAlphanumericPassword |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19221-1</td>
+      <td>The "Require Client Certificates" setting should be configured correctly.</td>
+      <td>Ignore, Accepted, or Required</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType RequireClientCertificates |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18242-8</td>
+      <td>The "Require client MAPI encryption" setting should be configured correctly.</td>
+      <td>True/False</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType RequireClientMAPIEncryption |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19202-1</td>
+      <td>The "Require encryption on device" setting should be configured correctly.</td>
+      <td>True/False</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType RequireEncryptionOnDevice |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19162-7</td>
+      <td>The "Require password" setting should be configured correctly.</td>
+      <td>True/False</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType RequirePassword |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19241-9</td>
+      <td>The "Retain deleted items for the specified number of days" setting should be configured correctly.</td>
+      <td>0 - 30 Days</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType DeletedItemRetention |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-18432-5</td>
+      <td>The "Time without user input before password must be re-entered" setting should be configured correctly.</td>
+      <td>1 - 60 Minutes</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType MaxInactivityTimeDeviceLock |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19153-6</td>
+      <td>The "Turn on Administrator Audit Logging" setting should be configured correctly.</td>
+      <td>True/False</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType AdministratorAuditLogging |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19219-5</td>
+      <td>The "Turn on Connectivity logging" setting should be configured correctly.</td>
+      <td>True/False</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType ConnectivityLogging |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+    <tr>
+      <td>CCE-19240-1</td>
+      <td>The "Turn on script execution" setting should be configured correctly.</td>
+      <td>Restricted/ AllSigned/ RemoteSigned/ Unrestricted</td>
+      <td>(1) Powershell: Get-ExchangeConfiguration -configType ExecutionPolicy |Select-Object -Property SettingData</td>
+      <td>NaN</td>
+      <td>Microsoft Tool: Security Compliance Manager (SCM) Microsoft Baseline: Exchange Server 2010 SP2 1.0 SCM URL: http://go.microsoft.com/fwlink/?LinkId=113940  Note, use SCM global search and baseline filter to locate settings related to CCE ID</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,4361 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>CCE Lists</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href='../css/basic.css' type='text/css' rel='stylesheet' />
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Unnamed: 0</th>
+      <th>Last modified: 2011-10-07</th>
+      <th>Unnamed: 2</th>
+      <th>Unnamed: 3</th>
+      <th>Unnamed: 4</th>
+      <th>Unnamed: 5</th>
+      <th>Unnamed: 6</th>
+      <th>Unnamed: 7</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NaN</td>
+      <td>Version: 5.20111007</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE ID</td>
+      <td>CCE Description</td>
+      <td>CCE Parameters</td>
+      <td>CCE Technical Mechanisms</td>
+      <td>NaN</td>
+      <td>NSA "Guide to the Secure Configuration of Red Hat Enterprise Linux 5"</td>
+      <td>NSA "Guide to the Secure Configuration of Red Hat Enterprise Linux 5" - Revision 4, September 14, 2010</td>
+      <td>Old "Unix-CCE-DRAFT-2" ID</td>
+    </tr>
+    <tr>
+      <td>CCE-3416-5</td>
+      <td>The rhnsd service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 2.1.2.2, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4218-4</td>
+      <td>The yum-updatesd service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 2.1.2.3.2, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4209-3</td>
+      <td>The AIDE package should be installed or not as appropriate</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>Section: 2.1.3.1.1, Value: installed</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4249-9</td>
+      <td>The nodev option should be enabled or disabled as appropriate for all non-root partitions.</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/fstab</td>
+      <td>NaN</td>
+      <td>Section: 2.2.1.1, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3522-0</td>
+      <td>The nodev option should be enabled or disabled as appropriate for all removable media.</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/fstab</td>
+      <td>NaN</td>
+      <td>Section: 2.2.1.2, Value: enabled</td>
+      <td>NaN</td>
+      <td>Similar to CCE-U-170</td>
+    </tr>
+    <tr>
+      <td>CCE-4275-4</td>
+      <td>The noexec option should be enabled or disabled as appropriate for all removable media.</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/fstab</td>
+      <td>NaN</td>
+      <td>Section: 2.2.1.2, Value: enabled</td>
+      <td>NaN</td>
+      <td>Similar to CCE-U-170</td>
+    </tr>
+    <tr>
+      <td>CCE-4042-8</td>
+      <td>The nosuid option should be enabled or disabled as appropriate for all removable media.</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/fstab</td>
+      <td>NaN</td>
+      <td>Section: 2.2.1.2, Value: enabled</td>
+      <td>NaN</td>
+      <td>CCE-U-170</td>
+    </tr>
+    <tr>
+      <td>CCE-3685-5</td>
+      <td>Console device ownership should be restricted to root-only as appropriate.</td>
+      <td>root-only / not root-only</td>
+      <td>via /etc/security/console.perms.d/50-default.perms</td>
+      <td>NaN</td>
+      <td>Section: 2.2.2.1, Value: root-only</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4187-1</td>
+      <td>The USB device support module should be loaded or not as appropriate</td>
+      <td>loaded / not loaded</td>
+      <td>via /etc/modprobe.conf</td>
+      <td>NaN</td>
+      <td>Section: 2.2.2.2.1, Value: not loaded</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4006-3</td>
+      <td>The USB device support module should be installed or not as appropriate</td>
+      <td>installed / uninstalled</td>
+      <td>via kernel</td>
+      <td>NaN</td>
+      <td>Section: 2.2.2.2.2, Value: uninstalled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4173-1</td>
+      <td>USB kernel support should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/grub.conf</td>
+      <td>NaN</td>
+      <td>Section: 2.2.2.2.3, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3944-6</td>
+      <td>The ability to boot from USB devices should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via BIOS</td>
+      <td>NaN</td>
+      <td>Section: 2.2.2.2.4, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4072-5</td>
+      <td>The autofs service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 2.2.2.3, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4231-7</td>
+      <td>The GNOME automounter (gnome-volume-manager) should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via gconftool-2</td>
+      <td>NaN</td>
+      <td>Section: 2.2.2.4, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-3988-3</td>
+      <td>The /etc/shadow file should be owned by the appropriate group.</td>
+      <td>group</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 2.2.3.1, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-23</td>
+    </tr>
+    <tr>
+      <td>CCE-3883-6</td>
+      <td>The /etc/group file should be owned by the appropriate group.</td>
+      <td>group</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 2.2.3.1, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-202</td>
+    </tr>
+    <tr>
+      <td>CCE-3276-3</td>
+      <td>The /etc/group file should be owned by the appropriate user.</td>
+      <td>user</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 2.2.3.1, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-201</td>
+    </tr>
+    <tr>
+      <td>CCE-3932-1</td>
+      <td>File permissions for /etc/gshadow should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 2.2.3.1, Value: 400</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-4064-2</td>
+      <td>The /etc/gshadow file should be owned by the appropriate group.</td>
+      <td>group</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 2.2.3.1, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-202</td>
+    </tr>
+    <tr>
+      <td>CCE-4210-1</td>
+      <td>The /etc/gshadow file should be owned by the appropriate user.</td>
+      <td>user</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 2.2.3.1, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-201</td>
+    </tr>
+    <tr>
+      <td>CCE-3918-0</td>
+      <td>The /etc/shadow file should be owned by the appropriate user.</td>
+      <td>user</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 2.2.3.1, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-22</td>
+    </tr>
+    <tr>
+      <td>CCE-3566-7</td>
+      <td>File permissions for /etc/passwd should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 2.2.3.1, Value: 644</td>
+      <td>NaN</td>
+      <td>CCE-U-19</td>
+    </tr>
+    <tr>
+      <td>CCE-3958-6</td>
+      <td>The /etc/passwd file should be owned by the appropriate user.</td>
+      <td>user</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 2.2.3.1, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-20</td>
+    </tr>
+    <tr>
+      <td>CCE-3967-7</td>
+      <td>File permissions for /etc/group should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 2.2.3.1, Value: 644</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-3495-9</td>
+      <td>The /etc/passwd file should be owned by the appropriate group.</td>
+      <td>group</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 2.2.3.1, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-21</td>
+    </tr>
+    <tr>
+      <td>CCE-4130-1</td>
+      <td>File permissions for /etc/shadow should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 2.2.3.1, Value: 400</td>
+      <td>NaN</td>
+      <td>CCE-U-24</td>
+    </tr>
+    <tr>
+      <td>CCE-3399-3</td>
+      <td>The sticky bit should be set or not set as appropriate for all world-writable directories.</td>
+      <td>set / not set</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 2.2.3.2, Value: set</td>
+      <td>NaN</td>
+      <td>CCE-U-171</td>
+    </tr>
+    <tr>
+      <td>CCE-3795-2</td>
+      <td>The world-write permission should be enabled or disabled as appropriate for all files.</td>
+      <td>enabled / disabled</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 2.2.3.3, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-24</td>
+    </tr>
+    <tr>
+      <td>CCE-4178-0</td>
+      <td>The sgid bit should be set or not set as appropriate for all files.</td>
+      <td>set / not set</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 2.2.3.4, Value: not set</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3324-1</td>
+      <td>The suid bit should be set or not set as appropriate for all files.</td>
+      <td>set / not set</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 2.2.3.4, Value: not set</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4223-4</td>
+      <td>All files should be owned by a user as appropriate</td>
+      <td>user / none</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 2.2.3.5, Value: user</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3573-3</td>
+      <td>All files should be owned by a group as appropriate</td>
+      <td>group / none</td>
+      <td>via chgrp</td>
+      <td>NaN</td>
+      <td>Section: 2.2.3.5, Value: group</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4220-0</td>
+      <td>The daemon umask should be set as appropriate</td>
+      <td>permissions mask</td>
+      <td>via /etc/sysconfig/init</td>
+      <td>NaN</td>
+      <td>Section: 2.2.4.1, Value: 027</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4225-9</td>
+      <td>Core dumps for all users should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/security/limits.conf</td>
+      <td>NaN</td>
+      <td>Section: 2.2.4.2, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4247-3</td>
+      <td>Core dumps for setuid programs should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl - fs.suid_dumpable</td>
+      <td>NaN</td>
+      <td>Section: 2.2.4.2, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4146-7</td>
+      <td>ExecShield randomized placement of virtual memory regions should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl - kernel.randomize_va_space</td>
+      <td>NaN</td>
+      <td>Section: 2.2.4.3, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4168-1</td>
+      <td>ExecShield should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl - kernel.exec-shield</td>
+      <td>NaN</td>
+      <td>Section: 2.2.4.3, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4172-3</td>
+      <td>Kernel support for the XD/NX processor feature should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via kernel-PAE</td>
+      <td>NaN</td>
+      <td>Section: 2.2.4.4.2, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4177-2</td>
+      <td>The XD/NX processor feature should be enabled or disabled as appropriate in the BIOS</td>
+      <td>enabled / disabled</td>
+      <td>via BIOS</td>
+      <td>NaN</td>
+      <td>Section: 2.2.4.4.3, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3820-8</td>
+      <td>Logins through the specified virtual console interface should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/securetty</td>
+      <td>NaN</td>
+      <td>Section: 2.3.1.1, Value: enabled</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-3485-0</td>
+      <td>Logins through the specified virtual console device should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/securetty</td>
+      <td>NaN</td>
+      <td>Section: 2.3.1.1, Value: enabled</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-4111-1</td>
+      <td>Logins through the primary console device should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/securetty</td>
+      <td>NaN</td>
+      <td>Section: 2.3.1.1, Value: enabled</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-4256-4</td>
+      <td>Login prompts on serial ports should be enabled or disabled as appropriate.</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/securetty</td>
+      <td>NaN</td>
+      <td>Section: 2.3.1.1, Value: enabled</td>
+      <td>NaN</td>
+      <td>CCE-U-155</td>
+    </tr>
+    <tr>
+      <td>CCE-4274-7</td>
+      <td>Command access to the root account should be enabled or disabled as appropriate.</td>
+      <td>enabled/disabled</td>
+      <td>via pam</td>
+      <td>NaN</td>
+      <td>Section: 2.3.1.2, Value: enabled</td>
+      <td>NaN</td>
+      <td>CCE-U-15</td>
+    </tr>
+    <tr>
+      <td>CCE-4044-4</td>
+      <td>Sudo privileges should granted or rejected to the wheel group as appropriate</td>
+      <td>grant/reject</td>
+      <td>vi /etc/sudoers</td>
+      <td>NaN</td>
+      <td>Section: 2.3.1.3, Value: granted</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-3987-5</td>
+      <td>Login access to non-root system accounts should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/passwd</td>
+      <td>NaN</td>
+      <td>Section: 2.3.1.4, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-4238-2</td>
+      <td>Login access to accounts without passwords should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/shadow</td>
+      <td>NaN</td>
+      <td>Section: 2.3.1.5, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-4009-7</td>
+      <td>Anonymous root logins are enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/passwd</td>
+      <td>NaN</td>
+      <td>Section: 2.3.1.6, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-4154-1</td>
+      <td>The password minimum length should be set appropriately</td>
+      <td>length of password</td>
+      <td>(1) via pam_cracklib (2) via pam_passwdqc</td>
+      <td>NaN</td>
+      <td>Section: 2.3.1.7, Value: 8</td>
+      <td>Section: 2.3.3.1.1 - Set Password Quality Requirements</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-4180-6</td>
+      <td>The "minimum password age" policy should meet minimum requirements.</td>
+      <td>number of days</td>
+      <td>via /etc/login.defs</td>
+      <td>NaN</td>
+      <td>Section: 2.3.1.7, Value: 7</td>
+      <td>NaN</td>
+      <td>CCE-U-7</td>
+    </tr>
+    <tr>
+      <td>CCE-4092-3</td>
+      <td>The "maximum password age" policy should meet minimum requirements.</td>
+      <td>number of days</td>
+      <td>via /etc/login.defs</td>
+      <td>NaN</td>
+      <td>Section: 2.3.1.7, Value: 180</td>
+      <td>NaN</td>
+      <td>CCE-U-8</td>
+    </tr>
+    <tr>
+      <td>CCE-4097-2</td>
+      <td>The password warn age should be set appropriately</td>
+      <td>number of days</td>
+      <td>via /etc/login.defs</td>
+      <td>NaN</td>
+      <td>Section: 2.3.1.7, Value: 8</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-4114-5</td>
+      <td>NIS file inclusions should be set appropriately in the /etc/passwd file</td>
+      <td>allowed/not allowed</td>
+      <td>via Text editor</td>
+      <td>NaN</td>
+      <td>Section: 2.3.1.8, Value:</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-3762-2</td>
+      <td>DEPRECATED in favor of CCE-14113-5, CCE-14672-0, CCE-14712-4, CCE-14122-6.  Was: The password strength should meet minimum requirements</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.3.1, Value:</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-3410-8</td>
+      <td>The "account lockout threshold" policy should meet minimum requirements.</td>
+      <td>number of attempts</td>
+      <td>via PAM</td>
+      <td>NaN</td>
+      <td>Section: 2.3.3.2, Value:</td>
+      <td>NaN</td>
+      <td>CCE-U-4</td>
+    </tr>
+    <tr>
+      <td>CCE-4185-5</td>
+      <td>The /usr/sbin/userhelper file should be owned by the appropriate group.</td>
+      <td>group</td>
+      <td>via chgrp</td>
+      <td>NaN</td>
+      <td>Section: 2.3.3.4, Value: usergroup</td>
+      <td>NaN</td>
+      <td>CCE-U-202</td>
+    </tr>
+    <tr>
+      <td>CCE-3952-9</td>
+      <td>File permissions for /usr/sbin/userhelper should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 2.3.3.4, Value: 4710</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-3301-9</td>
+      <td>The PATH variable should be set correctly for user root</td>
+      <td>path</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.4.1, Value:</td>
+      <td>NaN</td>
+      <td>CCE-U-26</td>
+    </tr>
+    <tr>
+      <td>CCE-4090-7</td>
+      <td>File permissions should be set correctly for the home directories for all user accounts.</td>
+      <td>permissions</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.4.2, Value: g-w,o-rwx</td>
+      <td>NaN</td>
+      <td>CCE-U-162</td>
+    </tr>
+    <tr>
+      <td>CCE-3844-8</td>
+      <td>The default umask for all users should be set correctly for the bash shell</td>
+      <td>umask</td>
+      <td>umask</td>
+      <td>NaN</td>
+      <td>Section: 2.3.4.4, Value: 077</td>
+      <td>NaN</td>
+      <td>CCE-U-31</td>
+    </tr>
+    <tr>
+      <td>CCE-4227-5</td>
+      <td>The default umask for all users should be set correctly for the csh shell</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.4.4, Value: 077</td>
+      <td>NaN</td>
+      <td>CCE-U-31</td>
+    </tr>
+    <tr>
+      <td>CCE-3870-3</td>
+      <td>The default umask for all users should be set correctly</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.4.4, Value: 077</td>
+      <td>NaN</td>
+      <td>CCE-U-31</td>
+    </tr>
+    <tr>
+      <td>CCE-4144-2</td>
+      <td>The /etc/grub.conf file should be owned by the appropriate user.</td>
+      <td>user</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 2.3.5.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-201</td>
+    </tr>
+    <tr>
+      <td>CCE-3923-0</td>
+      <td>File permissions for /etc/grub.conf should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 2.3.5.2, Value: 600</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-3818-2</td>
+      <td>The grub boot loader should have password protection enabled or disabled as appropriate</td>
+      <td>password</td>
+      <td>via /etc/grub.conf</td>
+      <td>NaN</td>
+      <td>Section: 2.3.5.2, Value:</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4197-0</td>
+      <td>The /etc/grub.conf file should be owned by the appropriate group.</td>
+      <td>group</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 2.3.5.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-202</td>
+    </tr>
+    <tr>
+      <td>CCE-4241-6</td>
+      <td>The requirement for a password to boot into single-user mode should be configured correctly.</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/inittab</td>
+      <td>NaN</td>
+      <td>Section: 2.3.5.3, Value: enabled</td>
+      <td>NaN</td>
+      <td>CCE-U-1</td>
+    </tr>
+    <tr>
+      <td>CCE-4245-7</td>
+      <td>The ability for users to perform interactive startups should be enabled or disabled as appropriate.</td>
+      <td>enabled/disabled</td>
+      <td>via /etc/sysconfig/init</td>
+      <td>NaN</td>
+      <td>Section: 2.3.5.4, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3689-7</td>
+      <td>The idle time-out value for the default /bin/tcsh shell should meet the minimum requirements.</td>
+      <td>number of minutes</td>
+      <td>via autolockout</td>
+      <td>NaN</td>
+      <td>Section: 2.3.5.5, Value: 10</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3707-7</td>
+      <td>The idle time-out value for the default /bin/bash shell should meet the minimum requirements.</td>
+      <td>number of minutes</td>
+      <td>via /etc/profile.d</td>
+      <td>NaN</td>
+      <td>Section: 2.3.5.5, Value: 10</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3315-9</td>
+      <td>The allowed period of inactivity gnome desktop lockout should be configured correctly.</td>
+      <td>number of minutes</td>
+      <td>via gconftool-2</td>
+      <td>NaN</td>
+      <td>Section: 2.3.5.6.1, Value: 10</td>
+      <td>NaN</td>
+      <td>CCE-U-6</td>
+    </tr>
+    <tr>
+      <td>CCE-3910-7</td>
+      <td>The vlock package should be installed or not as appropriate</td>
+      <td>number of minutes</td>
+      <td>via gconftool-2</td>
+      <td>NaN</td>
+      <td>Section: 2.3.5.6.1, Value:</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4060-0</td>
+      <td>The system login banner text should be set correctly.</td>
+      <td>banner text</td>
+      <td>via /etc/motd</td>
+      <td>NaN</td>
+      <td>Section: 2.3.7.1, Value:</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4188-9</td>
+      <td>The direct gnome login warning banner should be set correctly.</td>
+      <td>banner text/xml</td>
+      <td>via RHEL.xml</td>
+      <td>NaN</td>
+      <td>Section: 2.3.7.2, Value:</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3977-6</td>
+      <td>SELinux should be enabled or disabled as appropriate</td>
+      <td>enforcing / permissive / disabled</td>
+      <td>via /etc/selinux/config</td>
+      <td>NaN</td>
+      <td>Section: 2.4.2, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3999-0</td>
+      <td>The SELinux state should be set appropriately.</td>
+      <td>enforcing / permissive / disabled</td>
+      <td>via /etc/selinux/config</td>
+      <td>NaN</td>
+      <td>Section: 2.4.2, Value: enforcing</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3624-4</td>
+      <td>The SELinux policy should be set appropriately.</td>
+      <td>targeted / strict / mls</td>
+      <td>via /etc/selinux/config</td>
+      <td>NaN</td>
+      <td>Section: 2.4.2, Value: targeted</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4254-9</td>
+      <td>The setroubleshoot service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 2.4.3.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4148-3</td>
+      <td>The setroubleshoot package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>Section: 2.4.3.1, Value: uninstalled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3668-1</td>
+      <td>The mcstrans service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 2.4.3.2, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4129-3</td>
+      <td>The restorecond service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 2.4.3.3, Value: enabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4151-7</td>
+      <td>The default setting for sending ICMP redirects should be enabled or disabled for network interfaces as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl - net.ipv4.conf.default.send_redirects</td>
+      <td>NaN</td>
+      <td>Section: 2.5.1.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4155-8</td>
+      <td>Sending ICMP redirects should be enabled or disabled for all interfaces as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl - net.ipv4.conf.all.send_redirects</td>
+      <td>NaN</td>
+      <td>Section: 2.5.1.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3561-8</td>
+      <td>IP forwarding should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl - net.ipv4.ip_forward</td>
+      <td>NaN</td>
+      <td>Section: 2.5.1.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-134</td>
+    </tr>
+    <tr>
+      <td>CCE-3472-8</td>
+      <td>Accepting "secure" ICMP redirects (those from gateways listed in the default gateways list) should be enabled or disabled for all interfaces as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl - net.ipv4.conf.all.secure_redirects</td>
+      <td>NaN</td>
+      <td>Section: 2.5.1.2, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4217-6</td>
+      <td>Accepting ICMP redirects should be enabled or disabled for all interfaces as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl - net.ipv4.conf.all.accept_redirects</td>
+      <td>NaN</td>
+      <td>Section: 2.5.1.2, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4133-5</td>
+      <td>Ignoring bogus ICMP responses to broadcasts should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl - net.ipv4.icmp_ignore_bogus_error_messages</td>
+      <td>NaN</td>
+      <td>Section: 2.5.1.2, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4265-5</td>
+      <td>Sending TCP syncookies should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl - net.ipv4.tcp_syncookies</td>
+      <td>NaN</td>
+      <td>Section: 2.5.1.2, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3644-2</td>
+      <td>Ignoring ICMP echo requests (pings) sent to broadcast / multicast addresses should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl - net.ipv4.icmp_echo_ignore_broadcasts</td>
+      <td>NaN</td>
+      <td>Section: 2.5.1.2, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4186-3</td>
+      <td>The default setting for accepting ICMP redirects should be enabled or disabled for network interfaces as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl - net.ipv4.conf.default.accept_redirects</td>
+      <td>NaN</td>
+      <td>Section: 2.5.1.2, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4080-8</td>
+      <td>Performing source validation by reverse path should be enabled or disabled for all interfaces as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl - net.ipv4.conf.all.rp_filter</td>
+      <td>NaN</td>
+      <td>Section: 2.5.1.2, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3339-9</td>
+      <td>The default setting for accepting "secure" ICMP redirects (those from gateways listed in the default gateways list) should be enabled or disabled for network interfaces as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl - net.ipv4.conf.default.secure_redirects</td>
+      <td>NaN</td>
+      <td>Section: 2.5.1.2, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4320-8</td>
+      <td>Logging of "martian" packets (those with impossible addresses) should be enabled or disabled for all interfaces as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl - net.ipv4.conf.all.log_martians</td>
+      <td>NaN</td>
+      <td>Section: 2.5.1.2, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3840-6</td>
+      <td>The default setting for performing source validation by reverse path should be enabled or disabled for network interfaces as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl - net.ipv4.conf.default.rp_filter</td>
+      <td>NaN</td>
+      <td>Section: 2.5.1.2, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4091-5</td>
+      <td>The default setting for accepting source routed packets should be enabled or disabled for network interfaces as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl - net.ipv4.conf.default.accept_source_route</td>
+      <td>NaN</td>
+      <td>Section: 2.5.1.2, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4236-6</td>
+      <td>Accepting source routed packets should be enabled or disabled for all interfaces as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl - net.ipv4.conf.all.accept_source_route</td>
+      <td>NaN</td>
+      <td>Section: 2.5.1.2, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3628-5</td>
+      <td>All wireless devices should be enabled or disabled in the BIOS as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via BIOS menus</td>
+      <td>NaN</td>
+      <td>Section: 2.5.2.2.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4276-2</td>
+      <td>All wireless interfaces should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via ifconfig</td>
+      <td>NaN</td>
+      <td>Section: 2.5.2.2.2, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4170-7</td>
+      <td>Device drivers for wireless devices should be included or excluded from the kernel as appropriate.</td>
+      <td>included / excluded</td>
+      <td>via modprobe</td>
+      <td>NaN</td>
+      <td>Section: 2.5.2.2.3, Value: excluded</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3562-6</td>
+      <td>Automatic loading of the IPv6 kernel module should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/modprobe.conf</td>
+      <td>NaN</td>
+      <td>Section: 2.5.3.1.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3377-9</td>
+      <td>Global IPv6 initialization should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/sysconfig/network</td>
+      <td>NaN</td>
+      <td>Section: 2.5.3.1.2, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4296-0</td>
+      <td>IPv6 configuration should be enabled or disabled as appropriate for all interfaces.</td>
+      <td>enabled / disabled</td>
+      <td>via NETWORKING_IPV6 in /etc/sysconfig/network via IPV6INIT in /etc/sysconfig/network via IPV6INIT in /etc/sysconfig/network-scripts/ifcfg-&lt;interface&gt;</td>
+      <td>NaN</td>
+      <td>Section: 2.5.3.1.2, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3381-1</td>
+      <td>The default setting for IPv6 configuration should be enabled or disabled for network interfaces as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via IPV6_AUTOCONF in /etc/sysconfig/network</td>
+      <td>NaN</td>
+      <td>Section: 2.5.3.1.2, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4269-7</td>
+      <td>Accepting IPv6 router advertisements should be enabled or disabled as appropriate for all network interfaces.</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl -w net.ipv6.conf.default.accept_ra=1</td>
+      <td>NaN</td>
+      <td>Section: 2.5.3.2.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4291-1</td>
+      <td>The default setting for accepting IPv6 router advertisements should be enabled or disabled for network interfaces as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via IPV6_AUTOCONF in /etc/sysconfig/network</td>
+      <td>NaN</td>
+      <td>Section: 2.5.3.2.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4313-3</td>
+      <td>Accepting redirects from IPv6 routers should be enabled or disabled as appropriate for all network interfaces.</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl -w net.ipv6.conf.default.accept_redirects=1</td>
+      <td>NaN</td>
+      <td>Section: 2.5.3.2.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4198-8</td>
+      <td>The default setting for accepting redirects from IPv6 routers should be enabled or disabled for network interfaces as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via IPV6_AUTOCONF in /etc/sysconfig/network</td>
+      <td>NaN</td>
+      <td>Section: 2.5.3.2.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3842-2</td>
+      <td>IPv6 privacy extensions should be configured appropriately for all interfaces.</td>
+      <td>disabled / lightweight / rfc3041 (alias yes)</td>
+      <td>via IPV6_PRIVACY in /etc/sysconfig/network-scripts/ifcfg-&lt;interface&gt;</td>
+      <td>NaN</td>
+      <td>Section: 2.5.3.2.3, Value: rfc3041</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4221-8</td>
+      <td>The default setting for accepting router preference via IPv6 router advertisement should be enabled or disabled for network interfaces as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl - net.ipv6.conf.default.accept_ra_rtr_pref</td>
+      <td>NaN</td>
+      <td>Section: 2.5.3.2.5, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4137-6</td>
+      <td>The default number of global unicast IPv6 addresses allowed per network interface should be set appropriately.</td>
+      <td>number</td>
+      <td>via sysctl - net.ipv6.conf.default.max_addresses</td>
+      <td>NaN</td>
+      <td>Section: 2.5.3.2.5, Value: 1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4159-0</td>
+      <td>The default number of IPv6 router solicitations for network interfaces to send should be set appropriately.</td>
+      <td>number</td>
+      <td>via sysctl - net.ipv6.conf.default.router_solicitations</td>
+      <td>NaN</td>
+      <td>Section: 2.5.3.2.5, Value: 0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3895-0</td>
+      <td>The default number of IPv6 duplicate address detection solicitations for network interfaces to send per configured address should be set appropriately.</td>
+      <td>number</td>
+      <td>via sysctl - net.ipv6.conf.default.dad_transmits</td>
+      <td>NaN</td>
+      <td>Section: 2.5.3.2.5, Value: 0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4287-9</td>
+      <td>The default setting for autoconfiguring network interfaces using prefix information in IPv6 router advertisements should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl - net.ipv6.conf.default.autoconf</td>
+      <td>NaN</td>
+      <td>Section: 2.5.3.2.5, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4058-4</td>
+      <td>The default setting for accepting prefix information via IPv6 router advertisement should be enabled or disabled for network interfaces as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl - net.ipv6.conf.default.accept_ra_pinfo</td>
+      <td>NaN</td>
+      <td>Section: 2.5.3.2.5, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4128-5</td>
+      <td>The default setting for accepting a default router via IPv6 router advertisement should be enabled or disabled for network interfaces as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via sysctl - net.ipv6.conf.default.accept_ra_defrtr</td>
+      <td>NaN</td>
+      <td>Section: 2.5.3.2.5, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4167-3</td>
+      <td>The ip6tables service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 2.5.5.1, Value: enabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4189-7</td>
+      <td>The iptables service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 2.5.5.1, Value: enabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-3679-8</td>
+      <td>The syslog service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 2.6.1, Value: enabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-3701-0</td>
+      <td>All syslog log files should be owned by the appropriate group.</td>
+      <td>group</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 2.6.1.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-202?</td>
+    </tr>
+    <tr>
+      <td>CCE-4233-3</td>
+      <td>File permissions for all syslog log files should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 2.6.1.2, Value: 600</td>
+      <td>NaN</td>
+      <td>CCE-U-200?</td>
+    </tr>
+    <tr>
+      <td>CCE-4366-1</td>
+      <td>All syslog log files should be owned by the appropriate user.</td>
+      <td>user</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 2.6.1.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-201?</td>
+    </tr>
+    <tr>
+      <td>CCE-4260-6</td>
+      <td>Syslog logs should be sent to a remote loghost or not as appropriate</td>
+      <td>sent / not sent</td>
+      <td>via /etc/syslog.conf</td>
+      <td>NaN</td>
+      <td>Section: 2.6.1.3, Value: sent</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3382-9</td>
+      <td>Syslogd should accept remote messages or not as appropriate</td>
+      <td>accept / reject</td>
+      <td>via /etc/sysconfig/syslog</td>
+      <td>NaN</td>
+      <td>Section: 2.6.1.4, Value: accept</td>
+      <td>NaN</td>
+      <td>CCE-U-131</td>
+    </tr>
+    <tr>
+      <td>CCE-4182-2</td>
+      <td>The logrotate (syslog rotater) service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via cron</td>
+      <td>NaN</td>
+      <td>Section: 2.6.1.5, Value: enabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4323-2</td>
+      <td>The logwatch service should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via cron</td>
+      <td>NaN</td>
+      <td>Section: 2.6.1.6, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4292-9</td>
+      <td>The auditd service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 2.6.2.1, Value: enabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4234-1</td>
+      <td>The inetd service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.2.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-72</td>
+    </tr>
+    <tr>
+      <td>CCE-4252-3</td>
+      <td>The xinetd service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.2.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-73</td>
+    </tr>
+    <tr>
+      <td>CCE-4023-8</td>
+      <td>The inetd package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>Section: 3.2.1, Value: uninstalled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4164-0</td>
+      <td>The xinetd package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>Section: 3.2.1, Value: uninstalled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3390-2</td>
+      <td>The telnet service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.2.2, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-104</td>
+    </tr>
+    <tr>
+      <td>CCE-4330-7</td>
+      <td>The telnet-server package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>Section: 3.2.2, Value: uninstalled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3974-3</td>
+      <td>The rcp service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.2.3.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4141-8</td>
+      <td>The rsh service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.2.3.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-83</td>
+    </tr>
+    <tr>
+      <td>CCE-3537-8</td>
+      <td>The rlogin service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.2.3.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-82</td>
+    </tr>
+    <tr>
+      <td>CCE-4308-3</td>
+      <td>The rsh package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>Section: 3.2.3.1, Value: uninstalled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3705-1</td>
+      <td>The ypbind service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.2.4, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4348-9</td>
+      <td>The ypserv package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>Section: 3.2.4, Value: uninstalled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4273-9</td>
+      <td>The tftp service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.2.5, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-118</td>
+    </tr>
+    <tr>
+      <td>CCE-3916-4</td>
+      <td>The tftp-server package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>Section: 3.2.5, Value: uninstalled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3412-4</td>
+      <td>The firstboot service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.3.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4229-1</td>
+      <td>The gpm service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.3.2, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4123-6</td>
+      <td>The irqbalance service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.3.3, Value: enabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4286-1</td>
+      <td>The isdn service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.3.4, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-3425-6</td>
+      <td>The kdump service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.3.5, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4211-9</td>
+      <td>The kudzu service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.3.6, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-3854-7</td>
+      <td>The mdmonitor service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.3.7, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4356-2</td>
+      <td>The microcode_ctl service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.3.8, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4369-5</td>
+      <td>The network service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.3.9, Value: enabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4100-4</td>
+      <td>The pcscd service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.3.10, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-3455-3</td>
+      <td>The smartd service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.3.11, Value: enabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4421-4</td>
+      <td>The readahead_early service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.3.12, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4302-6</td>
+      <td>The readahead_later service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.3.12, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-3822-4</td>
+      <td>The messagebus service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.3.13.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4364-6</td>
+      <td>The haldaemon service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.3.13.2, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4355-4</td>
+      <td>The bluetooth service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.3.14.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4377-8</td>
+      <td>The hidd service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.3.14.2, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4289-5</td>
+      <td>The apmd service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.3.15.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4298-6</td>
+      <td>The acpid service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.3.15.2, Value: enabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4051-9</td>
+      <td>The cpuspeed service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.3.15.3, Value: enabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4324-0</td>
+      <td>The crond service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.4, Value: enabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4406-5</td>
+      <td>The anacron service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.4.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4428-9</td>
+      <td>The anacron package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>Section: 3.4.1, Value: uninstalled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4322-4</td>
+      <td>The /etc/cron.monthly file should be owned by the appropriate group.</td>
+      <td>group</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.4.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-202</td>
+    </tr>
+    <tr>
+      <td>CCE-4450-3</td>
+      <td>File permissions for /etc/cron.daily should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 3.4.2, Value: 700</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-4331-5</td>
+      <td>The /etc/cron.weekly file should be owned by the appropriate group.</td>
+      <td>group</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.4.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-202</td>
+    </tr>
+    <tr>
+      <td>CCE-3851-3</td>
+      <td>The /etc/crontab file should be owned by the appropriate user.</td>
+      <td>user</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.4.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-201</td>
+    </tr>
+    <tr>
+      <td>CCE-4379-4</td>
+      <td>The /etc/anacrontab file should be owned by the appropriate user.</td>
+      <td>user</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.4.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-201</td>
+    </tr>
+    <tr>
+      <td>CCE-4388-5</td>
+      <td>File permissions for /etc/crontab should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 3.4.2, Value: 600</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-4054-3</td>
+      <td>The /etc/cron.hourly file should be owned by the appropriate group.</td>
+      <td>group</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.4.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-202</td>
+    </tr>
+    <tr>
+      <td>CCE-4441-2</td>
+      <td>The /etc/cron.monthly file should be owned by the appropriate user.</td>
+      <td>user</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.4.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-201</td>
+    </tr>
+    <tr>
+      <td>CCE-4212-7</td>
+      <td>The /etc/cron.d file should be owned by the appropriate group.</td>
+      <td>group</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.4.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-202</td>
+    </tr>
+    <tr>
+      <td>CCE-4380-2</td>
+      <td>The /etc/cron.d file should be owned by the appropriate user.</td>
+      <td>user</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.4.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-201</td>
+    </tr>
+    <tr>
+      <td>CCE-3833-1</td>
+      <td>The /etc/cron.weekly file should be owned by the appropriate user.</td>
+      <td>user</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.4.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-201</td>
+    </tr>
+    <tr>
+      <td>CCE-3604-6</td>
+      <td>The /etc/anacrontab file should be owned by the appropriate group.</td>
+      <td>group</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.4.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-202</td>
+    </tr>
+    <tr>
+      <td>CCE-4106-1</td>
+      <td>File permissions for /etc/cron.hourly should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 3.4.2, Value: 700</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-3983-4</td>
+      <td>The /etc/cron.hourly file should be owned by the appropriate user.</td>
+      <td>user</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.4.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-201</td>
+    </tr>
+    <tr>
+      <td>CCE-3626-9</td>
+      <td>The /etc/crontab file should be owned by the appropriate group.</td>
+      <td>group</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.4.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-202</td>
+    </tr>
+    <tr>
+      <td>CCE-4022-0</td>
+      <td>The /etc/cron.daily file should be owned by the appropriate user.</td>
+      <td>user</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.4.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-201</td>
+    </tr>
+    <tr>
+      <td>CCE-4304-2</td>
+      <td>File permissions for /etc/anacrontab should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 3.4.2, Value: 600</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-4203-6</td>
+      <td>File permissions for /etc/cron.weekly should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 3.4.2, Value: 700</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-4251-5</td>
+      <td>File permissions for /etc/cron.monthly should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 3.4.2, Value: 700</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-3481-9</td>
+      <td>The /etc/cron.daily file should be owned by the appropriate group.</td>
+      <td>group</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.4.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-202</td>
+    </tr>
+    <tr>
+      <td>CCE-4250-7</td>
+      <td>File permissions for /etc/cron.d should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 3.4.2, Value: 700</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-4268-9</td>
+      <td>The sshd service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.5.1.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4272-1</td>
+      <td>SSH should be installed or uninstalled as appropriate</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>Section: 3.5.1.1, Value: uninstalled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4295-2</td>
+      <td>Inbound connections to the ssh port should be allowed or denied as appropriate</td>
+      <td>allow / deny</td>
+      <td>/etc/sysconfig/iptables</td>
+      <td>NaN</td>
+      <td>Section: 3.5.1.2, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4325-7</td>
+      <td>SSH version 1 protocol support should be enabled or disabled as appropriate.</td>
+      <td>permitted / not permitted</td>
+      <td>via /etc/ssh/sshd_config</td>
+      <td>NaN</td>
+      <td>Section: 3.5.2.1, Value: not permitted</td>
+      <td>NaN</td>
+      <td>CCE-U-132</td>
+    </tr>
+    <tr>
+      <td>CCE-3845-5</td>
+      <td>The SSH idle timout interval should be set to an appropriate value</td>
+      <td>integer (seconds)</td>
+      <td>via /etc/ssh/sshd_config</td>
+      <td>NaN</td>
+      <td>Section: 3.5.2.3, Value: no suggestion</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4475-0</td>
+      <td>Emulation of the rsh command through the ssh server should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/ssh/sshd_config</td>
+      <td>NaN</td>
+      <td>Section: 3.5.2.4, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4370-3</td>
+      <td>SSH host-based authentication should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/ssh/sshd_config</td>
+      <td>NaN</td>
+      <td>Section: 3.5.2.5, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4387-7</td>
+      <td>Root login via SSH should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/ssh/sshd_config</td>
+      <td>NaN</td>
+      <td>Section: 3.5.2.6, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3660-8</td>
+      <td>Remote connections from accounts with empty passwords should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/ssh/sshd_config</td>
+      <td>NaN</td>
+      <td>Section: 3.5.2.7, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4431-3</td>
+      <td>SSH warning banner should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/ssh/sshd_config</td>
+      <td>NaN</td>
+      <td>Section: 3.5.2.8, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4462-8</td>
+      <td>X Windows should be enabled or disabled at system boot as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/inittab</td>
+      <td>NaN</td>
+      <td>Section: 3.6.1.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4422-2</td>
+      <td>X Windows should be installed or removed as appropriate</td>
+      <td>installed/removed</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>Section: 3.6.1.2, Value: uninstalled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4303-4</td>
+      <td>DEPRECTATED in favor of CCE-4448-7</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: , Value:</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4448-7</td>
+      <td>The xfs service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.6.1.3.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4074-1</td>
+      <td>X Windows System Listening for remote connections should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/X11/xinit/xserverrc</td>
+      <td>NaN</td>
+      <td>Section: 3.6.1.3.2, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3717-6</td>
+      <td>Warning banners for gui login users should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/gdm/custom.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.6.2.1, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4365-3</td>
+      <td>The avahi-daemon service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.7.1.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4136-8</td>
+      <td>The Avahi daemon should be configured to serve via Ipv6 or not as appropriate</td>
+      <td>serve / not serve</td>
+      <td>via /etc/avahi/avahi-daemon.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.7.2.1, Value: no suggestion</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4409-9</td>
+      <td>The Avahi daemon should be configured to serve via Ipv4 or not as appropriate</td>
+      <td>serve / not serve</td>
+      <td>via /etc/avahi/avahi-daemon.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.7.2.1, Value: no suggestion</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4426-3</td>
+      <td>Avahi should be configured to accept packets with a TTL field not equal to 255 or not as appropriate</td>
+      <td>accept / reject</td>
+      <td>via /etc/avahi/avahi-daemon.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.7.2.2, Value: reject</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4193-9</td>
+      <td>Avahi should be configured to allow other stacks from binding to port 5353 or not as appropriate</td>
+      <td>allow / disallow</td>
+      <td>via /etc/avahi/avahi-daemon.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.7.2.3, Value: disallow</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4444-6</td>
+      <td>Avahi publishing of local information should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/avahi/avahi-daemon.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.7.2.4, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4352-1</td>
+      <td>Avahi publishing of local information by user applications should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/avahi/avahi-daemon.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.7.2.5, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4433-9</td>
+      <td>Avahi publishing of hardware information should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/avahi/avahi-daemon.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.7.2.5, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4451-1</td>
+      <td>Avahi publishing of workstation name should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/avahi/avahi-daemon.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.7.2.5, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4341-4</td>
+      <td>Avahi publishing of IP addresses should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/avahi/avahi-daemon.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.7.2.5, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4358-8</td>
+      <td>Avahi publishing of domain name should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/avahi/avahi-daemon.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.7.2.5, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4112-9</td>
+      <td>The cups service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.8.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-3755-6</td>
+      <td>CUPS service should be enabled or disabled as appropriate</td>
+      <td>enabled/disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.8.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3649-1</td>
+      <td>Firewall access to printing service should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/sysconfig/iptables</td>
+      <td>NaN</td>
+      <td>Section: 3.8.2, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4420-6</td>
+      <td>Remote print browsing should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/cups/cupsd.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.8.3.1.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4407-3</td>
+      <td>CUPS should be allowed or denied the ability to listen for Incoming printer information as appropriate</td>
+      <td>allow / deny</td>
+      <td>via /etc/cups/cupsd.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.8.3.1.1, Value: deny</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4425-5</td>
+      <td>The hplip service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.8.4.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4191-3</td>
+      <td>The dhcp client service should be enabled or disabled as appropriate for each interface.</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/sysconfig/network-scripts/ifcfg-IFACE</td>
+      <td>NaN</td>
+      <td>Section: 3.9.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4336-4</td>
+      <td>The dhcpd service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.9.3, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4464-4</td>
+      <td>The dhcp package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>Section: 3.9.3, Value: uninstalled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4257-2</td>
+      <td>The dynamic DNS feature of the DHCP server should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/dhcpd.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.9.4.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4403-2</td>
+      <td>DHCPDECLINE messages should be accepted or denied by the DHCP server as appropriate</td>
+      <td>accepted / denied</td>
+      <td>via /etc/dhcpd.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.9.4.2, Value: denied</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4345-5</td>
+      <td>BOOTP queries should be accepted or denied by the DHCP server as appropriate</td>
+      <td>accepted / denied</td>
+      <td>via /etc/dhcpd.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.9.4.3, Value: denied</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3724-2</td>
+      <td>Domain name server information should be sent or not sent by the DHCP server as appropriate.</td>
+      <td>sent / not sent</td>
+      <td>via /etc/dhcpd.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.9.4.4, Value: not sent</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4243-2</td>
+      <td>Default routers should be sent or not sent by the DHCP server as appropriate.</td>
+      <td>sent / not sent</td>
+      <td>via /etc/dhcpd.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.9.4.4, Value: not sent</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4389-3</td>
+      <td>Domain name should be sent or not sent by the DHCP server as appropriate.</td>
+      <td>sent / not sent</td>
+      <td>via /etc/dhcpd.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.9.4.4, Value: not sent</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3913-1</td>
+      <td>NIS domain should be sent or not sent by the DHCP server as appropriate.</td>
+      <td>sent / not sent</td>
+      <td>via /etc/dhcpd.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.9.4.4, Value: not sent</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4169-9</td>
+      <td>NIS servers should be sent or not sent by the DHCP server as appropriate.</td>
+      <td>sent / not sent</td>
+      <td>via /etc/dhcpd.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.9.4.4, Value: not sent</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4318-2</td>
+      <td>Time offset should be sent or not sent by the DHCP server as appropriate.</td>
+      <td>sent / not sent</td>
+      <td>via /etc/dhcpd.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.9.4.4, Value: not sent</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4319-0</td>
+      <td>NTP servers should be sent or not sent by the DHCP server as appropriate.</td>
+      <td>sent / not sent</td>
+      <td>via /etc/dhcpd.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.9.4.4, Value: not sent</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3733-3</td>
+      <td>dhcpd logging should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/syslog.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.9.4.5, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4376-0</td>
+      <td>The ntpd service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.10.2.2.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4134-3</td>
+      <td>Network access to ntpd should be allowed or denied as appropriate</td>
+      <td>allow / deny</td>
+      <td>via /etc/ntp.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.10.2.2.2, Value: deny</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4385-1</td>
+      <td>A remote NTP Server for time synchronization should be specified or not as appropriate</td>
+      <td>ip address</td>
+      <td>via /etc/ntp.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.10.2.2.3, Value: no suggestion</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4032-9</td>
+      <td>OpenNTPD should be installed or uninstalled as appropriate</td>
+      <td>installed / uninstalled</td>
+      <td>via openntpd package</td>
+      <td>NaN</td>
+      <td>Section: 3.10.3.1, Value: no suggestion</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4424-8</td>
+      <td>The ntp daemon should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/rc.local</td>
+      <td>NaN</td>
+      <td>Section: 3.10.3.2.1, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3487-6</td>
+      <td>The ntp daemon synchronization server should be set appropriately</td>
+      <td>local ntp server</td>
+      <td>via /usr/local/etc/ntpd.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.10.3.2.2, Value: ntp server</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4416-4</td>
+      <td>The sendmail service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.11, Value: enabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4293-7</td>
+      <td>The listening sendmail daemon should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/sysconfig/sendmail</td>
+      <td>NaN</td>
+      <td>Section: 3.11.2.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-3501-4</td>
+      <td>The ldap service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.12.3.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4360-4</td>
+      <td>File permissions for /etc/pki/tls/CA/cacert.pem should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 3.12.3.4.2, Value: 644</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-4378-6</td>
+      <td>File permissions for /etc/pki/tls/ldap/serverkey.pem should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 3.12.3.4.2, Value: 755</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-4492-5</td>
+      <td>The /etc/pki/tls/ldap file should be owned by the appropriate user.</td>
+      <td>user</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.12.3.4.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-201</td>
+    </tr>
+    <tr>
+      <td>CCE-4263-0</td>
+      <td>File permissions for /etc/pki/tls/ldap/servercert.pem should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 3.12.3.4.2, Value: 755</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-3502-2</td>
+      <td>The /etc/pki/tls/ldap/serverkey.pem file should be owned by the appropriate user.</td>
+      <td>user</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.12.3.4.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-201</td>
+    </tr>
+    <tr>
+      <td>CCE-4449-5</td>
+      <td>The /etc/pki/tls/CA/cacert.pem file should be owned by the appropriate user.</td>
+      <td>user</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.12.3.4.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-201</td>
+    </tr>
+    <tr>
+      <td>CCE-4361-2</td>
+      <td>File permissions for /etc/pki/tls/ldap should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 3.12.3.4.2, Value: 755</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-4427-1</td>
+      <td>The /etc/pki/tls/CA/cacert.pem file should be owned by the appropriate group.</td>
+      <td>group</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.12.3.4.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-202</td>
+    </tr>
+    <tr>
+      <td>CCE-4321-6</td>
+      <td>The /etc/pki/tls/ldap/serverkey.pem file should be owned by the appropriate group.</td>
+      <td>group</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.12.3.4.2, Value: ldap</td>
+      <td>NaN</td>
+      <td>CCE-U-202</td>
+    </tr>
+    <tr>
+      <td>CCE-4339-8</td>
+      <td>The /etc/pki/tls/ldap file should be owned by the appropriate group.</td>
+      <td>group</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.12.3.4.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-202</td>
+    </tr>
+    <tr>
+      <td>CCE-4105-3</td>
+      <td>The /etc/pki/tls/ldap/servercert.pem file should be owned by the appropriate user.</td>
+      <td>user</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.12.3.4.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-201</td>
+    </tr>
+    <tr>
+      <td>CCE-3718-4</td>
+      <td>The /etc/pki/tls/ldap/servercert.pem file should be owned by the appropriate group.</td>
+      <td>group</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.12.3.4.2, Value: ldap</td>
+      <td>NaN</td>
+      <td>CCE-U-202</td>
+    </tr>
+    <tr>
+      <td>CCE-4484-2</td>
+      <td>The /var/lib/ldap/* files should be owned by the appropriate group.</td>
+      <td>group</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.12.3.7, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-202</td>
+    </tr>
+    <tr>
+      <td>CCE-4502-1</td>
+      <td>The /var/lib/ldap/* files should be owned by the appropriate user.</td>
+      <td>user</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.12.3.7, Value: ldap</td>
+      <td>NaN</td>
+      <td>CCE-U-201</td>
+    </tr>
+    <tr>
+      <td>CCE-4396-8</td>
+      <td>The nfslock service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.13.1.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-3535-2</td>
+      <td>The rpcgssd service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.13.1.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-3568-3</td>
+      <td>The rpcidmapd service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.13.1.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4533-6</td>
+      <td>The netfs service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.13.1.2, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4550-0</td>
+      <td>The portmap service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.13.1.3, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4559-1</td>
+      <td>The lockd service should be configured to use a static port or a dynamic portmapper port for TCP as appropriate</td>
+      <td>static / dynamic</td>
+      <td>via /etc/sysconfig/nfs</td>
+      <td>NaN</td>
+      <td>Section: 3.13.2.3, Value: static</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4015-4</td>
+      <td>The statd service should be configured to use an outgoing static port or an outgoing dynamic portmapper port as appropriate</td>
+      <td>static / dynamic</td>
+      <td>via /etc/sysconfig/nfs</td>
+      <td>NaN</td>
+      <td>Section: 3.13.2.3, Value: static</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3667-3</td>
+      <td>The statd service should be configured to use a static port or a dynamic portmapper port as appropriate</td>
+      <td>static / dynamic</td>
+      <td>via /etc/sysconfig/nfs</td>
+      <td>NaN</td>
+      <td>Section: 3.13.2.3, Value: static</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4310-9</td>
+      <td>The lockd service should be configured to use a static port or a dynamic portmapper port for UDP as appropriate</td>
+      <td>static / dynamic</td>
+      <td>via /etc/sysconfig/nfs</td>
+      <td>NaN</td>
+      <td>Section: 3.13.2.3, Value: static</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4438-8</td>
+      <td>The mountd service should be configured to use a static port or a dynamic portmapper port as appropriate</td>
+      <td>static / dynamic</td>
+      <td>via /etc/sysconfig/nfs</td>
+      <td>NaN</td>
+      <td>Section: 3.13.2.3, Value: static</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3579-0</td>
+      <td>The rquotad service should be configured to use a static port or a dynamic portmapper port as appropriate</td>
+      <td>static / dynamic</td>
+      <td>via /etc/sysconfig/nfs</td>
+      <td>NaN</td>
+      <td>Section: 3.13.2.3, Value: static</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4473-5</td>
+      <td>The nfs service should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.13.3.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4491-7</td>
+      <td>The rpcsvcgssd service should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.13.3.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4368-7</td>
+      <td>The nodev option should be enabled or disabled for all NFS mounts as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/fstab</td>
+      <td>NaN</td>
+      <td>Section: 3.13.3.2, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4024-6</td>
+      <td>The nosuid option should be enabled or disabled for all NFS mounts as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/fstab</td>
+      <td>NaN</td>
+      <td>Section: 3.13.3.2, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4526-0</td>
+      <td>The noexec option should be enabled or disabled for all NFS mounts as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/fstab</td>
+      <td>NaN</td>
+      <td>Section: 3.13.3.2, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4544-3</td>
+      <td>Root squashing should be enabled or disabled as appropriate for all NFS shares</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/exports</td>
+      <td>NaN</td>
+      <td>Section: 3.13.4.1.2, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4465-1</td>
+      <td>Restriction of NFS clients to privileged ports should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/exports</td>
+      <td>NaN</td>
+      <td>Section: 3.13.4.1.3, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4350-5</td>
+      <td>Write access to NFS shares should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/exports</td>
+      <td>NaN</td>
+      <td>Section: 3.13.4.1.4, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3578-2</td>
+      <td>The named service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.14.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4219-2</td>
+      <td>The bind package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>Section: 3.14.1, Value: uninstalled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3985-9</td>
+      <td>The /var/named/chroot/etc/named.conf file should be owned by the appropriate group.</td>
+      <td>group</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.14.3.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-202</td>
+    </tr>
+    <tr>
+      <td>CCE-4487-5</td>
+      <td>File permissions for /var/named/chroot/etc/named.conf should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 3.14.3.2, Value: 644</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-4258-0</td>
+      <td>The /var/named/chroot/etc/named.conf file should be owned by the appropriate user.</td>
+      <td>user</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>Section: 3.14.3.2, Value: root</td>
+      <td>NaN</td>
+      <td>CCE-U-201</td>
+    </tr>
+    <tr>
+      <td>CCE-4399-2</td>
+      <td>LDAP's dynamic updates feature should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/named.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.14.4.5, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3919-8</td>
+      <td>The vsftpd service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.15.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4549-2</td>
+      <td>Logging of vsftpd transactions should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/vsftpd.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.15.3.1, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4554-2</td>
+      <td>A warning banner for all FTP users should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/vsftpd.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.15.3.2, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4443-8</td>
+      <td>Local user login to the vsftpd service should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/vsftpd.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.15.3.3.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4461-0</td>
+      <td>File uploads via vsftpd should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/vsftpd.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.15.3.4, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4338-0</td>
+      <td>The httpd service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.16.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4514-6</td>
+      <td>The httpd package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>Section: 3.16.1, Value: uninstalled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4346-3</td>
+      <td>The apache 2 server software should be installed or removed as appropriate</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>Section: 3.16.2.1, Value: installed</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4474-3</td>
+      <td>The apache2 server's ServerTokens value should be set appropriately</td>
+      <td>text</td>
+      <td>via /etc/httpd/conf/httpd.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.16.3.1, Value: Prod</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3756-4</td>
+      <td>The apache2 server's ServerSignature value should be set appropriately</td>
+      <td>NaN</td>
+      <td>via /etc/httpd/conf/httpd.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.16.3.1, Value: Off</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4509-6</td>
+      <td>File permissions for /etc/httpd/conf should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 3.16.5.1, Value: 750</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-4386-9</td>
+      <td>File permissions for /etc/httpd/conf/* should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 3.16.5.1, Value: 640</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-4029-5</td>
+      <td>File permissions for /usr/sbin/httpd should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 3.16.5.1, Value: 511</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-3581-6</td>
+      <td>The /etc/httpd/conf/* files should be owned by the appropriate group.</td>
+      <td>NaN</td>
+      <td>via chgrp</td>
+      <td>NaN</td>
+      <td>Section: 3.16.5.1, Value: apache</td>
+      <td>NaN</td>
+      <td>CCE-U-202</td>
+    </tr>
+    <tr>
+      <td>CCE-4574-0</td>
+      <td>File permissions for /var/log/httpd should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>Section: 3.16.5.1, Value: 750</td>
+      <td>NaN</td>
+      <td>CCE-U-200</td>
+    </tr>
+    <tr>
+      <td>CCE-3847-1</td>
+      <td>The dovecot service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.17.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4239-0</td>
+      <td>The dovecot package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>Section: 3.17.1, Value: uninstalled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4384-4</td>
+      <td>Dovecot should be configured to support the imaps protocol or not as necessary</td>
+      <td>support / not support</td>
+      <td>via /etc/dovecot.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.17.2.1, Value: not support</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3887-7</td>
+      <td>Dovecot should be configured to support the pop3s protocol or not as necessary</td>
+      <td>support / not support</td>
+      <td>via /etc/dovecot.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.17.2.1, Value: not support</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4530-2</td>
+      <td>Dovecot should be configured to support the pop3 protocol or not as necessary</td>
+      <td>support / not support</td>
+      <td>via /etc/dovecot.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.17.2.1, Value: not support</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4547-6</td>
+      <td>Dovecot should be configured to support the imap protocol or not as necessary</td>
+      <td>support / not support</td>
+      <td>via /etc/dovecot.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.17.2.1, Value: not support</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4552-6</td>
+      <td>Dovecot plaintext authentication of clients should be enabled or disabled as necessary</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/dovecot.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.17.2.2.4, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4371-1</td>
+      <td>The Dovecot option to drop privileges to user before executing mail process should be enabled or not as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/dovecot.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.17.2.3, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4410-7</td>
+      <td>The Dovecot option to spawn a new login process per connection should be enabled or not as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/dovecot.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.17.2.3, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4551-8</td>
+      <td>The smb service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.18.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4556-7</td>
+      <td>The squid service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.19.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-160</td>
+    </tr>
+    <tr>
+      <td>CCE-4076-6</td>
+      <td>The squid package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>Section: 3.19.1, Value: uninstalled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4454-5</td>
+      <td>The Squid option to force FTP passive connections should be enabled or not as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/squid/squid.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.19.2.2, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4353-9</td>
+      <td>The Squid max request HTTP header length should be set to an appropriate value</td>
+      <td>data length</td>
+      <td>via /etc/squid/squid.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.19.2.2, Value: 20kb</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4503-9</td>
+      <td>The Squid option to check for RFC compliant hostnames should be enabled or not as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/squid/squid.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.19.2.2, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3585-7</td>
+      <td>The Squid option to ignore unknown nameservers should be enabled or not as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/squid/squid.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.19.2.2, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4419-8</td>
+      <td>The Squid max reply HTTP header length should be set to an appropriate value</td>
+      <td>data length</td>
+      <td>via /etc/squid/squid.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.19.2.2, Value: 20kb</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3692-1</td>
+      <td>The Squid EUID should be set to an appropriate user</td>
+      <td>user</td>
+      <td>via /etc/squid/squid.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.19.2.2, Value: squid</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4459-4</td>
+      <td>The Squid option to perform FTP sanity checks should be enabled or not as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/squid/squid.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.19.2.2, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4476-8</td>
+      <td>The Squid GUID should be set to an appropriate group</td>
+      <td>group</td>
+      <td>via /etc/squid/squid.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.19.2.2, Value: squid</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4181-4</td>
+      <td>The Squid option to show proxy client IP addresses in HTTP headers should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/squid/squid.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.19.2.3, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4577-3</td>
+      <td>The Squid option to log HTTP MIME headers should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/squid/squid.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.19.2.3, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4344-8</td>
+      <td>The Squid option to allow underscores in hostnames should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/squid/squid.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.19.2.3, Value: disabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4494-1</td>
+      <td>The Squid option to suppress the httpd version string should be enabled or disabled as appropriate</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/squid/squid.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.19.2.3, Value: enabled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4511-2</td>
+      <td>Squid should be configured to allow gss-http traffic or not as appropriate</td>
+      <td>allow / deny</td>
+      <td>via /etc/squid/squid.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.19.2.5, Value: deny</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4529-4</td>
+      <td>Squid should be configured to allow https traffic or not as appropriate</td>
+      <td>allow / deny</td>
+      <td>via /etc/squid/squid.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.19.2.5, Value: allow</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3610-3</td>
+      <td>Squid should be configured to allow wais traffic or not as appropriate</td>
+      <td>allow / deny</td>
+      <td>via /etc/squid/squid.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.19.2.5, Value: deny</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4466-9</td>
+      <td>Squid should be configured to allow multiling http traffic or not as appropriate</td>
+      <td>allow / deny</td>
+      <td>via /etc/squid/squid.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.19.2.5, Value: deny</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4607-8</td>
+      <td>Squid should be configured to allow http traffic or not as appropriate</td>
+      <td>allow / deny</td>
+      <td>via /etc/squid/squid.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.19.2.5, Value: allow</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4255-6</td>
+      <td>Squid should be configured to allow ftp traffic or not as appropriate</td>
+      <td>allow / deny</td>
+      <td>via /etc/squid/squid.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.19.2.5, Value: allow</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4127-7</td>
+      <td>Squid should be configured to allow gopher traffic or not as appropriate</td>
+      <td>allow / deny</td>
+      <td>via /etc/squid/squid.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.19.2.5, Value: deny</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4519-5</td>
+      <td>Squid should be configured to allow filemaker traffic or not as appropriate</td>
+      <td>allow / deny</td>
+      <td>via /etc/squid/squid.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.19.2.5, Value: deny</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4413-1</td>
+      <td>Squid proxy access to localhost should be allowed or denied as appropriate</td>
+      <td>allow / deny</td>
+      <td>via /etc/squid/squid.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.19.2.5, Value: deny</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-4373-7</td>
+      <td>Squid should be configured to allow http-mgmt traffic or not as appropriate</td>
+      <td>allow / deny</td>
+      <td>via /etc/squid/squid.conf</td>
+      <td>NaN</td>
+      <td>Section: 3.19.2.5, Value: deny</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-3765-5</td>
+      <td>The snmpd service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>Section: 3.20.1, Value: disabled</td>
+      <td>NaN</td>
+      <td>CCE-U-203</td>
+    </tr>
+    <tr>
+      <td>CCE-4404-0</td>
+      <td>The net-smtp package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>Section: 3.20.1, Value: uninstalled</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14113-5</td>
+      <td>The minimum number of digits required for new passwords should be set as appropriate.</td>
+      <td>number of digits</td>
+      <td>via pam_cracklib via pam_passwdqc</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.3.1.1 - Set Password Quality Requirements</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14672-0</td>
+      <td>The minimum number of upper case characters required for new passwords should be set as appropriate.</td>
+      <td>number of upper characters</td>
+      <td>via pam_cracklib via pam_passwdqc</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.3.1.1 - Set Password Quality Requirements</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14712-4</td>
+      <td>The minimum number of lower case characters required for new passwords should be set as appropriate.</td>
+      <td>number of lower characters</td>
+      <td>via pam_cracklib via pam_passwdqc</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.3.1.1 - Set Password Quality Requirements</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14122-6</td>
+      <td>The minimum number of special characters required for new passwords should be set as appropriate.</td>
+      <td>number of special characters</td>
+      <td>via pam_cracklib via pam_passwdqc</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.3.1.1 - Set Password Quality Requirements</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14412-1</td>
+      <td>The nodev option should be enabled or disabled as appropriate for /tmp.</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/fstab</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.2.1.3.1 - Add nodev Option to /tmp</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-15007-8</td>
+      <td>The nodev option should be enabled or disabled for /dev/shm.</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/fstab</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.2.1.3.2 - Add nodev Option to /dev/shm</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14161-4</td>
+      <td>/tmp should be configured on an appropriate filesystem partition.</td>
+      <td>partition</td>
+      <td>via /etc/fstab</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.1.1.1.1 - Create Separate Partition or Logical Volume for /tmp</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14777-7</td>
+      <td>/var should be configured on an appropriate filesystem partition.</td>
+      <td>partition</td>
+      <td>via /etc/fstab</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.1.1.1.2 - Create Separate Partition or Logical Volume for /var</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14011-1</td>
+      <td>/var/log should be configured on an appropriate filesystem partition.</td>
+      <td>partition</td>
+      <td>via /etc/fstab</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.1.1.1.3 - Create Separate Partition or Logical Volume for /var/log</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14171-3</td>
+      <td>/var/log/audit should be configured on an appropriate filesystem partition.</td>
+      <td>partition</td>
+      <td>via /etc/fstab</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.1.1.1.4 - Create Separate Partition or Logical Volume for /var/log/audit</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14559-9</td>
+      <td>/home should be configured on an appropriate filesystem partition.</td>
+      <td>partition</td>
+      <td>via /etc/fstab</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.1.1.1.5 - Create Separate Partition or Logical Volume for /home if Using Local Home Directories</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14440-2</td>
+      <td>The GPG Key for Red Hat Network should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via rpm</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.1.2.1.1 - Ensure that GPG Key for Red Hat Network is Installed</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14914-6</td>
+      <td>Package signature checking should be globally activated or deactivated as appropriate.</td>
+      <td>activated / deactivated</td>
+      <td>/etc/yum.conf</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.1.2.3.3 - Ensure Package Signature Checking is Globally Activated</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14813-0</td>
+      <td>Package signature checking should be activated or deactivated as appropriate for all configured repositories.</td>
+      <td>activated / deactivated</td>
+      <td>via all files in /etc/yum.repos.d</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.1.2.3.4 - Ensure Package Signature Checking is Not Disabled For Any Repos</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14931-0</td>
+      <td>All installed software packages verify or do not verify against the package database.</td>
+      <td>verify / don't verify</td>
+      <td>via rpm</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.1.3.2 - Verify Package Integrity Using RPM</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14940-1</td>
+      <td>The nosuid option should be enabled or disabled as appropriate  for /tmp.</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/fstab</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.2.1.3.1 - Add nosuid Option to /tmp</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14927-8</td>
+      <td>The noexec option should be enabled or disabled as appropriate for /tmp.</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/fstab</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.2.1.3.1 - Add noexec Option to /tmp</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14306-5</td>
+      <td>The nosuid option should be enabled or disabled for /dev/shm.</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/fstab</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.2.1.3.2 - Add nosuid Option to /dev/shm</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14703-3</td>
+      <td>The noexec option should be enabled or disabled for /dev/shm.</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/fstab</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.2.1.3.2 - Add noexec Option to /dev/shm</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14584-7</td>
+      <td>/var/tmp should be configured on an appropriate filesystem partition.</td>
+      <td>partition</td>
+      <td>via /etc/fstab</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.2.1.4 - Bind-mount /var/tmp to /tmp</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14089-7</td>
+      <td>Support for cramfs filesystems should be enabeld or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>(1) via /etc/modprobe.conf (2) via configuration file in /etc/modprobe.d (3) via MODPROBE_OPTIONS environment variable</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.2.2.5 - Disable Mounting of Uncommon Filesystem Types</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14457-6</td>
+      <td>Support for freevxfs filesystems should be enabeld or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>(1) via /etc/modprobe.conf (2) via configuration file in /etc/modprobe.d (3) via MODPROBE_OPTIONS environment variable</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.2.2.5 - Disable Mounting of Uncommon Filesystem Types</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-15087-0</td>
+      <td>Support for hfs filesystems should be enabeld or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>(1) via /etc/modprobe.conf (2) via configuration file in /etc/modprobe.d (3) via MODPROBE_OPTIONS environment variable</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.2.2.5 - Disable Mounting of Uncommon Filesystem Types</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14093-9</td>
+      <td>Support for hfsplus filesystems should be enabeld or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>(1) via /etc/modprobe.conf (2) via configuration file in /etc/modprobe.d (3) via MODPROBE_OPTIONS environment variable</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.2.2.5 - Disable Mounting of Uncommon Filesystem Types</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14853-6</td>
+      <td>Support for jffs2 filesystems should be enabeld or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>(1) via /etc/modprobe.conf (2) via configuration file in /etc/modprobe.d (3) via MODPROBE_OPTIONS environment variable</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.2.2.5 - Disable Mounting of Uncommon Filesystem Types</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14118-4</td>
+      <td>Support for squashfs filesystems should be enabeld or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>(1) via /etc/modprobe.conf (2) via configuration file in /etc/modprobe.d (3) via MODPROBE_OPTIONS environment variable</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.2.2.5 - Disable Mounting of Uncommon Filesystem Types</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14871-8</td>
+      <td>Support for udf filesystems should be enabeld or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>(1) via /etc/modprobe.conf (2) via configuration file in /etc/modprobe.d (3) via MODPROBE_OPTIONS environment variable</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.2.2.5 - Disable Mounting of Uncommon Filesystem Types</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14794-2</td>
+      <td>All world-writable directories should be owned by an appropriate user.</td>
+      <td>user</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.2.3.6 - Verify that All World-Writable Directories Have Proper Ownership</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14300-8</td>
+      <td>Password hashes are shadowed or not shadowed for all accounts in /etc/passwd as appropriate.</td>
+      <td>shadowed / not shadowed</td>
+      <td>via /etc/password</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.1.5.2 - Verify that All Account Password Hashes are Shadowed</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14675-3</td>
+      <td>NIS file inclusions should be set appropriately in the /etc/group file</td>
+      <td>allowed / not allowed</td>
+      <td>via /etc/group</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.1.8 - Remove Legacy + Entries from Password Files</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14071-5</td>
+      <td>NIS file inclusions should be set appropriately in the /etc/shadow file</td>
+      <td>allowed / not allowed</td>
+      <td>via /etc/shadow</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.1.8 - Remove Legacy + Entries from Password Files</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14701-7</td>
+      <td>The password strength parameters should require new passwords to differ from old ones by the appropriate minimum number of characters.</td>
+      <td>number of characters</td>
+      <td>via PAM</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.3.1.1 - via PAM</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14063-2</td>
+      <td>The password hashing algorithm should be configured as appropriate.</td>
+      <td>hashing algorithm</td>
+      <td>via PAM</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.3.5 - Upgrade Password Hashing Algorithm to SHA-512</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14939-3</td>
+      <td>The "password reuse" policy should meet minimum requirements.</td>
+      <td>number of passwords</td>
+      <td>via PAM</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.3.6 - Limit Password Reuse</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14340-4</td>
+      <td>Files with the setuid attribute enabled should be reviewed as appropriate to determine whether that condition is correct.</td>
+      <td>(1) set of files to review (2) description of which files should be setuid</td>
+      <td>via find</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.2.3.4b - Find Unauthorized SUID/SGID System Executables</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14970-8</td>
+      <td>Files with the setgid attribute enabled should be reviewed as appropriate to determine whether that condition is correct.</td>
+      <td>(1) set of files to review (2) description of which files should be setgid</td>
+      <td>via find</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.2.3.4a - Find Unauthorized SUID/SGID System Executables</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14957-5</td>
+      <td>The PATH variable for root includes or does not include any world-writable or group-writable directories as appropriate.</td>
+      <td>Includes / does not include</td>
+      <td>via echo $PATH</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.4.1.2 - Ensure that no dangerous directories exist in root's path</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14107-7</td>
+      <td>The default umask for all users should be set correctly in /etc/login.defs</td>
+      <td>umask</td>
+      <td>via /etc/login.def</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.4.4 - Ensure that Users Have Sensible Umask Values</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14860-1</td>
+      <td>DEPRECATED in favor of CCE-14107-7.  Was: The default umask for all users should be set correctly in /etc/login.defs</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14847-8</td>
+      <td>The default umask for all users should be set correctly in /etc/profile</td>
+      <td>umask</td>
+      <td>via /etc/profile</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.4.4 - Ensure that Users Have Sensible Umask Values</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14604-3</td>
+      <td>The gnome desktop screensaver should be enabled or disabled as appropriate as a mandatory setting for all users.</td>
+      <td>enabled / disabled</td>
+      <td>(1) via gconftool-2 (2) via /etc/gconf/gconf.xml.mandatory</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.5.6.1 - Configure GUI Screen Locking</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14023-6</td>
+      <td>The screen lock (password protection) function of the gnome desktop screensaver should be enabled or disabled as appropriate as a mandatory setting for all users.</td>
+      <td>enabled / disabled</td>
+      <td>(1) via gconftool-2 (2) via /etc/gconf/gconf.xml.mandatory</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.5.6.1 - Configure GUI Screen Locking</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14735-5</td>
+      <td>The screen blanking function of the gnome desktop screensaver should be enabled or disabled as appropriate as a mandatory setting for all users.</td>
+      <td>enabled / disabled</td>
+      <td>(1) via gconftool-2 (2) via /etc/gconf/gconf.xml.mandatory</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.5.6.1 - Configure GUI Screen Locking</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14991-4</td>
+      <td>The system includes or does not include any device files with the unlabeled SELinux type.</td>
+      <td>includes / does not include</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.4.5 - Check for Unlabeled Device Files</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-15013-6</td>
+      <td>The system should act as a network sniffer or not as appropriate.</td>
+      <td>yes / no</td>
+      <td>via /proc/net/packet</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.5.1.3 - Ensure System is Not Acting as a Network Sniffer</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14264-6</td>
+      <td>The default policy for iptables INPUT table should be set as appropriate.</td>
+      <td>ACCEPT / DROP / QUEUE /RETURN</td>
+      <td>via /etc/sysconfig/iptables</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.5.5.3.1 - Change the Default Policies</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14268-7</td>
+      <td>Disable or enable support for DCCP as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/modprobe.conf</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.5.7.1 - Disable Support for DCCP</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14132-5</td>
+      <td>Disable or enable support for SCTP as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/modprobe.conf</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.5.7.2 - Disable Support for SCTP</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14027-7</td>
+      <td>Disable or enable support for RDS as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/modprobe.conf</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.5.7.3 - Disable Support for RDS</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14911-2</td>
+      <td>Disable or enable support for TIPC as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/modprobe.conf</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.5.7.4 - Disable Support for TIPC</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-15026-8</td>
+      <td>The kernel arguments should enable or disable auditing early in the boot process as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via grub.conf</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.6.2.3 - Enable Auditing for Processes which Start Prior to the Audit Daemon</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14051-7</td>
+      <td>Auditing should be configured to record date and time modification events as appropriate.</td>
+      <td>audit enabled / audit disabled</td>
+      <td>via /etc/audit/audit.rules or auditctl</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.6.2.4.1 - Records Events that Modify Date and Time Information</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14829-6</td>
+      <td>Auditing should be configured to record user/group information modification events as appropriate.</td>
+      <td>audit enabled / audit disabled</td>
+      <td>via /etc/audit/audit.rules or auditctl</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.6.2.4.2 - Record Events that Modify User/Group Information</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14816-3</td>
+      <td>Auditing should be configured to record changes to the system network environment as appropriate.</td>
+      <td>audit enabled / audit disabled</td>
+      <td>via /etc/audit/audit.rules or auditctl</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.6.2.4.3 - Record Events that Modify the System’s Network Environment</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14821-3</td>
+      <td>Auditing should be configured to record changes to the system's mandatory access controls as appropriate.</td>
+      <td>audit enabled / audit disabled</td>
+      <td>via /etc/audit/audit.rules or auditctl</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.6.2.4.4 - Record Events that Modify the System’s Mandatory Access Controls</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14904-7</td>
+      <td>Auditing should be configured to record logon and logout events as appropriate.</td>
+      <td>audit enabled / audit disabled</td>
+      <td>via /etc/audit/audit.rules or auditctl</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.6.2.4.5 - Audit Logon and Logout Events</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14679-5</td>
+      <td>Auditing should be configured to record process and session initiation events as appropriate.</td>
+      <td>audit enabled / audit disabled</td>
+      <td>via /etc/audit/audit.rules or auditctl</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.6.2.4.6 - Audit Process and Session initiation</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14058-2</td>
+      <td>Auditing should be configured to record changes to discretionary access control permissions as appropriate.</td>
+      <td>audit enabled / audit disabled</td>
+      <td>via /etc/audit/audit.rules or auditctl</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.6.2.4.7 - Audit Discretionary Access Control Permissions for Changes</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14917-9</td>
+      <td>Auditing should be configured to record unauthorized attempts to access files as appropriate.</td>
+      <td>audit enabled / audit disabled</td>
+      <td>via /etc/audit/audit.rules or auditctl</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.6.2.4.8 - Audit for Unauthorized Attempts to Access Files</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14296-8</td>
+      <td>Auditing should be configured to record use of privileged commands as appropriate.</td>
+      <td>audit enabled / audit disabled</td>
+      <td>via /etc/audit/audit.rules or auditctl</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.6.2.4.9 - Audit for the Use of Privileged Commands</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14569-8</td>
+      <td>Auditing should be configured to record data export to media events as appropriate.</td>
+      <td>audit enabled / audit disabled</td>
+      <td>via /etc/audit/audit.rules or auditctl</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.6.2.4.10 - Audit for Exporting Data to Media</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14820-5</td>
+      <td>Auditing should be configured to record file and program deletion events as appropriate.</td>
+      <td>audit enabled / audit disabled</td>
+      <td>via /etc/audit/audit.rules or auditctl</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.6.2.4.11 - Audit for Files and Programs Deleted by the User</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14824-7</td>
+      <td>Auditing should be configured to record administrator and security personnel action events as appropriate.</td>
+      <td>audit enabled / audit disabled</td>
+      <td>via /etc/audit/audit.rules or auditctl</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.6.2.4.12 - Audit All Administrator and Security Personnel Actions</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14688-6</td>
+      <td>Auditing should be configured to record kernel module loading and unloading events as appropriate.</td>
+      <td>audit enabled / audit disabled</td>
+      <td>via /etc/audit/audit.rules or auditctl</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.6.2.4.13 - Ensure auditd Collects Information on Kernel Module Loading and Unloading</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14692-8</td>
+      <td>Auditing should be configured to make auditd configuration immutable as appropriate.</td>
+      <td>audit enabled / audit disabled</td>
+      <td>via /etc/audit/audit.rules or auditctl</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.6.2.4.14 - Make auditd configuration immutable</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14948-4</td>
+      <td>Bluetooth kernel modules should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/modprobe.conf</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 3.3.14.3 - Disable Bluetooth Kernel Modules</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14825-4</td>
+      <td>The isdn4k-utils package should installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 3.3.4 - ISDN Support (isdn)</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14054-1</td>
+      <td>Zeroconf networking should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/sysconfig/network</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 3.3.9.3 - Disable Zeroconf Networking</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14466-7</td>
+      <td>The at daemon should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 3.4.3 - Disable at service if Possible</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14061-6</td>
+      <td>The SSH 'keep alive' message count should be set to an appropriate value.</td>
+      <td>number of messages</td>
+      <td>via /etc/ssh/sshd_config</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 3.5.2.3 - Set Idle Timeout Interval for User Logins</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14716-5</td>
+      <td>Users should be allowed or not allowed to set environment options for SSH as appropriate.</td>
+      <td>allowed / not allowed</td>
+      <td>via /etc/ssh/sshd_config</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 3.5.2.9 - Do Not Allow Users to Set Environment Options</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14491-5</td>
+      <td>Appropriate ciphers should be used for SSH.</td>
+      <td>approved ciphers</td>
+      <td>via /etc/ssh/sshd_config</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 3.5.2.10 - Use Only Approved Ciphers</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14495-6</td>
+      <td>The sendmail package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 3.11.1.1 - Select Postfix as Mail Server Software</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14068-1</td>
+      <td>The postfix package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 3.11.1.1 - Select Postfix as Mail Server Software</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-15018-5</td>
+      <td>Postfix network listening should be enabled or disabled for as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via /etc/postfix/main.cf</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 3.11.2.1.1 - Disable Postfix Network Listening</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14894-0</td>
+      <td>LDAP client requires or does not require LDAP servers to use TLS for SSL communications as appropriate.</td>
+      <td>requires / does not require</td>
+      <td>via /etc/ldap.conf</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 3.12.2.2 - Conﬁgure LDAP to Use TLS for All Transactions</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14881-7</td>
+      <td>The vsftpd package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 3.15.1 - Disable vsftpd if Possible</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14075-6</td>
+      <td>Client SMB packet signing should be required or not required for smbclient as appropriate.</td>
+      <td>required / not required</td>
+      <td>via /etc/samba/smb.conf</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 3.18.2.10 - Require Client SMB Packet Signing, if using smbclient</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-15029-2</td>
+      <td>Client SMB packet signing should be required or not required for mount.cifs as appropriate.</td>
+      <td>required / not required</td>
+      <td>via /etc/fstab</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 3.18.2.11 - Require Client SMB Packet Signing, if using mount.cifs</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14081-4</td>
+      <td>The net-snmpd package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 3.20.1 - Disable SNMP Server if Possible</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-14088-9</td>
+      <td>The 'wheel' group should exist or not as appropriate</td>
+      <td>exist / not exist</td>
+      <td>via /etc/group</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.1.2 - Limit su Access to the Root Account</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-15047-4</td>
+      <td>Access to the root account via su should be restricted to the wheel group or not as appropriate.</td>
+      <td>restricted / not restricted</td>
+      <td>via /etc/pam.d/su</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.1.2 - Limit su Access to the Root Account</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-15054-0</td>
+      <td>The number of times a user is prompted to provide a new password if it fails to meet configured password strength requirements (also known as the retry value) should be set appropriately.</td>
+      <td>number of retry attempts</td>
+      <td>(1) via pam_cracklib (2) via pam_passwdqc</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.3.1.1 - Set Password Quality Requirements</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17742-8</td>
+      <td>The rsyslog package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.6.1.2.1 - Install the rsyslog Package</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17698-2</td>
+      <td>The rsyslog service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.6.1.2.2 - Ensure the rsyslog Service is Activated</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18095-0</td>
+      <td>File permissions for all rsyslog log files should be set correctly.</td>
+      <td>permissions</td>
+      <td>via chmod</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.6.1.2.4 - Confirm Existence and Permissions of Log Files</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18240-2</td>
+      <td>All rsyslog log files should be owned by the appropriate group.</td>
+      <td>group</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.6.1.2.4 - Confirm Existence and Permissions of Log Files</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17857-4</td>
+      <td>All rsyslog log files should be owned by the appropriate user.</td>
+      <td>user</td>
+      <td>via chown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.6.1.2.4 - Confirm Existence and Permissions of Log Files</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17248-6</td>
+      <td>Rsyslog logs should be sent to a remote loghost or not as appropriate.</td>
+      <td>sent / not sent</td>
+      <td>via /etc/rsyslog.conf</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.6.1.2.5 - Send Logs to a Remote Host Using Reliable Transport</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17639-6</td>
+      <td>Rsyslog should accept remote messages or not as appropriate.</td>
+      <td>accept / reject</td>
+      <td>via /etc/rsyslog.conf</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.6.1.2.6 - Enable rsyslog to Accept Remote Messages on Loghosts Only</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18031-5</td>
+      <td>The ipsec-tools package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.5.8.1.2 - Remove the ipsec-tools Package</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17250-2</td>
+      <td>The pam_ccreds package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.3.7 - Remove the pam_ccreds Package</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18151-1</td>
+      <td>The talk-server package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 3.2.6.1 - Remove the talk-server Package</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18200-6</td>
+      <td>The talk package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 3.2.6.2 - Remove the talk Package</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18244-4</td>
+      <td>The irda service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 3.3.16.1 - Disable the irda Service if Possible</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17504-2</td>
+      <td>The irda-utils package should be installed or uninstalled as appropriate.</td>
+      <td>installed / uninstalled</td>
+      <td>via yum</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 3.3.16.2 - Remove the irda-utils Package if Possible</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18037-2</td>
+      <td>The firewall should allow or reject access to the avahi service.</td>
+      <td>accept / reject</td>
+      <td>via /etc/sysconfig/iptables</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 3.7.1.2 - Remove Avahi Server iptables Firewall Exception</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18156-0</td>
+      <td>The rawdevices service should be enabled or disabled as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via chkconfig</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 3.3.17.1 - Disable rawdevices Service</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-17816-0</td>
+      <td>The libuser library "login_defs" variable should be set correctly in libuser.conf.</td>
+      <td>path to login.defs</td>
+      <td>via /etc/libuser.conf</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.1.7.1  - Ensure Libuser Uses Settings from login.defs</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18412-7</td>
+      <td>User accounts may or may not be inactivated a specified number of days after account expiration.</td>
+      <td>number of days</td>
+      <td>via /etc/default/useradd</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.3.1.9, Value: 30</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-18455-6</td>
+      <td>The IPv6 protocol should be enabled or disabed as appropriate.</td>
+      <td>enabled / disabled</td>
+      <td>via modprobe.conf</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Section: 2.5.3.1.3, Value: 1</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
