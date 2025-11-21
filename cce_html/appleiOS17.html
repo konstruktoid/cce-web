@@ -1,0 +1,2419 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>CCE Lists</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href='../css/basic.css' type='text/css' rel='stylesheet' />
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>CCE</th>
+      <th>Rule ID</th>
+      <th>Title</th>
+      <th>Discussion</th>
+      <th>Mechanism</th>
+      <th>Check</th>
+      <th>Check Result</th>
+      <th>Fix</th>
+      <th>800-53r5</th>
+      <th>800-171</th>
+      <th>SRG</th>
+      <th>SFR</th>
+      <th>DISA STIG</th>
+      <th>CIS Benchmark</th>
+      <th>CIS v8</th>
+      <th>CMMC</th>
+      <th>indigo</th>
+      <th>CCI</th>
+      <th>Severity</th>
+      <th>Modified Rule</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CCE-93401-8</td>
+      <td>icloud_backup_disabled</td>
+      <td>Ensure iCloud Backup is set to Disabled</td>
+      <td>iCloud backup _MUST_ be disabled.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowCloudBackup&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>SC-4 AC-20 AC-20(1) CM-7 CM-7(1) SC-7(10)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_MOF_EXT.1.2 #40</td>
+      <td>AIOS-17-003000</td>
+      <td>3.2.1.4 (level 1 - Institutionally-Owned Devices)</td>
+      <td>2.3</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.4 - iCloud restrictions) ANNEX K</td>
+      <td>CCI-001090</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93407-5</td>
+      <td>icloud_drive_disable</td>
+      <td>Ensure Allow iCloud Documents and Data is set to Disabled</td>
+      <td>Institutionally owned devices _MUST_ not sync data through iCloud.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowCloudDocumentSync&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-20 AC-20(1) CM-7 CM-7(1) SC-7(10)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_MOF_EXT.1.2 #40</td>
+      <td>AIOS-17-003200</td>
+      <td>3.2.1.5 (level 1 - Institutionally-Owned Devices)</td>
+      <td>2.3</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.4 - iCloud restrictions) ANNEX K</td>
+      <td>CCI-000097 CCI-000366 CCI-000370</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93467-9</td>
+      <td>icloud_enterprisebook_sync</td>
+      <td>Preventing synchronisation of enterprise book meta data.</td>
+      <td>The iOS device _MUST_ be configured to prevent the synchronization of enterprise book meta data to Apple iCloud servers.  Apple's iCloud service does not provide an organization with enough control over the storage and access of data and, therefore, password management and synchronization _MUST_ be controlled by an organization approved service.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowEnterpriseBookMetadataSync&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-20 AC-20(1) CM-7 CM-7(1) SC-7(10)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93402-6</td>
+      <td>icloud_keychain_disable</td>
+      <td>Disable iCloud Keychain Sync</td>
+      <td>The iOS system's ability to automatically synchronize a user's passwords to their iCloud account _MUST_ be disabled.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowCloudKeychainSync&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-20 AC-20(1) CM-7 CM-7(1) SC-7(10)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_MOF_EXT.1.2 #40</td>
+      <td>AIOS-17-003300</td>
+      <td>3.2.1.6 (level 1 - Institutionally-Owned Devices)</td>
+      <td>4.1 4.8 15.3</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.4 - iCloud restrictions) ANNEX K</td>
+      <td>CCI-000097 CCI-000366 CCI-000370</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93403-4</td>
+      <td>icloud_managed_apps_store_data_disabled</td>
+      <td>Ensure Managed Apps Storing Data in iCloud is Set to Disabled</td>
+      <td>Managed Apps _MUST_ not store data in iCloud.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowManagedAppsCloudSync&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-20 AC-20(1) CM-7 CM-7(1) SC-7(10)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_MOF_EXT.1.2 #40</td>
+      <td>AIOS-17-003600 AIOS-17-703600</td>
+      <td>2.2.1.3 (level 1 - End-User Owned Devices)3.2.1.7 (level 1 - Institutionally-Owned Devices)</td>
+      <td>2.3</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.4 - iCloud restrictions) ANNEX K</td>
+      <td>CCI-000097 CCI-000366 CCI-000370</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93404-2</td>
+      <td>icloud_photo_stream_disable</td>
+      <td>Ensure Photo Stream is set to Disabled</td>
+      <td>If a user is able to configure the security setting, the user could inadvertently or maliciously set it to a value that poses unacceptable risk to DoD information systems. An adversary could exploit vulnerabilities created by the weaker configuration to compromise DoD sensitive information.</td>
+      <td>Manual</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowPhotoStream&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-20 AC-20(1) CM-7 CM-7(1) SC-7(10)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_MOF_EXT.1.2 #40</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.4 - iCloud restrictions) ANNEX K</td>
+      <td>CCI-000097 CCI-000366 CCI-000370</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93405-9</td>
+      <td>icloud_photos_disable</td>
+      <td>Disable iCloud Photo Library</td>
+      <td>The iOS built-in Photos.app connection to Apple's iCloud service _MUST_ be disabled.  Apple's iCloud service does not provide an organization with enough control over the storage and access of data and, therefore, automated photo synchronization _MUST_ be controlled by an organization approved service.</td>
+      <td>Manual</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowCloudPhotoLibrary&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-20 AC-20(1) CM-7 CM-7(1) SC-7(10)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-003450</td>
+      <td>NaN</td>
+      <td>4.1 4.8 15.3</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.4 - iCloud restrictions) ANNEX K</td>
+      <td>CCI-000381</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93406-7</td>
+      <td>icloud_shared_photo_stream_disable</td>
+      <td>Ensure Shared Photo Stream is set to Disabled</td>
+      <td>If a user is able to configure the security setting, the user could inadvertently or maliciously set it to a value that poses unacceptable risk to DoD information systems. An adversary could exploit vulnerabilities created by the weaker configuration to compromise DoD sensitive information.</td>
+      <td>Manual</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowSharedStream&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-20 AC-20(1) CM-7 CM-7(1) SC-7(10)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_MOF_EXT.1.2 #40</td>
+      <td>AIOS-17-003500</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.4 - iCloud restrictions) ANNEX K</td>
+      <td>CCI-000097 CCI-000366 CCI-000370</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93468-7</td>
+      <td>os_account_modification_disable</td>
+      <td>Disallow account modification.</td>
+      <td>The iOS devices _MUST_ be configured to prevent the untrained user to change account information.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowAccountModification&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-20 AC-20(1) CM-7 CM-7(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93408-3</td>
+      <td>os_airdrop_disable</td>
+      <td>Ensure AirDrop is set to Disabled</td>
+      <td>AirDrop _MUST_ be disabled to prevent file transfers to or from unauthorized devices.  AirDrop allows users to share and receive files from other nearby Apple devices.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowAirDrop&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-3 AC-20 CM-7 CM-7(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1/WLAN FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-010200 AIOS-17-012500</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>CCI-002536 CCI-000366 CCI-000097 CCI-000370</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93409-1</td>
+      <td>os_airdrop_unmanaged_destination_enable</td>
+      <td>Ensure Treat AirDrop as unmanaged destination is set to Enabled</td>
+      <td>AirDrop _MUST_ be treated as an unmanaged destination.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;forceAirDropUnmanaged&lt;/key&gt; &lt;true/&gt; ----</td>
+      <td>AC-3 AC-20 CM-7 CM-7(1) MP-2 SC-7(10)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-011500 AIOS-17-711500</td>
+      <td>2.2.1.10 (level 1 - End-User Owned Devices)3.2.1.23 (level 1 - Institutionally-Owned Devices)</td>
+      <td>3.3</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.5.5 - AirDrop) ANNEX K</td>
+      <td>CCI-000366 CCI-002008</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93410-9</td>
+      <td>os_airplay_password_require</td>
+      <td>Require the User to Enter a Password when Connecting to an AirPlay-enabled device for the First Time.</td>
+      <td>When a user is allowed to use AirPlay without a password, it may mistakenly associate the iPhone and iPad with an AirPlay-enabled device other than the one intended (i.e., by choosing the wrong one from the AirPlay list displayed). This creates the potential for someone in control of a mistakenly associated device to obtain DoD sensitive information without authorization. Requiring a password before such an association mitigates this risk. Passwords do not require any administration and are not required to comply with any complexity requirements.</td>
+      <td>Manual</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;forceAirPlayOutgoingRequestsPairingPassword&lt;/key&gt; &lt;true/&gt; ----</td>
+      <td>IA-3</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #40</td>
+      <td>AIOS-17-010900 AIOS-17-710900</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>CCI-000063</td>
+      <td>low</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93469-5</td>
+      <td>os_airprint_disable</td>
+      <td>Disable AirPrint</td>
+      <td>The iOS built-in AirPrint capability _MUST_ be disabled.  The service AirPrint _MUST_ be disabled to prevent intendedly printing content on unknown printers and leaking data.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowAirPrint&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93470-3</td>
+      <td>os_airprint_force_trusted_TLS</td>
+      <td>Requires trusted certificates for TLS printing communication</td>
+      <td>The service AirPrint _MUST_ be configured to require trusted certificates for TLS printing communication.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;forceAirPrintTrustedTLSRequirement&lt;/key&gt; &lt;true/&gt; ----</td>
+      <td>AC-17(02)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93411-7</td>
+      <td>os_allow_contacts_read_managed_sources_unmanaged_destinations_disable</td>
+      <td>Ensure Managed Apps Cannot Read Unmanaged Contact Accounts</td>
+      <td>Managed Apps _MUST_ not be allowed to read contacts from unamanged contact destinations.</td>
+      <td>Manual</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowUnmanagedToReadManagedContacts&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-3 MP-2 SC-7(10) SC-39</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #42 FDP_ACF_EXT.1.2</td>
+      <td>AIOS-17-012400 AIOS-17-712400</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.6.3 - Contacts) ANNEX K</td>
+      <td>CCI-000366 CCI-000051 CCI-000370</td>
+      <td>low</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93412-5</td>
+      <td>os_allow_contacts_write_managed_sources_unmanaged_destinations_disable</td>
+      <td>Ensure Managed Apps Cannot Write to Unmanaged Contact Accounts</td>
+      <td>Managed Apps _MUST_ not be allowed to write contacts to unamanged contact destinations.</td>
+      <td>Manual</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowManagedToWriteUnmanagedContacts&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-3 MP-2 SC-7(10) SC-39</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #42 FDP_ACF_EXT.1.2</td>
+      <td>AIOS-17-012300 AIOS-17-712300</td>
+      <td>NaN</td>
+      <td>3.3</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.6.3 - Contacts) ANNEX K</td>
+      <td>CCI-000366 CCI-000051 CCI-000370</td>
+      <td>low</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93413-3</td>
+      <td>os_allow_documents_managed_sources_unmanaged_destinations_disable</td>
+      <td>Ensure Allow documents from managed sources in unmanaged destinations is set to Disabled</td>
+      <td>Documents from managed sources _MUST_ not be allowed in unmanaged destinations.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowOpenFromManagedToUnmanaged&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-3 MP-2 SC-7(10) SC-39</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #42 FDP_ACF_EXT.1.2</td>
+      <td>AIOS-17-009700 AIOS-17-709700</td>
+      <td>2.2.1.8 (level 1 - End-User Owned Devices)3.2.1.21 (level 1 - Institutionally-Owned Devices)</td>
+      <td>3.3</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.6.3 - Contacts) ANNEX K</td>
+      <td>CCI-002233 CCI-002530</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93414-1</td>
+      <td>os_allow_documents_unmanaged_sources_managed_destinations_disable</td>
+      <td>Ensure Allow documents from unmanaged sources in managed destinations is set to Disabled</td>
+      <td>Documents from unmanaged sources _MUST_ not be allowed in managed destinations.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowOpenFromUnmanagedToManaged&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-3 MP-2 SC-7(10) SC-39</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>AIOS-17-714900</td>
+      <td>2.2.1.9 (level 1 - End-User Owned Devices)3.2.1.22 (level 1 - Institutionally-Owned Devices)</td>
+      <td>3.3</td>
+      <td>NaN</td>
+      <td>ANNEX D (section 5.8.3 - Institutional procurement) ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93415-8</td>
+      <td>os_apple_watch_pairing_disable</td>
+      <td>Ensure Apple Watch Pairing is Disabled</td>
+      <td>Pairing an Apple Watch _MUST_ be disabled.  NOTE: Any currently paired Apple Watch is unpaired and the watch's content is erased.</td>
+      <td>Manual</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowPairedWatch&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>CM-7 CM-7(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-012600</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>CCI-000366 CCI-000097 CCI-000370</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93416-6</td>
+      <td>os_apple_watch_wrist_detection_enable</td>
+      <td>Ensure Force Apple Watch wrist detection is set to Enabled</td>
+      <td>Wrist detection _MUST_ be enabled for paired Apple Watches.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;forceWatchWristDetection&lt;/key&gt; &lt;true/&gt; ----</td>
+      <td>AC-3 CM-7 CM-7(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-011800 AIOS-17-711800</td>
+      <td>2.2.1.13 (level 1 - End-User Owned Devices)3.2.1.27 (level 1 - Institutionally-Owned Devices)</td>
+      <td>3.3</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>CCI-000381</td>
+      <td>low</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93417-4</td>
+      <td>os_application_allow_list</td>
+      <td>Define Allowed Applications</td>
+      <td>Requiring all authorized applications to be in an application allow list prevents the execution of any applications (e.g., unauthorized, malicious) that are not part of the allow list. Failure to configure an application allow list properly could allow unauthorized and malicious applications to be downloaded, installed, and executed on the mobile device, causing a compromise of DoD data accessible by these applications. Applications with the listed characteristics have features that can cause the compromise of sensitive DoD data or have features with no known application in the DoD environment.  Application note: The application allow list, in addition to controlling the installation of applications on the MDM, must control user access/execution of all core and preinstalled applications, or the MDM must provide an alternate method of restricting user access/execution to core and preinstalled applications.  Core application: Any application integrated into the OS by the OS or MDM vendors.  Preinstalled application: Additional noncore applications included in the OS build by the OS vendor, MDM vendor, or wireless carrier.  NOTE: See rule YAML file for implementation comments.</td>
+      <td>Manual</td>
+      <td></td>
+      <td>NaN</td>
+      <td>This is implemented by a Configuration Profile</td>
+      <td>CM-7 CM-7(5)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #8b</td>
+      <td>AIOS-17-007400 AIOS-17-707400</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.8 - App-Installation)</td>
+      <td>CCI-000366</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93471-1</td>
+      <td>os_application_deny_list</td>
+      <td>Apps not allowed on the device</td>
+      <td>In case specific apps are allowed to be used on the device a specific list _SHOULD_VALUEONDEMAND_ needs to be defined by the MDM. These apps will not open on the device.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>This is implemented by a Configuration Profile.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.8 - App-Installation) ANNEX N</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93418-2</td>
+      <td>os_authentication_password_autofill_enable</td>
+      <td>Ensure Require Touch ID / Face ID authentication before AutoFill is set to Enabled</td>
+      <td>Re-authentication _MUST_ be enabled at each Autofill operation.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;forceAuthenticationBeforeAutoFill&lt;/key&gt; &lt;true/&gt; ----</td>
+      <td>AC-3 IA-11</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>3.2.1.26 (level 1 - Institutionally-Owned Devices)</td>
+      <td>3.3</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93472-9</td>
+      <td>os_auto_correction_disable</td>
+      <td>Disable Auto Correction</td>
+      <td>The device _MUST_ be configured not to use the auto correction feature of the iOS.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowAutoCorrection&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93419-0</td>
+      <td>os_auto_unlock_disable</td>
+      <td>Prevent Apple Watch from Unlocking a Device</td>
+      <td>Apple Watches are not an approved authenticator and their use _MUST_ be disabled.  Disabling Apple watches is a necessary step to ensuring that the information system retains a session lock until the user reestablishes access using an authorized identification and authentication procedures.</td>
+      <td>Manual</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowAutoUnlock&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-11</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_MOF_EXT.1.2 #47</td>
+      <td>AIOS-17-014800</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>CCI-000767 CCI-002235</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93473-7</td>
+      <td>os_chat_disable</td>
+      <td>Prevent the usage of iMessage</td>
+      <td>The iOS device _MUST_ be configured to disable iMessage on the device to prevent receiving malicious content via iMessage.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowChat&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-20 CM-7 CM-7(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93474-5</td>
+      <td>os_definition_lookup_disable</td>
+      <td>Disable Definition Lookup on the device.</td>
+      <td>The iOS device _MUST_ be configured not use the spell check feature of the OS.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowDefinitionLookup&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-20 AC-20(1) CM-7 CM-7(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93475-2</td>
+      <td>os_device_name_change_disable</td>
+      <td>Disable device name changes</td>
+      <td>The iOS device _MUST_ be configured to disable device name changes.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowDeviceNameModification&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93420-8</td>
+      <td>os_diagnostics_reports_disable</td>
+      <td>Disable Sending Diagnostic and Usage Data to Apple</td>
+      <td>The ability to submit diagnostic data to Apple _MUST_ be disabled.  The information system _MUST_ be configured to provide only essential capabilities. Disabling the submission of diagnostic and usage information will mitigate the risk of unwanted data being sent to Apple.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowDiagnosticSubmission&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-20 SC-7(10) SI-11</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47a</td>
+      <td>AIOS-17-013400 AIOS-17-713400</td>
+      <td>2.2.1.12 (level 1 - End-User Owned Devices)3.2.1.25 (level 1 - Institutionally-Owned Devices)</td>
+      <td>4.8</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>CCI-001199</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93476-0</td>
+      <td>os_diagnostics_reports_modification_disable</td>
+      <td>Disable changing Sending Diagnostic and Usage Data to Apple</td>
+      <td>The ability to change the setting to submit diagnostic data to Apple _MUST_ be disabled.  The information system _MUST_ be configured to provide only essential capabilities. Disabling the submission of diagnostic and usage information will mitigate the risk of unwanted data being sent to Apple.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowDiagnosticSubmissionModification&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>SI-11 AC-20 SC-7(10)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>high</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93463-8</td>
+      <td>os_disallow_enterprise_app_trust</td>
+      <td>Disallow Apps to be Installed from Unauthorized Sources</td>
+      <td>Apps _MUST_ be installed from authorized application repositories. Disallowing enterprise app trust prevents apps from being provisioned by universal provisioning profiles.</td>
+      <td>Manual</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowEnterpriseAppTrust&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>CM-11</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #8a</td>
+      <td>AIOS-17-007000 AIOS-17-707000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX D - (Section 5.8.5)</td>
+      <td>CCI-000366</td>
+      <td>low</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93421-6</td>
+      <td>os_enterprise_books_disable</td>
+      <td>Ensure Backup of Enterprise Books is set to Disabled</td>
+      <td>If a user is able to configure the security setting, the user could inadvertently or maliciously set it to a value that poses unacceptable risk to DoD information systems. An adversary could exploit vulnerabilities created by the weaker configuration to compromise DoD sensitive information.</td>
+      <td>Manual</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowEnterpriseBookBackup&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>CM-6 b</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_MOF_EXT.1.2 #40</td>
+      <td>AIOS-17-003700 AIOS-17-703700</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>CCI-000366 CCI-002110</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93422-4</td>
+      <td>os_erase_contents_and_settings_disable</td>
+      <td>Ensure Allow Erase All Content and Settings is set to Disabled</td>
+      <td>Erase all contents and settings _MUST_ be disabled on institutionally owned iOS devices.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowEraseContentAndSettings&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>CM-6 CM-7 CM-7(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>3.2.1.12 (level 1 - Institutionally-Owned Devices)</td>
+      <td>4.1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93477-8</td>
+      <td>os_exchange_SMIME_encryption_certificate_overwirte_disable</td>
+      <td>Disable changing the S/MIME encryption settings.</td>
+      <td>The iOS device needs some specific configurations for the Exchange setup to meet the minimum requirements.  The usage of S/MIME encryption _MUST_ be configured to set mail signing as the default.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.mail.managed) payload type:  [source,xml] ---- &lt;key&gt;SMIMEEncryptionCertificateUUIDUserOverrideable&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.6.1 - Mail)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93478-6</td>
+      <td>os_exchange_SMIME_encryption_default_certificate_overwrite_enable</td>
+      <td>Enable selecting the appropriate S/MIME encryption certificate.</td>
+      <td>The iOS device needs some specific configurations for the Exchange setup to meet the minimum requirements.  The user _MUST_ be enabled to select the appropriate signing identity.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.mail.managed) payload type:  [source,xml] ---- &lt;key&gt;SMIMEEncryptByDefaultUserOverrideable&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.6.1 - Mail)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93479-4</td>
+      <td>os_exchange_SMIME_encryption_enforce</td>
+      <td>Setting S/MIME encrytion as default.</td>
+      <td>The iOS device needs some specific configurations for the Exchange setup to meet the minimum requirements.  The usage of S/MIME encryption _MUST_ be configured to set mail signing as the default.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.eas.account) payload type:  [source,xml] ---- &lt;key&gt;SMIMEEncryptByDefault&lt;/key&gt; &lt;true/&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.6.1 - Mail)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93480-2</td>
+      <td>os_exchange_SMIME_encryption_per_message_disable</td>
+      <td>Disable encryption selection option per mail.</td>
+      <td>The iOS device needs some specific configurations for the Exchange setup to meet the minimum requirements.   The user _MUST_ not be enabled to have the option to decide wether to encrypt a mail communication. Encryption _MUST_ be the default.</td>
+      <td>Manual</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.mail.managed) payload type:  [source,xml] ---- &lt;key&gt;SMIMEEnableEncryptionPerMessageSwitch&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.6.1 - Mail)</td>
+      <td>NaN</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93481-0</td>
+      <td>os_exchange_SMIME_signing_certificate_overwirte_disable</td>
+      <td>Disable changing the S/MIME signing settings.</td>
+      <td>The iOS device needs some specific configurations for the Exchange setup to meet the minimum requirements.  The option for a user to overwrite the of S/MIME configuration _MUST_ prevented.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.mail.managed) payload type:  [source,xml] ---- &lt;key&gt;SMIMESigningCertificateUUIDUserOverrideable&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.6.1 - Mail)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93482-8</td>
+      <td>os_exchange_SMIME_signing_enabled</td>
+      <td>Enable S/MIME signing of mails.</td>
+      <td>The iOS device needs some specific configurations for the Exchange setup to meet the minimum requirements.   The usage of S/MIME signing _MUST_ be configured to set mail signing as the default.</td>
+      <td>Configuration Profile</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.mail.managed) payload type:  [source,xml] ---- &lt;key&gt;SMIMESigningEnabled&lt;/key&gt; &lt;true/&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.6.1 - Mail)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93483-6</td>
+      <td>os_exchange_SMIME_signing_overwrite_disable</td>
+      <td>Disable changing the S/MIME signing settings.</td>
+      <td>The iOS device needs some specific configurations for the Exchange setup to meet the minimum requirements.   The option for a user to overwrite the of S/MIME configuration _MUST_ prevented.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.mail.managed) payload type:  [source,xml] ---- &lt;key&gt;SMIMESigningUserOverrideable&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.6.1 - Mail)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93484-4</td>
+      <td>os_exchange_mail_recents_sync_disable</td>
+      <td>Prevent synching of recent recipients.</td>
+      <td>The iOS device needs some specific configurations for the Exchange setup to meet the minimum requirements.   The synchronization of recent addresses _MUST_ be prevented not to synchronize sensitive addresses locally to the device.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.mail.managed) payload type:  [source,xml] ---- &lt;key&gt;disableMailRecentsSyncing&lt;/key&gt; &lt;true/&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.6.1 - Mail)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93485-1</td>
+      <td>os_exchange_peraccountVPN</td>
+      <td>Enforce per account VPN for managed Mail accounts.</td>
+      <td>The iOS device needs some specific configurations for the Exchange setup to meet the minimum requirements.   When leveraging per account VPN configurations mail, calendar and contacts need to be configured to leverage the specific VPNUUID in addition.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.mail.managed) payload type:  [source,xml] ---- &lt;key&gt;VPNUUID&lt;/key&gt; &lt;string&gt;VPNUUID&lt;/string&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.6.1 - Mail)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93486-9</td>
+      <td>os_exchange_prevent_move_enforce</td>
+      <td>Prevent move manged mails to another account.</td>
+      <td>The iOS device needs some specific configurations for the Exchange setup to meet the minimum requirements.  The setting, prevent moving to another account _MUST_ be configured to prevent data leakage.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.mail.managed) payload type:  [source,xml] ---- &lt;key&gt;PreventMove&lt;/key&gt; &lt;true/&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.6.1 - Mail)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93423-2</td>
+      <td>os_files_network_drive_access_disable</td>
+      <td>Ensure Allow network drive access in Files app is set to Disabled</td>
+      <td>Network drive acces in Files app _MUST_ be disabled.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowFilesNetworkDriveAccess&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-20(2)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-014300</td>
+      <td>3.2.1.9 (level 2 - Institutionally-Owned Devices)</td>
+      <td>1.2</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>CCI-000366 CCI-000097 CCI-000370</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93424-0</td>
+      <td>os_files_usb_drive_access_disable</td>
+      <td>Ensure Allow USB drive access in Files app is set to Disabled</td>
+      <td>USB drive acces in Files app _MUST_ be disabled.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowFilesUSBDriveAccess&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-20(2)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-013300</td>
+      <td>3.2.1.8 (level 2 - Institutionally-Owned Devices)</td>
+      <td>1.2</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>CCI-000366 CCI-000097 CCI-000370</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93425-7</td>
+      <td>os_find_my_friends_disable</td>
+      <td>Disable Find My Friends Service</td>
+      <td>The Find My Friends service _MUST_ be disabled.  Sharing the location of a device may be an violation to an organization and potentially put users at risk.</td>
+      <td>Manual</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowFindMyFriends&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-20 CM-7 CM-7(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-013100</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>CCI-000366 CCI-000097 CCI-000370</td>
+      <td>low</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93426-5</td>
+      <td>os_force_date_and_time_enable</td>
+      <td>Ensure Force automatic date and time is set to Enabled</td>
+      <td>Automatic date and time _MUST_ be enabled.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;forceAutomaticDateAndTime&lt;/key&gt; &lt;true/&gt; ----</td>
+      <td>AU-12(1) SC-45(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2.2.1.7 (level 1 - End-User Owned Devices)3.2.1.17 (level 1 - Institutionally-Owned Devices)</td>
+      <td>8.4</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93427-3</td>
+      <td>os_force_encrypted_backups_enable</td>
+      <td>Ensure Force Encrypted Backups is Enabled</td>
+      <td>iOS and iPadOS backups _MUST_ be encrypted.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;forceEncryptedBackup&lt;/key&gt; &lt;true/&gt; ----</td>
+      <td>CM-7 CM-7(1) CP-09(8) SC-28</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-010700 AIOS-17-710700</td>
+      <td>2.2.1.4 (level 1 - End-User Owned Devices)3.2.1.10 (level 1 - Institutionally-Owned Devices)</td>
+      <td>11.3</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.3 - Description of security/key management) ANNEX K</td>
+      <td>CCI-000366 CCI-000370 CCI-000381</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93428-1</td>
+      <td>os_handoff_disable</td>
+      <td>Disable Handoff</td>
+      <td>Handoff _MUST_ be disabled.   Handoff allows you to continue working on a document or project when the user switches from one Apple device to another. Disabling Handoff prevents data transfers to unauthorized devices.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowActivityContinuation&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-3 AC-20 CM-7 CM-7(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-010800</td>
+      <td>2.2.1.11 (level 2 - End-User Owned Devices)3.2.1.24 (level 2 - Institutionally-Owned Devices)</td>
+      <td>3.3</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>CCI-000366 CCI-000370 CCI-000381</td>
+      <td>low</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93429-9</td>
+      <td>os_install_configuration_profile_disable</td>
+      <td>Ensure Allow Installing Configuration Profiles is Set to Disabled</td>
+      <td>Configuration profiles _MUST_ be installed via an organization's MDM.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowUIConfigurationProfileInstallation&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>CM-6 CM-7 CM-7(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>3.2.1.15 (level 1 - Institutionally-Owned Devices)</td>
+      <td>4.1</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.6.1 - Mail)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93430-7</td>
+      <td>os_install_vpn_configuration_disable</td>
+      <td>Ensure Allow adding VPN configurations is set to Disabled</td>
+      <td>VPN configurations _MUST_ be installed via an organization's MDM.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowVPNCreation&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-17 AC-17(1) AC-17(3)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #3</td>
+      <td>AIOS-17-001000 AIOS-17-701000</td>
+      <td>3.2.1.16 (level 1 - Institutionally-Owned Devices)</td>
+      <td>12.7</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.10.3 - Manual VPN)</td>
+      <td>CCI-000366 CCI-000370 CCI-000066</td>
+      <td>low</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93466-1</td>
+      <td>os_iphone_widgets_on_mac_disable</td>
+      <td>Disable use of iPhone widgets on Mac</td>
+      <td>iPhone widgets on Mac _MUST_ be disabled.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowiPhoneWidgetsOnMac&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>CM-7 CM-7(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #8b</td>
+      <td>AIOS-17-010850</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>CCI-000366</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93431-5</td>
+      <td>os_limit_ad_tracking_enable</td>
+      <td>Enable Limit Ad Tracking</td>
+      <td>Ad tracking and targeted ads _MUST_ be disabled.  The information system _MUST_ be configured to provide only essential capabilities. Disabling ad tracking ensures that applications and advertisers are unable to track users' interests and deliver targeted advertisements.</td>
+      <td>Manual</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;forceLimitAdTracking&lt;/key&gt; &lt;true/&gt; ----</td>
+      <td>AC-20 CM-7 CM-7(1) SC-7(10)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-010500</td>
+      <td>NaN</td>
+      <td>4.8</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>CCI-000366 CCI-000370 CCI-001199</td>
+      <td>low</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93487-7</td>
+      <td>os_live_text_disable</td>
+      <td>Disable Live Text</td>
+      <td>The user _MUST_ manually disable Settings/General/Language and Region/Live-Text.</td>
+      <td>Manual</td>
+      <td></td>
+      <td>NaN</td>
+      <td>This is implemented manually by the user.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93488-5</td>
+      <td>os_mail_block_remote_content</td>
+      <td>Block remote content</td>
+      <td>The user _MUST_ manually block remote content in Settings/Mail/Privacy/Block Remote Content.</td>
+      <td>Manual</td>
+      <td></td>
+      <td>NaN</td>
+      <td>This is implemented manually by the user.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93432-3</td>
+      <td>os_mail_maildrop_disable</td>
+      <td>Ensure Allow Mail Drop is set to Disabled</td>
+      <td>Mail Drop _MUST_ be disabled.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.mail.managed) payload type:  [source,xml] ---- &lt;key&gt;allowMailDrop&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-3 AC-20 CM-7 CM-7(1) SC-07(10)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-011000</td>
+      <td>2.7.2 (level 2 - End-User Owned Devices)3.7.2 (level 2 - Institutionally-Owned Devices)</td>
+      <td>3.3</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.6.1 - Mail)</td>
+      <td>CCI-000366 CCI-000370 CCI-002314</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93433-1</td>
+      <td>os_mail_move_messages_disable</td>
+      <td>Ensure Allow user to move messages from this account is set to Disabled</td>
+      <td>Mail from institutionally configured mail accounts _MUST_ not be allowed to move to personaly mail accounts.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.mail.managed) payload type:  [source,xml] ---- &lt;key&gt;PreventMove&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-21 CM-7 CM-7(1) SC-4 SC-07(10)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-011400 AIOS-17-711400</td>
+      <td>2.7.1 (level 1 - End-User Owned Devices)3.7.1 (level 1 - Institutionally-Owned Devices)</td>
+      <td>3.3</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.6.1 - Mail)</td>
+      <td>CCI-000366 CCI-000370 CCI-000764</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93489-3</td>
+      <td>os_marketplace_prevent</td>
+      <td>Prevent 3rd party marketplaces</td>
+      <td>The iOS device _MUST_ be configured to prevent 3rd party market places to be installed.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowMarketplaceAppInstallation&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>CM-11</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93434-9</td>
+      <td>os_modify_cellular_data_app_settings_disable</td>
+      <td>Ensure Allow modifying cellular data app settings is set to Disabled</td>
+      <td>The ability to modify cellular data app settings _MUST_ be disabled.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowAppCellularDataModification&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>CM-7 CM-7(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>3.2.1.18 (level 2 - Institutionally-Owned Devices)</td>
+      <td>4.1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93490-1</td>
+      <td>os_network_known_only</td>
+      <td>Only allow known networks</td>
+      <td>The iOS device _MUST_ be configured to only allow known networks in case only trustworthy networks can be used. This can have a limitation on connectivity especially when devices are used in area with low or no network connectivity.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>{'string': 'true'}</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;forceWiFiToAllowedNetworksOnly&lt;/key&gt; &lt;true/&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.7 - Interfaces)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93435-6</td>
+      <td>os_new_device_proximity_disable</td>
+      <td>Ensure Allow setting up new nearby devices is set to Disabled</td>
+      <td>The setting up of new nearby devices _MUST_ be disabled.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowProximitySetupToNewDevice&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>CM-6 CM-7 CM-7(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-012800</td>
+      <td>3.2.1.28 (level 1 - Institutionally-Owned Devices)</td>
+      <td>3.13</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>CCI-000366 CCI-000097 CCI-000370</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93436-4</td>
+      <td>os_on_device_dictation_enforce</td>
+      <td>Ensure On Device Dictation is Enforced</td>
+      <td>The device _MUST_ be configured for on device dictation.  By enforcing on device dictation this will mitigate the risk of unwanted data being sent to Apple.</td>
+      <td>Manual</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;forceOnDeviceOnlyDictation&lt;/key&gt; &lt;true/&gt; ----</td>
+      <td>SI-11 AC-20 SC-7(10)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-014400</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>CCI-000366 CCI-000097 CCI-000370</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93437-2</td>
+      <td>os_on_device_translation_enforce</td>
+      <td>Ensure On Device Translation is Enforced</td>
+      <td>The device _MUST_ be configured for on device translation.  By enforcing on device translation this will mitigate the risk of unwanted data being sent to Apple.</td>
+      <td>Manual</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;forceOnDeviceOnlyTranslation&lt;/key&gt; &lt;true/&gt; ----</td>
+      <td>SI-11 AC-20 SC-7(10)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-014500</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>CCI-000366 CCI-000097 CCI-000370</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93438-0</td>
+      <td>os_pairing_non_configurator_hosts_disable</td>
+      <td>Ensure Allow pairing with non-Configurator hosts is set to Disabled</td>
+      <td>Host pairing with a non-Configurator host _MUST_ be disabled.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowHostPairing&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>CM-6 CM-7 CM-7(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>3.2.1.20 (level 2 - Institutionally-Owned Devices)</td>
+      <td>4.8</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93439-8</td>
+      <td>os_password_autofill_disable</td>
+      <td>Disable Password Autofill</td>
+      <td>Password Autofill _MUST_ be disabled.   iOS allows users to save passwords and use the Password Autofill feature in Safari and compatible apps. To protect against malicious users gaining access to the device, this feature _MUST_ be disabled to prevent users from being prompted to save passwords in applications.</td>
+      <td>Manual</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowPasswordAutoFill&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>IA-5(13) CM-7 CM-7(1) IA-11 IA-5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-012700</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>CCI-000366 CCI-000097 CCI-000370</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93440-6</td>
+      <td>os_password_proximity_disable</td>
+      <td>Disable Proximity Based Password Sharing Requests</td>
+      <td>Proximity based password sharing requests _MUST_ be disabled.   The default behavior of iOS is to allow users to request passwords from other known devices (macOS and iOS). This feature _MUST_ be disabled to prevent passwords from being shared.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowPasswordProximityRequests&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>IA-5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-012900</td>
+      <td>3.2.1.29 (level 1 - Institutionally-Owned Devices)</td>
+      <td>13.5</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>CCI-000366 CCI-000097 CCI-000370</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93441-4</td>
+      <td>os_password_sharing_disable</td>
+      <td>Disable Password Sharing</td>
+      <td>Password Sharing _MUST_ be disabled.   The default behavior of iOS/iPadOS is to allow users to share a password over Airdrop between other macOS and iOS devices. This feature _MUST_ be disabled to prevent passwords from being shared.</td>
+      <td>Manual</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowPasswordSharing&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>IA-5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-013000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>CCI-000366 CCI-000097 CCI-000370</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93442-2</td>
+      <td>os_personalized_advertising_disable</td>
+      <td>Disable Personalized Advertising</td>
+      <td>Ad tracking and targeted ads _MUST_ be disabled.  The information system _MUST_ be configured to provide only essential capabilities. Disabling ad tracking ensures that applications and advertisers are unable to track users' interests and deliver targeted advertisements.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowApplePersonalizedAdvertising&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-20 CM-7 CM-7(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2.2.1.5 (level 1 - End-User Owned Devices)3.2.1.11 (level 1 - Institutionally-Owned Devices)</td>
+      <td>4.8</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93491-9</td>
+      <td>os_predictive_keyboard_disable</td>
+      <td>Disable the use of predictable keyboards</td>
+      <td>The device _MUST_ be configured that the usage of the predictable keyboard feature is not possible.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowPredictiveKeyboard&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93492-7</td>
+      <td>os_rapid_security_responses_install_enable</td>
+      <td>Allow to install Rapid Security Responses</td>
+      <td>The iOS device _MUST_ be configured to allow the user to install Rapid Security Responses to enable the user to be up to date with security fixes.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowRapidSecurityResponseInstallation&lt;/key&gt; &lt;true/&gt; ----</td>
+      <td>SI-2 SI-2(5) SI-3</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 6.3.1.3 - Rapid security response)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93493-5</td>
+      <td>os_rapid_security_responses_remove_disable</td>
+      <td>Disallow to remove Rapid Security Responses</td>
+      <td>The iOS device _MUST_ be configured not to allow the user to remove rapid security responses.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowRapidSecurityResponseRemoval&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>SI-2 SI-2(5) SI-3</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 6.3.1.3 - Rapid security response)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93443-0</td>
+      <td>os_require_managed_pasteboard_enforce</td>
+      <td>Ensure copy/paste of data from Managed to Unmanaged Applications is Disabled</td>
+      <td>The device _MUST_ be configured to disable copy/paste of data from managed to unmanaged applications.  If 'true', copy and paste functionality respects the 'allowOpenFromManagedToUnmanaged' and 'allowOpenFromUnmanagedToManaged' restrictions.</td>
+      <td>Manual</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;requireManagedPasteboard&lt;/key&gt; &lt;true/&gt; ----</td>
+      <td>AC-23 SC-7(10)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-014600 AIOS-17-714600</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>CCI-000366 CCI-000097 CCI-000370</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93494-3</td>
+      <td>os_safari_JavaScript_disable</td>
+      <td>Prevent Java Script</td>
+      <td>The iOS device _MUST_ be configured to prevent Java Script support in Safari to prevent malicious code execution on the device.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;safariAllowJavaScript&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93444-8</td>
+      <td>os_safari_cookies_set</td>
+      <td>Ensure Accept cookies is set to From websites I visit or From current website only</td>
+      <td>Acceptance of cookies _MUST_ be only from sites visited.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;safariAcceptCookies&lt;/key&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2.2.2.2 (level 1 - End-User Owned Devices)3.2.2.2 (level 1 - Institutionally-Owned Devices)</td>
+      <td>9.4</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93464-6</td>
+      <td>os_safari_force_fraud_warning_enable</td>
+      <td>Ensure Force Fraud Warning is set to Enabled</td>
+      <td>Force fraud warning _MUST_ be enabled in Safari.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;safariForceFraudWarning&lt;/key&gt; &lt;true/&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2.2.2.1 (level 1 - End-User Owned Devices)3.2.2.1 (level 1 - Institutionally-Owned Devices)</td>
+      <td>9.4</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93445-5</td>
+      <td>os_safari_password_autofill_disable</td>
+      <td>Disable Automatic Completion of Safari Browser Passcodes</td>
+      <td>The AutoFill functionality in the Safari web browser allows the user to complete a form that contains sensitive information, such as PII, without previous knowledge of the information. By allowing the use of the AutoFill functionality, an adversary who learns a user's iPhone or iPad passcode, or who otherwise is able to unlock the device, may be able to further breach other systems by relying on the AutoFill feature to provide information unknown to the adversary. By disabling the AutoFill functionality, the risk of an adversary gaining additional information about the device's user or compromising other systems is significantly mitigated.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;safariAllowAutoFill&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>IA-5(13) CM-7 CM-7(1) IA-11 IA-5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-010600</td>
+      <td>NaN</td>
+      <td>4.1 4.8</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>CCI-000366 CCI-000370 CCI-000381</td>
+      <td>low</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93495-0</td>
+      <td>os_safari_popups_disable</td>
+      <td>Disable Safari Popups</td>
+      <td>The iOS device _MUST_ be configured to automatically prevent popups on the device to protect users from malicious content.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;safariAllowPopups&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93496-8</td>
+      <td>os_screen_observation_remote_disable</td>
+      <td>Prevent remote screen observation</td>
+      <td>The iOS device _MUST_ be configured to prevent remote screen observation via the classroom app to prevent data leakage via the classroom app.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowRemoteScreenObservation&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93497-6</td>
+      <td>os_screen_observation_unprompted_disable</td>
+      <td>Prevent unprompted screen observation.</td>
+      <td>The iOS device _MUST_ be configured to prevent automatic acceptance for unprompted screen observations to prevent data leakage via the classroom app.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;forceClassroomUnpromptedScreenObservation&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93446-3</td>
+      <td>os_screenshots_disable</td>
+      <td>Ensure Allow screenshots and screen recording is set to Disabled</td>
+      <td>Screenshots and screen recordings on iOS _MUST_ be disabled.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowScreenShot&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>CM-7 CM-7(1) SC-07(10)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>3.2.1.1 (level 2 - Institutionally-Owned Devices)</td>
+      <td>3.3</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93448-9</td>
+      <td>os_show_calendar_lock_screen_disable</td>
+      <td>Ensure Calendar Notifications when the Device is Locked is set to Disabled</td>
+      <td>Many mobile devices display notifications on the lock screen so users can obtain relevant information in a timely manner without having to frequently unlock the phone to determine if there are new notifications. However, in many cases, these notifications can contain sensitive information. When they are available on the lock screen, an adversary can see them merely by being in close physical proximity to the device. Configuring the MOS to not send notifications to the lock screen mitigates this risk.</td>
+      <td>Manual</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowLockScreenTodayView&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-11(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #18</td>
+      <td>AIOS-17-007600 AIOS-17-707600</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>CCI-000060</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93449-7</td>
+      <td>os_show_control_center_lock_screen_disable</td>
+      <td>Ensure Show Control Center in Lock screen is set to Disabled</td>
+      <td>Control Center _MUST_ be disabled in the lock screen.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowLockScreenControlCenter&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-11(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2.2.1.14 (level 1 - End-User Owned Devices)3.2.1.31 (level 1 - Institutionally-Owned Devices)</td>
+      <td>4.3</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93450-5</td>
+      <td>os_show_notification_center_lock_screen_disable</td>
+      <td>Ensure Show Notification Center in Lock screen is set to Disabled</td>
+      <td>Notification Center _MUST_ be disabled in the lock screen.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowLockScreenNotificationsView&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-11(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #18</td>
+      <td>AIOS-17-007600 AIOS-17-707600</td>
+      <td>2.2.1.15 (level 1 - End-User Owned Devices)3.2.1.32 (level 1 - Institutionally-Owned Devices)</td>
+      <td>4.3</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>CCI-000060</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93498-4</td>
+      <td>os_siri_allow_dictation_disable</td>
+      <td>Disallow dictation feature</td>
+      <td>The iOS built-in Siri service _MUST_ be disabled to prevent organizational data from being synchronized to Apple servers.  Apple's Siri service does not provide an organization with enough control over the storage and access of data, and, therefore, automated synchronization _MUST_ be controlled by an organization approved service.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowDictation&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-20 CM-7 CM-7(1) SC-7(10)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93499-2</td>
+      <td>os_siri_assistant_diable</td>
+      <td>Disable Siri service</td>
+      <td>The iOS built-in Siri service _MUST_ be disabled to prevent organizational data from being synchronized to Apple servers.  Apple's Siri service does not provide an organization with enough control over the storage and access of data, and, therefore, automated synchronization _MUST_ be controlled by an organization approved service.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowAssistant&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-20 CM-7 CM-7(1) SC-7(10)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>high</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93500-7</td>
+      <td>os_siri_server_logging_disable</td>
+      <td>Disallow Siri server side logging</td>
+      <td>The iOS built-in Siri service _MUST_ be disabled to prevent organizational data from being synchronized to Apple servers.  Apple's Siri service does not provide an organization with enough control over the storage and access of data, and, therefore, automated synchronization _MUST_ be controlled by an organization approved service.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowSiriServerLogging&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-20 CM-7 CM-7(1) SC-7(10)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93501-5</td>
+      <td>os_siri_user_generated_content_disable</td>
+      <td>Disallow user generated content with Siri</td>
+      <td>The iOS built-in Siri service _MUST_ be disabled to prevent organizational data from being synchronized to Apple servers.  Apple's Siri service does not provide an organization with enough control over the storage and access of data, and, therefore, automated synchronization _MUST_ be controlled by an organization approved service.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowAssistantUserGeneratedContent&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-20 CM-7 CM-7(1) SC-7(10)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93451-3</td>
+      <td>os_siri_when_locked_disabled</td>
+      <td>Ensure Allow Siri while device is locked is set to Disabled</td>
+      <td>Accessing Siri while the device is locked _MUST_ be disabled.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowAssistantWhileLocked&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-20 CM-7 CM-7(1) SC-7(10)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #8b</td>
+      <td>AIOS-17-007200</td>
+      <td>2.2.1.2 (level 1 - End-User Owned Devices)3.2.1.3 (level 1 - Institutionally-Owned Devices)</td>
+      <td>4.3</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>CCI-000366</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93502-3</td>
+      <td>os_spell_check_disable</td>
+      <td>Disable Spell Check</td>
+      <td>The iOS device _MUST_ be configured to not use the spell check feature.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowSpellCheck&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-20 AC-20(1) CM-7 CM-7(1) SC-7(10)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93452-1</td>
+      <td>os_ssl_for_exchange_activesync_enable</td>
+      <td>Ensure SSL for Exchange ActiveSync</td>
+      <td>Exchange email messages are a form of data in transit and thus are vulnerable to eavesdropping and man-in-the-middle attacks. Secure Sockets Layer (SSL), also referred to as Transport Layer Security (TLS), provides encryption and authentication services that mitigate the risk of breach.</td>
+      <td>Manual</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.eas.account) payload type:  [source,xml] ---- &lt;key&gt;ssl&lt;/key&gt; &lt;true/&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-011300 AIOS-17-711300</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.6.1 - Mail)</td>
+      <td>CCI-000764</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93453-9</td>
+      <td>os_supervised_mdm_require</td>
+      <td>Enforce Supervised Enrollment in Mobile Device Management</td>
+      <td>iOS/iPadOS _MUST_ be supervised by a Mobile Device Management (MDM) software.</td>
+      <td>Manual</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Enroll the iOS/iPadOS device in a supervised MDM.</td>
+      <td>CM-2 CM-6</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-013200</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>CCI-000366 CCI-000097 CCI-000370</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93503-1</td>
+      <td>os_system_settings_find_my_device_disable</td>
+      <td>Disable Find My Device</td>
+      <td>The Find My service _MUST_ be disabled.  A Mobile Device Management (MDM) solution _MUST_ be used to carry out remote locking and wiping instead of Apple's Find My service.  Apple's Find My service uses a personal AppleID for authentication. Organizations should rely on MDM solutions, which have much more secure authentication requirements, to perform remote lock and remote wipe.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowFindMyDevice&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-20 CM-7 CM-7(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93504-9</td>
+      <td>os_system_settings_find_my_friends_modification_disable</td>
+      <td>Disable Find My Friends Modification</td>
+      <td>The Find My service modification _MUST_ be disabled.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowFindMyFriendsModification&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>AC-20 CM-7 CM-7(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93505-6</td>
+      <td>os_unpaired_boot_disable</td>
+      <td>Disable the option to recover the device via an unpaired host</td>
+      <td>The iOS device _MUST_ be configured to disable unpaired devices to boot devices into recovery.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowUnpairedExternalBootToRecovery&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93465-3</td>
+      <td>os_untrusted_tls_disable</td>
+      <td>Ensure Allow Users to Accept Untrusted TLS Certificates is set to Disabled</td>
+      <td>Users _MUST_ not be allowed to accept self-signed or unverified certificates.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowUntrustedTLSPrompt&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2.2.1.6 (level 2 - End-User Owned Devices)3.2.1.13 (level 2 - Institutionally-Owned Devices)</td>
+      <td>4.1</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93506-4</td>
+      <td>os_update_OTAPKI_allow</td>
+      <td>Allow OTA Update of PKI</td>
+      <td>The device _MUST_ be configured that the OTA update of the PKI is allowed.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowOTAPKIUpdates&lt;/key&gt; &lt;true/&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93507-2</td>
+      <td>os_update_auto_RSR_allow</td>
+      <td>Auto install RSR Updates</td>
+      <td>The user _MUST_ manually enable automatic install of RSR updtes in Settings/General/Updates/Automatic Updates/Block Remote Content</td>
+      <td>Manual</td>
+      <td></td>
+      <td>NaN</td>
+      <td>This is implemented manually by the user.</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93508-0</td>
+      <td>os_update_enforced_software_update_delay</td>
+      <td>Enforce Software Update Delay.</td>
+      <td>The iOS device _MUST_ be configured to enforce a software update delay by 30 days in order to validate compatibility with required software and infrastructure.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;forceDelayedSoftwareUpdates&lt;/key&gt; &lt;true/&gt; &lt;key&gt;enforcedSoftwareUpdateDelay&lt;/key&gt; &lt;integer&gt;30&lt;/integer&gt; ----</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 6.3.1.2 - Update management)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93454-7</td>
+      <td>os_usb_accessories_when_locked_disable</td>
+      <td>Ensure Allow USB accessories while the device is locked is set to Disabled</td>
+      <td>USB devices _MUST_ not be allowed to connect while the device is locked.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowUSBRestrictedMode&lt;/key&gt; &lt;true/&gt; ----</td>
+      <td>CM-8(3) MP-7 SC-7(10) SC-41</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #47</td>
+      <td>AIOS-17-012200</td>
+      <td>3.2.1.19 (level 1 - Institutionally-Owned Devices)</td>
+      <td>1.2</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>CCI-000366 CCI-000097 CCI-000370</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93455-4</td>
+      <td>os_voice_dialing_when_locked_disabled</td>
+      <td>Ensure Allow voice dialing while device is locked is set to Disabled</td>
+      <td>Voice dialing while the device is locked _MUST_ be disabled.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:  [source,xml] ---- &lt;key&gt;allowVoiceDialing&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>CM-7 CM-7(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #8b</td>
+      <td>NaN</td>
+      <td>2.2.1.1 (level 1 - End-User Owned Devices)3.2.1.2 (level 1 - Institutionally-Owned Devices)</td>
+      <td>4.3</td>
+      <td>NaN</td>
+      <td>ANNEX K</td>
+      <td>CCI-000366</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93456-2</td>
+      <td>pwpolicy_account_lockout_enforce</td>
+      <td>Limit Consecutive Failed Login Attempts to 6</td>
+      <td>The iOS _MUST_ be configured to limit the number of failed login attempts to a maximum of 6.  This rule protects against malicious users attempting to gain access to the system via brute-force hacking methods.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.mobiledevice.passwordpolicy) payload type:  [source,xml] ---- &lt;key&gt;maxFailedAttempts&lt;/key&gt; &lt;integer&gt;6&lt;/integer&gt; ----</td>
+      <td>AC-7</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #2c FIA_AFL_EXT.1.5</td>
+      <td>AIOS-17-006900 AIOS-17-706900</td>
+      <td>2.4.6 (level 1 - End-User Owned Devices)3.4.6 (level 1 - Institutionally-Owned Devices)</td>
+      <td>4.3</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.9.1 - Device-Code) ANNEX K</td>
+      <td>CCI-000044</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93510-6</td>
+      <td>pwpolicy_alpha_numeric_enforce</td>
+      <td>Require Passwords Contain a Minimum of One Numeric Character</td>
+      <td>The iOS _MUST_ be configured to require at least one numeric character be used when a password is created.  This rule enforces password complexity by requiring users to set passwords that are less vulnerable to malicious users.</td>
+      <td>Configuration Profile</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.mobiledevice.passwordpolicy) payload type:  [source,xml] ---- &lt;key&gt;requireAlphanumeric&lt;/key&gt; &lt;true/&gt; ----</td>
+      <td>IA-5(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.9.1 - Device-Code) ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93457-0</td>
+      <td>pwpolicy_force_pin_enable</td>
+      <td>Ensure Force Pin is set to Enabled</td>
+      <td>Passwords provide a form of access control that prevents unauthorized individuals from accessing computing resources and sensitive data. Passwords may also be a source of entropy for generation of key encryption or data encryption keys. If a password is not required to access data, this data is accessible to any adversary who obtains physical possession of the device. Requiring that a password be successfully entered before the mobile device data is unencrypted mitigates this risk.  Note: MDF PP v2.0 requires a Password Authentication Factor and requires management of its length and complexity. It leaves open whether the existence of a password is subject to management. This requirement addresses the configuration to require a password, which is critical to the cybersecurity posture of the device.</td>
+      <td>Manual</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.mobiledevice.passwordpolicy) payload type:  [source,xml] ---- &lt;key&gt;forcePIN&lt;/key&gt; &lt;true/&gt; ----</td>
+      <td>SC-28</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FIA_UAU_EXT.1.1</td>
+      <td>AIOS-17-010400 AIOS-17-710400</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Annex D (Section 5.9.1 - Device-Code)</td>
+      <td>CCI-001199</td>
+      <td>high</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93511-4</td>
+      <td>pwpolicy_history_enforce</td>
+      <td>Prohibit Password Reuse for a Minimum of 2 Generations</td>
+      <td>The iOS _MUST_ be configured to enforce a password history of at least 2 previous passwords when a password is created.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.mobiledevice.passwordpolicy) payload type:  [source,xml] ---- &lt;key&gt;pinHistory&lt;/key&gt; &lt;integer&gt;2&lt;/integer&gt; ----</td>
+      <td>IA-5(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.9.1 - Device-Code) ANNEX K</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93458-8</td>
+      <td>pwpolicy_max_grace_period_enforce</td>
+      <td>Ensure Maximum grace period for device lock is set to Immediately</td>
+      <td>The iOS grace period for device lock _MUST_ be configured to immediately.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.mobiledevice.passwordpolicy) payload type:  [source,xml] ---- &lt;key&gt;maxGracePeriod&lt;/key&gt; &lt;integer&gt;0&lt;/integer&gt; ----</td>
+      <td>AC-11 IA-11</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #2a</td>
+      <td>AIOS-17-006700 AIOS-17-706700</td>
+      <td>2.4.5 (level 1 - End-User Owned Devices)3.4.5 (level 1 - Institutionally-Owned Devices)</td>
+      <td>4.3</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.9.1 - Device-Code)</td>
+      <td>CCI-000057</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93459-6</td>
+      <td>pwpolicy_max_inactivity_enforce</td>
+      <td>Ensure Maximum Auto-Lock is set to 2 minutes or less</td>
+      <td>The iOS _MUST_ be configured to auto-lock after 2 minutes.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.mobiledevice.passwordpolicy) payload type:  [source,xml] ---- &lt;key&gt;maxInactivity&lt;/key&gt; &lt;integer&gt;2&lt;/integer&gt; ----</td>
+      <td>AC-11 IA-11</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #2b</td>
+      <td>AIOS-17-006800 AIOS-17-706800</td>
+      <td>2.4.4 (level 1 - End-User Owned Devices)3.4.4 (level 1 - Institutionally-Owned Devices)</td>
+      <td>4.3</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.9.1 - Device-Code) ANNEX K</td>
+      <td>CCI-000057</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93460-4</td>
+      <td>pwpolicy_minimum_length_enforce</td>
+      <td>Require a Minimum Passcode Length of 6 Characters</td>
+      <td>The iOS _MUST_ be configured to require a minimum of 6 characters be used when a passcode is created.  This rule enforces passcode complexity by requiring users to set passcode that are less vulnerable to malicious users.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.mobiledevice.passwordpolicy) payload type:  [source,xml] ---- &lt;key&gt;minLength&lt;/key&gt; &lt;integer&gt;6&lt;/integer&gt; ----</td>
+      <td>IA-5(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #1a</td>
+      <td>AIOS-17-006500 AIOS-17-706500</td>
+      <td>2.4.3 (level 1 - End-User Owned Devices)3.4.3 (level 1 - Institutionally-Owned Devices)</td>
+      <td>5.2</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.9 - Device authentication) ANNEX K</td>
+      <td>CCI-000205</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>CCE-93461-2</td>
+      <td>pwpolicy_simple_sequence_disable</td>
+      <td>Prohibit Repeating, Ascending, and Descending Character Sequences</td>
+      <td>The iOS device _MUST_ be configured to prohibit the use of repeating, ascending, and descending character sequences when a passcode is created.  This rule enforces password complexity by requiring users to set passcodes that are less vulnerable to malicious users.</td>
+      <td>Configuration Profile</td>
+      <td></td>
+      <td>NaN</td>
+      <td>Create a configuration profile containing the following keys in the (com.apple.mobiledevice.passwordpolicy) payload type:  [source,xml] ---- &lt;key&gt;allowSimple&lt;/key&gt; &lt;false/&gt; ----</td>
+      <td>IA-5(1)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FMT_SMF_EXT.1.1 #1b</td>
+      <td>AIOS-17-006600 AIOS-17-706600</td>
+      <td>2.4.1 (level 1 - End-User Owned Devices)3.4.1 (level 1 - Institutionally-Owned Devices)</td>
+      <td>5.2</td>
+      <td>NaN</td>
+      <td>ANNEX D (Section 5.9 - Device authentication) ANNEX K</td>
+      <td>CCI-000366</td>
+      <td>medium</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

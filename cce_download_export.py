@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """Convert the CCE Excel file to various formats."""
-
 import os
 import re
 import urllib.request
@@ -9,7 +8,7 @@ from pathlib import Path
 import pandas as pd
 
 CCE_URL = "https://csrc.nist.gov/CSRC/media/Projects/national-vulnerability-database/documents/CCE"
-CCE_FILE = "cce-COMBINED-5.20220713.xlsx"
+CCE_FILE = "cce-COMBINED-5.20250915.xlsx"
 
 # Generate basic HTML header
 html_header = "<!DOCTYPE html>\n"
