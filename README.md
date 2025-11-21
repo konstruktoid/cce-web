@@ -11,5 +11,5 @@ Site available at [https://konstruktoid.github.io/cce-web/](https://konstruktoid
 
 ```py
 CCE_URL = "https://csrc.nist.gov/CSRC/media/Projects/national-vulnerability-database/documents/CCE"
-CCE_FILE = "cce-COMBINED-5.20220713.xlsx"
+CCE_FILE = "cce-COMBINED-5.20250915.xlsx"
 ```
