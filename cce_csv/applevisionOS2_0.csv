@@ -1,0 +1,620 @@
+CCE,Rule ID,Title,Discussion,Mechanism,Check,Check Result,Fix,800-53r5,800-171,SRG,SFR,DISA STIG,CIS Benchmark,CIS v8,CMMC,indigo,CCI,Severity,Modified Rule
+CCE-94479-3,icloud_backup_disabled,Ensure iCloud Backup is set to Disabled,"iCloud backup _MUST_ be disabled.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowCloudBackup</key>
+<false/>
+----
+
+","SC-4
+AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,,,,
+CCE-94484-3,icloud_drive_disable,Ensure Allow iCloud Documents and Data is set to Disabled,"Institutionally owned devices _MUST_ not sync data through iCloud.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowCloudDocumentSync</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,,,,
+CCE-94480-1,icloud_keychain_disable,Disable iCloud Keychain Sync,"The system's ability to automatically synchronize a user's passwords to their iCloud account _MUST_ be disabled. 
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowCloudKeychainSync</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,,,,
+CCE-94481-9,icloud_managed_apps_store_data_disabled,Ensure Managed Apps Storing Data in iCloud is Set to Disabled,"Managed Apps _MUST_ not store data in iCloud.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowManagedAppsCloudSync</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,,,,
+CCE-94482-7,icloud_photos_disable,Disable iCloud Photo Library,"The built-in Photos.app connection to Apple's iCloud service _MUST_ be disabled.
+Apple's iCloud service does not provide an organization with enough control over the storage and access of data and, therefore, automated photo synchronization _MUST_ be controlled by an organization approved service.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowCloudPhotoLibrary</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,,,,
+CCE-94483-5,icloud_private_relay_disable,Disable iCloud Private Relay,"Enterprise networks may be required to audit all network traffic by policy, therefore, iCloud Private Relay _MUST_ be disabled.
+
+Network administrators can also prevent the use of this feature by blocking DNS resolution of mask.icloud.com and mask-h2.icloud.com.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowCloudPrivateRelay</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,,,,
+CCE-94485-0,os_account_modification_disable,Disable AppleID and Internet Account Modifications,"The system _MUST_ disable account modification. 
+
+Account modification includes adding additional or modifying internet accounts in Apple Mail, Calendar, Contacts, in the Internet Account System Setting Pane, or the AppleID System Setting Pane.
+
+This prevents the addition of unauthorized accounts.
+
+[IMPORTANT]
+====
+Some organizations may allow the use and configuration of the built-in Mail.app, Calendar.app, and Contacts.app for organizational communication. Information System Security Officers (ISSOs) may make the risk-based decision not to disable the Internet Accounts System Preference pane to avoid losing this functionality, but they are advised to first fully weigh the potential risks posed to their organization.
+====
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowAccountModification</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)",,,,,,,,,,,
+CCE-94486-8,os_airdrop_disable,Ensure AirDrop is set to Disabled,"AirDrop _MUST_ be disabled to prevent file transfers to or from unauthorized devices.
+
+AirDrop allows users to share and receive files from other nearby Apple devices. 
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowAirDrop</key>
+<false/>
+----
+
+","AC-3
+AC-20
+CM-7
+CM-7(1)",,,,,,,,,,,
+CCE-94487-6,os_airdrop_unmanaged_destination_enable,Ensure Treat AirDrop as unmanaged destination is set to Enabled,"AirDrop _MUST_ be treated as an unmanaged destination.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>forceAirDropUnmanaged</key>
+<true/>
+----
+
+","AC-3
+AC-20
+CM-7
+CM-7(1)
+MP-2
+SC-7(10)",,,,,,,,,,,
+CCE-94488-4,os_allow_contacts_read_managed_sources_unmanaged_destinations_disable,Ensure Managed Apps Cannot Read Unmanaged Contact Accounts,"Managed Apps _MUST_ not be allowed to read contacts from unamanged contact destinations.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowUnmanagedToReadManagedContacts</key>
+<false/>
+----
+
+","AC-3
+MP-2
+SC-7(10)
+SC-39",,,,,,,,,,,
+CCE-94489-2,os_allow_contacts_write_managed_sources_unmanaged_destinations_disable,Ensure Managed Apps Cannot Write to Unmanaged Contact Accounts,"Managed Apps _MUST_ not be allowed to write contacts to unamanged contact destinations.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowManagedToWriteUnmanagedContacts</key>
+<false/>
+----
+
+","AC-3
+MP-2
+SC-7(10)
+SC-39",,,,,,,,,,,
+CCE-94490-0,os_allow_documents_managed_sources_unmanaged_destinations_disable,Ensure Allow documents from managed sources in unmanaged destinations is set to Disabled,"Documents from managed sources _MUST_ not be allowed in unmanaged destinations.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowOpenFromManagedToUnmanaged</key>
+<false/>
+----
+
+","AC-3
+MP-2
+SC-7(10)
+SC-39",,,,,,,,,,,
+CCE-94491-8,os_allow_documents_unmanaged_sources_managed_destinations_disable,Ensure Allow documents from unmanaged sources in managed destinations is set to Disabled,"Documents from unmanaged sources _MUST_ not be allowed in managed destinations.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowOpenFromUnmanagedToManaged</key>
+<false/>
+----
+
+","AC-3
+MP-2
+SC-7(10)
+SC-39",,,,,,,,,,,
+CCE-94492-6,os_authentication_password_autofill_enable,Ensure Require Touch ID / Face ID authentication before AutoFill is set to Enabled,"Re-authentication _MUST_ be enabled at each Autofill operation.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>forceAuthenticationBeforeAutoFill</key>
+<true/>
+----
+
+","AC-3
+IA-11",,,,,,,,,,,
+CCE-94493-4,os_camera_disable,Disable Camera,"It is detrimental for operating systems to provide, or install by default, functionality exceeding requirements or mission objectives. These unnecessary capabilities or services are often overlooked and therefore may remain unsecured. They increase the risk to the platform by providing additional attack vectors.
+
+Failing to disconnect from collaborative computing devices (i.e., cameras) can result in subsequent compromises of organizational information. Providing easy methods to physically disconnect from such devices after a collaborative computing session helps to ensure that participants carry out the disconnect activity without having to go through complex and tedious procedures.
+
+This requirement is not applicable to mobile devices (smartphones and tablets), where the use of the camera is a local AO decision.
+
+This requirement is not applicable to dedicated VTC suites located in approved VTC locations that are centrally managed.
+
+For an external camera, if there is not a method for the operator to manually disconnect camera at the end of collaborative computing sessions, this is a finding.
+
+For a built-in camera, the camera must be protected by a camera cover (e.g., laptop camera cover slide) when not in use. If the built-in camera is not protected with a camera cover, or is not physically disabled, this is a finding.
+
+If the camera is not disconnected, covered, or physically disabled, the following configuration is required.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowCamera</key>
+<false/>
+----
+
+",,,,,,,,,,,,
+CCE-94579-0,os_default_browser_modification_disable,Disable Modifying the Default Web Browser Application,"The ability to modify the default web browser application _MUST_ be disabled to prevent unauthorized changes to the device's behavior.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowDefaultBrowserModification</key>
+<false/>
+----
+
+","CM-7
+CM-6
+CM-6(1)",,,,,,,,,,,
+CCE-94494-2,os_diagnostics_reports_disable,Disable Sending Diagnostic and Usage Data to Apple,"The ability to submit diagnostic data to Apple _MUST_ be disabled.
+
+The information system _MUST_ be configured to provide only essential capabilities. Disabling the submission of diagnostic and usage information will mitigate the risk of unwanted data being sent to Apple. 
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowDiagnosticSubmission</key>
+<false/>
+----
+
+","AC-20
+SC-7(10)
+SI-11",,,,,,,,,,,
+CCE-94495-9,os_disallow_enterprise_app_trust,Disallow Apps to be Installed from Unauthorized Sources,"Apps _MUST_ be installed from authorized application repositories. Disallowing enterprise app trust prevents apps from being provisioned by universal provisioning profiles.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowEnterpriseAppTrust</key>
+<false/>
+----
+
+",CM-11,,,,,,,,,,,
+CCE-94496-7,os_erase_contents_and_settings_disable,Ensure Allow Erase All Content and Settings is set to Disabled,"Erase all contents and settings _MUST_ be disabled on institutionally owned devices.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowEraseContentAndSettings</key>
+<false/>
+----
+
+","CM-6
+CM-7
+CM-7(1)",,,,,,,,,,,
+CCE-94580-8,os_external_intelligence_integration_disable,External Intelligence Integrations Must Be Disabled,"The external intelligence integration feature of Apple Intelligence allows information to be downloaded from the device and processed by an external application in the cloud. The external intelligence integration feature of Apple Intelligence increases the risk of compromise of sensitive information.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowExternalIntelligenceIntegrations</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,,,,
+CCE-94581-6,os_external_intelligence_integration_sign_in_disable,Sign In to External Intelligence Integrations Must Be Disabled,"The ability to sign into external intelligence integrations _MUST_ be disabled.
+
+The external intelligence integration feature of Apple Intelligence allows information to be downloaded from the device and processed by an external application in the cloud. The external intelligence integration feature of Apple Intelligence increases the risk of compromise of sensitive information. 
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowExternalIntelligenceIntegrationsSignIn</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,,,,
+CCE-94497-5,os_files_network_drive_access_disable,Ensure Allow network drive access in Files app is set to Disabled,"Network drive access in Files app _MUST_ be disabled.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowFilesNetworkDriveAccess</key>
+<false/>
+----
+
+",AC-20(2),,,,,,,,,,,
+CCE-94498-3,os_force_date_and_time_enable,Ensure Force automatic date and time is set to Enabled,"Automatic date and time _MUST_ be enabled.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>forceAutomaticDateAndTime</key>
+<true/>
+----
+
+","AU-12(1)
+SC-45(1)",,,,,,,,,,,
+CCE-94582-4,os_genmoji_disable,Ensure the ability to create Genmojis is set to Disabled,"Use of Genmojis _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowGenmoji</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,,,,
+CCE-94499-1,os_handoff_disable,Disable Handoff,"Handoff _MUST_ be disabled. 
+
+Handoff allows you to continue working on a document or project when the user switches from one Apple device to another. Disabling Handoff prevents data transfers to unauthorized devices.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowActivityContinuation</key>
+<false/>
+----
+
+","AC-3
+AC-20
+CM-7
+CM-7(1)",,,,,,,,,,,
+CCE-94583-2,os_image_playground_disable,Ensure the ability to use AI image generation is set to Disabled,"AI image generation _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowImagePlayground</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,,,,
+CCE-94584-0,os_image_wand_disable,Disable Apple Intelligence ImageWand,Apple Intelligence features such as Apple ImageWand that use off device AI _MUST_ be disabled.,Configuration Profile, ,{'string': 'false'},"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowImageWand</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,,,,
+CCE-94500-6,os_install_configuration_profile_disable,Ensure Allow Installing Configuration Profiles is Set to Disabled,"Configuration profiles _MUST_ be installed via an organization's MDM.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowUIConfigurationProfileInstallation</key>
+<false/>
+----
+
+","CM-6
+CM-7
+CM-7(1)",,,,,,,,,,,
+CCE-94501-4,os_install_vpn_configuration_disable,Ensure Allow adding VPN configurations is set to Disabled,"VPN configurations _MUST_ be installed via an organization's MDM.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowVPNCreation</key>
+<false/>
+----
+
+","AC-17
+AC-17(1)
+AC-17(3)",,,,,,,,,,,
+CCE-94585-7,os_mail_smart_reply_disable,Disable Apple Intelligence Mail Smart Replies,"Apple Intelligence features such as Mail Smart Replies that use off device AI _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowMailSmartReplies</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,,,,
+CCE-94586-5,os_mail_summary_disable,Disable Apple Intelligence Mail Summary,Apple Intelligence features such as Apple Mail Summary that use off device AI _MUST_ be disabled.,Configuration Profile, ,{'string': 'false'},"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowMailSummary</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,,,,
+CCE-94502-2,os_on_device_dictation_enforce,Ensure On Device Dictation is Enforced,"The device _MUST_ be configured for on device dictation.
+
+By enforcing on device dictation this will mitigate the risk of unwanted data being sent to Apple.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>forceOnDeviceOnlyDictation</key>
+<true/>
+----
+
+","SI-11
+AC-20
+SC-7(10)",,,,,,,,,,,
+CCE-94503-0,os_password_autofill_disable,Disable Password Autofill,"Password Autofill _MUST_ be disabled. 
+
+The system allows users to save passwords and use the Password Autofill feature in Safari and compatible apps. To protect against malicious users gaining access to the device, this feature _MUST_ be disabled to prevent users from being prompted to save passwords in applications.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowPasswordAutoFill</key>
+<false/>
+----
+
+","IA-5(13)
+CM-7
+CM-7(1)
+IA-11
+IA-5",,,,,,,,,,,
+CCE-94504-8,os_password_sharing_disable,Disable Password Sharing,"Password Sharing _MUST_ be disabled. 
+
+The default behavior allows users to share a password over Airdrop with other Apple devices. This feature _MUST_ be disabled to prevent passwords from being shared.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowPasswordSharing</key>
+<false/>
+----
+
+",IA-5,,,,,,,,,,,
+CCE-94505-5,os_personalized_advertising_disable,Disable Personalized Advertising,"Ad tracking and targeted ads _MUST_ be disabled.
+
+The information system _MUST_ be configured to provide only essential capabilities. Disabling ad tracking ensures that applications and advertisers are unable to track users' interests and deliver targeted advertisements.  
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowApplePersonalizedAdvertising</key>
+<false/>
+----
+
+","AC-20
+CM-7
+CM-7(1)",,,,,,,,,,,
+CCE-94506-3,os_require_managed_pasteboard_enforce,Ensure copy/paste of data from Managed to Unmanaged Applications is Disabled,"The device _MUST_ be configured to disable copy/paste of data from managed to unmanaged applications.
+
+If 'true', copy and paste functionality respects the 'allowOpenFromManagedToUnmanaged' and 'allowOpenFromUnmanagedToManaged' restrictions.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>requireManagedPasteboard</key>
+<true/>
+----
+
+","AC-23
+SC-7(10)",,,,,,,,,,,
+CCE-94507-1,os_safari_password_autofill_disable,Disable Automatic Completion of Safari Browser Passcodes,"The AutoFill functionality in the Safari web browser allows the user to complete a form that contains sensitive information, such as PII, without previous knowledge of the information. By allowing the use of the AutoFill functionality, an adversary who learns a user's iPhone or iPad passcode, or who otherwise is able to unlock the device, may be able to further breach other systems by relying on the AutoFill feature to provide information unknown to the adversary. By disabling the AutoFill functionality, the risk of an adversary gaining additional information about the device's user or compromising other systems is significantly mitigated.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>safariAllowAutoFill</key>
+<false/>
+----
+
+","IA-5(13)
+CM-7
+CM-7(1)
+IA-11
+IA-5",,,,,,,,,,,
+CCE-94587-3,os_safari_reader_summary_disable,Disable Apple Intelligence Safari Reader Summary,"Apple Intelligence features such as Safari Reader Summary that use off device AI _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowSafariSummary</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,,,,
+CCE-94508-9,os_screenshots_disable,Ensure Allow screenshots and screen recording is set to Disabled,"Screenshots and screen recordings on _MUST_ be disabled.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowScreenShot</key>
+<false/>
+----
+
+","CM-7
+CM-7(1)
+SC-07(10)",,,,,,,,,,,
+CCE-94509-7,os_untrusted_tls_disable,Ensure Allow Users to Accept Untrusted TLS Certificates is set to Disabled,"Users _MUST_ not be allowed to accept self-signed or unverified certificates.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowUntrustedTLSPrompt</key>
+<false/>
+----
+
+",,,,,,,,,,,,
+CCE-94510-5,os_user_app_installation_prohibit,Prohibit User Installation of Software,"Users _MUST_ not be allowed to install software.
+
+Allowing regular users to install software, without explicit privileges, presents the risk of untested and potentially malicious software being installed on the system. Explicit privileges (escalated or administrative privileges) provide the regular user with explicit capabilities and control that exceeds the rights of a regular user.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowAppInstallation</key>
+<false/>
+----
+
+",CM-11(2),,,,,,,,,,,
+CCE-94511-3,os_user_ui_app_installation_prohibit,Prohibit User Installation of Software from App Store,"Users _MUST_ not be allowed to install software from App Store.
+
+Allowing regular users to install software, without explicit privileges, presents the risk of untested and potentially malicious software being installed on the system. Explicit privileges (escalated or administrative privileges) provide the regular user with explicit capabilities and control that exceeds the rights of a regular user.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowUIAppInstallation</key>
+<false/>
+----
+
+",CM-11(2),,,,,,,,,,,
+CCE-94588-1,os_writing_tools_disable,Ensure the ability to use AI writing tools is set to Disabled,"AI writing tools _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowWritingTools</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,,,,
+CCE-94513-9,settings_opticid_unlock_disable,Disable OpticID for Unlocking the Device,"OpticID enables the ability to unlock a device with biometric.
+
+OpticID _MUST_ be disabled for ""Unlocking your device"" on all devices that are capable of using OpticID.
+
+The system _MUST_ remain locked until the user establishes access using an authorized identification and authentication method.
+
+NOTE: OpticID is not an approved biometric authenticator for US Federal Government usage as it has not been verified to meet the strength requirements outlined in NIST SP 800-63.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowFingerprintForUnlock</key>
+<false/>
+----
+
+",IA-5,,,,,,,,,,,
+CCE-94512-1,settings_siri_disable,Disable Siri,"Support for Siri is non-essential and _MUST_ be disabled.
+
+The information system _MUST_ be configured to provide only essential capabilities.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowAssistant</key>
+<false/>
+----
+
+","AC-20
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,,,,

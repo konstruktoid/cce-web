@@ -1,0 +1,1648 @@
+CCE,Rule ID,Title,Discussion,Mechanism,Check,Check Result,Fix,800-53r5,800-171,SRG,SFR,DISA STIG,CIS Benchmark,CIS v8,CMMC,indigo,CCI,Severity,Modified Rule
+CCE-94415-7,icloud_backup_disabled,Ensure iCloud Backup is set to Disabled,"iCloud backup _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowCloudBackup</key>
+<false/>
+----
+
+","SC-4
+AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,FMT_MOF_EXT.1.2 #40,AIOS-18-003000,3.2.1.4 (level 1 - Institutionally-Owned Devices),2.3,,"ANNEX D (Section 5.4 - iCloud restrictions)
+ANNEX K",CCI-001090,medium,
+CCE-94421-5,icloud_drive_disable,Ensure Allow iCloud Documents and Data is set to Disabled,"Institutionally owned devices _MUST_ not sync data through iCloud.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowCloudDocumentSync</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,FMT_MOF_EXT.1.2 #40,AIOS-18-003200,3.2.1.5 (level 1 - Institutionally-Owned Devices),2.3,,"ANNEX D (Section 5.4 - iCloud restrictions)
+ANNEX K","CCI-000097
+CCI-000366
+CCI-000370",medium,
+CCE-94566-7,icloud_enterprisebook_metadata_sync_disable,Preventing synchronisation of enterprise book meta data.,"The iOS device _MUST_ be configured to prevent the synchronization of enterprise book meta data to Apple iCloud servers.
+
+Apple's iCloud service does not provide an organization with enough control over the storage and access of data and, therefore, password management and synchronization _MUST_ be controlled by an organization approved service.  
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowEnterpriseBookMetadataSync</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,ANNEX K,,,
+CCE-94416-5,icloud_keychain_disable,Disable iCloud Keychain Sync,"The iOS system's ability to automatically synchronize a user's passwords to their iCloud account _MUST_ be disabled. 
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowCloudKeychainSync</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,FMT_MOF_EXT.1.2 #40,AIOS-18-003300,3.2.1.6 (level 1 - Institutionally-Owned Devices),"4.1
+4.8
+15.3",,"ANNEX D (Section 5.4 - iCloud restrictions)
+ANNEX K","CCI-000097
+CCI-000366
+CCI-000370",medium,
+CCE-94417-3,icloud_managed_apps_store_data_disabled,Ensure Managed Apps Storing Data in iCloud is Set to Disabled,"Managed Apps _MUST_ not store data in iCloud.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowManagedAppsCloudSync</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,FMT_MOF_EXT.1.2 #40,AIOS-18-003600,2.2.1.3 (level 1 - End-User Owned Devices)3.2.1.7 (level 1 - Institutionally-Owned Devices),2.3,,"ANNEX D (Section 5.4 - iCloud restrictions)
+ANNEX K","CCI-000097
+CCI-000366
+CCI-000370",medium,
+CCE-94418-1,icloud_photo_stream_disable,Ensure Photo Stream is set to Disabled,"If a user is able to configure the security setting, the user could inadvertently or maliciously set it to a value that poses unacceptable risk to DoD information systems. An adversary could exploit vulnerabilities created by the weaker configuration to compromise DoD sensitive information.
+",Manual, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowPhotoStream</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,FMT_MOF_EXT.1.2 #40,,,,,"ANNEX D (Section 5.4 - iCloud restrictions)
+ANNEX K","CCI-000097
+CCI-000366
+CCI-000370",medium,
+CCE-94419-9,icloud_photos_disable,Disable iCloud Photo Library,"The iOS built-in Photos.app connection to Apple's iCloud service _MUST_ be disabled.
+
+Apple's iCloud service does not provide an organization with enough control over the storage and access of data and, therefore, automated photo synchronization _MUST_ be controlled by an organization approved service.",Manual, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowCloudPhotoLibrary</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,FMT_SMF_EXT.1.1 #47,AIOS-18-003450,AIOS-18-003450,"4.1
+4.8
+15.3",,"ANNEX D (Section 5.4 - iCloud restrictions)
+ANNEX K",CCI-000381,medium,
+CCE-94420-7,icloud_shared_photo_stream_disable,Ensure Shared Photo Stream is set to Disabled,"If a user is able to configure the security setting, the user could inadvertently or maliciously set it to a value that poses unacceptable risk to DoD information systems. An adversary could exploit vulnerabilities created by the weaker configuration to compromise DoD sensitive information.",Manual, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowSharedStream</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,FMT_MOF_EXT.1.2 #40,AIOS-18-003500,,,,"ANNEX D (Section 5.4 - iCloud restrictions)
+ANNEX K","CCI-000097
+CCI-000366
+CCI-000370",medium,
+CCE-94514-7,os_account_modification_disable,Disallow account modification.,"The iOS devices _MUST_ be configured to prevent the untrained user to change account information.  
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowAccountModification</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)",,,,,,,,ANNEX K,,,
+CCE-94422-3,os_airdrop_disable,Ensure AirDrop is set to Disabled,"AirDrop _MUST_ be disabled to prevent file transfers to or from unauthorized devices.
+
+AirDrop allows users to share and receive files from other nearby Apple devices. 
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowAirDrop</key>
+<false/>
+----
+
+","AC-3
+AC-20
+CM-7
+CM-7(1)",,,"FMT_SMF_EXT.1.1/WLAN
+FMT_SMF_EXT.1.1 #47","AIOS-18-010200
+AIOS-18-012500",,,,ANNEX K,"CCI-002536
+CCI-000366
+CCI-000097
+CCI-000370",medium,
+CCE-94423-1,os_airdrop_unmanaged_destination_enable,Ensure Treat AirDrop as unmanaged destination is set to Enabled,"AirDrop _MUST_ be treated as an unmanaged destination.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>forceAirDropUnmanaged</key>
+<true/>
+----
+
+","AC-3
+AC-20
+CM-7
+CM-7(1)
+MP-2
+SC-7(10)",,,FMT_SMF_EXT.1.1 #47,AIOS-18-011500,2.2.1.10 (level 1 - End-User Owned Devices)3.2.1.23 (level 1 - Institutionally-Owned Devices),3.3,,"ANNEX D (Section 5.7.5 - AirDrop)
+ANNEX K","CCI-000366
+CCI-002008",medium,
+CCE-94514-7,os_airplay_incoming_password_require,Require Passcode for Incoming Airplay Connection Requests,"When a user is allowed to use AirPlay without a password, it may mistakenly associate the iPhone and iPad with an AirPlay-enabled device other than the one intended (i.e., by choosing the wrong one from the AirPlay list displayed). This creates the potential for someone in control of a mistakenly associated device to obtain DoD sensitive information without authorization. Requiring a password before such an association mitigates this risk. Passwords do not require any administration and are not required to comply with any complexity requirements.
+",Manual, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>forceAirPlayIncomingRequestsPairingPassword</key>
+<true/>
+----
+
+",IA-3,,,FMT_SMF_EXT.1.1 #40,"AIOS-18-010900
+AIOS-18-010950",,,,ANNEX K,CCI-000063,low,
+CCE-94424-9,os_airplay_outgoing_password_require,Require the User to Enter a Password when Connecting to an AirPlay-enabled device for the First Time.,"When a user is allowed to use AirPlay without a password, it may mistakenly associate the iPhone and iPad with an AirPlay-enabled device other than the one intended (i.e., by choosing the wrong one from the AirPlay list displayed). This creates the potential for someone in control of a mistakenly associated device to obtain DoD sensitive information without authorization. Requiring a password before such an association mitigates this risk. Passwords do not require any administration and are not required to comply with any complexity requirements.
+",Manual, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>forceAirPlayOutgoingRequestsPairingPassword</key>
+<true/>
+----
+
+",IA-3,,,FMT_SMF_EXT.1.1 #40,"AIOS-18-010900
+AIOS-18-010950",,,,ANNEX K,CCI-000063,low,
+CCE-94515-4,os_airprint_disable,Disable AirPrint,"The iOS built-in AirPrint capability _MUST_ be disabled.
+
+The service AirPrint _MUST_ be disabled to prevent intendedly printing content on unknown printers and leaking data.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowAirPrint</key>
+<false/>
+----
+
+",,,,,,,,,,,,
+CCE-94516-2,os_airprint_force_trusted_TLS,Requires trusted certificates for TLS printing communication,"The service AirPrint _MUST_ be configured to require trusted certificates for TLS printing communication.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>forceAirPrintTrustedTLSRequirement</key>
+<true/>
+----
+
+",AC-17(02),,,,,,,,ANNEX K,,,
+CCE-94425-6,os_allow_contacts_read_managed_sources_unmanaged_destinations_disable,Ensure Managed Apps Cannot Read Unmanaged Contact Accounts,Managed Apps _MUST_ not be allowed to read contacts from unamanged contact destinations. ,Manual, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowUnmanagedToReadManagedContacts</key>
+<false/>
+----
+
+","AC-3
+MP-2
+SC-7(10)
+SC-39",,,"FMT_SMF_EXT.1.1 #42
+FDP_ACF_EXT.1.2",AIOS-18-012400,,,,"ANNEX D (Section 5.6.3 - Contacts)
+ANNEX K","CCI-000366
+CCI-000051
+CCI-000370",low,
+CCE-94426-4,os_allow_contacts_write_managed_sources_unmanaged_destinations_disable,Ensure Managed Apps Cannot Write to Unmanaged Contact Accounts,Managed Apps _MUST_ not be allowed to write contacts to unamanged contact destinations.  ,Manual,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowManagedToWriteUnmanagedContacts</key>
+<false/>
+----
+
+","AC-3
+MP-2
+SC-7(10)
+SC-39",,,"FMT_SMF_EXT.1.1 #42
+FDP_ACF_EXT.1.2",AIOS-18-012300,,3.3,,"ANNEX D (Section 5.6.3 - Contacts)
+ANNEX K","CCI-000366
+CCI-000051
+CCI-000370",low,
+CCE-94427-2,os_allow_documents_managed_sources_unmanaged_destinations_disable,Ensure Allow documents from managed sources in unmanaged destinations is set to Disabled,"Documents from managed sources _MUST_ not be allowed in unmanaged destinations.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowOpenFromManagedToUnmanaged</key>
+<false/>
+----
+
+","AC-3
+MP-2
+SC-7(10)
+SC-39",,,"FMT_SMF_EXT.1.1 #42
+FDP_ACF_EXT.1.2",AIOS-18-009700,2.2.1.8 (level 1 - End-User Owned Devices)3.2.1.21 (level 1 - Institutionally-Owned Devices),3.3,,"ANNEX D (Section 5.6.3 - Contacts)
+ANNEX K","CCI-002233
+CCI-002530",medium,
+CCE-94428-0,os_allow_documents_unmanaged_sources_managed_destinations_disable,Ensure Allow documents from unmanaged sources in managed destinations is set to Disabled,"Documents from unmanaged sources _MUST_ not be allowed in managed destinations.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowOpenFromUnmanagedToManaged</key>
+<false/>
+----
+
+","AC-3
+MP-2
+SC-7(10)
+SC-39",,,,,2.2.1.9 (level 1 - End-User Owned Devices)3.2.1.22 (level 1 - Institutionally-Owned Devices),3.3,,"ANNEX D (section 5.8.3 - Institutional procurement)
+ANNEX K",,,
+CCE-94429-8,os_apple_watch_pairing_disable,Ensure Apple Watch Pairing is Disabled,"Pairing an Apple Watch _MUST_ be disabled.
+
+NOTE: Any currently paired Apple Watch is unpaired and the watch's content is erased.
+",Manual,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowPairedWatch</key>
+<false/>
+----
+
+","CM-7
+CM-7(1)",,,FMT_SMF_EXT.1.1 #47,AIOS-18-012600,,,,ANNEX K,"CCI-000366
+CCI-000097
+CCI-000370",medium,
+CCE-94430-6,os_apple_watch_wrist_detection_enable,Ensure Force Apple Watch wrist detection is set to Enabled,"Wrist detection _MUST_ be enabled for paired Apple Watches.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>forceWatchWristDetection</key>
+<true/>
+----
+
+","AC-3
+CM-7
+CM-7(1)",,,FMT_SMF_EXT.1.1 #47,AIOS-18-011800,2.2.1.13 (level 1 - End-User Owned Devices)3.2.1.27 (level 1 - Institutionally-Owned Devices),3.3,,,CCI-000381,low,
+CCE-94431-4,os_application_allow_list,Define Allowed Applications,"Requiring all authorized applications to be in an application allow list prevents the execution of any applications (e.g., unauthorized, malicious) that are not part of the allow list. Failure to configure an application allow list properly could allow unauthorized and malicious applications to be downloaded, installed, and executed on the mobile device, causing a compromise of DoD data accessible by these applications. Applications with the listed characteristics have features that can cause the compromise of sensitive DoD data or have features with no known application in the DoD environment.
+
+Application note: The application allow list, in addition to controlling the installation of applications on the MDM, must control user access/execution of all core and preinstalled applications, or the MDM must provide an alternate method of restricting user access/execution to core and preinstalled applications.
+
+Core application: Any application integrated into the OS by the OS or MDM vendors.
+
+Preinstalled application: Additional noncore applications included in the OS build by the OS vendor, MDM vendor, or wireless carrier.
+
+NOTE: See rule YAML file for implementation comments.",Manual, ,,This is implemented by a Configuration Profile,"CM-7
+CM-7(5)",,,FMT_SMF_EXT.1.1 #8b,AIOS-18-007400,,,,ANNEX D (Section 5.8 - App-Installation),CCI-000366,medium,
+CCE-94517-0,os_application_deny_list,Apps not allowed on the device,"In case specific apps are allowed to be used on the device a specific list _SHOULD_VALUEONDEMAND_ needs to be defined by the MDM. These apps will not open on the device.
+",Configuration Profile, ,,"This is implemented by a Configuration Profile.
+",,,,,,,,,"ANNEX D (Section 5.8 - App-Installation)
+ANNEX N",,,
+CCE-94432-2,os_authentication_password_autofill_enable,Ensure Require Touch ID / Face ID authentication before AutoFill is set to Enabled,"Re-authentication _MUST_ be enabled at each Autofill operation.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>forceAuthenticationBeforeAutoFill</key>
+<true/>
+----
+
+","AC-3
+IA-11",,,,,3.2.1.26 (level 1 - Institutionally-Owned Devices),3.3,,ANNEX K,,,
+CCE-94518-8,os_auto_correction_disable,Disable Auto Correction,"The device _MUST_ be configured not to use the auto correction feature of the iOS.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowAutoCorrection</key>
+<false/>
+----
+
+",,,,,,,,,ANNEX K,,,
+CCE-94519-6,os_auto_dim_allow,Ensure auto dim of iPads with OLED displays is set to Enabled,"Automatic dimming of iPads with OLED displays _MUST_ be enabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowAutoDim</key>
+<true/>
+----
+
+",,,,,,,,,,,,
+CCE-94433-0,os_auto_unlock_disable,Prevent Apple Watch from Unlocking a Device,"Apple Watches are not an approved authenticator and their use _MUST_ be disabled.
+
+Disabling Apple watches is a necessary step to ensuring that the information system retains a session lock until the user reestablishes access using an authorized identification and authentication procedures.",Manual,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowAutoUnlock</key>
+<false/>
+----
+
+",AC-11,,,FMT_MOF_EXT.1.2 #47,AIOS-18-014800,,,,ANNEX K,"CCI-000767
+CCI-002235",medium,
+CCE-94515-4,os_call_recording_disable,Disable Call Recording,"The built-in Call Recording _MUST_ be disabled in certain organizations or jurisdictions by legal statutes and/or privacy laws.
+
+The Call Recording service announces to all users that a cellular phone call is about to be recorded. When recording stops (either manually by the user or by ending the call), the recording is saved to a new note in the Notes app. This functionality may be prohibited by certain organizations or jurisdictions by legal statutes and/or privacy laws.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowCallRecording</key>
+<false/>
+----
+
+",CM-6,,,FMT_MOF_EXT.1.2 #47,AIOS-18-015700,,,,,CCI-000366,,
+CCE-94520-4,os_chat_disable,Prevent the usage of iMessage,"The iOS device _MUST_ be configured to disable iMessage on the device to prevent receiving malicious content via iMessage.  
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowChat</key>
+<false/>
+----
+
+","AC-20
+CM-7
+CM-7(1)",,,,,,,,ANNEX K,,,
+CCE-94571-7,os_default_browser_modification_disable,Disable Modifying the Default Web Browser Application,"The ability to modify the default web browser application _MUST_ be disabled to prevent unauthorized changes to the device's behavior.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowDefaultBrowserModification</key>
+<false/>
+----
+
+","CM-7
+CM-7(1)
+CM-6",,,,,,,,,,,
+CCE-94572-5,os_default_calling_modification_disable,Disable Modifying the Default Calling Application,"The ability to modify the default calling application _MUST_ be disabled to prevent unauthorized changes to the device's behavior.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowDefaultCallingAppModification</key>
+<false/>
+----
+
+","CM-7
+CM-7(1)
+CM-6",,,,,,,,,,,
+CCE-94573-3,os_default_messaging_modification_disable,Disable Modifying the Default Messaging Application,"The ability to modify the default messaging application _MUST_ be disabled to prevent unauthorized changes to the device's behavior.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowDefaultMessagingAppModification</key>
+<false/>
+----
+
+","CM-7
+CM-7(1)
+CM-6",,,,,,,,,,,
+CCE-94521-2,os_definition_lookup_disable,Disable Definition Lookup on the device.,"The iOS device _MUST_ be configured not use the spell check feature of the OS.  
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowDefinitionLookup</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)",,,,,,,,ANNEX K,,,
+CCE-94522-0,os_device_name_change_disable,Disable device name changes,"The iOS device _MUST_ be configured to disable device name changes.  
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowDeviceNameModification</key>
+<false/>
+----
+
+",,,,,,,,,ANNEX K,,,
+CCE-94434-8,os_diagnostics_reports_disable,Disable Sending Diagnostic and Usage Data to Apple,"The ability to submit diagnostic data to Apple _MUST_ be disabled.
+
+The information system _MUST_ be configured to provide only essential capabilities. Disabling the submission of diagnostic and usage information will mitigate the risk of unwanted data being sent to Apple. 
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowDiagnosticSubmission</key>
+<false/>
+----
+
+","AC-20
+SC-7(10)
+SI-11",,,FMT_SMF_EXT.1.1 #47a,AIOS-18-013400,2.2.1.12 (level 1 - End-User Owned Devices)3.2.1.25 (level 1 - Institutionally-Owned Devices),4.8,,ANNEX K,CCI-001199,medium,
+CCE-94523-8,os_diagnostics_reports_modification_disable,Disable changing Sending Diagnostic and Usage Data to Apple,"The ability to change the setting to submit diagnostic data to Apple _MUST_ be disabled.
+
+The information system _MUST_ be configured to provide only essential capabilities. Disabling the submission of diagnostic and usage information will mitigate the risk of unwanted data being sent to Apple.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowDiagnosticSubmissionModification</key>
+<false/>
+----
+
+","SI-11
+AC-20
+SC-7(10)",,,,,,,,ANNEX K,,high,
+CCE-94435-5,os_disallow_enterprise_app_trust,Disallow Apps to be Installed from Unauthorized Sources,Apps _MUST_ be installed from authorized application repositories. Disallowing enterprise app trust prevents apps from being provisioned by universal provisioning profiles.,Manual, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowEnterpriseAppTrust</key>
+<false/>
+----
+
+",CM-11,,,FMT_SMF_EXT.1.1 #8a,AIOS-18-007000,,,,ANNEX D - (Section 5.8.5),CCI-000366,low,
+CCE-94436-3,os_enterprise_books_disable,Ensure Backup of Enterprise Books is set to Disabled,"If a user is able to configure the security setting, the user could inadvertently or maliciously set it to a value that poses unacceptable risk to DoD information systems. An adversary could exploit vulnerabilities created by the weaker configuration to compromise DoD sensitive information.",Manual, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowEnterpriseBookBackup</key>
+<false/>
+----
+
+",CM-6 b,,,FMT_MOF_EXT.1.2 #40,AIOS-18-003700,,,,ANNEX K,"CCI-000366
+CCI-002110",medium,
+CCE-94437-1,os_erase_contents_and_settings_disable,Ensure Allow Erase All Content and Settings is set to Disabled,"Erase all contents and settings _MUST_ be disabled on institutionally owned iOS devices.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowEraseContentAndSettings</key>
+<false/>
+----
+
+","CM-6
+CM-7
+CM-7(1)",,,,,3.2.1.12 (level 1 - Institutionally-Owned Devices),4.1,,,,,
+CCE-94516-2,os_esim_delete,Ensure the eSIM Contents are Deleted When Device is Erased,"An eSIM may contain sensitive data and must be wiped of data when the mobile device is wiped to protect sensitive data from exposure.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>forcePreserveESIMOnErase</key>
+<false/>
+----
+
+",MP-6,,,FMT_MOF_EXT.1.2 #47,AIOS-18-015100,,,,,CCI-001033,medium,
+CCE-94524-6,os_esim_transfers_disable,Ensure the ability to transfer an eSIM is set to Disabled,"Outgoing transfers of eSIMs _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowESIMOutgoingTransfers</key>
+<false/>
+----
+
+",,,,,,,,,,,,
+CCE-94525-3,os_exchange_SMIME_encryption_certificate_overwirte_disable,Disable changing the S/MIME encryption settings.,"The iOS device needs some specific configurations for the Exchange setup to meet the minimum requirements.
+
+The usage of S/MIME encryption _MUST_ be configured to set mail signing as the default.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.mail.managed) payload type:
+
+[source,xml]
+----
+<key>SMIMEEncryptionCertificateUUIDUserOverrideable</key>
+<false/>
+----
+
+",,,,,,,,,ANNEX D (Section 5.6.1 - Mail),,,
+CCE-94526-1,os_exchange_SMIME_encryption_default_certificate_overwrite_enable,Enable selecting the appropriate S/MIME encryption certificate.,"The iOS device needs some specific configurations for the Exchange setup to meet the minimum requirements.
+
+The user _MUST_ be enabled to select the appropriate signing identity.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.mail.managed) payload type:
+
+[source,xml]
+----
+<key>SMIMEEncryptByDefaultUserOverrideable</key>
+<false/>
+----
+
+",,,,,,,,,ANNEX D (Section 5.6.1 - Mail),,,
+CCE-94527-9,os_exchange_SMIME_encryption_enforce,Setting S/MIME encrytion as default.,"The iOS device needs some specific configurations for the Exchange setup to meet the minimum requirements.
+
+The usage of S/MIME encryption _MUST_ be configured to set mail signing as the default.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.eas.account) payload type:
+
+[source,xml]
+----
+<key>SMIMEEncryptByDefault</key>
+<true/>
+----
+
+",,,,,,,,,ANNEX D (Section 5.6.1 - Mail),,,
+CCE-94528-7,os_exchange_SMIME_encryption_per_message_disable,Disable encryption selection option per mail.,"The iOS device needs some specific configurations for the Exchange setup to meet the minimum requirements. 
+
+The user _MUST_ not be enabled to have the option to decide wether to encrypt a mail communication. Encryption _MUST_ be the default.
+",Manual, ,,"Create a configuration profile containing the following keys in the (com.apple.mail.managed) payload type:
+
+[source,xml]
+----
+<key>SMIMEEnableEncryptionPerMessageSwitch</key>
+<false/>
+----
+
+",,,,,,,,,ANNEX D (Section 5.6.1 - Mail),,medium,
+CCE-94529-5,os_exchange_SMIME_signing_certificate_overwirte_disable,Disable changing the S/MIME signing settings.,"The iOS device needs some specific configurations for the Exchange setup to meet the minimum requirements.
+
+The option for a user to overwrite the of S/MIME configuration _MUST_ prevented.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.mail.managed) payload type:
+
+[source,xml]
+----
+<key>SMIMESigningCertificateUUIDUserOverrideable</key>
+<false/>
+----
+
+",,,,,,,,,ANNEX D (Section 5.6.1 - Mail),,,
+CCE-94530-3,os_exchange_SMIME_signing_enabled,Enable S/MIME signing of mails.,"The iOS device needs some specific configurations for the Exchange setup to meet the minimum requirements. 
+
+The usage of S/MIME signing _MUST_ be configured to set mail signing as the default.
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.mail.managed) payload type:
+
+[source,xml]
+----
+<key>SMIMESigningEnabled</key>
+<true/>
+----
+
+",,,,,,,,,ANNEX D (Section 5.6.1 - Mail),,,
+CCE-94531-1,os_exchange_SMIME_signing_overwrite_disable,Disable changing the S/MIME signing settings.,"The iOS device needs some specific configurations for the Exchange setup to meet the minimum requirements. 
+
+The option for a user to overwrite the of S/MIME configuration _MUST_ prevented.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.mail.managed) payload type:
+
+[source,xml]
+----
+<key>SMIMESigningUserOverrideable</key>
+<false/>
+----
+
+",,,,,,,,,ANNEX D (Section 5.6.1 - Mail),,,
+CCE-94532-9,os_exchange_mail_recents_sync_disable,Prevent synching of recent recipients.,"The iOS device needs some specific configurations for the Exchange setup to meet the minimum requirements. 
+
+The synchronization of recent addresses _MUST_ be prevented not to synchronize sensitive addresses locally to the device.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.mail.managed) payload type:
+
+[source,xml]
+----
+<key>disableMailRecentsSyncing</key>
+<true/>
+----
+
+",,,,,,,,,ANNEX D (Section 5.6.1 - Mail),,,
+CCE-94533-7,os_exchange_peraccountVPN,Enforce per account VPN for managed Mail accounts.,"The iOS device needs some specific configurations for the Exchange setup to meet the minimum requirements. 
+
+When leveraging per account VPN configurations mail, calendar and contacts need to be configured to leverage the specific VPNUUID in addition.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.mail.managed) payload type:
+
+[source,xml]
+----
+<key>VPNUUID</key>
+<string>VPNUUID</string>
+----
+
+",,,,,,,,,ANNEX D (Section 5.6.1 - Mail),,,
+CCE-94534-5,os_exchange_prevent_move_enforce,Prevent move manged mails to another account.,"The iOS device needs some specific configurations for the Exchange setup to meet the minimum requirements.
+
+The setting, prevent moving to another account _MUST_ be configured to prevent data leakage.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.mail.managed) payload type:
+
+[source,xml]
+----
+<key>PreventMove</key>
+<true/>
+----
+
+",,,,,,,,,ANNEX D (Section 5.6.1 - Mail),,,
+CCE-94517-0,os_external_intelligence_integration_disable,External Intelligence Integrations Must Be Disabled,"The external intelligence integration feature of Apple Intelligence allows information to be downloaded from the device and processed by an external application in the cloud. The external intelligence integration feature of Apple Intelligence increases the risk of compromise of sensitive information.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowExternalIntelligenceIntegrations</key>
+<false/>
+----
+
+","CM-6
+CM-7
+AC-20",,,FMT_MOF_EXT.1.2 #47,AIOS-18-015400,,,,,CCI-000366,medium,
+CCE-94518-8,os_external_intelligence_integration_sign_in_disable,Sign In to External Intelligence Integrations Must Be Disabled,"The ability to sign into external intelligence integrations _MUST_ be disabled.
+
+The external intelligence integration feature of Apple Intelligence allows information to be downloaded from the device and processed by an external application in the cloud. The external intelligence integration feature of Apple Intelligence increases the risk of compromise of sensitive information. 
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowExternalIntelligenceIntegrationsSignIn</key>
+<false/>
+----
+
+","CM-6
+CM-7
+AC-20",,,FMT_MOF_EXT.1.2 #47,AIOS-18-015400,,,,,CCI-000366,medium,
+CCE-94438-9,os_files_network_drive_access_disable,Ensure Allow network drive access in Files app is set to Disabled,"Network drive acces in Files app _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowFilesNetworkDriveAccess</key>
+<false/>
+----
+
+",AC-20(2),,,FMT_SMF_EXT.1.1 #47,AIOS-18-014300,3.2.1.9 (level 2 - Institutionally-Owned Devices),1.2,,ANNEX K,"CCI-000366
+CCI-000097
+CCI-000370",medium,
+CCE-94439-7,os_files_usb_drive_access_disable,Ensure Allow USB drive access in Files app is set to Disabled,"USB drive acces in Files app _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowFilesUSBDriveAccess</key>
+<false/>
+----
+
+",AC-20(2),,,FMT_SMF_EXT.1.1 #47,AIOS-18-013300,3.2.1.8 (level 2 - Institutionally-Owned Devices),1.2,,ANNEX K,"CCI-000366
+CCI-000097
+CCI-000370",medium,
+CCE-94440-5,os_find_my_friends_disable,Disable Find My Friends Service,"The Find My Friends service _MUST_ be disabled.
+
+Sharing the location of a device may be an violation to an organization and potentially put users at risk.
+",Manual,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowFindMyFriends</key>
+<false/>
+----
+
+","AC-20
+CM-7
+CM-7(1)",,,FMT_SMF_EXT.1.1 #47,AIOS-18-013100,,,,ANNEX K,"CCI-000366
+CCI-000097
+CCI-000370",low,
+CCE-94441-3,os_force_date_and_time_enable,Ensure Force automatic date and time is set to Enabled,"Automatic date and time _MUST_ be enabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>forceAutomaticDateAndTime</key>
+<true/>
+----
+
+","AU-12(1)
+SC-45(1)",,,,,2.2.1.7 (level 1 - End-User Owned Devices)3.2.1.17 (level 1 - Institutionally-Owned Devices),8.4,,ANNEX K,,,
+CCE-94442-1,os_force_encrypted_backups_enable,Ensure Force Encrypted Backups is Enabled,"iOS and iPadOS backups _MUST_ be encrypted.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>forceEncryptedBackup</key>
+<true/>
+----
+
+","CM-7
+CM-7(1)
+CP-09(8)
+SC-28",,,FMT_SMF_EXT.1.1 #47,AIOS-18-010700,2.2.1.4 (level 1 - End-User Owned Devices)3.2.1.10 (level 1 - Institutionally-Owned Devices),11.3,,"ANNEX D (Section 5.3 - Description of security/key management)
+ANNEX K","CCI-000366
+CCI-000370
+CCI-000381",medium,
+CCE-94535-2,os_genmoji_disable,Ensure the ability to create Genmojis is set to Disabled,"Use of Genmojis _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowGenmoji</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,,,,
+CCE-94443-9,os_handoff_disable,Disable Handoff,"Handoff _MUST_ be disabled. 
+
+Handoff allows you to continue working on a document or project when the user switches from one Apple device to another. Disabling Handoff prevents data transfers to unauthorized devices.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowActivityContinuation</key>
+<false/>
+----
+
+","AC-3
+AC-20
+CM-7
+CM-7(1)",,,FMT_SMF_EXT.1.1 #47,AIOS-18-010800,2.2.1.11 (level 2 - End-User Owned Devices)3.2.1.24 (level 2 - Institutionally-Owned Devices),3.3,,ANNEX K,"CCI-000366
+CCI-000370
+CCI-000381",low,
+CCE-94536-0,os_image_playground_disable,Ensure the ability to use AI image generation is set to Disabled,"AI image generation _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowImagePlayground</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,,,,
+CCE-94519-6,os_image_wand_disable,Disable Apple Intelligence ImageWand,Apple Intelligence features such as Apple ImageWand that use off device AI _MUST_ be disabled.,Configuration Profile, ,{'string': 'false'},"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowImageWand</key>
+<false/>
+----
+
+",,,,,,,,,ANNEX K,,,
+CCE-94444-7,os_install_configuration_profile_disable,Ensure Allow Installing Configuration Profiles is Set to Disabled,"Configuration profiles _MUST_ be installed via an organization's MDM.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowUIConfigurationProfileInstallation</key>
+<false/>
+----
+
+","CM-6
+CM-7
+CM-7(1)",,,,AIOS-18-015500,3.2.1.15 (level 1 - Institutionally-Owned Devices),4.1,,ANNEX D (Section 5.6.1 - Mail),,medium,
+CCE-94445-4,os_install_vpn_configuration_disable,Ensure Allow adding VPN configurations is set to Disabled,"VPN configurations _MUST_ be installed via an organization's MDM.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowVPNCreation</key>
+<false/>
+----
+
+","AC-17
+AC-17(1)
+AC-17(3)",,,FMT_SMF_EXT.1.1 #3,AIOS-18-001000,3.2.1.16 (level 1 - Institutionally-Owned Devices),12.7,,ANNEX D (Section 5.10.3 - Manual VPN),"CCI-000366
+CCI-000370
+CCI-000066",low,
+CCE-94537-8,os_iphone_mirroring_disable,Ensure the ability to mirror a device is set to Disabled,"Device mirroring _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowiPhoneMirroring</key>
+<false/>
+----
+
+","AC-3
+AC-20
+CM-7
+CM-7(1)",,,FMT_MOF_EXT.1.2 #47,AIOS-18-015800,,,,ANNEX K,CCI-000366,,
+CCE-94446-2,os_iphone_widgets_on_mac_disable,Disable use of iPhone widgets on Mac,"iPhone widgets on Mac _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowiPhoneWidgetsOnMac</key>
+<false/>
+----
+
+","CM-7
+CM-7(1)",,,FMT_SMF_EXT.1.1 #8b,AIOS-18-010850,,,,,CCI-000366,low,
+CCE-94447-0,os_limit_ad_tracking_enable,Enable Limit Ad Tracking,"Ad tracking and targeted ads _MUST_ be disabled.
+
+The information system _MUST_ be configured to provide only essential capabilities. Disabling ad tracking ensures that applications and advertisers are unable to track users' interests and deliver targeted advertisements.
+",Manual, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>forceLimitAdTracking</key>
+<true/>
+----
+
+","AC-20
+CM-7
+CM-7(1)
+SC-7(10)",,,FMT_SMF_EXT.1.1 #47,AIOS-18-010500,,4.8,,ANNEX K,"CCI-000366
+CCI-000370
+CCI-001199",low,
+CCE-94538-6,os_live_text_disable,Disable Live Text,"The user _MUST_ manually disable Settings/General/Language and Region/Live-Text.  
+",Manual, ,,"This is implemented manually by the user.
+",,,,,,,,,ANNEX K,,,
+CCE-94539-4,os_mail_block_remote_content,Block remote content,"The user _MUST_ manually block remote content in Settings/Mail/Privacy/Block Remote Content.
+",Manual, ,,"This is implemented manually by the user.
+",,,,,,,,,ANNEX K,,,
+CCE-94448-8,os_mail_maildrop_disable,Ensure Allow Mail Drop is set to Disabled,"Mail Drop _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.mail.managed) payload type:
+
+[source,xml]
+----
+<key>allowMailDrop</key>
+<false/>
+----
+
+","AC-3
+AC-20
+CM-7
+CM-7(1)
+SC-07(10)",,,FMT_SMF_EXT.1.1 #47,AIOS-18-011000,2.7.2 (level 2 - End-User Owned Devices)3.7.2 (level 2 - Institutionally-Owned Devices),3.3,,ANNEX D (Section 5.6.1 - Mail),"CCI-000366
+CCI-000370
+CCI-002314",medium,
+CCE-94449-6,os_mail_move_messages_disable,Ensure Allow user to move messages from this account is set to Disabled,"Mail from institutionally configured mail accounts _MUST_ not be allowed to move to personaly mail accounts.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.mail.managed) payload type:
+
+[source,xml]
+----
+<key>PreventMove</key>
+<false/>
+----
+
+","AC-21
+CM-7
+CM-7(1)
+SC-4
+SC-07(10)",,,FMT_SMF_EXT.1.1 #47,AIOS-18-011400,2.7.1 (level 1 - End-User Owned Devices)3.7.1 (level 1 - Institutionally-Owned Devices),3.3,,ANNEX D (Section 5.6.1 - Mail),"CCI-000366
+CCI-000370
+CCI-000764",medium,
+CCE-94574-1,os_mail_smart_reply_disable,Disable Apple Intelligence Mail Smart Replies,"Apple Intelligence features such as Mail Smart Replies that use off device AI _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowMailSmartReplies</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,,,,
+CCE-94520-4,os_mail_summary_disable,Disable Apple Intelligence Mail Summary,Apple Intelligence features such as Apple Mail Summary that use off device AI _MUST_ be disabled.,Configuration Profile, ,{'string': 'false'},"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowMailSummary</key>
+<false/>
+----
+
+",,,,,,,,,ANNEX K,,,
+CCE-94540-2,os_marketplace_prevent,Prevent 3rd party marketplaces,"The iOS device _MUST_ be configured to prevent 3rd party market places to be installed.  
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowMarketplaceAppInstallation</key>
+<false/>
+----
+
+",CM-11,,,FMT_MOF_EXT.1.2 #47,AIOS-18-014900,,,,ANNEX K,CCI-000366,medium,
+CCE-94450-4,os_modify_cellular_data_app_settings_disable,Ensure Allow modifying cellular data app settings is set to Disabled,"The ability to modify cellular data app settings _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowAppCellularDataModification</key>
+<false/>
+----
+
+","CM-7
+CM-7(1)",,,,,3.2.1.18 (level 2 - Institutionally-Owned Devices),4.1,,,,,
+CCE-94541-0,os_network_known_only,Only allow known networks,"The iOS device _MUST_ be configured to only allow known networks in case only trustworthy networks can be used. This can have a limitation on connectivity especially when devices are used in area with low or no network connectivity. 
+",Configuration Profile, ,{'string': 'true'},"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>forceWiFiToAllowedNetworksOnly</key>
+<true/>
+----
+
+",,,,,,,,,ANNEX D (Section 5.7 - Interfaces),,,
+CCE-94451-2,os_new_device_proximity_disable,Ensure Allow setting up new nearby devices is set to Disabled,"The setting up of new nearby devices _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowProximitySetupToNewDevice</key>
+<false/>
+----
+
+","CM-6
+CM-7
+CM-7(1)",,,FMT_SMF_EXT.1.1 #47,AIOS-18-012800,3.2.1.28 (level 1 - Institutionally-Owned Devices),3.13,,ANNEX K,"CCI-000366
+CCI-000097
+CCI-000370",medium,
+CCE-94575-8,os_notes_transcription_disable,Disable Apple Intelligence Notes Transcription,"Apple Intelligence features such as Notes Transcription that use off device AI _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowNotesTranscription</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,,,,
+CCE-94576-6,os_notes_transcription_summary_disable,Disable Apple Intelligence Notes Transcription Summary,"Apple Intelligence features such as Notes Transcription Summary that use off device AI _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowNotesTranscriptionSummary</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,,,,
+CCE-94452-0,os_on_device_dictation_enforce,Ensure On Device Dictation is Enforced,"The device _MUST_ be configured for on device dictation.
+
+By enforcing on device dictation this will mitigate the risk of unwanted data being sent to Apple.",Manual,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>forceOnDeviceOnlyDictation</key>
+<true/>
+----
+
+","SI-11
+AC-20
+SC-7(10)",,,FMT_SMF_EXT.1.1 #47,AIOS-18-014400,,,,ANNEX K,"CCI-000366
+CCI-000097
+CCI-000370",medium,
+CCE-94453-8,os_on_device_translation_enforce,Ensure On Device Translation is Enforced,"The device _MUST_ be configured for on device translation.
+
+By enforcing on device translation this will mitigate the risk of unwanted data being sent to Apple.
+",Manual,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>forceOnDeviceOnlyTranslation</key>
+<true/>
+----
+
+","SI-11
+AC-20
+SC-7(10)",,,FMT_SMF_EXT.1.1 #47,AIOS-18-014500,,,,ANNEX K,"CCI-000366
+CCI-000097
+CCI-000370",medium,
+CCE-94454-6,os_pairing_non_configurator_hosts_disable,Ensure Allow pairing with non-Configurator hosts is set to Disabled,"Host pairing with a non-Configurator host _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowHostPairing</key>
+<false/>
+----
+
+","CM-6
+CM-7
+CM-7(1)",,,,,3.2.1.20 (level 2 - Institutionally-Owned Devices),4.8,,ANNEX K,,,
+CCE-94455-3,os_password_autofill_disable,Disable Password Autofill,"Password Autofill _MUST_ be disabled. 
+
+iOS allows users to save passwords and use the Password Autofill feature in Safari and compatible apps. To protect against malicious users gaining access to the device, this feature _MUST_ be disabled to prevent users from being prompted to save passwords in applications.
+",Manual,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowPasswordAutoFill</key>
+<false/>
+----
+
+","IA-5(13)
+CM-7
+CM-7(1)
+IA-11
+IA-5",,,FMT_SMF_EXT.1.1 #47,AIOS-18-012700,,,,,"CCI-000366
+CCI-000097
+CCI-000370",medium,
+CCE-94456-1,os_password_proximity_disable,Disable Proximity Based Password Sharing Requests,"Proximity based password sharing requests _MUST_ be disabled. 
+
+The default behavior of iOS is to allow users to request passwords from other known devices (macOS and iOS). This feature _MUST_ be disabled to prevent passwords from being shared.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowPasswordProximityRequests</key>
+<false/>
+----
+
+",IA-5,,,FMT_SMF_EXT.1.1 #47,AIOS-18-012900,3.2.1.29 (level 1 - Institutionally-Owned Devices),13.5,,ANNEX K,"CCI-000366
+CCI-000097
+CCI-000370",medium,
+CCE-94457-9,os_password_sharing_disable,Disable Password Sharing,"Password Sharing _MUST_ be disabled. 
+
+The default behavior of iOS/iPadOS is to allow users to share a password over Airdrop between other macOS and iOS devices. This feature _MUST_ be disabled to prevent passwords from being shared.
+",Manual,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowPasswordSharing</key>
+<false/>
+----
+
+",IA-5,,,FMT_SMF_EXT.1.1 #47,AIOS-18-013000,,,,ANNEX K,"CCI-000366
+CCI-000097
+CCI-000370",medium,
+CCE-94458-7,os_personalized_advertising_disable,Disable Personalized Advertising,"Ad tracking and targeted ads _MUST_ be disabled.
+
+The information system _MUST_ be configured to provide only essential capabilities. Disabling ad tracking ensures that applications and advertisers are unable to track users' interests and deliver targeted advertisements.  
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowApplePersonalizedAdvertising</key>
+<false/>
+----
+
+","AC-20
+CM-7
+CM-7(1)",,,,,2.2.1.5 (level 1 - End-User Owned Devices)3.2.1.11 (level 1 - Institutionally-Owned Devices),4.8,,ANNEX K,,,
+CCE-94542-8,os_personalized_handwriting_disable,Ensure the ability to analyse handwriting is set to Disabled,"AI handwriting analysis _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowPersonalizedHandwritingResults</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,ANNEX K,,,
+CCE-94543-6,os_predictive_keyboard_disable,Disable the use of predictable keyboards,"The device _MUST_ be configured that the usage of the predictable keyboard feature is not possible.  
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowPredictiveKeyboard</key>
+<false/>
+----
+
+",,,,,,,,,ANNEX K,,,
+CCE-94544-4,os_rapid_security_responses_install_enable,Allow to install Rapid Security Responses,"The iOS device _MUST_ be configured to allow the user to install Rapid Security Responses to enable the user to be up to date with security fixes.  
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowRapidSecurityResponseInstallation</key>
+<true/>
+----
+
+","SI-2
+SI-2(5)
+SI-3",,,,,,,,ANNEX D (Section 6.3.1.3 - Rapid security response),,,
+CCE-94545-1,os_rapid_security_responses_remove_disable,Disallow to remove Rapid Security Responses,"The iOS device _MUST_ be configured not to allow the user to remove rapid security responses.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowRapidSecurityResponseRemoval</key>
+<false/>
+----
+
+","SI-2
+SI-2(5)
+SI-3",,,,,,,,ANNEX D (Section 6.3.1.3 - Rapid security response),,,
+CCE-94459-5,os_require_managed_pasteboard_enforce,Ensure copy/paste of data from Managed to Unmanaged Applications is Disabled,"The device _MUST_ be configured to disable copy/paste of data from managed to unmanaged applications.
+
+If 'true', copy and paste functionality respects the 'allowOpenFromManagedToUnmanaged' and 'allowOpenFromUnmanagedToManaged' restrictions. ",Manual,,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>requireManagedPasteboard</key>
+<true/>
+----
+
+","AC-23
+SC-7(10)",,,FMT_SMF_EXT.1.1 #47,AIOS-18-014600,,,,ANNEX K,"CCI-000366
+CCI-000097
+CCI-000370",medium,
+CCE-94546-9,os_safari_JavaScript_disable,Prevent Java Script,"The iOS device _MUST_ be configured to prevent Java Script support in Safari to prevent malicious code execution on the device.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>safariAllowJavaScript</key>
+<false/>
+----
+
+",,,,,,,,,ANNEX K,,,
+CCE-94460-3,os_safari_cookies_set,Ensure Accept cookies is set to From websites I visit or From current website only,"Acceptance of cookies _MUST_ be only from sites visited.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>safariAcceptCookies</key>
+----
+
+",,,,,,2.2.2.2 (level 1 - End-User Owned Devices)3.2.2.2 (level 1 - Institutionally-Owned Devices),9.4,,ANNEX K,,,
+CCE-94461-1,os_safari_force_fraud_warning_enable,Ensure Force Fraud Warning is set to Enabled,"Force fraud warning _MUST_ be enabled in Safari.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>safariForceFraudWarning</key>
+<true/>
+----
+
+",,,,,,2.2.2.1 (level 1 - End-User Owned Devices)3.2.2.1 (level 1 - Institutionally-Owned Devices),9.4,,ANNEX K,,,
+CCE-94462-9,os_safari_password_autofill_disable,Disable Automatic Completion of Safari Browser Passcodes,"The AutoFill functionality in the Safari web browser allows the user to complete a form that contains sensitive information, such as PII, without previous knowledge of the information. By allowing the use of the AutoFill functionality, an adversary who learns a user's iPhone or iPad passcode, or who otherwise is able to unlock the device, may be able to further breach other systems by relying on the AutoFill feature to provide information unknown to the adversary. By disabling the AutoFill functionality, the risk of an adversary gaining additional information about the device's user or compromising other systems is significantly mitigated.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>safariAllowAutoFill</key>
+<false/>
+----
+
+","IA-5(13)
+CM-7
+CM-7(1)
+IA-11
+IA-5",,,FMT_SMF_EXT.1.1 #47,AIOS-18-010600,,"4.1
+4.8",,,"CCI-000366
+CCI-000370
+CCI-000381",low,
+CCE-94547-7,os_safari_popups_disable,Disable Safari Popups,"The iOS device _MUST_ be configured to automatically prevent popups on the device to protect users from malicious content.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>safariAllowPopups</key>
+<false/>
+----
+
+",,,,,,,,,ANNEX K,,,
+CCE-94577-4,os_safari_reader_summary_disable,Disable Apple Intelligence Safari Reader Summary,"Apple Intelligence features such as Safari Reader Summary that use off device AI _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowSafariSummary</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,,,,
+CCE-94548-5,os_screen_observation_remote_disable,Prevent remote screen observation,"The iOS device _MUST_ be configured to prevent remote screen observation via the classroom app to prevent data leakage via the classroom app.  
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowRemoteScreenObservation</key>
+<false/>
+----
+
+",,,,,,,,,ANNEX K,,,
+CCE-94549-3,os_screen_observation_unprompted_disable,Prevent unprompted screen observation.,"The iOS device _MUST_ be configured to prevent automatic acceptance for unprompted screen observations to prevent data leakage via the classroom app.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>forceClassroomUnpromptedScreenObservation</key>
+<false/>
+----
+
+",,,,,,,,,ANNEX K,,,
+CCE-94463-7,os_screenshots_disable,Ensure Allow screenshots and screen recording is set to Disabled,"Screenshots and screen recordings on iOS _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowScreenShot</key>
+<false/>
+----
+
+","CM-7
+CM-7(1)
+SC-07(10)",,,,,3.2.1.1 (level 2 - Institutionally-Owned Devices),3.3,,ANNEX K,,,
+CCE-94464-5,os_show_calendar_lock_screen_disable,Ensure Calendar Notifications when the Device is Locked is set to Disabled,"Many mobile devices display notifications on the lock screen so users can obtain relevant information in a timely manner without having to frequently unlock the phone to determine if there are new notifications. However, in many cases, these notifications can contain sensitive information. When they are available on the lock screen, an adversary can see them merely by being in close physical proximity to the device. Configuring the MOS to not send notifications to the lock screen mitigates this risk.",Manual, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowLockScreenTodayView</key>
+<false/>
+----
+
+",AC-11(1),,,FMT_SMF_EXT.1.1 #18,AIOS-18-007600,,,,,CCI-000060,medium,
+CCE-94465-2,os_show_control_center_lock_screen_disable,Ensure Show Control Center in Lock screen is set to Disabled,"Control Center _MUST_ be disabled in the lock screen.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowLockScreenControlCenter</key>
+<false/>
+----
+
+",AC-11(1),,,,,2.2.1.14 (level 1 - End-User Owned Devices)3.2.1.31 (level 1 - Institutionally-Owned Devices),4.3,,ANNEX K,,,
+CCE-94466-0,os_show_notification_center_lock_screen_disable,Ensure Show Notification Center in Lock screen is set to Disabled,"Notification Center _MUST_ be disabled in the lock screen.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowLockScreenNotificationsView</key>
+<false/>
+----
+
+",AC-11(1),,,FMT_SMF_EXT.1.1 #18,AIOS-18-007500,2.2.1.15 (level 1 - End-User Owned Devices)3.2.1.32 (level 1 - Institutionally-Owned Devices),4.3,,ANNEX K,CCI-000060,medium,
+CCE-94550-1,os_siri_allow_dictation_disable,Disallow dictation feature,"The iOS built-in Siri service _MUST_ be disabled to prevent organizational data from being synchronized to Apple servers.
+
+Apple's Siri service does not provide an organization with enough control over the storage and access of data, and, therefore, automated synchronization _MUST_ be controlled by an organization approved service.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowDictation</key>
+<false/>
+----
+
+","AC-20
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,ANNEX K,,,
+CCE-94551-9,os_siri_assistant_diable,Disable Siri service,"The iOS built-in Siri service _MUST_ be disabled to prevent organizational data from being synchronized to Apple servers.
+
+Apple's Siri service does not provide an organization with enough control over the storage and access of data, and, therefore, automated synchronization _MUST_ be controlled by an organization approved service.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowAssistant</key>
+<false/>
+----
+
+","AC-20
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,ANNEX K,,high,
+CCE-94552-7,os_siri_server_logging_disable,Disallow Siri server side logging,"The iOS built-in Siri service _MUST_ be disabled to prevent organizational data from being synchronized to Apple servers.
+
+Apple's Siri service does not provide an organization with enough control over the storage and access of data, and, therefore, automated synchronization _MUST_ be controlled by an organization approved service.  
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowSiriServerLogging</key>
+<false/>
+----
+
+","AC-20
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,ANNEX K,,,
+CCE-94553-5,os_siri_user_generated_content_disable,Disallow user generated content with Siri,"The iOS built-in Siri service _MUST_ be disabled to prevent organizational data from being synchronized to Apple servers.
+
+Apple's Siri service does not provide an organization with enough control over the storage and access of data, and, therefore, automated synchronization _MUST_ be controlled by an organization approved service.  
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowAssistantUserGeneratedContent</key>
+<false/>
+----
+
+","AC-20
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,ANNEX K,,,
+CCE-94467-8,os_siri_when_locked_disabled,Ensure Allow Siri while device is locked is set to Disabled,"Accessing Siri while the device is locked _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowAssistantWhileLocked</key>
+<false/>
+----
+
+","AC-20
+CM-7
+CM-7(1)
+SC-7(10)",,,FMT_SMF_EXT.1.1 #8b,AIOS-18-007200,2.2.1.2 (level 1 - End-User Owned Devices)3.2.1.3 (level 1 - Institutionally-Owned Devices),4.3,,ANNEX K,CCI-000366,medium,
+CCE-94554-3,os_spell_check_disable,Disable Spell Check,"The iOS device _MUST_ be configured to not use the spell check feature.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowSpellCheck</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,ANNEX K,,,
+CCE-94468-6,os_ssl_for_exchange_activesync_enable,Ensure SSL for Exchange ActiveSync,"Exchange email messages are a form of data in transit and thus are vulnerable to eavesdropping and man-in-the-middle attacks. Secure Sockets Layer (SSL), also referred to as Transport Layer Security (TLS), provides encryption and authentication services that mitigate the risk of breach.",Manual, ,,"Create a configuration profile containing the following keys in the (com.apple.eas.account) payload type:
+
+[source,xml]
+----
+<key>ssl</key>
+<true/>
+----
+
+",,,,FMT_SMF_EXT.1.1 #47,AIOS-18-011300,,,,ANNEX D (Section 5.6.1 - Mail),CCI-000764,medium,
+CCE-94469-4,os_supervised_mdm_require,Enforce Supervised Enrollment in Mobile Device Management,iOS/iPadOS _MUST_ be supervised by a Mobile Device Management (MDM) software.,Manual,,,Enroll the iOS/iPadOS device in a supervised MDM.,"CM-2
+CM-6",,,FMT_SMF_EXT.1.1 #47,AIOS-18-013200,,,,,"CCI-000366
+CCI-000097
+CCI-000370",medium,
+CCE-94555-0,os_system_settings_find_my_device_disable,Disable Find My Device,"The Find My service _MUST_ be disabled.
+
+A Mobile Device Management (MDM) solution _MUST_ be used to carry out remote locking and wiping instead of Apple's Find My service.
+
+Apple's Find My service uses a personal AppleID for authentication. Organizations should rely on MDM solutions, which have much more secure authentication requirements, to perform remote lock and remote wipe.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowFindMyDevice</key>
+<false/>
+----
+
+","AC-20
+CM-7
+CM-7(1)",,,,,,,,ANNEX K,,,
+CCE-94556-8,os_system_settings_find_my_friends_modification_disable,Disable Find My Friends Modification,"The Find My service modification _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowFindMyFriendsModification</key>
+<false/>
+----
+
+","AC-20
+CM-7
+CM-7(1)",,,,,,,,ANNEX K,,,
+CCE-94557-6,os_unpaired_boot_disable,Disable the option to recover the device via an unpaired host,"The iOS device _MUST_ be configured to disable unpaired devices to boot devices into recovery.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowUnpairedExternalBootToRecovery</key>
+<false/>
+----
+
+",,,,,,,,,ANNEX K,,,
+CCE-94470-2,os_untrusted_tls_disable,Ensure Allow Users to Accept Untrusted TLS Certificates is set to Disabled,"Users _MUST_ not be allowed to accept self-signed or unverified certificates.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowUntrustedTLSPrompt</key>
+<false/>
+----
+
+",,,,,,2.2.1.6 (level 2 - End-User Owned Devices)3.2.1.13 (level 2 - Institutionally-Owned Devices),4.1,,ANNEX K,,,
+CCE-94558-4,os_update_OTAPKI_allow,Allow OTA Update of PKI,"The device _MUST_ be configured that the OTA update of the PKI is allowed.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowOTAPKIUpdates</key>
+<true/>
+----
+
+",,,,,,,,,ANNEX K,,,
+CCE-94559-2,os_update_auto_RSR_allow,Auto install RSR Updates,"The user _MUST_ manually enable automatic install of RSR updtes in Settings/General/Updates/Automatic Updates/Block Remote Content  
+",Manual, ,,"This is implemented manually by the user.
+",,,,,,,,,ANNEX K,,,
+CCE-94560-0,os_update_enforced_software_update_delay,Enforce Software Update Delay.,"The iOS device _MUST_ be configured to enforce a software update delay by 30 days in order to validate compatibility with required software and infrastructure.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>forceDelayedSoftwareUpdates</key>
+<true/>
+<key>enforcedSoftwareUpdateDelay</key>
+<integer>30</integer>
+----
+
+",,,,,,,,,ANNEX D (Section 6.3.1.2 - Update management),,,
+CCE-94471-0,os_usb_accessories_when_locked_disable,Ensure Allow USB accessories while the device is locked is set to Disabled,"USB devices _MUST_ not be allowed to connect while the device is locked.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowUSBRestrictedMode</key>
+<true/>
+----
+
+","CM-8(3)
+MP-7
+SC-7(10)
+SC-41",,,FMT_SMF_EXT.1.1 #47,AIOS-18-012200,3.2.1.19 (level 1 - Institutionally-Owned Devices),1.2,,ANNEX K,"CCI-000366
+CCI-000097
+CCI-000370",medium,
+CCE-94561-8,os_video_conferencing_remote_control_disable,Ensure the remotely control a system via videoconferencing is set to Disabled,"Video conferencing remote control _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowVideoConferenceingRemoteControl</key>
+<false/>
+----
+
+",,,,,,,,,ANNEX K,,,
+CCE-94578-2,os_visual_intelligence_summary,Disable Apple Intelligence Visual Intelligence Summary,"Apple Intelligence features such as Visual Intelligence Summary that use off device AI _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowVisualIntelligenceSummary</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,,,,
+CCE-94472-8,os_voice_dialing_when_locked_disabled,Ensure Allow voice dialing while device is locked is set to Disabled,"Voice dialing while the device is locked _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowVoiceDialing</key>
+<false/>
+----
+
+","CM-7
+CM-7(1)",,,FMT_SMF_EXT.1.1 #8b,,2.2.1.1 (level 1 - End-User Owned Devices)3.2.1.2 (level 1 - Institutionally-Owned Devices),4.3,,ANNEX K,CCI-000366,medium,
+CCE-94562-6,os_web_distribution_app_installation_disable,Ensure the ability to install apps directly from the web is set to Disabled,"Web distrubtion of app installation _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowWebDistributionAppInstallation</key>
+<false/>
+----
+
+",CM-11,,,FMT_SMF_EXT.1.1 #3,AIOS-18-015000,,,,ANNEX K,CCI-000366,medium,
+CCE-94563-4,os_writing_tools_disable,Ensure the ability to use AI writing tools is set to Disabled,"AI writing tools _MUST_ be disabled.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.applicationaccess) payload type:
+
+[source,xml]
+----
+<key>allowWritingTools</key>
+<false/>
+----
+
+","AC-20
+AC-20(1)
+CM-7
+CM-7(1)
+SC-7(10)",,,,,,,,ANNEX K,,,
+CCE-94473-6,pwpolicy_account_lockout_enforce,Limit Consecutive Failed Login Attempts to 6,"The iOS _MUST_ be configured to limit the number of failed login attempts to a maximum of 6.
+
+This rule protects against malicious users attempting to gain access to the system via brute-force hacking methods. 
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.mobiledevice.passwordpolicy) payload type:
+
+[source,xml]
+----
+<key>maxFailedAttempts</key>
+<integer>6</integer>
+----
+
+",AC-7,,,"FMT_SMF_EXT.1.1 #2c
+FIA_AFL_EXT.1.5",AIOS-18-006900,2.4.6 (level 1 - End-User Owned Devices)3.4.6 (level 1 - Institutionally-Owned Devices),4.3,,"ANNEX D (Section 5.9.1 - Device-Code)
+ANNEX K",CCI-000044,medium,
+CCE-94564-2,pwpolicy_alpha_numeric_enforce,Require Passwords Contain a Minimum of One Numeric Character,"The iOS _MUST_ be configured to require at least one numeric character be used when a password is created.
+
+This rule enforces password complexity by requiring users to set passwords that are less vulnerable to malicious users. 
+",Configuration Profile,,,"Create a configuration profile containing the following keys in the (com.apple.mobiledevice.passwordpolicy) payload type:
+
+[source,xml]
+----
+<key>requireAlphanumeric</key>
+<true/>
+----
+
+",IA-5(1),,,,,,,,"ANNEX D (Section 5.9.1 - Device-Code)
+ANNEX K",,,
+CCE-94474-4,pwpolicy_force_pin_enable,Ensure Force Pin is set to Enabled,"Passwords provide a form of access control that prevents unauthorized individuals from accessing computing resources and sensitive data. Passwords may also be a source of entropy for generation of key encryption or data encryption keys. If a password is not required to access data, this data is accessible to any adversary who obtains physical possession of the device. Requiring that a password be successfully entered before the mobile device data is unencrypted mitigates this risk.
+
+Note: MDF PP v2.0 requires a Password Authentication Factor and requires management of its length and complexity. It leaves open whether the existence of a password is subject to management. This requirement addresses the configuration to require a password, which is critical to the cybersecurity posture of the device.",Manual, ,,"Create a configuration profile containing the following keys in the (com.apple.mobiledevice.passwordpolicy) payload type:
+
+[source,xml]
+----
+<key>forcePIN</key>
+<true/>
+----
+
+",SC-28,,,FIA_UAU_EXT.1.1,AIOS-18-010400,,,,Annex D (Section 5.9.1 - Device-Code),CCI-001199,high,
+CCE-94565-9,pwpolicy_history_enforce,Prohibit Password Reuse for a Minimum of 2 Generations,"The iOS _MUST_ be configured to enforce a password history of at least 2 previous passwords when a password is created.  
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.mobiledevice.passwordpolicy) payload type:
+
+[source,xml]
+----
+<key>pinHistory</key>
+<integer>2</integer>
+----
+
+",IA-5(1),,,FMT_SMF.1.1 #47,AIOS-18-006950,,,,"ANNEX D (Section 5.9.1 - Device-Code)
+ANNEX K",CCI-004061,high,
+CCE-94475-1,pwpolicy_max_grace_period_enforce,Ensure Maximum grace period for device lock is set to Immediately,"The iOS grace period for device lock _MUST_ be configured to immediately.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.mobiledevice.passwordpolicy) payload type:
+
+[source,xml]
+----
+<key>maxGracePeriod</key>
+<integer>0</integer>
+----
+
+","AC-11
+IA-11",,,FMT_SMF_EXT.1.1 #2a,AIOS-18-006800,2.4.5 (level 1 - End-User Owned Devices)3.4.5 (level 1 - Institutionally-Owned Devices),4.3,,ANNEX D (Section 5.9.1 - Device-Code),CCI-000057,medium,
+CCE-94476-9,pwpolicy_max_inactivity_enforce,Ensure Maximum Auto-Lock is set to 2 minutes or less,"The iOS _MUST_ be configured to auto-lock after 2 minutes.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.mobiledevice.passwordpolicy) payload type:
+
+[source,xml]
+----
+<key>maxInactivity</key>
+<integer>2</integer>
+----
+
+","AC-11
+IA-11",,,FMT_SMF_EXT.1.1 #2b,AIOS-18-006800,2.4.4 (level 1 - End-User Owned Devices)3.4.4 (level 1 - Institutionally-Owned Devices),4.3,,"ANNEX D (Section 5.9.1 - Device-Code)
+ANNEX K",CCI-000057,medium,
+CCE-94477-7,pwpolicy_minimum_length_enforce,Require a Minimum Passcode Length of 6 Characters,"The iOS _MUST_ be configured to require a minimum of 6 characters be used when a passcode is created.
+
+This rule enforces passcode complexity by requiring users to set passcode that are less vulnerable to malicious users. 
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.mobiledevice.passwordpolicy) payload type:
+
+[source,xml]
+----
+<key>minLength</key>
+<integer>6</integer>
+----
+
+",IA-5(1),,,FMT_SMF_EXT.1.1 #1a,AIOS-18-006500,2.4.3 (level 1 - End-User Owned Devices)3.4.3 (level 1 - Institutionally-Owned Devices),5.2,,"ANNEX D (Section 5.9 - Device authentication)
+ANNEX K",CCI-000205,medium,
+CCE-94478-5,pwpolicy_simple_sequence_disable,"Prohibit Repeating, Ascending, and Descending Character Sequences","The iOS device _MUST_ be configured to prohibit the use of repeating, ascending, and descending character sequences when a passcode is created.
+
+This rule enforces password complexity by requiring users to set passcodes that are less vulnerable to malicious users.
+",Configuration Profile, ,,"Create a configuration profile containing the following keys in the (com.apple.mobiledevice.passwordpolicy) payload type:
+
+[source,xml]
+----
+<key>allowSimple</key>
+<false/>
+----
+
+",IA-5(1),,,FMT_SMF_EXT.1.1 #1b,AIOS-18-006600,2.4.1 (level 1 - End-User Owned Devices)3.4.1 (level 1 - Institutionally-Owned Devices),5.2,,"ANNEX D (Section 5.9 - Device authentication)
+ANNEX K",CCI-000366,medium,
